@@ -26,6 +26,11 @@ body > footer > div.footer-sub > div > div > div.fs-rights > p > a {
     top: 126px;
 }
 
+@media only screen and (min-width: 700px) {
+    .salla-theme_6 .product>a .promotion-title {
+        top: 96px;
+    }
+}
 .products-grid.eq-height .product>:first-child .img-cont, .products-grid.eq-height .thumbnail>:first-child .img-cont, .products-listing.eq-height .product>:first-child .img-cont, .products-listing.eq-height .thumbnail>:first-child .img-cont, body.salla-default #products_div.eq-height .product>:first-child .img-cont, body.salla-default #products_div.eq-height .thumbnail>:first-child .img-cont {
     overflow: visible !important;
 }
