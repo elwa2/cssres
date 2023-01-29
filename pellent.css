@@ -43,6 +43,9 @@ body > footer > div.footer-sub > div > div > div.fs-rights > p > a {
     padding: 0.5rem 1rem;
     margin: 0;
 }
+.product-title {
+    color: var(--main-color)
+}
 
 body > section > div > div.section-header.d-flex.mb-4 {
     margin-bottom: 5.5rem!important;
