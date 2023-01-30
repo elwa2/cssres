@@ -181,3 +181,12 @@ body,.u-white,.footer-header,.feature-item__icon,section {
 .section--title {
     color: #ffffff;
 }
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories > li a {
+    color: #ffffff !important;
+    margin: 5px;
+    border: #2a2a2a solid 0px !important;
+    border-radius: 10px 10px 10px 10px !important;
+    background: linear-gradient(to right, #323130, #a58e6d) !important;
+    box-shadow: 2.5px 2.5px 5px #22232c94, -1px 5px 5px #21232e4d;
+}
