@@ -8,10 +8,6 @@
         font-weight: 500;
     }
 
-    body > footer > div.footer-sub > div > div > div.fs-rights > p > a {
-        color: #8b8b8b;
-    }
-
     .products-listing.eq-height .product.contain>:first-child .img-cont img {
         position: relative;
         top: -88px;
@@ -51,4 +47,8 @@
 
 .product-title {
     color: var(--main-color)
+}
+
+body > footer > div.footer-sub > div > div > div.fs-rights > p > a {
+    color: #8b8b8b;
 }
