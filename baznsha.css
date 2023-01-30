@@ -1,0 +1,2161 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+/* صور البنرات الرئيسية */
+.banner img {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+/* صور البنرات الرئيسية */
+.section[data-type=banner] {
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    padding: 0px 0!important;
+    background: #fff;
+}
+
+/* كرت المنتج*/
+.product {
+    background: #fff;
+    border-radius: 30px;
+    border: 0px solid #fff;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* صورة المنتج */
+.product img {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* العبارة الترويجية للمنتج */
+.promotion-title {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+    top: 0px;
+}
+
+/* العبارة الترويجية للمنتج بعد الضغط عليه */
+.promotion-title.detail {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 30px;
+    top: 0px;
+}
+
+/* عنوان المنتج الداخلي*/
+.product-details__title {
+    text-align: center;
+}
+
+/* العنوان الفرعي الداخلي*/
+.product-details__subtitle {
+    text-align: center;
+}
+
+.product>a .product-subtitle {
+    font-size: 0.000001px;
+}
+
+/* زراضافة المنتج للسلة */
+.sicon-cart:before {
+    color: var(--color-main);
+}
+
+/* زراضافة المنتج للسلة */
+@keyframes roll-in-blurred-top {
+    0% {
+        transform: translateY(-800px) rotate(-720deg);
+        filter: blur(0px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0) rotate(0deg);
+        filter: blur(0PX);
+        opacity: 1;
+    }
+}
+
+.product-add span:hover:before {
+    vertical-align: middle;
+    font-family: FontAwesome !important;
+    content: "\f004\f004 ";
+    color: var(--color-main)47;
+    opacity: 0.03;
+    display: block;
+    text-align-last: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    cursor: pointer;
+    animation: popup 1.5s;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes popup {
+    0% {
+        transform: rotate(-45deg) scale(0.9);
+        opacity: 1;
+    }
+
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-45deg) scale(0.9);
+        opacity: 0;
+    }
+}
+
+.product-add span:hover:after {
+    vertical-align: middle;
+    font-family: FontAwesome !important;
+    content: "\f004";
+    position: alternate;
+    height: 100px;
+    width: 100px;
+    right: 50%;
+    color: #182e4573;
+    display: flex;
+    text-align-last: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 0px;
+    cursor: pointer;
+    animation: popup 1.5s;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-fill-mode: both;
+}
+
+@keyframes popup {
+    0% {
+        transform: rotate(-45deg) scale(0.9);
+        opacity: 1;
+    }
+
+    80% {
+        transform: rotate(-45deg) scale(1.0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotate(-45deg) scale(0.9);
+        opacity: 0;
+    }
+}
+
+/*******************************************************************************/
+/* قسم تفاصيل طلب المنتج */
+.product-form {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 15px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* تقليل الكمية */
+.qty-field--custom .btn--qty-sub {
+    background: var(--color-main);
+    color: #fff;
+}
+
+/* زيادة الكمية */
+.qty-field--custom .btn--qty-add {
+    background: var(--color-main);
+    color: #fff;
+    border-radius: 15px;
+}
+
+/* العدد */
+.qty-field--custom .form-control.single_product_quantity {
+    background: var(--color-main);
+    color: #fff;
+}
+
+/* القسم السفلي لطلبالمنتج والمفضلة*/
+.cart-fav {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+/* الزر الكبير لطلب المنتج */
+.cart-fav .add_to_cart_large_btn, .cart-fav .not-available-large {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin: 8px;
+}
+
+/* الإضافة للمفضلة */
+.add-to-wishlist, .add-to-wishlist:focus, .add-to-wishlist.focus, .add-to-wishlist:hover {
+    margin: 8px;
+}
+
+/* اراءالعملاء */
+.salla-theme_3 .testimonials-item {
+    border: 0px;
+    box-shadow: none;
+    background: #ffffff00;
+}
+
+/* اراءالعملاء */
+.testimonials-item p {
+    height: 150px;
+    text-align: center;
+    margin-top: -30px;
+    padding-top: 31px;
+    padding-left: 35px;
+    padding-right: 24px;
+    font-size: 14px;
+    color: #fff;
+    background: var(--color-main);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+/*  نقاط التنقل في اراءالعملاء */
+.slick-dots li button {
+    width: 15px;
+    height: 8px;
+    border-radius: 4px;
+}
+
+/*  المعلومات في اراءالعملاء */
+.testimonials-item cite {
+    margin-right: 50px;
+    font-size: 12px;
+    color: #000;
+}
+
+/*  الصورة في اراءالعملاء */
+.testimonials-item img {
+    width: 40px;
+    height: 40px;
+}
+
+/* هدرالموقع */
+.site-header {
+    /* border-bottom-left-radius: 20px; */
+    /* border-bottom-right-radius: 20px; */
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 20px 0 rgba(0, 0, 0, 0.1);
+    background: var(--color-main);
+}
+
+/* ازرار الهدر */
+.circle-action {
+    border: 0px solid #ececec;
+    border-radius: 3px;
+    background: none;
+    color: #fff;
+    line-height: 40px;
+    font-size: 22px;
+}
+
+/*زر السلة في الهدر */
+.sicon-cart:before {
+    vertical-align: middle;
+    font-family: sallaicons !important;
+    content: "\e906";
+    color: #fff;
+    font-size: 25px;
+    text-align-last: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sicon-cart:hover:before {
+    color: var(--color-main);
+}
+
+/*زر البحث في الهدر */
+.sicon-search:before {
+    vertical-align: middle;
+    font-family: FontAwesome !important;
+    content: '\f002';
+    color: #fff;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align-last: center;
+}
+
+.sicon-search:hover:before {
+    color: var(--color-main);
+}
+
+/*البروفايل في الهدر*/
+.sicon-user:before {
+    vertical-align: middle;
+    font-family: FontAwesome !important;
+    content: '\f007';
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align-last: center;
+}
+
+/******************************/
+/*ايقونات القائمة الجانبيه*/
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a {
+    color: #000;
+    margin-right: 16px;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a {
+    font-size: 15px!important;
+    min-height: 40px;
+    padding: 5px 35px!important;
+}
+
+/* زر فئة المنتجات*/
+.sicon-tag:before {
+    content: "\efeb";
+    color: var(--color-main);
+}
+
+/************************/
+/*ايقونة سلة المشتريات*/
+.icon-checkmark4:before {
+    vertical-align: middle;
+    font-family: FontAwesome !important;
+    content: "\f00c";
+    color: #fff;
+    padding: 3px;
+    font-size: 22px;
+    margin: 0px;
+    width: 100px;
+    text-align-last: center;
+}
+
+.icon-checkmark4 {
+    animation-name: scale-down-center;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: none;
+}
+
+@keyframes scale-down-center {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(.2);
+    }
+}
+
+.active-step .cart-number {
+    background: var(--color-main);
+    border-color: var(--color-main);
+}
+
+/*************************************/
+/* عدد منتجات السلة في الهدر */
+#cart_badge {
+    line-height: 1.5384616;
+    color: #ffffff;
+    background: var(--color-main);
+}
+
+/* ويدجت تسجيل الدخول */
+#modal_login .modal-content {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+/*محرك البحث */
+#searchbox.prompt {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: var(--color-main);
+    box-shadow: 1px 1px 2px;
+}
+
+/* زرالقائمة الجانبية */
+.sub-nav__menu:before {
+    vertical-align: middle;
+    font-family: FontAwesome !important;
+    content: "\f038";
+    color: #fff;
+    font-size: 22px;
+    float: right;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* زرالقائمة الجانبية القديم*/
+.sub-nav__menu svg {
+    width: 0px;
+    height: 0px;
+}
+
+/* القائمة الجانبية */
+.sub-nav-header {
+    border-radius: 0 0 25px 25px;
+}
+
+/* زرالملف الشخصي وتسجيل الخروج */
+.sub-nav-header a {
+    border: 1px solid var(--color-main);
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: var(--color-main);
+    background-image: #fff;
+    background-image: -moz-linear-gradient(top, #f4c76c 0%, #fff 100%);
+    /* background-image: -webkit-linear-gradient(top, #f4c76c 0%,#fff 100%); */
+    /* background-image: linear-gradient(to bottom, #f4c76c 0%,#fff 100%); */
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    -webkit-transition: background 300ms ease-in-out;
+    transition: background 300ms ease-in-out;
+    box-shadow: 0px 1px 6px 0px #ffffff40, -4px 3px 3px 0 var(--main-text-color);
+    color: #fff;
+}
+
+.sub-nav .sub-nav-content .sub-nav-header:hover a {
+    font-size: 12px;
+    margin: 15px auto 0;
+    background-position: -200%;
+    transition: background 400ms ease-in-out;
+    color: var(--color-main);
+}
+
+/* خانة التعليق */
+#ask_textarea {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* زر اضافه التعليق */
+#ask_button {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* منتجات داخل السلة */
+.product-cart {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+/* سعر السلة الاجمالي */
+.cart-total-box {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* زر اتمام الطلب */
+#submit_cart {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+/* عنوان القسم */
+.section-header .section--title {
+    border-right: 8px solid #f4c76c;
+    width: fit-content;
+    margin-right: 10px;
+    padding: 3px 10px 3px 10px;
+    border-radius: 6px;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.footer-main {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-top: 10px solid #a63f3f;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-top: 0px solid #13223657;
+    margin: 15px;
+    background-color: var(--color-main);
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+     background-size: 25%;
+}
+
+/*عناوين الفوتر */
+.footer-title span {
+    text-align: center;
+    background: #fff;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-size: 15px !important;
+    border-radius: 10px;
+}
+
+/*التواصل الاجتماعي في الفوتر */
+.store-contact a {
+    color: #fff;
+    font-size: 12px;
+}
+
+/*التواصل الاجتماعي في الفوتر */
+.store-contact {
+    text-align: center;
+}
+
+/*الرقم الضريبي في الفوتر */
+/*سياسة الاستبدال في الفوتر*/
+.footer-links a {
+    color: #fff;
+}
+
+/*ايقونات التواصل الإجتماعي*/
+.social__item a {
+    color: #fff;
+    border: 2px solid #fff;
+    border-top: 5px solid #fff;
+}
+
+/*جميع الحقوقمحفوظة*/
+.salla-theme_3 footer .footer-sub .footer-wrapper p {
+    color: #000000;
+}
+
+.sub-nav-header::before {
+    content: "";
+    text-align: center !important;
+    display: block;
+    height: 60px !important;
+    background-image: url(https://cdn.salla.sa/PdNVD/9r1rGwrSAmR9Gn7kTeKRA4B79SqK6A7OZgMPGnri.jpg);
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 0px 0 10px 0;
+    /* filter: brightness(18.5); */
+}
+
+/*الشعارالرئيسي */
+.logo {
+    animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+.logo {
+    position: relative;
+    left: calc(50% - 3em);
+    border-top: 0px solid orange;
+    color: #fff;
+    transform-origin: 50% 5em;
+}
+
+/* صورة الملف الشخصي */
+.sub-nav-header img {
+    width: 0px;
+    height: 0px;
+    border: 0px;
+}
+
+/*خط القائمة الجانبيه*/
+/* drawer nav strock */
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    border-top: 0px solid ;
+    background-color: inherit;
+}
+
+/* Before & After*/
+.gfxEMs {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+/* Before & After*/
+.caccuw {
+    line-height: 1.2;
+    padding-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+a.designed {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    position: relative;
+}
+
+.designedBy {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    position: relative;
+    -webkit-animation: bounce-in-top 1.05s linear;
+    animation: bounce-in-top 1.05s linear;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+.banner {
+    -webkit-animation: bounce-in-top 2s both;
+    animation: bounce-in-top 2s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+/*حركة أراء العملاء*/
+.py-5 {
+    -webkit-animation: bounce-in-top 1.9s both;
+    animation: bounce-in-top 1.9s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+/*حركة الفوتر */
+.footer-main {
+    -webkit-animation: bounce-in-top 2s both;
+    animation: bounce-in-top 2s both;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 1;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(500px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: ease-in;
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out;
+    }
+}
+
+/*حركة الهدر2*/
+.site-header {
+    position: relative;
+    -webkit-animation: bounce-in-top 2.1s linear;
+    animation: bounce-in-top 2.1s linear;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+/*سلة المشتريات */
+.empty-box .empty-icon {
+    animation: wiggle 2s infinite;
+}
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+.empty-box .empty-icon {
+    position: relative;
+    border-top: 0px solid orange;
+    transform-origin: 50% 5em;
+}
+
+.icon-heart-broken2:before {
+    color: var(--color-main);
+}
+
+/*المنتجات */
+.container {
+    /* position: relative; */
+    -webkit-animation: bounce-in-top 2.5s linear;
+    animation: bounce-in-top 2.5s linear;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+/*حركةإتمام الطلب*/
+.page-container-cart {
+    position: relative;
+    -webkit-animation: bounce-in-top 2S linear;
+    animation: bounce-in-top 2s linear;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+/*حركة خط الخيارات*/
+.store-header-min {
+    position: relative;
+    -webkit-animation: bounce-in-top 2s linear;
+    animation: bounce-in-top 2s linear;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+/*حركة  تسجيل الدخول */
+.modal.in .modal-dialog {
+    position: relative;
+    -webkit-animation: bounce-in-top 2s linear;
+    animation: bounce-in-top 2s linear;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+/*التصنيفات*/
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li ul li a:before {
+    background-color: var(--color-main);
+    content: "";
+    display: block;
+    height: 7px;
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 7px;
+}
+
+/*زر تواصل معنا */
+.hpjXEa {
+    position: relative;
+    -webkit-animation: bounce-in-top 1.05s linear;
+    animation: bounce-in-top 1.05s linear;
+}
+
+@-webkit-keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+@keyframes bounce-in-top {
+    0% {
+        -webkit-transform: translateY(-500px);
+        transform: translateY(-500px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 0;
+    }
+
+    38% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+        opacity: 1;
+    }
+
+    55% {
+        -webkit-transform: translateY(-65px);
+        transform: translateY(-65px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    72% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    81% {
+        -webkit-transform: translateY(-28px);
+        transform: translateY(-28px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    90% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    95% {
+        -webkit-transform: translateY(-8px);
+        transform: translateY(-8px);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        -webkit-animation-timing-function: linear;
+        animation-timing-function: linear;
+    }
+}
+
+/*العناوين */
+a {
+    font-size: 16px;
+    color: #000000;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a {
+    color: #000;
+}
+
+.sub-nav .main-menu>li.sub-menu-header {
+    color: #000;
+}
+
+ol.breadcrumb li, ol.breadcrumb li a {
+    color: #000;
+}
+
+.breadcrumb>.active {
+    color: var(--color-main);
+}
+
+ol.breadcrumb li:before {
+    color: #000!important;
+    content: "\ea65"!important;
+    display: inline-block;
+    font-family: sallaicons!important;
+    font-size: 14px;
+    padding: 0!important;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/*********/
+.empty-box .empty-text {
+    color: var(--color-main)!important;
+}
+
+.product-title {
+    color: #000;
+}
+
+.sub-nav .main-menu li {
+    color: #000;
+}
+
+/*أيقونات الملف الشخصي */
+.icon-warning:before {
+    content: "\ed4c";
+    color: var(--color-main);
+}
+
+.sicon-heart:before {
+    content: "\eca1";
+    color: var(--color-main);
+}
+
+.sicon-star:before {
+    content: "\efa8";
+    color: var(--color-main);
+}
+
+.icon-credit-card2:before {
+    content: "\ea7b";
+    color: var(--color-main);
+}
+
+.icon-thumbs-up3:before {
+    content: "\ecf5";
+    color: var(--color-main);
+}
+
+.icon-cart:before {
+    content: "\ea65";
+    color: var(--color-main);
+}
+
+.panel .panel-heading .panel-title {
+    padding: 10px 20px 10px 0;
+    color: var(--color-main);
+}
+
+.btn {
+    position: relative;
+    border-radius: 36px;
+}
+
+.icon-user:before {
+    content: "\eb33";
+    color: var(--color-main);
+}
+
+.icon-users2:before {
+    content: "\eb3b";
+    color: var(--color-main);
+}
+
+.sicon-mail:before {
+    content: "\ed57";
+    /* color: var(--color-main); */
+}
+
+.sicon-calendar:before {
+    content: "\ea37";
+    color: var(--color-main);
+}
+
+.sicon-woman-man:before {
+    content: "\f0c1";
+    color: var(--color-main);
+}
+
+.sicon-iphone:before {
+    content: "\ece5";
+    /* color: var(--color-main); */
+}
+
+.sicon-phone-talking:before {
+    content: "\ee40";
+    color: var(--color-main);
+}
+
+#resend-section .form-group.align-center.resend-btn-options>* {
+    margin: 0 5px;
+    color: #000;
+}
+
+.fa-heart:before {
+    content: "\f004";
+    color: var(--color-main);
+}
+
+/***********************************************************/
+.comment-time {
+    color: #000;
+    float: left;
+    font-size: 11px;
+    margin-top: 9px;
+}
+
+.comment-name {
+    color: #000;
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/*********************************************************/
+/* remove url underline*/
+.product-desc a, .product-desc a:hover, .product-detials_desc a, .product-detials_desc a:hover {
+    text-decoration: none;
+}
+
+/************لون القائمه الجانبية*******************/
+.sub-nav .sub-nav-content.is-active {
+    background-color: rgb(233 255 247);
+}
+
+.salla-theme_2 .main-menu {
+    background-color: rgba(255, 250, 250, 0.6);
+}
+
+ 
+
+.product-add {
+    display: inline-block;
+    width: 71px;
+    height: 49px;
+    border-radius: 5px !important;
+    background: var(--color-main);
+    font-size: 21px;
+    -webkit-transition: all .2s ease-out;
+    padding: 0.3rem;
+    transition: all .2s ease-out;
+}
+
+.salla-theme_4 .product-footer .product-add:hover {
+    background-color: #111c26!important;
+}
+
+section,body {
+    background: #ffffff !important;
+}
+
+ 
+@media (max-width: 767px) {
+    footer .store-certificate b,body > footer > div.footer-main > div > div > div:nth-child(1) > div.store-certificate > span > b {
+        color: #fff !important;
+    }
+}
+
+.section-products .container {
+    padding-top: 1.5rem;
+    background: transparent;
+    border-radius: 5px;
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border: 0px solid #e8e8e8;
+}
+
+.section-header .section--title {
+    -webkit-box-shadow: unset;
+    box-shadow: unset;
+    border: 0px solid #e8e8e8;
+}
+
+ 
+@media (max-width: 767px) {
+    body > section.section.section-products {
+        /* position: relative; */ /* top: -115px; */ /* background: transparent !important; */ /* margin: 0px 0px -139px 0px; */
+    }
+
+    section.section {
+        padding: 0rem 0;
+    }
+
+    .main-slider.slick-dotted.slick-slider {
+        margin-bottom: 0;
+        padding: 0 0 9px;
+    }
+
+    .footer-header .container {
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+    }
+}
+
+.circle-action.next, .circle-action.prev {
+    background: transparent;
+}
+
+.container.banner,.banner img {
+    width: 100%;
+    padding: 0;
+}
+
+ .footer-sub {
+    background: #2cbd86;
+}
