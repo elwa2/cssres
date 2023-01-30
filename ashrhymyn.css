@@ -170,7 +170,6 @@ body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a {
 
 .site-header {
     background: linear-gradient(to right, #b89e77, #2d2d2d) !important;
-    backdrop-filter: blur(10px);
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -182,6 +181,3 @@ body,.u-white,.footer-header,.feature-item__icon,section {
 .section--title {
     color: #ffffff;
 }
-
-
- 
