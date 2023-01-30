@@ -1,0 +1,152 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+body:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff url(https://cdn.salla.sa/mQdEj/ODVZwIwPMurOruNFCqUGDItxb5q5MhzxdnvIOKi3.jpg);
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999999 !important;
+    background-size: 250px !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+    animation-name: logobg;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@keyframes logobg {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.banner img {
+    margin: 0 auto;
+    animation: updown2 1s ease 0.1s infinite;
+}
+
+@keyframes updown2 {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(4px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.col-sm-4 {
+    width: calc(100%/2);
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.product {
+    border-radius: 8px;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li.has-children>a:hover, .salla-theme_6 .sub-nav .main-menu>li>a:hover,body > header > div > div > div.sub-nav > div > ul>li.has-children>a:hover, body > header > div > div > div.sub-nav > div > ul>li>a:hover {
+    padding: 5px 30px !important;
+    background: linear-gradient(227deg,#bf953f,#fcf6ba)!important;
+    color: #32393c!important;
+    border-radius: 12px;
+}
+
+.banner--fixed:hover,.section[data-type="banner"]:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px -4px #000000;
+    transition: all ease 0.5s;
+}
+
+.footer-main {
+    border-top-color: var(--main-color);
+    background: linear-gradient(to right, #323130, #a58e6d) !important;
+}
+
+.footer-title,p.mb-3,body > footer > div.footer-main > div > div > div > ul > li > a {
+    color: #ffffff;
+}
+
+body > footer > div.footer-sub.text-center > div > div > div::after {
+    content: " Web Design by "" | ""Ali Ahmed 3lwaaa@gmail.com ";
+    display: block;
+    color: #9d9d9d;
+    font-size: 10px;
+    display: block;
+    text-align: center;
+}
+
+.footer-main:before {
+    content: "";
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Cpath d='M0 178c33.4-19.2 100.2-111.2 167-96 66.8 15.2 100.4 166.8 167 172 66.6 5.2 132.8-116.8 166-146v192H0z' fill='%23fff'/%3E%3C/svg%3E");
+    display: block;
+    background-repeat: round;
+    transform: rotate(180deg);
+    height: 104px;
+    margin: -52px -32px 1px 1px;
+}
+
+@media (max-width: 750px) {
+    .footer-main:before {
+        height: 117px;
+        margin: -33px -32px -3px 1px;
+    }
+}
+
+.sub-nav-header::before, .footer-main .container::before, .login-form .panel-title::before {
+    content: "";
+    background: transparent url(https://cdn.salla.sa/mQdEj/ODVZwIwPMurOruNFCqUGDItxb5q5MhzxdnvIOKi3.jpg) center 0rem/ 37% no-repeat;
+    height: 70px!important;
+    display: block;
+    margin: auto;
+}
+
+.sub-nav-header::before {
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 0rem;
+    height: 105px!important;
+}
+
+.footer-main .container::before {
+    background-position-x: center;
+    background-position-y: 0rem;
+    height: 100px!important;
+    width: 100%;
+    background-size: contain;
+}
+
+.login-form .panel-title::before {
+    height: 100px!important;
+    width: 100%;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 0rem;
+}
+
+.login-form .panel-title .icon-object {
+    display: none !important;
+}
+
+.sub-nav-header img {
+    display: none;
+}
