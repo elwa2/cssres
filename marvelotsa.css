@@ -214,3 +214,15 @@ body.salla-theme_1 .product .product-footer {
     display: block;
     margin: 0px 0 11px 0;
 }
+
+@media (min-width: 992px) {
+    .sub-nav,body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) ul li {
+        width: 100%;
+        z-index: 1000;
+        background: var(--color-main);
+    }
+
+    .offers-link,body > div.sub-nav > div > ul a {
+        color: #ffffff!important;
+    }
+}
