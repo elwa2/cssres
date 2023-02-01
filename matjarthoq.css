@@ -1,11 +1,6 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */ 
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 body {
     background-color: #fff
-}
-
-section:nth-of-type(1) .container.container-slider {
-    width: 100%!important;
-    max-width: 100%!important
 }
 
 .blog-text img {
@@ -304,21 +299,6 @@ ul.main-nav>li.top-level-link:nth-of-type(2) {
     display: none
 }
 
-@media(min-width: 1200px) {
-    section:nth-of-type(1) img.d-block.w-100.slider-image-0 {
-        object-fit:fill!important;
-        height: 60%!important
-    }
-
-    section:nth-of-type(1) a.d-flex.flex-column.justify-content-start {
-        height: 160%!important
-    }
-
-    section:nth-of-type(1) .main-slider {
-        max-height: 1200px
-    }
-}
-
 @media(max-width: 991px) {
     .footer-theme-text-for-primary-bg {
         border-radius:500px 500px 0 0!important
@@ -518,3 +498,22 @@ footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
 .col-lg-6.col-product-info .div-product-sku {
     display: none!important
 }
+
+@media(min-width: 992px) {
+    section:nth-of-type(1) .container.container-slider {
+        width: 100%!important;
+        max-width: 100%!important
+    }
+
+    .home section:nth-of-type(1) .container {
+        max-width: unset!important;
+        padding: 0
+    }
+
+    .home section:nth-of-type(1) .main-slider {
+        max-height: unset;
+        margin-top: 0
+    }
+}
+
+ 
