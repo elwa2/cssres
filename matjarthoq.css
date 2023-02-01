@@ -516,4 +516,8 @@ footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
     }
 }
 
- 
+ a.btn.btn-primary.btn-product-card-out-of-stock {
+    background-color: #cfcfcf;
+    color: #8b8b8b;
+    border-color: #cfcfcf;
+}
