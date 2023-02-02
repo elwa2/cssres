@@ -1281,14 +1281,14 @@ a.sub-nav__menu.ml-2::after {
 }
 
 .promotion-title {
-    background-color: #a39007!important;
+    background-color: var(--color-main);;
     color: #0e0e0e!important;
     animation: pulse 5s infinite!important
 }
 
 @keyframes pulse {
     0% {
-        background-color: #fde7c0
+        background-color: var(--color-main);
     }
 
     50% {
@@ -1296,7 +1296,7 @@ a.sub-nav__menu.ml-2::after {
     }
 
     100% {
-        background-color: #ffc45c
+        background-color: var(--color-main);
     }
 }
 
