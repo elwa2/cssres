@@ -152,13 +152,7 @@ ul.top-header__info span, ul.top-header__info i {
 /* أزرار أسفل الموقع */
 /* ====================================== Sections Images ======================================= */
 /* make grid for sections */
-section.home-block--square-images > .container > .row:not(.products-grid):not(.products-listing):last-child {
-    display: grid !important;
-    column-gap: 10px !important;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-}
-
+ 
 section.home-block--square-images .col-md-4 {
     width: 80%;
     max-width: 100% !important;
@@ -407,31 +401,7 @@ body .product-block .product-block__info {
     background-repeat: no-repeat !important;
     border-radius: unset !important;
 }
-
-/* آراء العملاء */
-/* .home-block--testimonials
-  .title.title--primary.title--x-large.title--has-dash.mb-30 {
-  background-image: none;
-  text-align: center;
-  padding-right: 0;
-}
-.splide--testimonials .splide__slide {
-  padding: 10px;
-}
-.testimonails-listing > div > div {
-  padding-bottom: 3rem;
-  padding-top: 1rem;
-}
-.testimonial-entry {
-  box-shadow: 0 1px 14px 0 rgb(34 41 47 / 10%);
-  margin: 3px;
-  background: #fff
-    url("https://cdn.salla.sa/bOVZP/xD0djdIxyc1gVTMn67sgUUwVCQv0CbGRJrCAEEb1.gif")
-    top 2.5rem left 1rem/35px no-repeat !important;
-  border: 1px solid #fff;
-  border-radius: 12px !important;
-  box-shadow: 0 4px 24px 0 rgb(34 41 47 / 10%);
-} */
+ 
 /* style for box */
 .testimonial-entry {
     background-color: #79c5b1;
@@ -555,7 +525,7 @@ body .product-block .product-block__info {
 
 /* تواصل معنا */
 .store-contact-info a {
-    color: #4b5d8f !important;
+    color: var(--color-primary) !important;
     font-weight: normal;
     font-size: 16px;
     padding: 0px !important;
