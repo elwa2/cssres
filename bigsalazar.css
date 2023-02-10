@@ -1,0 +1,48 @@
+.section:nth-of-type(2) .container .row:not(.products-grid):not(.products-listing) div {
+    width: 125% !important;
+    margin-bottom: 0px;
+}
+
+.section:nth-of-type(2) .container .row:not(.products-grid):not(.products-listing) {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: auto !important;
+}
+
+body:not(.salla-theme_6) .section:nth-of-type(2) .category-featured {
+    height: auto;
+    padding-bottom: 50px !important;
+}
+
+@media only screen and (max-width: 991px) {
+    body:not(.salla-theme_6) .section:nth-of-type(2) .category-featured {
+        height: auto;
+        padding-top: 96.25%;
+        padding-right: 0px;
+        padding-bottom: 30px !important;
+        padding-left: 0px;
+        margin-right: -10% !important;
+    }
+}
+
+section.section {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .section:nth-of-type(2) .category-featured a {
+        background-size: 200% auto !important;
+    }
+}
+
+.section:nth-of-type(2) .category-featured a:before {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .banner img {
+        margin: 0px auto;
+    }
+}
