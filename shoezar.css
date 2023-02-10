@@ -1,0 +1,26 @@
+body .section-header h2.section--title span {
+    font-size: 17px !important;
+}
+
+#gb-widget-7814 .sbsi7l-0.evMtho {
+    display: none !important;
+}
+
+@font-face {
+    font-family: rb-font;
+    src: url(https://sanint.sirv.com/zyros_natinonal_day_font/RB%20Font.ttf);
+    font-weight: normal
+}
+
+html,body,div,span,object,h1,h2,h3,n h4,h5,h6,p,blockquote,a,abbr,img,small,strong,ol,ul,li,dd,form,label,.section--title,body {
+    font-family: rb-font !important
+}
+
+section.section:not(.py-3):not(.py-5) {
+    padding: 0;
+    margin: 30px auto
+}
+
+img,.circle-action,.btn-primary,.section--title,.not-available-large,.stock-notify {
+    border-radius: 4px !important
+}
