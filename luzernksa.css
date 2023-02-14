@@ -4,8 +4,6 @@
     font-family: "Noto Kufi Arabic","bootstrap-icons"!important;
 }
 
-
-
 body,html,h1,h2,h3,h4,h5,h6,span,button,div,p {
     font-family: 'Almarai',sans-serif,sallaicons,icomoon!important
 }
@@ -1241,15 +1239,10 @@ section.section {
     border: 1px solid #1c1b1b;
     vertical-align: middle;
 }
+
 .sub-nav .main-menu li.sub-menu-header.categories-holder>ul.store-categories>li>a:before,.main-menu>li>a:before {
     content: "\ef39"!important;
 }
-
-
-
-
-
-
 
 .main-menu li:not(.sub-menu-logged-in)>a:before {
     content: "";
@@ -1277,8 +1270,6 @@ section.section {
 .salla-theme_6 .sub-nav .main-menu li.has-children:hover a {
     color: #eee!important
 }
-
-
 
 body > footer > div.footer-header > div > div > div > div > div.store-certificate > a:nth-child(1) > img {
     display: none!important
@@ -1320,21 +1311,6 @@ a.sub-nav__menu.ml-2::after {
 .promotion-title {
     background-color: var(--main-text-color2)!important;
     color: var(--color-ff);
-    animation: pulse 5s infinite!important;
-}
-
-@keyframes pulse {
-    0% {
-        background-color: #fde7c0
-    }
-
-    50% {
-        background-color: #ffe1ab
-    }
-
-    100% {
-        background-color: #ffc45c
-    }
 }
 
 .shipping-bar .free-shipping__label {
@@ -1583,7 +1559,11 @@ body.salla-theme_4 .section-header .section--title span {
     background: #ea2323;
     overflow: inherit;
 }
-body > section.py-5.text-center > div > div.section-header > h2{display:none}
+
+body > section.py-5.text-center > div > div.section-header > h2 {
+    display: none
+}
+
 body > section.py-5.text-center > div > div.section-header:before {
     position: relative;
     content: " آراء العملاء";
@@ -1623,7 +1603,7 @@ body > section.u-white.py-4 > div > div:before {
     border-radius: 7px!important;
     padding: 11px 19px 11px 19px;
 }
- 
+
 .footer-main {
     background: linear-gradient(90deg,transparent,var(--main-color),var(--main-text-color2)) ;
     background-color: var(--main-color)!important;
@@ -1780,7 +1760,6 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
         color: #ffffff99;
     }
 }
-
 
 h4.product-subtitle {
     text-align: center;
