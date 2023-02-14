@@ -1,0 +1,1788 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap'); @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"); .sicon-cart:before {
+    content: "\f179";
+    font-family: "Noto Kufi Arabic","bootstrap-icons"!important;
+}
+
+
+
+body,html,h1,h2,h3,h4,h5,h6,span,button,div,p {
+    font-family: 'Almarai',sans-serif,sallaicons,icomoon!important
+}
+
+body,section.section {
+    background-image: url(https://cdn.salla.sa/avDGG/qmQeGCk8KnWUownmA2wYzlyQV9BDVfSv8gOtGAU1.png)!important;
+    background-size: 50%!important
+}
+
+section.section {
+    background-color: #fff!important
+}
+
+.product {
+    background: #fff
+}
+
+body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a {
+    font-size: 12px;
+    /* margin: 0 -14px 0 0; */
+}
+
+.product-title {
+    color: var(--main-color)!important
+}
+
+.product-price,.product-details__price,.product-price {
+    color: var(--main-text-color2)!important
+}
+
+.product-price,.product-details__price,.product-price:hover {
+    color: #40321e!important;
+    justify-content: center;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a {
+    border: var(--main-text-color2)solid 1px!important
+}
+
+.footer-header {
+    background: #fff!important
+}
+
+.footer-main {
+    background-color: var(--main-color)!important;
+}
+
+@media(max-width: 767px) {
+    .footer-main {
+        background-color: var(--main-color)!important;
+    }
+}
+
+footer .store-certificate img {
+    max-width: 54px;
+    max-height: 38px;
+    margin-left: 4px
+}
+
+.salla-theme_4 .footer-header .footer-payment .icons {
+    padding: 6px 12px 0 20px;
+    border-radius: 17px
+}
+
+.footer-sub {
+    background: linear-gradient(90deg,var(--main-color),var(--main-text-color2))!important;
+    font-size: 18px
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    border-top: 0 solid var(--main-text-color2)!important
+}
+
+@media(max-width: 991px) {
+    .sub-nav .sub-nav-content .main-menu>li {
+        border-bottom:0 solid var(--main-text-color2)!important
+    }
+}
+
+section {
+    background: #fff!important
+}
+
+.u-white .container {
+    background-color: #fff!important
+}
+
+.section-products .container {
+    background: #ffffff7a!important;
+    border: 1px solid #fff!important
+}
+
+.feature-item__icon h3,.feature-item__icon i {
+    color: var(--main-color) !important;
+}
+
+body.salla-theme_4 .section-header .btn.btn-primary.btn-rounded {
+    height: 36px;
+    line-height: 23px;
+    border-radius: 7px 7px 7px 7px!important
+}
+
+.salla-theme_6 .site-header .header-top .sub-nav__menu {
+    height: 30px
+}
+
+.row.header-wrapper {
+    padding: 7px 0
+}
+
+.salla-theme_4 .feature-item__content p {
+    padding: .5rem
+}
+
+.feature-item:not(:last-child) {
+    margin-bottom: 1rem
+}
+
+.footer-payment {
+    text-align: center
+}
+
+.not-available {
+    color: #f00;
+    animation: flash 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite
+}
+
+.sub-nav .sub-nav-content.is-active {
+    border-radius: 1rem 0 0 1rem
+}
+
+.circle-action {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: 0;
+    color: #fff;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+
+.sub-nav__close svg {
+    width: 35px;
+    height: 35px;
+    fill: #ffffff;
+}
+
+#sort #sort-toggle {
+    border-radius: 7px;
+    transition: all .35s cubic-bezier(0.2,1,0.3,1)
+}
+
+.product {
+    border: #d9d0c4 solid 5.5px;
+    border-radius: 10px!important
+}
+
+.feature-item:last-child>.feature-item__icon>i.sicon-calendar-check:before {
+    content: "\E961"!important
+}
+
+.section--title.mb-4:before {
+    content: "";
+    visibility: visible;
+    display: block
+}
+
+.circle-action.next,.circle-action.prev {
+    color: #fff;
+    border-color: #fff
+}
+
+.salla-theme_4 .feature-item__content .feature-item__icon i[class^="sicon-"] {
+    font-size: 30px;
+    margin: 0
+}
+
+.feature-item__icon::before {
+    display: none!important
+}
+
+.feature-item h3,.feature-item p {
+    margin-top: 0!important;
+    visibility: visible!important;
+    color: #8a8a8a!important;
+    margin-bottom: 0!important
+}
+
+.pt-5,.py-5 {
+    padding-top: 0!important
+}
+
+.pb-5,.py-5 {
+    padding-bottom: 2rem!important
+}
+
+.feature-item h3 {
+    padding-bottom: 5px!important
+}
+
+.mb-4,.my-4 {
+    margin-bottom: .5rem!important
+}
+
+.pb-5,.py-5 {
+    padding-bottom: 5px!important
+}
+
+.product {
+    border: var(--main-color)solid 2.5px;
+    border-radius: 16px!important
+}
+
+footer .footer-sub .footer-wrapper img,footer .footer-sub .fs-cont img {
+    width: unset!important;
+    max-width: unset!important;
+    height: 25px;
+    background: var(--main-color)!important;
+    padding: 2px 7px!important;
+    border-radius: 0
+}
+
+.sub-nav-header a {
+    color: var(--main-text-color2)!important;
+    background: var(--color-bg);
+    border: #d9d0c4 solid 2px!important;
+    border-radius: 8px 8px 8px 8px!important;
+    box-shadow: 2.5px 2.5px 5px #00000029,-2.5px -2.5px 5px #ffffff14;
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    padding: 5px 15px!important
+}
+
+.sub-nav-header a {
+    color: #fff!important;
+}
+
+.sub-nav-header a:hover {
+    color: #fff!important;
+    background: var(--main-text-color2) !important;
+    border: #fff solid 2px!important
+}
+
+.salla-theme_6 .site-header .header-top .sub-nav__menu {
+    right: 10px;
+    position: absolute
+}
+
+.site-header .header-wrapper .sub-nav__menu svg {
+    fill: var(--main-color)!important;
+    filter: brightness(84.5);
+}
+
+.circle-action:hover {
+    background: #fff;
+    color: #d9d0c4;
+    border-radius: 8px 8px 8px 8px!important
+}
+
+.salla-theme_6 .site-header__mine-cart .badge {
+    background-color: #d9d0c4
+}
+
+.badge {
+    color: var(--main-color);
+    border-radius: 6px 6px 6px 6px!important
+}
+
+.site-header__cart .badge {
+    border: 2px solid #fff
+}
+
+.slick-active button {
+    background-color: var(--main-text-color2)!important
+}
+
+.slick-dots li button {
+    width: 20px;
+    height: 4px;
+    padding: 0;
+    border-radius: 2px;
+    background-color: #d9d0c4
+}
+
+.site-header,.main-slider img,body.salla-theme_4 .section-header .section--title span,body > section.u-white.py-4 > div > div:before,.a2a_kit.a2a_kit_size_32.a2a_default_style,body > section.py-5.text-center > div > div.section-header:before {
+    background: linear-gradient(to left,var(--main-color),var(--main-text-color2))!important
+}
+
+.salla-theme_1 footer .footer-sub .footer-wrapper {
+    flex-direction: column;
+    text-align: left
+}
+
+.footer-main * {
+    text-align: center!important
+}
+
+.footer-sub {
+    font-size: 18px
+}
+
+.salla-theme_6 .site-header .header-top .logo-wrapper {
+    align-items: center
+}
+
+.salla-theme_6 .site-header .header-top .logo-wrapper {
+    width: calc(60% - 0);
+    align-content: center!important;
+    text-align: center!important;
+    justify-content: right!important
+}
+
+#search {
+    position: relative;
+    display: none
+}
+
+.login-link {
+    display: none;
+    right: auto;
+    padding: 0;
+    margin-left: 7px;
+    max-height: auto;
+    font-size: 16px
+}
+
+.salla-theme_4 .site-header .logo-wrapper .logo img {
+    width: auto;
+    height: auto;
+    max-width: 190px;
+    max-height: 65px;
+    display: none;
+}
+
+@media(min-width: 992px) {
+    .salla-theme_4 .site-header .logo-wrapper .logo img {
+        width:auto;
+        height: auto;
+        max-width: 198px;
+        max-height: 66px;
+        margin: -15px 0 -15px 0;
+        background: #fff;
+        border-radius: 6px;
+    }
+}
+
+.bg-brand {
+    background: #f2f2f2!important
+}
+
+.footer-main {
+    border-radius: 1rem 1rem 0 0!important
+}
+
+.footer-main a,.footer-main p,.footer-sub p:before,a.sub-nav__menu.ml-2::after {
+    color: #ffffff;
+    font-size: 11.5pt;
+    /* filter: brightness(133.5); */
+}
+
+.footer-title span,.social__item a,.store-contact a {
+    color: var(--color-bg);
+}
+
+.social__item a {
+    border-color: #d9d0c4!important
+}
+
+.section--title {
+    position: relative;
+    color: var(--main-color);
+    font-size: 18px;
+    margin-right: -10px
+}
+
+.testimonials-item cite {
+    color: #545454
+}
+
+body {
+    color: #545454
+}
+
+.testimonials-item p:before {
+    border-top-color: #fff
+}
+
+.testimonials-item img {
+    border-radius: 50%!important
+}
+
+.category-featured::before,.feature-item::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    opacity: 0
+}
+
+.category-featured:hover::before,.feature-item:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s
+}
+
+.product {
+    border: #e6e6e6 solid 1px
+}
+
+.product .product-footer {
+    display: block!important
+}
+
+.product .product-footer .sicon-cart:before {
+    content: "اضافة للسلة ";
+    font-family: 'Almarai',sans-serif,sallaicons,icomoon!important;
+    font-weight: 100;
+    font-size: 16px;
+    vertical-align: inherit;
+    color: #d9d0c4;
+    margin-top: 12px!important;
+    display: block;
+    border-radius: 10px!important
+}
+
+.product .product-footer .product-add {
+    display: block;
+    border: 1px solid var(--color-main) !important;
+    background: var(--color-bg);
+    padding-bottom: 8px;
+    padding-top: 0;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: 700;
+    border-radius: 10px !important;
+    text-align: center;
+    color: #fff !important;
+    border: transparent solid 1px;
+    height: 35px !important;
+    width: 80%;
+}
+
+.add_to_cart_btn {
+    color: #fff!important
+}
+
+.product .product-footer .product-add:hover {
+    background: linear-gradient(to left,var(--main-color),var(--main-text-color2))!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li,.sub-nav .main-menu li.sub-menu-header.categories-holder>span,.sub-nav .sub-nav-content,.sub-nav-header {
+    background: transparent!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li {
+    border: none!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a {
+    color: #fff!important;
+    margin: 5px;
+    border: #d9d0c4 solid 1px;
+    border-radius: 10px 10px 10px 10px!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li>ul>li a {
+    color: #171717!important;
+    background: 0 0!important
+}
+
+.sub-nav-header img {
+    display: none!important;
+    padding-bottom: 2px!important;
+    padding-top: 2px!important
+}
+
+.sub-nav-header::before {
+    content: "";
+    text-align: center!important;
+    display: block;
+    height: 70px!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: top center!important
+}
+
+.salla-theme_4 .category-featured {
+    margin-bottom: 10px!important
+}
+
+.product .product-footer .product-add {
+    order: 2!important
+}
+
+body.salla-theme_4 .product .product-footer {
+    display: flex!important;
+    flex-direction: column!important
+}
+
+.lightener h2 {
+    display: none!important
+}
+
+.mb-4,.my-4 {
+    margin-bottom: .5rem!important
+}
+
+.sub-nav-header::before {
+    content: "";
+    text-align: center!important;
+    display: block;
+    height: 71px!important;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 294.92 189.87'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D .cls-2 %7B fill: %23fdd900; %7D .cls-3 %7B fill: %2347bccc; %7D .cls-4 %7B fill: %23a2b53c; %7D .cls-5 %7B fill: %230e4355; %7D %3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath class='cls-5' d='m5.51,110.35H0v31.08h18.3v-4.94H5.51v-26.14Zm32.19,17.89c0,3.01-.59,5.22-1.77,6.57-.97,1.11-2.34,1.65-4.19,1.65s-3.14-.54-4.09-1.65c-1.14-1.34-1.72-3.55-1.72-6.58v-12.62c0-2.91-2.36-5.27-5.27-5.27h-.15v17.79c0,4.58,1.08,8.04,3.21,10.28,1.9,2,4.6,3.02,8.02,3.02s6.11-1.02,8.01-3.02c2.13-2.24,3.21-5.7,3.21-10.28v-17.79h0c-2.91,0-5.27,2.36-5.27,5.27v12.62Zm31.31-14.52v-3.37h-20.44v4.94h13.3l-14.69,22.77v3.37h21.97v-4.94h-14.83l14.69-22.77Zm8.77,13.91h11.1v-4.94h-11.1v-7.4h13.16v-4.94h-18.67v31.08h19.12v-4.94h-13.61v-8.87Zm35.36-.91c2.11-1.67,3.23-4.17,3.23-7.23s-1.1-5.59-3.26-7.14c-1.86-1.33-4.51-2-7.88-2h-10.07v31.08h5.51v-12.38h3.88l7.05,12.38h6.3l-7.67-13.16c1.1-.38,2.08-.91,2.91-1.56Zm-12.47-11.56h4.02c2.2,0,3.75.33,4.74,1.01.98.68,1.44,1.73,1.44,3.32s-.48,2.76-1.48,3.54c-1.03.8-2.61,1.21-4.69,1.21h-4.02v-9.08Zm37.21-4.81v16.06c0,1.81.1,3.68.22,5.53l-1.4-2.69-10.88-18.9h-5.26v31.08h5.33v-16.23c0-1.79-.1-3.59-.21-5.36l1.4,2.67,10.88,18.92h5.26v-31.08h-5.33Zm-85.95,77.91c-2.08-1.07-3.67-2.62-4.77-4.64-1.1-2.02-1.64-4.45-1.64-7.27v-1.75h5.8v1.75c0,2.82.71,5.02,2.12,6.58,1.41,1.57,3.4,2.35,5.97,2.35,1.69,0,3.14-.35,4.35-1.06,1.21-.71,2.13-1.73,2.78-3.07.64-1.34.96-2.95.96-4.81v-12.49c0-3.2,2.6-5.8,5.8-5.8h0v18.29c0,2.84-.55,5.26-1.64,7.28-1.1,2.02-2.68,3.56-4.76,4.63-2.08,1.07-4.57,1.6-7.49,1.6s-5.39-.53-7.48-1.6Zm5.18-26.29c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm18.02,23.44c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm13.84,0c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm7.83-31.83c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm36.01,21.25v4.12l-.68.23h-4.89c-.57,3.59-2.07,6.27-4.47,8.03-2.41,1.76-5.79,2.64-10.14,2.64h-2.63v-4.57h2.42c2.67,0,4.72-.48,6.15-1.43,1.43-.96,2.37-2.51,2.82-4.66h-2.95c-4,0-6.99-.91-8.95-2.74-1.96-1.83-2.95-4.6-2.95-8.31,0-2.09.45-3.96,1.34-5.61.89-1.65,2.13-2.93,3.73-3.84,1.59-.92,3.4-1.38,5.43-1.38s3.87.46,5.46,1.39c1.59.93,2.82,2.26,3.7,4.01.88,1.75,1.33,3.83,1.33,6.24v5.66h4.6l.68.23Zm-18.95-1.84c1,1.08,2.53,1.61,4.59,1.61h3.29v-5.66c0-2.32-.39-4.07-1.18-5.27-.79-1.19-1.96-1.79-3.51-1.79-.91,0-1.71.27-2.42.8-.71.53-1.27,1.27-1.67,2.21-.4.94-.6,2.02-.6,3.23,0,2.17.5,3.79,1.51,4.87Zm29.03-26.63v32.82h-10.76l-.68-.23v-4.12l.68-.23h4.96v-22.45c0-3.2,2.6-5.8,5.8-5.8h0Z'/%3E%3Cpath class='cls-5' d='m275.89,103v-1.77c0-.34,0-.68,0-1.03V0h-4.06c-25.07,0-45.46,20.39-45.46,45.46v55.68c-13.67,11.93-19.41,31.47-12.96,49.56l.18.51s0,0,0,0c-2.98,2.54-5.63,5.46-7.87,8.68v-73.04c0-25.07-20.4-45.46-45.47-45.46h-4.06v103c0,23.7,18.23,43.22,41.4,45.28,1.34.12,2.69.18,4.06.18h28.77c25.07,0,45.47-20.39,45.47-45.46v-4.06h-19.57c11.82-8.22,19.57-21.89,19.57-37.34Zm-111.57,41.4V49.74c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Zm70.17-98.94c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Zm9.19,54.79l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Zm-13.25,81.49h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28ZM294.92,7.84c0,4.45-3.49,7.94-8.03,7.94s-8.08-3.49-8.08-7.94,3.59-7.84,8.08-7.84,8.03,3.49,8.03,7.84Zm-14.11,0c0,3.49,2.58,6.26,6.12,6.26s5.98-2.77,5.98-6.22-2.53-6.31-6.03-6.31-6.07,2.82-6.07,6.26Zm4.83,4.11h-1.82v-7.84c.72-.14,1.72-.24,3.01-.24,1.48,0,2.15.24,2.73.57.43.33.77.96.77,1.72,0,.86-.67,1.53-1.63,1.82v.1c.77.29,1.2.86,1.43,1.91.24,1.2.38,1.67.57,1.96h-1.96c-.24-.29-.38-1-.62-1.91-.14-.86-.62-1.24-1.63-1.24h-.86v3.16Zm.05-4.45h.86c1,0,1.82-.33,1.82-1.15,0-.72-.53-1.2-1.67-1.2-.48,0-.81.05-1,.1v2.25Z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='cls-2' d='m164.32,144.3V49.63c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Z'/%3E%3Cpath class='cls-1' d='m234.49,45.35c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Z'/%3E%3Cpath class='cls-3' d='m243.68,100.15l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Z'/%3E%3Cpath class='cls-4' d='m230.42,181.63h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: top center!important;
+    margin: 4px 44px 10px;
+    /* filter: invert(1) hue-rotate(178deg); */
+    /* filter: brightness(99.5); */
+}
+
+.u-white .container {
+    background-color: #fff!important;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 0!important
+}
+
+.u-white .container {
+    padding-top: 0!important
+}
+
+.feature-item {
+    background: 0 0!important;
+    box-shadow: unset!important
+}
+
+.u-white .container {
+    background-color: #fff!important;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 0!important
+}
+
+.u-white .container {
+    padding-top: 0!important
+}
+
+.salla-theme_4 .feature-item__content p {
+    padding: .5rem;
+    padding-bottom: .5rem;
+    width: 100%!important;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-height: 60px;
+    border-radius: 0 5rem!important
+}
+
+.feature-item {
+    background: 0 0!important;
+    box-shadow: unset!important
+}
+
+.feature-item__content {
+    background: 0 0!important;
+    box-shadow: unset!important
+}
+
+.footer-main,.salla-theme_4 .feature-item__content .feature-item__icon,.salla-theme_4 .feature-item__content p,.site-header {
+    padding-right: 0rem!important
+}
+
+.sub-nav .sub-nav-content {
+    background: 0 0!important
+}
+
+.salla-theme_4 .feature-item__content .feature-item__icon {
+    color: #1f1f1f!important
+}
+
+.category-featured:hover::before,.feature-item:hover::before,.product:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s
+}
+
+@keyframes mvt {
+    0% {
+        transform: scale(0.8)
+    }
+
+    40% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes tournemoi {
+    0% {
+        transform: rotate(-2deg)
+    }
+
+    40% {
+        transform: rotate(2deg)
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
+
+.product:hover {
+    animation: tournemoi ease 1s
+}
+
+.product,.product img {
+    border: #e6e6e6 solid 1px;
+    border-radius: 10px!important
+}
+
+section.section {
+    padding: .5rem 0!important
+}
+
+.footer-sub p {
+    max-height: 30px!important;
+    line-height: 30px!important;
+    overflow: hidden!important
+}
+
+.salla-theme_4 .footer-header .icons .store-certificate img {
+    max-width: 60px!important;
+    max-height: 40px!important
+}
+
+.footer-item:first-of-type .footer-title {
+    /* display: none */
+}
+
+.main-slider {
+    max-width: 100%!important;
+    margin: auto;
+    margin-bottom: auto
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li>ul>li a {
+    color: #fff!important;
+    background: 0 0!important
+}
+
+@media screen and (max-width: 777px) {
+    .footer-sub p {
+        max-height:30px!important;
+        line-height: 14px!important;
+        overflow: hidden!important;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    footer .store-certificate * {
+        font-size:13px;
+        color: #fff
+    }
+
+    footer .store-certificate b {
+        font-size: 13px;
+        color: #fff
+    }
+}
+
+a.circle-action.next.button-next,a.circle-action.prev.button-prev,a.circle-action.next.button-more {
+    border: 0 solid #fff
+}
+
+.circle-action.next,.circle-action.prev {
+    color: var(--main-color)!important;
+    background: #fff
+}
+
+.login-link {
+    display: unset!important
+}
+
+#search {
+    position: relative;
+    display: unset!important
+}
+
+.site-header {
+    padding-right: 0rem!important
+}
+
+.product .product-footer .sicon-cart::before {
+    content: " إضافة للسلة ";
+    font-family: 'Almarai',sans-serif,sallaicons,icomoon!important;
+    font-weight: 700;
+    font-size: 18px;
+    vertical-align: inherit;
+    color: #ffffff;
+    margin-top: 5px!important;
+    display: block;
+    /* margin: 11px 0 0 0!important; */
+}
+
+@media(max-width: 767px) {
+    .product .product-footer .sicon-cart::before {
+        /* margin: 20px 0 0 0!important; */
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    color: var(--color-bg);
+}
+
+.sub-nav .sub-nav-content.is-active {
+    background: var(--main-color)!important ;
+}
+
+.sub-nav-content.is-active .main-menu>li>a {
+    color: #fff!important
+}
+
+.sub-nav-content.is-active .main-menu>li>a>i {
+    color: #eab368!important
+}
+
+.sub-nav .main-menu>li>a {
+    color: #fff!important
+}
+
+p.mb-4.mb-md-0 {
+    color: #fff!important
+}
+
+.social__item a:hover {
+    background: #222228!important
+}
+
+section {
+    background: #fff!important
+}
+
+span.sicon-instagram {
+    color: #ff75c8!important;
+    font-size: 100%
+}
+
+span.sicon-snapchat {
+    color: var(--main-text-color2)!important;
+    font-size: 100%
+}
+
+span.sicon-facebook {
+    color: #8694fb!important;
+    font-size: 100%
+}
+
+.footer-main .container:before {
+    text-align: center;
+    content: "";
+    display: block;
+    height: 152px;
+    width: 216px;
+    margin: auto auto 20px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 294.92 189.87'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D .cls-2 %7B fill: %23fdd900; %7D .cls-3 %7B fill: %2347bccc; %7D .cls-4 %7B fill: %23a2b53c; %7D .cls-5 %7B fill: %230e4355; %7D %3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath class='cls-5' d='m5.51,110.35H0v31.08h18.3v-4.94H5.51v-26.14Zm32.19,17.89c0,3.01-.59,5.22-1.77,6.57-.97,1.11-2.34,1.65-4.19,1.65s-3.14-.54-4.09-1.65c-1.14-1.34-1.72-3.55-1.72-6.58v-12.62c0-2.91-2.36-5.27-5.27-5.27h-.15v17.79c0,4.58,1.08,8.04,3.21,10.28,1.9,2,4.6,3.02,8.02,3.02s6.11-1.02,8.01-3.02c2.13-2.24,3.21-5.7,3.21-10.28v-17.79h0c-2.91,0-5.27,2.36-5.27,5.27v12.62Zm31.31-14.52v-3.37h-20.44v4.94h13.3l-14.69,22.77v3.37h21.97v-4.94h-14.83l14.69-22.77Zm8.77,13.91h11.1v-4.94h-11.1v-7.4h13.16v-4.94h-18.67v31.08h19.12v-4.94h-13.61v-8.87Zm35.36-.91c2.11-1.67,3.23-4.17,3.23-7.23s-1.1-5.59-3.26-7.14c-1.86-1.33-4.51-2-7.88-2h-10.07v31.08h5.51v-12.38h3.88l7.05,12.38h6.3l-7.67-13.16c1.1-.38,2.08-.91,2.91-1.56Zm-12.47-11.56h4.02c2.2,0,3.75.33,4.74,1.01.98.68,1.44,1.73,1.44,3.32s-.48,2.76-1.48,3.54c-1.03.8-2.61,1.21-4.69,1.21h-4.02v-9.08Zm37.21-4.81v16.06c0,1.81.1,3.68.22,5.53l-1.4-2.69-10.88-18.9h-5.26v31.08h5.33v-16.23c0-1.79-.1-3.59-.21-5.36l1.4,2.67,10.88,18.92h5.26v-31.08h-5.33Zm-85.95,77.91c-2.08-1.07-3.67-2.62-4.77-4.64-1.1-2.02-1.64-4.45-1.64-7.27v-1.75h5.8v1.75c0,2.82.71,5.02,2.12,6.58,1.41,1.57,3.4,2.35,5.97,2.35,1.69,0,3.14-.35,4.35-1.06,1.21-.71,2.13-1.73,2.78-3.07.64-1.34.96-2.95.96-4.81v-12.49c0-3.2,2.6-5.8,5.8-5.8h0v18.29c0,2.84-.55,5.26-1.64,7.28-1.1,2.02-2.68,3.56-4.76,4.63-2.08,1.07-4.57,1.6-7.49,1.6s-5.39-.53-7.48-1.6Zm5.18-26.29c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm18.02,23.44c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm13.84,0c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm7.83-31.83c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm36.01,21.25v4.12l-.68.23h-4.89c-.57,3.59-2.07,6.27-4.47,8.03-2.41,1.76-5.79,2.64-10.14,2.64h-2.63v-4.57h2.42c2.67,0,4.72-.48,6.15-1.43,1.43-.96,2.37-2.51,2.82-4.66h-2.95c-4,0-6.99-.91-8.95-2.74-1.96-1.83-2.95-4.6-2.95-8.31,0-2.09.45-3.96,1.34-5.61.89-1.65,2.13-2.93,3.73-3.84,1.59-.92,3.4-1.38,5.43-1.38s3.87.46,5.46,1.39c1.59.93,2.82,2.26,3.7,4.01.88,1.75,1.33,3.83,1.33,6.24v5.66h4.6l.68.23Zm-18.95-1.84c1,1.08,2.53,1.61,4.59,1.61h3.29v-5.66c0-2.32-.39-4.07-1.18-5.27-.79-1.19-1.96-1.79-3.51-1.79-.91,0-1.71.27-2.42.8-.71.53-1.27,1.27-1.67,2.21-.4.94-.6,2.02-.6,3.23,0,2.17.5,3.79,1.51,4.87Zm29.03-26.63v32.82h-10.76l-.68-.23v-4.12l.68-.23h4.96v-22.45c0-3.2,2.6-5.8,5.8-5.8h0Z'/%3E%3Cpath class='cls-5' d='m275.89,103v-1.77c0-.34,0-.68,0-1.03V0h-4.06c-25.07,0-45.46,20.39-45.46,45.46v55.68c-13.67,11.93-19.41,31.47-12.96,49.56l.18.51s0,0,0,0c-2.98,2.54-5.63,5.46-7.87,8.68v-73.04c0-25.07-20.4-45.46-45.47-45.46h-4.06v103c0,23.7,18.23,43.22,41.4,45.28,1.34.12,2.69.18,4.06.18h28.77c25.07,0,45.47-20.39,45.47-45.46v-4.06h-19.57c11.82-8.22,19.57-21.89,19.57-37.34Zm-111.57,41.4V49.74c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Zm70.17-98.94c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Zm9.19,54.79l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Zm-13.25,81.49h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28ZM294.92,7.84c0,4.45-3.49,7.94-8.03,7.94s-8.08-3.49-8.08-7.94,3.59-7.84,8.08-7.84,8.03,3.49,8.03,7.84Zm-14.11,0c0,3.49,2.58,6.26,6.12,6.26s5.98-2.77,5.98-6.22-2.53-6.31-6.03-6.31-6.07,2.82-6.07,6.26Zm4.83,4.11h-1.82v-7.84c.72-.14,1.72-.24,3.01-.24,1.48,0,2.15.24,2.73.57.43.33.77.96.77,1.72,0,.86-.67,1.53-1.63,1.82v.1c.77.29,1.2.86,1.43,1.91.24,1.2.38,1.67.57,1.96h-1.96c-.24-.29-.38-1-.62-1.91-.14-.86-.62-1.24-1.63-1.24h-.86v3.16Zm.05-4.45h.86c1,0,1.82-.33,1.82-1.15,0-.72-.53-1.2-1.67-1.2-.48,0-.81.05-1,.1v2.25Z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='cls-2' d='m164.32,144.3V49.63c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Z'/%3E%3Cpath class='cls-1' d='m234.49,45.35c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Z'/%3E%3Cpath class='cls-3' d='m243.68,100.15l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Z'/%3E%3Cpath class='cls-4' d='m230.42,181.63h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* filter: brightness(78.5); */
+}
+
+.add-cart-large,.order-btn {
+    /* background: var(--main-text-color2)!important; */
+    /* border-color: var(--main-text-color2)!important; */
+}
+
+.product .product-title {
+    text-align: center;
+    line-height: 1.4;
+}
+
+p.mb-4.mb-md-0 {
+    color: #fff!important
+}
+
+.footer-sub a {
+    color: transparent!important;
+    text-decoration: underline
+}
+
+section {
+    background: #fff!important
+}
+
+.u-white .container {
+    background-color: #fff!important
+}
+
+.section-header .section--title span {
+    color: var(--main-color);
+    background: #fff
+}
+
+body.salla-theme_1 .section-header .btn.btn-primary.btn-rounded,body.salla-theme_2 .section-header .btn.btn-primary.btn-rounded,body.salla-theme_4 .section-header .btn.btn-primary.btn-rounded {
+    height: 36px;
+    font-size: 15px;
+    color: #ffffff!important;
+    border-color: var(--main-text-color2)!important;
+    padding: 0 15px;
+    background: linear-gradient(to left,var(--main-text-color2),var(--main-text-color2))!important;
+    transition: all .35s cubic-bezier(0.2,1,0.3,1);
+}
+
+.login-link,.contact-link,.notification-link,.store-contact a,.store-header-min .back-icon,.circle-action,#cl_toggle {
+    color: #fff!important;
+    border-color: var(--main-color)!important;
+    margin: 5px 0 0 0;
+}
+
+button.circle-action.ml-md-2.toggle-search {
+    margin: 6px 8px 1px 1px
+}
+
+.site-header__cart .badge {
+    color: #fff!important;
+    border: 2px solid var(--main-color)!important;
+    background: var(--main-color);
+}
+
+.breadcrumb>.active {
+    color: #fff!important
+}
+
+.slick-list.draggable {
+    border-radius: 0 0 42px 42px
+}
+
+.product-form {
+    padding: 1rem;
+    background: #fff!important;
+    border: 1px solid var(--main-text-color2)!important;
+    border-radius: 4px
+}
+
+.product-form,.product-options {
+    background-color: #fff!important;
+    padding: 20px!important;
+    border: 1px solid var(--main-text-color2)!important;
+    border-radius: 3px
+}
+
+.product-option-name {
+    color: #fff!important
+}
+
+.cart-fav .btn-rounded.add-to-wishlist i,.cart-fav .btn-rounded.remove-from-wishlist i {
+    color: var(--main-color)!important;
+}
+
+.a2a_svg {
+    -webkit-filter: none;
+    filter: none;
+    opacity: .9
+}
+
+.product-cart,.cart-total-box {
+    width: 100%;
+    border: 1px solid #cecece!important
+}
+
+.product-cart {
+    position: relative;
+    width: 95%;
+    margin: 0 auto 30px;
+    border-radius: 5px
+}
+
+.cart-total-box {
+    position: relative;
+    width: 95%;
+    height: 62px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 4px
+}
+
+.cart-nav-submit,.cart-nav-more,.cart-nav-solid {
+    background: #1b1829!important;
+    border-color: #1b1829!important
+}
+
+#cart-content #cartTotal {
+    color: var(--main-text-color2)!important
+}
+
+.delete-button {
+    color: var(--main-text-color2)!important;
+    border: 2px solid var(--main-text-color2)!important
+}
+
+.cart-number,.active-step .cart-number {
+    color: var(--main-text-color2)!important;
+    border-color: var(--main-text-color2)!important;
+    background: #1b1829
+}
+
+@media only screen and (max-width: 767px) {
+    body:not(.salla-default) .cart-fav {
+        position:fixed!important;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+        padding: 10px;
+        background-color: #1b1829!important;
+        z-index: 9999
+    }
+
+    a.add-cart-large.add_to_cart_large_btn {
+        font-size: 18px
+    }
+}
+
+.circle-action:hover {
+    background: var(--main-text-color2)!important;
+    color: var(--main-color)!important
+}
+
+ul.list.brands-list li {
+    background: #fff;
+    border-radius: 12px
+}
+
+ul.list.brands-list li:hover {
+    animation: tournemoi ease 1s
+}
+
+body:not(.salla-theme_6) .category-featured {
+    border-radius: 26px
+}
+
+.breadcrumb>.active {
+    color: #16414f!important
+}
+
+.product-details__title {
+    color: #154755!important
+}
+
+.product-option-name {
+    color: #164855!important
+}
+
+.login-form .panel-title::before {
+    content: "";
+    text-align: center!important;
+    display: block;
+    height: 124px!important;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 294.92 189.87'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D .cls-2 %7B fill: %23fdd900; %7D .cls-3 %7B fill: %2347bccc; %7D .cls-4 %7B fill: %23a2b53c; %7D .cls-5 %7B fill: %230e4355; %7D %3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath class='cls-5' d='m5.51,110.35H0v31.08h18.3v-4.94H5.51v-26.14Zm32.19,17.89c0,3.01-.59,5.22-1.77,6.57-.97,1.11-2.34,1.65-4.19,1.65s-3.14-.54-4.09-1.65c-1.14-1.34-1.72-3.55-1.72-6.58v-12.62c0-2.91-2.36-5.27-5.27-5.27h-.15v17.79c0,4.58,1.08,8.04,3.21,10.28,1.9,2,4.6,3.02,8.02,3.02s6.11-1.02,8.01-3.02c2.13-2.24,3.21-5.7,3.21-10.28v-17.79h0c-2.91,0-5.27,2.36-5.27,5.27v12.62Zm31.31-14.52v-3.37h-20.44v4.94h13.3l-14.69,22.77v3.37h21.97v-4.94h-14.83l14.69-22.77Zm8.77,13.91h11.1v-4.94h-11.1v-7.4h13.16v-4.94h-18.67v31.08h19.12v-4.94h-13.61v-8.87Zm35.36-.91c2.11-1.67,3.23-4.17,3.23-7.23s-1.1-5.59-3.26-7.14c-1.86-1.33-4.51-2-7.88-2h-10.07v31.08h5.51v-12.38h3.88l7.05,12.38h6.3l-7.67-13.16c1.1-.38,2.08-.91,2.91-1.56Zm-12.47-11.56h4.02c2.2,0,3.75.33,4.74,1.01.98.68,1.44,1.73,1.44,3.32s-.48,2.76-1.48,3.54c-1.03.8-2.61,1.21-4.69,1.21h-4.02v-9.08Zm37.21-4.81v16.06c0,1.81.1,3.68.22,5.53l-1.4-2.69-10.88-18.9h-5.26v31.08h5.33v-16.23c0-1.79-.1-3.59-.21-5.36l1.4,2.67,10.88,18.92h5.26v-31.08h-5.33Zm-85.95,77.91c-2.08-1.07-3.67-2.62-4.77-4.64-1.1-2.02-1.64-4.45-1.64-7.27v-1.75h5.8v1.75c0,2.82.71,5.02,2.12,6.58,1.41,1.57,3.4,2.35,5.97,2.35,1.69,0,3.14-.35,4.35-1.06,1.21-.71,2.13-1.73,2.78-3.07.64-1.34.96-2.95.96-4.81v-12.49c0-3.2,2.6-5.8,5.8-5.8h0v18.29c0,2.84-.55,5.26-1.64,7.28-1.1,2.02-2.68,3.56-4.76,4.63-2.08,1.07-4.57,1.6-7.49,1.6s-5.39-.53-7.48-1.6Zm5.18-26.29c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm18.02,23.44c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm13.84,0c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm7.83-31.83c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm36.01,21.25v4.12l-.68.23h-4.89c-.57,3.59-2.07,6.27-4.47,8.03-2.41,1.76-5.79,2.64-10.14,2.64h-2.63v-4.57h2.42c2.67,0,4.72-.48,6.15-1.43,1.43-.96,2.37-2.51,2.82-4.66h-2.95c-4,0-6.99-.91-8.95-2.74-1.96-1.83-2.95-4.6-2.95-8.31,0-2.09.45-3.96,1.34-5.61.89-1.65,2.13-2.93,3.73-3.84,1.59-.92,3.4-1.38,5.43-1.38s3.87.46,5.46,1.39c1.59.93,2.82,2.26,3.7,4.01.88,1.75,1.33,3.83,1.33,6.24v5.66h4.6l.68.23Zm-18.95-1.84c1,1.08,2.53,1.61,4.59,1.61h3.29v-5.66c0-2.32-.39-4.07-1.18-5.27-.79-1.19-1.96-1.79-3.51-1.79-.91,0-1.71.27-2.42.8-.71.53-1.27,1.27-1.67,2.21-.4.94-.6,2.02-.6,3.23,0,2.17.5,3.79,1.51,4.87Zm29.03-26.63v32.82h-10.76l-.68-.23v-4.12l.68-.23h4.96v-22.45c0-3.2,2.6-5.8,5.8-5.8h0Z'/%3E%3Cpath class='cls-5' d='m275.89,103v-1.77c0-.34,0-.68,0-1.03V0h-4.06c-25.07,0-45.46,20.39-45.46,45.46v55.68c-13.67,11.93-19.41,31.47-12.96,49.56l.18.51s0,0,0,0c-2.98,2.54-5.63,5.46-7.87,8.68v-73.04c0-25.07-20.4-45.46-45.47-45.46h-4.06v103c0,23.7,18.23,43.22,41.4,45.28,1.34.12,2.69.18,4.06.18h28.77c25.07,0,45.47-20.39,45.47-45.46v-4.06h-19.57c11.82-8.22,19.57-21.89,19.57-37.34Zm-111.57,41.4V49.74c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Zm70.17-98.94c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Zm9.19,54.79l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Zm-13.25,81.49h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28ZM294.92,7.84c0,4.45-3.49,7.94-8.03,7.94s-8.08-3.49-8.08-7.94,3.59-7.84,8.08-7.84,8.03,3.49,8.03,7.84Zm-14.11,0c0,3.49,2.58,6.26,6.12,6.26s5.98-2.77,5.98-6.22-2.53-6.31-6.03-6.31-6.07,2.82-6.07,6.26Zm4.83,4.11h-1.82v-7.84c.72-.14,1.72-.24,3.01-.24,1.48,0,2.15.24,2.73.57.43.33.77.96.77,1.72,0,.86-.67,1.53-1.63,1.82v.1c.77.29,1.2.86,1.43,1.91.24,1.2.38,1.67.57,1.96h-1.96c-.24-.29-.38-1-.62-1.91-.14-.86-.62-1.24-1.63-1.24h-.86v3.16Zm.05-4.45h.86c1,0,1.82-.33,1.82-1.15,0-.72-.53-1.2-1.67-1.2-.48,0-.81.05-1,.1v2.25Z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='cls-2' d='m164.32,144.3V49.63c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Z'/%3E%3Cpath class='cls-1' d='m234.49,45.35c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Z'/%3E%3Cpath class='cls-3' d='m243.68,100.15l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Z'/%3E%3Cpath class='cls-4' d='m230.42,181.63h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: top center!important;
+    margin: 25px;
+    /* filter: brightness(82.5); */
+}
+
+.login-form .panel-title .icon-object {
+    display: none!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a {
+    color: #fff!important;
+    margin: 5px;
+    border: #1f1a13 solid 0!important;
+    border-radius: 10px 10px 10px 10px!important;
+    background: var(--color-bg);
+    box-shadow: 2.5px 2.5px 5px #22232c94,-2.5px -2.5px 5px #21232e00;
+    font-family: 'Almarai',sans-serif,sallaicons,icomoon!important;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a:hover {
+    background: linear-gradient(to left,var(--main-text-color2),transparent)!important
+}
+
+.sub-nav .main-menu li#ls_switcher_mobile a:before {
+    color: var(--main-text-color2)
+}
+
+.cart-nav-submit,.cart-nav-more,.cart-nav-solid {
+    background: linear-gradient(to left,var(--main-color),var(--main-text-color2))!important;
+    border-color: aliceblue!important
+}
+
+.social__item a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    color: var(--color-ff);
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0 solid rgba(0,0,0,.2);
+    font-size: 18px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    box-shadow: 2.5px 2.5px 5px #00000017, -2.5px -2.5px 5px #ffffff2b;
+}
+
+.cart-number,.active-step .cart-number {
+    color: #fff!important;
+    border-color: var(--main-text-color2)!important;
+    background: linear-gradient(to left,var(--main-color),var(--main-text-color2))!important
+}
+
+.a2a_kit.a2a_kit_size_32.a2a_default_style {
+    /* background: linear-gradient(to left,#632c5a,var(--main-text-color2))!important; */
+    padding: 8px 0 8px 2px;
+    border-radius: 30px;
+}
+
+.banner img {
+    border-radius: 25px
+}
+
+.section[data-type="banner"] {
+    padding: 0rem 0 0!important;
+    margin-bottom: 0rem;
+    margin-top: 0rem
+}
+
+.product,.product img {
+    border: var(--main-text-color2)solid 0!important
+}
+
+.product {
+    border: 0 solid #eee;
+    box-shadow: 0 2px 10px -3px #c8c8c8;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: #fff
+}
+
+.social__item a {
+    border-color: var(--main-color);
+    border: 1px solid var(--main-color)!important;
+    background: var(--color-bg);
+}
+
+.feature-item__content {
+    background: #fff
+}
+
+.feature-item__icon {
+    background: #fff!important;
+    color: #000;
+    border: none!important;
+    min-height: 90px;
+    width: 100%!important;
+    height: 40px;
+    margin-bottom: 0!important
+}
+
+.feature-item p {
+    background: linear-gradient(to left,#fff,#e2e2e2)!important;
+    padding-bottom: 10px!important
+}
+
+.salla-theme_4 .feature-item__content p {
+    padding: .5rem;
+    padding-bottom: .5rem;
+    width: 100%!important;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-height: 60px;
+    border-radius: 0 5rem!important
+}
+
+.salla-theme_4 .feature-item__content .feature-item__icon {
+    width: 100%!important;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5rem 0!important
+}
+
+.product {
+    border-radius: 8px
+}
+
+section.section {
+    padding: 0
+}
+
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,img,small,strong,ol,ul,li,dd,form,label,table,caption,article,aside,canvas,details,embed,figure,figcaption,footer,header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: sub!important
+}
+
+a.next.button-more {
+    vertical-align: bottom!important
+}
+
+p.mb-4.mb-md-0,body > footer > div.footer-sub.text-center > div > div > div > p {
+    color: #fff!important;
+}
+
+.footer-sub p:before {
+    /* content: "جميع الحقوق محفوظة لمتجر " "   ساسك        "; */
+    display: block;
+    max-height: 30px!important;
+    color: var(--color-main-l);
+}
+
+body > footer > div.footer-sub.text-center::after {
+    content: "تصميم وبرمجة " " | " "على احمد 3lwaaa@gmail.com ";
+    display: block;
+    max-height: 30px!important;
+    color: #fefefe;
+    font-size: 10px;
+}
+
+.salla-theme_6 .product .product-footer .product-add.add_to_cart_btn {
+    border-radius: 10px;
+    background-color: #eee
+}
+
+.salla-theme_6 .product .product-footer .product-add.add_to_cart_btn span:last-child {
+    font-size: 18px
+}
+
+@keyframes signal {
+    0% {
+        box-shadow: 0 0 0 0 #f7da90
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px #fff
+    }
+}
+
+.offers-link,.price-after {
+    color: #444!important
+}
+
+.product-add {
+    animation: signal 1200ms infinite
+}
+
+.salla-theme_4 footer ul.footer-links {
+    -moz-columns: 2;
+    columns: 1
+}
+
+.col-sm-4 {
+    width: 25%;
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+.product {
+    border-radius: 8px
+}
+
+section.section {
+    padding: 0
+}
+
+.salla-theme_4 .site-header #cl_switcher_wrapper #cl_switcher #cl_toggle:hover {
+    background-color: var(--main-text-color2)!important
+}
+
+@media(max-width: 991px) {
+    .sub-nav .sub-nav-content {
+        right:0;
+        width: 75%;
+        height: 90%;
+        text-align: right;
+        overflow-y: scroll;
+        -webkit-transition: all .7s ease;
+        transition: all .7s ease;
+        -webkit-transform: translateX(110%);
+        transform: translateX(110%);
+        border-radius: 8px 0 20% 5%;
+        margin: 70px 20px 0 0
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a:before,.sub-nav .main-menu li.sub-menu-logged-in a i,.sub-nav .main-menu li.sub-menu-header.categories-holder>span i {
+    content: "";
+    font-family: sallaicons,icomoon!important;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #ffffff!important;
+    background: var(--main-text-color2);
+    padding: 5px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 1px solid #1c1b1b;
+    vertical-align: middle;
+}
+.sub-nav .main-menu li.sub-menu-header.categories-holder>ul.store-categories>li>a:before,.main-menu>li>a:before {
+    content: "\ef39"!important;
+}
+
+
+
+
+
+
+
+.main-menu li:not(.sub-menu-logged-in)>a:before {
+    content: "";
+    font-family: sallaicons,icomoon!important;
+    font-size: inherit;
+    margin-left: 5px;
+    padding: 0px 0 0 0;
+    vertical-align: middle;
+}
+
+.sub-nav .main-menu li#ls_switcher_mobile a:before {
+    content: "\E93D"!important;
+    font-family: sallaicons;
+    color: var(--main-text-color2)!important;
+    display: initial;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 5px!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>ul.store-categories>li>a:hover:before,.sub-nav .main-menu li.sub-menu-header.categories-holder>ul.store-categories>li.has-children:hover>a:before {
+    filter: brightness(0.81)!important
+}
+
+.salla-theme_6 .sub-nav .main-menu li.has-children:hover a {
+    color: #eee!important
+}
+
+
+
+body > footer > div.footer-header > div > div > div > div > div.store-certificate > a:nth-child(1) > img {
+    display: none!important
+}
+
+body > footer > div.footer-header > div > div > div > div > div.store-certificate > a:nth-child(1)::before {
+    content: ""!important;
+    height: 40px!important;
+    background: url(https://maroof.sa/Content/Stamps/ImageCr.png)!important;
+    background-size: contain!important;
+    width: 100px!important;
+    display: block;
+    background-repeat: no-repeat!important;
+    border: none!important;
+    margin: auto
+}
+
+span.price-before {
+    color: #f00!important
+}
+
+a.sub-nav__menu.ml-2::after {
+    content: 'القائمة';
+    position: absolute;
+    width: 86px;
+    height: 24px;
+    color: var(--main-text-color2);
+    font-size: 10px;
+    top: 72%;
+    left: 48%;
+    color: #fff;
+}
+
+.store-notify {
+    background: linear-gradient(to left,var(--main-text-color2),var(--main-text-color2))!important;
+    color: #fde7c0!important
+}
+
+.promotion-title {
+    background-color: var(--main-text-color2)!important;
+    color: var(--color-ff);
+    animation: pulse 5s infinite!important;
+}
+
+@keyframes pulse {
+    0% {
+        background-color: #fde7c0
+    }
+
+    50% {
+        background-color: #ffe1ab
+    }
+
+    100% {
+        background-color: #ffc45c
+    }
+}
+
+.shipping-bar .free-shipping__label {
+    font-size: 18px;
+    font-weight: 800
+}
+
+.shipping-bar .free-shipping__bar>div>div,.shipping-bar .free-shipping__bar>div>span {
+    background: linear-gradient(90deg,var(--main-color),var(--main-text-color2))!important
+}
+
+.shipping-bar .free-shipping__bar>div>span:after {
+    border-top: 5px solid var(--main-text-color2)
+}
+
+.add-cart-large,.order-btn {
+    color: #fff!important
+}
+
+li.sub-menu-header.categories-holder {
+    font-size: 23pt!important
+}
+
+.modal-content {
+    background-color: var(--main-color)!important;
+}
+
+.panel {
+    background-color: transparent
+}
+
+footer {
+    padding: 0 8px
+}
+
+.footer-item .store-contact {
+    margin: 5px 0 0;
+    border: 0;
+    text-align: right;
+    font-size: 14px
+}
+
+body.store-home:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left,#f9f9f9,#f9f9f9)!important;
+    position: fixed;
+    z-index: 999999;
+    transform: scale(0);
+    animation-name: pupup;
+    animation-duration: 1s
+}
+
+@keyframes pupup {
+    0% {
+        transform: scale(1)
+    }
+
+    18% {
+        transform: scale(1)
+    }
+
+    80% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+body.store-home:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999999;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 294.92 189.87'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D .cls-2 %7B fill: %23fdd900; %7D .cls-3 %7B fill: %2347bccc; %7D .cls-4 %7B fill: %23a2b53c; %7D .cls-5 %7B fill: %230e4355; %7D %3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath class='cls-5' d='m5.51,110.35H0v31.08h18.3v-4.94H5.51v-26.14Zm32.19,17.89c0,3.01-.59,5.22-1.77,6.57-.97,1.11-2.34,1.65-4.19,1.65s-3.14-.54-4.09-1.65c-1.14-1.34-1.72-3.55-1.72-6.58v-12.62c0-2.91-2.36-5.27-5.27-5.27h-.15v17.79c0,4.58,1.08,8.04,3.21,10.28,1.9,2,4.6,3.02,8.02,3.02s6.11-1.02,8.01-3.02c2.13-2.24,3.21-5.7,3.21-10.28v-17.79h0c-2.91,0-5.27,2.36-5.27,5.27v12.62Zm31.31-14.52v-3.37h-20.44v4.94h13.3l-14.69,22.77v3.37h21.97v-4.94h-14.83l14.69-22.77Zm8.77,13.91h11.1v-4.94h-11.1v-7.4h13.16v-4.94h-18.67v31.08h19.12v-4.94h-13.61v-8.87Zm35.36-.91c2.11-1.67,3.23-4.17,3.23-7.23s-1.1-5.59-3.26-7.14c-1.86-1.33-4.51-2-7.88-2h-10.07v31.08h5.51v-12.38h3.88l7.05,12.38h6.3l-7.67-13.16c1.1-.38,2.08-.91,2.91-1.56Zm-12.47-11.56h4.02c2.2,0,3.75.33,4.74,1.01.98.68,1.44,1.73,1.44,3.32s-.48,2.76-1.48,3.54c-1.03.8-2.61,1.21-4.69,1.21h-4.02v-9.08Zm37.21-4.81v16.06c0,1.81.1,3.68.22,5.53l-1.4-2.69-10.88-18.9h-5.26v31.08h5.33v-16.23c0-1.79-.1-3.59-.21-5.36l1.4,2.67,10.88,18.92h5.26v-31.08h-5.33Zm-85.95,77.91c-2.08-1.07-3.67-2.62-4.77-4.64-1.1-2.02-1.64-4.45-1.64-7.27v-1.75h5.8v1.75c0,2.82.71,5.02,2.12,6.58,1.41,1.57,3.4,2.35,5.97,2.35,1.69,0,3.14-.35,4.35-1.06,1.21-.71,2.13-1.73,2.78-3.07.64-1.34.96-2.95.96-4.81v-12.49c0-3.2,2.6-5.8,5.8-5.8h0v18.29c0,2.84-.55,5.26-1.64,7.28-1.1,2.02-2.68,3.56-4.76,4.63-2.08,1.07-4.57,1.6-7.49,1.6s-5.39-.53-7.48-1.6Zm5.18-26.29c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm18.02,23.44c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm13.84,0c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm7.83-31.83c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm36.01,21.25v4.12l-.68.23h-4.89c-.57,3.59-2.07,6.27-4.47,8.03-2.41,1.76-5.79,2.64-10.14,2.64h-2.63v-4.57h2.42c2.67,0,4.72-.48,6.15-1.43,1.43-.96,2.37-2.51,2.82-4.66h-2.95c-4,0-6.99-.91-8.95-2.74-1.96-1.83-2.95-4.6-2.95-8.31,0-2.09.45-3.96,1.34-5.61.89-1.65,2.13-2.93,3.73-3.84,1.59-.92,3.4-1.38,5.43-1.38s3.87.46,5.46,1.39c1.59.93,2.82,2.26,3.7,4.01.88,1.75,1.33,3.83,1.33,6.24v5.66h4.6l.68.23Zm-18.95-1.84c1,1.08,2.53,1.61,4.59,1.61h3.29v-5.66c0-2.32-.39-4.07-1.18-5.27-.79-1.19-1.96-1.79-3.51-1.79-.91,0-1.71.27-2.42.8-.71.53-1.27,1.27-1.67,2.21-.4.94-.6,2.02-.6,3.23,0,2.17.5,3.79,1.51,4.87Zm29.03-26.63v32.82h-10.76l-.68-.23v-4.12l.68-.23h4.96v-22.45c0-3.2,2.6-5.8,5.8-5.8h0Z'/%3E%3Cpath class='cls-5' d='m275.89,103v-1.77c0-.34,0-.68,0-1.03V0h-4.06c-25.07,0-45.46,20.39-45.46,45.46v55.68c-13.67,11.93-19.41,31.47-12.96,49.56l.18.51s0,0,0,0c-2.98,2.54-5.63,5.46-7.87,8.68v-73.04c0-25.07-20.4-45.46-45.47-45.46h-4.06v103c0,23.7,18.23,43.22,41.4,45.28,1.34.12,2.69.18,4.06.18h28.77c25.07,0,45.47-20.39,45.47-45.46v-4.06h-19.57c11.82-8.22,19.57-21.89,19.57-37.34Zm-111.57,41.4V49.74c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Zm70.17-98.94c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Zm9.19,54.79l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Zm-13.25,81.49h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28ZM294.92,7.84c0,4.45-3.49,7.94-8.03,7.94s-8.08-3.49-8.08-7.94,3.59-7.84,8.08-7.84,8.03,3.49,8.03,7.84Zm-14.11,0c0,3.49,2.58,6.26,6.12,6.26s5.98-2.77,5.98-6.22-2.53-6.31-6.03-6.31-6.07,2.82-6.07,6.26Zm4.83,4.11h-1.82v-7.84c.72-.14,1.72-.24,3.01-.24,1.48,0,2.15.24,2.73.57.43.33.77.96.77,1.72,0,.86-.67,1.53-1.63,1.82v.1c.77.29,1.2.86,1.43,1.91.24,1.2.38,1.67.57,1.96h-1.96c-.24-.29-.38-1-.62-1.91-.14-.86-.62-1.24-1.63-1.24h-.86v3.16Zm.05-4.45h.86c1,0,1.82-.33,1.82-1.15,0-.72-.53-1.2-1.67-1.2-.48,0-.81.05-1,.1v2.25Z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='cls-2' d='m164.32,144.3V49.63c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Z'/%3E%3Cpath class='cls-1' d='m234.49,45.35c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Z'/%3E%3Cpath class='cls-3' d='m243.68,100.15l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Z'/%3E%3Cpath class='cls-4' d='m230.42,181.63h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28Z'/%3E%3C/g%3E%3C/svg%3E");
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    transform: scale(0);
+    animation-name: pupup_logo;
+    animation-duration: 1s
+}
+
+@keyframes pupup_logo {
+    0% {
+        transform: scale(0)
+    }
+
+    18% {
+        transform: scale(1)
+    }
+
+    75% {
+        transform: scale(1)
+    }
+
+    95% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+@media(max-width: 768px) and (min-width:200px) {
+    #modal_login {
+        margin-top:10%;
+        margin-left: 3%
+    }
+}
+
+.text-muted {
+    color: #fff
+}
+
+.login-title {
+    margin-top: -3px!important;
+    margin-bottom: 30px!important;
+    color: #fff
+}
+
+.login-option,.btn-resend-option {
+    color: var(--main-text-color2);
+    border-color: var(--main-text-color2)
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--main-text-color2);
+    background-color: #f5f5f5
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 1rem 0 0 1rem;
+    background-color: #f5f5f5
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-text-color2)
+}
+
+.form-group label {
+    color: #fff
+}
+
+.store-contact a {
+    /* display: block; */
+    height: 38px;
+    border-radius: 20px 20px 20px 20px!important;
+    direction: ltr;
+    /* border: var(--main-text-color2) solid 1px; */
+    width: 24%;
+    margin: auto;
+    line-height: 2;
+}
+
+.sicon-brand:before, .sicon-social:before, .sicon-whatsapp2:before {
+    color: #37ec09;
+}
+
+.feature-item__icon,.store-feature__icon,body > section.u-white.py-4 > div > div > div > div > div > i,.store-feature .title,.feature.d-flex.flex-column.justify-content-center.align-items-center {
+    margin-bottom: 0;
+    border: none;
+    position: relative;
+    top: 0px;
+    animation: float 4s ease-in-out infinite;
+    transition: all .4s ease;
+    perspective: 1000px;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+footer {
+    padding: 0 8px;
+    display: grid;
+}
+
+.footer-header {
+    background: transparent !important;
+    order: 3;
+    position: relative;
+    top: -70px;
+    margin: -2px 0px -78px 0px;
+    right: 134px;
+}
+
+@media(max-width: 767px) {
+    .footer-header {
+        top: unset;
+        right: 0;
+    }
+}
+
+footer .store-certificate img {
+    max-width: 54px;
+    max-height: 38px;
+    margin-left: 4px
+}
+
+.salla-theme_4 .footer-header .footer-payment .icons {
+    padding: 6px 12px 0 20px;
+    border-radius: 17px
+}
+
+body > footer > div.footer-header > div > div > div > div > div:nth-child(3) > img:nth-child(n+1) {
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    max-height: 36.5px !important;
+}
+
+body.salla-theme_4 .section-header .section--title span {
+    position: relative;
+    right: 3px;
+    /* top: 15px; */
+    color: #fff;
+    padding: 8px 10px 8px 10px;
+    font-weight: 800!important;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+    font-size: .9rem!important;
+    border-radius: 7px!important;
+    padding: 11px 19px 11px 19px;
+}
+
+.feature-item__content {
+    background: #ea2323;
+    overflow: inherit;
+}
+body > section.py-5.text-center > div > div.section-header > h2{display:none}
+body > section.py-5.text-center > div > div.section-header:before {
+    position: relative;
+    content: " آراء العملاء";
+    display: block !important;
+    width: 156px;
+    height: 44px;
+    margin: 1px 0 6px 0;
+    top: -2px !important;
+    position: relative;
+    right: 3px;
+    color: #fff;
+    font-weight: 800!important;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+    font-size: .9rem!important;
+    border-radius: 7px!important;
+    padding: 11px 19px 11px 19px;
+}
+
+body > section.u-white.py-4 > div > div:before {
+    position: relative;
+    content: "سبب اختيارك لنا";
+    display: block;
+    width: 156px;
+    height: 44px;
+    margin: 1px 0 6px 0;
+    top: -12px !important;
+    position: relative;
+    right: 3px;
+    /* top: 15px; */
+    color: #fff;
+    padding: 8px 10px 8px 10px;
+    font-weight: 800!important;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+    font-size: .9rem!important;
+    border-radius: 7px!important;
+    padding: 11px 19px 11px 19px;
+}
+ 
+.footer-main {
+    background: linear-gradient(90deg,transparent,var(--main-color),var(--main-text-color2)) ;
+    background-color: var(--main-color)!important;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    animation: gradient 11s ease infinite!important;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%50%
+    }
+
+    50% {
+        background-position: 100%50%
+    }
+
+    100% {
+        background-position: 0%50%
+    }
+}
+
+p.mb-4.mb-md-0,body > footer > div.footer-sub.text-center > div > div > div > p,span.font-13 *,span.font-13 {
+    color: #fff!important;
+}
+
+@media screen and (max-width: 777px) {
+    body > footer > div.footer-sub.text-center > div > div > div > p {
+        max-height: 22px!important;
+        line-height: 14px!important;
+        overflow: hidden!important;
+        font-size: 0px;
+    }
+}
+
+.footer-sub p:before {
+    content: "  الحقوق محفوظة  لمتجر مكسرات لوزرن   © 2023  ";
+    display: block;
+    max-height: 30px!important;
+    color: #fff;
+    text-align: center;
+}
+
+span.not-available::after {
+    content: "\1F494";
+    animation: beatHeart 1s;
+    animation: .8s infinite beatHeart;
+}
+
+@keyframes beatHeart {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.product-footer .not-available {
+    display: flex!important;
+    margin: 10px 0 0 15px;
+    font-size: 14px;
+    content: "/a";
+    flex-direction: column;
+}
+
+.logo img {
+    width: auto;
+    height: 0 !important;
+}
+
+.logo a {
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 294.92 189.87'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D .cls-2 %7B fill: %23fdd900; %7D .cls-3 %7B fill: %2347bccc; %7D .cls-4 %7B fill: %23a2b53c; %7D .cls-5 %7B fill: %230e4355; %7D %3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath class='cls-5' d='m5.51,110.35H0v31.08h18.3v-4.94H5.51v-26.14Zm32.19,17.89c0,3.01-.59,5.22-1.77,6.57-.97,1.11-2.34,1.65-4.19,1.65s-3.14-.54-4.09-1.65c-1.14-1.34-1.72-3.55-1.72-6.58v-12.62c0-2.91-2.36-5.27-5.27-5.27h-.15v17.79c0,4.58,1.08,8.04,3.21,10.28,1.9,2,4.6,3.02,8.02,3.02s6.11-1.02,8.01-3.02c2.13-2.24,3.21-5.7,3.21-10.28v-17.79h0c-2.91,0-5.27,2.36-5.27,5.27v12.62Zm31.31-14.52v-3.37h-20.44v4.94h13.3l-14.69,22.77v3.37h21.97v-4.94h-14.83l14.69-22.77Zm8.77,13.91h11.1v-4.94h-11.1v-7.4h13.16v-4.94h-18.67v31.08h19.12v-4.94h-13.61v-8.87Zm35.36-.91c2.11-1.67,3.23-4.17,3.23-7.23s-1.1-5.59-3.26-7.14c-1.86-1.33-4.51-2-7.88-2h-10.07v31.08h5.51v-12.38h3.88l7.05,12.38h6.3l-7.67-13.16c1.1-.38,2.08-.91,2.91-1.56Zm-12.47-11.56h4.02c2.2,0,3.75.33,4.74,1.01.98.68,1.44,1.73,1.44,3.32s-.48,2.76-1.48,3.54c-1.03.8-2.61,1.21-4.69,1.21h-4.02v-9.08Zm37.21-4.81v16.06c0,1.81.1,3.68.22,5.53l-1.4-2.69-10.88-18.9h-5.26v31.08h5.33v-16.23c0-1.79-.1-3.59-.21-5.36l1.4,2.67,10.88,18.92h5.26v-31.08h-5.33Zm-85.95,77.91c-2.08-1.07-3.67-2.62-4.77-4.64-1.1-2.02-1.64-4.45-1.64-7.27v-1.75h5.8v1.75c0,2.82.71,5.02,2.12,6.58,1.41,1.57,3.4,2.35,5.97,2.35,1.69,0,3.14-.35,4.35-1.06,1.21-.71,2.13-1.73,2.78-3.07.64-1.34.96-2.95.96-4.81v-12.49c0-3.2,2.6-5.8,5.8-5.8h0v18.29c0,2.84-.55,5.26-1.64,7.28-1.1,2.02-2.68,3.56-4.76,4.63-2.08,1.07-4.57,1.6-7.49,1.6s-5.39-.53-7.48-1.6Zm5.18-26.29c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm18.02,23.44c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm13.84,0c.18.01.49.02.93.02,1.89,0,3.29-.52,4.21-1.57.92-1.05,1.38-2.64,1.38-4.78v-15.19c0-3.22,2.61-5.82,5.82-5.82h0v21.11c0,3.59-.89,6.27-2.66,8.04-1.77,1.77-4.46,2.65-8.05,2.65-.76,0-1.3,0-1.63-.02v-4.44Zm7.83-31.83c-.49-.28-.88-.66-1.17-1.14-.29-.48-.43-1-.43-1.58s.14-1.13.43-1.6c.29-.48.67-.86,1.16-1.14.48-.28,1.02-.42,1.61-.42s1.13.14,1.62.42c.49.28.88.66,1.17,1.14.29.48.43,1.01.43,1.6s-.14,1.1-.43,1.58c-.29.48-.68.86-1.17,1.14-.49.28-1.03.42-1.62.42s-1.11-.14-1.6-.42Zm36.01,21.25v4.12l-.68.23h-4.89c-.57,3.59-2.07,6.27-4.47,8.03-2.41,1.76-5.79,2.64-10.14,2.64h-2.63v-4.57h2.42c2.67,0,4.72-.48,6.15-1.43,1.43-.96,2.37-2.51,2.82-4.66h-2.95c-4,0-6.99-.91-8.95-2.74-1.96-1.83-2.95-4.6-2.95-8.31,0-2.09.45-3.96,1.34-5.61.89-1.65,2.13-2.93,3.73-3.84,1.59-.92,3.4-1.38,5.43-1.38s3.87.46,5.46,1.39c1.59.93,2.82,2.26,3.7,4.01.88,1.75,1.33,3.83,1.33,6.24v5.66h4.6l.68.23Zm-18.95-1.84c1,1.08,2.53,1.61,4.59,1.61h3.29v-5.66c0-2.32-.39-4.07-1.18-5.27-.79-1.19-1.96-1.79-3.51-1.79-.91,0-1.71.27-2.42.8-.71.53-1.27,1.27-1.67,2.21-.4.94-.6,2.02-.6,3.23,0,2.17.5,3.79,1.51,4.87Zm29.03-26.63v32.82h-10.76l-.68-.23v-4.12l.68-.23h4.96v-22.45c0-3.2,2.6-5.8,5.8-5.8h0Z'/%3E%3Cpath class='cls-5' d='m275.89,103v-1.77c0-.34,0-.68,0-1.03V0h-4.06c-25.07,0-45.46,20.39-45.46,45.46v55.68c-13.67,11.93-19.41,31.47-12.96,49.56l.18.51s0,0,0,0c-2.98,2.54-5.63,5.46-7.87,8.68v-73.04c0-25.07-20.4-45.46-45.47-45.46h-4.06v103c0,23.7,18.23,43.22,41.4,45.28,1.34.12,2.69.18,4.06.18h28.77c25.07,0,45.47-20.39,45.47-45.46v-4.06h-19.57c11.82-8.22,19.57-21.89,19.57-37.34Zm-111.57,41.4V49.74c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Zm70.17-98.94c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Zm9.19,54.79l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Zm-13.25,81.49h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28ZM294.92,7.84c0,4.45-3.49,7.94-8.03,7.94s-8.08-3.49-8.08-7.94,3.59-7.84,8.08-7.84,8.03,3.49,8.03,7.84Zm-14.11,0c0,3.49,2.58,6.26,6.12,6.26s5.98-2.77,5.98-6.22-2.53-6.31-6.03-6.31-6.07,2.82-6.07,6.26Zm4.83,4.11h-1.82v-7.84c.72-.14,1.72-.24,3.01-.24,1.48,0,2.15.24,2.73.57.43.33.77.96.77,1.72,0,.86-.67,1.53-1.63,1.82v.1c.77.29,1.2.86,1.43,1.91.24,1.2.38,1.67.57,1.96h-1.96c-.24-.29-.38-1-.62-1.91-.14-.86-.62-1.24-1.63-1.24h-.86v3.16Zm.05-4.45h.86c1,0,1.82-.33,1.82-1.15,0-.72-.53-1.2-1.67-1.2-.48,0-.81.05-1,.1v2.25Z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='cls-2' d='m164.32,144.3V49.63c18.69,2.03,33.28,17.9,33.28,37.12v94.66c-18.69-2.03-33.28-17.9-33.28-37.12Z'/%3E%3Cpath class='cls-1' d='m234.49,45.35c0-19.22,14.59-35.09,33.28-37.12v74.69l-26.82,9.57c-2.26.81-4.41,1.77-6.46,2.89v-50.03Z'/%3E%3Cpath class='cls-3' d='m243.68,100.15l23.07-8.23c.68,2.83,1.02,5.71,1.02,8.58v.84c-.11,5.21-1.31,10.38-3.61,15.22-4.27,9.01-11.8,15.82-21.19,19.18l-23.06,8.23c-4.37-18.28,5.68-37.36,23.78-43.82Z'/%3E%3Cpath class='cls-4' d='m230.42,181.63h-24.49c2.03-18.69,17.9-33.28,37.12-33.28h24.49c-2.03,18.69-17.9,33.28-37.12,33.28Z'/%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 41px;
+    width: 129px;
+    display: block;
+    max-width: 198px;
+    max-height: 66px;
+}
+
+.sicon-whatsapp2::after {
+    content: "\E916";
+    content: "\e917";
+    text-align: center;
+    cursor: pointer;
+    background: #46a51e;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    color: #fff;
+    box-shadow: #00000022 1.5px 1.5px 5px;
+    width: 0px;
+    height: 0px;
+    border-radius: 27.5px;
+    position: fixed;
+    bottom: 19px;
+    right: 17px;
+    transform: rotate(360);
+    transition: all .2s ease-in-out;
+}
+
+body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-whatsapp2::after,i.sicon-whatsapp2::after {
+    width: 56px;
+    height: 56px;
+    border-radius: 32.5px;
+    font-size: 32px;
+    box-shadow: #0000006b 2px 2px 8px;
+}
+
+.sicon-whatsapp2:after:hover {
+    border-radius: 0;
+    border: 0;
+    width: 180px;
+    height: 60px;
+}
+
+.sicon-whatsapp2:hover::after {
+    content: "حاب نساعدك 😃؟ ";
+    content: "     في خدمتك ؟ ";
+    font-family: dinnextltarabic-regular!important;
+    width: 260px !important;
+    animation: trns 1s;
+    font-size: 20px !important;
+    color: #ffffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes trns {
+    0% {
+        color: #ffffff00;
+    }
+
+    100% {
+        color: #ffffff99;
+    }
+}
+
+
+h4.product-subtitle {
+    text-align: center;
+    text-align-last: center;
+}
