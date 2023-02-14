@@ -1430,13 +1430,13 @@ body.store-home:after {
 }
 
 .text-muted {
-    color: #fff
+    color: var(--color-bg);
 }
 
 .login-title {
     margin-top: -3px!important;
     margin-bottom: 30px!important;
-    color: #fff
+    color: var(--color-bg);
 }
 
 .login-option,.btn-resend-option {
