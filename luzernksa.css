@@ -69,7 +69,7 @@ footer .store-certificate img {
 }
 
 .footer-sub {
-    background: linear-gradient(90deg,var(--main-color),var(--main-text-color2))!important;
+    background: linear-gradient(90deg,var(--main-color),var(--main-color))!important;
     font-size: 18px
 }
 
@@ -304,7 +304,7 @@ footer .footer-sub .footer-wrapper img,footer .footer-sub .fs-cont img {
 }
 
 .site-header,.main-slider img,body.salla-theme_4 .section-header .section--title span,body > section.u-white.py-4 > div > div:before,.a2a_kit.a2a_kit_size_32.a2a_default_style,body > section.py-5.text-center > div > div.section-header:before {
-    background: linear-gradient(to left,var(--main-color),var(--main-text-color2))!important
+    background: linear-gradient(to left,var(--main-color),var(--main-color))!important
 }
 
 .salla-theme_1 footer .footer-sub .footer-wrapper {
@@ -374,7 +374,7 @@ footer .footer-sub .footer-wrapper img,footer .footer-sub .fs-cont img {
 }
 
 .footer-main a,.footer-main p,.footer-sub p:before,a.sub-nav__menu.ml-2::after {
-    color: #ffffff;
+    color: var(--color-bg);
     font-size: 11.5pt;
     /* filter: brightness(133.5); */
 }
@@ -757,7 +757,7 @@ a.circle-action.next.button-next,a.circle-action.prev.button-prev,a.circle-actio
 }
 
 .sub-nav .main-menu>li>a {
-    color: #fff!important
+    color: var(--color-bg) !important;
 }
 
 p.mb-4.mb-md-0 {
@@ -844,7 +844,7 @@ body.salla-theme_1 .section-header .btn.btn-primary.btn-rounded,body.salla-theme
 }
 
 .login-link,.contact-link,.notification-link,.store-contact a,.store-header-min .back-icon,.circle-action,#cl_toggle {
-    color: #fff!important;
+    color: var(--color-bg) !important;
     border-color: var(--main-color)!important;
     margin: 5px 0 0 0;
 }
@@ -854,7 +854,7 @@ button.circle-action.ml-md-2.toggle-search {
 }
 
 .site-header__cart .badge {
-    color: #fff!important;
+    color: var(--color-bg) !important;
     border: 2px solid var(--main-color)!important;
     background: var(--main-color);
 }
@@ -1545,7 +1545,7 @@ body.salla-theme_4 .section-header .section--title span {
     position: relative;
     right: 3px;
     /* top: 15px; */
-    color: #fff;
+    color: var(--color-bg) !important;
     padding: 8px 10px 8px 10px;
     font-weight: 800!important;
     border-bottom: 1px solid #f1f1f1;
@@ -1574,7 +1574,7 @@ body > section.py-5.text-center > div > div.section-header:before {
     top: -2px !important;
     position: relative;
     right: 3px;
-    color: #fff;
+    color: var(--color-bg) !important;
     font-weight: 800!important;
     border-bottom: 1px solid #f1f1f1;
     box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
@@ -1594,7 +1594,7 @@ body > section.u-white.py-4 > div > div:before {
     position: relative;
     right: 3px;
     /* top: 15px; */
-    color: #fff;
+    color: var(--color-bg) !important;
     padding: 8px 10px 8px 10px;
     font-weight: 800!important;
     border-bottom: 1px solid #f1f1f1;
@@ -1605,7 +1605,7 @@ body > section.u-white.py-4 > div > div:before {
 }
 
 .footer-main {
-    background: linear-gradient(90deg,transparent,var(--main-color),var(--main-text-color2)) ;
+    background: linear-gradient(90deg,transparent,var(--main-color),var(--main-color)) ;
     background-color: var(--main-color)!important;
     background-repeat: no-repeat no-repeat;
     background-position: center center;
@@ -1643,7 +1643,7 @@ p.mb-4.mb-md-0,body > footer > div.footer-sub.text-center > div > div > div > p,
     content: "  الحقوق محفوظة  لمتجر مكسرات لوزرن   © 2023  ";
     display: block;
     max-height: 30px!important;
-    color: #fff;
+    color: var(--color-bg);
     text-align: center;
 }
 
