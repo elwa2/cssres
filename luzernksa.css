@@ -1511,9 +1511,9 @@ footer {
     background: transparent !important;
     order: 3;
     position: relative;
-    top: -70px;
+    top: -77px;
     margin: -2px 0px -78px 0px;
-    right: 134px;
+    right: 80px;
 }
 
 @media(max-width: 767px) {
@@ -1538,7 +1538,7 @@ body > footer > div.footer-header > div > div > div > div > div:nth-child(3) > i
     background-color: #fff;
     padding: 2px;
     border-radius: 5px;
-    max-height: 36.5px !important;
+    max-height: 28.5px !important;
 }
 @media only screen and (max-width: 767px) {
     body > footer > div.footer-header > div > div > div > div > div:nth-child(3) > img:nth-child(n+1) {
