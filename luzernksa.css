@@ -845,7 +845,7 @@ body.salla-theme_1 .section-header .btn.btn-primary.btn-rounded,body.salla-theme
 
 .login-link,.contact-link,.notification-link,.store-contact a,.store-header-min .back-icon,.circle-action,#cl_toggle {
     color: var(--color-bg) !important;
-    border-color: var(--main-color)!important;
+    border-color: var(--color-ff);
     margin: 5px 0 0 0;
 }
 
@@ -856,7 +856,7 @@ button.circle-action.ml-md-2.toggle-search {
 .site-header__cart .badge {
     color: var(--color-bg) !important;
     border: 2px solid var(--main-color)!important;
-    background: var(--main-color);
+    background: var(--color-ff);
 }
 
 .breadcrumb>.active {
@@ -1540,7 +1540,12 @@ body > footer > div.footer-header > div > div > div > div > div:nth-child(3) > i
     border-radius: 5px;
     max-height: 36.5px !important;
 }
-
+@media only screen and (max-width: 767px) {
+    body > footer > div.footer-header > div > div > div > div > div:nth-child(3) > img:nth-child(n+1) {
+        
+        max-height: 21.5px !important;
+    }
+}
 body.salla-theme_4 .section-header .section--title span {
     position: relative;
     right: 3px;
