@@ -1470,34 +1470,7 @@ footer .container>.row {
     flex-direction: column!important
 }
 
-.footer .icons .logistics-pay-icons img {
-    background: #fff;
-    padding: 5px;
-    border-radius: 6px;
-    max-width: 4rem;
-    max-height: 4rem;
-    width: 4rem;
-    height: 2.5rem
-}
-
-.footer .logistics-pay-icons>a {
-    width: 50px;
-    padding: unset;
-    background: unset;
-    border-radius: 3px!important;
-    height: 37px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-}
-
-.footer .logistics-pay-icons>a>img {
-    width: 50px;
-    height: 30px;
-    object-fit: fill!important;
-    padding: .4rem
-}
-
+ 
 .footer-copyrights-vat-certificate>div>.d-flex {
     justify-content: center!important;
     align-items: center!important;
