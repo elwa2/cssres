@@ -1,0 +1,87 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap'); 
+body, *:not(i) {
+    font-family: 'Almarai', sans-serif !important
+}
+
+.bg-white {
+    background-color: #8a171a;
+}
+
+@media (min-width: 1024px) {
+    .top-navbar {
+        background-color: #8a171a;
+    }
+}
+
+[dir=rtl] .topnav-link-item.right-side,.topnav-link-item,.header-btn__icon,.s-cart-summary-total {
+    padding-right: 0;
+    color: #fff;
+}
+
+.s-block--features__item .feature-icon {
+    background-color: #414042;
+    background-color: #f7f7f7;
+}
+
+footer:before {
+    content: "";
+    background-image: url(https://cdn.salla.sa/qOyZ/DFbV9A0wrIGb6W6SMachmNU5OG1Xhcl1d3cYX0eC.png);
+    background-size: 418%;
+    display: block;
+    background-repeat: round;
+    transform: rotate(180deg);
+    height: 104px;
+    margin: -33px -32px 1px 1px;
+}
+
+.footer-is-light .store-footer,.footer-is-light .store-footer .store-footer__inner {
+    background-color: #f9fafb;
+}
+
+#salla-modal > div.s-modal-wrapper > div > div.s-modal-header > div > span {
+    visibility: hidden;
+    display: none
+}
+
+#app > div.app-inner.flex.flex-col.min-h-full > footer > div.store-footer__inner > div > div > div > a> span,#app > div.app-inner.flex.flex-col.min-h-full > footer > div.store-footer__inner > div > div > div > h3,#app > div.app-inner.flex.flex-col.min-h-full > footer > div.store-footer__inner > div > div > h3,#app > div.app-inner.flex.flex-col.min-h-full > footer > div.store-footer__inner > div > div:nth-child(n) > div > a, #app > div.app-inner.flex.flex-col.min-h-full > footer > div.store-footer__inner > div > div.lg\:col-span-2.lg\:pe-20 > p,#app > div.app-inner.flex.flex-col.min-h-full > footer *,#app > div.app-inner.flex.flex-col.min-h-full > footer > div.md\:flex.items-center.justify-between.py-4.container.text-center::before {
+    color: var(--main-text-color-dark);
+}
+
+#app > div.app-inner.flex.flex-col.min-h-full > footer > div.md\:flex.items-center.justify-between.py-4.container.text-center > ul > li:nth-child(n) {
+    width: 4rem;
+    height: 3rem;
+}
+
+#app > div.app-inner.flex.flex-col.min-h-full > footer > div.md\:flex.items-center.justify-between.py-4.container.text-center > span > p {
+    display: none
+}
+
+#app > div.app-inner.flex.flex-col.min-h-full > footer > div.md\:flex.items-center.justify-between.py-4.container.text-center::before {
+    content: " الحقوق محفوظة لمتجر" " " "  رمح الطيب";
+    font-size: 16px;
+    display: block;
+    visibility: visible;
+    position: relative;
+}
+
+/* شاشة البداية  */
+.store-footer__inner {
+    background-color: transparent;
+}
+
+.s-block,[dir=rtl] .swiper.slider-layout {
+    /* overflow-y: visible !important; */
+    /* overflow-x: visible !important; */
+    padding: 5px 5px 13px 0;
+}
+
+.bg-gray-50 {
+    --tw-bg-opacity: 1;
+    background-color: #fff;
+}
+
+
+li.w-12.h-8.bg-white.rounded.flex.items-center.p-1 {
+    background-color: #ffffff;
+}
