@@ -2784,3 +2784,29 @@ body>div[id*=gb-widget] {
     width: 38%!important;
     right: unset!important
 }
+img[src*="https://media.zid.store/cdn-cgi/image/w=1300,q=85,f=auto/https://media.zid.store/7705bbe6-e6b8-4739-aa0f-517aed2d0982/ef777dc8-ada4-48d8-8e8d-db253827558d.jpg"] {
+    opacity: 0 !important;
+}
+
+[section-id="8352ae3d-ef90-42f7-aa92-d8c0140da473"].ss {
+    background: url(https://media.zid.store/7705bbe6-e6b8-4739-aa0f-517aed2d0982/3575819b-7f19-4466-bab7-316164942b17.jpg);
+    background-repeat-y: no-repeat;
+    background-position-x: 0;
+    animation: elwaaa 500s linear alternate both infinite;
+    background-size: cover;
+    height: 40px
+}
+
+@keyframes elwaaa {
+    0% {
+        background-position-x: 0px;
+    }
+
+    50% {
+        background-position-x: 10000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
+}
