@@ -2793,10 +2793,13 @@ img[src*="https://media.zid.store/cdn-cgi/image/w=1300,q=85,f=auto/https://media
     background-repeat-y: no-repeat;
     background-position-x: 0;
     animation: elwaaa 500s linear alternate both infinite;
-    background-size: cover;
-    height: 40px
+      height: 5rem;
+    background-size: contain;
+ 
 }
-
+body > div > div.main.flex-grow-1.app-content.app-content-padded > div > section[section-id="8352ae3d-ef90-42f7-aa92-d8c0140da473"] > div > div > div > div > div > div > div > a {
+    display: none !important;
+}
 @keyframes elwaaa {
     0% {
         background-position-x: 0px;
