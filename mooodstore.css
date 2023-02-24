@@ -1012,7 +1012,7 @@ body:not(.salla-theme_6) .category-featured {
     background-repeat: no-repeat!important;
     background-position: top center!important;
     margin: 25px;
-    /* filter: brightness(82.5); */
+    filter: brightness(82.5);
 }
 
 .login-form .panel-title .icon-object {
@@ -1467,8 +1467,9 @@ body.store-home:after {
 }
 
 .login-option,.btn-resend-option {
-    color: var(--main-text-color2);
-    border-color: var(--main-text-color2)
+    color: #ffffff;
+    border-color: transparent;
+    background: var(--main-text-color2);
 }
 
 ::-webkit-scrollbar-track {
