@@ -1794,3 +1794,34 @@ h4.product-subtitle {
     text-align: center;
     text-align-last: center;
 }
+
+.footer-main p {
+    background: #04c5c4 !important;
+    background-image: initial !important;
+    background-position-x: initial !important;
+    background-position-y: initial !important;
+    background-size: initial !important;
+    background-repeat-x: initial !important;
+    background-repeat-y: initial !important;
+    background-attachment: initial !important;
+    background-origin: initial !important;
+    background-clip: initial !important;
+    background-color: #04c5c4 !important;
+    padding: 10px !important;
+    padding-top: 10px !important;
+    padding-right: 5rem !important;
+    padding-bottom: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 5rem !important;
+    position: relative !important;
+    border-radius: 20px !important;
+}
+.footer-main p::before {
+    content: "\f14a";
+    font-family: fontawesome !important;
+    font-size: 64px!important;
+    position: absolute !important;
+    right: 0.8rem !important;
+    top: 57px !important;
+    top: calc(41% - 2.5rem) !important;
+}
