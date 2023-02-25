@@ -563,7 +563,7 @@ body.salla-theme_4 .product .product-footer {
     background-position: top center!important;
     margin: 4px 44px 10px;
     /* filter: invert(1) hue-rotate(178deg); */
-    filter: brightness(99.5);
+    /* filter: brightness(99.5); */
 }
 
 .u-white .container {
@@ -760,7 +760,7 @@ a.circle-action.next.button-next,a.circle-action.prev.button-prev,a.circle-actio
 }
 
 .sub-nav .main-menu li.sub-menu-header.categories-holder>span {
-    color: var(--color-bg);
+    color: var(--color-ff);
 }
 
 .sub-nav .sub-nav-content.is-active {
@@ -1252,7 +1252,7 @@ section.section {
     vertical-align: middle;
 }
 
-.sub-nav .main-menu li.sub-menu-header.categories-holder>ul.store-categories>li>a:before,.main-menu>li>a:before {
+.sub-nav .main-menu li.sub-menu-header.categories-holder>ul.store-categories>li>a:before,.main-menu>li:not(.sub-menu-logged-in)>a:before {
     content: "\ef39"!important;
 }
 
@@ -1794,6 +1794,7 @@ h4.product-subtitle {
     text-align: center;
     text-align-last: center;
 }
+
 .footer-main p {
     background: #04c5c4 ;
     padding: 10px ;
@@ -1814,4 +1815,32 @@ h4.product-subtitle {
     right: 0.8rem ;
     top: 57px ;
     top: calc(41% - 2.5rem) ;
+}
+
+@media screen and (max-width: 777px) {
+    body > header > div > div > div.sub-nav > div > ul {
+        display: grid;
+    }
+
+    body > header > div > div > div.sub-nav > div > ul > li.sub-menu-header.categories-holder {
+        grid-column: 1/2;
+        grid-row: 1/1 ;
+    }
+
+    .sub-nav-header {
+        background: #ffffffe8 !important;
+    }
+
+    .sub-nav-header p {
+        padding: 0 10px;
+        color: var(--color-main);
+    }
+
+    .sub-nav__close svg {
+        fill: #1b695b;
+    }
+
+    .sub-nav__close:hover svg {
+        fill: #0e4355;
+    }
 }
