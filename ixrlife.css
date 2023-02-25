@@ -1,0 +1,401 @@
+/* made by 3lwaaa@gmail.com - https://wa.me/201002241591 */
+@import url('https://kit-free.fontawesome.com/releases/latest/css/free.min.css'); section[style="background: #FAFAFA;"]:nth-of-type(1) .container.p-0.px-md-3 {
+    width: 100%;
+    padding: 0 !important;
+}
+
+@media(max-width: 1199px) {
+    section[style="background: #FAFAFA;"]:nth-of-type(1) .container.p-0.px-md-3 {
+        width:100%;
+        padding: 0 !important;
+    }
+}
+
+body[style] .site-header::before {
+    transform: scaleX(1);
+}
+
+header.site-header::before {
+    content: "";
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background: var(--main-color);
+    top: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transition: all .5s ease-in-out;
+}
+
+header.site-header::after {
+    content: "";
+    height: 5px;
+    position: absolute;
+    width: 100%;
+    background: var(--color-main-d);
+    z-index: 0;
+    transform: scaleX(1);
+    transition: all .5s ease-in-out;
+}
+
+header.site-header {
+    background: var(--main-color);
+}
+
+body[style] .site-header::after {
+    transform: scaleX(0);
+}
+
+body[style] .site-header a.sub-nav__menu.ml-2 svg {
+    fill: var(--color-main-d);
+}
+
+.site-header a.sub-nav__menu.ml-2 svg {
+    fill: var(--color-main-d);
+}
+
+body[style] .main-menu a {
+    color: #fff;
+}
+
+body[style] .main-menu ul li a {
+    color: #000;
+}
+
+.sub-nav .sub-nav-content {
+    background-color: var(--main-color);
+}
+
+.sub-nav li a {
+    position: relative;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder > span {
+    border-top: 2px solid var(--color-main-d);
+}
+
+.sub-nav-header {
+    background: var(--main-color);
+}
+
+@media (max-width: 991px) {
+    .sub-nav .sub-nav-content .main-menu > li {
+        border-bottom: 1px solid var(--main-color);
+        background-color: var(--color-main-d);
+    }
+}
+
+.sub-nav li a::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--color-main-d);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.sub-nav li a:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.main-menu li:not(.sub-menu-header) a {
+    position: relative;
+    text-align: right;
+}
+
+.sub-menu-logged-in a {
+    border-right: 9px solid var(--color-main-d);
+}
+
+.sub-nav .main-menu > li:hover > a, .sub-nav .main-menu > li:hover > a > i {
+    color: var(--color-main-d);
+}
+
+.sub-menu-logged-in a i {
+    color: #fff !important;
+    margin: 0px -2px -3px 19px!important
+}
+
+.sub-menu-logged-in a:after {
+    content: " ";
+    width: 40px;
+    height: 43px;
+    background-color: var(--color-main-d);
+    display: flex;
+    position: absolute;
+    right: 2px;
+    z-index: -1;
+    top: 0;
+}
+
+.sub-nav .main-menu li.sub-menu-logged-in a i {
+    margin: 0 0 0 19px !important;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li {
+    border-bottom: 1px solid #f8f8f854;
+    color: #fff;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a {
+    font-size: 22px!important;
+    color: #fff;
+}
+
+.store-categories li {
+    height: 57px;
+}
+
+.sub-nav-content a,.sub-nav-content *,.sub-nav-content p {
+    color: #fff;
+}
+
+.categories-holder {
+    color: #fff;
+}
+
+@media only screen and (max-width: 991px) {
+    /* slideshow square */ #slick-slide-control00, #slick-slide-control01,#slick-slide-control02,#slick-slide-control03,#slick-slide-control04 {
+        width: 10px!important;
+        height: 10px!important;
+    }
+
+    div.sub-nav-header {
+        background-size: cover;
+        background-position: center;
+    }
+
+    div.sub-nav-header img {
+        text-align: center;
+    }
+
+    div.sub-nav-header a.login-link {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        text-align: center;
+    }
+
+    img {
+        background-size: cover!important;
+    }
+
+    /* ----END------*/
+}
+
+footer li {
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+footer li a:hover:not(.active) {
+    margin: 0px;
+    border-bottom-color: #daba96!important;
+}
+
+li a {
+    display: inline-block;
+    color: var(--color-main-d);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*Upper circular icons*/
+.circle-action:hover {
+    background-color: var(--color-main-d);
+}
+
+.main-menu li ul li::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: var(--color-main-d);
+    position: absolute;
+    left: 0;
+    z-index: 999;
+    transition: .2s;
+    transform: scaleX(0);
+}
+
+.main-menu li ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.site-header .circle-action {
+    border: none !important;
+    background: var(--color-main-d);
+}
+
+.site-header .circle-action ,.login-link, .contact-link, .notification-link, .store-contact a, .store-header-min .back-icon {
+    color: #fff;
+}
+
+.product {
+    border: none ;
+}
+
+.product * {
+    border: none !important ;
+}
+
+.row.testimonails-listing.slick-initialized.slick-slider.slick-dotted {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: 10000px;
+    height: 254px;
+    padding-top: 32px;
+    border-radius: 20px;
+    background: var(--main-color);
+}
+
+.testimonials-item__author {
+    color: #fff;
+}
+
+.testimonials-item cite {
+    color: var(--color-main-d);
+    font-style: normal;
+}
+
+.star-on {
+    color: var(--color-main-d);
+}
+
+blockquote p {
+    color: var(--color-main-d);
+}
+
+.row.testimonails-listing.slick-initialized.slick-slider.slick-dotted .lazyloaded {
+    opacity: 0;
+}
+
+.u-light.py-5.text-center .row {
+    display: flex;
+}
+
+section.section:nth-of-type(2) .col-md-4 {
+    width: 49%;
+    max-width: none;
+    float: right;
+    padding: 0 2px!important;
+}
+
+.social__item a {
+    border-color: var(--color-main-d);
+}
+
+/*  --------------------WARN MOBILE SIZE --------------*/
+@media only screen and (max-width: 991px) {
+    .footer-main {
+        background: var(--main-color) !important;
+        text-align: center !important;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-top: 30px;
+    }
+
+    .store-contact {
+        margin: 50px 0 0;
+        text-align: center;
+    }
+
+    .sub-nav .sub-nav-content .sub-nav-header a {
+        margin: 15px auto 0;
+        font-size: 15px;
+        width: 100% !important;
+        padding: 1px 0 9px 0px;
+        background-color: var(--color-main-d);
+        color: #fff;
+    }
+}
+
+/* Sequare Images */
+@media only screen and (max-width: 991px) {
+    .footer-item {
+        text-align: center!important;
+    }
+
+    h2.footer-title span {
+        font-size: 21px!important;
+    }
+
+    h2.footer-title {
+        display: inline-block!important;
+        border-bottom: 3px solid white !important;
+    }
+}
+
+/* =================== */
+li.social__item a {
+    color: #fff !important;
+}
+
+h2.footer-title {
+    display: inline-block!important;
+    border-bottom: 3px solid white !important;
+}
+
+div.store-contact {
+    font-size: 15px!important;
+    text-align: center!important;
+}
+
+.store-certificate a {
+    display: flex;
+    justify-content: center;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.store-certificate a img {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+footer .store-certificate img {
+    max-width: 46px;
+    max-height: 72px;
+}
+
+li.social__item:hover a {
+    background-color: #fff!important;
+    color: black!important;
+}
+
+/* ========== */
+.row.testimonails-listing.slick-initialized.slick-slider.slick-dotted {
+    height: 338px;
+}
+
+.testimonials-item {
+    border: 1px dashed var(--main-color);
+}
+
+.store-contact a i {
+    color: var(--color-main-d);
+}
+
+.feature-item__icon {
+    background: var(--color-main);
+}
+
+:root {
+    --main-color: #1d1f20;
+    --infinte-color: #1d1f20;
+    --main-text-color: #000000;
+    --main-text-color2: #000000;
+    --main-text-color-dark: #cba880;
+    --color-main: #1d1f20;
+    --color-main-d: #cba880;
+    --color-main-l: #cba880;
+    --color-main-reverse: #cba880;
+    --color-text: #5a5a5a;
+    --color-text-reverse: #cba880;
+    --color-title: #cba880;
+}
