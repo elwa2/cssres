@@ -1,15 +1,11 @@
 /* made by 3lwaaa@gmail.com - https://wa.me/201002241591 */
-@import url('https://kit-free.fontawesome.com/releases/latest/css/free.min.css'); section[style="background: #FAFAFA;"]:nth-of-type(1) .container.p-0.px-md-3 {
-    width: 100%;
-    padding: 0 !important;
-}
+@import url('https://kit-free.fontawesome.com/releases/latest/css/free.min.css'); 
 
-@media(max-width: 1199px) {
-    section[style="background: #FAFAFA;"]:nth-of-type(1) .container.p-0.px-md-3 {
-        width:100%;
-        padding: 0 !important;
-    }
+section[style="background: #FAFAFA;"]:nth-of-type(1) .container.p-0.px-md-3 {
+    width: 100%;
+    padding: 9px 0 !important;
 }
+ 
 
 body[style] .site-header::before {
     transform: scaleX(1);
