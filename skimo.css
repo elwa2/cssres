@@ -1729,6 +1729,10 @@ span.not-available::after {
     filter: brightness(37.5);
 }
 
+.logo a:hover {
+    filter: unset;
+}
+
 .sicon-whatsapp2::after {
     content: "\E916";
     content: "\e917";
