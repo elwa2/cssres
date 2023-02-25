@@ -384,7 +384,9 @@ li.social__item:hover a {
 .feature-item__icon {
     background: var(--color-main);
 }
-
+.footer-main {
+    background-color: var(--color-main);
+}
 :root {
     --main-color: #1d1f20;
     --infinte-color: #1d1f20;
