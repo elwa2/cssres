@@ -963,8 +963,8 @@ button.circle-action.ml-md-2.toggle-search {
         bottom: 0;
         box-shadow: 0 0 10px rgb(0 0 0 / 5%);
         padding: 10px;
-        background-color: #1b1829!important;
-        z-index: 9999
+        background-color: var(--color-main-d);
+        z-index: 9999;
     }
 
     a.add-cart-large.add_to_cart_large_btn {
@@ -1726,7 +1726,6 @@ span.not-available::after {
     display: block;
     max-width: 198px;
     max-height: 66px;
-   
 }
 
 .logo a:hover {
@@ -1813,12 +1812,18 @@ h4.product-subtitle {
 
 .footer-main p::before {
     content: "\f14a";
-    font-family: fontawesome ;
-    font-size: 64px;
-    position: absolute ;
-    right: 0.8rem ;
-    top: 57px ;
-    top: calc(41% - 2.5rem) ;
+    font-family: fontawesome;
+    font-size: 3rem;
+    position: absolute;
+    right: 0.8rem;
+    top: 57px;
+    top: calc(54% - 2.5rem);
+}
+
+@media screen and (max-width: 777px) {
+    .footer-main p::before {
+        top: calc(54% - 2.5rem);
+    }
 }
 
 @media screen and (max-width: 777px) {
