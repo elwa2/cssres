@@ -562,8 +562,9 @@ body.salla-theme_4 .product .product-footer {
     background-repeat: no-repeat!important;
     background-position: top center!important;
     margin: 4px 44px 10px;
-    filter: invert(1) hue-rotate(178deg);
-    filter: brightness(99.5);
+    /* filter: invert(1) hue-rotate(178deg);  
+ 
+    filter: brightness(99.5);*/
 }
 
 .u-white .container {
@@ -1827,9 +1828,9 @@ h4.product-subtitle {
         grid-row: 1/1 ;
     }
 
-    /*     .sub-nav-header {
+      .sub-nav-header {
         background: #ffffffe8 !important;
-    } */
+     }
     .sub-nav-header p {
         padding: 0 10px;
         color: var(--color-main);
