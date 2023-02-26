@@ -963,7 +963,7 @@ button.circle-action.ml-md-2.toggle-search {
         bottom: 0;
         box-shadow: 0 0 10px rgb(0 0 0 / 5%);
         padding: 10px;
-        background-color: var(--color-main-d);
+        background-color: var(--color-ff);
         z-index: 9999;
     }
 
@@ -1240,15 +1240,15 @@ section.section {
     font-family: sallaicons,icomoon!important;
     font-size: 16px;
     margin-left: 5px;
-    color: #ffffff!important;
-    background: var(--main-text-color2);
+    color: var(--main-color);
+    background: var(--color-main-d);
     padding: 5px;
     border-radius: 50px;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
-    border: 1px solid #1c1b1b;
+    border: 1px solid var(--main-color);
     vertical-align: middle;
 }
 
