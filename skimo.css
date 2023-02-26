@@ -41,7 +41,7 @@ section.section {
 }
 
 body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a {
-    font-size: 12px;
+    font-size: 15px;
     /* margin: 0 -14px 0 0; */
 }
 
