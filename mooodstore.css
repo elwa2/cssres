@@ -562,8 +562,8 @@ body.salla-theme_4 .product .product-footer {
     background-repeat: no-repeat!important;
     background-position: top center!important;
     margin: 4px 44px 10px;
-    /* filter: invert(1) hue-rotate(178deg); */
-    /* filter: brightness(99.5); */
+    filter: invert(1) hue-rotate(178deg);
+    filter: brightness(99.5);
 }
 
 .u-white .container {
@@ -1143,7 +1143,7 @@ section.section {
     padding: 0
 }
 
-html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,img,small,strong,ol,ul,li,dd,form,label,table,caption,article,aside,canvas,details,embed,figure,figcaption,footer,header {
+html,body,div,span:not(.input-group-addon),object,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,img,small,strong,ol,ul,li,dd,form,label,table,caption,article,aside,canvas,details,embed,figure,figcaption,footer,header {
     margin: 0;
     padding: 0;
     border: 0;
@@ -1827,20 +1827,23 @@ h4.product-subtitle {
         grid-row: 1/1 ;
     }
 
-    .sub-nav-header {
+    /*     .sub-nav-header {
         background: #ffffffe8 !important;
-    }
-
+    } */
     .sub-nav-header p {
         padding: 0 10px;
         color: var(--color-main);
     }
 
     .sub-nav__close svg {
-        fill: #1b695b;
+        fill: var(--main-text-color2);
     }
 
     .sub-nav__close:hover svg {
-        fill: #0e4355;
+        filter: brightness(0.5);
     }
+}
+
+.sub-nav .sub-nav-content .sub-nav-header .logout-link.as-link {
+    background: var(--main-text-color2);
 }
