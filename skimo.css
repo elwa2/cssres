@@ -817,7 +817,7 @@ span.sicon-facebook {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    filter: brightness(78.5);
+    /* filter: brightness(78.5); */
 }
 
 .add-cart-large,.order-btn {
@@ -1012,7 +1012,7 @@ body:not(.salla-theme_6) .category-featured {
     background-repeat: no-repeat!important;
     background-position: top center!important;
     margin: 25px;
-    filter: brightness(82.5);
+    /* filter: brightness(82.5); */
 }
 
 .login-form .panel-title .icon-object {
@@ -1726,11 +1726,11 @@ span.not-available::after {
     display: block;
     max-width: 198px;
     max-height: 66px;
-    filter: brightness(37.5);
+   
 }
 
 .logo a:hover {
-    filter: unset;
+    filter: brightness(37.5);
 }
 
 .sicon-whatsapp2::after {
