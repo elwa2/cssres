@@ -361,42 +361,7 @@ header>.account-lang-currency {
     right: 0;
     left: unset
 }
-
-.slide-menu__slider>ul>li>a[href*=عروض]:before {
-    background: url(https://media.zid.store/f85a773c-3ab8-4f78-a9dc-8b10bcc02f7e/cecdf165-c187-4925-987b-c68927721c1c-260x260.jpg)
-}
-
-.slide-menu__slider>ul>li>a[href*=منظمات]:before {
-    background: url(https://media.zid.store/f85a773c-3ab8-4f78-a9dc-8b10bcc02f7e/67ca2d9f-11f3-4a28-b780-b0872b5f8c55-260x260.jpg)
-}
-
-.slide-menu__slider>ul>li>a[href$=أثاث]:before {
-    background: url(https://media.zid.store/f85a773c-3ab8-4f78-a9dc-8b10bcc02f7e/28758d1c-9b25-4ada-88a5-290064d869c5-260x260.png)
-}
-
-.slide-menu__slider>ul>li>a[href$=المطبخ-والضيافة]:before {
-    background: url(https://media.zid.store/f85a773c-3ab8-4f78-a9dc-8b10bcc02f7e/69db1e48-8561-4762-a406-bc1964eb73bf-260x260.png)
-}
-
-.slide-menu__slider>ul>li>a[href$=منسوجات-ومفارش-وسجاد]:before {
-    background: url(https://media.zid.store/f85a773c-3ab8-4f78-a9dc-8b10bcc02f7e/00a92f9e-6936-488b-946f-e66d6da8d2b7-260x260.png)
-}
-
-.slide-menu__slider>ul>li>a[href$=زينة-وديكور]:before {
-    background: url(https://media.zid.store/cdn-cgi/image/w=235,q=85,f=auto/https://media.zid.store/f85a773c-3ab8-4f78-a9dc-8b10bcc02f7e/ca435401-35f8-47ef-ae08-079d0a2614b0-260x260.jpg)
-}
-
-.slide-menu__slider>ul>li>a[href$=إضاءة]:before {
-    background: url(https://media.zid.store/f85a773c-3ab8-4f78-a9dc-8b10bcc02f7e/6f7231dc-93fd-46db-ad64-48517ed7a533-260x260.png)
-}
-
-.slide-menu__slider>ul>li>a[href$=الأجهزة-الكهربائية]:before {
-    background: url(https://media.zid.store/f85a773c-3ab8-4f78-a9dc-8b10bcc02f7e/210c89ce-28cf-4f55-b37d-716103e9a9aa-260x260.png)
-}
-
-.slide-menu__slider>ul>li>a[href$=العاب]:before {
-    background: url(https://media.zid.store/f85a773c-3ab8-4f78-a9dc-8b10bcc02f7e/343b333c-66e6-4174-b5c4-418c851c4b60-260x260.png)
-}
+ 
 
 .slide-menu__slider>ul>li>a[href$=رمضان-يجمعنا]:before {
     background: url(/*//)
@@ -796,7 +761,7 @@ ul>li>div[style="height: 50px"] {
 }
 
 .home-categories-section {
-    background-image: url(https://i.imgurf.com/8L0Kkco.png);
+    
     background-size: contain;
     background-repeat: repeat-x;
     background-position: bottom;
@@ -2737,9 +2702,9 @@ body>div[id*=gb-widget]>div[size="50"] {
     display: none
 }
 
-@media(max-width: 991px) {
+@media(min-width: 991px) {
     .menu-header-theme-bg-primary {
-        background-color: #f9f9f9;
+        background-color: #f9f9f9 !important;
         filter: unset;
     }
 
@@ -2748,6 +2713,6 @@ body>div[id*=gb-widget]>div[size="50"] {
     }
 
     ul.main-nav>li>a, .item-all-categories a {
-        padding: 19px 22px 0 0;
+        padding: 19px 22px 0 ;
     }
 }
