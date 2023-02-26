@@ -411,14 +411,7 @@ ul>li>a[href="/"]:before, ul>li>a[href="/products"]:before, ul>li>a[href="/shipp
     margin: auto
 }
 
-.slide-menu__slider>ul>li:nth-child(2) {
-    grid-row: 24/24;
-}
-
-.slide-menu__slider>ul>li:nth-child(3) {
-    grid-row: 14/15
-}
-
+ 
 .slide-menu__slider>ul>li:last-child {
     display: none!important
 }
