@@ -61,6 +61,12 @@ body[data-template=home]:after {
     transform: scale(0)rotate(0deg)
 }
 
+@media(max-width: 991px) {
+    body[data-template=home]:after {
+        background-size: 70vh;
+    }
+}
+
 @keyframes pupup_logo {
     0% {
         transform: scale(1)rotate(0deg)
@@ -1991,7 +1997,7 @@ ul.pagination {
 }
 
 #product-description .description-paragrah.text-justify.description-text-clear {
-    color: #fff!important;
+    
     font-family: sky!important;
     text-align: justify!important
 }
