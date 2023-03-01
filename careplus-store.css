@@ -11,38 +11,7 @@
     src: local("السماء ثقيل"), local("sky-bold"), url("https://www.fontstatic.com/fonts/sky-bold/sky-bold.woff")format("woff")
 }
 
-body[data-template=home]:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: #fff url(https://media.zid.store/3e901d9f-b2c6-44b3-bdcb-edbb82918c64/89046bc1-027c-4df9-be44-a6a3f8f56841-200x.png);
-    position: fixed;
-    z-index: 999999;
-    transform: scale(0);
-    animation-name: pupup;
-    animation-duration: 2s;
-    background-size: 95px;
-    background-repeat: no-repeat;
-    background-position: center 3rem
-}
-
-@keyframes pupup {
-    0% {
-        transform: scale(1)
-    }
-
-    18% {
-        transform: scale(1)
-    }
-
-    80% {
-        transform: scale(1)
-    }
-
-    100% {
-        transform: scale(0)
-    }
-}
+ 
 
 body[data-template=home]:after {
     content: "";
@@ -51,21 +20,17 @@ body[data-template=home]:after {
     top: 0;
     position: fixed;
     z-index: 999999;
-    background: url(https://media.zid.store/3e901d9f-b2c6-44b3-bdcb-edbb82918c64/7ad845d0-64b2-46c6-9674-cd063b6ddb65.png);
+  background: #fff url(https://media.zid.store/3e901d9f-b2c6-44b3-bdcb-edbb82918c64/89046bc1-027c-4df9-be44-a6a3f8f56841-200x.png);
     left: 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: 30%;
     animation-name: pupup_logo;
     animation-duration: 2s;
     transform: scale(0)rotate(0deg)
 }
 
-@media(max-width: 991px) {
-    body[data-template=home]:after {
-        background-size: 70vh;
-    }
-}
+ 
 
 @keyframes pupup_logo {
     0% {
