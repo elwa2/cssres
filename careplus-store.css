@@ -51,11 +51,11 @@ body[data-template=home]:after {
     top: 0;
     position: fixed;
     z-index: 999999;
-    background: url(https://media.zid.store/3e901d9f-b2c6-44b3-bdcb-edbb82918c64/988cac94-59ee-43cb-a154-d73ad522885b.png);
+    background: url(https://media.zid.store/3e901d9f-b2c6-44b3-bdcb-edbb82918c64/7ad845d0-64b2-46c6-9674-cd063b6ddb65.png);
     left: 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 140px;
+    background-size: 100%;
     animation-name: pupup_logo;
     animation-duration: 2s;
     transform: scale(0)rotate(0deg)
@@ -71,11 +71,11 @@ body[data-template=home]:after {
     }
 
     80% {
-        transform: scale(1)rotate(-90deg)
+        transform: scale(1)rotate(0deg)
     }
 
     100% {
-        transform: scale(0)rotate(-90deg)
+        transform: scale(0)rotate(0deg)
     }
 }
 
@@ -361,7 +361,6 @@ header>.account-lang-currency {
     right: 0;
     left: unset
 }
- 
 
 .slide-menu__slider>ul>li>a[href$=رمضان-يجمعنا]:before {
     background: url(/*//)
@@ -411,7 +410,6 @@ ul>li>a[href="/"]:before, ul>li>a[href="/products"]:before, ul>li>a[href="/shipp
     margin: auto
 }
 
- 
 .slide-menu__slider>ul>li:last-child {
     display: none!important
 }
@@ -754,7 +752,6 @@ ul>li>div[style="height: 50px"] {
 }
 
 .home-categories-section {
-    
     background-size: contain;
     background-repeat: repeat-x;
     background-position: bottom;
@@ -2708,4 +2705,16 @@ body>div[id*=gb-widget]>div[size="50"] {
     ul.main-nav>li>a, .item-all-categories a {
         padding: 19px 22px 0 ;
     }
+}
+
+.cart-header-total {
+    color: #333;
+}
+
+.slide-menu__slider>ul>li:nth-child(3) {
+    grid-row: 3/15;
+}
+
+#product-description .description-paragrah.text-justify.description-text-clear {
+    color: unset !important;
 }
