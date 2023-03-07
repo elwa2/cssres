@@ -266,7 +266,6 @@ span.icon-instagram.d-flex.align-items-center.justify-content-center {
 .footer-store-section-bars {
     min-height: unset!important;
     border-bottom: 0;
-   
 }
 
 .search-header .image-logo {
@@ -410,6 +409,16 @@ section.ss .slick-list {
 .icon-account_circle_black_24dp:before {
     content: "\f007 ";
     color: var(--primary-color)
+}
+
+.features-section.section-padding-space::before {
+    content: "بماذا نتميز؟  ";
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    border-radius: 5px;
+    padding-right: 10px!important;
+    margin-right: 20px
 }
 
 body > div > div.main.flex-grow-1.app-content.app-content-padded > div > section:nth-child(14) > div > h1,body > div > div.main.flex-grow-1.app-content > div > div.home-categories-section.section-padding-space > div > h1 {
