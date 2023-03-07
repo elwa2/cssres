@@ -1,5 +1,5 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */ 
- body:not(.salla-theme_6) .category-featured a {
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+body:not(.salla-theme_6) .category-featured a {
     border: var(--main-color) solid 1px
 }
 
@@ -236,6 +236,7 @@ button#submit-form-btn {
     --color-text: #5a5a5a;
     --color-text-reverse: #917a36;
     --color-title: #917a36;
+    --3: #0f1b1d;
 }
 
 .salla-theme_1 .product-box .product-footer .product-price .price-after, .salla-theme_1 .product-box .product-footer .product-price .price-before {
@@ -244,3 +245,16 @@ button#submit-form-btn {
     PADDING: 0;
 }
 
+.feature-item {
+    margin-bottom: 0rem;
+    color: #000;
+    background: var(--3) !important;
+}
+
+.feature-item {
+    color: #fff !important;
+}
+
+.feature-item h3 {
+    color: var(--main-color) !important;
+}
