@@ -245,9 +245,7 @@ button#submit-form-btn {
     PADDING: 0;
 }
 
-.feature-item {
-    margin-bottom: 0rem;
-    color: #000;
+.feature-item,.footer-main {
     background: var(--3) !important;
 }
 
