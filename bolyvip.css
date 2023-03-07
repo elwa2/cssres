@@ -256,3 +256,13 @@ button#submit-form-btn {
 .feature-item h3 {
     color: var(--main-color) !important;
 }
+
+body.font-apple.salla-theme_1 .feature-item__icon i[class^=sicon-] {
+    color: var(--3) !important;
+}
+
+@media only screen and (max-width: 600px) {
+    body > section.u-light.py-5.text-center {
+        margin: 0px 0 -54px 0;
+    }
+}
