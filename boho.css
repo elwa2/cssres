@@ -290,3 +290,7 @@ span.icon-instagram.d-flex.align-items-center.justify-content-center {
 .store-section h1,.store-section p,.store-section a {
     color: #fff;
 }
+
+.cart-badge {
+    background-color: var(--primary-color);
+}
