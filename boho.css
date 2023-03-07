@@ -237,12 +237,12 @@ span.icon-search.header-theme-icon-primary {
 
 .footer-theme-text-for-primary-bg {
     text-align: center;
-    background: #f2f2f2;
+    background: var(--primary-color);
     width: 95%;
     margin: auto;
     margin-top: 10px;
     border-radius: 25px;
-    box-shadow: 1px 0 5px 0 rgba(0,0,0,.2)!important
+    box-shadow: 1px 0 5px 0 rgba(0,0,0,.2)!important;
 }
 
 .store-section h1 {
@@ -285,4 +285,8 @@ span.icon-instagram.d-flex.align-items-center.justify-content-center {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 42%;
+}
+
+.store-section h1,.store-section p,.store-section a {
+    color: #fff;
 }
