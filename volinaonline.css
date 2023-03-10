@@ -296,7 +296,7 @@ body {
 }
 
 .salla-theme_6 .product>a .promotion-title,.promotion-title {
-    background-color: #fa8171!important;
+    background-color: var(--1)!important;
     border-radius: 5px 0 0 5px!important;
     border-radius: 0 0px 0 15px!important;
     padding: 6px 10px!important;
@@ -878,7 +878,7 @@ body.salla-theme_3 .product-footer>.product-price {
 
 #cart_badge {
     line-height: 1.5384616!important;
-    background: #fa8171!important;
+    background: var(--1)!important;
 }
 
 .sicon-cart:before {
@@ -886,12 +886,12 @@ body.salla-theme_3 .product-footer>.product-price {
     width: 23px!important;
     height: 23px!important;
     display: block!important;
-    background: transparent url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 391.06 307.8'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %230a0a0a; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m390.94,250.5l-15.9-225.6c-1-14-12.6-24.9-26.7-24.9H42.74c-14.1,0-25.7,10.9-26.7,24.9L.14,250.5c-2.2,31,22.3,57.3,53.4,57.3h284c31,0,55.5-26.3,53.4-57.3h0Zm-120.6-145.9c0,42.7-34.7,77.4-77.4,77.4s-77.4-34.7-77.4-77.4v-24.3c0-11.1,9-20.1,20.1-20.1s20.1,9,20.1,20.1v24.3c0,20.6,16.7,37.3,37.3,37.3s37.3-16.7,37.3-37.3v-24.3c0-11.1,9-20.1,20.1-20.1s20.1,9,20.1,20.1v24.3h-.2Z'/%3E%3C/svg%3E") 0rem 0rem/100%no-repeat !important;
+    background: transparent url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Capa_1' data-name='Capa 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 391.06 307.8'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ff7abc; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m390.94,250.5l-15.9-225.6c-1-14-12.6-24.9-26.7-24.9H42.74c-14.1,0-25.7,10.9-26.7,24.9L.14,250.5c-2.2,31,22.3,57.3,53.4,57.3h284c31,0,55.5-26.3,53.4-57.3h0Zm-120.6-145.9c0,42.7-34.7,77.4-77.4,77.4s-77.4-34.7-77.4-77.4v-24.3c0-11.1,9-20.1,20.1-20.1s20.1,9,20.1,20.1v24.3c0,20.6,16.7,37.3,37.3,37.3s37.3-16.7,37.3-37.3v-24.3c0-11.1,9-20.1,20.1-20.1s20.1,9,20.1,20.1v24.3h-.2Z'/%3E%3C/svg%3E") 0rem 0rem/100%no-repeat !important;
     background-size: contain !important;
 }
 
 .offers-link, .price-after {
-    color: #fa8171 !important;
+    color: var(--1) !important;
     font-weight: bold!important;
     order: 1!important;
     font-size: 19px!important;
@@ -925,13 +925,13 @@ body.salla-theme_3 .product-footer>.product-price {
 }
 
 .circle-action span:first-of-type:not(.notification-badge) {
-    color: black !important;
+    color: var(--1) !important;
 }
 
 .product-showwithslug .product-details__title.brand-title {
     order: 2 !important;
     font-weight: 700!important;
-    color: #fa8171 !important;
+    color: var(--1) !important;
 }
 
 .product-details__title.brand-title {
@@ -1098,15 +1098,7 @@ body:not(.salla-default) #tabbyPromoWrapper #tabbyPromo,.spotii-wrapper {
     background-color: transparent!important;
 }
 
-/*div > span{*/
-/*    color: black !important;*/
-/*}*/
-/*div > span > span{*/
-/*    color: black !important;*/
-/*}*/
-/*div span{*/
-/*    color: black !important;*/
-/*}*/
+ 
 .spotii-promo {
     text-align: center!important;
 }
