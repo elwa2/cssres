@@ -378,7 +378,7 @@ div.col-md-12 {
 
 /* صورة المنتج */
 .product img {
-    border-radius: 30px!important;
+    /* border-radius: 30px!important; */
 }
 
 /* العبارة الترويجية للمنتج */
