@@ -1201,3 +1201,21 @@ ROOT
     padding: 5px 15px!important;
     content: عروض يوم التأسيس ;
 } */
+
+
+
+.logo img {
+    width: auto;
+    height: 0 !important;
+}
+
+.logo a {
+    background-image:  var(--logo);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 61px;
+    width: 5rem;
+    display: block;
+    margin: 0px 0 11px 0;
+}
