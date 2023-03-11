@@ -7,12 +7,12 @@ header .logo-center a {
     display: block;
     content: "";
     width: 120px!important;
-    height: 50px;
+    height: 63px;
     background-size: contain;
     background-repeat: no-repeat!important;
     background-position: center!important;
     background: url(https://media.zid.store/1aba6978-00d6-4e15-ae8f-ac6291fc5335/5d0386c5-0621-4e32-bc8f-890ae60db6fb-200x.png);
-    margin: auto
+    margin: auto;
 }
 
 header .logo-center a img {
@@ -99,8 +99,8 @@ header.sticky {
 }
 
 .products-catalog-home .product-wrapper, .products-catalog-home .product-wrapper img {
-    max-width: 150px;
-    min-width: 150px
+    max-width: 154px;
+    min-width: 172px;
 }
 
 .product-image-btns .product-quickview svg path {
