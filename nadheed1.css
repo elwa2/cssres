@@ -260,7 +260,7 @@ footer .store-certificate b {
     content: "";
     text-align: center !important;
     display: block;
-    height: 110px !important;
+    height: 69px !important;
     background-image: var(--logo);
     background-size: contain !important;
     background-repeat: no-repeat !important;
@@ -714,7 +714,7 @@ section.u-light.py-4 {
     background-position: center center;
     background-size: contain;
     height: 61px;
-    width: 32vw;
+    width: 9rem;
     display: block;
     margin: 0px 0 11px 0;
 }
