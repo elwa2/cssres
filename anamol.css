@@ -465,3 +465,24 @@ salla-button .s-button-btn {
     --1-hover: #eeb756bf;
     --logo: url(https://cdn.salla.sa/XRmgN/R7kn3sIAogZENHncc1NSeG0f732jIY7xgrZwmmnN.png);
 }
+
+#app > section.s-block.s-block--features.container > div > div > i {
+    animation: scale-in-out 1000ms cubic-bezier(0, 1, 1, 1) infinite alternate;
+}
+
+@keyframes scale-in-out {
+    from {
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.product-entry:hover {
+    transform: translateY(-10px) !important;
+    transition: all .3s ease !important;
+}
