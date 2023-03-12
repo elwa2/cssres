@@ -823,18 +823,17 @@ body:not(.store-search) > section > .container > .section-header > .section--tit
     padding-left: 5px;
     border-color: var(--main-color)
 }
-
-/* .store-home section:not(.product-details):not(.py-3):not(.section-products):not(.u-white):not(.py-5) > .container:not(.py-3) > .row:not(.products-grid):not(.products-listing) {
+ .store-home section:not(:nth-child(18)):not(.product-details):not(.py-3):not(.section-products):not(.u-white):not(.py-5) > .container:not(.py-3) > .row:not(.products-grid):not(.products-listing) {
     display: flex;
     padding-right: 10px;
     padding-left: 10px
 }
 
-.store-home section:not(.product-details):not(.py-3):not(.section-products):not(.u-white):not(.py-5) > .container:not(.py-3) > .row:not(.products-grid):not(.products-listing) .col-sm-4.col-md-4 {
+.store-home section:not(:nth-child(18)):not(.product-details):not(.py-3):not(.section-products):not(.u-white):not(.py-5) > .container:not(.py-3) > .row:not(.products-grid):not(.products-listing) .col-sm-4.col-md-4 {
     width: 50% !important;
     float: right !important;
     display: block !important;
-} */
+} 
 
 .category-featuvar(--infinte-color) {
     padding: 50.5% 0 !important;
