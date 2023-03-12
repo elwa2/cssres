@@ -688,7 +688,10 @@ body {
 section.u-light.py-4 {
     background-color: transparent;
 }
-
+.product-add {
+    color: #fff;
+   
+}
 :root {
     --main-color: #404041;
     --2: #cfae80;
