@@ -107,9 +107,7 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
 }
 
 @media (max-width: 767px) {
-    img[src*="https://cdn.salla.sa/form-builder/wMwk80xDqfrriAjCYHHePTTIdFgXnfWQogm0wmE6.jpg"] {
-        content: url(https://cdn.salla.sa/lajWG/8Le2PhbKLG1ZjoJEDwAgMo1vnnDaH1FcYgTj0SIr.jpg);
-    }
+    
 
     .store-home section:nth-of-type(1) .main-slider img {
         width: 100%;
