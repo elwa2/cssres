@@ -284,6 +284,10 @@ span.icon-instagram.d-flex.align-items-center.justify-content-center {
     background-position: center;
     background-size: 12rem;
 }
+@media(max-width: 991px) {
+#fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
+    background-size: 9rem;
+}}
 
 .store-section h1,.store-section p,.store-section a {
     color: #fff;
