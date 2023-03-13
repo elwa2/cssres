@@ -227,7 +227,7 @@ span.icon-search.header-theme-icon-primary {
     padding-top: 7rem;
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: 21%;
+    background-size: 13rem;
     position: relative;
     /* top: -7px; */
     filter: brightness(49.5);
@@ -282,7 +282,7 @@ span.icon-instagram.d-flex.align-items-center.justify-content-center {
     width: 215px!important;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 12rem;
 }
 
 .store-section h1,.store-section p,.store-section a {
