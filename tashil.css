@@ -1,0 +1,1830 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap'); 
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css"); 
+.sicon-cart:before {
+    content: "\f179";
+    font-family: "Noto Kufi Arabic","bootstrap-icons"!important;
+}
+
+body,html,h1,h2,h3,h4,h5,h6,span,button,div,p {
+    font-family: 'Almarai',sans-serif,sallaicons,icomoon!important
+}
+
+section.section {
+    background-color: #fff!important
+}
+
+.product {
+    background: #fff
+}
+
+body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a {
+    font-size: 12px;
+    /* margin: 0 -14px 0 0; */
+}
+
+.product-title {
+    color: var(--main-color)!important
+}
+
+.product-price,.product-details__price,.product-price {
+    color: var(--main-text-color2)!important
+}
+
+.product-price,.product-details__price,.product-price:hover {
+    color: #40321e!important;
+    justify-content: center;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a {
+    border: var(--main-text-color2)solid 1px!important
+}
+
+.footer-header {
+    background: #fff!important
+}
+
+.footer-main {
+    background-color: var(--main-color)!important;
+}
+
+@media(max-width: 767px) {
+    .footer-main {
+        background-color: var(--main-color)!important;
+    }
+}
+
+footer .store-certificate img {
+    max-width: 54px;
+    max-height: 38px;
+    margin-left: 4px
+}
+
+.salla-theme_4 .footer-header .footer-payment .icons {
+    padding: 6px 12px 0 20px;
+    border-radius: 17px
+}
+
+.footer-sub {
+    background: linear-gradient(90deg,var(--main-color),var(--main-color))!important;
+    font-size: 18px
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    border-top: 0 solid var(--main-text-color2)!important
+}
+
+@media(max-width: 991px) {
+    .sub-nav .sub-nav-content .main-menu>li {
+        border-bottom:0 solid var(--main-text-color2)!important
+    }
+}
+
+section {
+    background: #fff!important
+}
+
+.u-white .container {
+    background-color: #fff!important
+}
+
+.section-products .container {
+    background: #ffffff7a!important;
+    border: 1px solid #fff!important
+}
+
+.feature-item__icon h3,.feature-item__icon i {
+    color: var(--main-color) !important;
+}
+
+body.salla-theme_4 .section-header .btn.btn-primary.btn-rounded {
+    height: 36px;
+    line-height: 23px;
+    border-radius: 7px 7px 7px 7px!important
+}
+
+.salla-theme_6 .site-header .header-top .sub-nav__menu {
+    height: 30px
+}
+
+.row.header-wrapper {
+    padding: 7px 0
+}
+
+.salla-theme_4 .feature-item__content p {
+    padding: .5rem
+}
+
+.feature-item:not(:last-child) {
+    margin-bottom: 1rem
+}
+
+.footer-payment {
+    text-align: center
+}
+
+.not-available {
+    color: #f00;
+    animation: flash 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite
+}
+
+.sub-nav .sub-nav-content.is-active {
+    border-radius: 1rem 0 0 1rem
+}
+
+.circle-action {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    line-height: 34px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: 0;
+    color: #fff;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out
+}
+
+.sub-nav__close svg {
+    width: 35px;
+    height: 35px;
+    fill: #ffffff;
+}
+
+#sort #sort-toggle {
+    border-radius: 7px;
+    transition: all .35s cubic-bezier(0.2,1,0.3,1)
+}
+
+.product {
+    border: #d9d0c4 solid 5.5px;
+    border-radius: 10px!important
+}
+
+.feature-item:last-child>.feature-item__icon>i.sicon-calendar-check:before {
+    content: "\E961"!important
+}
+
+.section--title.mb-4:before {
+    content: "";
+    visibility: visible;
+    display: block
+}
+
+.circle-action.next,.circle-action.prev {
+    color: #fff;
+    border-color: #fff
+}
+
+.salla-theme_4 .feature-item__content .feature-item__icon i[class^="sicon-"] {
+    font-size: 30px;
+    margin: 0
+}
+
+.feature-item__icon::before {
+    display: none!important
+}
+
+.feature-item h3,.feature-item p {
+    margin-top: 0!important;
+    visibility: visible!important;
+    color: #8a8a8a!important;
+    margin-bottom: 0!important
+}
+
+.pt-5,.py-5 {
+    padding-top: 0!important
+}
+
+.pb-5,.py-5 {
+    padding-bottom: 2rem!important
+}
+
+.feature-item h3 {
+    padding-bottom: 5px!important
+}
+
+.mb-4,.my-4 {
+    margin-bottom: .5rem!important
+}
+
+.pb-5,.py-5 {
+    padding-bottom: 5px!important
+}
+
+.product {
+    border: var(--main-color)solid 2.5px;
+    border-radius: 16px!important
+}
+
+footer .footer-sub .footer-wrapper img,footer .footer-sub .fs-cont img {
+    width: unset!important;
+    max-width: unset!important;
+    height: 25px;
+    background: var(--main-color)!important;
+    padding: 2px 7px!important;
+    border-radius: 0
+}
+
+.sub-nav-header a {
+    color: var(--main-text-color2)!important;
+    background: transparent;
+    border: #d9d0c4 solid 2px!important;
+    border-radius: 8px 8px 8px 8px!important;
+    box-shadow: 2.5px 2.5px 5px #00000029,-2.5px -2.5px 5px #ffffff14;
+    padding-top: 3px;
+    padding-bottom: 8px;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    padding: 5px 15px!important
+}
+
+.sub-nav-header a {
+    color: #fff!important;
+}
+
+.sub-nav-header a:hover {
+    color: #fff!important;
+    background: var(--main-text-color2) !important;
+    border: #fff solid 2px!important
+}
+
+.salla-theme_6 .site-header .header-top .sub-nav__menu {
+    right: 10px;
+    position: absolute
+}
+
+.site-header .header-wrapper .sub-nav__menu svg {
+    fill: var(--main-color)!important;
+    filter: brightness(84.5);
+}
+
+.circle-action:hover {
+    background: #fff;
+    color: #d9d0c4;
+    border-radius: 8px 8px 8px 8px!important
+}
+
+.salla-theme_6 .site-header__mine-cart .badge {
+    background-color: #d9d0c4
+}
+
+.badge {
+    color: var(--main-color);
+    border-radius: 6px 6px 6px 6px!important
+}
+
+.site-header__cart .badge {
+    border: 2px solid #fff
+}
+
+.slick-active button {
+    background-color: var(--main-text-color2)!important
+}
+
+.slick-dots li button {
+    width: 20px;
+    height: 4px;
+    padding: 0;
+    border-radius: 2px;
+    background-color: #d9d0c4
+}
+
+.site-header,.main-slider img,body.salla-theme_4 .section-header .section--title span,body > section.u-white.py-4 > div > div:before,.a2a_kit.a2a_kit_size_32.a2a_default_style,body > section.py-5.text-center > div > div.section-header:before {
+    background: linear-gradient(to left,var(--main-color),var(--main-color))!important
+}
+
+.salla-theme_1 footer .footer-sub .footer-wrapper {
+    flex-direction: column;
+    text-align: left
+}
+
+.footer-main * {
+    text-align: center!important
+}
+
+.footer-sub {
+    font-size: 18px
+}
+
+.salla-theme_6 .site-header .header-top .logo-wrapper {
+    align-items: center
+}
+
+.salla-theme_6 .site-header .header-top .logo-wrapper {
+    width: calc(60% - 0);
+    align-content: center!important;
+    text-align: center!important;
+    justify-content: right!important
+}
+
+#search {
+    position: relative;
+    display: none
+}
+
+.login-link {
+    display: none;
+    right: auto;
+    padding: 0;
+    margin-left: 7px;
+    max-height: auto;
+    font-size: 16px
+}
+
+.salla-theme_4 .site-header .logo-wrapper .logo img {
+    width: auto;
+    height: auto;
+    max-width: 190px;
+    max-height: 65px;
+    display: none;
+}
+
+@media(min-width: 992px) {
+    .salla-theme_4 .site-header .logo-wrapper .logo img {
+        width:auto;
+        height: auto;
+        max-width: 198px;
+        max-height: 66px;
+        margin: -15px 0 -15px 0;
+        background: #fff;
+        border-radius: 6px;
+    }
+}
+
+.bg-brand {
+    background: #f2f2f2!important
+}
+
+.footer-main {
+    border-radius: 1rem 1rem 0 0!important
+}
+
+.footer-main a,.footer-main p,.footer-sub p:before,a.sub-nav__menu.ml-2::after {
+    color: var(--color-bg);
+    font-size: 11.5pt;
+    /* filter: brightness(133.5); */
+}
+
+.footer-title span,.social__item a,.store-contact a {
+    color: var(--color-bg);
+}
+
+.social__item a {
+    border-color: #d9d0c4!important
+}
+
+.section--title {
+    position: relative;
+    color: var(--main-color);
+    font-size: 18px;
+    margin-right: -10px
+}
+
+.testimonials-item cite {
+    color: #545454
+}
+
+body {
+    color: #545454
+}
+
+.testimonials-item p:before {
+    border-top-color: #fff
+}
+
+.testimonials-item img {
+    border-radius: 50%!important
+}
+
+.category-featured::before,.feature-item::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    display: block;
+    content: "";
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.2);
+    border-radius: 100%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    opacity: 0
+}
+
+.category-featured:hover::before,.feature-item:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s
+}
+
+.product {
+    border: #e6e6e6 solid 1px
+}
+
+.product .product-footer {
+    display: block!important
+}
+
+.product .product-footer .sicon-cart:before {
+    content: "اضافة للسلة ";
+    font-family: 'Almarai',sans-serif,sallaicons,icomoon!important;
+    font-weight: 100;
+    font-size: 16px;
+    vertical-align: inherit;
+    color: #d9d0c4;
+    margin-top: 12px!important;
+    display: block;
+    border-radius: 10px!important
+}
+
+.product .product-footer .product-add {
+    display: block;
+    /* border: 1px solid var(--color-main) !important; */
+    background: var(--color-bg);
+    padding-bottom: 8px;
+    padding-top: 0;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: 700;
+    border-radius: 10px !important;
+    text-align: center;
+    color: #fff !important;
+    border: transparent solid 1px;
+    height: 35px !important;
+    width: 80%;
+}
+
+.add_to_cart_btn {
+    color: #fff!important
+}
+
+.product .product-footer .product-add:hover {
+    background: linear-gradient(to left,var(--main-color),var(--main-text-color2))!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li,.sub-nav .main-menu li.sub-menu-header.categories-holder>span,.sub-nav .sub-nav-content,.sub-nav-header {
+    background: transparent!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li {
+    border: none!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a {
+    color: #fff!important;
+    margin: 5px;
+    border: #d9d0c4 solid 1px;
+    border-radius: 10px 10px 10px 10px!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li>ul>li a {
+    color: #171717!important;
+    background: 0 0!important
+}
+
+.sub-nav-header img {
+    display: none!important;
+    padding-bottom: 2px!important;
+    padding-top: 2px!important
+}
+
+.sub-nav-header::before {
+    content: "";
+    text-align: center!important;
+    display: block;
+    height: 70px!important;
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: top center!important
+}
+
+.salla-theme_4 .category-featured {
+    margin-bottom: 10px!important
+}
+
+.product .product-footer .product-add {
+    order: 2!important
+}
+
+body.salla-theme_4 .product .product-footer {
+    display: flex!important;
+    flex-direction: column!important
+}
+
+.lightener h2 {
+    display: none!important
+}
+
+.mb-4,.my-4 {
+    margin-bottom: .5rem!important
+}
+
+.sub-nav-header::before {
+    content: "";
+    text-align: center!important;
+    display: block;
+    height: 102px!important;
+    background-image: var(--logo);
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: top center!important;
+    margin: 4px 44px 10px;
+    /* filter: invert(1) hue-rotate(178deg); */
+    filter: brightness(99.5);
+}
+
+.u-white .container {
+    background-color: #fff!important;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 0!important
+}
+
+.u-white .container {
+    padding-top: 0!important
+}
+
+.feature-item {
+    background: 0 0!important;
+    box-shadow: unset!important
+}
+
+.u-white .container {
+    background-color: #fff!important;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 0!important
+}
+
+.u-white .container {
+    padding-top: 0!important
+}
+
+.salla-theme_4 .feature-item__content p {
+    padding: .5rem;
+    padding-bottom: .5rem;
+    width: 100%!important;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-height: 60px;
+    border-radius: 0 5rem!important
+}
+
+.feature-item {
+    background: 0 0!important;
+    box-shadow: unset!important
+}
+
+.feature-item__content {
+    background: 0 0!important;
+    box-shadow: unset!important
+}
+
+.footer-main,.salla-theme_4 .feature-item__content .feature-item__icon,.salla-theme_4 .feature-item__content p,.site-header {
+    padding-right: 0rem!important
+}
+
+.sub-nav .sub-nav-content {
+    background: 0 0!important
+}
+
+.salla-theme_4 .feature-item__content .feature-item__icon {
+    color: #1f1f1f!important
+}
+
+.category-featured:hover::before,.feature-item:hover::before,.product:hover::before {
+    -webkit-animation: circle .75s;
+    animation: circle .75s
+}
+
+@keyframes mvt {
+    0% {
+        transform: scale(0.8)
+    }
+
+    40% {
+        transform: scale(1.1)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
+
+@keyframes tournemoi {
+    0% {
+        transform: rotate(-2deg)
+    }
+
+    40% {
+        transform: rotate(2deg)
+    }
+
+    100% {
+        transform: rotate(0)
+    }
+}
+
+.product:hover {
+    animation: tournemoi ease 1s
+}
+
+.product,.product img {
+    border: #e6e6e6 solid 1px;
+    border-radius: 10px!important
+}
+
+section.section {
+    padding: .5rem 0!important
+}
+
+.footer-sub p {
+    max-height: 30px!important;
+    line-height: 30px!important;
+    overflow: hidden!important
+}
+
+.salla-theme_4 .footer-header .icons .store-certificate img {
+    max-width: 60px!important;
+    max-height: 40px!important
+}
+
+.footer-item:first-of-type .footer-title {
+    /* display: none */
+}
+
+.main-slider {
+    max-width: 100%!important;
+    margin: auto;
+    margin-bottom: auto
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li>ul>li a {
+    color: #fff!important;
+    background: 0 0!important
+}
+
+@media screen and (max-width: 777px) {
+    .footer-sub p {
+        max-height:30px!important;
+        line-height: 14px!important;
+        overflow: hidden!important;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 1020px) {
+    footer .store-certificate * {
+        font-size:13px;
+        color: #fff
+    }
+
+    footer .store-certificate b {
+        font-size: 13px;
+        color: #fff
+    }
+}
+
+a.circle-action.next.button-next,a.circle-action.prev.button-prev,a.circle-action.next.button-more {
+    border: 0 solid #fff
+}
+
+.circle-action.next,.circle-action.prev {
+    color: var(--main-color)!important;
+    background: #fff
+}
+
+.login-link {
+    display: unset!important
+}
+
+#search {
+    position: relative;
+    display: unset!important
+}
+
+.site-header {
+    padding-right: 0rem!important
+}
+
+.product .product-footer .sicon-cart::before {
+    content: " إضافة للسلة ";
+    font-family: 'Almarai',sans-serif,sallaicons,icomoon!important;
+    font-weight: 700;
+    font-size: 18px;
+    vertical-align: inherit;
+    color: #fff;
+    margin-top: 5px!important;
+    display: block;
+    margin: 6px 0 0 0!important;
+}
+
+@media(max-width: 767px) {
+    .product .product-footer .sicon-cart::before {
+        /* margin: 20px 0 0 0!important; */
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    color: var(--color-bg);
+}
+
+.sub-nav .sub-nav-content.is-active {
+    background: var(--main-color)!important ;
+}
+
+.sub-nav-content.is-active .main-menu>li>a {
+    color: #fff!important
+}
+
+.sub-nav-content.is-active .main-menu>li>a>i {
+    color: #eab368!important
+}
+
+.sub-nav .main-menu>li>a {
+    color: var(--color-bg) !important;
+}
+
+p.mb-4.mb-md-0 {
+    color: #fff!important
+}
+
+.social__item a:hover {
+    background: #222228!important
+}
+
+section {
+    background: #fff!important
+}
+
+span.sicon-instagram {
+    color: #ff75c8!important;
+    font-size: 100%
+}
+
+span.sicon-snapchat {
+    color: var(--main-text-color2)!important;
+    font-size: 100%
+}
+
+span.sicon-facebook {
+    color: #8694fb!important;
+    font-size: 100%
+}
+
+.footer-main .container:before {
+    text-align: center;
+    content: "";
+    display: block;
+    height: 152px;
+    width: 216px;
+    margin: auto auto 20px;
+    background-image: var(--logo);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    filter: brightness(78.5);
+}
+
+.add-cart-large,.order-btn {
+    /* background: var(--main-text-color2)!important; */
+    /* border-color: var(--main-text-color2)!important; */
+}
+
+.product .product-title {
+    text-align: center;
+    line-height: 1.4;
+}
+
+p.mb-4.mb-md-0 {
+    color: #fff!important
+}
+
+.footer-sub a {
+    color: transparent!important;
+    text-decoration: underline
+}
+
+section {
+    background: #fff!important
+}
+
+.u-white .container {
+    background-color: #fff!important
+}
+
+.section-header .section--title span {
+    color: var(--main-color);
+    background: #fff
+}
+
+body.salla-theme_1 .section-header .btn.btn-primary.btn-rounded,body.salla-theme_2 .section-header .btn.btn-primary.btn-rounded,body.salla-theme_4 .section-header .btn.btn-primary.btn-rounded {
+    height: 36px;
+    font-size: 15px;
+    color: #ffffff!important;
+    border-color: var(--main-text-color2)!important;
+    padding: 0 15px;
+    background: linear-gradient(to left,var(--main-text-color2),var(--main-text-color2))!important;
+    transition: all .35s cubic-bezier(0.2,1,0.3,1);
+}
+
+.login-link,.contact-link,.notification-link,.store-contact a,.store-header-min .back-icon,.circle-action,#cl_toggle {
+    color: var(--color-bg) !important;
+    border-color: var(--color-ff);
+    margin: 5px 0 0 0;
+}
+
+button.circle-action.ml-md-2.toggle-search {
+    margin: 6px 8px 1px 1px
+}
+
+.site-header__cart .badge {
+    color: var(--color-bg) !important;
+    border: 2px solid var(--main-color)!important;
+    background: var(--color-ff);
+}
+
+.breadcrumb>.active {
+    color: #fff!important
+}
+
+.slick-list.draggable {
+    border-radius: 0 0 42px 42px
+}
+
+.product-form {
+    padding: 1rem;
+    background: #fff!important;
+    border: 1px solid var(--main-text-color2)!important;
+    border-radius: 4px
+}
+
+.product-form,.product-options {
+    background-color: #fff!important;
+    padding: 20px!important;
+    border: 1px solid var(--main-text-color2)!important;
+    border-radius: 3px
+}
+
+.product-option-name {
+    color: #fff!important
+}
+
+.cart-fav .btn-rounded.add-to-wishlist i,.cart-fav .btn-rounded.remove-from-wishlist i {
+    color: var(--main-color)!important;
+}
+
+.a2a_svg {
+    -webkit-filter: none;
+    filter: none;
+    opacity: .9
+}
+
+.product-cart,.cart-total-box {
+    width: 100%;
+    border: 1px solid #cecece!important
+}
+
+.product-cart {
+    position: relative;
+    width: 95%;
+    margin: 0 auto 30px;
+    border-radius: 5px
+}
+
+.cart-total-box {
+    position: relative;
+    width: 95%;
+    height: 62px;
+    margin: 0 auto;
+    padding: 10px 15px;
+    border-radius: 4px
+}
+
+.cart-nav-submit,.cart-nav-more,.cart-nav-solid {
+    background: #1b1829!important;
+    border-color: #1b1829!important
+}
+
+#cart-content #cartTotal {
+    color: var(--main-text-color2)!important
+}
+
+.delete-button {
+    color: var(--main-text-color2)!important;
+    border: 2px solid var(--main-text-color2)!important
+}
+
+.cart-number,.active-step .cart-number {
+    color: var(--main-text-color2)!important;
+    border-color: var(--main-text-color2)!important;
+    background: #1b1829
+}
+
+@media only screen and (max-width: 767px) {
+    body:not(.salla-default) .cart-fav {
+        position:fixed!important;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        box-shadow: 0 0 10px rgb(0 0 0 / 5%);
+        padding: 10px;
+        background-color: #1b1829!important;
+        z-index: 9999
+    }
+
+    a.add-cart-large.add_to_cart_large_btn {
+        font-size: 18px
+    }
+}
+
+.circle-action:hover {
+    background: var(--main-text-color2)!important;
+    color: var(--main-color)!important
+}
+
+ul.list.brands-list li {
+    background: #fff;
+    border-radius: 12px
+}
+
+ul.list.brands-list li:hover {
+    animation: tournemoi ease 1s
+}
+
+body:not(.salla-theme_6) .category-featured {
+    border-radius: 26px
+}
+
+.breadcrumb>.active {
+    color: #16414f!important
+}
+
+.product-details__title {
+    color: #154755!important
+}
+
+.product-option-name {
+    color: #164855!important
+}
+
+.login-form .panel-title::before {
+    content: "";
+    text-align: center!important;
+    display: block;
+    height: 124px!important;
+    background-image: var(--logo);
+    background-size: contain!important;
+    background-repeat: no-repeat!important;
+    background-position: top center!important;
+    margin: 25px;
+    filter: brightness(82.5);
+}
+
+.login-form .panel-title .icon-object {
+    display: none!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a {
+    color: #fff!important;
+    margin: 5px;
+    border: #1f1a13 solid 0!important;
+    border-radius: 10px 10px 10px 10px!important;
+    background: #ffffff40;
+    box-shadow: 2.5px 2.5px 5px #22232c94,-2.5px -2.5px 5px #21232e00;
+    font-family: 'Almarai',sans-serif,sallaicons,icomoon!important;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a:hover {
+    background: linear-gradient(to left,var(--main-text-color2),transparent)!important
+}
+
+.sub-nav .main-menu li#ls_switcher_mobile a:before {
+    color: var(--main-text-color2)
+}
+
+.cart-nav-submit,.cart-nav-more,.cart-nav-solid {
+    background: linear-gradient(to left,var(--main-color),var(--main-text-color2))!important;
+    border-color: aliceblue!important
+}
+
+.social__item a {
+    display: block;
+    width: 36px;
+    height: 36px;
+    color: var(--color-ff);
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 0 solid rgba(0,0,0,.2);
+    font-size: 18px;
+    -webkit-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+    box-shadow: 2.5px 2.5px 5px #00000017, -2.5px -2.5px 5px #ffffff2b;
+}
+
+.cart-number,.active-step .cart-number {
+    color: #fff!important;
+    border-color: var(--main-text-color2)!important;
+    background: linear-gradient(to left,var(--main-color),var(--main-text-color2))!important
+}
+
+.a2a_kit.a2a_kit_size_32.a2a_default_style {
+    /* background: linear-gradient(to left,#632c5a,var(--main-text-color2))!important; */
+    padding: 8px 0 8px 2px;
+    border-radius: 30px;
+}
+
+.banner img {
+    border-radius: 25px
+}
+
+.section[data-type="banner"] {
+    padding: 0rem 0 0!important;
+    margin-bottom: 0rem;
+    margin-top: 0rem
+}
+
+.product,.product img {
+    border: var(--main-text-color2)solid 0!important
+}
+
+.product {
+    border: 0 solid #eee;
+    box-shadow: 0 2px 10px -3px #c8c8c8;
+    border-radius: 15px;
+    margin-top: 10px;
+    background-color: #fff
+}
+
+.social__item a {
+    border-color: var(--main-color);
+    border: 1px solid var(--main-color)!important;
+    background: var(--color-bg);
+}
+
+.feature-item__content {
+    background: #fff
+}
+
+.feature-item__icon {
+    background: #fff!important;
+    color: #000;
+    border: none!important;
+    min-height: 90px;
+    width: 100%!important;
+    height: 40px;
+    margin-bottom: 0!important
+}
+
+.feature-item p {
+    background: linear-gradient(to left,#fff,#e2e2e2)!important;
+    padding-bottom: 10px!important
+}
+
+.salla-theme_4 .feature-item__content p {
+    padding: .5rem;
+    padding-bottom: .5rem;
+    width: 100%!important;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    min-height: 60px;
+    border-radius: 0 5rem!important
+}
+
+.salla-theme_4 .feature-item__content .feature-item__icon {
+    width: 100%!important;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    border-radius: 5rem 0!important
+}
+
+.product {
+    border-radius: 8px
+}
+
+section.section {
+    padding: 0
+}
+
+html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,blockquote,a,abbr,img,small,strong,ol,ul,li,dd,form,label,table,caption,article,aside,canvas,details,embed,figure,figcaption,footer,header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: sub!important
+}
+
+a.next.button-more {
+    vertical-align: bottom!important
+}
+
+p.mb-4.mb-md-0,body > footer > div.footer-sub.text-center > div > div > div > p {
+    color: #fff!important;
+}
+
+body > footer > div.footer-sub.text-center::after {
+    content: "تصميم وبرمجة " " | " "على احمد 3lwaaa@gmail.com ";
+    display: block;
+    max-height: 30px!important;
+    color: #fefefe;
+    font-size: 10px;
+}
+
+.salla-theme_6 .product .product-footer .product-add.add_to_cart_btn {
+    border-radius: 10px;
+    background-color: #eee
+}
+
+.salla-theme_6 .product .product-footer .product-add.add_to_cart_btn span:last-child {
+    font-size: 18px
+}
+
+@keyframes signal {
+    0% {
+        box-shadow: 0 0 0 0 #f7da90
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px #fff
+    }
+}
+
+.offers-link,.price-after {
+    color: #444!important
+}
+
+.product-add {
+    animation: signal 1200ms infinite
+}
+
+.salla-theme_4 footer ul.footer-links {
+    -moz-columns: 2;
+    columns: 1
+}
+
+.col-sm-4 {
+    width: 25%;
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+.product {
+    border-radius: 8px
+}
+
+section.section {
+    padding: 0
+}
+
+.salla-theme_4 .site-header #cl_switcher_wrapper #cl_switcher #cl_toggle:hover {
+    background-color: var(--main-text-color2)!important
+}
+
+@media(max-width: 991px) {
+    .sub-nav .sub-nav-content {
+        right:0;
+        width: 75%;
+        height: 90%;
+        text-align: right;
+        overflow-y: scroll;
+        -webkit-transition: all .7s ease;
+        transition: all .7s ease;
+        -webkit-transform: translateX(110%);
+        transform: translateX(110%);
+        border-radius: 8px 0 20% 5%;
+        margin: 70px 20px 0 0
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories>li a:before,.sub-nav .main-menu li.sub-menu-logged-in a i,.sub-nav .main-menu li.sub-menu-header.categories-holder>span i {
+    content: "";
+    font-family: sallaicons,icomoon!important;
+    font-size: 16px;
+    margin-left: 5px;
+    color: #ffffff!important;
+    background: #ffffff24;
+    padding: 5px;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border: 1px solid #1c1b1b54;
+    vertical-align: middle;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>ul.store-categories>li>a:before,.main-menu>li>a:before {
+    content: "\ef39"!important;
+}
+
+.main-menu li:not(.sub-menu-logged-in)>a:before {
+    content: "";
+    font-family: sallaicons,icomoon!important;
+    font-size: inherit;
+    margin-left: 5px;
+    padding: 0px 0 0 0;
+    vertical-align: middle;
+}
+
+.sub-nav .main-menu li#ls_switcher_mobile a:before {
+    content: "\E93D"!important;
+    font-family: sallaicons;
+    color: var(--main-text-color2)!important;
+    display: initial;
+    vertical-align: middle;
+    font-size: 16px;
+    margin-left: 5px!important
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>ul.store-categories>li>a:hover:before,.sub-nav .main-menu li.sub-menu-header.categories-holder>ul.store-categories>li.has-children:hover>a:before {
+    filter: brightness(0.81)!important
+}
+
+.salla-theme_6 .sub-nav .main-menu li.has-children:hover a {
+    color: #eee!important
+}
+
+body > footer > div.footer-header > div > div > div > div > div.store-certificate > a:nth-child(1) > img {
+    display: none!important
+}
+
+body > footer > div.footer-header > div > div > div > div > div.store-certificate > a:nth-child(1)::before {
+    content: ""!important;
+    height: 40px!important;
+    background: url(https://maroof.sa/Content/Stamps/ImageCr.png)!important;
+    background-size: contain!important;
+    width: 100px!important;
+    display: block;
+    background-repeat: no-repeat!important;
+    border: none!important;
+    margin: auto
+}
+
+span.price-before {
+    color: #f00!important
+}
+
+a.sub-nav__menu.ml-2::after {
+    content: 'القائمة';
+    position: absolute;
+    width: 86px;
+    height: 24px;
+    color: var(--main-text-color2);
+    font-size: 10px;
+    top: 72%;
+    left: 48%;
+    color: #fff;
+}
+
+.store-notify {
+    background: linear-gradient(to left,var(--main-text-color2),var(--main-text-color2))!important;
+    color: #fde7c0!important
+}
+
+.promotion-title {
+    background-color: var(--main-text-color2)!important;
+    color: var(--color-ff);
+}
+
+.shipping-bar .free-shipping__label {
+    font-size: 18px;
+    font-weight: 800
+}
+
+.shipping-bar .free-shipping__bar>div>div,.shipping-bar .free-shipping__bar>div>span {
+    background: linear-gradient(90deg,var(--main-color),var(--main-text-color2))!important
+}
+
+.shipping-bar .free-shipping__bar>div>span:after {
+    border-top: 5px solid var(--main-text-color2)
+}
+
+.add-cart-large,.order-btn {
+    color: #fff!important
+}
+
+li.sub-menu-header.categories-holder {
+    font-size: 23pt!important
+}
+
+.modal-content {
+    background-color: var(--main-color)!important;
+}
+
+.panel {
+    background-color: transparent
+}
+
+footer {
+    padding: 0 8px
+}
+
+.footer-item .store-contact {
+    margin: 5px 0 0;
+    border: 0;
+    text-align: right;
+    font-size: 14px
+}
+
+body.store-home:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #fff var(--logo);
+    position: fixed;
+    z-index: 999999;
+    transform: scale(0);
+    animation-name: pupup;
+    animation-duration: 2s;
+    background-size: 95px;
+    background-repeat: no-repeat;
+    background-position: center 3rem
+}
+
+@keyframes pupup {
+    0% {
+        transform: scale(1)
+    }
+
+    18% {
+        transform: scale(1)
+    }
+
+    80% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+body.store-home:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999999;
+    background: var(--logo);
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25%;
+    animation-name: pupup_logo;
+    animation-duration: 2s;
+    transform: scale(0)rotate(0deg)
+}
+
+@keyframes pupup_logo {
+    0% {
+        transform: scale(1)rotate(0deg)
+    }
+
+    40% {
+        transform: scale(1)rotate(0deg)
+    }
+
+    80% {
+        transform: scale(1)rotate(-90deg)
+    }
+
+    100% {
+        transform: scale(0)rotate(-90deg)
+    }
+}
+
+@media(max-width: 768px) and (min-width:200px) {
+    #modal_login {
+        margin-top:10%;
+        margin-left: 3%
+    }
+}
+
+.text-muted {
+    color: var(--color-bg);
+}
+
+.login-title {
+    margin-top: -3px!important;
+    margin-bottom: 30px!important;
+    color: var(--color-bg);
+}
+
+.login-option,.btn-resend-option {
+    color: var(--main-text-color2);
+    border-color: var(--main-text-color2)
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px var(--main-text-color2);
+    background-color: #f5f5f5
+}
+
+::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 1rem 0 0 1rem;
+    background-color: #f5f5f5
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--main-text-color2)
+}
+
+.form-group label {
+    color: #fff
+}
+
+.store-contact a {
+    /* display: block; */
+    height: 38px;
+    border-radius: 20px 20px 20px 20px!important;
+    direction: ltr;
+    /* border: var(--main-text-color2) solid 1px; */
+    width: 24%;
+    margin: auto;
+    line-height: 2;
+}
+
+.sicon-brand:before, .sicon-social:before, .sicon-whatsapp2:before {
+    color: #37ec09;
+}
+
+.feature-item__icon,.store-feature__icon,body > section.u-white.py-4 > div > div > div > div > div > i,.store-feature .title,.feature.d-flex.flex-column.justify-content-center.align-items-center {
+    margin-bottom: 0;
+    border: none;
+    position: relative;
+    top: 0px;
+    animation: float 4s ease-in-out infinite;
+    transition: all .4s ease;
+    perspective: 1000px;
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+
+    50% {
+        transform: translatey(-20px);
+    }
+
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+footer {
+    padding: 0 8px;
+    display: grid;
+}
+
+.footer-header {
+    background: transparent !important;
+    order: 3;
+    position: relative;
+    top: -77px;
+    margin: -2px 0px -78px 0px;
+    /* right: 80px; */
+}
+
+@media(max-width: 767px) {
+    .footer-header {
+        top: unset;
+        right: 0;
+    }
+}
+
+footer .store-certificate img {
+    max-width: 54px;
+    max-height: 38px;
+    margin-left: 4px
+}
+
+.salla-theme_4 .footer-header .footer-payment .icons {
+    padding: 6px 12px 0 20px;
+    border-radius: 17px
+}
+
+body > footer > div.footer-header > div > div > div > div > div:nth-child(3) > img:nth-child(n+1) {
+    background-color: #fff;
+    padding: 2px;
+    border-radius: 5px;
+    max-height: 28.5px !important;
+}
+
+@media only screen and (max-width: 767px) {
+    body > footer > div.footer-header > div > div > div > div > div:nth-child(3) > img:nth-child(n+1) {
+        max-height: 21.5px !important;
+    }
+}
+
+body.salla-theme_4 .section-header .section--title span {
+    position: relative;
+    right: 3px;
+    /* top: 15px; */
+    color: var(--color-bg) !important;
+    padding: 8px 10px 8px 10px;
+    font-weight: 800!important;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+    font-size: .9rem!important;
+    border-radius: 7px!important;
+    padding: 11px 19px 11px 19px;
+}
+
+.feature-item__content {
+    background: #ea2323;
+    overflow: inherit;
+}
+
+body > section.py-5.text-center > div > div.section-header > h2 {
+    display: none
+}
+
+body > section.py-5.text-center > div > div.section-header:before {
+    position: relative;
+    content: " آراء العملاء";
+    display: block !important;
+    width: 156px;
+    height: 44px;
+    margin: 1px 0 6px 0;
+    top: -2px !important;
+    position: relative;
+    right: 3px;
+    color: var(--color-bg) !important;
+    font-weight: 800!important;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+    font-size: .9rem!important;
+    border-radius: 7px!important;
+    padding: 11px 19px 11px 19px;
+}
+
+body > section.u-white.py-4 > div > div:before {
+    position: relative;
+    content: "سبب اختيارك لنا";
+    display: block;
+    width: 156px;
+    height: 44px;
+    margin: 1px 0 6px 0;
+    top: -12px !important;
+    position: relative;
+    right: 3px;
+    /* top: 15px; */
+    color: var(--color-bg) !important;
+    padding: 8px 10px 8px 10px;
+    font-weight: 800!important;
+    border-bottom: 1px solid #f1f1f1;
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+    font-size: .9rem!important;
+    border-radius: 7px!important;
+    padding: 11px 19px 11px 19px;
+}
+
+.footer-main {
+    background: linear-gradient(90deg,transparent,var(--main-color),var(--main-color)) ;
+    background-color: var(--main-color)!important;
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    animation: gradient 11s ease infinite!important;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%50%
+    }
+
+    50% {
+        background-position: 100%50%
+    }
+
+    100% {
+        background-position: 0%50%
+    }
+}
+
+p.mb-4.mb-md-0,body > footer > div.footer-sub.text-center > div > div > div > p,span.font-13 *,span.font-13 {
+    color: #fff!important;
+}
+
+@media screen and (max-width: 777px) {
+    body > footer > div.footer-sub.text-center > div > div > div > p {
+        max-height: 22px!important;
+        line-height: 14px!important;
+        overflow: hidden!important;
+        font-size: 0px;
+    }
+}
+
+.footer-sub p:before {
+    content: "  الحقوق محفوظة  لمتجر   تَسهِيل-TASHIL   © 2023  ";
+    display: block;
+    max-height: 30px!important;
+    color: var(--color-bg);
+    text-align: center;
+}
+
+span.not-available::after {
+    content: "\1F494";
+    animation: beatHeart 1s;
+    animation: .8s infinite beatHeart;
+}
+
+@keyframes beatHeart {
+    0% {
+        transform: scale(1);
+    }
+
+    25% {
+        transform: scale(1.1);
+    }
+
+    40% {
+        transform: scale(1);
+    }
+
+    60% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.product-footer .not-available {
+    display: flex!important;
+    margin: 10px 0 0 15px;
+    font-size: 14px;
+    content: "/a";
+    flex-direction: column;
+}
+
+.logo img {
+    width: auto;
+    height: 0 !important;
+}
+
+.logo a {
+    background-image: var(--logo);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 54px;
+    width: 129px;
+    display: block;
+    max-width: 199px;
+    max-height: 71px;
+    filter: brightness(13.5);
+}
+
+.sicon-whatsapp2::after {
+    content: "\E916";
+    content: "\e917";
+    text-align: center;
+    cursor: pointer;
+    background: #46a51e;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    color: #fff;
+    box-shadow: #00000022 1.5px 1.5px 5px;
+    width: 0px;
+    height: 0px;
+    border-radius: 27.5px;
+    position: fixed;
+    bottom: 19px;
+    right: 17px;
+    transform: rotate(360);
+    transition: all .2s ease-in-out;
+}
+
+body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-whatsapp2::after,i.sicon-whatsapp2::after {
+    width: 56px;
+    height: 56px;
+    border-radius: 32.5px;
+    font-size: 32px;
+    box-shadow: #0000006b 2px 2px 8px;
+}
+
+.sicon-whatsapp2:after:hover {
+    border-radius: 0;
+    border: 0;
+    width: 180px;
+    height: 60px;
+}
+
+.footer-main p {
+    background: var(--color-main-d);
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 5rem;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5rem;
+    position: relative;
+    border-radius: 20px;
+}
+
+.footer-main p::before {
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Isolation_Mode' data-name='Isolation Mode' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.63 30.64'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m25.75,0H4.88C2.18,0,0,2.19,0,4.88v20.87c0,2.7,2.18,4.89,4.88,4.89h20.87c2.7,0,4.88-2.19,4.88-4.89V4.88c0-2.69-2.18-4.88-4.88-4.88Zm-13.31,21.74l-8.16-6.8,2.56-3.07,5.62,4.68,11.36-9.29,2.53,3.1-13.91,11.38Z'/%3E%3C/svg%3E");
+    font-size: 3rem;
+    position: absolute;
+    right: 0.8rem;
+    top: 57px;
+    top: calc(54% - 2.5rem);
+    height: 15px;
+    width: 35px;
+}
+
+@media screen and (max-width: 777px) {
+    .footer-main p::before {
+        top: calc(54% - 2.5rem);
+    }
+}
+
+.sicon-whatsapp2:hover::after {
+    content: "حاب نساعدك 😃؟ ";
+    content: "     في خدمتك ؟ ";
+    font-family: dinnextltarabic-regular!important;
+    width: 260px !important;
+    animation: trns 1s;
+    font-size: 20px !important;
+    color: #ffffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes trns {
+    0% {
+        color: #ffffff00;
+    }
+
+    100% {
+        color: #ffffff99;
+    }
+}
+
+h4.product-subtitle {
+    text-align: center;
+    text-align-last: center;
+}
+
+body > section.u-white.py-4 > div > div > div > div > div > i {
+    animation: scale-in-out 1000ms cubic-bezier(0, 1, 1, 1) infinite alternate;
+}
+
+@keyframes scale-in-out {
+    from {
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.products-listing.eq-height .slick-track .slick-slide:hover {
+    transform: translateY(-10px) !important;
+    transition: all .3s ease !important;
+}
+
+:root {
+    --main-color: #1f3960;
+    --infinte-color: #1f3960;
+    --main-text-color: #1f3960;
+    --main-text-color2: #eec65d;
+    --main-text-color-dark: #404040;
+    --color-main: #1f3960;
+    --color-main-d: #eec65d;
+    --color-main-l: #eec65d;
+    --color-main-reverse: #eec65d;
+    --color-text: #5a5a5a;
+    --color-text-reverse: #eec65d;
+    --color-title: #eec65d;
+    --color-bg: #eec65d;
+    --color-ff: #fff;
+    --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 373.89 338.6'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23eec65d; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m356.67,176.86c4.54,0,8.94,0,13.34,0,.84,0,1.65.07,2.46.33,1.1.35,1.34,1.21,1.42,2.21.07,1.01-.26,1.87-1.23,2.21-.72.25-1.48.44-2.28.43-12.76-.03-25.51-.05-38.27-.05-107.55,0-215.1,0-322.65,0-2.41,0-4.82.01-7.23-.15-1.17-.08-1.76-.54-1.97-1.62-.28-1.42.15-2.44,1.26-2.93.98-.43,2.03-.4,3.07-.4,5.98,0,11.97,0,17.95,0,.16,0,.32-.03.52-.04.39-.8-.07-1.54-.08-2.29-.04-4.49-.09-8.97,0-13.46.1-4.83.78-9.63,1.27-14.43.35-3.42,1.08-6.82,1.71-10.21,1.84-9.79,4.76-19.28,8.37-28.55,3.56-9.15,8.22-17.75,13.22-26.18,3.1-5.22,6.61-10.13,10.15-15.04,2.21-3.06,4.65-5.94,7.1-8.82,3.55-4.18,7.45-8,11.35-11.83,2.32-2.28,4.96-4.25,7.37-6.45,3.49-3.18,7.3-5.95,11.08-8.76,2.34-1.74,4.79-3.34,7.22-4.95,4.17-2.77,8.48-5.33,12.93-7.64,5.74-2.98,11.61-5.65,17.66-7.9,5.38-2,10.78-3.99,16.33-5.46,5.79-1.53,11.7-2.5,17.63-3.38,12.62-1.87,25.28-1.64,37.94-1.12,8.54.35,16.92,2.05,25.24,4.02,7.57,1.79,14.91,4.33,22.1,7.23,8.98,3.61,17.48,8.21,25.64,13.46,6.6,4.24,12.79,9.02,18.86,13.97,4.02,3.28,7.51,7.13,11.18,10.79,8.27,8.23,15.4,17.33,21.85,27.02,5.44,8.16,10.16,16.7,14.15,25.64,3.39,7.57,6.04,15.42,8.32,23.39.86,3,1.79,6.01,2.29,9.07.4,2.45.79,4.91,1.25,7.34.33,1.74.24,3.51.79,5.24.36,1.12.19,2.45.27,3.68.11,1.6.23,3.22.4,4.81.36,3.38.21,6.78.33,10.16.12,3.18-.02,6.41-.43,9.6-.05.36.07.74.11,1.08Zm-167.17.01c31.79,0,63.58,0,95.38,0,17.58,0,35.16.03,52.74.05.61,0,1.05-.04,1.07-.82.04-1.57.2-3.15.21-4.72.03-4.8-.03-9.58-.44-14.38-.22-2.59-.36-5.2-.66-7.77-.67-5.72-1.78-11.38-3.19-16.97-.93-3.69-1.77-7.42-3.14-11-1.15-3.01-1.85-6.18-3.48-9.03-.53-.93-1.2-1.95-1.38-2.93-.29-1.68-1.1-3.09-1.84-4.51-.72-1.39-1.62-2.76-2.26-4.15-.53-1.16-1.13-2.39-1.72-3.46-2.44-4.43-5.09-8.74-7.94-12.94-2-2.94-4.16-5.75-6.31-8.56-2.22-2.91-4.58-5.72-7.03-8.44-2.18-2.43-4.33-4.91-6.73-7.11-2.72-2.49-5.26-5.18-8.26-7.39-2.03-1.5-3.88-3.24-5.94-4.73-3.23-2.35-6.37-4.79-9.74-6.96-3.24-2.09-6.52-4.13-9.81-6.14-4.73-2.89-9.86-4.99-14.93-7.16-6.19-2.64-12.6-4.69-19.15-6.24-5.04-1.19-10.14-2.06-15.27-2.84-5.83-.89-11.68-1.21-17.54-1.43-5.83-.21-11.66.09-17.46.76-2.42.28-4.86.44-7.26.79-6.41.93-12.75,2.17-18.95,4.04-6.72,2.03-13.26,4.52-19.64,7.48-5.62,2.6-11.09,5.48-16.32,8.77-3.96,2.49-7.74,5.25-11.5,8.05-4.4,3.28-8.63,6.76-12.6,10.52-7.43,7.05-14.18,14.7-20.15,23.04-3.91,5.47-7.43,11.19-10.77,17-1.27,2.2-2.29,4.55-3.43,6.83-4.04,8.06-7.05,16.5-9.44,25.19-1.51,5.49-2.55,11.07-3.45,16.68-.59,3.65-.95,7.34-1.07,11.04-.05,1.61-.06,3.24-.27,4.83-.59,4.48.07,8.93.13,13.39.01.86.52,1.19,1.4,1.17,1.95-.03,3.91.04,5.86.04,47.42,0,94.84,0,142.26,0Zm152.64-.05c3.13,0,6.07,0,9.02,0,1.53,0,1.95-.32,1.93-1.88-.07-4.96.33-9.9-.15-14.88-.4-4.09-.6-8.21-1.01-12.31-.47-4.73-1.28-9.39-2.25-14.01-1.52-7.23-3.63-14.32-6.2-21.25-2.94-7.93-6.35-15.65-10.74-22.91-2.48-4.1-4.77-8.31-7.47-12.28-6.16-9.05-13-17.54-20.68-25.35-3.52-3.58-7.3-6.89-11.14-10.14-6.16-5.22-12.73-9.87-19.51-14.23-7.13-4.59-14.63-8.5-22.48-11.76-9.26-3.85-18.77-6.86-28.61-8.83-4.26-.85-8.54-1.51-12.86-2.02-4.35-.51-8.71-1-13.08-1.17-5.35-.21-10.69-.15-16.05.13-4.12.21-8.19.68-12.26,1.17-6.58.79-13.1,1.99-19.51,3.71-12.39,3.33-24.24,7.99-35.46,14.28-11.77,6.59-22.47,14.62-32.49,23.57-6.53,5.84-12.4,12.34-17.88,19.19-5.75,7.19-10.87,14.82-15.46,22.8-3.79,6.59-7.06,13.44-9.91,20.48-1.83,4.52-3.44,9.11-4.62,13.88-.59,2.41-1.44,4.81-2.07,7.23-1.5,5.85-2.48,11.8-3.27,17.79-.37,2.79-.67,5.58-.72,8.39-.02,1.43.03,2.94-.16,4.28-.32,2.24-.2,4.47-.38,6.7-.23,2.86.36,5.71.27,8.58-.02.56.21.84.8.84,2.74.02,5.48.07,8.23.1.56,0,.96-.23.92-.9-.16-3.08-.49-6.16-.42-9.23.05-1.97.13-3.96.24-5.94.22-4,.14-8.01.7-12,.65-4.64,1.28-9.28,2.38-13.83,2.13-8.79,4.78-17.41,8.32-25.77,3.19-7.52,7.19-14.58,11.32-21.58,2.69-4.57,5.97-8.75,9.02-13.09,4.2-5.97,9.29-11.17,14.41-16.3,3.69-3.69,7.6-7.18,11.69-10.46,8.44-6.78,17.37-12.81,26.98-17.8,9.98-5.18,20.45-9.14,31.32-12.01,4.4-1.16,8.89-1.87,13.39-2.57,3.34-.52,6.68-.98,10.04-1.17,6.31-.36,12.63-.31,18.94-.25,5.26.05,10.51.24,15.72,1.02,4.98.75,9.93,1.66,14.82,2.87,11.5,2.86,22.49,7.04,32.94,12.62,4.42,2.36,8.73,4.89,12.81,7.84,2.84,2.05,5.84,3.88,8.63,6.02,8.9,6.82,16.94,14.51,24.19,23.09,8.73,10.35,16.24,21.47,22.38,33.53,4.03,7.91,7.1,16.19,9.75,24.65.95,3.04,1.97,6.06,2.55,9.22.7,3.83,1.42,7.65,2.02,11.5.58,3.79.93,7.61,1.14,11.39.25,4.52.07,9.11,0,13.67-.03,1.74,0,3.47,0,5.4Z'/%3E%3Cpath class='cls-1' d='m22.66,247.92c-6.27,0-12.55,0-18.82,0-.58,0-1.16-.04-1.74-.11-1.48-.19-2-.68-2.09-1.94-.1-1.42.5-2.33,1.83-2.68.97-.26,1.97-.3,2.97-.3,11.84,0,23.69-.02,35.53-.02,36.8,0,73.61,0,110.41,0,61.17,0,122.34,0,183.5,0,1.62,0,3.23-.17,4.85-.22,2.69-.08,5.37.27,8.07.24,7.02-.06,14.05-.03,21.07,0,1.19,0,2.39.11,3.58.23,1.19.12,2.02,1.26,2,2.64-.02,1.39-.55,2.01-2.06,2.07-2.82.11-5.65.14-8.47.15-7.19.02-14.38.04-21.57,0-1.52,0-2.4.43-3.14,1.91-2.07,4.17-4.65,8.07-7.23,11.95-3.04,4.58-6.25,9.05-9.66,13.36-4.95,6.26-10.32,12.12-16.12,17.61-2.48,2.35-4.93,4.71-7.52,6.93-2.06,1.76-4.23,3.38-6.35,5.05-5.35,4.2-11.01,7.98-16.79,11.52-5.26,3.22-10.75,6.07-16.4,8.58-8.85,3.94-17.95,7.14-27.36,9.43-5.36,1.3-10.76,2.47-16.23,3.21-5.45.73-10.94,1.04-16.45,1.07-6.4.03-12.8.04-19.19-.11-4.33-.1-8.6-.74-12.88-1.39-7.22-1.1-14.32-2.72-21.31-4.83-7.64-2.31-15.1-5.06-22.31-8.49-5.45-2.6-10.78-5.41-15.96-8.54-5.03-3.04-9.76-6.5-14.44-10.01-3.77-2.82-7.38-5.88-10.85-9.1-2.06-1.91-4.14-3.82-6.11-5.82-2.58-2.62-5.22-5.19-7.6-8-2.36-2.79-4.75-5.55-6.99-8.44-2.92-3.75-5.7-7.6-8.28-11.59-2.74-4.24-5.32-8.57-7.79-12.96-.55-.97-1.2-1.38-2.38-1.36-6.56.07-13.13.03-19.69.03,0-.01,0-.02,0-.03Zm312.6.11H48.3c.17.37.22.52.3.66,2.5,4.48,5.1,8.9,8.07,13.1,6.82,9.69,14,19.05,22.81,27.08,4.48,4.09,8.95,8.18,13.75,11.9,7.88,6.11,16.1,11.71,24.95,16.34,10.92,5.71,22.35,10.1,34.3,13.1,4.73,1.19,9.51,2.15,14.32,2.93,2.21.36,4.44.44,6.64.81,4.77.8,9.6,1.07,14.41,1.31,6.83.34,13.65-.22,20.45-.95,5.19-.56,10.34-1.36,15.45-2.42,8.09-1.67,16.08-3.69,23.83-6.59,3.24-1.21,6.45-2.5,9.61-3.92,9.62-4.32,18.67-9.6,27.17-15.82,8.31-6.09,16.25-12.62,23.33-20.16,3.33-3.54,6.59-7.16,9.62-10.95,5.95-7.44,11.61-15.12,16.41-23.39.53-.92.97-1.9,1.55-3.03Z'/%3E%3Cpath class='cls-1' d='m208.15,208.05c1.52,1.64,3.34,1.26,5.11.83.83-.2,1.16-1.04,1.18-1.83.13-3.88.39-7.77.06-11.66-.08-.94.15-1.92.29-2.87.06-.4.44-.48.77-.48,1.45-.02,2.91-.07,4.36,0,1.06.05,1.57.66,1.55,1.81-.04,4.9.05,9.79-.06,14.69-.03,1.48.58,2.31,1.74,2.97.56.32,1.3.51,1.26,1.36-.04.81-.73,1.1-1.31,1.35-1.25.57-1.72,1.39-1.69,2.81.1,4.65.06,9.3.05,13.95,0,1.96-.44,2.39-2.42,2.45-.79.02-1.58.05-2.37.02-1.43-.06-1.84-.43-1.91-1.89-.08-1.66-.07-3.32-.09-4.98-.04-2.53-.01-5.06-.17-7.59-.09-1.39-.7-2.15-2.02-2.43-.24-.05-.49-.11-.73-.12-3.21-.24-3.53.05-3.57,3.24-.05,3.74-.08,7.47-.15,11.21-.04,2.13-.37,2.45-2.45,2.55-.79.04-1.58.1-2.36.09-1.68-.02-1.9-.24-2-1.96-.05-.87-.03-1.74-.03-2.61-.02-4.24-.05-8.47-.03-12.71,0-.91-.26-1.5-1.11-1.86-.38-.16-.72-.41-1.04-.68-.78-.65-.78-1.48.13-1.86,1.64-.68,2.07-1.83,2.03-3.53-.1-4.56-.03-9.13,0-13.7.02-2.43.26-2.62,2.66-2.61.75,0,1.5,0,2.24,0,1.52,0,2.01.34,2.03,1.85.07,4.76.02,9.53.02,14.2Z'/%3E%3Cpath class='cls-1' d='m157.66,233.43c-3.12.06-3.24.58-3.94-3.2-.23-1.22-.34-2.47-.61-3.68-.37-1.7-1.16-2.17-3.35-2.16-1.78.01-2.45.5-2.82,2.17-.38,1.7-.69,3.41-1.06,5.11-.25,1.15-.86,1.82-2.17,1.73-.89-.06-1.79,0-2.7.19-1.76.38-2.58-.48-2.28-2.22.84-4.94,1.65-9.88,2.55-14.8.2-1.12.16-1.96-1.02-2.43-.26-.1-.49-.31-.72-.49-.9-.72-.95-1.36.12-1.76,2.3-.85,2.88-2.62,3.2-4.78.58-3.88,1.34-7.74,2.03-11.61.12-.65.28-1.3.44-1.94.21-.82.77-1.26,1.59-1.36,2.16-.25,4.31-.18,6.47.02.72.07,1.08.47,1.36,1.09.71,1.54.78,3.22,1.09,4.84.53,2.77.97,5.56,1.44,8.34.07.41.17.83.12,1.24-.23,1.85.62,2.93,2.25,3.73,1.76.87,1.75,1.77.09,2.79-.99.61-1.14,1.25-.86,2.45.75,3.31,1.2,6.69,1.76,10.04.21,1.22.42,2.43.61,3.65.28,1.89.07,3.23-2.58,3.04-.33-.02-.66,0-1,0Zm-9.26-18.48c0,2.6.05,2.64,1.91,2.5.5-.04,1.21.15,1.27-.63.15-2.03-.22-4-.93-5.9-.11-.29-.3-.5-.63-.51-.36,0-.49.3-.58.56-.53,1.55-1.01,3.12-1.04,3.98Z'/%3E%3Cpath class='cls-1' d='m181.2,233.41c-3.11.11-5.83-.48-8.02-2.53-1.52-1.42-2.13-3.39-2.81-5.28-.28-.76-.53-1.55-.57-2.4-.05-1.02.37-1.54,1.3-1.8,1.51-.44,3.06-.2,4.58-.22.57,0,.71.49.87.92.35.93.62,1.9,1.06,2.79.7,1.39,2.06,2.19,3.15,1.99,1.34-.25,2.57-1.55,2.74-3.04.2-1.71-.12-3.31-1.3-4.65-.41-.47-.87-.9-1.24-1.4-1.23-1.67-2.79-2.43-4.92-2.16-1.25.16-1.61-.45-.98-1.55.68-1.19.44-1.99-.51-2.93-3.07-3.01-4.56-6.73-4.17-11.03.19-2.11,1.04-4.06,2.46-5.72,3.44-4.02,10.49-4.6,14.16-1.13,1.91,1.81,2.93,4.07,3.32,6.65.11.72-.28,1.07-.87,1.31-1.49.61-3.04.83-4.63.76-.89-.04-1.22-.67-1.48-1.42-.37-1.09-.78-2.13-2.01-2.61-1.25-.49-2.23-.19-3.01.88-1.25,1.72-.7,3.44-.1,5.16.4,1.15,1.13,2.11,1.83,3.08.73,1.01,1.63,1.48,2.95,1.39,1.82-.12,1.81.01,1.59,1.82-.08.63.1,1.23.63,1.75,2.04,1.98,3.83,4.16,4.65,6.93,1.28,4.33,1.03,8.41-2.1,12.01-1.83,2.1-4.19,2.52-6.58,2.42Z'/%3E%3Cpath class='cls-1' d='m119.71,192.01c2.37,0,4.74,0,7.11,0,.21,0,.42-.02.62,0,2.07.22,2.46.65,2.49,2.75,0,.21,0,.42,0,.62,0,3.29,0,3.27-3.18,3.6-2.32.25-3.34,1.19-3.16,3.73.14,1.98.06,3.99-.03,5.98-.06,1.31.4,2.19,1.58,2.8.62.32,1.56.58,1.47,1.49-.08.93-.97,1.3-1.72,1.61-.83.34-1.22.88-1.29,1.76-.24,3.11-.06,6.23-.11,9.34-.03,1.91.01,3.82-.04,5.73-.05,1.66-.32,1.85-1.95,2-.95.09-1.88.21-2.84.19-1.81-.02-1.95-.13-1.96-2-.01-3.12.04-6.23-.02-9.35-.04-2.14.18-4.29-.18-6.44-.1-.59-.28-.89-.73-1.13-.4-.21-.83-.39-1.21-.63-1.26-.82-1.27-1.78.07-2.38,1.61-.73,2.25-1.77,2.1-3.58-.18-2.21.02-4.45-.2-6.67-.12-1.2-1.27-2.23-2.48-2.25-1.1-.01-2.23.19-3.29-.28-.42-.19-.61-.39-.62-.96-.03-1.41.07-2.82.06-4.23-.01-1.18.53-1.66,1.64-1.66,2.62,0,5.24,0,7.85,0,0-.02,0-.05,0-.07Z'/%3E%3Cpath class='cls-1' d='m263.01,201.96c0,2.33.08,4.65-.03,6.97-.06,1.21.34,1.93,1.37,2.5,1.71.95,1.74,1.76.09,2.68-1.18.66-1.67,1.42-1.54,2.86.22,2.35.12,4.73.2,7.09.06,1.77.58,2.31,2.3,2.38,2.16.09,4.32.16,6.48.19,1,.01,1.54.31,1.48,1.45-.08,1.36,0,2.74-.02,4.11-.01.79-.41,1.17-1.25,1.21-4.9.23-9.8.22-14.7.23-1.03,0-1.41-.7-1.39-1.47.13-5.35.05-10.69.01-16.04,0-.78-.24-1.38-1-1.68-.11-.05-.22-.12-.32-.19-2.33-1.43-2.36-1.73.02-3.04.94-.51,1.22-1.14,1.25-2.17.15-4.94.06-9.88.12-14.82.02-1.98.22-2.14,2.23-2.23.87-.04,1.75-.04,2.61.02,1.44.09,1.99.54,2.03,1.98.09,2.65.02,5.31.02,7.97.01,0,.03,0,.04,0Z'/%3E%3Cpath class='cls-1' d='m235.41,223.76c0-2.53-.03-5.06.01-7.6.01-.89-.21-1.54-1.09-1.87-.08-.03-.14-.08-.21-.12-2.19-1.33-2.23-1.59-.07-2.79,1.06-.59,1.4-1.33,1.38-2.5-.05-4.98.01-9.96-.04-14.94-.01-1.23.49-1.8,1.62-1.86,1.2-.07,2.41-.09,3.61-.03.99.05,1.58.59,1.58,1.69-.01,3.07,0,6.14.01,9.21.01,1.95.1,3.9.06,5.85-.03,1.21.41,1.99,1.47,2.61,2.02,1.18,2.03,1.81-.03,2.78-1.26.6-1.48,1.53-1.48,2.7-.01,4.65-.03,9.3-.06,13.94-.01,2.25-.1,2.6-2.85,2.77-.85.05-1.7.03-2.56-.21-1.01-.28-1.34-.85-1.34-1.79,0-2.61,0-5.23,0-7.84Z'/%3E%3Cpath class='cls-1' d='m128.41,140.54c.07-1.52.77-2.8,1.34-4.1,1.73-3.97,6.39-4.93,9.67-2.04,1.67,1.48,2.95,3.26,3.95,5.24.71,1.41,1.45,2.8,2.1,4.24.94,2.07,2.57,3.32,4.77,3.43,3,.16,5.9.84,8.87,1.17,4.99.56,9.97,1.19,14.94,1.83,1.1.14,1.67-.26,2.02-1.33.96-2.96,2.3-5.77,3.65-8.58,1.46-3.05,3.71-4.66,7.05-5.08,3.52-.44,6.38.44,8.58,3.34,1.33,1.75,2.04,3.79,2.91,5.75.32.72.65,1.44,1.08,2.09,1.08,1.6,2.89,1.9,4.41.68,1.34-1.08,2.95-1.13,4.49-1.23,4.62-.3,9.21-.85,13.83-1.13,2.11-.13,4.23.07,6.33-.26.45-.07,1.17-.2,1.23.46.07.78-.7.67-1.2.68-2.12.05-4.24.13-6.35.09-3.52-.06-6.97.56-10.45.92-1.6.16-3.21.02-4.81.32-1.36.25-2.19.91-2.3,2.3-.18,2.25,1.2,3.62,3.71,3.76,1.3.08,2.54-.22,3.98-.46-.69-.38-1.49-.43-1.75-1.19.07-.45.42-.54.8-.64,1.96-.55,3.97-.99,6-.94,2.33.05,4.62-.37,6.94-.41.79-.01,1.57.05,2.36.14.87.11,1.48.34,1.46,1.43-.02,1.05.86.84,1.48.79,3.78-.32,7.56-.69,11.37-.57.08,0,.15.02.36.05-.59-.27-1.05-.63-1.54-.69-1.67-.21-2.77-1.12-3.56-2.54-.25-.46-.72-.49-1.2-.47-.51.02-1.05.16-1.69-.38,1.48-.54,2.78-.42,3.81.41,1.17.94,2.44,1.16,3.83,1.17,2.16,0,4.32,0,6.48.02.54,0,1.23-.26,1.51.48.17.47-.81,2.15-1.29,2.23-1.31.22-2.59.59-3.93.61-1.54.03-2.64.46-3.39,2.09-1,2.17-2.96,3.66-4.73,5.23-.3.27-.67.47-.79.89.09.29.28.46.55.43,1.75-.15,3.45.32,5.19.29,1.24-.02,2.46.24,3.66.56.44.12.96.28.95.84-.01.48-.45.79-.84,1-.98.52-2.09.37-3.14.54-2.42.39-4.78,1-7.21,1.36-3.43.51-6.85,1.12-10.32,1.27-3.98.17-7.98.28-11.96.13-3.06-.12-6.15.04-9.18-.27-3.98-.4-7.96.01-11.92-.38-.84-.08-1.65-.26-2.42-.56-3.34-1.31-6.82-1.94-10.34-2.57-2.64-.47-5.27-1.1-7.92-1.48-2.93-.43-5.85-.99-8.76-1.51-4.36-.78-8.73-1.52-13.09-2.27-2.68-.46-5.37-.82-8.07-1.12-5.29-.59-9.33-4.86-9.43-10.2-.03-1.5-.32-2.97-.35-4.46-.02-1.06-.89-1.16-1.71-1.41Zm61.5,2.56c-.66,0-1.24.15-1.83.42-1.98.9-3.04,2.57-3.86,4.47-1.31,3.04-.37,7.9,2.01,10.18,1.34,1.28,3.11,1.76,4.78,1.48,3.24-.53,5.85-4.31,5.08-7.52-.05-.19-.06-.45.03-.61.74-1.32.18-2.52-.4-3.65-1.25-2.41-2.8-4.51-5.81-4.77Zm-19.25,10.6c-1.64-2.04-3.69-2.85-5.94-3.24-.73-.13-1.5-.02-2.22-.17-4.22-.87-8.52-1.02-12.78-1.49-.8-.09-1.31.29-1.74.94-.94,1.42-1.93,2.8-2.89,4.2-.2.29-.56.53-.31,1.07,8.62-.11,17.27.06,25.89-1.32Zm-28.89-7.76c.16-2.14-2.33-2.8-2.42-4.87.58.14,1,.19,1.06.72.08.72.47.58.94.42-.1-.31-.14-.55-.25-.77-.8-1.66-2.03-2.88-3.92-3.06-1.58-.15-3.09,1.15-3.84,3.03-1.64,4.1-1.31,6.73,1.93,9.31.1.08.19.17.27.26.8.91,1.72,1.44,2.96.9,1.19-.52,2.52-2.4,2.5-3.51-.43-.06-.87.33-1.35-.06.23-1.24,1.04-1.97,2.14-2.38Zm80.09,13.63c-.12-.36-.26-.67-.57-.9-1.17-.87-2.13-1.97-3.12-3.02-1.03-1.11-2.38-1.45-3.71-1.26-1.8.26-3.58.38-5.39.49-1.39.08-2.8.21-4.14.7-.47.17-1.08.25-1.12.82-.04.65.61.81,1.11.98,1.69.58,3.47.74,5.22.92,3.16.32,6.3.69,9.43,1.2.7.11,1.46.67,2.28.07Zm-44.63-5.16c.27.7.69.84,1.28.75.13-1.13-.37-1.17-1.28-.75Z'/%3E%3Cpath class='cls-1' d='m249.48,150.71c-.12-.42-.05-.74.19-.9,1.31-.82,1.49-2.07,1.45-3.46-.04-1.55-.62-2.2-2.2-2.37-1.75-.19-3.5,0-5.21.22-2.68.36-5.34.69-8.05.68-1.31,0-2.63.2-3.94.3-.48.04-1.01.14-1.32-.43.12-.64.65-.55,1.07-.55,5.31-.01,10.55-1.07,15.87-1.08,1.43,0,1.65-.41,1.38-1.78-.37-1.94-.68-3.9-1.12-5.83-.3-1.33-.95-1.72-2.24-1.63-.46.03-.88.1-.77.69.08.41.22.81.83.66.38-.09.81-.24,1.04.32.23.54.25,1.05-.1,1.52-.17.23-.38.46-.63.58-1.13.55-1.12,1.26-.4,2.15.21.26.35.57.25.92-1.48.39-2.64-.45-2.94-2.11-.17-.98-.3-1.97-.51-2.94-.44-2.05-1.57-3.73-2.96-5.25-.87-.95-2.06-1.29-3.27-1.3-3.85-.04-7.71-.13-11.55.32-2.13.25-3.29,1.57-3.88,4.24-.15.69.02,1.8-.83,1.86-.82.06-1.16-.98-1.52-1.71-.38-.75-.56-1.56-.7-2.38-.17-.94-.67-1.37-1.64-1.3-.91.07-1.8-.03-2.7-.2-.71-.13-.95-.48-.86-1.09.12-.78.31-1.54.52-2.3.11-.4.44-.6.84-.64,2.8-.25,5.6-.67,8.4-.7,7.85-.09,15.71,0,23.56-.04,1.26,0,1.75.35,1.58,1.62-.08.61-.05,1.24-.21,1.85-.2.77-.6,1.23-1.44,1.31-.49.04-.98.19-1.44.36-.66.24-.82.81-.71,1.42.12.61.64.51,1.1.5.58-.02,1.16,0,1.74-.02,1.72-.02,2.24-.44,2.4-2.15.09-.98.15-1.97.24-2.95.12-1.3-.26-2.54-1.02-3.63-1.47-2.11-3.35-3.77-5.56-5.08-.44-.26-.96-.58-1.36-.19-.85.83-1.49.28-2.18-.17-1.18-.77-2.56-1.32-3.2-2.75,1.59.52,2.98,1.43,4.47,2.22-1.61-2.61-2.65-5.44-3.56-8.31-.24.07-.37.09-.38.12-.16,1.43-1.16,1.84-2.38,1.88-3.03.11-6.06.24-9.08.23-1.18,0-2.37-.3-3.54-.54-1.25-.25-1.8-1.21-2.18-2.33-1.35-4.02-2.15-8.16-2.9-12.32-.16-.87-.33-1.75-.49-2.6.49-.25.69.1.72.32.21,1.97,1.62,2.83,3.21,3.46,1.62.64,2.86,1.79,4.11,2.92,2.85,2.57,5.66,5.2,8.54,7.74.62.55,1.27,1.17,2.36,1.29,0-1.62-.23-3.28.56-4.63.67-1.13.52-2.11.21-3.19-.14-.48-.06-1.1-.65-1.34-.3.07-.33.29-.37.49-.22,1.07-.76,1.01-1.34.31-.74-.9-1.69-1.44-2.71-1.92-2.99-1.41-5.49-3.57-8.22-5.39-1.92-1.29-3.76-2.81-6.33-2.38-.34.06-.58-.11-.65-.44-.08-.38.19-.54.49-.59.61-.1,1.23-.21,1.85-.22,2.95-.04,5.9-.07,8.85-.04,1.61.02,3.23.18,4.84.24.64.02.8.41.99.91.59,1.52.64,3.21,1.48,4.66-.48-2.91-.42-5.9-1.23-8.76-.45-1.62-1.25-2.29-2.92-2.23-.53.02-.78-.01-.86-.53,2.2-1,5.59.98,5.68,3.52.15,4.35,1.27,8.5,2.23,12.69.3,1.31.83,2.51,1.38,3.72.16.34.36.69.8.7,1.1.02,1.28.9,1.34,1.64.09,1.14.2,2.29-.1,3.45-.38,1.49.15,2.9,1,4.07,1.56,2.16,3.49,4.02,5.58,5.64,2.48,1.93,3.97,3.96,3.61,7.41-.39,3.74-.13,7.55,0,11.33.07,2.29.4,4.55,1.78,6.56,1.32,1.91.12,4.82-2.22,5.61Zm-28.23-51.93c-.11.05-.21.1-.32.15.29.52.53,1.07.88,1.55,1.92,2.65,4.03,5.16,5.72,7.98.33.55.67,1.21,1.32,1.45.69.26,1.54,1.04,2.14.35.58-.68-.09-1.52-.65-2.06-2.21-2.12-4-4.64-6.35-6.62-1-.85-2.08-1.61-2.74-2.79Z'/%3E%3Cpath class='cls-1' d='m213.66,101.15c-4.47-2.26-8.62-4.78-12.27-8.12-1.43-1.31-3-2.48-4.99-2.9-.37-.08-.73-.15-1.17.08.3,1.21.91,2.26,1.67,3.24,2.38,3.09,5.06,5.94,6.99,9.37,1.19,2.11,2,4.37,3.03,6.54.3.63.65.95,1.4.89.91-.07,1.82.03,2.74.02,2.31-.04,3.11-.88,3.17-3.2.02-.6-.21-1.21.06-1.95.74.58.79,1.33.87,2.02.4,3.53.08,3.89-3.46,3.9-2.65.01-5.3.31-7.96.23-2.19-.07-4.31-.49-6.4-1.11-1.41-.42-1.74-1.71-1.99-2.93-.74-3.56-1.28-7.15-1.57-10.77-.17-2.14-.54-4.26-.56-6.42,0-.8.21-1.09,1.05-1.08,4.02.07,8.05.04,12.08.14,1.14.03,2.31.31,3.41.65,1.78.54,2.87,1.71,3,3.68.14,2.1.5,4.18.93,6.23.1.46.09.9-.01,1.49Z'/%3E%3Cpath class='cls-1' d='m225.14,83.94c-1.3.67-2.68.76-3.93.49-1.16-.25-2.3-.37-3.44-.29-5.11.35-10.21-.08-15.31-.11-7.06-.03-14.12-.03-21.18-.28-9.17-.32-18.34-.34-27.5-.58-7.81-.2-15.61-.06-23.41-.13-1.69-.01-3.39.13-5.08.27-1.29.11-2.17.96-2.5,2.24-.56,2.17-.65,4.39-.83,6.6-.42,4.99-.2,10.02-.74,15.01-.18,1.67-.23,3.39-.28,5.09-.23,7.29-.44,14.57-.77,21.86-.08,1.74-.2,3.47-.21,5.22-.01,1.52.17,1.59,1.62,1.84,1.73.3,3.49.44,5.17.97.41.13.73.37,1.05.81-1.63.48-3.12-.15-4.61-.4-1.16-.2-2.24-.78-3.48-.74-.68.02-1.06-.41-.99-1.14.22-2.31.07-4.64.39-6.95.31-2.22.28-4.48.3-6.71.03-3.48.34-6.95.3-10.44-.04-3.71.44-7.43.7-11.15.01-.17.04-.33.04-.5.16-5.23.33-10.47.45-15.7.03-1.33.16-2.65.35-3.96.28-1.94,1.3-2.91,3.25-3.22,2.34-.37,4.72-.38,7.08-.41,7.15-.09,14.29-.1,21.44-.03,11.71.13,23.42.29,35.13.55,6.39.14,12.78.33,19.17.47,5.56.12,11.11.48,16.66.74.39.02.85-.1,1.17.57Z'/%3E%3Cpath class='cls-1' d='m221.91,137.07c0-1.62.04-3.23-.02-4.85-.03-.9.33-1.16,1.16-1.17,2.49-.04,4.97-.18,7.46-.16,1.92.01,3.71-.8,5.64-.75,1.66.04,1.94.14,2.23,1.81.43,2.48.51,5.01.53,7.51.01,2-.94,2.7-3.66,2.93-3.95.33-7.89.75-11.87.75-1.09,0-1.57-.28-1.48-1.47.11-1.53.03-3.07.03-4.6,0,0-.02,0-.03,0Z'/%3E%3Cpath class='cls-1' d='m177.66,107.25c-.25-2.97-2.63-4.92-3.19-7.63,2.19,2.64,3.49,6,6.73,7.81-.75.67-1.43.72-2.06.78-3.52.35-7.05.16-10.57.03-.66-.02-.87-.35-.81-.96.34-3.52-.4-7.03-.12-10.55.14-1.78-.04-3.65.89-5.32.16-.29.25-.63.55-.8.24-.14.5-.34.79-.07.23.21.18.48.03.67-1.2,1.42-.4,2.72.23,4.02,1.93,3.95,4.07,7.79,6.5,11.45.19.28.4.52,1.04.57Z'/%3E%3Cpath class='cls-1' d='m181.62,102.74c-3.15-4.49-7.3-7.86-10.5-11.97.22-.4.44-.5.7-.51,3.02-.16,6.04-.23,9.06.1.6.07.92.32.86.95,0,.04,0,.08,0,.12.11,2.97.23,5.94.31,8.92.02.73.1,1.5-.44,2.4Z'/%3E%3Cpath class='cls-1' d='m190.16,98.65c-1.64-1.86-2.23-4.11-3.87-5.65.48,2.73,1.37,5.28,2.41,7.77.17.42.34.84.5,1.27.6,1.61.6,1.64-.98,2.11-.59.18-1.01.53-1.38,1-.35.45-.72.88-1.2,1.46-.68-4.51-.76-8.82-.44-13.15.11-1.5.31-2.94.95-4.31.57-1.19,1.05-1.23,1.83-.13.14.2.29.41.39.63,1.1,2.61,1.75,5.33,1.88,8.16,0,.19-.04.38-.09.81Z'/%3E%3Cpath class='cls-1' d='m160.74,127.32c-.85.81-1.91.76-2.68.48-2.32-.86-4.76-.88-7.14-1.2-5.37-.72-10.76-1.28-16.15-1.87-2.09-.23-4.2-.28-6.27-.6-1.73-.27-3.46-.21-5.19-.23-.52,0-.92-.11-.76-1.08,12.82.58,25.53,2.25,38.19,4.51Z'/%3E%3Cpath class='cls-1' d='m215.21,140.4c-.3,1.13-.82,1.66-1.84,1.34-.95-.3-1.75.26-2.77.45v-10.23c1.71.25,3.4.59,5.03,1.12.7.23,1.01.97.69,1.64-.34.72-.99.33-1.53.13-.45-.17-.77-.65-1.38-.62-.47.82-.08,1.49.42,2.11.66.82.78,1.54-.23,2.16-.1.06-.19.16-.28.25-.5.53-1.04,1.19-.54,1.85.46.61,1.19.31,1.78-.08.12-.08.3-.06.64-.11Z'/%3E%3Cpath class='cls-1' d='m191.4,103.71c.78.5.77,1.28.79,1.92.09,2.44.43,4.86.35,7.31-.03.86-.33,1.22-1.15,1.21-1.24-.03-2.48-.09-3.73-.07-.97.01-1.5-.45-1.56-1.36-.07-1.14-.02-2.29-.02-3.54.73.33,1.36.71,2.05.92,1.33.42,2.17-.08,2.46-1.43.24-1.13.45-2.27.41-3.44-.02-.48-.13-1,.38-1.51Z'/%3E%3Cpath class='cls-1' d='m225.43,87.85c-7.98.27-15.95.28-23.91-.5,0-.2,0-.4.01-.6,7.98-.08,15.96.25,23.94.41-.01.23-.02.46-.04.69Z'/%3E%3Cpath class='cls-1' d='m183.78,114.25c.11.8.01,1.56-.53,2.21-.49.6-.99.68-1.28-.13-.48-1.36-.75-2.78-.66-4.23.03-.46.29-.87.76-1.04.54-.19.85.21,1.12.58.57.77.7,1.66.59,2.61Z'/%3E%3Cpath class='cls-1' d='m203.24,134.67c-.02.86-.9,1.83-1.56,1.7-.65-.13-.96-.66-.88-1.29.11-.82.35-1.78,1.3-1.85.8-.06,1.05.77,1.14,1.44Z'/%3E%3Cpath class='cls-1' d='m180.16,135.22c-.46,1.67-.96,3.31-2.29,4.56.33-1.73,1-3.3,2.29-4.56Z'/%3E%3Cpath class='cls-1' d='m177.17,141.8c-.07,1.63-.71,3.01-1.82,4.2-.09-1.68,1.03-2.88,1.82-4.2Z'/%3E%3Cpath class='cls-1' d='m166.45,99.98q-.77-.78-.64-1.8c.86.31.63.97.64,1.8Z'/%3E%3Cpath class='cls-1' d='m60.04,248.4c1.04,0,1.98-.02,2.93,0,.69.02.96.6,1.26,1.08,5.66,9.04,12.08,17.45,19.44,25.21,10.12,10.65,21.51,19.65,33.99,27.31,8.85,5.43,18.33,9.52,28.16,12.85,5.66,1.92,11.45,3.31,17.29,4.53,5.37,1.12,10.81,1.82,16.28,2.26,1.59.13,3.3-.14,4.74.21,3.45.83,6.88.42,10.31.45,4.46.05,8.9-.44,13.33-.89,2.8-.29,5.57-.72,8.35-1.11,3.27-.45,6.47-1.33,9.7-2.07,10.25-2.36,20.16-5.72,29.63-10.32,9.37-4.55,18-10.27,26.24-16.64,6.83-5.27,12.96-11.26,18.86-17.54,2.65-2.82,5.18-5.74,7.55-8.77,2.14-2.74,4.27-5.52,6.23-8.41,1.18-1.75,2.42-3.45,3.63-5.17.24-.34.62-.65.7-1.02.43-2.02,1.92-2.08,3.52-1.99.41.02.88-.12,1.13.31.24.4-.12.7-.32,1-4.34,6.76-8.79,13.42-13.89,19.66-7.32,8.95-15.51,17-24.58,24.12-6.61,5.18-13.44,10.09-20.9,14.02-6.48,3.41-13.1,6.51-19.95,9.13-6.42,2.45-13.01,4.26-19.69,5.75-4.97,1.11-10,1.9-15.06,2.55-8.26,1.07-16.54.54-24.8.71-3.66.08-7.27-.53-10.89-.92-12.66-1.35-24.79-4.79-36.62-9.37-2.72-1.05-5.36-2.38-8.04-3.53-6.73-2.91-12.85-6.81-19.02-10.69-2.23-1.4-4.24-3.05-6.39-4.54-7.5-5.17-13.98-11.51-20.38-17.93-4.67-4.68-8.83-9.8-12.85-15.04-3.43-4.47-6.55-9.15-9.47-13.97-.21-.34-.5-.67-.41-1.21Z'/%3E%3Cpath class='cls-1' d='m188.86,156.72c-.6-.44-1.01-.96-1.37-1.51-.21-.32-.7-.59-.43-1.06.25-.44.74-.27,1.14-.26,1.47.03,2.17-.69,2.14-2.16-.01-.62-.25-.92-.9-.88-.62.04-1.23.02-1.81.34-1.52.86-1.86.7-2.35-1.04-.05-.18-.26-.36-.03-.56,1.76.06,2.14-.21,3.45-2.64.53,1.47,1.93,1.74,2.86,2.58,1.57,1.41.9,4.65-1.09,5.32-.98.33-.83,1.38-1.61,1.88Z'/%3E%3Cpath class='cls-1' d='m195.24,148.74c-.24.1-.31.16-.38.17-1.01.11-1.47-.59-1.87-1.32-.14-.25-.01-.57.25-.59.87-.08,1.32.53,1.73,1.16.11.16.17.35.28.59Z'/%3E%3Cpath class='cls-1' d='m195.26,155.23c-.42.54-.71.97-1.06,1.35-.24.26-.56.57-.95.26-.35-.27-.09-.61.05-.88.38-.74.98-1.04,1.96-.73Z'/%3E%3Cpath class='cls-1' d='m138.86,148.92c-1.06.42-1.94.32-2.82.06-.64-.19-.99-.65-.92-1.3.06-.67.6-.81,1.18-.84.32-.02.64-.08.96-.12.43-1.24.13-2.08-1.07-2.63-.98-.44-1.51-1.24-1.46-2.36,2.13-.31,3.66.98,3.68,3.07.02,1.35-.18,2.71.45,4.1Z'/%3E%3C/svg%3E");}
