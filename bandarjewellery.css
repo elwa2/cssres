@@ -1,5 +1,12 @@
 /* made by 3lwaaa@gmail.com - https://wa.me/201002241591 */
-@import url('https://kit-free.fontawesome.com/releases/latest/css/free.min.css'); section[style="background: #FAFAFA;"]:nth-of-type(1) .container.p-0.px-md-3 {
+@import url('https://kit-free.fontawesome.com/releases/latest/css/free.min.css'); 
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body, *:not(i) {
+     font-family: 'Tajawal', sans-serif !important;
+}
+
+
+section[style="background: #FAFAFA;"]:nth-of-type(1) .container.p-0.px-md-3 {
     width: 100%;
     padding: 9px 0 !important;
 }
