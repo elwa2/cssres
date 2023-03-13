@@ -472,6 +472,12 @@ li.social__item:hover a {
     transform: translateY(-10px) !important;
     transition: all .3s ease !important;
 }
+.salla-theme_1 .feature-item__icon i {
+    position: absolute;
+    right: 25%;
+    top: 50%!important;
+    transform: translate(50%,-50%);
+}
 :root {
     --main-color: #2e2e2e;
     --infinte-color: #2e2e2e;
