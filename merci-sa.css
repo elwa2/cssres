@@ -203,8 +203,9 @@ span.icon-shopping_cart_black_36dp-1-1.header-theme-icon-primary {
  
 span.icon-search.header-theme-icon-primary {
     content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8.03 8.03'%3E%3Cdefs%3E%3Cstyle%3E .cls-1, .cls-2 %7B fill: %23f1cbc1; %7D .cls-2 %7B opacity: .07; %7D %3C/style%3E%3C/defs%3E%3Ccircle class='cls-2' cx='4.02' cy='4.02' r='4.02'/%3E%3Cg%3E%3Ccircle class='cls-1' cx='3.79' cy='3.81' r='1.44'/%3E%3Ccircle class='cls-1' cx='5.28' cy='5.25' r='.4'/%3E%3C/g%3E%3C/svg%3E");
-    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5.28 5.28'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23f1cbc1; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m5.22,4.91l-1.5-1.5c.29-.36.47-.82.47-1.31,0-1.15-.94-2.09-2.09-2.09S0,.94,0,2.09s.94,2.09,2.09,2.09c.5,0,.95-.18,1.31-.47l1.5,1.5s.1.06.16.06.11-.02.16-.06c.09-.09.09-.23,0-.31Zm-3.13-1.16c-.91,0-1.65-.74-1.65-1.65S1.18.44,2.09.44s1.65.74,1.65,1.65-.74,1.65-1.65,1.65Z'/%3E%3C/svg%3E");
+    /* content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 5.28 5.28'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23f1cbc1; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m5.22,4.91l-1.5-1.5c.29-.36.47-.82.47-1.31,0-1.15-.94-2.09-2.09-2.09S0,.94,0,2.09s.94,2.09,2.09,2.09c.5,0,.95-.18,1.31-.47l1.5,1.5s.1.06.16.06.11-.02.16-.06c.09-.09.09-.23,0-.31Zm-3.13-1.16c-.91,0-1.65-.74-1.65-1.65S1.18.44,2.09.44s1.65.74,1.65,1.65-.74,1.65-1.65,1.65Z'/%3E%3C/svg%3E"); */
     width: 24px!important;
+    width: 39px!important;
     margin: 0 0 -5px!important
 }
 
