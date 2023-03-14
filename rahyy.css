@@ -794,9 +794,18 @@ a.circle-action.next.button-more {
     background-position: 168px center;
 }
 
+
+
+
 @media(max-width: 767px) {
     .product .product-footer .sicon-cart::before {
         /* margin: 20px 0 0 0!important; */
+    }
+
+    .product .product-footer .sicon-cart::before {
+        font-size: 15px;
+        margin: 9px 0 0 0 !important;
+        background-position: 117px center;
     }
 }
 
