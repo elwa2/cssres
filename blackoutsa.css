@@ -1,1 +1,5 @@
  /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */ 
+body > section:nth-child(8) .container.banner a img {
+    margin: 0 auto;
+    width: 300% !important;
+}
