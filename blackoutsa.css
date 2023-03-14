@@ -3,3 +3,23 @@ body > section:nth-child(8) .container.banner a img {
     margin: 0 auto;
     width: 300% !important;
 }
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@import url(https://raw.githubusercontent.com/elwa2/cssres/main/blackoutsa.css); body > section .container.banner {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body > section:nth-child(8) .container.banner a img {
+    margin: 200px auto;
+    width: 300% !important;
+}
+
+body > section:nth-child(8).section {
+    padding: 0!important;
+}
+
+body > header > div.container.py-3.header-top > div > div.col-sm-12.col-md-6.d-lg-flex.search-container,body > header > div.container.py-3.header-top > div > div.col-sm-12.col-md-6.d-lg-flex.search-container {
+    display: none !important;
+}
+ 
