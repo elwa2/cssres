@@ -408,6 +408,11 @@ a.sub-nav__menu.ml-2::after {
     /* filter: brightness(133.5); */
 }
 
+.footer-main p {
+    color: var(--main-color);
+
+}
+
 .footer-title span,
 .social__item a,
 .store-contact a {
