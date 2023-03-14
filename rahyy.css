@@ -1465,9 +1465,9 @@ footer {
     background: transparent !important;
     order: 3;
     position: relative;
-    top: -77px;
+    top: -154px;
     margin: -2px 0px -78px 0px;
-    /* right: 80px; */
+    right: -69px;
 }
 
 @media(max-width: 767px) {
