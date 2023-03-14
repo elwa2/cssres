@@ -121,6 +121,7 @@ section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item
     background: var(--color-main-d);
     border-radius: 0 0 31px 31px;
 }
+
 .footer-main {
     text-align: center;
     border-radius: 11px 11px 0 0;
@@ -434,9 +435,10 @@ body.salla-theme_1 .product .product-footer {
 
 @media(min-width: 992px) {
     .sub-nav {
-        background: #fff;
+        background: #cd7e39;
         border: unset;
         font-size: 13px;
+        color: #fff;
         margin-bottom: 20px;
     }
 
@@ -609,7 +611,6 @@ section.section:nth-of-type(2):not(.py-5) .products-grid .product-box:first-chil
     width: 135%!important;
 }
 
- 
 section.section:nth-of-type(2) .section-header {
     text-align: center !important;
     justify-content: center;
@@ -762,21 +763,24 @@ body,section.section {
 }
 
 .section-actions {
-    
     background: transparent;
 }
 
-
-.container.py-3.header-top {}
+.container.py-3.header-top {
+}
 
 body > section:nth-child(5) > div > a > img {
     position: relative;
     top: -1rem;
 }
+
 body > section .container.banner {
     width: 100%;
     padding: 0;
     margin: 0;
 }
 
- 
+body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a {
+    position: relative;
+    color: #fff !important;
+}
