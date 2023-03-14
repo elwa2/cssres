@@ -1661,6 +1661,38 @@ span.not-available::after {
     filter: brightness(13.5);
 }
 
+
+.footer-main p {
+    background: var(--color-main-d);
+    padding: 10px;
+    padding-top: 10px;
+    padding-right: 5rem;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 5rem;
+    position: relative;
+    border-radius: 20px;
+}
+
+.footer-main p::before {
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Isolation_Mode' data-name='Isolation Mode' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.63 30.64'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m25.75,0H4.88C2.18,0,0,2.19,0,4.88v20.87c0,2.7,2.18,4.89,4.88,4.89h20.87c2.7,0,4.88-2.19,4.88-4.89V4.88c0-2.69-2.18-4.88-4.88-4.88Zm-13.31,21.74l-8.16-6.8,2.56-3.07,5.62,4.68,11.36-9.29,2.53,3.1-13.91,11.38Z'/%3E%3C/svg%3E");
+    font-size: 3rem;
+    position: absolute;
+    right: 0.8rem;
+    top: 57px;
+    top: calc(54% - 2.5rem);
+    height: 15px;
+    width: 35px;
+}
+
+@media screen and (max-width: 777px) {
+    .footer-main p::before {
+        top: calc(54% - 2.5rem);
+    }
+}
+
+/* 
+
 .sicon-whatsapp2::after {
     content: "\E916";
     content: "\e917";
@@ -1698,36 +1730,6 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
     width: 180px;
     height: 60px;
 }
-
-.footer-main p {
-    background: var(--color-main-d);
-    padding: 10px;
-    padding-top: 10px;
-    padding-right: 5rem;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 5rem;
-    position: relative;
-    border-radius: 20px;
-}
-
-.footer-main p::before {
-    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Isolation_Mode' data-name='Isolation Mode' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30.63 30.64'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m25.75,0H4.88C2.18,0,0,2.19,0,4.88v20.87c0,2.7,2.18,4.89,4.88,4.89h20.87c2.7,0,4.88-2.19,4.88-4.89V4.88c0-2.69-2.18-4.88-4.88-4.88Zm-13.31,21.74l-8.16-6.8,2.56-3.07,5.62,4.68,11.36-9.29,2.53,3.1-13.91,11.38Z'/%3E%3C/svg%3E");
-    font-size: 3rem;
-    position: absolute;
-    right: 0.8rem;
-    top: 57px;
-    top: calc(54% - 2.5rem);
-    height: 15px;
-    width: 35px;
-}
-
-@media screen and (max-width: 777px) {
-    .footer-main p::before {
-        top: calc(54% - 2.5rem);
-    }
-}
-
 .sicon-whatsapp2:hover::after {
     content: "حاب نساعدك 😃؟ ";
     content: "     في خدمتك ؟ ";
@@ -1749,7 +1751,7 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
     100% {
         color: #ffffff99;
     }
-}
+} */
 
 h4.product-subtitle {
     text-align: center;
