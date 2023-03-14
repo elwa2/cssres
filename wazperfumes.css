@@ -773,3 +773,10 @@ body > section:nth-child(5) > div > a > img {
     position: relative;
     top: -1rem;
 }
+body > section .container.banner {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+ 
