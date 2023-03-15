@@ -152,9 +152,7 @@ body {
 
 .site-header, .main-slider img {
     background: linear-gradient(to left, var(--2), var(--1)) !important;
-    /* box-shadow: 0 2px 5px -3px rgb(0 0 0 / 14%); */
-    /* border-bottom-left-radius: 15px; */
-    /* border-bottom-right-radius: 15px; */
+    
 }
 
 .sub-nav__menu svg {
