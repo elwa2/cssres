@@ -1117,4 +1117,5 @@ section.s-block.s-block--fixed-banner.wide-placeholder .container {
     margin-left: 0;
     padding-right: 0;
     padding-left: 0;
+    max-width: unset;
 }
