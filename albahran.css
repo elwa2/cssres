@@ -1,0 +1,2020 @@
+@import url('https://fonts.googleapis.com/css2?family=Mirza:wght@400;500;600;700&display=swap'); body * :not(i) {
+    font-family: 'Mirza', cursive;
+}
+
+body {
+    background: #ffffff !important;
+}
+
+/* menu */
+.salla-theme_6 .sub-nav .main-menu>li>ul>li {
+    border-bottom: var(--1) dotted 1px !important;
+}
+
+.salla-theme_6 .product-details__title {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+}
+
+.product-detials__desc {
+    padding: 25px !important;
+}
+
+.product-form {
+    background-color: #fff;
+    padding: 20px !important;
+    box-shadow: 0 1px 8px -3px rgb(0 0 0 / 18%);
+    border-radius: 15px;
+}
+
+.list--horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.product-tags {
+    text-align: center;
+}
+
+.comment:last-child {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.comment-name {
+    font-size: 14px;
+    color: var(--1) !important;
+}
+
+.comment-header img {
+    margin-left: 5px;
+    width: 35px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ask-form {
+    padding-right: 60px;
+    padding-bottom: 1px;
+}
+
+.ask-form {
+    padding-right: 58px !important;
+    padding-left: 25px;
+    margin-right: 20px;
+}
+
+.product-details__title.brand-title {
+    flex-direction: column;
+}
+
+.store-notify {
+    margin-bottom: 2px !important;
+}
+
+.store-notify p {
+    color: inherit;
+    line-height: 1.5 !important;
+    font-size: 11px !important;
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+}
+
+#bZFnqyf-1592301620635 {
+    position: fixed !important;
+    bottom: 0 !important;
+}
+
+.salla-theme_6 .category-grid>div:nth-child(4) .category-featured a {
+    background-size: 580px 210px !important;
+}
+
+.salla-theme_6 footer .store-contact a {
+    color: #ffffff !important;
+}
+
+@media (min-width: 992px) {
+    .salla-theme_6 .feature-item {
+        border: none;
+        position: relative;
+        margin: 0px 6px 0px 0px;
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .salla-theme_6 .feature-item::after {
+        background: #4d4f52 !important;
+    }
+
+    .salla-theme_6 .section-header h2.section--title span {
+        /*font-size: 14px !important; */
+        /* background: linear-gradient(to left, var(--2), var(--1)) !important; */
+        position: relative;
+        right: 3px;
+        top: 5px;
+        /* box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%); */
+        color: var(--1) !important;
+        padding: 8px 10px 8px 10px;
+        /* border-radius: 7px; */
+        font-weight: 400 !important;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .salla-theme_6 .feature-item::after {
+        background: #4d4f52 !important;
+    }
+}
+
+.salla-theme_6 .container.banner a img {
+    border-radius: 15px !important;
+}
+
+.site-header.sticky {
+}
+
+.salla-theme_6 .site-header .header-top .logo a img {
+    height: 55px !important;
+    display: block;
+    position: relative;
+}
+
+.slick-list.draggable {
+    border-radius: 0px 0px 42px 42px;
+}
+
+.site-header {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    /* box-shadow: 0 2px 5px -3px rgb(0 0 0 / 14%); */
+    /* border-bottom-left-radius: 15px; */
+    /* border-bottom-right-radius: 15px; */
+}
+
+.sub-nav__menu svg {
+    fill: var(--1) !important;
+    background-color: var(--1);
+    width: 34px !important;
+    height: 34px !important;
+    position: relative;
+    top: 2px;
+    border-radius: 5px;
+}
+
+.salla-theme_6 .site-header__cart {
+    border: 1px solid #f1f1f1;
+    background: transparent;
+    border-radius: 50px;
+}
+
+.site-header__cart strong {
+    color: #f1f1f1 !important;
+}
+
+.site-header__cart span {
+    color: #f1f1f1 !important;
+}
+
+.salla-theme_6 .site-header__cart>div:first-child {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border-radius: 0 24px 24px 0;
+}
+
+.site-header__cart span:first-child {
+    color: #fff !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li ul>li {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li ul>li a {
+    background: #ffffff1c !important;
+    color: var(--1) !important;
+    opacity: 0.9 !important;
+}
+
+.salla-theme_6 .site-header .header-top .logo {
+    float: none !important;
+    margin: auto !important;
+    display: block;
+}
+
+.salla-theme_6 .section {
+    padding-top: 8px !important;
+    padding-bottom: 0 !important;
+}
+
+.salla-theme_6 .section-header .section-actions .circle-action {
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+    background: #ffffff !important;
+    color: var(--1) !important;
+}
+
+.circle-action {
+    background: #fff0 !important;
+    color: var(--1) !important;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 24px;
+    border-radius: 8px;
+}
+
+.product-details__title.brand-title img {
+    margin-top: 30px;
+}
+
+.salla-theme_6 .product-details__social-share a {
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #98989838 !important;
+}
+
+.list--tags li a {
+    color: #f1f1f1;
+    background: 0 0;
+    border: 1px solid;
+    border-radius: 6px !important;
+}
+
+.list--product-fields li.form-group .bootstrap-select>.btn.btn-default {
+    border-radius: 9px;
+    color: #f1f1f1;
+    border-color: #e8e8e8;
+}
+
+.bootstrap-select.btn-group .btn .filter-option {
+    font-size: 12px;
+    line-height: 2.3;
+    border-color: #e8e8e8;
+}
+
+.salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
+    border: 1px solid #e8e8e8;
+    border-radius: 15px !important;
+}
+
+.text-muted {
+    color: var(--1) !important;
+}
+
+.login-title {
+    margin-top: -3px !important;
+    margin-bottom: 30px !important;
+    color: var(--1);
+}
+
+.login-container .text-yellow-dark {
+    color: #f1f1f1;
+}
+
+.sub-nav-header p {
+    color: #f1f1f1;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.sub-nav .main-menu li a {
+    font-size: 12px !important;
+    color: #f1f1f1;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    font-size: 12px !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li ul>li a {
+    color: #ffffff !important;
+    opacity: 1 !important;
+}
+
+#modal_login .modal-content {
+    border-radius: 20px;
+}
+
+.login-container .border-yellow-dark {
+    border-radius: 15px;
+    color: var(--1) !important;
+    border: 2px solid !important;
+    background-color: #fff !important;
+}
+
+.salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
+    border: 0 solid #e8e8e8;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border-radius: 15px !important;
+    color: #fff;
+}
+
+.cart-nav-more, .cart-nav-solid, .cart-nav-submit {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border: 0 !important;
+    border-radius: 10px !important;
+}
+
+.btn-primary {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border: 0 !important;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.intl-tel-input-pro .intl-tel-input .form-control {
+    direction: rtl;
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 10px !important;
+    height: 36px;
+}
+
+.form-control {
+    border: 1px solid #e8e8e8 !important;
+    border-radius: 10px;
+}
+
+.title--step:before {
+    font-weight: 400 !important;
+    border-radius: 8px !important;
+    color: #fff !important;
+}
+
+.reply .comment-body {
+    font-size: 12px;
+    line-height: 1.4;
+    color: #040404 !important;
+}
+
+.comment-body {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.comment-body {
+    color: #040404 !important;
+}
+
+div.comment-header>span.text-semibold {
+    font-size: 10px;
+}
+
+.comment-time {
+    font-size: 9px;
+}
+
+ol.breadcrumb li {
+    font-size: 12px;
+}
+
+ol.breadcrumb li a {
+    color: var(--1) !important;
+}
+
+ol.breadcrumb li:before {
+    color: var(--1) !important;
+    content: "\ea65"!important;
+    display: inline-block;
+    font-family: sallaicons!important;
+    font-size: 14px;
+    padding: 0!important;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.product-details__title {
+    color: var(--1) !important;
+}
+
+.promotion-title {
+    display: block;
+    width: auto;
+    position: absolute;
+    top: 25px !important;
+    padding: 5px !important;
+    line-height: 20px;
+    color: #fff !important;
+    background-color: var(--1) !important;
+}
+
+.cart-total-box {
+    background: #fafafa !important;
+}
+
+.salla-theme_6 .form-group.coupon {
+    background-color: #fff;
+}
+
+.owl-carousel .owl-item img {
+    border-radius: 20px;
+    border: 1px solid #e4e4e4;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+    background: #d6d6d6c2 !important;
+}
+
+.salla-theme_6 .site-header .header-top .search-wrapper #search .results .seach_container {
+    font-size: 12px;
+}
+
+.salla-theme_6 .section-header .btn.btn-rounded {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    color: #f1f1f1 !important;
+    position: relative;
+    top: 10px;
+    left: 2px;
+    border: 0 !important;
+    font-size: 13px !important;
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+    line-height: 30px;
+    border-radius: 7px !important;
+}
+
+.salla-theme_6 .section-header .section-actions .button-more {
+    /* background: linear-gradient(to left, #5d5042, var(--1)) !important; */
+    color: var(--1) !important;
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+    line-height: 25px;
+    border-radius: 10px !important;
+    padding: -3px 19px 19px 19px;
+    background: #ffffff !important;
+}
+
+.salla-theme_6 section.section.has-slider .section-header .section-actions {
+    position: relative;
+    top: 10px;
+    left: 3px;
+}
+
+.dropdown-menu {
+    border-radius: 10px !important;
+    box-shadow: 0 1px 7px 0 rgb(0 0 0 / 15%);
+    border: 0 !important;
+}
+
+.footer-main {
+    text-align: center !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0 -2px 5px -3px rgb(0 0 0 / 14%);
+    margin-top: 30px;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 95%;
+    right: 9px !important;
+    padding: 0;
+    border-radius: 10px !important;
+    box-shadow: 0 6px 5px -3px rgb(0 0 0 / 19%);
+    overflow: hidden;
+}
+
+.ytp-large-play-button svg {
+    filter: invert(1);
+}
+
+.salla-theme_6 footer .footer-title {
+    font-weight: 700 !important;
+    color: #fff !important;
+}
+
+.footer-main p {
+    color: #fff !important;
+    width: 100% !important;
+}
+
+.store-notify {
+    margin-bottom: 2px !important;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+}
+
+.salla-theme_6 footer .footer-title span {
+    font-weight: 700 !important;
+    font-size: 19px !important;
+    color: #fff !important;
+}
+
+.salla-theme_6 footer .footer-links a {
+    color: #fff !important;
+}
+
+.footer-links a {
+    width: 95% !important;
+}
+
+.footer-links {
+    columns: 1;
+    padding-top: 16px;
+}
+
+.salla-theme_6 .social__item span::before {
+    transform: scale(1.3) !important;
+}
+
+.salla-theme_6 .social__item:nth-child(1) span {
+    color: #fff !important;
+}
+
+.salla-theme_6 .social__item:nth-child(2) span {
+    color: #fff !important;
+}
+
+.salla-theme_6 .social__item:nth-child(3) span {
+    color: #fff !important;
+}
+
+.salla-theme_6 .social__item:nth-child(4) span {
+    color: #fff !important;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont .fs-rights {
+    order: 2;
+    margin-bottom: 0;
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont {
+    text-align: center;
+    flex-direction: column;
+    padding-top: 50px;
+}
+
+.footer-main .container::before {
+    text-align: center !important;
+    display: block;
+    height: 70px !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+}
+
+.salla-theme_6 .social__item {
+    float: none !important;
+}
+
+#order .product-page-buttons {
+    display: none !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li#offers a {
+    width: 138px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    top: 15px;
+}
+
+.product .product-footer .product-price * {
+    font-size: 16px !important;
+}
+
+.bg-brand {
+    background: #ffffff !important;
+    margin-top: 30px;
+}
+
+.salla-theme_6 .testimonails-listing .slick-dots li.slick-active button {
+    background-color: var(--1) !important;
+}
+
+.section--title {
+    color: var(--1) !important;
+    font-weight: 400;
+}
+
+.salla-theme_6 .testimonails-listing .testimonials-item blockquote {
+    background: #fff;
+    box-shadow: 0 1px 12px -4px rgb(0 0 0 / 19%);
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.salla-theme_6 .testimonails-listing .slick-dots li button {
+    background-color: #cacaca99;
+}
+
+.salla-theme_6 .feature-item::after {
+    background: 0 0 !important;
+}
+
+#search_form>div>div.ui.icon.input {
+    text-align: center;
+}
+
+#searchbox.prompt {
+    display: inline-block;
+    width: 100%;
+    height: 36px;
+    margin: 0;
+    padding: 7px 12px;
+    font-size: 13px;
+    min-height: 0;
+    max-height: none;
+    max-width: 100%;
+    text-indent: 0;
+    border: 1px solid #ddd;
+    background: #fff;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 3px;
+}
+
+#searchbox.prompt {
+    border: 0px solid #ddd;
+    border-radius: 10px !important;
+    background-color: #f1f1f1cc !important;
+    padding: 7px 12px;
+    text-align: right;
+    width: 75%;
+}
+
+.circle-action {
+    background: #fff0 !important;
+    color: #dfd7cd !important;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px !important;
+    border-radius: 8px;
+}
+
+.salla-theme_6 .site-header .header-top .search-container #searchbox {
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.ui.category.search .results {
+    border-radius: 15px;
+    width: 75%;
+    margin-left: 12%;
+}
+
+.salla-theme_6 .site-header__mine-cart .badge {
+    background-color: #ffffff00;
+    border-radius: 7px;
+    color: #f1f1f1;
+    font-weight: 600;
+    left: 20px;
+}
+
+.sub-nav-header {
+    background: var(--1) !important;
+}
+
+.sub-nav-header::before {
+    content: "";
+    text-align: center !important;
+    display: block;
+    height: 70px !important;
+    background-image: var(--logo);
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+}
+
+.salla-theme_6 .product .product-footer .not-available {
+    background-color: rgba(226, 56, 77, .1);
+    border-radius: 3px;
+    color: #e2384d;
+    display: block;
+    font-size: 100%;
+    height: 40px;
+    line-height: 18px;
+    margin: 10px 0 0;
+    padding: 10px 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.sub-nav-header img {
+    display: none !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+}
+
+.sub-nav-header a {
+    color: var(--1) !important;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    line-height: 35px;
+    border-radius: 7px;
+    font-weight: bold !important;
+}
+
+.salla-theme_6 .site-header .header-top .search-wrapper #search .results {
+    top: 45px !important;
+    border-radius: 10px;
+    border: 1px solid #f7f7f7;
+    box-shadow: 0 6px 6px rgb(0 0 0 / 18%);
+    width: 95% !important;
+    margin-left: 11px;
+}
+
+.salla-theme_6 .site-header .header-top .search-wrapper #search .results .seach_container {
+    border: 0 !important;
+}
+
+.products-grid.eq-height .product, .products-grid.eq-height .thumbnail, .products-listing.eq-height .product, .products-listing.eq-height .thumbnail, body.salla-default #products_div.eq-height .product, body.salla-default #products_div.eq-height .thumbnail {
+    border-radius: 15px;
+    box-shadow: 0 1px 12px -3px rgb(0 0 0 / 23%);
+}
+
+.salla-theme_6 .product-footer {
+    padding: 0 !important;
+}
+
+.salla-theme_6 .product .product-footer .product-add.add_to_cart_btn {
+    background-color: hsl(0deg 22% 94% / 0%);
+    border-radius: 3px;
+    margin: 10px 0 0;
+    padding: 10px 15px;
+    position: relative;
+    text-align: center;
+}
+
+.product-add:hover {
+    background-color: white !important;
+    border-color: var(--main-color);
+}
+
+.product-price {
+    font-weight: 400;
+}
+
+body.salla-theme_6 .products-listing.eq-height .slick-track .slick-slide {
+    height: 464.5px !important;
+}
+
+.salla-theme_6 .product .product-footer .product-add.add_to_cart_btn span:last-child {
+    background: #fff0 !important;
+    color: #1d1d1d !important;
+    border-bottom: 4px solid #eceaea;
+    width: 110px;
+    font-size: 100%;
+    font-weight: 550;
+    text-align: center !important;
+    margin-right: -3% !important;
+}
+
+.products-listing {
+    border: 0 !important;
+}
+
+.salla-theme_6 section.section.has-slider .products-listing.slick-slider {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.salla-theme_6 .product .product-price {
+    margin-bottom: 10px;
+}
+
+.salla-theme_6 .product>a .product-subtitle {
+    font-style: italic;
+    font-size: 12px;
+    color: var(--1);
+}
+
+.product-details__price, .product-price {
+    color: var(--2) !important;
+}
+
+.salla-theme_6 .product>a .product-subtitle {
+    text-align: center !important;
+}
+
+.salla-theme_6 .product>a .promotion-title {
+    position: absolute;
+    top: -2px !important;
+    font-size: 16px;
+    padding: 5px;
+    line-height: 14px;
+    color: var(--2) !important;
+    background: var(--1) !important;
+    font-weight: bolder;
+    left: 0 !important;
+    left: auto !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .salla-theme_6 .product>a .promotion-title {
+        position: absolute;
+        top: -2px !important;
+        font-size: 8px !important;
+        padding: 5px;
+        line-height: 14px;
+        color: var(--2) !important;
+        background: var(--1) !important;
+        font-weight: bolder;
+        left: 0 !important;
+        left: auto !important;
+    }
+
+    .feature-item {
+        margin: 9px 1px 1px 1px;
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a {
+    font-size: 11px !important;
+}
+
+#sort #sort-toggle {
+    border-radius: 7px;
+    border: 0 !important;
+    font-size: 14px !important;
+    position: relative;
+    top: 8px;
+    left: 3px;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%);
+}
+
+.sub-nav__close svg {
+    fill: #b8c2ba;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    padding: 5px 15px !important;
+    border-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+.footer-main p {
+    color: #fff !important;
+    width: 100% !important;
+    padding: 15px;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.store-contact {
+    margin: 6px 0 0;
+    text-align: center;
+}
+
+.footer-links li {
+    font-size: 12px;
+}
+
+.footer-main .container::before {
+    text-align: center !important;
+    display: block;
+    height: 56px !important;
+    background-image: var(--logo);
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    filter: brightness(31.5);
+}
+
+#order .add-cart-large {
+    width: 100%;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border: 0 !important;
+    border-radius: 10px;
+}
+
+.salla-theme_6 #ask_button {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border: 0 !important;
+    border-radius: 7px !important;
+}
+
+#ask_register_link {
+    font-size: 10px;
+}
+
+#ask_textarea {
+    border-radius: 10px;
+    border: 1px solid #eee !important;
+    font-size: 12px;
+    line-height: 2;
+}
+
+#sort #sort-options {
+    border-radius: 15px !important;
+}
+
+.salla-theme_6 .cart-box--custom .cart-step.active-step .step-cont .cart-title span {
+    color: #f1f1f1;
+}
+
+.salla-theme_6 .cart-box--custom .cart-step.active-step .step-cont svg * {
+    fill: #f1f1f1;
+    stroke: #f1f1f1;
+}
+
+.salla-theme_6 .cart-box--custom .cart-step.active-step .step-cont .cart-number {
+    background-color: var(--1);
+}
+
+.list--product-fields li.form-group>label {
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.salla-theme_6 .form-group.coupon {
+    box-shadow: 0 1px 9px -3px rgb(0 0 0 / 18%);
+    padding: 10px;
+    width: 80%;
+    position: relative;
+    right: 10%;
+    border-radius: 10px;
+}
+
+.form-group.coupon .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    padding: 18px;
+    border: 0;
+    color: #fff !important;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0 !important;
+    border-top-right-radius: 0 !important;
+    min-width: 65px;
+}
+
+#submit_cart {
+    padding: 15px !important;
+    width: auto !important;
+    border-radius: 10px;
+    margin-left: 20px;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border: 0 !important;
+    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 18%);
+}
+
+.comment-badge {
+    font-size: 10px;
+    background: #f1f1f1;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.store-home .site-header {
+    /* margin-bottom: 10px; */
+}
+
+.salla-theme_6 .section-header {
+    margin-bottom: 32px !important;
+    margin-top: 1.5rem !important;
+}
+
+.salla-theme_6 .products-grid {
+    padding-top: 20px;
+}
+
+.salla-theme_6 .product-details .product-price {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+.product-details__title.brand-title img {
+    margin: 0;
+}
+
+.list--product-fields li.form-group--price>div, .list--product-fields li.form-group:not(.form-group--wide) label, .product-details__price, .product-show .product-details>div>div:nth-child(2)>div.mb-10 {
+    text-align: center;
+}
+
+.product-details__price .tax-label {
+    position: absolute;
+    width: 100%;
+    top: 95px;
+}
+
+.list--product-fields li.form-group--price>div .price-before {
+    position: inherit;
+    transform: translateY(0);
+}
+
+li.form-group.qty-field-wrapper.form-group--wide {
+    padding: 0 0px;
+    text-align: center;
+}
+
+.list--product-fields li.form-group>label {
+    text-align: right;
+}
+
+.list--product-fields li.form-group>.product-option-select {
+    display: inline-table;
+}
+
+.comment-name {
+    margin-left: 60px;
+}
+
+.comment-badge {
+    margin-right: 45px;
+    margin-bottom: 10px;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont .fs-payment {
+    order: 1;
+}
+
+.comment-badge, div.comment-header>span.text-semibold {
+    position: relative;
+    top: -10px;
+}
+
+.product-details__title.brand-title>a {
+    margin-top: 15px;
+}
+
+.salla-theme_6 .site-header .header-top {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+body>header>div.container.py-3.header-top>div>div.col-md-3.d-flex.align-items-center.d-lg-block.actions-container>div {
+    display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+    .salla-theme_6 .site-header .header-top .logo-wrapper {
+        width: calc(100% - 60px);
+    }
+
+    .salla-theme_6 .site-header .header-top .logo {
+        width: 100%;
+    }
+
+    .salla-theme_6 .site-header .header-top .logo a {
+        display: grid;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .salla-theme_6 .site-header .header-top .logo a img {
+        margin-right: 7%;
+    }
+
+    .list--product-fields li.form-group:not(.form-group--wide) label, .product-details__price {
+        margin-bottom: -2px;
+    }
+
+    body>header>div.container.py-3.header-top>div>div.col-md-3.d-flex.align-items-center.d-lg-block.actions-container {
+        position: absolute;
+        left: 1px;
+        top: 21px;
+        padding: 0;
+    }
+}
+
+.store-contact a img {
+    width: 130px !important;
+    border-radius: 10px;
+    box-shadow: 0px 6px 6px -3px rgb(0 0 0 / 28%);
+}
+
+.main-slider.slick-dotted.slick-slider {
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.main-slider.slick-dotted.slick-slider .slick-dots {
+    bottom: 10px !important;
+}
+
+.list--product-fields li.form-group:not(.form-group--wide) label, .product-details__price {
+    margin-bottom: 5px;
+}
+
+/* menu */
+.social__item span {
+    font-size: 23px;
+}
+
+.salla-theme_6 .social__item {
+    border: 1px dashed #ffffff8f;
+    border-radius: 53px;
+    padding: 8px;
+    background: linear-gradient(to left, var(--2)d6, #967c5929) !important;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont {
+    justify-content: center;
+    background-color: #fff;
+    text-align: center;
+}
+
+.footer-sub {
+    background-color: #fff;
+}
+
+footer .footer-main .footer-payment img, footer .footer-sub .footer-wrapper img, footer .footer-sub .fs-cont img {
+    background: white;
+    border-radius: 7px;
+    padding: 2px 5px;
+}
+
+.fs-rights {
+    display: none;
+}
+
+.sub-header {
+    color: #fff !important;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+}
+
+.salla-theme_6 .site-header .sub-header #cl_switcher_wrapper #cl_switcher #cl_toggle span {
+    color: #f1f1f1 !important;
+}
+
+.salla-theme_6 .site-header .sub-header #cl_switcher_wrapper #cl_switcher #cl_toggle:after {
+    color: #f1f1f1 !important;
+}
+
+.sub-nav {
+    text-align: center;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    margin-bottom: 1px;
+}
+
+.sub-nav a {
+    color: #f1f1f1 !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li>ul>li {
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder>span {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    padding: 10px 15px !important;
+    background: var(--1) !important;
+    color: #fff;
+    border-top: 0px solid #eee;
+}
+
+a.login-link {
+    color: #f1f1f1 !important;
+}
+
+.py-4.text-center.bg-brand>.container>.section--title.mb-2.text-white {
+    background-color: var(--2);
+    color: #ffffff !important;
+    font-weight: bold !important;
+    padding-left: 28px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-bottom: 30px !important;
+}
+
+.py-4.text-center.bg-brand>.container>.section--title.mb-2.text-white::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid var(--1);
+    left: -6px;
+    right: -6px;
+    top: -6px;
+    bottom: -6px;
+    border-radius: 7px;
+    width: auto;
+    height: auto;
+}
+
+.section-header .section--title {
+    color: var(--1);
+}
+
+.slick-dotted.slick-slider {
+}
+
+.salla-theme_6 .product>a .promotion-title {
+    background-color: var(--2);
+}
+
+@media only screen and (max-width: 992px) {
+    .salla-theme_6 .section-header .btn.btn-rounded {
+        height: 37px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body.font-dubai .section-actions .circle-action.button-more, body.font-dubai .section-header .btn.btn-rounded {
+        line-height: 36px !important;
+    }
+}
+
+.salla-theme_6 .section-header .section-actions .button-more {
+    background: #fff0;
+}
+
+#sort #sort-toggle {
+    height: 37px;
+    line-height: 25px;
+    margin-right: 5px;
+    border-radius: 7px;
+    border: 1px solid #e2e2e2;
+}
+
+.section--title:before {
+    display: flex;
+    content: "";
+    flex-direction: column;
+}
+
+.section:nth-of-type(1)>.container>.section-header.d-flex {
+    flex-direction: inherit;
+    border-bottom: 1px solid #2a2a2a1f;
+}
+
+.salla-theme_6 .section-header {
+    padding-bottom: 15px;
+}
+
+.section--title:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: auto;
+    bottom: -2vw;
+    width: 100%;
+    height: 1.9vw;
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.py-4.text-center.bg-brand>.container>.section--title.mb-2.text-white {
+    background-color: var(--2);
+    color: var(--1);
+    padding-left: 28px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-bottom: 30px !important;
+}
+
+.py-4.text-center.bg-brand>.container>.section--title.mb-2.text-white::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid var(--1);
+    left: -6px;
+    right: -6px;
+    top: -6px;
+    bottom: -6px;
+    border-radius: 7px;
+    width: auto;
+    height: auto;
+    background: url();
+}
+
+.iILOR {
+    bottom: 50px !important;
+}
+
+.py-4.text-center.bg-brand>.container>.section--title.mb-2.text-white::after {
+    -webkit-animation-name: ShineAnimation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(0.6, -0.28, 0.74, 0.05);
+}
+
+.py-4.text-center.bg-brand>.container>.section--title.mb-2.text-white {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    color: var(--1);
+    /* padding-left: 28px; */
+    border-radius: 7px;
+    display: inline-flex;
+    margin-bottom: 30px !important;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: stretch;
+    justify-content: center;
+    align-items: center;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.py-4.text-center.bg-brand>.container>.section--title.mb-2.text-white {
+    background-color: var(--2);
+    color: var(--1);
+}
+
+/* توسيط الفوتر في الهواتف*/
+.footer-title, .store-contact, .social {
+    text-align: center !important;
+}
+
+.salla-theme_6 .social__item {
+    text-align: center !important;
+    margin: auto !important;
+    justify-items: center !important;
+    float: none !important;
+}
+
+.social {
+    text-align: center !important;
+    margin: auto !important;
+    justify-items: center;
+}
+
+.salla-theme_6 .section-header h2.section--title span {
+    /*font-size: 14px !important; */
+    /* background: linear-gradient(to left, var(--2), var(--1)) !important; */
+    position: relative;
+    right: 3px;
+    top: 5px;
+    /* box-shadow: 0 2px 5px -3px rgb(0 0 0 / 61%); */
+    color: var(--1) !important;
+    padding: 8px 10px 8px 10px;
+    /* border-radius: 7px; */
+    font-weight: 400 !important;
+}
+
+/* حذف العنوان الثاني من الفوتر */
+.salla-theme_6 footer .col-md-4:nth-of-type(2) .footer-title span {
+    color: var(--1) !important;
+    border: none !important;
+}
+
+.salla-theme_6 footer .col-md-4:nth-of-type(2) .footer-title {
+    color: var(--1) !important;
+    border: none !important;
+    display: none;
+}
+
+.fa-star:before {
+    text-align: center;
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-size: 10pt;
+    padding: 7px 0px 0px 0px;
+}
+
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-radius: 9px !important;
+    color: var(--1);
+    border-color: #e8e8e8;
+}
+
+.btn-group>.btn:last-child:not(:first-child), .btn-group>.dropdown-toggle:not(:first-child) {
+    border-radius: 9px !important;
+    color: var(--1);
+    border-color: #e8e8e8;
+}
+
+.list--horizontal {
+    flex-direction: inherit !important;
+}
+
+#bell {
+    color: #ffffff;
+}
+
+span.sicon-user, .col-lg-6 * {
+    color: #fff !important;
+}
+
+.login-form .panel-title::before {
+    content: "";
+    text-align: center !important;
+    display: block;
+    height: 70px !important;
+    background-image: var(--logo);
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: top center !important;
+    margin-bottom: 25px;
+}
+
+.login-form .panel-title .icon-object {
+    display: none !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li.has-children>a:hover {
+    padding-left: 30px;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li>a:hover {
+    padding-left: 30px;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border-radius: 12px;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li>a:active {
+    padding-left: 30px;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border-radius: 12px;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li.has-children>a:active {
+    padding-left: 30px;
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+}
+
+.icons {
+    padding: 8px 18px 8px 18px;
+    border-radius: 24px;
+    color: var(--1) !important;
+}
+
+.icons b {
+    color: var(--1) !important;
+    margin: 6px 7px 1px 1px;
+}
+
+.fs-payment::before {
+    content: " الحقوق محفوظة متجر  البحران للأطياب @ 2023 ";
+    color: #999999;
+    margin-bottom: 1rem !important;
+    font-size: 12px;
+    display: block;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont .fs-payment img {
+    width: auto;
+    max-width: 73px;
+    height: auto;
+    max-height: 29px;
+}
+
+.salla-theme_6 .sub-nav .main-menu>li#offers a:hover {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+}
+
+.qty-field--custom .form-control.single_product_quantity {
+    border-radius: 8px !important;
+}
+
+.promotion-title {
+    color: var(--2) !important;
+    background: var(--1) !important;
+}
+
+.product-offer {
+    border-radius: 15px !important;
+}
+
+.banner img {
+    border-radius: 35px !important;
+}
+
+.banner img {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+}
+
+.products-listing {
+    background: transparent !important;
+}
+
+.salla-theme_6 .u-light {
+    background-color: transparent !important;
+}
+
+@media only screen and (max-width: 992px) {
+    body.font-dubai.salla-theme_6 .site-header .header-top .search-wrapper #search #searchbox.prompt {
+        padding: 19px 35px !important;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body.font-dubai.salla-theme_6 .site-header .header-top .search-wrapper #search #searchbox.prompt {
+        padding: 19px 35px !important;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    .sub-nav .sub-nav-content {
+        background: var(--1) !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .main-menu li i {
+        margin-left: 5px;
+        color: #b7c0b9;
+        font-size: 18px;
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a {
+    min-height: 40px;
+    padding: 13px 15px !important;
+}
+
+.footer-main {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+}
+
+.category-featured:hover::before, .feature-item:hover::before {
+    -webkit-animation: circle 0.75s;
+    animation: circle 0.75s;
+}
+
+.product:hover::before {
+    -webkit-animation: circle 0.75s;
+    animation: circle 0.75s;
+}
+
+@-webkit-keyframes circle {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 300%;
+        height: 300%;
+        opacity: 0;
+    }
+}
+
+@keyframes circle {
+    0% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    100% {
+        width: 200%;
+        height: 300%;
+        opacity: 0;
+    }
+}
+
+@keyframes mvt {
+    0% {
+        transform: scale(0.8);
+    }
+
+    40% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes tournemoi {
+    0% {
+        transform: rotate(-2deg);
+    }
+
+    40% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.feature-item__icon {
+    background: linear-gradient(to left, var(--2), var(--1)) !important;
+    border: 1px solid #fff;
+}
+
+.feature-item {
+    background: #ffffff !important;
+    border-radius: 4px 37px 7px 37px;
+    box-shadow: 1px 1px 8px -3px rgb(80 36 5 / 46%) !important;
+}
+
+.feature-item__icon a * {
+    color: #fff !important;
+}
+
+.feature-item p {
+    font-family: dinnextltarabic-regular !important;
+    font-size: 14px;
+    color: var(--1);
+}
+
+.feature-item h3 {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: var(--1) !important;
+}
+
+.salla-theme_6 .dropdown-menu .dropdown-content-footer a {
+    color: var(--1) !important;
+}
+
+.salla-theme_6 .site-header .sub-header .dropdown.dropdown-store-header .circle-action {
+    color: #fff !important;
+}
+
+.dropdown-store-header .dropdown-menu>li>a, .dropdown-store-header .dropdown-menu>li>a>i {
+    color: var(--1) !important;
+}
+
+/* كمبيوتر -اقسام المتجر الصورة المربعة  */
+.category-grid {
+    display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+    .category-grid {
+        display: flex;
+        margin-left: -1px;
+        margin-right: -1px;
+        flex-wrap: wrap;
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .salla-theme_6 .category-grid>div .category-featured {
+        height: auto !important;
+        position: relative;
+        /* border-radius: 5px; */
+        padding: -18px -12px -5px -7px;
+        margin: 10px 1px 1px 1px;
+    }
+}
+
+.salla-theme_6 .category-grid>div:first-child .category-featured {
+}
+
+.salla-theme_6 .category-grid>div:nth-child(4) .category-featured {
+    height: 123px !important;
+}
+
+.salla-theme_6 .category-grid> :nth-child(4) .category-featured img.cat-featured-img {
+    height: 123px !important;
+}
+
+.category-grid>div {
+    width: calc(140% / 4) !important;
+    position: center;
+    padding: 65px;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 991px) {
+    .salla-theme_6 .category-grid>div:first-child .category-featured {
+        height: 212px;
+    }
+
+    .salla-theme_6 .category-grid>div:nth-child(4) .category-featured {
+        height: 212px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .salla-theme_6 .category-grid>div:nth-child(3) .category-featured {
+        height: 123px !important;
+    }
+
+    .salla-theme_6 .category-grid> :nth-child(3) .category-featured img.cat-featured-img {
+        height: 123px !important;
+    }
+}
+
+/* موبايل -اقسام المتجر الصورة المربعة  */
+@media only screen and (max-width: 700px) {
+    .category-grid {
+        display: flex;
+        margin-left: 4px;
+        margin-right: -1px;
+        flex-wrap: wrap;
+    }
+}
+
+.category-grid>div {
+    width: 47% !important;
+    border-style: solid;
+    border-color: transparent;
+    padding: 3px !important;
+    display: inline-block;
+    margin-right: 8px !important;
+}
+
+.sub-nav__menu svg {
+    fill: #fff !important;
+}
+
+span.text-semibold {
+    color: #fff !important;
+}
+
+#ask_register_link {
+    color: #fafafa !important;
+}
+
+section.py-3 {
+    background: transparent !important;
+}
+
+a {
+    color: var(--1);
+}
+
+.breadcrumb>.active {
+    color: var(--1);
+}
+
+div#cl_switcher_wrapper * {
+    color: var(--1) !important;
+}
+
+h1.product-details__title {
+    color: var(--1) !important;
+}
+
+.comment-badge {
+    font-size: 10px;
+    background: var(--2);
+    color: #fff;
+    border-radius: 6px;
+}
+
+.salla-theme_6 .section {
+    padding: 0.5rem 0 !important;
+}
+
+.sub-nav .main-menu li#ls_switcher_mobile {
+    border-top: 0px solid #eee;
+}
+
+.products-listing.eq-height .slick-track {
+    display: block !important;
+}
+
+@media only screen and (max-width: 600px) {
+    .slick-dotted.slick-slider {
+        margin-bottom: 3px !important;
+    }
+
+    .salla-theme_6 section.section.has-slider .products-listing.slick-slider .slick-slide {
+        width: 166px !important;
+        height: 329px !important;
+    }
+
+    .banner {
+        margin: 10px 0px !important;
+    }
+
+    .salla-theme_6 .section {
+        padding: 0 0 !important;
+    }
+
+    .category-grid {
+        display: flex;
+        margin-left: -1px;
+        margin-right: -1px;
+        flex-wrap: wrap;
+        padding-right: 8px;
+    }
+
+    .category-grid>div {
+        width: 32.9% !important;
+        border-style: solid;
+        border-color: #171717;
+        padding: 3px !important;
+        display: inline-block;
+    }
+
+    .salla-theme_6 .category-grid>div .category-featured {
+        height: 100% !important;
+        margin-bottom: 15px !important;
+    }
+
+    .salla-theme_6 .category-grid>div .category-featured:nth-child(odd) {
+        border-radius: 19px !important;
+    }
+
+    .salla-theme_6 .category-grid>div .category-featured img.cat-featured-img {
+        height: 100%;
+    }
+
+    .salla-theme_6 .category-grid>div .category-featured a h3 {
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+        position: relative;
+        min-height: 1px;
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+
+    body .product>a .product-title {
+        font-size: 15px !important;
+    }
+
+    .product-title {
+        text-align: center !important;
+        font-weight: bolder !important;
+    }
+
+    .product .product-footer .product-price * {
+        font-size: 12px !important;
+    }
+
+    .salla-theme_6 .product>a .product-subtitle {
+        font-style: italic;
+        font-size: 9px;
+        color: var(--2);
+    }
+
+    .salla-theme_6 .section:nth-of-type(20) {
+        padding: 13px 1px 1px 1px !important;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .salla-theme_6 .product>a .product-title {
+        font-size: 15px !important;
+        font-weight: bolder !important;
+        text-align: center !important;
+        margin: 10px 0 0 !important;
+        padding: 0 20px;
+    }
+}
+
+.salla-theme_6 footer .footer-links a {
+    color: #ffffff !important;
+}
+
+.col-md-4:first-child .footer-title span {
+    display: none;
+}
+
+.col-md-4:nth-of-type(3) .footer-title {
+    border: 3px solid var(--1);
+    border-radius: 11px;
+    background: var(--1);
+    padding: 5px 0 6px 1px;
+}
+
+span.filter-option.pull-left {
+    color: var(--1);
+}
+
+/* كمبيوتر -اقسام المتجر الصورة المربعة  */
+.category-grid {
+    display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+    .category-grid {
+        display: flex;
+        margin-left: -1px;
+        margin-right: -1px;
+        flex-wrap: wrap;
+        padding-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .salla-theme_6 .category-grid>div .category-featured {
+        height: auto !important;
+        position: relative;
+        /* border-radius: 5px; */
+        padding: -18px -12px -5px -7px;
+        margin: 10px 1px 1px 1px;
+    }
+}
+
+.salla-theme_6 .category-grid>div:first-child .category-featured {
+}
+
+.salla-theme_6 .category-grid>div:nth-child(4) .category-featured {
+    height: 123px !important;
+}
+
+.salla-theme_6 .category-grid>:nth-child(4) .category-featured img.cat-featured-img {
+    height: 123px !important;
+}
+
+.category-grid>div {
+    width: calc(140%/4) !important;
+    position: center;
+    padding: 65px;
+    border-radius: 15px;
+}
+
+@media only screen and (min-width: 991px) {
+    .salla-theme_6 .category-grid>div:first-child .category-featured {
+        height: 212px;
+    }
+
+    .salla-theme_6 .category-grid>div:nth-child(4) .category-featured {
+        height: 212px !important;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .salla-theme_6 .category-grid>div:nth-child(3) .category-featured {
+        height: 123px !important;
+    }
+
+    .salla-theme_6 .category-grid>:nth-child(3) .category-featured img.cat-featured-img {
+        height: 123px !important;
+    }
+}
+
+/* موبايل -اقسام المتجر الصورة المربعة  */
+@media only screen and (max-width: 700px) {
+    .category-grid {
+        display: flex;
+        margin-left: 4px;
+        margin-right: -1px;
+        flex-wrap: wrap;
+    }
+}
+
+.category-grid>div {
+    width: 47% !important;
+    border-style: solid;
+    border-color: transparent;
+    padding: 3px !important;
+    display: inline-block;
+    margin-right: 8px !important;
+}
+
+.sub-nav__menu svg {
+    fill: #fff !important;
+}
+
+p.product-name {
+    color: var(--2);
+}
+
+.salla-theme_6 .section {
+    padding: 0.5rem 0 !important;
+}
+
+.salla-theme_6 .site-header .header-top .logo a img {
+    width: auto;
+    height: 0 !important;
+}
+
+.salla-theme_6 .site-header .header-top .logo a {
+    background-image: var(--logo);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 41px;
+    width: 100%;
+    display: block;
+    filter: brightness(43.5);
+}
+
+:root {
+    --1: #705930;
+    --2: #d4a243;
+    --main-text-color2: #d4a243;
+    --infinte-color: #503910;
+    --main-text-color-dark: #d4a243;
+    --color-main: #705930;
+    --color-main-d: #d4a243;
+    --color-main-l: #d4a243;
+    --color-main-reverse: #d4a243;
+    --color-text: var(--1);
+    --color-text-reverse: #d4a243;
+    --color-title: #d4a243;
+    --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 435.06 115.15'%3E%3Cdefs%3E%3Cstyle%3E .cls-1, .cls-2 %7B fill: %23fff; %7D .cls-3, .cls-4 %7B fill: %23d4a243; %7D .cls-2, .cls-4 %7B fill-rule: evenodd; %7D .cls-5 %7B fill: none; stroke: %23221f20; stroke-miterlimit: 10; stroke-width: .18px; %7D %3C/style%3E%3C/defs%3E%3Cg%3E%3Cpath class='cls-4' d='m354.24,78.11c16.17-7.56,39.42-11.63,53.76-20.19,22.09-13.18,31.83-40.69-5.84-56.91,12.53,16.2,8.73,35.77-10.64,45.06-30.53,14.62-93.16,25.59-48.69,66.43-11.34-16.58-5.3-26.58,11.41-34.39Z'/%3E%3Cpath class='cls-4' d='m384.09,104.89c-.71-.66-1.24-1.52-1.59-2.59s-.58-2.4-.69-4.02c-.1-1.61-.15-3.69-.15-6.21v-21.38c-.83.26-1.66.52-2.49.78-5.19,1.62-10.53,3.24-15.72,5.16,0,4.72-.03,9.11-.07,13.16-.05,5.66-.28,10.12-.68,13.35-.3,2.23-.74,4.1-1.3,5.61-.55,1.52-1.59,2.43-3.11,2.73-.71.21-1.51.35-2.43.46-.91.1-1.93.15-3.04.15-1.61,0-2.43.4-2.43,1.21,0,1.01,1.01,1.52,3.04,1.52,1.51,0,3.21-.05,5.08-.16,1.87-.1,3.67-.15,5.39-.15,1.82-.1,3.49-.15,5-.15h3.65c.79,0,1.8,0,3.07.03.52,0,1.1.03,1.71.04,2.07.05,4.28.18,6.59.38.61.03,1.21.05,1.79.08,8.6,0,17.45-1.57,22.72-9.31-1.47.92-3.02,1.6-4.64,2.03-2.12.55-4.04.84-5.76.84s-3.49-.11-5.31-.3c-1.83-.21-3.74-.71-5.77-1.52-1.21-.5-2.17-1.08-2.88-1.74Z'/%3E%3Cpath class='cls-4' d='m387.28,4.04c1.7-.35,3.64-.36,5.62.03,4.57.79,9.41,3.17,12.26,6.16-2.53-5.99-7.6-10.14-14.54-10.14-2.63,0-5.43.08-8.42.23-2.99.16-6.35.23-10.08.23-.82,0-1.96-.02-3.42-.07-1.46-.06-3.14-.11-5-.16-1.87-.05-3.87-.1-5.99-.15-2.12-.05-4.2-.08-6.22-.08-2.22,0-3.33.45-3.33,1.37s.85,1.37,2.57,1.37c1.11,0,2.23.02,3.34.07,1.11.06,1.97.18,2.57.38,2.53.51,4.2,1.42,5.01,2.73.81,1.32,1.31,3.28,1.51,5.92.1,1.21.18,2.51.23,3.86.05,1.37.08,3.22.08,5.55v33.74l1.3-.51c4.54-1.77,9.11-3.48,13.65-5.26,1.19-.47,2.37-.93,3.55-1.42-.2-.21-.29-.61-.29-1.21V9.19c0-2.58,2.35-4.48,5.61-5.15Z'/%3E%3Cpath class='cls-5' d='m387.28,4.04c1.7-.35,3.64-.36,5.62.03,4.57.79,9.41,3.17,12.26,6.16-2.53-5.99-7.6-10.14-14.54-10.14-2.63,0-5.43.08-8.42.23-2.99.16-6.35.23-10.08.23-.82,0-1.96-.02-3.42-.07-1.46-.06-3.14-.11-5-.16s-3.87-.1-5.99-.15c-2.12-.05-4.2-.08-6.22-.08-2.22,0-3.33.45-3.33,1.37s.85,1.37,2.57,1.37c1.11,0,2.23.02,3.34.07,1.11.06,1.97.18,2.57.38,2.53.51,4.2,1.42,5.01,2.73.81,1.32,1.31,3.28,1.51,5.92.1,1.21.18,2.51.23,3.86.05,1.37.08,3.22.08,5.55v33.74l1.3-.51c4.54-1.77,9.11-3.48,13.65-5.26,1.19-.47,2.37-.93,3.55-1.42-.2-.21-.29-.61-.29-1.21V9.19c0-2.58,2.35-4.48,5.61-5.15Z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='cls-3' d='m15.66,38.89c.58,1.04,1.04,2.16,1.38,3.37.35,1.21.52,2.66.52,4.35s-.18,3.37-.55,5.27c-.37,1.9-.99,3.64-1.87,5.21-.81,1.42-1.82,2.55-3.05,3.4-.69.5-1.35.84-1.99,1.04-.63.19-1.35.29-2.16.29l-1.84-.06c-1-.08-1.75-.12-2.25-.12-1.04,0-2.15.13-3.34.4l-.52-.75,7.48-4.09c2.42-1.38,4.18-2.63,5.3-3.74,1.53-1.54,2.3-3.32,2.3-5.35,0-.81-.12-1.53-.35-2.19-.23-.65-.56-1.32-.98-2.02-.81-1.3-1.67-2.38-2.59-3.22.92-1.65,1.86-3.03,2.82-4.15.54.54,1.09,1.32,1.67,2.36Z'/%3E%3Cpath class='cls-3' d='m44.33,48.56h-6.68c0,1.5-.2,3.32-.6,5.47-.4,2.15-1.08,4.11-2.04,5.87-.88,1.57-1.9,2.74-3.05,3.51-1.27.81-2.67,1.21-4.2,1.21-.35,0-.94-.04-1.79-.12-1-.08-1.71-.12-2.13-.12-.96,0-2.11.15-3.46.46l-.52-.75,2.71-1.44c.77-.42,1.58-.86,2.45-1.32.86-.46,1.64-.88,2.33-1.27,1.57-.92,2.9-1.88,3.97-2.88,1.88-1.77,3.13-3.91,3.74-6.45.19-.77.29-1.5.29-2.19h-2.99c-2.46,0-4.15-.67-5.07-2.02-.77-1.07-1.15-2.65-1.15-4.72,0-.92.08-1.71.23-2.36.15-.65.42-1.4.81-2.25.5-1.04,1.12-1.88,1.87-2.53.75-.65,1.58-.98,2.5-.98,1,0,1.9.35,2.71,1.04.81.69,1.48,1.61,2.01,2.76.38.81.69,1.7.92,2.68.23.98.35,1.89.35,2.73h6.79v5.64Zm-11.31-10.1c-.56-.4-1.2-.6-1.93-.6-.88,0-1.62.25-2.22.75-.59.5-.89,1.09-.89,1.78,0,1,.33,1.67.98,2.02.65.35,1.57.52,2.76.52h3.34c0-.84-.25-1.8-.75-2.88-.31-.65-.74-1.18-1.3-1.58Z'/%3E%3Cpath class='cls-3' d='m55.36,22.54c.59.58,1.07,1.11,1.41,1.61-.77.84-1.77,1.84-2.99,2.99-1.04-1.23-2.09-2.26-3.17-3.11,1-.92,1.98-1.94,2.94-3.05.61.46,1.22.98,1.81,1.55Z'/%3E%3Cpath class='cls-3' d='m69.72,39.29c-.15-.04-.44-.06-.86-.06-.81,0-1.38.06-1.73.17.15,1.31.7,2.22,1.64,2.73s2.31.78,4.12.78h7.08v5.64h-6.45c-1.46,0-2.77-.25-3.94-.75-1.17-.5-2.1-1.23-2.79-2.19-.58-.81-.97-1.68-1.18-2.62-.21-.94-.3-2.04-.26-3.31-.65.12-1.65.63-2.99,1.55l-1.67,1.27c-.27.19-.98.71-2.13,1.55-1.15.84-2.38,1.61-3.68,2.3-2.92,1.46-5.83,2.19-8.75,2.19h-2.99c-.81,0-1.48-.28-2.01-.83-.54-.56-.81-1.22-.81-1.99s.28-1.43.83-1.99c.56-.56,1.22-.83,1.99-.83h2.71c4.22,0,8.12-.79,11.69-2.36,1.27-.58,2.21-1.07,2.82-1.47s1.25-.91,1.9-1.53c-.19-.08-1.54-.59-4.03-1.55-2.5-.96-4.93-1.44-7.31-1.44-1,0-1.73.16-2.19.49-.46.33-.86.74-1.18,1.24-.33.5-.57.86-.72,1.09l-.92-.63c.61-2.03,1.46-3.65,2.53-4.84,1.15-1.27,2.53-1.9,4.15-1.9.65,0,1.3.1,1.96.29.65.19,1.57.5,2.76.92l1.09.4c1.73.69,3.42,1.23,5.07,1.61,1.65.38,3.72.58,6.22.58l2.59-.06c-.92,2.27-1.77,4.11-2.53,5.53Z'/%3E%3Cpath class='cls-3' d='m82.59,52.71c.59.58,1.07,1.11,1.41,1.61-.77.84-1.77,1.84-2.99,2.99-1.04-1.23-2.09-2.27-3.17-3.11,1-.92,1.98-1.94,2.94-3.05.61.46,1.22.98,1.81,1.55Z'/%3E%3Cpath class='cls-3' d='m89.81,41.37c.92,1.04,2.38,1.55,4.38,1.55h3.11v5.64h-2.3c-2.11,0-3.72-.63-4.84-1.9-.69-.81-1.09-1.63-1.21-2.48-.04.08-.13.37-.29.86-.15.5-.54,1.07-1.15,1.73-1.11,1.19-2.57,1.78-4.38,1.78h-4.38c-.77,0-1.43-.28-1.99-.83-.56-.56-.83-1.24-.83-2.04s.28-1.42.83-1.96c.56-.54,1.22-.81,1.99-.81h3.28c1.92,0,3.27-.38,4.06-1.15.79-.77,1.26-2.02,1.41-3.74l1.27-.69c-.12,1.77.23,3.11,1.04,4.03Z'/%3E%3Cpath class='cls-3' d='m114.23,48.56h-2.19c-3.34,0-5.32-1.57-5.93-4.72-.08,1.57-.65,2.75-1.73,3.54-1.07.79-2.53,1.18-4.38,1.18h-3.92c-.73,0-1.38-.28-1.96-.83-.58-.56-.86-1.22-.86-1.99s.28-1.43.83-1.99c.56-.56,1.22-.83,1.99-.83h2.59c1.53,0,2.76-.52,3.68-1.55.77-.88,1.09-1.92.98-3.11-.04-.42-.08-.81-.12-1.18-.04-.36-.08-.72-.12-1.06l-.17-1.21c-.62-4.64-1.36-9.6-2.25-14.85.96-1.46,2.13-2.82,3.51-4.09.88,9.17,1.67,16.66,2.36,22.45.15,1.31.52,2.32,1.09,3.05.88,1.04,2.09,1.55,3.63,1.55h2.94v5.64Z'/%3E%3Cpath class='cls-3' d='m121.97,22.37c-.25.58-.37,1.31-.37,2.19l.06,1.04.17,1.38c.23,1.8.36,2.82.4,3.05.38,2.69.65,4.67.81,5.96.15,1.29.25,2.47.29,3.54-.19,2.46-.79,4.43-1.79,5.93-1.08,1.57-2.5,2.53-4.26,2.88-.62.15-1.42.23-2.42.23h-1.84c-.81,0-1.48-.25-2.01-.75-.54-.5-.81-1.17-.81-2.02,0-.77.24-1.44.72-2.01.48-.58,1.18-.86,2.1-.86h1.79c1.15,0,2.25-.28,3.28-.83,1.04-.56,1.82-1.31,2.36-2.27-.27-2.49-.77-5.72-1.5-9.67-.34-1.77-.76-3.6-1.24-5.5-.48-1.9-.93-3.37-1.35-4.4l3.34-4.38c.31.77.74,1.53,1.29,2.27.56.75,1.28,1.62,2.16,2.62-.54.5-.93,1.04-1.18,1.61Z'/%3E%3Cpath class='cls-3' d='m170.19,37.97c1.11,2.65,1.67,5.35,1.67,8.12,0,2.23-.33,4.22-.98,5.99-.65,1.77-1.63,3.24-2.94,4.43-1.15,1.07-2.61,1.9-4.38,2.48-1.73.58-3.65.86-5.76.86-2.92,0-5.37-.54-7.37-1.61-1.96-1.08-3.34-2.57-4.15-4.49-.54-1.31-.81-2.69-.81-4.15,0-.88.14-2,.43-3.34.29-1.34.72-2.71,1.29-4.09l1.09.4c-.27,1.61-.4,2.86-.4,3.74,0,1.57.38,2.84,1.15,3.8.81,1,2,1.78,3.57,2.36,1.57.58,3.46.86,5.64.86,3.19,0,5.85-.61,8-1.84,1.04-.58,1.84-1.24,2.42-1.99.58-.75.86-1.53.86-2.33,0-1.19-.56-2.73-1.67-4.63s-2.01-3.31-2.71-4.23c.58-1.07,1.52-2.42,2.82-4.03.88,1.11,1.61,2.34,2.19,3.69Zm-11.08,3.74c.59.58,1.06,1.11,1.41,1.61-.77.84-1.77,1.84-2.99,2.99-1.04-1.23-2.09-2.26-3.17-3.11,1-.92,1.98-1.94,2.94-3.05.61.46,1.22.98,1.81,1.55Z'/%3E%3Cpath class='cls-3' d='m177.67,15.86h.63c-.04,1.38.02,2.74.17,4.09.15,1.34.23,2.17.23,2.48l.11,1.73.12,1.21c.38,4.61.58,8.29.58,11.05,0,1.84-.07,3.39-.2,4.63-.14,1.25-.34,2.72-.6,4.4-.15,1-.44,2.03-.86,3.11h-.86c.04-.38.06-1.07.06-2.07,0-1.61-.06-3.13-.17-4.55-.12-1.07-.31-2.49-.58-4.26-.38-2.76-.71-5.43-.98-8-.42-4.38-.63-7.37-.63-8.98.96-1.92,1.96-3.53,2.99-4.84Z'/%3E%3Cpath class='cls-3' d='m193.1,41.42c.61.46,1.35.83,2.22,1.09.86.27,1.64.4,2.33.4h4.55v5.64h-3.8c-.73,0-1.37-.08-1.93-.23-.56-.15-.98-.32-1.27-.49s-.47-.3-.55-.37c.04.12.08.38.12.81.04.42.06.94.06,1.55,0,2.88-.56,5.56-1.67,8.06-.88,2-1.98,3.63-3.28,4.89-.69.65-1.38,1.13-2.07,1.44-.69.31-1.57.46-2.65.46-.38,0-1.11-.04-2.19-.12-1-.08-1.73-.12-2.19-.12-1,0-2.03.15-3.11.46l-.52-.75,1.96-1.04c2.76-1.5,4.97-2.74,6.62-3.74,1.65-1,3.01-2.02,4.09-3.05,1.61-1.54,2.42-3.34,2.42-5.41,0-1.46-.34-2.75-1.01-3.89-.67-1.13-1.66-2.29-2.96-3.48.92-1.73,1.84-3.11,2.76-4.15.88.96,1.57,1.63,2.07,2.02Z'/%3E%3Cpath class='cls-3' d='m227.59,39.29c-.15-.04-.44-.06-.86-.06-.81,0-1.38.06-1.73.17.15,1.31.7,2.22,1.64,2.73s2.31.78,4.12.78h7.08v5.64h-6.45c-1.46,0-2.77-.25-3.94-.75-1.17-.5-2.1-1.23-2.79-2.19-.58-.81-.97-1.68-1.18-2.62-.21-.94-.3-2.04-.26-3.31-.65.12-1.65.63-2.99,1.55l-1.67,1.27c-.27.19-.98.71-2.13,1.55-1.15.84-2.38,1.61-3.68,2.3-2.92,1.46-5.83,2.19-8.75,2.19h-2.99c-.81,0-1.48-.28-2.01-.83-.54-.56-.81-1.22-.81-1.99s.28-1.43.83-1.99c.56-.56,1.22-.83,1.99-.83h2.71c4.22,0,8.12-.79,11.69-2.36,1.27-.58,2.21-1.07,2.82-1.47s1.25-.91,1.9-1.53c-.19-.08-1.54-.59-4.03-1.55-2.5-.96-4.93-1.44-7.31-1.44-1,0-1.73.16-2.19.49-.46.33-.86.74-1.18,1.24-.33.5-.57.86-.72,1.09l-.92-.63c.61-2.03,1.46-3.65,2.53-4.84,1.15-1.27,2.53-1.9,4.15-1.9.65,0,1.3.1,1.96.29.65.19,1.57.5,2.76.92l1.09.4c1.73.69,3.42,1.23,5.07,1.61,1.65.38,3.72.58,6.22.58l2.59-.06c-.92,2.27-1.77,4.11-2.53,5.53Z'/%3E%3Cpath class='cls-3' d='m240.45,52.71c.59.58,1.07,1.11,1.41,1.61-.77.84-1.77,1.84-2.99,2.99-1.04-1.23-2.09-2.27-3.17-3.11,1-.92,1.98-1.94,2.94-3.05.61.46,1.22.98,1.81,1.55Z'/%3E%3Cpath class='cls-3' d='m247.68,41.37c.92,1.04,2.38,1.55,4.38,1.55h3.11v5.64h-2.3c-2.11,0-3.72-.63-4.84-1.9-.69-.81-1.09-1.63-1.21-2.48-.04.08-.13.37-.29.86-.15.5-.54,1.07-1.15,1.73-1.11,1.19-2.57,1.78-4.38,1.78h-4.38c-.77,0-1.43-.28-1.99-.83-.56-.56-.83-1.24-.83-2.04s.28-1.42.83-1.96c.56-.54,1.22-.81,1.99-.81h3.28c1.92,0,3.27-.38,4.06-1.15.79-.77,1.26-2.02,1.41-3.74l1.27-.69c-.12,1.77.23,3.11,1.04,4.03Z'/%3E%3Cpath class='cls-3' d='m262.91,22.37c-.25.58-.37,1.31-.37,2.19l.06,1.04.17,1.38c.23,1.8.36,2.82.4,3.05.38,2.69.65,4.67.81,5.96.15,1.29.25,2.47.29,3.54-.19,2.46-.79,4.43-1.79,5.93-1.08,1.57-2.5,2.53-4.26,2.88-.62.15-1.42.23-2.42.23h-1.84c-.81,0-1.48-.25-2.01-.75-.54-.5-.81-1.17-.81-2.02,0-.77.24-1.44.72-2.01.48-.58,1.18-.86,2.1-.86h1.79c1.15,0,2.25-.28,3.28-.83,1.04-.56,1.82-1.31,2.36-2.27-.27-2.49-.77-5.72-1.5-9.67-.34-1.77-.76-3.6-1.24-5.5-.48-1.9-.93-3.37-1.35-4.4l3.34-4.38c.31.77.74,1.53,1.29,2.27.56.75,1.28,1.62,2.16,2.62-.54.5-.93,1.04-1.18,1.61Z'/%3E%3Cpath class='cls-3' d='m271.23,15.86h.63c-.04,1.38.02,2.74.17,4.09.15,1.34.23,2.17.23,2.48l.11,1.73.12,1.21c.38,4.61.58,8.29.58,11.05,0,1.84-.07,3.39-.2,4.63-.14,1.25-.34,2.72-.6,4.4-.15,1-.44,2.03-.86,3.11h-.86c.04-.38.06-1.07.06-2.07,0-1.61-.06-3.13-.17-4.55-.12-1.07-.31-2.49-.58-4.26-.38-2.76-.71-5.43-.98-8-.42-4.38-.63-7.37-.63-8.98.96-1.92,1.96-3.53,2.99-4.84Z'/%3E%3C/g%3E%3Crect class='cls-3' x='292.58' y='15.11' width='1.83' height='84.92'/%3E%3Cg%3E%3Cg%3E%3Cpath class='cls-1' d='m48.27,101.71l-1.23-3.48c-.84-.07-1.88-.11-3.13-.11-1.32,0-2.22.04-2.7.13-.39,1.03-.8,2.18-1.23,3.45-.32.11-.62.16-.88.16-.36,0-.72-.05-1.1-.16.5-.89,1.38-3,2.65-6.31,1.27-3.32,2.21-5.91,2.83-7.78.48-.09.87-.13,1.18-.13.32,0,.68.04,1.07.13.62,1.87,1.57,4.47,2.84,7.78,1.27,3.32,2.15,5.42,2.65,6.31-.45.12-.92.19-1.42.19-.46,0-.97-.06-1.52-.19Zm-1.82-5.08c-.87-2.39-1.65-4.38-2.33-5.97-.64,1.48-1.4,3.45-2.27,5.91.91.05,1.93.08,3.08.08.73,0,1.24,0,1.52-.03Z'/%3E%3Cpath class='cls-1' d='m66.53,97.26c.03-.81.04-2,.04-3.57,0-3.28-.15-5.29-.46-6.02.48-.11.97-.16,1.47-.16.45,0,.96.05,1.55.16-.09.96-.16,2.22-.21,3.77-.05,1.55-.08,2.97-.08,4.25,0,1.86.04,3.15.11,3.88.8.16,1.73.24,2.78.24.64,0,1.28-.07,1.91-.2s1.16-.31,1.59-.52c0,.54-.06,1.08-.19,1.63-.12.55-.26.93-.4,1.12-1.18-.12-2.55-.19-4.12-.19-1.89,0-3.31.06-4.25.19.14-2.25.23-3.78.25-4.59Z'/%3E%3Cpath class='cls-1' d='m92.8,101.88c-.94-.13-1.71-.31-2.31-.52.07-.78.13-1.94.17-3.48.04-1.53.07-3.02.07-4.47,0-2.82-.15-4.54-.46-5.16.64-.21,1.44-.39,2.39-.52s1.89-.2,2.82-.2c1.69,0,3,.33,3.91.98.91.65,1.36,1.58,1.36,2.8,0,.66-.2,1.26-.59,1.79-.39.54-.95.97-1.66,1.31.91.3,1.62.76,2.14,1.38.52.62.78,1.32.78,2.13,0,1.34-.5,2.37-1.51,3.09-1.01.72-2.45,1.08-4.32,1.08-.93,0-1.86-.07-2.79-.2Zm6.06-3.97c0-.66-.18-1.24-.55-1.74-.37-.5-.9-.88-1.59-1.15-.82,0-2.06.25-3.72.75,0,2.12.05,3.71.16,4.76.64.23,1.35.35,2.14.35,2.37,0,3.56-.99,3.56-2.97Zm-3.37-3.96c.52,0,.89.02,1.12.05,1.07-.73,1.61-1.53,1.61-2.41,0-1.55-1.01-2.33-3.02-2.33-.73,0-1.4.09-2.01.27-.07,1.32-.12,2.88-.16,4.68.66-.18,1.48-.27,2.46-.27Z'/%3E%3Cpath class='cls-1' d='m126.04,101.71l-1.23-3.48c-.84-.07-1.88-.11-3.13-.11-1.32,0-2.22.04-2.7.13-.39,1.03-.8,2.18-1.23,3.45-.32.11-.62.16-.88.16-.36,0-.72-.05-1.1-.16.5-.89,1.38-3,2.65-6.31,1.27-3.32,2.21-5.91,2.83-7.78.48-.09.87-.13,1.18-.13.32,0,.68.04,1.07.13.62,1.87,1.57,4.47,2.84,7.78,1.27,3.32,2.15,5.42,2.65,6.31-.45.12-.92.19-1.42.19-.46,0-.97-.06-1.52-.19Zm-1.82-5.08c-.87-2.39-1.65-4.38-2.33-5.97-.64,1.48-1.4,3.45-2.27,5.91.91.05,1.93.08,3.08.08.73,0,1.24,0,1.52-.03Z'/%3E%3Cpath class='cls-1' d='m144.04,101.76c.09-.87.16-2.09.21-3.65s.08-3.04.08-4.43c0-3.26-.15-5.27-.46-6.02.52-.11,1-.16,1.45-.16s.99.05,1.58.16c-.14,1.55-.23,3.6-.27,6.15.96.09,2.21.13,3.75.13.23,0,.96-.03,2.19-.08,0-3.32-.14-5.39-.43-6.21.48-.11.96-.16,1.44-.16.45,0,.96.05,1.55.16-.09.87-.16,2.09-.21,3.65-.05,1.56-.08,3.04-.08,4.43,0,3.23.14,5.23.43,6.02-.48.11-.97.16-1.47.16-.45,0-.95-.05-1.52-.16.14-1.52.23-3.58.27-6.21-1.11-.05-2.26-.08-3.45-.08-.8,0-1.63.02-2.49.05,0,3.33.14,5.41.43,6.23-.48.11-.98.16-1.5.16-.43,0-.93-.05-1.5-.16Z'/%3E%3Cpath class='cls-1' d='m171.89,101.76c.07-.87.14-2.12.2-3.75.06-1.62.09-3.07.09-4.33,0-2.94-.15-4.75-.46-5.43.55-.21,1.28-.39,2.18-.52.9-.13,1.81-.2,2.74-.2,1.78,0,3.16.41,4.12,1.22s1.44,1.97,1.44,3.49c0,.91-.24,1.72-.71,2.42-.47.71-1.15,1.26-2.02,1.67,1.37,2.69,2.47,4.37,3.29,5.03-.48.21-.98.36-1.49.44-.51.08-1.07.12-1.7.12-.38-.96-1.21-2.63-2.51-5-.07.02-.23.03-.48.03-.36,0-.75-.02-1.16-.05s-.74-.09-.98-.16c.02,2.57.16,4.25.43,5.03-.48.11-.98.16-1.5.16-.43,0-.93-.05-1.5-.16Zm7.14-7.44c.43-.55.64-1.18.64-1.87,0-2.12-1.2-3.18-3.58-3.18-.52,0-1,.06-1.44.19-.09,1.3-.15,3.12-.19,5.46,1.25.45,2.22.67,2.92.67.68-.29,1.23-.71,1.66-1.26Z'/%3E%3Cpath class='cls-1' d='m207.04,101.71l-1.23-3.48c-.84-.07-1.88-.11-3.13-.11-1.32,0-2.22.04-2.7.13-.39,1.03-.8,2.18-1.23,3.45-.32.11-.62.16-.88.16-.36,0-.72-.05-1.1-.16.5-.89,1.38-3,2.65-6.31,1.27-3.32,2.21-5.91,2.83-7.78.48-.09.87-.13,1.18-.13.32,0,.68.04,1.07.13.62,1.87,1.57,4.47,2.84,7.78,1.27,3.32,2.15,5.42,2.65,6.31-.45.12-.92.19-1.42.19-.46,0-.97-.06-1.52-.19Zm-1.82-5.08c-.87-2.39-1.65-4.38-2.33-5.97-.64,1.48-1.4,3.45-2.27,5.91.91.05,1.93.08,3.08.08.73,0,1.24,0,1.52-.03Z'/%3E%3Cpath class='cls-1' d='m224.85,101.76c.14-1.89.21-4.58.21-8.08,0-3.17-.1-5.18-.29-6.02.55-.11,1.01-.16,1.36-.16.41,0,.93.05,1.55.16.7,1.27,1.68,3.01,2.97,5.24,1.28,2.23,2.42,4.17,3.42,5.8.04-2.1.05-3.76.05-4.98,0-3.32-.1-5.34-.29-6.07.36-.11.7-.16,1.04-.16.32,0,.68.05,1.07.16-.05.93-.1,2.17-.15,3.73s-.07,3.01-.07,4.35c0,3.17.1,5.18.29,6.02-.29.11-.74.16-1.36.16-.39,0-.92-.05-1.58-.16-.68-1.23-1.66-2.96-2.94-5.2-1.28-2.24-2.43-4.18-3.42-5.82-.05,1.57-.08,3.22-.08,4.95,0,3.21.1,5.23.29,6.07-.32.11-.67.16-1.04.16-.29,0-.63-.05-1.04-.16Z'/%3E%3C/g%3E%3Cpath class='cls-2' d='m415.83,94.9c-2.14,11.55-8.86,17.41-16.76,20.25,5.11-.33,9.64-1.25,13.61-2.74,5.11-1.93,9.31-4.45,12.6-7.59,3.28-3.14,5.73-6.68,7.35-10.62,1.62-3.95,2.43-7.95,2.43-12,0-4.44-.85-8.45-2.57-11.99-1.72-3.54-3.92-6.68-6.6-9.41-2.65-2.71-5.59-5-8.8-6.86-2.52,2.23-5.24,4.2-8,5.84-1.21.73-2.46,1.41-3.73,2.05,1.29,1.21,2.45,2.49,3.47,3.83,1.92,2.53,3.44,5.13,4.55,7.82,1.11,2.67,1.9,5.36,2.35,8.04.45,2.68.69,5.18.69,7.51,0,2.17-.2,4.13-.58,5.87Z'/%3E%3C/g%3E%3C/svg%3E");
+}
