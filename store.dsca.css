@@ -1,6 +1,6 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 .block-product .thumb img {
-    max-height: unset;
+    max-height: 9rem;
     width: 100%;
     object-fit: cover;
 }
@@ -9,6 +9,23 @@
     padding: 10px 0;
     z-index: 999;
     margin-bottom: 20px;
+}
+
+
+body > div > div:nth-child(6) > footer > div > div > div.col-md-3.mt-4.mt-md-0.order-3.mt-4.mt-md-0 > div{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    max-width: 186px;
+}
+
+body > div > div:nth-child(6) > footer > div > div > div.col-md-3.mt-4.mt-md-0.order-3.mt-4.mt-md-0  {
+    position: relative;
+    left: -148px;
+}
+.payment-method-list img {
+    width: 45px;
+    max-width: 29px;
+    max-height: unset;
 }
 
 :root {
