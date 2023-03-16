@@ -162,12 +162,12 @@ body {
     background: var(--hover)
 }
 
-h1.section-title.theme-title-primary {
+/* h1.section-title.theme-title-primary {
     text-align: center;
     color: #000!important;
     position: relative;
     padding-bottom: 13px
-}
+} */
 
 h1.section-title.theme-title-primary::before {
     content: "";
@@ -660,9 +660,7 @@ span.product-formatted-price-discount {
     text-align: center
 }
 
-.home-products-section.section-padding-space>div>h1:first-child {
-    display: none
-}
+ 
 
 @media(max-width: 992px) {
     .search-header.header-theme-bg-primary {
