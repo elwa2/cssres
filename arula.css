@@ -169,18 +169,7 @@ body {
     padding-bottom: 13px
 } */
 
-h1.section-title.theme-title-primary::before {
-    content: "";
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    width: 18%;
-    height: 3px;
-    background: var(--primary-color);
-    position: absolute;
-    border-radius: 26%;
-    box-shadow: 0 5px 10px #979797
-}
+ 
 
 @media(max-width: 992px) {
     h1.section-title.theme-title-primary::before {
