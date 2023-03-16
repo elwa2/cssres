@@ -1,0 +1,20 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+.block-product .thumb img {
+    max-height: unset;
+    width: 100%;
+    object-fit: cover;
+}
+.header {
+    background: var(--2-2-2);
+    padding: 10px 0;
+    z-index: 999;
+    margin-bottom: 20px;
+}
+
+:root {
+    --1: #612964;
+    --2: #5dbabc;
+    --2-2:#8ac9ca;
+    --2-2-2:#e7f3f4;
+    
+}
