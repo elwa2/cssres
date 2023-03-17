@@ -867,7 +867,7 @@ body {
     padding-right: 0px;
 }
 
-body.product-index {
+body.product-index,body.cart {
     background: url(https://cdn.salla.sa/yrGnK/m5RTqPMpFSrPS6hvhPc04qy94fl6YDlkz6ezFYQZ.jpg) !important;
     padding-left: 0px;
     padding-right: 0px;
