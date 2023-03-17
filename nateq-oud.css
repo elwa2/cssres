@@ -103,7 +103,7 @@ h4.text-gray-800.font-bold.text-lg {
     font-weight: 700;
     border-radius: 12px 0;
     width: max-content;
-    color: #ffffff;
+    color: var(--color-primary);
 }
 
 i.sicon-menu:before {
