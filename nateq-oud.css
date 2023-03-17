@@ -1279,3 +1279,8 @@ body#app:before {
     top: -16px;
     font-size: 25px;
 }
+.s-slider-block__title-left {
+    position: relative;
+    right: 65px;
+    top: -23px;
+}
