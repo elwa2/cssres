@@ -867,12 +867,7 @@ body {
     padding-right: 0px;
 }
 
-body.product-index {
-    background: url(https://cdn.salla.sa/yrGnK/m5RTqPMpFSrPS6hvhPc04qy94fl6YDlkz6ezFYQZ.jpg) !important;
-    padding-left: 0px;
-    padding-right: 0px;
-    background-size: 117% !important;
-}
+
 
 .s-block--features__item p {
     background: var(--color-primary-dark) !important;
@@ -1283,4 +1278,10 @@ body#app:before {
     position: relative;
     right: 65px;
     top: -23px;
+}
+body.cart, body.product-index {
+    background: url(https://cdn.salla.sa/yrGnK/m5RTqPMpFSrPS6hvhPc04qy94fl6YDlkz6ezFYQZ.jpg) !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-size: 117% !important;
 }
