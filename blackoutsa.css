@@ -160,3 +160,7 @@ body > header > div.container.py-3.header-top > div > div.col-md-3.d-flex.align-
 .salla-theme_6.color-mode-dark .site-header .header-wrapper .sub-nav__menu svg, .salla-theme_6.color-mode-dark .site-header .header-wrapper .sub-nav__menu:hover svg {
     fill: #ffffff;
 }
+
+img[src*="https://cdn.salla.sa/form-builder/Gc9eDAeUBpxxqAAgNb5PfmjnPOB2j55pPLpSczvL.jpg"] {
+    content: url(https://cdn.salla.sa/form-builder/1bZPXeBiHFnkjQXsCpuedNe3ITSoKSUix9d8Zlhr.png);
+}
