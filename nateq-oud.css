@@ -1297,3 +1297,6 @@ body.cart, body.product-index {
         background-size: 50% !important;
     }
 }
+#app > div.app-inner.flex.flex-col.min-h-screen.relative > div.salla-advertisement > div > h2 > a,body > div.app-inner.flex.flex-col.min-h-screen.relative > div.salla-advertisement > div > h2 > span:nth-child(2) {
+    color: var(--color-primary) !important;
+}
