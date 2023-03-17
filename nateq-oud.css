@@ -866,6 +866,13 @@ body {
     padding-right: 0px;
 }
 
+
+body.product-index  {
+    background: url(https://cdn.salla.sa/yrGnK/m5RTqPMpFSrPS6hvhPc04qy94fl6YDlkz6ezFYQZ.jpg)    !important;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 .s-block--features__item p {
     background: var(--color-primary-dark) !important;
     display: block;
@@ -875,8 +882,8 @@ body {
     color: #fff !important;
 }
 
-body,.bg-gray-50 {
-    background-color: #f3f3f3!important;
+body.index,.bg-gray-50 {
+    background-color: #d0d0d0!important;
 }
 
 .s-block--features::before {
