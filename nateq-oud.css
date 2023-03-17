@@ -611,7 +611,7 @@ body.product-single {
 }
 
 [dir=rtl] .rtl\:space-x-reverse>:not([hidden])~:not([hidden]) {
-    color: #fff;
+    color: var(--color-primary-dark);
 }
 
 #product-comments-tab > div > salla-infinite-scroll > div > div.comment.text-sm > header > div.flex.flex-none.rtl\:space-x-reverse.space-x-3 > div > h3 {
