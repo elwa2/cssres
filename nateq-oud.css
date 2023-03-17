@@ -1194,3 +1194,8 @@ body > div.app-inner > section.s-block > div > salla-slider > div.swiper.s-slide
 .btn--wishlist button.is-active {
     background-color: var(--color-primary) !important;
 }
+
+
+.product__description.leading-6.mb-6 {
+    margin-bottom: 0rem !important;
+}
