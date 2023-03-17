@@ -610,7 +610,7 @@ body.product-single {
     }
 }
 
-[dir=rtl] .rtl\:space-x-reverse>:not([hidden])~:not([hidden]) {
+[dir=rtl] .rtl\:space-x-reverse>:not([hidden])~:not([hidden]):not(h4) {
     color: var(--color-primary-dark);
 }
 
