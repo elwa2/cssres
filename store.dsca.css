@@ -114,7 +114,10 @@ body:after {
         transform: scale(0)
     }
 }
-
+body > div > div.container > div.page-content > div > div > div:nth-child(1) > div > div.mt-2.d-flex.justify-content-between > span:nth-child(2) {
+    position: relative;
+    left: 35px;
+}
 :root {
     --1: #612964;
     --2: #5dbabc;
