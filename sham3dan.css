@@ -1,0 +1,111 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@keyframes intro {
+    0% {
+        width: 100%;
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    99% {
+        width: 100%;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes intro_logo {
+    0% {
+        width: 100%;
+        height: 110%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    99% {
+        width: 100%;
+        height: 100%;
+    }
+
+    100% {
+        width: 0;
+        opacity: 0;
+        display: none;
+    }
+}
+
+body.store-home::before {
+    content: " ";
+    background-color: var(--4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: 999999999999999999;
+    opacity: 0;
+    animation: intro 1.7s;
+}
+
+body.store-home:after {
+    z-index: 999999999999999999;
+    position: fixed;
+    content: "";
+    background-image: var(--logo);
+    background-position-y: center;
+    background-position-x: center;
+    background-size: 25%;
+    background-repeat: no-repeat;
+    width: 0%;
+    height: 100%;
+    right: 0%;
+    top: 0%;
+    opacity: 0;
+    animation: intro_logo 1.5s;
+}
+
+body,section.py-3[style="background: #FAFAFA;"] {
+    background: var(--3) !important;
+}
+
+:root {
+    --1: #9e9e9e;
+    --2: #7e7e7e;
+    --3: #bfc0bc;
+     --4: #333;
+    --main-text-color2: #444444;
+    --infinte-color: #7e7e7e;
+    --main-text-color-dark: #bfc0bc;
+    --color-main: #9e9e9e;
+    --color-main-d: #bfc0bc;
+    --color-main-l: #bfc0bc;
+    --color-main-reverse: #bfc0bc;
+    --color-text: #5a5a5a;
+    --color-text-reverse: #bfc0bc;
+    --color-title: #bfc0bc;
+    --logo: url("https://cdn.salla.sa/nvDON/Q84jM0w9ZOzLnHmgirRP8wbUSYT2uevERTQBzLYb.png");
+}
+
+
+ 
