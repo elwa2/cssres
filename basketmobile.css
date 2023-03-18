@@ -1495,15 +1495,15 @@ footer {
     background: transparent !important;
     order: 3;
     position: relative;
-    top: -113px;
-    margin: -2px 0px -78px 0px;
+    top: -73px;
+    margin: 5px 0px -69px 0px;
     /* right: 80px; */
 }
 
 @media(max-width: 767px) {
     .footer-header {
-        /* top: unset; */
-        right: 0;
+        top: unset;
+        right: 0; top: -113px;
     }
 }
 
