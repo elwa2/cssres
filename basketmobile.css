@@ -1812,7 +1812,7 @@ body > footer > div.footer-main > div > div > div:nth-child(1) > p {
     color: var(--main-color);
 }
 
-body > section:nth-child(7) {
+body.store-home > section:nth-child(7) {
     padding-bottom: 7rem;
     clip-path: polygon(0 0,100%0%,100%73%,0%100%);
     background: linear-gradient(52deg,var(--main-color)0%,var(--main-color)100%) !important;
