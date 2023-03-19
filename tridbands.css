@@ -185,5 +185,19 @@ body.product-index.salla-349994915 > header:before {
     }
 }
 
+@media (min-width: 700px){
+    body > div.page-container.relative.z-1.product-has-options .container {
+        display: flex;
+    }
+}
+@media (max-width: 700px){
+   body > div.page-container.relative.z-1.product-has-options > div.container > div > div > div > salla-slider  {
+    height: 27rem;
+    min-height: 15rem;
+}
+}
+
+
+
 
  
