@@ -196,9 +196,13 @@ body.product-index.salla-349994915 > header:before {
     }
 
     .swiper-slide.relative.swiper-slide-active {
-        width: 25rem !important;
+        width: 45rem !important;
         overflow: visible !important;
     }
+    [dir=rtl] .details-slider-wrapper .details-slider, [dir=rtl] .details-slider-wrapper .s-slider-container {
+    /* order: 2; */
+    height: 69rem;
+}
 }
 
 @media (max-width: 700px) {
