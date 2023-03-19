@@ -109,6 +109,13 @@ body.product-index.salla-349994915 > header {
     height: 58rem;
 }
 
+body.product-index.salla-349994915 > header {
+    height: 33rem;
+    position: relative;
+    top: -8rem;
+    margin: 15px 0 -136px;
+}
+
 @media (max-width: 700px) {
     body.product-index.salla-349994915 > header {
         height: 33rem;
@@ -142,4 +149,26 @@ body.product-index.salla-349994915 > header {
 
 .product-entry__image {
     background-color: #fff;
+}
+
+.header-is-light .header-components .s-cart-summary-wrapper li a, .header-is-light .header-components .main-menu li a,.header-components .left-side .header-icon-button {
+    color: var(--2);
+}
+
+body.product-index.salla-349994915 > header:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.6);
+    transition-property: color,background-color,border-color,text-decoration-color,fill,stroke;
+    transition-timing-function: cubic-bezier(.4,0,.2,1);
+    transition-duration: 300ms;
+    --tw-content: "";
+    content: var(--tw-content);
+}
+
+.fixed-pinned.header-components, .fixed-pinned .inner {
+    position: unset;
 }
