@@ -151,7 +151,7 @@ body.product-index .header-components-top.header-top-page .header-icon-button, b
     background-color: #fff;
 }
 
-body.product-index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3,body.product-index .header-is-light .header-components .s-cart-summary-wrapper li a, body.product-index > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.hidden.lg\:flex.items-center > ul > li > a > span,body.product-index .header-components .left-side .header-icon-button {
+.rtl .fix-align, [dir=rtl] .fix-align,body.product-index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3,body.product-index .header-is-light .header-components .s-cart-summary-wrapper li a, body.product-index > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.hidden.lg\:flex.items-center > ul > li > a > span,body.product-index .header-components .left-side .header-icon-button {
     color: var(--2) !important;
 }
 
@@ -196,8 +196,10 @@ body.product-index.salla-349994915 > header:before {
     }
 
     .swiper-slide.relative.swiper-slide-active {
-        width: 45rem !important;
+        width: 24rem !important;
         overflow: visible !important;
+        position: relative;
+        right: 8rem;
     }
 
     [dir=rtl] .details-slider-wrapper .details-slider, [dir=rtl] .details-slider-wrapper .s-slider-container {
@@ -222,4 +224,16 @@ body.product-index.salla-349994915 > header:before {
 .details-slider-wrapper .s-slider-container {
     background-color: #fff !important;
 }
-body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {color:#fff}
+
+body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
+    color: var(--2) !important;
+}
+
+.bg-zinc-100 {
+    background-color: var(--3);
+}
+
+div > div > div.order-1.md\:order-2.block.md\:sticky.top-24.shrink-0.h-fit > div.product-fixed-bar > div > div.grow.sm\:grow-0.w-full > salla-add-product-button > salla-button > button {
+    color: var(--2) !important;
+    background-color: var(--3);
+}
