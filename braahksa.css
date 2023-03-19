@@ -48,6 +48,15 @@ ul.main-nav>li>a:hover {
     font-weight: 700!important;
     text-align: center!important
 }
+@media (max-width:700px){
+
+    .section-title {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 700!important;
+    text-align: center!important;
+}
+}
 
 .box-1-1.ratio21_9:before {
     padding-top: 50%
@@ -374,8 +383,23 @@ li.slide-menu-ul-li {
         padding: 10px;
         border-radius: 15px;
         font-weight: 700!important;
-        color: #fff !important;
+        color: #ffffff!important;
+        width: 50%;
+        position: relative;
+        right: 8rem;
     }
+/*  body > div > div.main.flex-grow-1.app-content.app-content-padded > div > div > div h1:after {
+        display:block;
+        width: 23rem;
+        height: 0px;
+        border-bottom: 1px solid #ebebeb;
+        content: "";
+        position: relative;
+        top: 11px;
+        right: 0;
+    } */
+
+
 }
 
 section.ss .slick-list {
