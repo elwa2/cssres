@@ -185,19 +185,25 @@ body.product-index.salla-349994915 > header:before {
     }
 }
 
-@media (min-width: 700px){
+@media (min-width: 700px) {
     body > div.page-container.relative.z-1.product-has-options .container {
         display: flex;
     }
+
+    body.product-single .w-full.grid.grid-cols-1.md\:grid-cols-3.gap-5 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .swiper-slide.relative.swiper-slide-active {
+        width: 25rem !important;
+        overflow: visible !important;
+    }
 }
-@media (max-width: 700px){
-   body > div.page-container.relative.z-1.product-has-options > div.container > div > div > div > salla-slider  {
-    height: 27rem;
-    min-height: 15rem;
+
+@media (max-width: 700px) {
+    body > div.page-container.relative.z-1.product-has-options > div.container > div > div > div > salla-slider {
+        height: 27rem;
+        min-height: 15rem;
+    }
 }
-}
-
-
-
-
- 
