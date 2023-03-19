@@ -1,0 +1,145 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&family=Changa:wght@200;300;400;500;600;700&display=swap"); html, body, div, object, h1, h2,h4, h3 {
+    font-family: "Cairo", sans-serif;
+}
+
+h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, span, .section--title {
+    font-family: "Changa", sans-serif;
+}
+
+@media (min-width: 1024px) {
+    .s-block--default-home-slider .swiper-slide {
+        height: 840px;
+    }
+}
+
+body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center {
+    order: 2;
+}
+
+body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.hidden.lg\:flex.items-center {
+    order: 1;
+}
+
+body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.left-side {
+    order: 3;
+}
+
+body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+    content: var(--logo);
+    height: 100%;
+    width: 79px;
+    max-height: unset !important;
+    position: relative;
+    right: -4rem;
+    filter: brightness(9.5);
+}
+
+body.product-index > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+    /* filter: unset; */
+}
+
+@media (max-width: 700px) {
+    body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+        width: 48px;
+    }
+
+    body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand {
+        align-content: center;
+        justify-content: center;
+        position: relative;
+        right: 10rem;
+    }
+
+    body > div.relative.z-0.s-block > footer > div.store-footer__top > div > div > div.mb-2\.5.col-span-2 {
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    body > div.relative.z-0.s-block > footer > div.store-footer__top > div > div > div.mb-2\.5.col-span-2 > a > img {
+        position: relative;
+        right: 8rem;
+    }
+}
+
+.header-components .mburger--collapse, .header-above-slider.header-is-light .header-components-top .header-btn {
+    color: var(--2);
+}
+
+button.header-btn.btn--gray.rounded {
+    background-color: transparent;
+}
+
+.header-above-slider .header-op-page {
+    background-color: transparent;
+    border: 0;
+}
+
+body > div.relative.z-0.s-block > footer > div.store-footer__top {
+    background-color: var(--5);
+    padding: 29px 0 0;
+    border-radius: 15px 15px 0 0;
+}
+
+.s-block--fixed-banner .banner--fixed {
+    border-radius: 0;
+}
+
+.banner-entry {
+    max-height: 640px;
+    min-height: 246px;
+}
+
+.product-entry--fit-type .product-entry__image {
+    height: 18rem;
+    max-height: 19rem;
+}
+
+@media (max-width: 700px) {
+    .product-entry--fit-type .product-entry__image {
+        height: 11rem;
+        max-height: 19rem;
+    }
+}
+
+body.product-index.salla-349994915 > header {
+    background-color: rgb(255 255 255) !important;
+    background-image: url(https://cdn.salla.sa/form-builder/UTQWyU3eFtb5lzFYbxjmoAS4sQf9CcyCACBdYbhJ.jpg) !important;
+    height: 58rem;
+}
+
+@media (max-width: 700px) {
+    body.product-index.salla-349994915 > header {
+        height: 33rem;
+        position: relative;
+        top: -8rem;
+        margin: 15px 0 -136px;
+    }
+}
+
+.header-components-top.header-top-page .header-icon-button, .header-components-top.header-top-page .sicon-search, .header-components-top.header-top-page .header-btn,a.s-cart-summary-wrapper,.header-icon-button #s-cart-icon {
+    color: var(--2);
+}
+
+:root {
+    --color-primary: #dedee0;
+    --color-primary-dark: #b7b7b9;
+    --color-primary-light: #fefeff;
+    --color-primary-reverse: #5e5e60;
+    --1: #ab7f5c;
+    --2: #fefeff;
+    --3: #0b0042;
+    --4: #453526;
+    --5: #dedee0;
+    --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 285.7 254.19'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ab7f5c; %7D %3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='266.71 254.19 260.11 242.49 169.61 81.42 138.73 136.36 200.39 239.16 209.42 254.19 53.52 254.19 62.86 237.56 124.98 237.56 75.1 154.39 61.86 177.96 28.68 237 25.62 242.51 19.06 254.19 0 254.19 66.22 136.33 71.85 126.34 142.85 0 152.32 16.82 145.24 29.4 145.34 29.4 84.45 137.76 144.31 237.56 180.12 237.56 126.46 148.15 119.58 136.63 160.48 63.82 161 62.86 169.59 47.6 178.2 62.89 285.7 254.19 266.71 254.19'/%3E%3C/svg%3E");
+}
+
+.header-components,.header-is-light .header-components,.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10,.header-components-top.header-top-page {
+    border: 0 !important;
+    border-color: transparent !important;
+}
+
+.product-entry__image {
+    background-color: #fff;
+}
