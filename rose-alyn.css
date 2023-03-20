@@ -1,6 +1,6 @@
 
  /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */ 
-@media (max-width: 991px)
+@media (max-width: 991px){
  .col-sm-4 {
     width: calc(100%/3);
     float: right;
