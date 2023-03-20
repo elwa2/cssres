@@ -359,12 +359,30 @@ body > section:nth-child(7) > div > div.section-header.d-flex.justify-content-be
  #product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count > strong,#product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count {
     font-size: 0;
 }
-#product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count > i{
-    font-size: 13px;
+
+#product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count > i {
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 385.48 512'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23f3705a; %7D .cls-2 %7B fill: %23ffd15c; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m77.31,465.73c-23.5-26.71-47-54.48-61.96-87.59C.4,342.89-3.87,302.3,3.6,263.84c7.48-38.45,24.57-74.77,49.14-105.75-2.14,26.71,7.48,54.48,25.64,74.77-10.68-51.27,6.41-106.82,40.59-147.41S200.15,18.16,249.29,0c-24.57,25.64-27.77,66.23-18.16,100.41,9.61,34.18,29.91,64.09,48.07,95.07s35.25,63.02,36.32,98.27c9.61-18.16,20.3-36.32,26.71-56.61,6.41-20.3,9.61-41.66,4.27-61.96,19.23,23.5,29.91,47,35.25,76.91s4.27,60.89,1.07,90.8c-4.27,33.11-12.82,67.3-30.98,95.07-21.36,33.11-55.55,56.61-92.93,69.43-66.23,11.75-131.39,2.14-181.59-41.66Z'/%3E%3Cpath class='cls-2' d='m158.49,505.25c87.59,34.18,174.11-69.43,126.05-149.55,0-1.07-1.07-1.07-1.07-2.14,4.27,43.8-6.41,75.84-26.71,94,10.68-25.64,3.2-55.55-9.61-81.18-12.82-24.57-30.98-47-44.86-70.5-13.89-24.57-24.57-52.34-18.16-80.11-25.64,19.23-43.8,48.07-51.27,79.05s-3.2,65.16,10.68,94c-16.02-11.75-27.77-30.98-28.84-51.27-17.09,20.3-27.77,47-26.71,73.71,0,41.66,33.11,79.05,70.5,94Z'/%3E%3C/svg%3E");
+    width: 15px;
+    -webkit-animation-name: blinker;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: cubic-bezier(.6,0,1,1);
+    -webkit-animation-duration: .8s;
 }
+
+@keyframes blinker {
+    from {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0
+    }
+}
+
 #product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count > strong:before {
     content: "تم شراؤه أكثر من 150 مرة";
     /* display: -webkit-inline-box; */
     font-size: 13px;
 }
+
  
