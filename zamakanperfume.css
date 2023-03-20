@@ -356,12 +356,15 @@ body > section:nth-child(7) > div > div.section-header.d-flex.justify-content-be
         grid-row: 2/2;
     }
 }
-#product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count > strong,#product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count {
+ #product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count > strong,#product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count {
     font-size: 0;
 }
-
+#product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count > i{
+    font-size: 13px;
+}
 #product-431806464 > div > div.col-md-7 > div.product-details__hot.product-purchase-count > strong:before {
     content: "تم شراؤه أكثر من 150 مرة";
-    display: block;
-    font-size: 12px;
+    /* display: -webkit-inline-box; */
+    font-size: 13px;
 }
+ 
