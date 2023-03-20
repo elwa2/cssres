@@ -1,1 +1,9 @@
 
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */ 
+
+ .col-sm-4 {
+    width: calc(100%/3);
+    float: right;
+    padding-right: 5px;
+    padding-left: 5px;
+}
