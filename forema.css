@@ -465,9 +465,9 @@ body {
     border-color: var(--ff);
 }
 
-.product-item .btn:not(:disabled):not(.disabled) {
+.product-item .btn:not(:disabled):not(.disabled),.btn-add-to-cart,.card,.card-table-header,.add-review-btn {
     background: var(--2)!important;
-    background-color: var(--2);
+    background-color: var(--2); border-color: var(--ff);
 }
 
 html, body, div, object, h1, h2,h4, h3 {
