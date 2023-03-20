@@ -272,7 +272,10 @@ span.icon-instagram.d-flex.align-items-center.justify-content-center {
     width: 215px!important;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 42%;
+    background-size: 42%;  animation: wiggle 2s infinite;
+ 
+   
+    transform-origin: 50% 5em;
 }
 
 .store-section h1,.store-section p,.store-section a {
@@ -474,3 +477,36 @@ html, body, div, object, h1, h2,h4, h3 {
 h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, span, .section--title {
     color: var(--primary-color)!important;
 }
+
+ 
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+ 
