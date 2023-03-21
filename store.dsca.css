@@ -114,16 +114,11 @@ body:after {
         transform: scale(0)
     }
 }
+
 body > div > div.container > div.page-content > div > div > div:nth-child(1) > div > div.mt-2.d-flex.justify-content-between > span:nth-child(2) {
     position: relative;
     left: 35px;
 }
-
-
-
-
-
-
 
 @media (min-width: 768px) {
     body > div > div:nth-child(6) > footer > div > div > div:nth-child(2) {
@@ -134,23 +129,13 @@ body > div > div.container > div.page-content > div > div > div:nth-child(1) > d
     body > div > div:nth-child(6) > footer > div > div > div.col-md-3.mt-4.mt-md-0.order-3.mt-4.mt-md-0 {
         position: relative;
         top: 77px;
+        right: 28rem;
     }
 }
 
 .block-product .thumb:after {
     background: none;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 :root {
     --1: #612964;
