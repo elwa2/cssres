@@ -8,6 +8,12 @@
     position: relative;
        top: 9px;
 }
+body.index > div.app-inner.flex.flex-col.min-h-screen.relative > section.s-block.s-block--testimonials.overflow-hidden.s-block--full-bg.bg-gray-50.py-5.sm\:py-12 > div > salla-slider > div.s-slider-block__title > div.s-slider-block__title-right > h2 {
+    font-size: 26px;
+    position: relative;
+    top: -17px;
+}
+
 
 h4.text-gray-800.font-bold.text-lg {
     color: black;
