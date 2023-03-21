@@ -1392,6 +1392,15 @@ body.cart, body.product-index {
         top: 15px;
     }
 }
+#side-panel > div:nth-child(2) > ul > li.root-level.data-collapsible.mobile-accordion.has-children.id\=.accordion_0.collapsible-open > div > ul > li.xl\:hidden > a > span {
+    display: none;
+    margin: -20px -16px;
+}
+
+#side-panel > div:nth-child(2) > ul > li.root-level.data-collapsible.mobile-accordion.has-children.id\=.accordion_0.collapsible-open > div > ul > li.xl\:hidden > a {
+    display: none;
+    margin: -20px -16px;
+}
 
 :root {
     --color-primary: #f18988;
