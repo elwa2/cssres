@@ -324,7 +324,7 @@ i.sicon-shopping:before {
 
 .footer-is-light .store-footer ul.payment-methods-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .product-entry__title a {
