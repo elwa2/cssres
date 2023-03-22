@@ -314,6 +314,17 @@ body > salla-modal.s-login-modal.salla-modal.s-modal.s-modal-container.hydrated 
     fill: var(--3);
 }
 
+.text-red-200 {
+    --tw-text-opacity: 1;
+    color: var(--1);
+}
+
+@media (min-width: 640px) {
+    .sm\:border {
+        border-width: 0;
+    }
+}
+
 :root {
     --color-primary: #dedee0;
     --color-primary-dark: #b7b7b9;
