@@ -1,0 +1,283 @@
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */ 
+body,.home-block--bg {
+    background: #F7EEE7!important;
+}
+
+a {
+    color: var(--1) !important;
+}
+
+@media (min-width: 992px) {
+    section.home-block.home-block--main-slider .hero.no-p .container {
+        max-width: 100%;
+        width: 100%;
+        padding: 0px!important;
+        margin: -39px 0 !important;
+    }
+}
+
+.splide--main-slider .splide__track, .splide--radial {
+    border-radius: 0px !important;
+}
+
+.btn--add-to-cart {
+    background: var(--1) !important;
+}
+
+.product-block__info .product-title p, .title--primary {
+    color: var(--1) !important;
+}
+
+.sicon-shopping-bag:before {
+    content: "\ef39";
+}
+
+header .site-header__cart a:hover {
+    transform: none !important;
+}
+
+.sicon-whatsapp2::after {
+    content: "\E916";
+    text-align: center;
+    cursor: pointer;
+    background: #46a51e;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    color: #fff;
+    box-shadow: #00000022 1.5px 1.5px 5px;
+    width: 0px;
+    height: 0px;
+    border-radius: 27.5px;
+    position: fixed;
+    bottom: 19px;
+    right: 17px;
+    transform: rotate(360);
+    transition: all .2s ease-in-out;
+}
+
+body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-whatsapp2::after {
+    width: 56px;
+    height: 56px;
+    border-radius: 32.5px;
+    font-size: 32px;
+    box-shadow: #0000006b 2px 2px 8px;
+}
+
+.sicon-whatsapp2:after:hover {
+    border-radius: 0;
+    border: 0;
+    width: 180px;
+    height: 60px;
+}
+
+.sicon-whatsapp2:hover::after {
+    content: "حاب نساعدك 😃؟ ";
+    width: 260px !important;
+    animation: trns 1s;
+    font-size: 20px !important;
+    color: #ffffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes trns {
+    0% {
+        color: #ffffff00;
+    }
+
+    100% {
+        color: #ffffff99;
+    }
+}
+
+.bg-grey {
+    background: #c0b8b5 !important;
+}
+
+@media (max-width: 765px) {
+    section.home-block.home-block--square-images .container .row {
+        display:grid!important;
+        grid-template-columns: 1fr 1fr 1fr!important;
+        grid-template-rows: 0fr 0fr 0fr!important;
+        grid-gap: 2px;
+        padding: 0 9px;
+    }
+
+    .row > div .banner--square figure {
+        width: 100% !important;
+    }
+
+    section.home-block.home-block--square-images .container .row .col-md-4 {
+        display: grid!important;
+        padding-left: 0!important;
+        padding-right: 0!important;
+        border: 0
+    }
+
+    section.home-block.home-block--square-images .banner--square {
+        background-color: #fff;
+        margin: 0;
+        border-radius: 10px
+    }
+
+    section.home-block.home-block--square-images .col-md-4 {
+        border-radius: 10px
+    }
+
+    .home-block--square-images {
+        padding: 0!important
+    }
+}
+
+/* القائمة الجانبية  */
+@media (min-width: 291px) {
+    .popup-modal-wrap .popup-modal__header .avatar-wrapper--primary {
+        display: none
+    }
+
+    .popup-modal-wrap .popup-modal {
+        background: repeating-linear-gradient( 45deg , var(--1), #f5f5f5 ) !important;
+    }
+
+    .popup-modal-wrap .popup-modal__header:before {
+        display: block!important;
+        content: "";
+        width: 25%;
+        margin: 0 auto 15px auto;
+        background: var(--logo);
+        height: 100px;
+        background-size: 100%;
+        background-repeat: no-repeat !IMPORTANT;
+    }
+}
+
+@media (max-width: 991px) {
+    .mm-ocd--open .mm-ocd__content::before {
+        display: block;
+        content: "";
+        width: 43%;
+        margin: 9px auto;
+        background: var(--logo) var(--1);
+        height: 55px;
+        background-size: 84%;
+        background-repeat: no-repeat !IMPORTANT;
+        background-position: center;
+    }
+
+    .mm-ocd--open .mm-ocd__content {
+        box-shadow: none;
+        background: var(--1);
+    }
+
+    .mm-spn.mm-spn--light {
+        color: var(--1)!important;
+        background: #F7EEE7;
+    }
+
+    .nav-mobile .main-nav {
+        border-radius: 20px 20px 0 0;
+        border-top: 3px solid var(--1);
+        box-shadow: none;
+    }
+
+    .nav-mobile .main-nav li a i,.nav-mobile .main-nav li a {
+        color: var(--1)!important;
+    }
+
+    .popup-modal-wrap--small .popup-modal {
+        height: max-content!important;
+        border-radius: 20px
+    }
+
+    .popup-modal-wrap .popup-modal__header {
+        padding: 20px 20px 0
+    }
+
+    .popup-modal-wrap .popup-modal__body {
+        padding: 5 20px
+    }
+
+    .popup-modal-wrap .popup-modal__body .form--login-reg .login-methods {
+        margin: 0 0 0;
+        padding-top: 20px;
+    }
+
+    .popup-modal-wrap .popup-modal__body .form--login-reg .login-methods .login-method a {
+        border-radius: 11px;
+        border: 0
+    }
+
+    .mm-ocd--open .mm-ocd__content .close-mobile-menu {
+        background-color: var(--1)
+    }
+
+    .mm-ocd--open .mm-ocd__content {
+        height: 70%;
+        font-size: 20px;
+        border-radius: 15px 15px 0 0
+    }
+
+    .mm-ocd--open .mm-ocd__content ul li a:before {
+        display: inline-block!important;
+        width: 30px;
+        vertical-align: middle;
+        font-family: sallaicons, icomoon!important;
+        font-size: 25px;
+        margin-left: 9px
+    }
+
+    .mm-ocd--open .mm-ocd__content ul li:nth-child(1) a:before {
+        content: "\ebf7" !important;
+    }
+
+    .mm-ocd--open .mm-ocd__content ul li:nth-child(2) a:before {
+        content: "\e98b" !important;
+    }
+
+    .mm-ocd--open .mm-ocd__content ul li:nth-child(3) a:before {
+        content: "\e972" !important;
+    }
+
+    .mm-ocd--open .mm-ocd__content ul li:nth-child(4) a:before {
+        content: "\e963" !important;
+    }
+}
+
+/* القائمة الجانبية  */
+.title, .btn--tag:hover {
+    color: var(--1) !important;
+}
+
+.btn--tag {
+    color: #e4c7b7 !important;
+}
+
+.popup-modal-wrap .popup-modal__header:before {
+    display: block!important;
+    content: "";
+    width: 57%;
+    margin: 0 auto 15px auto;
+    background: var(--logo);
+    height: 100px;
+    background-size: 100%;
+    background-repeat: no-repeat !IMPORTANT;
+}
+.btn--floated .s-button-element {
+    color: var(--2) !important;
+}
+.s-cart-summary-icon svg {
+ 
+    fill:  var(--1);
+}
+:root {
+    --1: #c8a072 ;
+    --2: #f8f1e2 ;
+    --3: #f6e8d2 ;
+    --4: #262626 ;
+    --bg: #f7eee7 ;
+    --logo: url(https://cdn.salla.sa/vGwlP/eqQC8G1NUF3CnPccLFxvbbOKakUZrPPlmlypn07N.png);
+}
