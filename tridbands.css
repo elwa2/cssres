@@ -329,6 +329,14 @@ body > salla-modal.s-login-modal.salla-modal.s-modal.s-modal-container.hydrated 
     color: #333 !important;
 }
 
+span.fix-align.opacity-70 {
+    color: var(--5) !important;
+}
+
+div#accordionOptions {
+    max-height: 2109px !important;
+}
+
 :root {
     --color-primary: #dedee0;
     --color-primary-dark: #b7b7b9;
