@@ -35,9 +35,8 @@ a {
 header .site-header__cart a:hover {
     transform: none !important;
 }
-
-.sicon-whatsapp2::after {
-    content: "\E916";
+ .sicon-whatsapp2::after {
+    content: "\e917";
     text-align: center;
     cursor: pointer;
     background: #46a51e;
@@ -52,13 +51,13 @@ header .site-header__cart a:hover {
     height: 0px;
     border-radius: 27.5px;
     position: fixed;
-    bottom: 19px;
+    bottom: 56px;
     right: 17px;
     transform: rotate(360);
     transition: all .2s ease-in-out;
 }
 
-body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-whatsapp2::after {
+body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-whatsapp2::after,i.sicon-whatsapp2::after {
     width: 56px;
     height: 56px;
     border-radius: 32.5px;
@@ -75,6 +74,7 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
 
 .sicon-whatsapp2:hover::after {
     content: "حاب نساعدك 😃؟ ";
+    content: "     في خدمتك ؟ ";
     width: 260px !important;
     animation: trns 1s;
     font-size: 20px !important;
@@ -93,7 +93,6 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
         color: #ffffff99;
     }
 }
-
 .bg-grey {
     background: #c0b8b5 !important;
 }
