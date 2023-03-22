@@ -158,11 +158,11 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
     .mm-ocd--open .mm-ocd__content::before {
         display: block;
         content: "";
-        width: 43%;
+        width: 35%;
         margin: 9px auto;
         background: var(--logo) var(--1);
-        height: 55px;
-        background-size: 84%;
+        height: 87px;
+        background-size: contain;
         background-repeat: no-repeat !IMPORTANT;
         background-position: center;
     }
