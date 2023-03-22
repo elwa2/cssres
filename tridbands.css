@@ -129,19 +129,6 @@ body.product-index .header-components-top.header-top-page .header-icon-button, b
     color: var(--2);
 }
 
-:root {
-    --color-primary: #dedee0;
-    --color-primary-dark: #b7b7b9;
-    --color-primary-light: #fefeff;
-    --color-primary-reverse: #5e5e60;
-    --1: #ab7f5c;
-    --2: #fefeff;
-    --3: #0b0042;
-    --4: #453526;
-    --5: #dedee0;
-    --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 285.7 254.19'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ab7f5c; %7D %3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='266.71 254.19 260.11 242.49 169.61 81.42 138.73 136.36 200.39 239.16 209.42 254.19 53.52 254.19 62.86 237.56 124.98 237.56 75.1 154.39 61.86 177.96 28.68 237 25.62 242.51 19.06 254.19 0 254.19 66.22 136.33 71.85 126.34 142.85 0 152.32 16.82 145.24 29.4 145.34 29.4 84.45 137.76 144.31 237.56 180.12 237.56 126.46 148.15 119.58 136.63 160.48 63.82 161 62.86 169.59 47.6 178.2 62.89 285.7 254.19 266.71 254.19'/%3E%3C/svg%3E");
-}
-
 .header-components,.header-is-light .header-components,.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10,.header-components-top.header-top-page {
     border: 0 !important;
     border-color: transparent !important;
@@ -237,6 +224,7 @@ div > div > div.order-1.md\:order-2.block.md\:sticky.top-24.shrink-0.h-fit > div
     color: var(--2) !important;
     background-color: var(--3);
 }
+
 @media (min-width: 768px) {
     .s-block {
         margin-top: 0rem;
@@ -289,25 +277,53 @@ div > div > div.order-1.md\:order-2.block.md\:sticky.top-24.shrink-0.h-fit > div
     min-height: 245px;
 }
 
-
-
 .product-entry {
-  
     border-radius: 0;
     border-width: 0;
-    
 }
-
 
 .s-modal-body {
     background: var(--5);
 }
 
-.s-modal-close{
-    background: var(--color-primary);
+.s-modal-close {
+    background: var(--1-1);
 }
 
+button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-wide.s-button-primary.s-button-loader-center,[type=text], [type=email], [type=url], [type=password], [type=number], [type=date], [type=datetime-local], [type=month], [type=search], [type=tel], [type=time], [type=week], [multiple], textarea, select {
+    background: var(--1-1);
+    color: #413f3f
+}
 
-button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-wide.s-button-primary.s-button-loader-center { background: #000}
+body > salla-modal.s-login-modal.salla-modal.s-modal.s-modal-container.hydrated > div.s-modal-wrapper > div > div.s-modal-header > div {
+    content: var(--logo);
+    height: 102px;
+    /* width: 79px; */
+    /* max-height: unset !important; */
+    /* position: relative; */
+    /* right: -4rem; */
+    /* filter: brightness(9.5); */
+    font-size: 0;
+    border: 0;
+    overflow: visible;
+    margin: 15px auto 41px;
+    padding: 15px;
+}
 
+.s-modal-close svg {
+    fill: var(--3);
+}
 
+:root {
+    --color-primary: #dedee0;
+    --color-primary-dark: #b7b7b9;
+    --color-primary-light: #fefeff;
+    --color-primary-reverse: #5e5e60;
+    --1: #ab7f5c;
+    --1-1: #ab7f5c40;
+    --2: #fefeff;
+    --3: #0b0042;
+    --4: #453526;
+    --5: #dedee0;
+    --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 285.7 254.19'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ab7f5c; %7D %3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='266.71 254.19 260.11 242.49 169.61 81.42 138.73 136.36 200.39 239.16 209.42 254.19 53.52 254.19 62.86 237.56 124.98 237.56 75.1 154.39 61.86 177.96 28.68 237 25.62 242.51 19.06 254.19 0 254.19 66.22 136.33 71.85 126.34 142.85 0 152.32 16.82 145.24 29.4 145.34 29.4 84.45 137.76 144.31 237.56 180.12 237.56 126.46 148.15 119.58 136.63 160.48 63.82 161 62.86 169.59 47.6 178.2 62.89 285.7 254.19 266.71 254.19'/%3E%3C/svg%3E");
+}
