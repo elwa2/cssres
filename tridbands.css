@@ -11,6 +11,9 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     .s-block--default-home-slider .swiper-slide {
         height: 840px;
     }
+     .loading-effect::before {
+    display: none;
+}
 }
 
 body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center {
