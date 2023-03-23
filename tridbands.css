@@ -454,3 +454,15 @@ div.s-product-card-content > div.s-product-card-content-footer > salla-add-produ
 .s-product-card-content-sub {
     justify-content: center;
 }
+:lang(en) img[src*="https://cdn.salla.sa/form-builder/ITF1L4QTCgZ0Gf3VbguYhmKI5YZNes71FCi1l2Va.jpg"] {
+    content: url(https://cdn.salla.sa/form-builder/Nh02JlDz4sk50cbLrFmoUhSGhK0qgFZW7Rm2abQV.jpg);
+}
+:lang(en) img[src*="https://cdn.salla.sa/form-builder/rzwem1duEizqHHQ8UsVjJUY5l1rrmHddcBLK1eCK.jpg"] {
+    content: url(https://cdn.salla.sa/form-builder/K7h8lBoIAAjHqXqPdFeNZ5bnbtkYc5y0CdDgd41m.jpg);
+}
+:lang(en) img[src*="https://cdn.salla.sa/form-builder/PKgrE2BlVlWZyg8CiNnDfrmQBKygVeMY6gQLAXgK.jpg"] {
+    content: url(https://cdn.salla.sa/form-builder/TMTftQFI6A40bSVBTPiK5RM9g48pLrFOa0CcHaFs.jpg);
+}
+:lang(en) img[src*=""] {
+    content: url();
+}
