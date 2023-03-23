@@ -705,7 +705,7 @@ footer .store-certificate img {
     margin: 12px;
     border-radius: 47px;
     text-align: center !important;
-    background: linear-gradient(134deg ,transparent -183%,#ffffff 83% ,#fcf7f3 200%), var(--logo)0rem 0rem/100%no-repeat;
+    background: linear-gradient(134deg ,transparent -183%,#ffffff96 83% ,#fcf7f300 200%), var(--logo)0rem 0rem/100%no-repeat;
     background-size: 647px;
     background-repeat: no-repeat;
 }
