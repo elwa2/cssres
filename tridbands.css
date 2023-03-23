@@ -394,3 +394,10 @@ div#accordionOptions {
 .s-product-card-image {
     background: #fff;
 }
+.banner-entry h3 {
+    background: transparent !important;
+    color: #fff !important;
+    font-size: 53px !important;
+    top: -6rem;
+    position: relative;
+}
