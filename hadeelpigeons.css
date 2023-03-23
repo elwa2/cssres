@@ -951,13 +951,13 @@ header .header-logo {
     }
 
     .slide-menu__slider>ul>li {
-        border-bottom: 0 solid #e5ae13;
+        border-bottom: 0 solid var(--2);
         border-top: 0
     }
 
     .slide-menu__slider>ul>li:nth-child(1) {
         grid-column: 1/3;
-        content: url(https://media.zid.store/e89f6b26-aafb-407f-a777-77097d7ef557/790e4bf4-fe06-467e-b2f8-0121e07c13a3.png);
+        content: var(--logo);
         height: 70px;
         padding: 5px 0;
         margin: 25px auto 10px;
@@ -1023,7 +1023,7 @@ header .header-logo {
 
     .slide-menu__slider>ul>li:nth-last-child(4) a, .slide-menu__slider>ul>li:nth-last-child(3) a, .slide-menu__slider>ul>li:nth-child(2) a, .slide-menu__slider>ul>li:nth-child(3) a {
         text-align: center;
-        background: #e5ae13;
+        background: var(--2);
         font-size: 10px!important;
         border-radius: 8px;
         padding: 10px 15px 8px;
@@ -1119,11 +1119,13 @@ header .header-logo {
         margin: auto;
         padding: 3px 10px;
         border-radius: 6px;
-        background: #e5ae13!important;
+        background: var(--2)!important;
         border: 0;
         font-family: sky;
         font-size: 12px;
-        line-height: 1.8
+        line-height: 1.8;
+        position: relative;
+        right: -10px;
     }
 
     .slide-menu__slider>ul>li:nth-last-child(2) .account-lang-currency {
@@ -1139,7 +1141,7 @@ header .header-logo {
         min-width: 100px;
         margin: auto;
         padding: 3px;
-        background: #e5ae13!important;
+        background: var(--2)!important;
         border: 0;
         max-height: 29.2px;
         border-radius: 6px;
@@ -1206,7 +1208,7 @@ header .header-logo {
 
     #langCurrecyModal .justify-content-end .btn.btn-primary {
         color: var(--3)!important;
-        background: #e5ae13;
+        background: var(--2);
         border: 0;
         border-radius: 6px
     }
@@ -1238,7 +1240,7 @@ header .header-logo {
         line-height: 1.5;
         font-size: 14px;
         border-radius: 6px;
-        background: #e5ae13!important
+        background: var(--2)!important
     }
 
     li>ul.slide-menu__submenu--active>li:first-child>a:before {
@@ -1281,7 +1283,7 @@ header .header-logo {
 
 nav#sliding-menu {
     background: #000!important;
-    background: linear-gradient(134deg,transparent -183%,#000 83%,#000 200%),url("https://media.zid.store/62bce10b-690e-447d-b4d9-d2e87705efd0/a50afa08-65e0-4d31-8005-09c339cdc6b1-200x.png")0rem 0rem/273%no-repeat!important
+    background: linear-gradient(134deg,transparent -183%,var(--1) 83%), var(--logo)0rem 0rem/273%no-repeat!important
 }
 
 .features-section.section-padding-space::before {
@@ -1485,24 +1487,6 @@ body .home:after {
     display: block;
     content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100.61 99.31'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1-2'%3E%3Cpath class='cls-1' d='M98.21,85.31l-23.1-23.1c11.9-19,6.2-44.1-12.9-56S18.11,0,6.21,19.11,0,63.21,19.11,75.11c13.8,8.6,31.4,8.2,44.7-1.1l22.9,22.9c3.2,3.2,8.3,3.2,11.5,0,3.2-3.3,3.2-8.4,0-11.6Zm-57.5-17.2c-15.2,0-27.5-12.3-27.5-27.5S25.51,13.11,40.71,13.11s27.5,12.3,27.5,27.5h0c-.1,15.2-12.4,27.5-27.5,27.5h0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     width: 23px;
-}
-body > div > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:hover img {
-    animation: toRightFromLeft .3s forwards
-}
-
-@keyframes toRightFromLeft {
-    49% {
-        transform: translate(100%)
-    }
-
-    50% {
-        opacity: 0;
-        transform: translate(-100%)
-    }
-
-    51% {
-        opacity: 1
-    }
 }
 
 :root {
