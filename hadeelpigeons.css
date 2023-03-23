@@ -1,3 +1,4 @@
+
 @import "https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700&display=swap"; body,html,h1,h2,h3,h4,h5,h6,span,button,div,p {
     font-family: tajawal, sans-serif, icomoon!important
 }
@@ -286,8 +287,8 @@ div.home .main-slider .slider-item {
 .product-item {
     text-align: center;
     border: 1px solid var(--1-1);
-    background-color: var(--3);
-    border-radius: 11px
+    background-color: #ffffff;
+    border-radius: 11px;
 }
 
 .products-slider .prod-col, .categories-slider .cat-col {
@@ -1325,15 +1326,15 @@ nav#sliding-menu {
 }
 
 .feature:first-child .theme-text-for-primary-bg:after {
-    content: "\a  وآمنة لتسهيل علمية الشراء";
+    content: "\a    خدمة عملاء على مدار الاسبوع";
 }
 
 .feature:nth-child(2) .theme-text-for-primary-bg:after {
-    content: "\a بأعلى مقاييس التخزين اللوجستية  ";
+    content: "\a تغطية كاملة لجميع مناطق المملكة        ";
 }
 
 .feature:nth-child(3) .theme-text-for-primary-bg:after {
-    content: "\a    تسوق ي بكل ثقة    ";
+    content: "\a     تغطية كاملة لجميع مناطق المملكة     ";
 }
 
 body>div>div.main.flex-grow-1.app-content.app-content-padded>div.container.pt-2.category-page-slider>div>div>div>div>div>div>div>a>img {
