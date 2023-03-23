@@ -442,3 +442,11 @@ div.s-product-card-content > div.s-product-card-content-footer > salla-add-produ
 [dir=rtl] .rtl\:pl-10 {
     border-radius: 4px;
 }
+
+.s-product-card-content {
+    text-align: center;
+}
+
+.s-product-card-content-sub {
+    justify-content: center;
+}
