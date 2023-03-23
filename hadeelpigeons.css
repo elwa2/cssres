@@ -1488,8 +1488,28 @@ body .home:after {
     content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100.61 99.31'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1-2'%3E%3Cpath class='cls-1' d='M98.21,85.31l-23.1-23.1c11.9-19,6.2-44.1-12.9-56S18.11,0,6.21,19.11,0,63.21,19.11,75.11c13.8,8.6,31.4,8.2,44.7-1.1l22.9,22.9c3.2,3.2,8.3,3.2,11.5,0,3.2-3.3,3.2-8.4,0-11.6Zm-57.5-17.2c-15.2,0-27.5-12.3-27.5-27.5S25.51,13.11,40.71,13.11s27.5,12.3,27.5,27.5h0c-.1,15.2-12.4,27.5-27.5,27.5h0Z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     width: 23px;
 }
+
 .search-header-bar>div:nth-child(2)>div input::placeholder, .search-header-bar>div:nth-child(2)>div input::-webkit-input-placeholder {
     color: #fff;
+}
+
+body > div > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:hover img {
+    animation: toRightFromLeft .3s forwards
+}
+
+@keyframes toRightFromLeft {
+    49% {
+        transform: translate(100%)
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(-100%)
+    }
+
+    51% {
+        opacity: 1
+    }
 }
 
 :root {
