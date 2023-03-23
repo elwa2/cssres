@@ -11,9 +11,10 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     .s-block--default-home-slider .swiper-slide {
         height: 840px;
     }
-     .loading-effect::before {
-    display: none;
-}
+
+    .loading-effect::before {
+        display: none;
+    }
 }
 
 body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center {
@@ -351,7 +352,7 @@ div#accordionOptions {
     --3: #0b0042;
     --4: #453526;
     --5: #dedee0;
-    --bghed:url(https://cdn.salla.sa/form-builder/O3A8NmY0VrvKApdIwLdSvInfz5jMPdI4IAW51qXo.jpg);
+    --bghed: url(https://cdn.salla.sa/form-builder/O3A8NmY0VrvKApdIwLdSvInfz5jMPdI4IAW51qXo.jpg);
     --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 285.7 254.19'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23ab7f5c; %7D %3C/style%3E%3C/defs%3E%3Cpolygon class='cls-1' points='266.71 254.19 260.11 242.49 169.61 81.42 138.73 136.36 200.39 239.16 209.42 254.19 53.52 254.19 62.86 237.56 124.98 237.56 75.1 154.39 61.86 177.96 28.68 237 25.62 242.51 19.06 254.19 0 254.19 66.22 136.33 71.85 126.34 142.85 0 152.32 16.82 145.24 29.4 145.34 29.4 84.45 137.76 144.31 237.56 180.12 237.56 126.46 148.15 119.58 136.63 160.48 63.82 161 62.86 169.59 47.6 178.2 62.89 285.7 254.19 266.71 254.19'/%3E%3C/svg%3E");
 }
 
@@ -360,6 +361,7 @@ div#accordionOptions {
         margin-bottom: 0.5rem;
     }
 }
+
 .app-inner.flex.flex-col.min-h-full:after {
     background: !important;
     background: linear-gradient(134deg ,transparent -183%,#00000099 83% ,#00000099 200%), var(--bghed)0rem 0rem/100%no-repeat!important;
@@ -385,19 +387,26 @@ div#accordionOptions {
         top: -9rem;
         margin: 0 0 -218px;
         background-size: 236% !important;
-        background-position: -17rem 0rem  !important;
+        background-position: -17rem 0rem !important;
     }
 }
+
 /* .rtl .fix-align, [dir=rtl] .fix-align,span.fix-align.opacity-70 {
     color: var(--3) !important;
 } */
 .s-product-card-image {
     background: #fff;
 }
+
 .banner-entry h3 {
     background: transparent !important;
     color: #fff !important;
     font-size: 53px !important;
     top: -6rem;
     position: relative;
+}
+
+.banner-entry h3:hover,.banner-entry:hover,.banner-entry a:hover,.banner-entry:hover h3 {
+    background: transparent !important;
+    color: #fff !important;
 }
