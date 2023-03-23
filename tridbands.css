@@ -420,3 +420,6 @@ div.s-product-card-content > div.s-product-card-content-footer > salla-add-produ
     color: #fff;
     background: var(--3) !important;
 }
+#main-links-4 > div.mb-6.sm\:mb-8 > div > div > div > h2 {
+    margin-top: 3rem;
+}
