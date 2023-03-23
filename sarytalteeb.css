@@ -619,6 +619,7 @@ footer .store-certificate img {
     background: var(--2);
     border-radius: 46px;
     border: 5px solid var(--2);
+    padding: 0px 32px 5px;
 }
 
 .product-info .product-name {
@@ -676,6 +677,8 @@ footer .store-certificate img {
     color: #fff;
     height: 30px;
     width: 30px;
+    position: relative;
+    top: -3px;
 }
 
 .salla-theme_6 footer .footer-links a {
@@ -956,6 +959,25 @@ a.circle-action.dropdown-toggle::before {
 .salla-theme_6 .site-header .header-top .logo a img {
     height: 99px !important;
     content: var(--logo2);
+}
+
+body > section.u-light.py-5.text-center > div > div > div:hover > div {
+    animation: toRightFromLeft .3s forwards
+}
+
+@keyframes toRightFromLeft {
+    49% {
+        transform: translate(100%)
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(-100%)
+    }
+
+    51% {
+        opacity: 1
+    }
 }
 
 :root {
