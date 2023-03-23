@@ -536,12 +536,7 @@ body > section .container.banner {
     }
 }
 
-body .category-featured a {
-    background-position: 148%;
-    background-repeat: inherit;
-    background-size: cover;
-    order-radius: 71px 71px 71px 71px;
-}
+ 
 
 .products-listing,.product-showwithslug > section[style="background: #FAFAFA;"] {
     background: transparent !important;
