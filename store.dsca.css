@@ -12,13 +12,13 @@
     margin-bottom: 20px;
 }
 
-body > div > div:nth-child(6) > footer > div > div > div.col-md-3.mt-4.mt-md-0.order-3.mt-4.mt-md-0 > div {
+body > div > div > footer > div > div > div.col-md-3.mt-4.mt-md-0.order-3.mt-4.mt-md-0 > div {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     max-width: 186px;
 }
 
-body > div > div:nth-child(6) > footer > div > div > div.col-md-3.mt-4.mt-md-0.order-3.mt-4.mt-md-0 {
+body > div > div > footer > div > div > div.col-md-3.mt-4.mt-md-0.order-3.mt-4.mt-md-0 {
     position: relative;
     left: -90px;
 }
@@ -121,13 +121,13 @@ body > div > div.container > div.page-content > div > div > div:nth-child(1) > d
 }
 
 @media (min-width: 768px) {
-    body > div > div:nth-child(6) > footer > div > div > div:nth-child(2) {
+    body > div > div > footer > div > div > div:nth-child(2) {
         position: relative;
         top: -21px;
         right: 112px;
     }
 
-    body > div > div:nth-child(6) > footer > div > div > div.col-md-3.mt-4.mt-md-0.order-3.mt-4.mt-md-0 {
+    body > div > div > footer > div > div > div.col-md-3.mt-4.mt-md-0.order-3.mt-4.mt-md-0 {
         position: relative;
         top: 77px;
         right: 28rem;
