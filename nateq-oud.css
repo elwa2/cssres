@@ -1401,6 +1401,34 @@ body.cart, body.product-index {
     display: none;
     margin: -20px -16px;
 }
+ @media (max-width:700px){ 
+body > div.app-inner.flex.flex-col.min-h-screen.relative > footer > div > div div:nth-child(1) {
+    order: 1;
+}
+
+body > div.app-inner.flex.flex-col.min-h-screen.relative > footer > div > div.store-footer__top.pb-4.lg\:pb-10.pt-10.lg\:pt-22.space-y-8.divide-y.divide-dashed.divide-white\/10 > div.container.xl\:px-0.grid.grid-cols-6.gap-10.lg\:gap-6 > div.col-span-6.lg\:col-span-3.flex.flex-col.flex-1.items-center.text-center.lg\:text-start.lg\:items-start.space-y-6:after {
+    content: "" !important;
+    height: 56px !important;
+    background: url(https://cdn.salla.network/images/maroof-footer.png) !important;
+    background-size: contain !important;
+    width: 100%!important;
+    display: block;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+
+
+body > div.app-inner.flex.flex-col.min-h-screen.relative > footer > div > div div:nth-child(2) {
+    order: 4;
+}
+
+body > div.app-inner.flex.flex-col.min-h-screen.relative > footer > div > div div:nth-child(3) {
+    order: 3;
+}
+
+body > div.app-inner.flex.flex-col.min-h-screen.relative > footer > div > div div:nth-child(4) {
+    order: 2;
+}}
 
 :root {
     --color-primary: #f18988;
