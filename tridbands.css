@@ -372,7 +372,7 @@ div#accordionOptions {
     height: 51rem;
     position: relative;
     top: -17rem;
-    /* margin: 15px 0 -136px; */
+    margin: 0 0 -366px;
     background: #000;
     display: block;
     width: 100%;
@@ -382,9 +382,12 @@ div#accordionOptions {
     .app-inner.flex.flex-col.min-h-full:after {
         height: 32rem;
         position: relative;
-        top: -8rem;
-        /* margin: 15px 0 -136px; */
+        top: -9rem;
+        margin: 0 0 -218px;
         background-size: 236% !important;
         background-position: -17rem 0rem  !important;
     }
 }
+/* .rtl .fix-align, [dir=rtl] .fix-align,span.fix-align.opacity-70 {
+    color: var(--3) !important;
+} */
