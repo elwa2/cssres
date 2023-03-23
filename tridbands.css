@@ -411,6 +411,10 @@ body.product-index .app-inner.flex.flex-col.min-h-full:after {
     position: relative;
 }
 
+:lang(en) .banner-entry h3 {
+    font-size: 36px !important;
+}
+
 @media (max-width: 700px) {
     .banner-entry h3 {
         font-size: 14px !important;
@@ -450,4 +454,3 @@ div.s-product-card-content > div.s-product-card-content-footer > salla-add-produ
 .s-product-card-content-sub {
     justify-content: center;
 }
- 
