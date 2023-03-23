@@ -360,3 +360,31 @@ div#accordionOptions {
         margin-bottom: 0.5rem;
     }
 }
+.app-inner.flex.flex-col.min-h-full:after {
+    background: !important;
+    background: linear-gradient(134deg ,transparent -183%,#00000099 83% ,#00000099 200%), var(--bghed)0rem 0rem/100%no-repeat!important;
+    height: 58rem;
+    content: "";
+    background-size: 100% !important;
+}
+
+.app-inner.flex.flex-col.min-h-full:after {
+    height: 51rem;
+    position: relative;
+    top: -17rem;
+    /* margin: 15px 0 -136px; */
+    background: #000;
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 700px) {
+    .app-inner.flex.flex-col.min-h-full:after {
+        height: 32rem;
+        position: relative;
+        top: -8rem;
+        /* margin: 15px 0 -136px; */
+        background-size: 236% !important;
+        background-position: -17rem 0rem  !important;
+    }
+}
