@@ -363,7 +363,6 @@ div#accordionOptions {
 }
 
 body.product-index .app-inner.flex.flex-col.min-h-full:after {
-    background: !important;
     background: linear-gradient(134deg ,transparent -183%,#00000099 83% ,#00000099 200%), var(--bghed)0rem 0rem/100%no-repeat!important;
     height: 58rem;
     content: "";
@@ -409,4 +408,15 @@ body.product-index .app-inner.flex.flex-col.min-h-full:after {
 .banner-entry h3:hover,.banner-entry:hover,.banner-entry a:hover,.banner-entry:hover h3 {
     background: transparent !important;
     color: #fff !important;
+}
+
+.s-button-primary-outline {
+    fill: var(--3);
+    color: var(--3);
+}
+
+div.s-product-card-content > div.s-product-card-content-footer > salla-add-product-button > salla-button > button {
+    fill: var(--3);
+    color: #fff;
+    background: var(--3) !important;
 }
