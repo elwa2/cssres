@@ -663,7 +663,7 @@ footer .store-certificate img {
 .footer-main {
     padding: 2rem 0;
     color: var(--1);
-    background-color: var(--bg);
+    background-color: var(--bg) !important;
     margin: 12px;
     border-radius: 47px;
     text-align: center !important;
