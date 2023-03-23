@@ -287,15 +287,15 @@ section.s-block.s-block--fixed-banner.wide-placeholder .container {
 }
 
 .s-modal-body {
-    background: var(--5);
+    background: #fff;
 }
 
 .s-modal-close {
-    background: var(--1-1);
+    background: var(--5);
 }
 
 button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-wide.s-button-primary.s-button-loader-center,[type=text], [type=email], [type=url], [type=password], [type=number], [type=date], [type=datetime-local], [type=month], [type=search], [type=tel], [type=time], [type=week], [multiple], textarea, select {
-    background: var(--1-1);
+    background: var(--5);
     color: #413f3f
 }
 
@@ -405,6 +405,13 @@ body.product-index .app-inner.flex.flex-col.min-h-full:after {
     position: relative;
 }
 
+@media (max-width: 700px) {
+    .banner-entry h3 {
+        font-size: 14px !important;
+        top: 0rem;
+    }
+}
+
 .banner-entry h3:hover,.banner-entry:hover,.banner-entry a:hover,.banner-entry:hover h3 {
     background: transparent !important;
     color: #fff !important;
@@ -419,7 +426,13 @@ div.s-product-card-content > div.s-product-card-content-footer > salla-add-produ
     fill: var(--3);
     color: #fff;
     background: var(--3) !important;
+    border-radius: 4px;
 }
+
 #main-links-4 > div.mb-6.sm\:mb-8 > div > div > div > h2 {
     margin-top: 3rem;
+}
+
+[dir=rtl] .rtl\:pl-10 {
+    border-radius: 4px;
 }
