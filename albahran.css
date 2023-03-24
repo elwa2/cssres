@@ -751,9 +751,9 @@ ol.breadcrumb li:before {
     font-weight: 400;
 }
 
-body.salla-theme_6 .products-listing.eq-height .slick-track .slick-slide {
+/* body.salla-theme_6 .products-listing.eq-height .slick-track .slick-slide {
     height: 464.5px !important;
-}
+} */
 
 .salla-theme_6 .product .product-footer .product-add.add_to_cart_btn span:last-child {
     background: #fff0 !important;
