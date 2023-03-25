@@ -979,7 +979,9 @@ body > section.u-light.py-5.text-center > div > div > div:hover > div {
         opacity: 1
     }
 }
-
+body > section:nth-child(7) {
+    margin: 23px 1px !important;
+}
 :root {
     --1: #757575;
     --2: #a17f59;
