@@ -193,7 +193,17 @@ a.btn.btn-primary.product-card-add-to-cart,a.btn.btn-primary.btn-product-card-se
     border: none;
     font-weight: 700;
     border-radius: 50px;
-    width: 100%
+    width: 100%;
+}
+
+body[data-template="category"] a.btn.btn-primary.product-card-add-to-cart,body[data-template="category"] a.btn.btn-primary.btn-product-card-select-variant {
+    position: relative;
+    right: 11px;
+}
+
+body[data-template="home"] a.btn.btn-primary.product-card-add-to-cart, body[data-template="home"] a.btn.btn-primary.btn-product-card-select-variant {
+    position: relative;
+    right: 5px;
 }
 
 .product-item .product-title {
