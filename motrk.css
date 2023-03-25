@@ -196,7 +196,7 @@ a.btn.btn-primary.product-card-add-to-cart,a.btn.btn-primary.btn-product-card-se
     width: 100%;
 }
 
-body[data-template="category"] a.btn.btn-primary.product-card-add-to-cart,body[data-template="category"] a.btn.btn-primary.btn-product-card-select-variant {
+body:not([data-template="home"]) a.btn.btn-primary.product-card-add-to-cart,:not([data-template="home"]) a.btn.btn-primary.btn-product-card-select-variant {
     position: relative;
     right: 11px;
 }
