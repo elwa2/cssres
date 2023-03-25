@@ -1641,7 +1641,7 @@ p.mb-4.mb-md-0,body > footer > div.footer-sub.text-center > div > div > div > p,
 }
 
 span.not-available::after {
-    content: "\1F494";
+    /* content: "\1F494"; */
     animation: beatHeart 1s;
     animation: .8s infinite beatHeart;
 }
@@ -1672,8 +1672,9 @@ span.not-available::after {
     display: flex!important;
     margin: 10px 0 0 15px;
     font-size: 14px;
-    content: "/a";
+    /* content: "/a"; */
     flex-direction: column;
+    font-size: 0;
 }
 
 .logo img {
@@ -1830,4 +1831,11 @@ body > footer > div.footer-main > div > div > div:nth-child(1) > p {
     --color-bg: #d2a471;
     --color-ff: #fff;
     --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180.1 35.99'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23d2a471; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m1.8,33.59h18.23v1.8H0V.6h1.8v32.99Zm28.31,1.8v-1.8h19.55l-12.3-28.97-13.07,30.77h-1.92L37.37,0l14.99,35.39h-22.25Zm30.89-1.8h18.23v1.8h-20.03V.6h1.8v32.99ZM85.51.6h1.8v17.39c0,5.96.95,10.14,2.86,12.56,1.9,2.42,4.5,3.63,7.82,3.63s5.93-1.21,7.83-3.63c1.9-2.41,2.84-6.6,2.84-12.56V.6h1.8v17.39c0,12-4.16,17.99-12.48,17.99s-12.48-6-12.48-17.99V.6Zm37.55,34.79h-1.8V.6h1.8l19.55,31.49V.6h1.8v34.79h-1.8L123.06,3.84v31.55Zm54.7-4.74l1.32,1.2c-2.2,2.76-5.8,4.14-10.8,4.14s-8.58-1.42-10.74-4.26c-2.16-2.84-3.24-7.42-3.24-13.73s1.08-10.9,3.24-13.73c2.16-2.84,5.74-4.26,10.74-4.26,5.8,0,9.74,1.9,11.82,5.7l-14.69,12.29h-2.82l15.17-12.66c-1.76-2.36-4.92-3.54-9.48-3.54-2,0-3.68.21-5.04.62-1.36.42-2.61,1.2-3.75,2.34-1.14,1.14-1.98,2.8-2.54,4.98-.56,2.18-.84,4.93-.84,8.25s.28,6.07.84,8.24c.56,2.18,1.41,3.84,2.54,4.98,1.14,1.14,2.4,1.92,3.75,2.34,1.36.42,3.04.64,5.04.64,4.56,0,7.72-1.18,9.48-3.54h0Zm0,0'/%3E%3C/svg%3E");
+}
+
+
+span.not-available:before {
+    content: "نفذت الكمية ";
+    display: block;
+    font-size: 13px;
 }
