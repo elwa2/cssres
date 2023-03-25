@@ -440,7 +440,24 @@ body.rtl {
         background-size: contain;
     }
 }
+body > div > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:hover img {
+    animation: toRightFromLeft .3s forwards
+}
 
+@keyframes toRightFromLeft {
+    49% {
+        transform: translate(100%)
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(-100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
 @media(max-width: 991px) {
     .slide-menu__slider>ul>li:nth-child(1) {
         grid-column:1/3;
