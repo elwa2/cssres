@@ -297,7 +297,7 @@ body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
 }
 
 @media (max-width: 900px) {
-    body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 ,.header-above-slider .header-components-home .header-icon-button,i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3,body.product-index .header-components .left-side .header-icon-button {
+    body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 ,.header-above-slider .header-components-home .header-icon-button,body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3,body.product-index .header-components .left-side .header-icon-button {
         position: relative;
         top: -63px;
     }
@@ -565,7 +565,7 @@ button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-wide.s-bu
     color: var(--5);
 }
 
-a.s-cart-summary-wrapper .s-cart-summary-total,button.header-btn.btn--gray.rounded {
+body.index a.s-cart-summary-wrapper .s-cart-summary-total,body.index button.header-btn.btn--gray.rounded {
     display: none !important;
 }
 
