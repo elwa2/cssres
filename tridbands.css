@@ -588,7 +588,7 @@ a.s-cart-summary-wrapper .s-cart-summary-total,button.header-btn.btn--gray.round
     :lang(en) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(en) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
         top: 35px;
-        left: 14rem;
+        left: 14.5rem;
         z-index: 100;
         background: transparent;
     }
@@ -596,7 +596,7 @@ a.s-cart-summary-wrapper .s-cart-summary-total,button.header-btn.btn--gray.round
     :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
         top: 70px;
-        left: 17rem;
+        left: 17.5rem;
         z-index: 100;
     }
 }
