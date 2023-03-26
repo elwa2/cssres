@@ -541,6 +541,6 @@ button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-wide.s-bu
     color: var(--5);
 }
 
-[dir=rtl] a.s-cart-summary-wrapper .s-cart-summary-total,button.header-btn.btn--gray.rounded {
+ a.s-cart-summary-wrapper .s-cart-summary-total,button.header-btn.btn--gray.rounded {
     display: none !important;
 }
