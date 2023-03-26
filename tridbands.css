@@ -56,10 +56,19 @@ body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.s
         right: 1vw;
         top: -51px;
     }
+
+    :lang(en) body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+        left: 63vw;
+        top: -51px;
+    }
 }
 @media (max-width:500px) {
     body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
         right: -12vw;
+        top: -51px;
+    }
+    :lang(en) body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+        left: 65vw;
         top: -51px;
     }
 }
@@ -88,6 +97,10 @@ body.product-single > div.app-inner.flex.flex-col.min-h-full > header > div.stor
     body > div.relative.z-0.s-block > footer > div.store-footer__top > div > div > div.mb-2\.5.col-span-2 > a > img {
         position: relative;
         right: 8rem;
+    }
+    :lang(en)  body > div.relative.z-0.s-block > footer > div.store-footer__top > div > div > div.mb-2\.5.col-span-2 > a > img {
+        position: relative;
+        left: 8rem;
     }
 }
 
@@ -250,12 +263,18 @@ body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
     right: 15px;
     color: var(--2) !important;
 }
+:lang(en) body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
+    left: 15px;
+    color: var(--2) !important;
+}
 
 @media (max-width: 900px) {
     body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 ,.header-above-slider .header-components-home .header-icon-button,i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3,body.product-index .header-components .left-side .header-icon-button {
         position: relative;
         top: -39px;
     }
+
+
 }
 
 .bg-zinc-100 {
@@ -447,11 +466,16 @@ body.product-index .app-inner.flex.flex-col.min-h-full:after {
     font-size: 36px !important;
 }
 
+
 @media (max-width: 700px) {
     .banner-entry h3 {
         font-size: 14px !important;
         top: 0rem;
     }
+    :lang(en) .banner-entry h3 {
+    font-size: 11px !important;
+}
+
 }
 
 .banner-entry h3:hover,.banner-entry:hover,.banner-entry a:hover,.banner-entry:hover h3 {
