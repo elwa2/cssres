@@ -60,6 +60,7 @@ body:not(.page-single):not(.cart ) > div.app-inner.flex.flex-col.min-h-full > he
         top: -51px;
     }
 }
+
 @media (max-width: 700px) {
     body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
         right: -21.5rem;
@@ -71,6 +72,7 @@ body:not(.page-single):not(.cart ) > div.app-inner.flex.flex-col.min-h-full > he
         top: -51px;
     }
 }
+
 @media (max-width: 700px) {
     body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
         right: 1vw;
@@ -565,4 +567,31 @@ button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-wide.s-bu
 
 a.s-cart-summary-wrapper .s-cart-summary-total,button.header-btn.btn--gray.rounded {
     display: none !important;
+}
+
+@media (max-width: 700px) {
+    :lang(ar) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(ar) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
+        position: relative;
+        right: 15rem;
+        top: 35px;
+    }
+
+    :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
+        position: relative;
+        right: 18rem;
+        top: 70px;
+    }
+
+ :lang(en) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(en) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
+        position: relative;
+        top: 35px;
+        left: 14rem;
+    }
+
+    :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
+        position: relative;
+        top: 70px;
+        left: 17rem;
+    }
+    
 }
