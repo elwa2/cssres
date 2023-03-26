@@ -314,6 +314,9 @@ body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
         position: relative;
         top: -63px;
     }
+     body.product-index .header-components .left-side .header-icon-button {
+         top: -6px;
+    }
 }
 
 .bg-zinc-100 {
