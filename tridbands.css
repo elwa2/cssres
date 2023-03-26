@@ -510,3 +510,7 @@ button.s-button-disabled {
 .btn--gray {
     background: transparent;
 }
+button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-wide.s-button-primary.s-button-loader-center {
+    background: var(--3);
+    color: var(--5);
+}
