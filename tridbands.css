@@ -59,7 +59,7 @@ body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.s
 }
 @media (max-width:500px) {
     body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-        right: -15vw;
+        right: -12vw;
         top: -51px;
     }
 }
