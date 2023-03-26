@@ -572,13 +572,14 @@ a.s-cart-summary-wrapper .s-cart-summary-total,button.header-btn.btn--gray.round
 @media (max-width: 700px) {
     :lang(ar) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(ar) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
-        right: 15rem;
+        right: 14rem;
         top: 35px;
+        background: transparent;
     }
 
     :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
-        right: 18rem;
+        right: 17rem;
         top: 70px;
     }
 
