@@ -575,24 +575,28 @@ a.s-cart-summary-wrapper .s-cart-summary-total,button.header-btn.btn--gray.round
         right: 14rem;
         top: 35px;
         background: transparent;
+        z-index: 100;
     }
 
     :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
         right: 17rem;
         top: 70px;
+        z-index: 100;
     }
 
- :lang(en) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(en) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
+    :lang(en) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(en) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
         top: 35px;
         left: 14rem;
+        z-index: 100;
+        background: transparent;
     }
 
     :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
         top: 70px;
         left: 17rem;
+        z-index: 100;
     }
-    
 }
