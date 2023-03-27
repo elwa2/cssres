@@ -137,6 +137,27 @@ body > div > div.container > div.page-content > div > div > div:nth-child(1) > d
 .block-product .thumb:after {
     background: none;
 }
+#tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1) > p.large, #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2) > p.large {
+    clip-path: inset(0 0 0 71.5%) !important;
+}
+
+#tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1):after, #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2):after {
+    content: '  طالب     ';
+    position: relative;
+    top: -28px;
+    right: 15px;
+    font-weight: bold;
+}
+
+#tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2):after {
+    right: 22px;
+}
+
+@media (max-width: 700px) {
+    #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1):after, #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2):after {
+        top: -20px;
+    }
+}
 
 :root {
     --1: #612964;
