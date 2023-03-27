@@ -587,7 +587,7 @@ span.text-center.footer-copyrights a {
         z-index: 100
     }
 
-    form#product-form {
+/*     form#product-form {
         position: fixed;
         height: 15px;
         width: 100%;
@@ -599,7 +599,7 @@ span.text-center.footer-copyrights a {
 
     #product-custom-user-dropdown-fields select, .select-quantity-div select {
         background-color: white;
-    }
+    } */
 }
 
 @media (max-width: 700px) {
