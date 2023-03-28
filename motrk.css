@@ -720,10 +720,7 @@ body > div > div.main.flex-grow-1.app-content.app-content-padded > div > section
         height: auto!important
     }
 
-    .product-crd-spec {
-        min-height: auto!important;
-        margin-bottom: 10px!important
-    }
+    
 
     .gallery-item.col-6 {
         padding-left: 5px!important;
