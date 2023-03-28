@@ -137,16 +137,54 @@ body > div > div.container > div.page-content > div > div > div:nth-child(1) > d
 .block-product .thumb:after {
     background: none;
 }
-#tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1) > p.large, #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2) > p.large {
+
+body > div > div.container[data-donation-product*="2016c704-2738-4ece-8b4"] > div.page-content > div > div > div:nth-child(1) > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2) > p.large,
+#tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1) > p.large,
+ #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2) > p.large,
+  body > div > div[data-donation-product*="2016c704-2738-4ece-8b4"] > div.page-content > div > div > div:nth-child(1) > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1) > p.large {
     clip-path: inset(0 0 0 71.5%) !important;
 }
 
 #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1):after, #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2):after {
-    content: '  طالب     ';
     position: relative;
     top: -28px;
     right: 15px;
     font-weight: bold;
+}
+
+#tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1):after,
+ #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2):after,
+  #product-form > div > div[data-donation-availability-product-id="2016c704-2738-4ece-8b44-6d566aba49d3"] > div > div > div.qty > p:before,
+   #product-form > div > div[data-donation-availability-product-id*="2016c704-2738-4ece-8b44-6d566aba49d3"] > div > div > div.price > p:before,
+    body > div > div[data-donation-product*="2016c704-2738-4ece-8b4"] > div.page-content > div > div > div:nth-child(1) > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1):before,
+     body > div > div.container[data-donation-product*="2016c704-2738-4ece-8b4"] > div.page-content > div > div > div:nth-child(1) > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2):before {
+    content: '  طالب     ';
+}
+
+     body > div > div.container[data-donation-product*="2016c704-2738-4ece-8b4"] > div.page-content > div > div > div:nth-child(1) > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2):before ,
+     body > div > div[data-donation-product*="2016c704-2738-4ece-8b4"] > div.page-content > div > div > div:nth-child(1) > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1):before {
+    position: relative;
+    top: 38px;
+    right: 15px;
+    font-weight: bold;
+}
+@media (min-width:700px){    body > div > div.container[data-donation-product*="2016c704-2738-4ece-8b4"] > div.page-content > div > div > div:nth-child(1) > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2):before ,
+     body > div > div[data-donation-product*="2016c704-2738-4ece-8b4"] > div.page-content > div > div > div:nth-child(1) > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(1):before {
+   top: 54px;
+   right: 22px;
+}}
+
+
+
+
+
+
+#product-form > div > div[data-donation-availability-product-id="2016c704-2738-4ece-8b44-6d566aba49d3"] > div > div > div.qty > p, #product-form > div > div[data-donation-availability-product-id="2016c704-2738-4ece-8b44-6d566aba49d3"] > div > div > div.price > p {
+    font-size: 0;
+}
+
+#product-form > div > div[data-donation-availability-product-id="2016c704-2738-4ece-8b44-6d566aba49d3"] > div > div > div.qty > p:before , #product-form > div > div[data-donation-availability-product-id="2016c704-2738-4ece-8b44-6d566aba49d3"] > div > div > div.price > p:before {
+    font-size: 15px;
 }
 
 #tab-1-pane > div > div:nth-child(3) > div > div > div.progress-product > div.d-flex.justify-content-between > div:nth-child(2):after {
