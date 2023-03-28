@@ -122,8 +122,8 @@ body {
     font-size: 14px;
     line-height: 1.42857143;
     color: var(--1);
-    background-color: var(--bg) ;
-    background-image: url(https://cdn.salla.sa/OBAa/vAGhwwoBGFv1bm1xZ0KSNhL1ZVyzPrKuD71C2ld7.png);
+    background-color: var(--bg);
+    /* background-image: url(https://cdn.salla.sa/OBAa/vAGhwwoBGFv1bm1xZ0KSNhL1ZVyzPrKuD71C2ld7.png); */
     background-size: 500px;
 }
 
@@ -979,9 +979,72 @@ body > section.u-light.py-5.text-center > div > div > div:hover > div {
         opacity: 1
     }
 }
+
 body > section:nth-child(7) {
     margin: 23px 1px !important;
 }
+
+.sicon-whatsapp2::after {
+    content: "\E916";
+    content: "\e917";
+    text-align: center;
+    cursor: pointer;
+    background: #46a51e;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0px;
+    color: #fff;
+    box-shadow: #00000022 1.5px 1.5px 5px;
+    width: 0px;
+    height: 0px;
+    border-radius: 27.5px;
+    position: fixed;
+    bottom: 19px;
+    right: 17px;
+    transform: rotate(360);
+    transition: all .2s ease-in-out;
+}
+
+body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-whatsapp2::after,i.sicon-whatsapp2::after {
+    width: 56px;
+    height: 56px;
+    border-radius: 32.5px;
+    font-size: 32px;
+    box-shadow: #0000006b 2px 2px 8px;
+}
+
+.sicon-whatsapp2:after:hover {
+    border-radius: 0;
+    border: 0;
+    width: 180px;
+    height: 60px;
+}
+
+.sicon-whatsapp2:hover::after {
+    content: "حاب نساعدك 😃؟ ";
+    content: "     في خدمتك ؟ ";
+    font-family: dinnextltarabic-regular!important;
+    width: 260px !important;
+    animation: trns 1s;
+    font-size: 20px !important;
+    color: #ffffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes trns {
+    0% {
+        color: #ffffff00;
+    }
+
+    100% {
+        color: #ffffff99;
+    }
+}
+
 :root {
     --1: #757575;
     --2: #a17f59;
