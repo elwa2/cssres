@@ -196,7 +196,12 @@ body > div > div.container[data-donation-product*="2016c704-2738-4ece-8b4"] > di
         top: -20px;
     }
 }
-
+#tab-0-pane > div > div:nth-child(2)  {
+    order: 1;
+}
+#tab-0-pane > div > div:nth-child(1)  {
+    order: 2;
+}
 :root {
     --1: #612964;
     --2: #5dbabc;
