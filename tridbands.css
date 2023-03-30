@@ -625,16 +625,16 @@ body.index a.s-cart-summary-wrapper .s-cart-summary-total,body.index button.head
 
     :lang(en) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(en) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
-        top: 35px;
-        left: 14.5rem;
+        top: 10px;
+        left: 14rem;
         z-index: 100;
         background: transparent;
     }
 
     :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
-        top: 70px;
-        left: 17.5rem;
+        top: 10px;
+        left: -2.5rem;
         z-index: 100;
     }
 }
