@@ -41,7 +41,7 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
     position: relative;
 }
 
-body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
     content: var(--logo);
     height: unset;
     width: 111px;
@@ -63,13 +63,23 @@ body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex
         right: 16.5rem;
         top: -51px;
     }
-    body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+
+
+  body:not(.page-single):not(.cart):not(.product-single):not(.product-index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
      width: 66px;
      max-height: unset !important;
      position: relative;
      filter: brightness(9.5);
      top: -28px;
 }
+body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+     width: 66px;
+     max-height: unset !important;
+     position: relative;
+     filter: brightness(9.5);
+     top: -28px;
+}
+
 }
 
 @media (max-width: 850px) {
@@ -603,7 +613,7 @@ button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-wide.s-bu
     color: var(--5);
 }
 
-body.index a.s-cart-summary-wrapper .s-cart-summary-total,body.index button.header-btn.btn--gray.rounded {
+body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.left-side > salla-cart-summary > a > p > b,body.product-index .header-components-top.header-top-page .header-btn,body.index a.s-cart-summary-wrapper .s-cart-summary-total,body.index button.header-btn.btn--gray.rounded,#app > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.left-side > salla-cart-summary > a > p > b {
     display: none !important;
 }
 
@@ -615,6 +625,21 @@ body.index a.s-cart-summary-wrapper .s-cart-summary-total,body.index button.head
         background: transparent;
         z-index: 100;
     }
+
+    button.btn--gray.search-btn.w-\[40px\]{
+        position: relative;
+        right: 21rem;
+        top: 6px;
+        background: transparent;
+        z-index: 100;
+    } 
+    body > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a{
+        position: relative;
+        top: 6px;
+        background: transparent;
+        z-index: 100;
+        right: -45px;
+    } 
 
     :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
