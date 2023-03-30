@@ -64,7 +64,7 @@ body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex
         top: -51px;
     }
     body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-     width: 85px;
+     width: 66px;
      max-height: unset !important;
      position: relative;
      filter: brightness(9.5);
@@ -330,9 +330,12 @@ body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
 @media (max-width: 900px) {
     body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 ,.header-above-slider .header-components-home .header-icon-button,body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3,body.product-index .header-components .left-side .header-icon-button {
         position: relative;
-        top: -19px;
+        top: -10px;
     }
-
+ body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3  {
+        position: relative;
+        top: -4px;
+    }
     body.product-index .header-components .left-side .header-icon-button {
         top: -6px;
     }
