@@ -142,7 +142,9 @@ body > section.s-block.s-block--categories > div > salla-slider > div.swiper.s-s
 body > section.s-block.s-block--categories > div > salla-slider > div.swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl.swiper-backface-hidden > div > div:nth-child(7) > a > i {
     background-image: !important;
 }
-
+.header-above-slider.header-is-light .main-menu li a {
+    color: var(--1) !important;
+}
 :root {
     --1: #748c74;
     --1-1: #4d654d;
