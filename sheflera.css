@@ -107,6 +107,10 @@ section.s-block.s-block--categories {
     }
 }
 
+div.product-entry__image > a > img.object-cover:hover {
+   
+    transition: all .5s; transform: scale(1.17,1.17)
+}
 body > section.s-block.s-block--categories > div > salla-slider > div.swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-rtl.swiper-backface-hidden > div > div > a > i {
     background-repeat: no-repeat no-repeat;
     background-position: center center;
