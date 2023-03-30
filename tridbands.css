@@ -41,7 +41,7 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
     position: relative;
 }
 
-body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header> div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
     content: var(--logo);
     height: unset;
     width: 111px;
@@ -49,6 +49,16 @@ body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.
     position: relative;
     filter: brightness(9.5);
 }
+
+:lang (en) body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+    content: var(--logo);
+    height: unset;
+    width: 111px;
+    max-height: unset !important;
+    position: relative;
+    filter: brightness(9.5);
+}
+
 
 @media (min-width: 1021px) {
     body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
@@ -123,6 +133,10 @@ body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-h
     :lang(en) body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
         left: 63vw;
         top: -51px;
+    }
+    :lang(en) body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+        left: 63vw;
+        top: -21px;
     }
 }
 
@@ -633,12 +647,49 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
         background: transparent;
         z-index: 100;
     } 
+     :lang(en) button.btn--gray.search-btn.w-\[40px\]{
+        position: relative;
+        left: 30rem;
+        top: 33px;
+        background: transparent;
+        z-index: 100;
+    } 
+
+  :lang(en) button.btn--gray.search-btn.w-\[40px\]{
+        position: relative;
+        left: 30rem;
+        top: 33px;
+        background: transparent;
+        z-index: 100;
+    } 
+     :lang(en) body:not(.index) button.btn--gray.search-btn.w-\[40px\]{
+        position: relative;
+        left: 20rem;
+        top: 9px;
+        background: transparent;
+        z-index: 100;
+    } 
+
     body > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a{
         position: relative;
         top: 6px;
         background: transparent;
         z-index: 100;
         right: -45px;
+    } 
+     :lang(en) body > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a{
+        position: relative;
+        top: 35px;
+        background: transparent;
+        z-index: 100;
+        right: -45px;
+    } 
+         :lang(en) body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a{
+        position: relative;
+        top: 7px;
+        background: transparent;
+        z-index: 100;
+        right: 47px;
     } 
 
     :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
