@@ -56,12 +56,6 @@ body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex
         margin: 81px 0 0 0;
         right: -22px;
     }
-
-    :lang(en) body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-        top: -76px;
-        margin: 81px 0 0 0;
-        left: -91px;
-    }
 }
 
 @media (max-width: 1021px) {
@@ -69,6 +63,13 @@ body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex
         right: 16.5rem;
         top: -51px;
     }
+    body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+     width: 85px;
+     max-height: unset !important;
+     position: relative;
+     filter: brightness(9.5);
+     top: -28px;
+}
 }
 
 @media (max-width: 850px) {
@@ -329,7 +330,7 @@ body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
 @media (max-width: 900px) {
     body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 ,.header-above-slider .header-components-home .header-icon-button,body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3,body.product-index .header-components .left-side .header-icon-button {
         position: relative;
-        top: -63px;
+        top: -19px;
     }
 
     body.product-index .header-components .left-side .header-icon-button {
@@ -607,15 +608,15 @@ body.index a.s-cart-summary-wrapper .s-cart-summary-total,body.index button.head
     :lang(ar) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(ar) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
         right: 14rem;
-        top: 35px;
+        top: 6px;
         background: transparent;
         z-index: 100;
     }
 
     :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
-        right: 17rem;
-        top: 70px;
+        right: -3rem;
+        top: 6px;
         z-index: 100;
     }
 
