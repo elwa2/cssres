@@ -32,22 +32,30 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
 body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.left-side {
     order: 3;
 }
+
 body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-    content: var(--logo);
-   height: 100%;
-    width: 79px;
-    max-height: unset !important;
-     
-    position: relative;
-   
-}
-body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
     content: var(--logo);
     height: 100%;
     width: 79px;
     max-height: unset !important;
     position: relative;
+}
+
+body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+    content: var(--logo);
+    height: unset;
+    width: 111px;
+    max-height: unset !important;
+    position: relative;
     filter: brightness(9.5);
+}
+
+@media (min-width: 1021px) {
+    body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+        top: -76px;
+        margin: 81px 0 0 0;
+        right: -22px;
+    }
 }
 
 @media (max-width: 1021px) {
@@ -80,18 +88,13 @@ body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex
         top: -51px;
     }
 
-
-   :LANG(ar) body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+    :LANG(ar) body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
         right: -3.5rem;
         top: -32px;
         position: relative;
         width: 54px;
         margin: 0px 0 -24px -15px;
     }
-
-
-
-    
 }
 
 @media (max-width: 700px) {
@@ -322,8 +325,9 @@ body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
         position: relative;
         top: -63px;
     }
-     body.product-index .header-components .left-side .header-icon-button {
-         top: -6px;
+
+    body.product-index .header-components .left-side .header-icon-button {
+        top: -6px;
     }
 }
 
