@@ -1,5 +1,5 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
-body:before {
+/* body:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -31,7 +31,7 @@ body:before {
         opacity: 0;
         visibility: hidden;
     }
-}
+} */
 
 .banner img {
     margin: 0 auto;
