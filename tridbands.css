@@ -56,6 +56,12 @@ body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex
         margin: 81px 0 0 0;
         right: -22px;
     }
+
+    :lang(en) body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+        top: -76px;
+        margin: 81px 0 0 0;
+        left: -91px;
+    }
 }
 
 @media (max-width: 1021px) {
