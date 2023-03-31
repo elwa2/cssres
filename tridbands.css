@@ -738,14 +738,15 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
         display: none;
     }
 
-    :lang(ar) .s-user-menu-wrapper {
+    :lang(ar) body:not(.index) .s-user-menu-wrapper {
         right: 17rem;
     }
 
     :lang(en) .s-user-menu-wrapper {
         left: 0rem;
     }
-    :lang(en)  body:not(.index) .s-user-menu-wrapper {
+
+    :lang(en) body:not(.index) .s-user-menu-wrapper {
         left: 17.3rem;
     }
 }
