@@ -322,14 +322,14 @@ p, a {
         content: "جميع الحقوق محفوظة ©   |  بالبو PALPO     2023";
         text-align: center;
         margin: 10px auto 15px;
-        color: #f1efe6!important
+        color: var(--2);
     }
 
     .store-section .social-icons span {
         border: 0!important;
         height: 30px;
         width: 30px;
-        color: #f1efe6!important
+        color: var(--2);
     }
 
     .icon-facebook-f.d-flex.align-items-center.justify-content-center {
@@ -362,11 +362,11 @@ p, a {
         font-size: 1.1rem;
         padding: 5px;
         text-align: center;
-        color: #f1efe6!important
+        color: var(--2);
     }
 
     .store-section a {
-        color: #f1efe6!important
+        color: var(--2);
     }
 
     .footer .icons-wrapper {
@@ -376,12 +376,12 @@ p, a {
 
     .footer-about-us-links-div h1 {
         display: block!important;
-        color: #f1efe6!important;
+        color: var(--2);
         padding: 0 5px 5px!important;
         line-height: 1.4;
         font-size: 17px;
         width: 100%;
-        text-align: center
+        text-align: center;
     }
 
     .footer .row .col-12.col-lg-4:nth-child(2) {
@@ -1255,7 +1255,7 @@ p, a {
         border: 0!important;
         height: 30px;
         width: 30px;
-        color: #f1efe6!important
+        color: var(--2);
     }
 
     .icon-facebook-f.d-flex.align-items-center.justify-content-center {
@@ -1295,7 +1295,7 @@ p, a {
         font-size: 1.1rem;
         padding: 5px;
         text-align: center;
-        color: #f1efe6!important
+        color: var(--2);
     }
 
     .footer .icons-wrapper {
@@ -1305,12 +1305,12 @@ p, a {
 
     .footer-about-us-links-div h1 {
         display: block!important;
-        color: #f1efe6!important;
+        color: var(--2);
         padding: 0 5px 5px!important;
         line-height: 1.4;
         font-size: 17px;
         width: 100%;
-        text-align: center
+        text-align: center;
     }
 
     .footer .row .col-12.col-lg-4:nth-child(2) {
@@ -1324,11 +1324,11 @@ p, a {
         padding-top: unset;
         padding-bottom: unset;
         text-decoration: underline;
-        color: #000!important
+        color: var(--2);
     }
 
     .store-section a {
-        color: #f1efe6!important
+        color: var(--2);
     }
 
     .footer-copyrights-vat-certificate>.container>div>div:first-child {
@@ -1344,17 +1344,7 @@ p, a {
         padding: unset!important;
         margin: auto
     }
-
-    .products-list .prod-col.prod-col-tb {
-        width: auto;
-        margin-top: 2rem
-    }
-
-    .products-container .products-list {
-        margin-bottom: 24px;
-        justify-content: center;
-        align-items: center
-    }
+ 
 }
 
 @media(max-width: 991px) {
@@ -1884,8 +1874,8 @@ ul.main-nav>li:hover>a, .item-all-categories>a, ul.main-nav>li>a, .item-all-cate
 }
 
 .footer-companies, .footer-copyrights-vat-certificate {
-    color: #fff;
-    background: linear-gradient(to bottom,var(--1) -40%,var(--1) 80%),var(--logo)-34rem -14rem/300%no-repeat!important
+    color: var(--2);
+    background: linear-gradient(to bottom,var(--1) -40%,var(--1) 80%),var(--logo)-34rem -14rem/300%no-repeat!important;
 }
 
 @media(min-width: 991px) {
@@ -1905,7 +1895,7 @@ ul.main-nav>li:hover>a, .item-all-categories>a, ul.main-nav>li>a, .item-all-cate
     font-family: inherit;
     font-size: 15px;
     line-height: 2;
-    color: #fff
+    color: var(--2);
 }
 
 .social-icons.apps-social-icons.d-flex.flex-wrap.justify-content-center::before {
