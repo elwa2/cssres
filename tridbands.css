@@ -650,10 +650,6 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
     :lang(en) .s-user-menu-wrapper {
         left: 0rem;
     }
-
-    :lang(en) body:not(.index) .s-user-menu-wrapper {
-        left: 17.3rem;
-    }
 }
 
 body .tamara-product-widget, body .spotii-wrapper {
@@ -666,44 +662,29 @@ body .tamara-product-widget .tamara-logo {
     top: 28px !important;
 }
 
-.header-components-top.header-op-page .flex,
-div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex {
+.header-components-top.header-op-page .flex, div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     width: 100%;
 }
 
-.header-components-top.header-op-page .flex button,
-div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex button  {
+.header-components-top.header-op-page .flex button, div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex button {
     grid-column: 1/1;
     grid-row: 1/1;
-   
 }
 
-.header-components-top.header-op-page .flex salla-user-menu,
-div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex salla-user-menu  {
+.header-components-top.header-op-page .flex salla-user-menu, div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex salla-user-menu {
     grid-column: 3/3;
     grid-row: 1/1;
-    
 }
-.header-components-top.header-op-page .flex button,
-div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex button,
-.header-components-top.header-op-page .flex salla-user-menu,
-div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex salla-user-menu  {
-   
+
+.header-components-top.header-op-page .flex button, div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex button, .header-components-top.header-op-page .flex salla-user-menu, div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > .flex salla-user-menu {
     margin: 0px 9px ;
 }
- 
-
 
 .header-above-slider .header-op-page {
     background-color: transparent;
     border: 0;
     padding: 0;
 }
-
- 
-
- 
- 
