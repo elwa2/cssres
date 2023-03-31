@@ -205,7 +205,7 @@ button.header-btn.btn--gray.rounded,button.btn--gray.search-btn.w-\[40px\] ,body
 .header-above-slider .header-op-page {
     background-color: transparent;
     border: 0;
-    padding: 0 63px 0;
+    padding: 0;
 }
 
 body > div.relative.z-0.s-block > footer > div.store-footer__top {
@@ -637,98 +637,6 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
 }
 
 @media (max-width: 700px) {
-    :lang(ar) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(ar) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
-        position: relative;
-        right: 14rem;
-        /* right: 26vh; */
-        top: 6px;
-        background: transparent;
-        z-index: 100;
-    }
-
-    button.btn--gray.search-btn.w-\[40px\] {
-        position: relative;
-        right: 0rem;
-        top: 0px;
-        background: transparent;
-        z-index: 100;
-    }
-
-    :lang(en) button.btn--gray.search-btn.w-\[40px\] {
-        position: relative;
-        left: 30rem;
-        top: 33px;
-        background: transparent;
-        z-index: 100;
-    }
-
-    :lang(en) button.btn--gray.search-btn.w-\[40px\] {
-        position: relative;
-        left: 30rem;
-        top: 33px;
-        background: transparent;
-        z-index: 100;
-    }
-
-    :lang(en) body:not(.index) button.btn--gray.search-btn.w-\[40px\] {
-        position: relative;
-        left: 0rem;
-        top: 0px;
-        background: transparent;
-        z-index: 100;
-    }
-
-    body > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a {
-        position: relative;
-        top: 0px;
-        background: transparent;
-        z-index: 100;
-        right: 281px;
-    }
-
-    body.page-single > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a {
-    }
-
-    :lang(en) body > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a {
-        position: relative;
-        top: 35px;
-        background: transparent;
-        z-index: 100;
-        right: -45px;
-    }
-
-    :lang(en) body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a {
-        position: relative;
-        top: 0px;
-        background: transparent;
-        z-index: 100;
-        right: -284px;
-    }
-
-    :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
-        position: relative;
-        right: -3rem;
-        top: 6px;
-        z-index: 100;
-    }
-
-    :lang(en) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(en) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
-        position: relative;
-        top: 0px;
-        left: 14rem;
-        z-index: 100;
-        background: transparent;
-    }
-
-    :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
-        position: relative;
-        top: 0px;
-        left: -3.1rem;
-        z-index: 100;
-    }
-}
-
-@media (max-width: 700px) {
     .s-block--default-home-slider .swiper-slide {
         height: 58rem;
         align-items: center;
@@ -760,4 +668,29 @@ body .tamara-product-widget .tamara-logo {
     position: absolute;
     left: 23px !important;
     top: 28px !important;
+}
+
+.header-components-top.header-op-page .flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+}
+
+.header-components-top.header-op-page .flex button {
+    grid-column: 1/1;
+    grid-row: 1/1;
+    margin: 0px 9px 0px 0px;
+}
+
+.header-components-top.header-op-page .flex salla-user-menu {
+    grid-column: 3/3;
+    grid-row: 1/1;
+    margin: 0px 0px 0px 9px;
+}
+
+.header-above-slider .header-op-page {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
 }
