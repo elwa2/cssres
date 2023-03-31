@@ -186,7 +186,10 @@ body > section.s-block.s-block--categories > div > salla-slider > div.swiper.s-s
 .product-entry, .product-entry .product-entry__content {
     background-color: transparent;
 }
-
+.s-block--fixed-banner .banner--fixed {
+    max-height: unset;
+    min-height: unset;
+}
 :root {
     --1: #577E63;
     --1-1: #7F8563;
