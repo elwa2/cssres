@@ -738,5 +738,15 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
         height: 58rem;
         align-items: center;
         background-position: -33rem 1rem;
-    }
+    }  div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > button  {
+    display: none;
+}
+
+}
+body .tamara-product-widget, body .spotii-wrapper {
+    padding: 18px 18px 18px 117px!important;
+}body .tamara-product-widget .tamara-logo {
+    position: absolute;
+    left: 23px !important;
+    top: 28px !important;
 }
