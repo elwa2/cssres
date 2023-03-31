@@ -63,7 +63,7 @@ body,.footer-is-light .store-footer {
 .footer-is-light .store-footer {
     color: #fff;
     border-radius: 20px;
-    background: linear-gradient(to bottom,transparent -40%,var( --2) 80%),var(--lev)-3rem -1rem/53%no-repeat!important;
+    background: linear-gradient(to bottom,transparent -40%,var( --2) 88%),var(--lev)125rem 6rem/16%no-repeat!important;
     background-color: var(--2)!important;
 }
 
