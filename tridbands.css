@@ -315,7 +315,7 @@ body.product-index.salla-349994915 > header:before {
     }
 
     .swiper-slide.relative.swiper-slide-active {
-        width: 24rem !important;
+/*         width: 24rem !important; */
         overflow: visible !important;
         position: relative;
         right: 8rem;
