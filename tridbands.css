@@ -640,7 +640,7 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
     :lang(ar) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(ar) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
         right: 14rem;
-        right: 26vh;
+        /* right: 26vh; */
         top: 6px;
         background: transparent;
         z-index: 100;
