@@ -233,7 +233,7 @@ body > section.s-block.container.s-block--banners > div.gap-2\.5 .banner-entry {
 
 @media (max-width: 700px) {
     .product-entry--fit-type .product-entry__image {
-        height: 11rem;
+        height: 17rem;
         max-height: 19rem;
     }
 }
