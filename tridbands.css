@@ -121,12 +121,9 @@ body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.
         margin: 0px 0 -24px -15px;
     }
 
-  body:not(.index):not(.product-index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-       
+    body:not(.index):not(.product-index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
         filter: none;
-        
     }
-    
 }
 
 @media (max-width: 700px) {
@@ -153,8 +150,8 @@ body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.
     }
 
     :lang(en) body:not(.page-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-        left: 65vw;
-        top: -51px;
+        left: 68vw;
+        top: -23px;
     }
 }
 
@@ -353,7 +350,7 @@ body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
 }
 
 :lang(en) body.index i.sicon-menu.text-2xl.rtl\:ml-3.ltr\:mr-3 {
-    left: 15px;
+    left: 3px;
     color: var(--2) !important;
 }
 
@@ -486,7 +483,7 @@ body > salla-modal.s-login-modal.salla-modal.s-modal.s-modal-container.hydrated 
     color: #333 !important;
 }
 
-span.fix-align.opacity-70 {
+body:not(.page-single) span.fix-align.opacity-70 {
     color: var(--5) !important;
 }
 
@@ -674,8 +671,8 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
 
     :lang(en) body:not(.index) button.btn--gray.search-btn.w-\[40px\] {
         position: relative;
-        left: 20rem;
-        top: 9px;
+        left: 0rem;
+        top: 0px;
         background: transparent;
         z-index: 100;
     }
@@ -687,12 +684,9 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
         z-index: 100;
         right: 281px;
     }
- body.page-single > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a {
-        
+
+    body.page-single > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a {
     }
-
-
-    
 
     :lang(en) body > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a {
         position: relative;
@@ -704,10 +698,10 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
 
     :lang(en) body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > div > a {
         position: relative;
-        top: 7px;
+        top: 0px;
         background: transparent;
         z-index: 100;
-        right: 47px;
+        right: -284px;
     }
 
     :lang(ar) .header-above-slider.header-is-light .header-components-top .search-btn {
@@ -719,7 +713,7 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
 
     :lang(en) .header-above-slider.header-is-light .header-components-top .header-icon-button, :lang(en) .header-above-slider.header-is-light .header-components-top .s-user-menu-trigger, :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
-        top: 10px;
+        top: 0px;
         left: 14rem;
         z-index: 100;
         background: transparent;
@@ -727,8 +721,8 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
 
     :lang(en) .header-above-slider.header-is-light .header-components-top .search-btn {
         position: relative;
-        top: 10px;
-        left: -2.5rem;
+        top: 0px;
+        left: -3.1rem;
         z-index: 100;
     }
 }
@@ -738,14 +732,18 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
         height: 58rem;
         align-items: center;
         background-position: -33rem 1rem;
-    }  div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > button  {
-    display: none;
+    }
+
+    div.app-inner.flex.flex-col.min-h-full > header > div.header-components-top.header-top-page > button {
+        display: none;
+    }
 }
 
-}
 body .tamara-product-widget, body .spotii-wrapper {
     padding: 18px 18px 18px 117px!important;
-}body .tamara-product-widget .tamara-logo {
+}
+
+body .tamara-product-widget .tamara-logo {
     position: absolute;
     left: 23px !important;
     top: 28px !important;
