@@ -689,3 +689,7 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-t
         grid-row: 1/1;
     }
 }
+
+.itme-categories .itme-cat-entry.slide--cat-entry .loading-effect {
+    display: none;
+}
