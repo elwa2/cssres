@@ -237,6 +237,11 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
     border-radius: 20px !important;
 }
 
+.s-button-primary-outline {
+    background-color: var(--2);
+    color: var(--6);
+}
+
 :root {
     --1: #577E63;
     --1-1: #7F8563;
