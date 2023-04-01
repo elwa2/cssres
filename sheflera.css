@@ -63,7 +63,8 @@ body,.footer-is-light .store-footer {
 .footer-is-light .store-footer {
     color: #fff;
     border-radius: 20px;
-    background: linear-gradient(to bottom,transparent -40%,var( --2) 88%),var(--lev)  6rem/16%no-repeat!important;
+    background: linear-gradient(to bottom,transparent -40%,var( --2) 88%),var(--lev)  64rem 6rem/16%no-repeat!important;
+    background-size: 24% !important;
     background-color: var(--2)!important;
 }
 
@@ -180,6 +181,10 @@ i[] {
 
 .header-above-slider.header-is-light .main-menu li a {
     color: var(--1) !important;
+    background: #fff;
+    border-radius: 15px;
+    margin: 0 8px;
+    padding: 9px 13px 11px;
 }
 
 .header-components .mburger--collapse {
@@ -207,6 +212,19 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
     max-height: unset !important;
     position: relative;
 }
+/* اضف للسلة  */
+.product-entry salla-add-product-button salla-button button:before {
+    content: 'أضف للسلة';
+    display: block;
+    white-space: pre !important;
+    line-height: 2;
+}
+
+.product-entry salla-add-product-button salla-button button {
+   border-radius: 20px !important; width: 142px;
+    height: 40px;
+}
+
 :root {
     --1: #577E63;
     --1-1: #7F8563;
