@@ -2446,6 +2446,7 @@ footer:before {
     font-size: 15px;
     line-height: 2;
 }
+
 @media(min-width: 992px) {
     section:nth-of-type(1) .container.container-slider {
         width: 100%!important;
@@ -2463,7 +2464,6 @@ footer:before {
     }
 }
 
- 
 :root {
     --1: #EDEAE2;
     --2: #333;
