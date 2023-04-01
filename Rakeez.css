@@ -2446,7 +2446,24 @@ footer:before {
     font-size: 15px;
     line-height: 2;
 }
+@media(min-width: 992px) {
+    section:nth-of-type(1) .container.container-slider {
+        width: 100%!important;
+        max-width: 100%!important
+    }
 
+    .home section:nth-of-type(1) .container {
+        max-width: unset!important;
+        padding: 0
+    }
+
+    .home section:nth-of-type(1) .main-slider {
+        max-height: unset;
+        margin-top: 0
+    }
+}
+
+ 
 :root {
     --1: #EDEAE2;
     --2: #333;
