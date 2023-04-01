@@ -693,3 +693,32 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.header-components-t
 .itme-categories .itme-cat-entry.slide--cat-entry .loading-effect {
     display: none;
 }
+/* اضف للسلة  */
+.product-entry salla-add-product-button salla-button button:before {
+    content: 'أضف للسلة';
+    display: block;
+    white-space: pre !important;
+    line-height: 2;
+}
+
+.product-entry salla-add-product-button salla-button button {
+    border-radius: 2px !important;
+    width: 142px;
+    height: 40px;
+}
+
+i.sicon-cart-add.border-primary {
+    font-size: 0;
+}
+
+.product-entry salla-add-product-button salla-button button {
+    border-color: var(--3);
+    background: var(--3);
+    color: #fff !important;
+}
+
+@media (min-width: 700px) {
+    body .tamara-product-widget {
+        width: 541px !important;
+    }
+}
