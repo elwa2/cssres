@@ -17,22 +17,6 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     }
 }
 
-body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center {
-    order: 2;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    position: inherit;
-}
-
-body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.hidden.lg\:flex.items-center {
-    order: 1;
-}
-
-body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.left-side {
-    order: 3;
-}
-
 body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
     content: var(--logo);
     height: 100%;
@@ -42,28 +26,15 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
 }
 
 body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header> div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-    content: var(--logo);
-    height: unset;
-    width: 111px;
-    max-height: unset !important;
-    position: relative;
     filter: brightness(9.5);
 }
 
 :lang (en) body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-    content: var(--logo);
-    height: unset;
-    width: 111px;
-    max-height: unset !important;
-    position: relative;
     filter: brightness(9.5);
 }
 
 @media (min-width: 1021px) {
     body:not(.page-single):not(.cart):not(.product-single) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-        top: -76px;
-        margin: 81px 0 0 0;
-        right: -22px;
     }
 }
 
@@ -315,7 +286,7 @@ body.product-index.salla-349994915 > header:before {
     }
 
     .swiper-slide.relative.swiper-slide-active {
-/*         width: 24rem !important; */
+        /*         width: 24rem !important; */
         overflow: visible !important;
         position: relative;
         right: 8rem;
@@ -687,4 +658,28 @@ body .tamara-product-widget .tamara-logo {
     background-color: transparent;
     border: 0;
     padding: 0;
+}
+
+@media (min-width: 900px) {
+    .header-components-inner.center-between.relative.container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        width: 100%;
+    }
+
+    .header-components-inner.center-between.relative.container div:nth-child(1) {
+        grid-column: 2/3;
+        grid-row: 1/1;
+    }
+
+    .header-components-inner.center-between.relative.container div:nth-child(2) {
+        grid-column: 1/3;
+        grid-row: 1/1;
+    }
+
+    .header-components-inner.center-between.relative.container div:nth-child(3) {
+        grid-column: 1/3;
+        grid-row: 1/1;
+    }
 }
