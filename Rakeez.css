@@ -1913,13 +1913,13 @@ ul.pagination {
     padding: 5px;
     font-size: 16px;
     line-height: 2;
-    color: var(--2);
-    border-radius: 6px
+    color: #fff;
+    border-radius: 6px;
 }
 
 .col-lg-6.col-product-info>.product-buttons.d-block .btn.btn-add-to-cart:hover {
-    background: var(--2)!important;
-    color: #fff
+    background: var(--1)!important;
+    color: var(--2);
 }
 
 .col-lg-6.col-product-info>.border-product:last-child h4 {
