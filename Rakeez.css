@@ -2423,34 +2423,21 @@ footer:before {
         background-position: -2146px 0
     }
 }
+
 .feature .theme-text-for-primary-bg:after {
     white-space: pre;
-    
-     
 }
 
-.feature:first-child .theme-text-for-primary-bg:after {
+.feature:nth-child(3) .theme-text-for-primary-bg:after {
     content: "\a        شحن سريع   داخل السعودية.   "
-}
-
-:lang(en) .feature:first-child .theme-text-for-primary-bg:after {
-    content: "\a   Fast and free shipping within Saudi Arabia.  "
 }
 
 .feature:nth-child(2) .theme-text-for-primary-bg:after {
     content: "\a       ادفع وانت متطمـن (فيزا - مدى - أبل باي  )  "
 }
 
-:lang(en) .feature:nth-child(2) .theme-text-for-primary-bg:after {
-    content: "\a   Pay while you are confident (Visa - mada - Apple Pay)  "
-}
-
-.feature:nth-child(3) .theme-text-for-primary-bg:after {
+.feature:nth-child(1) .theme-text-for-primary-bg:after {
     content: "\a      واتساب مخصص لخدمة العملاء      "
-}
-
-:lang(en) .feature:nth-child(3) .theme-text-for-primary-bg:after {
-    content: "\a     WhatsApp for customer service   "
 }
 
 .d-flex.flex-row.justify-content-center.align-items-center.flex-wrap.icons-wrapper.footer-store-section-bars:before {
@@ -2458,8 +2445,8 @@ footer:before {
     font-family: inherit;
     font-size: 15px;
     line-height: 2;
-    color: #40818e
 }
+
 :root {
     --1: #EDEAE2;
     --2: #333;
