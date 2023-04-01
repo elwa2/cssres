@@ -2412,6 +2412,9 @@ footer:before {
         font-size: 17px;
         margin: 18px auto
     }
+    .feature .theme-text-for-primary-bg:after {
+    white-space: pre;
+}
 }
 
 @keyframes scrollAli {
@@ -2424,9 +2427,7 @@ footer:before {
     }
 }
 
-.feature .theme-text-for-primary-bg:after {
-    white-space: pre;
-}
+
 
 .feature:nth-child(3) .theme-text-for-primary-bg:after {
     content: "\a        شحن سريع   داخل السعودية.   "
