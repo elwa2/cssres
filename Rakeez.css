@@ -226,7 +226,8 @@ header>.dark {
 #fixed-header .icon-shopping_cart_black_36dp-1-1 .path1::before {
     display: block;
     content: "";
-    background:  url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 105.39 132.29'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23010101; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1-2'%3E%3Cg id='Layer_2-2' data-name='Layer 2-2'%3E%3Cpath class='cls-1' d='m52.7,73.95c-12.67.01-23.59-8.92-26.08-21.34-.34-2.4,1.31-4.63,3.71-5,.24-.02.48-.02.72,0,2.18-.03,4.05,1.53,4.43,3.67,2.02,9.57,11.41,15.7,20.98,13.68,6.87-1.45,12.23-6.81,13.68-13.68.46-2.44,2.81-4.04,5.25-3.58,2.07.39,3.59,2.18,3.65,4.29,0,.24-.01.48-.05.71-2.54,12.47-13.57,21.38-26.29,21.25Z'/%3E%3Cpath class='cls-1' d='m92.09,132.29H13.3C5.97,132.31.01,126.37,0,119.03h0v-.68L3.6,42.03c.31-7.11,6.17-12.71,13.28-12.7h71.63c7.11,0,12.97,5.59,13.28,12.7l3.58,76.32c.37,7.33-5.27,13.56-12.6,13.93,0,0,0,0,0,0h-.68ZM16.88,38.22c-2.44,0-4.42,1.99-4.42,4.43l-3.59,76.14c-.12,2.44,1.76,4.52,4.2,4.64h79c2.44,0,4.43-1.98,4.44-4.42v-.23l-3.58-76.29c0-2.44-1.98-4.42-4.42-4.42l-71.63.15Z'/%3E%3Cpath class='cls-1' d='m79.26,33.8h-8.86v-7.75c.23-9.78-7.51-17.89-17.28-18.13s-17.89,7.51-18.13,17.28c0,.28,0,.56,0,.84v7.75h-8.86v-7.75C26.41,11.38,38.54-.28,53.21,0c14.27.28,25.77,11.78,26.05,26.05v7.75Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");  width: 25px;
+    background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 105.39 132.29'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23010101; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1-2'%3E%3Cg id='Layer_2-2' data-name='Layer 2-2'%3E%3Cpath class='cls-1' d='m52.7,73.95c-12.67.01-23.59-8.92-26.08-21.34-.34-2.4,1.31-4.63,3.71-5,.24-.02.48-.02.72,0,2.18-.03,4.05,1.53,4.43,3.67,2.02,9.57,11.41,15.7,20.98,13.68,6.87-1.45,12.23-6.81,13.68-13.68.46-2.44,2.81-4.04,5.25-3.58,2.07.39,3.59,2.18,3.65,4.29,0,.24-.01.48-.05.71-2.54,12.47-13.57,21.38-26.29,21.25Z'/%3E%3Cpath class='cls-1' d='m92.09,132.29H13.3C5.97,132.31.01,126.37,0,119.03h0v-.68L3.6,42.03c.31-7.11,6.17-12.71,13.28-12.7h71.63c7.11,0,12.97,5.59,13.28,12.7l3.58,76.32c.37,7.33-5.27,13.56-12.6,13.93,0,0,0,0,0,0h-.68ZM16.88,38.22c-2.44,0-4.42,1.99-4.42,4.43l-3.59,76.14c-.12,2.44,1.76,4.52,4.2,4.64h79c2.44,0,4.43-1.98,4.44-4.42v-.23l-3.58-76.29c0-2.44-1.98-4.42-4.42-4.42l-71.63.15Z'/%3E%3Cpath class='cls-1' d='m79.26,33.8h-8.86v-7.75c.23-9.78-7.51-17.89-17.28-18.13s-17.89,7.51-18.13,17.28c0,.28,0,.56,0,.84v7.75h-8.86v-7.75C26.41,11.38,38.54-.28,53.21,0c14.27.28,25.77,11.78,26.05,26.05v7.75Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    width: 25px;
     height: 70px;
     margin: auto;
     background-size: 95%;
@@ -1128,7 +1129,8 @@ a.more-button::after {
     font-size: 1.7rem;
     margin-bottom: unset;
     position: relative;
-    margin-top: 9rem
+    text-align: center;
+    margin-top: 9rem;
 }
 
 @keyframes float {
@@ -2385,9 +2387,78 @@ section.blog.mt-5.mb-5 {
 .theme-title-primary {
     color: var(--primary-color)!important;
 }
+
 .cart-header-total {
- 
-  color: var(--primary-color)!important;
+    color: var(--primary-color)!important;
+}
+
+footer:before {
+    display: block;
+    width: 100%!important;
+    background: var(--logo2);
+    animation: scrollAli 80s infinite linear;
+    content: "";
+    height: 5vw;
+    background-size: contain;
+    background-repeat: repeat-x;
+    font-size: 16px;
+    padding: 14px 0
+}
+
+@media(min-width: 992px) {
+    footer:before {
+        height:1vw;
+        background-size: contain;
+        font-size: 17px;
+        margin: 18px auto
+    }
+}
+
+@keyframes scrollAli {
+    0% {
+        background-position: 0 0
+    }
+
+    100% {
+        background-position: -2146px 0
+    }
+}
+.feature .theme-text-for-primary-bg:after {
+    white-space: pre;
+    
+     
+}
+
+.feature:first-child .theme-text-for-primary-bg:after {
+    content: "\a        شحن سريع   داخل السعودية.   "
+}
+
+:lang(en) .feature:first-child .theme-text-for-primary-bg:after {
+    content: "\a   Fast and free shipping within Saudi Arabia.  "
+}
+
+.feature:nth-child(2) .theme-text-for-primary-bg:after {
+    content: "\a       ادفع وانت متطمـن (فيزا - مدى - أبل باي  )  "
+}
+
+:lang(en) .feature:nth-child(2) .theme-text-for-primary-bg:after {
+    content: "\a   Pay while you are confident (Visa - mada - Apple Pay)  "
+}
+
+.feature:nth-child(3) .theme-text-for-primary-bg:after {
+    content: "\a      واتساب مخصص لخدمة العملاء      "
+}
+
+:lang(en) .feature:nth-child(3) .theme-text-for-primary-bg:after {
+    content: "\a     WhatsApp for customer service   "
+}
+
+.d-flex.flex-row.justify-content-center.align-items-center.flex-wrap.icons-wrapper.footer-store-section-bars:before {
+    content: "خيارات دفع امنة ومتعددة";
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 2;
+    color: #40818e
 }
 :root {
     --1: #EDEAE2;
