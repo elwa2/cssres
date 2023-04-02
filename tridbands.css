@@ -61,6 +61,7 @@ body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.
         position: relative;
         filter: brightness(9.5);
         top: -28px;
+        margin: 0px 0 -23px -15px;
     }
 }
 
@@ -112,8 +113,8 @@ body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.
     }
 
     :lang(en) body:not(.index) > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
-        left: 63vw;
-        top: -21px;
+        left: 73vw;
+        top: -32px;
     }
 }
 
@@ -163,9 +164,7 @@ body.product-single > div.app-inner.flex.flex-col.min-h-full > header > div.stor
 }
 
 @media (max-width: 500px) {
-    body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand {
-        right: 10rem;
-    }
+    
 }
 
 body.product-index .header-components .mburger--collapse, body.product-index .header-above-slider.header-is-light .header-components-top .header-btn {
