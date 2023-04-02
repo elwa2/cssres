@@ -67,7 +67,7 @@ body:not(.page-single):not(.cart):not(.product-single):not(product-index) > div.
         width: 66px;
         max-height: unset !important;
         position: relative;
-        filter: brightness(9.5);
+        /* filter: brightness(9.5); */
         top: -28px;
         margin: 0px 0 -3px 0px;
     }
