@@ -716,7 +716,10 @@ i.sicon-cart-add.border-primary {
     background: var(--3);
     color: #fff !important;
 }
-
+h3.product-entry__title.mt-0.flex.justify-start {
+    text-align: -webkit-center;
+    text-align: center;
+}
 @media (min-width: 700px) {
     body .tamara-product-widget {
         width: 541px !important;
