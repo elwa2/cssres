@@ -1332,7 +1332,7 @@ body.salla-theme_3 .products-grid.eq-height .product-footer>.product-price {
 .product .product-footer {
     margin: 10px 0 40px !important;
 }
-.salla-theme_3 .product .product-footer .product-price {
-    justify-content: center;
-    text-align-last: center;
+.salla-theme_3 .product .product-footer .product-price,body.salla-theme_3 .products-grid.eq-height .product .product-title,body .product.contain >a .product-title {
+    justify-content: center !important;
+    text-align-last: center !important;
 }
