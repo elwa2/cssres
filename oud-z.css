@@ -1085,7 +1085,7 @@ a.product-add.add_to_cart_btn {
     padding: 0 25px !important;
     color: #fff !important;
     box-shadow: none !important;
-    background: var(--2) !important;
+    background: var(--1) !important;
     border: none !important;
 }
 
@@ -1111,7 +1111,7 @@ body .product .product-add span {
 }
 
 body .product.contain >a .product-title {
-    font-size: 12px !important;
+    font-size: 15px !important;
 }
 
 .sicon-keyboard_arrow_right:before {
@@ -1331,4 +1331,8 @@ body.salla-theme_3 .products-grid.eq-height .product-footer>.product-price {
 
 .product .product-footer {
     margin: 10px 0 40px !important;
+}
+.salla-theme_3 .product .product-footer .product-price {
+    justify-content: center;
+    text-align-last: center;
 }
