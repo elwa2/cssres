@@ -250,10 +250,12 @@ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full
     color: var(--1);
 }
 
-.s-cart-summary-count,.s-product-card-promotion-title {
+.s-product-card-promotion-title {
     background-color: var(--3);
 }
-
+.s-cart-summary-count {
+    background-color: var(--2);
+}
 button.s-button-disabled,button.s-button-disabled {
     color: #000 !important;
 }
