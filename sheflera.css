@@ -197,7 +197,7 @@ i[] {
 }
 
 .header-components .mburger--collapse {
-    color: #fff;
+    color: var(--1);
 }
 
 .product-entry salla-add-product-button salla-button button {
@@ -282,5 +282,13 @@ button.s-button-disabled {
     #app > div.relative.z-0.s-block > footer > div.store-footer__top > div > div > div.mb-2\.5.col-span-2 > a > img {
         align-content: center;
         margin: 0 auto 50px;
+    }
+
+    .header-components-top.header-top-page {
+        justify-content: left;
+    }
+
+    #mainnav .has-children.is-open>.sub-menu {
+        background: var(--6);
     }
 }
