@@ -41,21 +41,21 @@ div.col-md-12 {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 30px 0 rgba(0, 0, 0, 0.1);
-    background: #1f1f1f;
+    background: var(--1);
 }
 
 .header-wrapper {
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 0px 30px 0 rgba(0, 0, 0, 0.1);
-    background: #1f1f1f;
+    background: var(--1);
 }
 
 /* ازرار الهدر */
 .circle-action {
-    border: 0px solid #1f1f1f;
+    border: 0px solid var(--1);
     border-radius: 2px;
-    background: #1f1f1f;
+    background: var(--1);
     color: #fff;
     line-height: 40px;
 }
@@ -69,7 +69,7 @@ div.col-md-12 {
 #cart_badge {
     line-height: 1.5384616;
     background: #dfe1e0;
-    color: #1f1f1f;
+    color: var(--1);
 }
 
 /*  زرالقائمة الجانبية الجديد */
@@ -92,7 +92,7 @@ div.col-md-12 {
 /* القائمة الجانبية */
 .sub-nav-header {
     border-radius: 0 0 25px 25px;
-    background: #1f1f1f;
+    background: var(--1);
 }
 
 /*  تسجيل الدخول */
@@ -184,22 +184,14 @@ div.col-md-12 {
 }
 
 /* تقليل الكمية */
-.qty-field--custom .btn--qty-sub {
-    background: #1f1f1f;
-    color: #fff;
-}
+ 
 
 /* زيادة الكمية */
-.qty-field--custom .btn--qty-add {
-    background: #1f1f1f;
+.qty-field--custom .btn--qty-add,.qty-field--custom .btn--qty-sub,.qty-field--custom .form-control.single_product_quantity {
+    background: var(--1);
     color: #fff;
 }
-
-/* العدد */
-.qty-field--custom .form-control.single_product_quantity {
-    background: #1f1f1f;
-    color: #fff;
-}
+ 
 
 /* القسم السفلي لطلب المنتج والمفضلة*/
 .cart-fav {
@@ -261,7 +253,7 @@ div.col-md-12 {
 
 /* زرالملف الشخصي وتسجيل الخروج */
 .sub-nav-header a {
-    color: #1f1f1f;
+    color: var(--1);
     height: 40px;
     width: 100px;
     border-radius: 10px;
@@ -287,7 +279,7 @@ div.col-md-12 {
 }
 
 .sub-nav-header a {
-    color: #1f1f1f;
+    color: var(--1);
     text-align: center;
     margin-top: 5px;
     padding-top: 8px;
@@ -318,7 +310,7 @@ div.col-md-12 {
 
 /* زر اتمام الطلب */
 #submit_cart {
-    background: #1f1f1f;
+    background: var(--1);
     border-radius: 15px;
 }
 
@@ -332,7 +324,7 @@ div.col-md-12 {
 .section-header .section--title {
     border-right: 8px solid var(--2);
     background-color: #fff;
-    color: #1f1f1f;
+    color: var(--1);
     width: fit-content;
     margin-right: 19px;
     padding: 0px 10px 6px 10px;
@@ -346,7 +338,7 @@ div.col-md-12 {
 }
 
 .circle-action {
-    border: 0px solid #1f1f1f;
+    border: 0px solid var(--1);
     border-radius: 0px;
     background: none;
     color: #fff;
@@ -357,7 +349,7 @@ div.col-md-12 {
     border-radius: 30px;
     border-top: 0px solid #dfe1e0;
     margin: 20px;
-    background-color: #1f1f1f;
+    background-color: var(--1);
     color: #fff;
     text-align: center;
     padding-top: 30px;
@@ -371,12 +363,12 @@ div.col-md-12 {
     padding-bottom: 5px;
     font-size: 15px !important;
     border-radius: 10px;
-    color: #1f1f1f;
+    color: var(--1);
 }
 
 /*التواصل الاجتماعي في الفوتر */
 .store-contact a {
-    color: #1f1f1f;
+    color: var(--1);
     font-size: 12px;
 }
 
@@ -458,12 +450,12 @@ footer .store-certificate b {
 
 /*ويدجت تسجيل جديد*/
 i.sicon-user:before {
-    color: #1f1f1f;
+    color: var(--1);
     content: "\f078";
 }
 
 .login-container .border-yellow-dark {
-    border-color: #1f1f1f;
+    border-color: var(--1);
 }
 
 .sub-nav .main-menu li.sub-menu-header.categories-holder>span {
@@ -476,42 +468,42 @@ i.sicon-user:before {
 }
 
 .btn-primary {
-    background: #1f1f1f;
-    border-color: #1f1f1f;
+    background: var(--1);
+    border-color: var(--1);
 }
 
 .empty-comments p {
     text-align: center;
-    color: #1f1f1f;
+    color: var(--1);
 }
 
 /***********************/
 /*أيقونة السلة فارعة*/
 .empty-box .empty-icon {
-    color: #1f1f1f !important;
+    color: var(--1) !important;
 }
 
 .empty-box .empty-text {
-    color: #1f1f1f !important;
+    color: var(--1) !important;
 }
 
 .main-menu li i {
     margin-left: 5px;
-    color: #1f1f1f;
+    color: var(--1);
     font-size: 18px;
 }
 
 #text {
-    color: #1f1f1f;
+    color: var(--1);
 }
 
 /***حقوق الموقع***/
 .footer-wrapper p {
-    color: #1f1f1f;
+    color: var(--1);
 }
 
 #cart-content .cart-total-box {
-    border: 1px solid #1f1f1f !important;
+    border: 1px solid var(--1) !important;
     background: #fff;
     border-radius: 27px;
     color: #444;
@@ -537,7 +529,7 @@ i.sicon-user:before {
 }
 
 .form-group.coupon .form-control {
-    border: 1px solid #1f1f1f !important;
+    border: 1px solid var(--1) !important;
     background: #fff;
     border-radius: 56px;
     margin-right: 25px;
@@ -561,11 +553,11 @@ i.sicon-user:before {
 
 /*******************************************/
 .product-cart {
-    border: 1px solid #1f1f1f !important;
+    border: 1px solid var(--1) !important;
 }
 
 .product-form, .product-options {
-    border: 1px solid #1f1f1f !important;
+    border: 1px solid var(--1) !important;
     border-radius: -8px;
     padding: 20px!important;
 }
@@ -737,7 +729,7 @@ pt-4, .py-4 {
 /*********************************************/
 /* Abdulrahman Edit - 24/8 */
 body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) ul li>a {
-    background: #1f1f1f;
+    background: var(--1);
 }
 
 .sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li ul li a {
