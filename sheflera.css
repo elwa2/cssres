@@ -276,8 +276,26 @@ button.s-button-disabled,button.s-button-disabled {
     #mainnav .has-children.is-open>.sub-menu {
         background: var(--6);
     }
-}
 
+    div[style*="dn.salla.sa/form-builder/2eGGyEfX6SpTQ1j5ovhBwHB9mVfEkkmTktnh6dkq.jpg"] {
+        background-position: -6rem 2rem;
+        background-size: 234%;
+        background-repeat: no-repeat;
+        background-color: #e8e8e8!important;
+    }
+       div[style*="dn.salla.sa/form-builder/ManVHGcejoylLEjJpCRgqR0asY1Ja4Ovl9xyTwAT.jpg"] {
+        background-position: -2rem 2rem;
+        background-size: 234%;
+        background-repeat: no-repeat;
+        background-color: #e8e8e8!important;
+    }
+}
+.s-block--default-home-slider .swiper-slide .btn {
+   
+    background-color: var(--1)!important;
+    color:#fff !important
+  
+}
 :root {
     --1: #577E63;
     --1-1: #7F8563;
