@@ -276,9 +276,9 @@ button.s-button-disabled,button.s-button-disabled {
     }
 
     #mainnav .has-children.is-open>.sub-menu * {
-        background: var(--2);
-        color: #fff !important;
-        border: 0
+        background: transparent;
+        color: var(--2);
+        border: 0;
     }
 
     div[style*="dn.salla.sa/form-builder/2eGGyEfX6SpTQ1j5ovhBwHB9mVfEkkmTktnh6dkq.jpg"] {
