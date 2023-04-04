@@ -322,17 +322,27 @@ button.s-button-disabled,button.s-button-disabled {
     }
 }
 
+div.relative.z-0.s-block > div {
+    background-color: transparent;
+}
+
+div.relative.z-0.s-block > div .bg-gray-100 {
+    background-image: url(https://cdn.salla.sa/form-builder/ZIRCk1PgltwwvV2zHibIrVSh3NOppw8kYQYwVutn.jpg);
+    opacity: .3;
+}
+
 .relative.z-1.p-2\.5.w-\[80\%\] {
     background: #ffffffab;
     border: 1px solid #fff;
     border-radius: 15px;
 }
+
 .square-photos-grid .square-photos-item .photos-item-text .hero-slider-border h3,.s-block--default-home-slider .swiper-slide p {
- color:var(--1) !important
+    color: var(--1) !important
 }
 
 .s-block--default-home-slider .swiper-slide p {
- color:var(--2) !important
+    color: var(--2) !important
 }
 
 :root {
