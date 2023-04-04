@@ -733,3 +733,9 @@ h3.product-entry__title.mt-0.flex.justify-start {
         width: 541px !important;
     }
 }
+@media (max-width: 700px) {
+    a.links-contact[href="mailto:info@tridbands.com"] {
+        position: relative;
+        top: 22px;
+    }
+}
