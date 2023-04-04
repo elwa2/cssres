@@ -327,8 +327,8 @@ div.relative.z-0.s-block > div {
 }
 
 div.relative.z-0.s-block > div .bg-gray-100 {
-    background-image: url(https://cdn.salla.sa/form-builder/ZIRCk1PgltwwvV2zHibIrVSh3NOppw8kYQYwVutn.jpg);
-    opacity: .3;
+   
+    background: linear-gradient(134deg ,transparent -183%,#ffffffe8 83%), url(https://cdn.salla.sa/form-builder/ZIRCk1PgltwwvV2zHibIrVSh3NOppw8kYQYwVutn.jpg) 0rem 0rem/100%no-repeat!important;
 }
 
 .relative.z-1.p-2\.5.w-\[80\%\] {
