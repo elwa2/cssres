@@ -323,9 +323,16 @@ button.s-button-disabled,button.s-button-disabled {
 }
 
 .relative.z-1.p-2\.5.w-\[80\%\] {
-    background: #ffffff8a;
+    background: #ffffffab;
     border: 1px solid #fff;
     border-radius: 15px;
+}
+.square-photos-grid .square-photos-item .photos-item-text .hero-slider-border h3,.s-block--default-home-slider .swiper-slide p {
+ color:var(--1) !important
+}
+
+.s-block--default-home-slider .swiper-slide p {
+ color:var(--2) !important
 }
 
 :root {
