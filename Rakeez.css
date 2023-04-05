@@ -1305,9 +1305,9 @@ footer .container>.row {
     max-width: unset
 }
 
-.row>.col-lg-4:nth-child(3)>.footer-about-us-links-div:nth-child(1) {
+/* .row>.col-lg-4:nth-child(3)>.footer-about-us-links-div:nth-child(1) {
     display: none!important
-}
+} */
 
 .row>.col-lg-4:nth-child(3)>.footer-about-us-links-div:nth-child(2) {
     margin-top: unset!important
