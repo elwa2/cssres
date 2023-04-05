@@ -344,7 +344,10 @@ div.relative.z-0.s-block > div .bg-gray-100 {
 .s-block--default-home-slider .swiper-slide p {
     color: var(--2) !important
 }
-
+  .square-photos-grid .square-photos-item .photos-item-text .hero-slider-border .slider-border-top, .square-photos-grid .square-photos-item .photos-item-text .hero-slider-border .slider-border-bottom {
+    
+    border: 0;
+}
 :root {
     --1: #577E63;
     --1-1: #7F8563;
