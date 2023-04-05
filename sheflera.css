@@ -303,7 +303,10 @@ button.s-button-disabled,button.s-button-disabled {
         background: unset;
     }
 }
-
+.s-block--default-home-slider .swiper-slide p {
+    color: var(--2) !important;
+    direction: ltr;
+}
 .s-block--default-home-slider .swiper-slide .btn,.square-photos-grid .square-photos-item .photos-item-text .btn {
     background-color: var(--1)!important;
     color: #fff !important;
