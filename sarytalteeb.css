@@ -158,9 +158,9 @@ span.promotion-title {
 }
 
 .salla-theme_6 .product .product-footer .not-available {
-    Background-color: var(--2);
+    /* Background-color: var(--2); */
     border-radius: 3px;
-    color: #ffffff;
+    color: #a17f5975;
     display: block;
     font-size: 100%;
     height: 40px;
