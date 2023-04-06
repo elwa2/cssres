@@ -165,7 +165,7 @@ span.icon-menu_open_black_24dp-1.header-theme-icon-primary {
 }
 
 a.btn.btn-primary.product-card-add-to-cart {
-    color: #e6dded;
+    color: var(--1-h);
     background: var(--2);
     border: none;
     font-weight: 700;
@@ -249,8 +249,8 @@ select#product-quantity {
 }
 
 .btn-add-to-cart {
-    background-color: var(--2);
-    color: #e6dded;
+    background-color: var(--1);
+    color: var(--2);
     border-radius: 25px
 }
 
@@ -270,7 +270,7 @@ select#product-quantity {
 }
 
 .products-details-page h4 {
-    background: #e6dded;
+    background: var(--1-h);
     border-radius: 25px;
     padding: 3px;
     margin: auto;
@@ -420,9 +420,12 @@ span.text-center.footer-copyrights a {
     background-repeat: no-repeat;
     background-position: center;
 }
-
+.add-review-btn {
+    
+    color: #000000;
+}
 :root {
-    --1: #fddb00;
+    --1: #fddb00;--1-h: #fddb009e;
     --2: #171401;
     --bg: #ededed;
     --3: #191919;
