@@ -1046,8 +1046,8 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
 }
  .salla-theme_6 .product .product-footer .not-available::after {
     position: absolute;
-    top: 50%;
-    left: 19%;
+    top: 42%;
+    left: 10%;
     z-index: 2;
     display: block;
     width: max-content;
@@ -1057,12 +1057,12 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
     padding-right: .75rem;
     padding-top: .5rem;
     padding-bottom: .25rem;
-    font-size: 1.25rem;
+    font-size: 2.25rem;
     line-height: 1;
     color: #ef4444;
     opacity: .8;
     content: "SOLD-OUT";
-    transform: rotate(-43deg);
+    /* transform: rotate(-43deg); */
 }
 :root {
     --1: #757575;
