@@ -1044,7 +1044,26 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
         color: #ffffff99;
     }
 }
-
+ .salla-theme_6 .product .product-footer .not-available::after {
+    position: absolute;
+    top: 50%;
+    left: 19%;
+    z-index: 2;
+    display: block;
+    width: max-content;
+    border-width: 3px;
+    border: 3px solid #ef4444;
+    padding-left: .75rem;
+    padding-right: .75rem;
+    padding-top: .5rem;
+    padding-bottom: .25rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: #ef4444;
+    opacity: .8;
+    content: "SOLD-OUT";
+    transform: rotate(-43deg);
+}
 :root {
     --1: #757575;
     --2: #a17f59;
