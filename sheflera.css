@@ -388,6 +388,9 @@ div.relative.z-0.s-block > div .bg-gray-100 {
     background: var(--2) !important;
     color:#fff !important
 }
+.slide--cat-entry i {
+    width: 3.5rem;
+}
 
 h2.font-medium.text-base.text-center.lg\:text-xl.mb-2\.5.lg\:mb-3\.5 {
   
