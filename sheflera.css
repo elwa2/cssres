@@ -362,6 +362,14 @@ div.relative.z-0.s-block > div .bg-gray-100 {
     
     color: var(--9);
 }
+@media (max-width:700px){
+.slide--cat-entry i {
+    background-color: transparent;
+    border-radius: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+}
 :root {
     --1: #577E63;
     --1-1: #7F8563;
