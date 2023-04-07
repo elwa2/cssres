@@ -444,8 +444,8 @@ footer .store-certificate b {
 
 /*زر العودة للمتجر*/
 .cart-nav-submit, .cart-nav-more, .cart-nav-solid {
-    background: var(--2);
-    border-color: var(--2);
+    background: var(--1);
+    border-color: var(--1);
 }
 
 /*ويدجت تسجيل جديد*/
