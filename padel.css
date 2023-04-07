@@ -103,7 +103,7 @@ element.style {
 #searchbox.prompt {
     padding: 7px 12px;
     text-align: right;
-    width: 75%;
+    /* width: 75%; */
     border: 0px solid rgb(221, 221, 221) !important;
     border-radius: 10px !important;
     background-color: rgba(0, 0, 0, 0.09) !important;
@@ -302,7 +302,7 @@ element.style {
 #searchbox.prompt {
     padding: 7px 12px;
     text-align: right;
-    width: 75%;
+    /* width: 97%; */
     border: 0px solid rgb(221, 221, 221) !important;
     border-radius: 10px !important;
     background-color: rgba(0, 0, 0, 0.09) !important;
@@ -329,7 +329,7 @@ element.style {
 header .sicon-cart::before {
     content: "\f291";
     font-family: 'FontAwesome' !important;
-    color: #fff !important;
+    color: var(--1) !important;
 }
 
 /*-----------------------------------------------*/
@@ -751,8 +751,18 @@ font-family: dinnextltarabic-regular!important;
     }
 }
 /*-----------------------------------------------*/
+
+.add-cart-large, .order-btn {
+    background: var(--1);
+    border-color: var(--main-text-color);
+}
+.site-header {
+    
+    background: #fff;
+}
+
 :root {
-    --main-color: #ffffff;
+    --main-color: #516ae3;
     --main-text-color: #dfdfdf;
     --main-text-color2: #a5a5a5;
     --infinte-color: #314ac3;
