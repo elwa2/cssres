@@ -329,7 +329,15 @@ element.style {
 header .sicon-cart::before {
     content: "\f291";
     font-family: 'FontAwesome' !important;
+    color: #fff !important;
+}
+
+@media (max-width:700px){
+header .sicon-cart::before {
+  
     color: var(--1) !important;
+}
+    
 }
 
 /*-----------------------------------------------*/
