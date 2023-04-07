@@ -312,6 +312,7 @@ button.s-button-disabled,button.s-button-disabled {
 .s-block--default-home-slider .swiper-slide .btn,.square-photos-grid .square-photos-item .photos-item-text .btn {
     background-color: var(--1)!important;
     color: #fff !important;
+    border: 0;
 }
 
 .s-block--default-home-slider .swiper-slide p {
@@ -349,7 +350,7 @@ div.relative.z-0.s-block > div .bg-gray-100 {
     border-radius: 15px;
 }
 
-#square-photos-3 > div > div > div:nth-child(1) > div.photos-item-text.justify-center.text-center.flex.has-overlay--before > div,#square-photos-3 > div > div > div:nth-child(1) > div.photos-item-text.justify-center.text-center.flex.has-overlay--before > div h3 {
+/* #square-photos-3 > div > div > div:nth-child(1) > div.photos-item-text.justify-center.text-center.flex.has-overlay--before > div,#square-photos-3 > div > div > div:nth-child(1) > div.photos-item-text.justify-center.text-center.flex.has-overlay--before > div h3 {
     background: transparent;
     border: 1px solid #fff0;
     color: #fff !important
@@ -359,7 +360,7 @@ div.relative.z-0.s-block > div .bg-gray-100 {
     background: transparent;
     border: 1px solid #fff0;
     color: #fff !important
-}
+} */
 
 .square-photos-grid .square-photos-item .photos-item-text .hero-slider-border h3,.s-block--default-home-slider .swiper-slide p {
     color: var(--1) !important
