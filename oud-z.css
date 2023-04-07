@@ -184,14 +184,11 @@ div.col-md-12 {
 }
 
 /* تقليل الكمية */
- 
-
 /* زيادة الكمية */
 .qty-field--custom .btn--qty-add,.qty-field--custom .btn--qty-sub,.qty-field--custom .form-control.single_product_quantity {
     background: var(--1);
     color: #fff;
 }
- 
 
 /* القسم السفلي لطلب المنتج والمفضلة*/
 .cart-fav {
@@ -625,8 +622,6 @@ ol.breadcrumb li:before {
     font-size: 16px;
 }
 
- 
-
 .product-detials__desc {
     color: #000;
     margin-bottom: 1.25rem;
@@ -926,9 +921,7 @@ a.circle-action.next.button-next {
 }
 
 .product.contain img {
-   
     margin: 10% auto !important;
-   
 }
 
 span.promotion-title {
@@ -1068,7 +1061,6 @@ body .product>a .product-title {
     font-weight: bold !important;
     color: var(--1) !important;
     padding: 0 20px !important;
-    
     overflow: hidden !important;
 }
 
@@ -1325,10 +1317,12 @@ body.salla-theme_3 .products-grid.eq-height .product-footer>.product-price {
 .product .product-footer {
     margin: 10px 0 40px !important;
 }
+
 .salla-theme_3 .product .product-footer .product-price,body.salla-theme_3 .products-grid.eq-height .product .product-title,body .product.contain >a .product-title {
     justify-content: center !important;
     text-align-last: center !important;
 }
+
 body.store-home:before {
     content: "";
     width: 100%;
@@ -1356,7 +1350,6 @@ body.store-home:before {
     }
 
     90% {
-
         opacity: 1;
     }
 
@@ -1364,4 +1357,12 @@ body.store-home:before {
         transform: scale(1);
         opacity: 0;
     }
+}
+
+.shipping-bar .free-shipping__bar>div>span,.shipping-bar .free-shipping__bar>div>div {
+    background: var(--1) !important;
+}
+
+.shipping-bar .free-shipping__label {
+    color: var(--1);
 }
