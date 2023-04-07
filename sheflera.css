@@ -265,7 +265,7 @@ button.s-button-disabled,button.s-button-disabled {
 @media (max-width: 700px) {
     div.relative.z-0.s-block > footer > div.footer-bottom.s-block > div > div > div.py-2\.5.md\:py-0 > ul > li {
         position: relative;
-        top: -22rem;
+        top: -21.5rem;
     }
 
     #app > div.relative.z-0.s-block > footer > div.store-footer__top > div > div > div.mb-2\.5.col-span-2 > a > img {
