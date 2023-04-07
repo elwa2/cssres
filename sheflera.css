@@ -390,6 +390,7 @@ div.relative.z-0.s-block > div .bg-gray-100 {
 }
 .slide--cat-entry i {
     width: 3.5rem;
+    width: 4.5rem !important;
 }
 
 h2.font-medium.text-base.text-center.lg\:text-xl.mb-2\.5.lg\:mb-3\.5 {
