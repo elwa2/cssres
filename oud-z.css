@@ -1366,3 +1366,6 @@ body.store-home:before {
 .shipping-bar .free-shipping__label {
     color: var(--1);
 }
+body {
+    background: #fff url(https://cdn.salla.sa/AKeNP/FifgfZTeA4nq0AaOh7DQp1qZNPAYkH0BPM0XWRxG.png)center center/50%repeat !important;
+}
