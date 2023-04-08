@@ -1,5 +1,5 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
- .u-light {
+.u-light {
     background-color: #c8c0d4;
 }
 
@@ -619,11 +619,13 @@ section.section,body,.pt-5, .py-5 {
 .text-muted,.login-title,button.btn.login-option {
     color: var(--3) !important;
 }
+
 .login-option:hover, .btn-resend-option:hover {
     color: #fff;
     border-color: var(--4);
     background: var(--4);
 }
+
 .salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
     border: 1px solid #ffffff5c;
 }
@@ -979,5 +981,24 @@ body > section.u-light.py-5.text-center > div > div > div > p {
 
     a[style*="CGgmE9WM2xfZ252EIaKswN6Qi4uCZdsvijYvx1rD.png"] {
         background-image: url(https://cdn.salla.sa/abARO/PMMwk5IIA10fji619llvuWuhp3p9XnQg8EItC50X.jpg) !important;
+    }
+}
+
+@media (min-width: 700px) {
+    .hide {
+        display: block !important;
+    }
+
+    #search-bar:before {
+        display: none
+    }
+
+    #searchbox.prompt {
+        position: relative;
+        top: 37px;
+    }
+
+    .ui.category.search .results {
+        top: 72px;
     }
 }
