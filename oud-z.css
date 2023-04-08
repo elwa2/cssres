@@ -1366,6 +1366,29 @@ body.store-home:before {
 .shipping-bar .free-shipping__label {
     color: var(--1);
 }
+
 body {
     background: #fff url(https://cdn.salla.sa/AKeNP/FifgfZTeA4nq0AaOh7DQp1qZNPAYkH0BPM0XWRxG.png)center center/50%repeat !important;
+}
+
+.sub-nav .sub-nav-content .sub-nav-header .logout-link.as-link {
+    background: #f55157;
+    color: #fff;
+    height: auto;
+    width: 110px;
+    padding: 10px;
+}
+
+@media (max-width: 700px) {
+    body > header > div > div > div.sub-nav > div > ul > li > a {
+        color: var(--1) !important;
+    }
+}
+.category-featured h3 {
+        color: #fff !important;
+        
+    }
+ .category-featured a:after {
+  
+    background: linear-gradient(to top,#71022c80 ,transparent);
 }
