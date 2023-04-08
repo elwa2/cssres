@@ -1015,8 +1015,9 @@ footer .footer-sub .footer-wrapper {
 
 .footer-item p {
     color: #868686 !important;
-    padding-left: 60px !important;
+    /* padding-left: 60px !important; */
     font-size: 12px !important;
+    text-align: center;
 }
 
 .footer-item .store-contact {
