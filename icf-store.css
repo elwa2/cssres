@@ -116,7 +116,7 @@ div.footer-item:nth-child(1)>.store-contact:nth-child(3)>a {
 
 .footer-main .row div.footer-item:nth-child(1)>.store-contact:nth-child(4) {
     text-align: center;
-    display: none;
+    /* display: none; */
 }
 
 .footer-main .row div.footer-item:nth-child(1)>.store-contact:nth-child(5) {
