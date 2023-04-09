@@ -217,13 +217,14 @@ i[] {
     min-height: unset;
 }
 
-body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
+ body > div.app-inner.flex.flex-col.min-h-full > header > div.store-header.w-full.top-0.rtl\:left-0.ltr\:right-0.z-10 > div > div > div.flex.justify-start.items-center > a.navbar-brand > img {
     content: var(--logo);
     height: 100%;
-    width: 103px;
+    width: 130px;
     max-height: unset !important;
     position: relative;
 }
+
 
 /* اضف للسلة  */
 .product-entry salla-add-product-button salla-button button:before {
