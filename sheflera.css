@@ -424,3 +424,9 @@ h2.font-medium.text-base.text-center.lg\:text-xl.mb-2\.5.lg\:mb-3\.5 {
 i.sicon-cart-add.border-primary {
     display: none;
 }
+@media (min-width: 700px) {
+    .main-menu li>a {
+        font-size: 1.2rem;
+    }
+}
+
