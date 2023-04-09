@@ -1082,3 +1082,13 @@ body > footer > div.footer-main > div > div > div:nth-child(3) > h2 > span:after
         background-position-x: 0px;
     }
 }
+body > footer > div.footer-main > div > div > div:nth-child(1) > h2 > a > img {
+    border: 0;
+    height: 102px;
+    width: 16rem;
+}
+
+
+body > footer > div.footer-main > div > div > div:nth-child(1) > h2 > a > img[src*="https://cdn.salla.sa/abARO/Uhj7czbTb5SIBPGwDWOZtzGcNLvSInWd2U3lVCV6.jpg"] {
+ content: var(--logo);
+}
