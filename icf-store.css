@@ -964,14 +964,14 @@ section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item
 body > section.u-light.py-5.text-center > div > div > div > p {
     color: var(--2)
 }
-  
+
 @media (min-width: 700px) {
     body:not(.salla-theme_6) section:nth-child(7) .category-featured {
         height: auto;
         padding: 155.25% 0 0;
     }
 
-/*     a[style*="n.salla.sa/form-builder/vMHrctvtPu1lwzGsLa4AbtTEaqf1zdIxnDzn5e3X.png"] {
+    /*     a[style*="n.salla.sa/form-builder/vMHrctvtPu1lwzGsLa4AbtTEaqf1zdIxnDzn5e3X.png"] {
         background-image: url(https://cdn.salla.sa/abARO/PMMwk5IIA10fji619llvuWuhp3p9XnQg8EItC50X.jpg) !important;
     }
 
@@ -983,7 +983,7 @@ body > section.u-light.py-5.text-center > div > div > div > p {
         background-image: url(https://cdn.salla.sa/abARO/PMMwk5IIA10fji619llvuWuhp3p9XnQg8EItC50X.jpg) !important;
     } */
 }
-  
+
 @media (min-width: 700px) {
     .hide {
         display: block !important;
@@ -997,8 +997,9 @@ body > section.u-light.py-5.text-center > div > div > div > p {
         position: relative;
         top: 37px;
     }
-    .site-header.sticky  #searchbox.prompt {
-        display:none
+
+    .site-header.sticky #searchbox.prompt {
+        display: none
     }
 
     .ui.category.search .results {
@@ -1011,6 +1012,7 @@ body > section:nth-child(8) .col-sm-4 {
     float: right;
     padding-right: 5px;
     padding-left: 5px;
+    display: none
 }
 
 /* @media (min-width: 700px) {
@@ -1036,7 +1038,6 @@ body > section:nth-child(8) .col-sm-4 {
         grid-row: 1/1;
     }
 } */
-
 body > footer > div.footer-main > div > div > div:nth-child(3) > h2 > span {
     font-size: 0;
 }
@@ -1050,4 +1051,34 @@ body > footer > div.footer-main > div > div > div:nth-child(3) > h2 > span:after
     content: ' 920000556    ';
     font-size: var(--font-size-medium);
     display: block
+}
+
+.banner img[src*="ajPHAFnTbd9UYH3mrUjQjdXvrGFo49hGo2eIhH2.png"] {
+    width: 0
+}
+
+.banner:has(img[src*="ajPHAFnTbd9UYH3mrUjQjdXvrGFo49hGo2eIhH2.png"]) {
+    content: '';
+    background: url(https://cdn.salla.sa/form-builder/NajPHAFnTbd9UYH3mrUjQjdXvrGFo49hGo2eIhH2.png);
+    background-repeat-y: no-repeat;
+    background-position-x: 0;
+    animation: elwaaa 500s linear alternate both infinite;
+    background-size: contain;
+    opacity: 1 !important;
+    width: 100% !important;
+    height: 11rem;
+}
+
+@keyframes elwaaa {
+    0% {
+        background-position-x: 0px;
+    }
+
+    50% {
+        background-position-x: 10000px;
+    }
+
+    100% {
+        background-position-x: 0px;
+    }
 }
