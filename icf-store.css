@@ -964,14 +964,14 @@ section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item
 body > section.u-light.py-5.text-center > div > div > div > p {
     color: var(--2)
 }
-/* 
+  
 @media (min-width: 700px) {
     body:not(.salla-theme_6) section:nth-child(7) .category-featured {
         height: auto;
         padding: 155.25% 0 0;
     }
 
-    a[style*="n.salla.sa/form-builder/vMHrctvtPu1lwzGsLa4AbtTEaqf1zdIxnDzn5e3X.png"] {
+/*     a[style*="n.salla.sa/form-builder/vMHrctvtPu1lwzGsLa4AbtTEaqf1zdIxnDzn5e3X.png"] {
         background-image: url(https://cdn.salla.sa/abARO/PMMwk5IIA10fji619llvuWuhp3p9XnQg8EItC50X.jpg) !important;
     }
 
@@ -981,9 +981,9 @@ body > section.u-light.py-5.text-center > div > div > div > p {
 
     a[style*="CGgmE9WM2xfZ252EIaKswN6Qi4uCZdsvijYvx1rD.png"] {
         background-image: url(https://cdn.salla.sa/abARO/PMMwk5IIA10fji619llvuWuhp3p9XnQg8EItC50X.jpg) !important;
-    }
+    } */
 }
- */
+  
 @media (min-width: 700px) {
     .hide {
         display: block !important;
@@ -997,13 +997,16 @@ body > section.u-light.py-5.text-center > div > div > div > p {
         position: relative;
         top: 37px;
     }
+    .site-header.sticky  #searchbox.prompt {
+        display:none
+    }
 
     .ui.category.search .results {
         top: 72px;
     }
 }
 
-body > section:nth-child(9) .col-sm-4 {
+body > section:nth-child(8) .col-sm-4 {
     width: calc(100%/4);
     float: right;
     padding-right: 5px;
