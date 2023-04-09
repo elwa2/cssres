@@ -819,7 +819,7 @@ body > section.u-light.py-5.text-center > div > div > div > div > i {
         display: flex;
         justify-self: center;
         position: relative;
-        right: 11vw;
+        right: 4vw;
     }
 }
 
@@ -964,12 +964,12 @@ section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item
 body > section.u-light.py-5.text-center > div > div > div > p {
     color: var(--2)
 }
-
+body:not(.salla-theme_6) section:nth-child(7) .category-featured {
+    height: auto;
+    padding: 155.25% 0 0;
+}
 @media (min-width: 700px) {
-    body:not(.salla-theme_6) section:nth-child(7) .category-featured {
-        height: auto;
-        padding: 155.25% 0 0;
-    }
+    
 
     /*     a[style*="n.salla.sa/form-builder/vMHrctvtPu1lwzGsLa4AbtTEaqf1zdIxnDzn5e3X.png"] {
         background-image: url(https://cdn.salla.sa/abARO/PMMwk5IIA10fji619llvuWuhp3p9XnQg8EItC50X.jpg) !important;
