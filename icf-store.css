@@ -768,11 +768,11 @@ body > section > div > div.section-header.d-flex.justify-content-between.align-i
     font-size: 15px;
 }
 
-body > section:nth-child(8) > div > div.section-header.d-flex.justify-content-between.align-items-center.mb-4 > h2 > span:after {
+body > section:nth-child(7) > div > div.section-header.d-flex.justify-content-between.align-items-center.mb-4 > h2 > span:after {
     content: "     عالم مميز يسحرك بتفاصيله    ";
 }
 
-body > section:nth-child(9) > div > div.section-header.d-flex.justify-content-between.align-items-center.mb-4 > h2 > span:after {
+body > section:nth-child(8) > div > div.section-header.d-flex.justify-content-between.align-items-center.mb-4 > h2 > span:after {
     content: "   مشاريعنا المميزة مع شركاء النجاح ";
 }
 
@@ -964,7 +964,7 @@ section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item
 body > section.u-light.py-5.text-center > div > div > div > p {
     color: var(--2)
 }
-
+/* 
 @media (min-width: 700px) {
     body:not(.salla-theme_6) section:nth-child(7) .category-featured {
         height: auto;
@@ -983,7 +983,7 @@ body > section.u-light.py-5.text-center > div > div > div > p {
         background-image: url(https://cdn.salla.sa/abARO/PMMwk5IIA10fji619llvuWuhp3p9XnQg8EItC50X.jpg) !important;
     }
 }
-
+ */
 @media (min-width: 700px) {
     .hide {
         display: block !important;
