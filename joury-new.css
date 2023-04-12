@@ -1,0 +1,232 @@
+span.text-center.footer-copyrights {
+    display: none
+}
+
+.bread-title {
+    color: var(--2);
+    font-weight: 700
+}
+
+.subTitle-detail .container div {
+    justify-content: center
+}
+
+.subTitle-detail {
+    background-color: transparent
+}
+
+.section-padding-space {
+    padding-bottom: 20px
+}
+
+@media(min-width: 770px) {
+    .features-section-img {
+        max-height:104px;
+        max-width: 104px
+    }
+}
+
+.category-item h3 {
+    font-weight: 700
+}
+
+ul.main-nav>li>a, .item-all-categories a {
+    color: var(--2);
+    font-weight: 700
+}
+
+.description-text-clear * {
+    color: var(--2)!important
+}
+
+.slide-menu ul li:first-child>div {
+    background: var(--logo)center top 2rem/11rem no-repeat transparent;
+    padding-top: 14rem
+}
+
+.slide-menu__slider>ul>li:nth-child(2) a {
+    text-align: center;
+    background: #fff;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3)!important;
+    border-radius: 50px;
+    margin: auto;
+    width: 60%;
+    color: var(--2);
+    height: 35px!important;
+    padding-top: 7px
+}
+
+.slide-menu ul a {
+    color: var(--2);
+    font-weight: 700
+}
+
+@media(max-width: 768px) {
+    .account-lang-currency .account-btn {
+        background-color:var(--2);
+        border: 0;
+        color: #fff
+    }
+
+    .account-lang-currency.upper-bar .container.d-flex.flex-wrap {
+        justify-content: center
+    }
+
+    .language-currency.language-currency-menu.d-flex.justify-content-between {
+        display: none!important
+    }
+
+    .menu-header-theme-bg-primary {
+        background: linear-gradient(52deg,var(--1)0%,var(--3)100%)
+    }
+}
+
+.menu-header-theme-bg-primary {
+    background: linear-gradient(52deg,var(--1)0%,var(--3)100%)
+}
+
+.header-theme-bg-primary {
+    background: linear-gradient(52deg,var(--1)0%,var(--3)100%)
+}
+
+.box-1-1.ratio21_9 div {
+    margin: 10px
+}
+
+.home section:nth-child(1) {
+    padding-bottom: 12rem;
+    clip-path: polygon(0 0,100%0%,100%73%,0%100%);
+    background: linear-gradient(52deg,var(--1)0%,var(--3)100%)
+}
+
+@media(max-width: 768px) {
+    .home section:nth-child(1) {
+        padding-bottom:5rem
+    }
+
+    .categories-slider .category-item {
+        width: 120px
+    }
+
+    .categories-slider {
+        height: 199px
+    }
+}
+
+.product-item .product-title>span, .product-item .product-price, .product-item .section-product-price {
+    text-align: center
+}
+
+.product-card-rating-wrapper {
+    text-align: center
+}
+
+a.btn.btn-primary.product-card-add-to-cart, a.btn.btn-primary.btn-product-card-select-variant {
+    background: linear-gradient(52deg,var(--1)0%,var(--3)100%);
+    color: var(--2)!important;
+    border: 0!important;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 1px 3px 3px 1px #f1f1f1
+}
+
+a.btn.btn-primary.btn-product-card-out-of-stock {
+    border: 0!important;
+    width: 100%;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: 600
+}
+
+.product-item {
+    padding-bottom: 5px
+}
+
+.features-section {
+    background: 0 0!important;
+    text-align: center;
+    margin-top: 1.5rem;
+    padding-top: 0
+}
+
+.features-section.section-padding-space::before {
+    content: "بماذا نتميز؟";
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+    color: var(--2)!important
+}
+
+.feature p {
+    color: var(--1);
+    font-weight: 700!important;
+    font-size: 1.2rem
+}
+
+.feature:nth-child(1) .features-section-img {
+    background: var(--1)
+}
+
+.feature:nth-child(2) .features-section-img {
+    background: #c6bdb2
+}
+
+.feature:nth-child(3) .features-section-img {
+    background: #bccdab
+}
+
+.features-section-img {
+    box-shadow: 1px 3px 3px 1px #f1f1f1;
+    border-radius: 100%;
+    padding: 10px
+}
+
+.footer::before {
+    content: var(--logo);
+    position: absolute;
+    z-index: 1;
+    margin-right: -84px
+}
+
+.footer {
+    text-align: center
+}
+
+footer.d-flex.flex-column {
+    background: linear-gradient(52deg,var(--1)0%,var(--3)100%);
+    clip-path: polygon(0 0,100%27%,100%100%,0 100%);
+    padding-top: 13rem
+}
+
+.footer-theme-bg-primary {
+    background-color: transparent
+}
+
+.store-section {
+    background-color: transparent
+}
+
+.social-icons.d-flex.flex-wrap {
+    justify-content: center
+}
+
+.footer-store-section-bars {
+    border-bottom: 0!important
+}
+
+.store-section h1 {
+    font-size: 15px
+}
+
+.store-section p {
+    font-size: 14px
+}
+
+:root {
+    --1: #c4a181;
+    --2: #a67c4d;
+    --3: #bd9672;
+    --logo: url(https://media.zid.store/cdn-cgi/image/h=175,q=85/https://media.zid.store/1aba6978-00d6-4e15-ae8f-ac6291fc5335/5d0386c5-0621-4e32-bc8f-890ae60db6fb-200x.png);
+}
