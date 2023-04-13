@@ -101,7 +101,7 @@ ul.main-nav>li>a, .item-all-categories a {
 
 @media(max-width: 768px) {
     .home section:nth-child(1) {
-        padding-bottom:5rem
+        padding-bottom:5rem;
     }
 
     .categories-slider .category-item {
@@ -229,4 +229,31 @@ body, html {
 
 .theme-title-primary,.product-item small {
     color: #ffffff!important;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-slider:after {
+        display: flex;
+        width: 100%!important;
+        background-image: url(https://media.zid.store/1aba6978-00d6-4e15-ae8f-ac6291fc5335/2b310745-c372-4183-9860-0e2cea92c253.png);
+        animation: Ads 80s infinite linear;
+        content: "";
+        height: 29px;
+        background-size: contain;
+        background-repeat: repeat-x;
+        background-position: center;
+        margin: 0 auto auto;
+        background-color:#fff;
+        margin-bottom: 50px;
+    }
+
+    @keyframes Ads {
+        0% {
+            background-position: 0 0
+        }
+
+        100% {
+            background-position: -2146px 0
+        }
+    }
 }
