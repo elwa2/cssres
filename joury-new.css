@@ -166,15 +166,15 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 }
 
 .feature:nth-child(1) .features-section-img {
-    background: var(--1)
+    /* background: var(--1) */
 }
 
 .feature:nth-child(2) .features-section-img {
-    background: #c6bdb2
+    /* background: #c6bdb2 */
 }
 
 .feature:nth-child(3) .features-section-img {
-    background: #bccdab
+    /* background: var(--1) */
 }
 
 .features-section-img {
