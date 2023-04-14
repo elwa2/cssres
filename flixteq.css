@@ -1,0 +1,2179 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@font-face {
+    font-family: bokra;
+    src: url("//alfont.com/wp-content/fonts/new-arabic-fonts/alfont_com_AlFont_com_4_CA.ttf");
+}
+
+@font-face {
+    font-family: bokra-bold;
+    src: url("//alfont.com/wp-content/fonts/new-arabic-fonts/alfont_com_AlFont_com_4_C9.ttf");
+}
+
+body, :not(i) {
+    font-family: bokra !important;
+}
+
+body {
+    background: #fafafa !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu > li > ul > li {
+    border-bottom: 1px dotted var(--color-main) !important;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder > span {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    background-color: var(--color-main);
+    color: rgb(255, 255, 255);
+    border-top: 0px solid rgb(238, 238, 238);
+    padding: 10px 15px !important;
+}
+
+.arcontactus-widget.md.right .arcontactus-prompt {
+    right: 70px;
+    display: none;
+}
+
+header.site-header.sticky .search-wrapper {
+    display: none;
+}
+
+.salla-theme_6 .product .product-price {
+    width: 100%;
+    text-align: center;
+}
+
+.salla-theme_6 .product-details__title {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px;
+    font-family: bokra-bold !important;
+}
+
+.product-details__title.brand-title img {
+    max-height: 100px;
+}
+
+.product-detials__desc {
+    padding: 25px !important;
+}
+
+.product-detials__desc * {
+    font-size: 12px !important;
+    line-height: 2 !important;
+}
+
+.product-form {
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 8px -3px;
+    border-radius: 15px;
+    padding: 20px !important;
+}
+
+.list--horizontal {
+    display: flex;
+    align-items: center;
+    place-content: center;
+    flex-flow: column nowrap;
+}
+
+.product-tags {
+    text-align: center;
+}
+
+.comment:last-child {
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.comment-name {
+    font-size: 14px;
+    font-family: bokra-bold !important;
+    color: var(--color-main) !important;
+}
+
+.comment-header img {
+    margin-left: 5px;
+    width: 35px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.ask-form {
+    padding-right: 60px;
+    padding-bottom: 1px;
+}
+
+.ask-form {
+    padding-left: 25px;
+    margin-right: 20px;
+    padding-right: 58px !important;
+}
+
+.product-details__title.brand-title {
+    flex-direction: column;
+}
+
+.store-notify {
+    margin-bottom: 2px !important;
+}
+
+.store-notify p {
+    color: inherit;
+    text-align: center;
+    margin: 0px;
+    font-weight: bold;
+    line-height: 1.5 !important;
+    font-size: 11px !important;
+}
+
+#bZFnqyf-1592301620635 {
+    position: fixed !important;
+    bottom: 0px !important;
+}
+
+.salla-theme_6 footer .store-contact a {
+    color: rgb(255, 255, 255) !important;
+}
+
+@media (min-width: 992px) {
+    .salla-theme_6 .feature-item {
+        border: 0px;
+        position: relative;
+        margin: 0px 6px 0px 0px;
+        width: 31%;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .salla-theme_6 .feature-item::after {
+        background: var(--color-main) !important;
+    }
+
+    .salla-theme_6 .section-header h2.section--title span {
+        position: relative;
+        right: 3px;
+        top: 5px;
+        color: rgb(241, 241, 241);
+        padding: 8px 10px;
+        border-bottom: 1px solid rgb(241, 241, 241);
+        font-weight: 400 !important;
+    }
+}
+
+@media screen and (min-width: 994px) {
+    .salla-theme_6 .site-header .header-top .logo a img {
+        display: block;
+        position: absolute;
+        margin: -64px 0px 0px;
+        border-radius: 43%;
+        height: 101px !important;
+        background: rgb(255, 255, 255) !important;
+    }
+
+    .site-header.sticky .header-top .logo a img {
+        margin: -39px 1px 1px;
+        height: 73px !important;
+        display: block !important;
+    }
+}
+
+.slick-list.draggable {
+    border-radius: 0px 0px 42px 42px;
+}
+
+.site-header {
+    background: rgb(255, 255, 255) !important;
+}
+
+.sub-nav__menu svg {
+    position: relative;
+    top: -11px;
+    border-radius: 5px;
+    fill: var(--color-main) !important;
+    background-color: rgba(0, 0, 0, 0.09) !important;
+    width: 34px !important;
+    height: 34px !important;
+}
+
+.salla-theme_6 .site-header__cart {
+    background: transparent;
+    border-radius: 50px;
+}
+
+.site-header__cart strong {
+    color: var(--color-main) !important;
+}
+
+.site-header__cart span {
+    color: var(--color-main) !important;
+}
+
+.salla-theme_6 .site-header__cart > div:first-child {
+    border-radius: 0px 24px 24px 0px;
+    background: var(--color-main) !important;
+}
+
+.site-header__cart span:first-child {
+    color: rgb(255, 255, 255) !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu > li ul > li {
+    background: transparent !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu > li ul > li a {
+    background: transparent !important;
+    color: var(--color-main) !important;
+    opacity: 0.9 !important;
+}
+
+.salla-theme_6 .site-header .header-top .logo {
+    display: block;
+    float: none !important;
+    margin: auto !important;
+}
+
+.salla-theme_6 .section-header .section-actions .circle-action, .salla-theme_6 .section-header .section-actions .button-more {
+    box-shadow: rgba(0, 0, 0, 0.61) 0px 2px 5px -3px;
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1) 0s;
+    background: rgb(26, 27, 29) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.salla-theme_6 .section-header .section-actions .circle-action:hover, .salla-theme_6 .section-header .section-actions .button-more:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.38) 2.5px 2.5px 5px, rgba(255, 255, 255, 0.08) -2.5px -2.5px 5px;
+}
+
+.circle-action {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0) !important;
+}
+
+.product-details__title.brand-title img {
+    margin-top: 30px;
+}
+
+.salla-theme_6 .product-details__social-share a {
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgba(152, 152, 152, 0.22) !important;
+}
+
+.list--tags li a {
+    color: rgb(161, 161, 161);
+    background: 0px center;
+    border: 1px solid;
+    border-radius: 6px !important;
+}
+
+.list--product-fields li.form-group .bootstrap-select > .btn.btn-default {
+    border-radius: 9px;
+    color: rgb(91, 162, 166);
+    border-color: rgb(232, 232, 232);
+}
+
+.bootstrap-select.btn-group .btn .filter-option {
+    font-size: 12px;
+    line-height: 2.3;
+    border-color: rgb(232, 232, 232);
+    color: rgb(0, 0, 0) !important;
+}
+
+.salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
+    border: 1px solid rgb(232, 232, 232);
+    border-radius: 15px !important;
+}
+
+.text-muted {
+    color: var(--color-main) !important;
+}
+
+.login-title {
+    color: var(--color-main);
+    margin-top: -3px !important;
+    margin-bottom: 30px !important;
+    font-family: bokra-bold !important;
+}
+
+.login-container .text-yellow-dark {
+    color: rgb(241, 241, 241);
+}
+
+.sicon-iphone::before {
+    content: "";
+}
+
+.sicon-mail::before {
+    content: "";
+}
+
+.sub-nav-header p {
+    color: rgb(241, 241, 241);
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.sub-nav .main-menu li a {
+    color: rgb(241, 241, 241);
+    font-size: 10px !important;
+    font-family: bokra-bold !important;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder > span {
+    font-family: bokra-bold !important;
+    font-size: 12px !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu > li ul > li a {
+    color: rgb(241, 241, 241) !important;
+    opacity: 1 !important;
+}
+
+#modal_login .modal-content {
+    border-radius: 20px;
+}
+
+.login-container .border-yellow-dark {
+    border-radius: 15px;
+    color: var(--color-main) !important;
+    border: 2px solid !important;
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.login-options span {
+    height: 11px;
+    display: inline-block;
+    margin: 17px 0px 0px !important;
+}
+
+.salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
+    border: 0px solid rgb(232, 232, 232);
+    color: rgb(255, 255, 255);
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    border-radius: 15px !important;
+}
+
+.cart-nav-more, .cart-nav-solid, .cart-nav-submit {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    border: 0px !important;
+    border-radius: 10px !important;
+}
+
+.btn-primary {
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    border: 0px !important;
+}
+
+.intl-tel-input-pro .intl-tel-input .form-control {
+    direction: rtl;
+    height: 36px;
+    border: 1px solid rgb(232, 232, 232) !important;
+    border-radius: 10px !important;
+}
+
+.form-control {
+    border-radius: 10px;
+    border: 1px solid rgb(232, 232, 232) !important;
+}
+
+.title--step::before {
+    font-weight: 400 !important;
+    border-radius: 8px !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.reply .comment-body {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.comment-body {
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+div.comment-header > span.text-semibold {
+    font-size: 10px;
+}
+
+.comment-time {
+    font-size: 9px;
+}
+
+ol.breadcrumb li {
+    font-size: 0.8rem;
+}
+
+.product-details__title {
+    color: var(--color-main) !important;
+}
+
+.promotion-title {
+    display: block;
+    width: auto;
+    position: absolute;
+    line-height: 20px;
+    top: 25px !important;
+    padding: 5px !important;
+    color: rgb(255, 255, 255) !important;
+    background-color: rgba(255, 97, 98, 0.93) !important;
+}
+
+.cart-total-box {
+    background: rgb(250, 250, 250) !important;
+}
+
+.salla-theme_6 .form-group.coupon {
+    background-color: rgb(255, 255, 255);
+}
+
+.owl-carousel .owl-item img {
+    border-radius: 20px;
+    border: 1px solid rgb(228, 228, 228);
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+    background: rgba(214, 214, 214, 0.76) !important;
+}
+
+.salla-theme_6 .site-header .header-top .search-wrapper #search .results .seach_container {
+    font-size: 12px;
+}
+
+.salla-theme_6 .section-header .btn.btn-rounded {
+    position: relative;
+    top: 10px;
+    left: 2px;
+    box-shadow: rgba(0, 0, 0, 0.61) 0px 2px 5px -3px;
+    line-height: 30px;
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    color: rgb(241, 241, 241) !important;
+    border: 0px !important;
+    font-size: 13px !important;
+    border-radius: 7px !important;
+    padding: 4px 19px 11px !important;
+}
+
+.salla-theme_6 section.section.has-slider .section-header .section-actions {
+    position: relative;
+    top: 10px;
+    left: 3px;
+}
+
+.dropdown-menu {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 7px 0px;
+    border-radius: 10px !important;
+    border: 0px !important;
+}
+
+.footer-main {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.14) 0px -2px 5px -3px;
+    margin-top: 30px;
+    text-align: center !important;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 95%;
+    padding: 0px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 6px 5px -3px;
+    overflow: hidden;
+    right: 9px !important;
+    border-radius: 10px !important;
+}
+
+.ytp-large-play-button svg {
+    filter: invert(1);
+}
+
+.salla-theme_6 footer .footer-title {
+    font-weight: 700 !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.footer-main p {
+    color: rgb(255, 255, 255) !important;
+    width: 100% !important;
+}
+
+.store-notify {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    margin-bottom: 2px !important;
+}
+
+.salla-theme_6 footer .footer-title span {
+    font-weight: 700 !important;
+    font-size: 19px !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.salla-theme_6 footer .footer-links a {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1) 0s;
+    color: rgb(255, 255, 255) !important;
+}
+
+.salla-theme_6 footer .footer-links a:hover, .salla-theme_6 footer .store-contact a:hover {
+    transform: translateY(-3px);
+    color: rgb(46, 187, 212) !important;
+}
+
+.footer-links a {
+    width: 95% !important;
+}
+
+.footer-links {
+    columns: auto 3;
+    padding-top: 16px;
+    font-size: 10px !important;
+}
+
+.salla-theme_6 .social__item span::before {
+    transform: scale(1.3) !important;
+}
+
+.salla-theme_6 .social__item span {
+    margin: 2px 1px 1px;
+    color: rgb(255, 255, 255) !important;
+}
+
+.salla-theme_6 footer .social__item a {
+    width: 15px;
+    height: 15px;
+    display: flex;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont .fs-rights {
+    order: 2;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    font-size: 10px;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont {
+    text-align: center;
+    flex-direction: column;
+}
+
+.salla-theme_6 .social__item {
+    float: none !important;
+}
+
+#order .product-page-buttons {
+    display: none !important;
+}
+
+@media only screen and (min-width: 992px) {
+    .salla-theme_6 .sub-nav .main-menu > li#offers a {
+        height: 40px;
+        background: transparent;
+        min-height: 46px;
+        padding-top: 4px;
+        color: rgb(34, 33, 39) !important;
+    }
+}
+
+.product .product-footer .product-price * {
+    font-size: 16px !important;
+    font-family: bokra-bold !important;
+}
+
+.bg-brand {
+    margin-top: 30px;
+    background: transparent !important;
+}
+
+.salla-theme_6 .testimonails-listing .slick-dots li.slick-active button {
+    background-color: var(--color-main) !important;
+}
+
+.section--title {
+    font-weight: 400;
+    color: rgb(241, 241, 241) !important;
+    font-family: bokra !important;
+}
+
+.salla-theme_6 .testimonails-listing .testimonials-item blockquote {
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 1px 12px -4px;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}
+
+.salla-theme_6 .testimonails-listing .slick-dots li button {
+    background-color: rgba(202, 202, 202, 0.6);
+}
+
+.salla-theme_6 .feature-item::after {
+    background: 0px 0px !important;
+}
+
+#search_form > div > div.ui.icon.input {
+    text-align: center;
+}
+
+#searchbox.prompt {
+    padding: 7px 12px;
+    text-align: right;
+    width: 75%;
+    border: 0px solid rgb(221, 221, 221) !important;
+    border-radius: 10px !important;
+    background-color: rgba(0, 0, 0, 0.09) !important;
+}
+
+.salla-theme_6 .site-header .sub-header .dropdown.dropdown-store-header .circle-action .sicon-user, .salla-theme_6 .site-header .sub-header .dropdown.dropdown-store-header .circle-action .sicon-bell {
+    background: rgba(255, 255, 255, 0) !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+@media (max-width: 990px) {
+    .circle-action {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 8px;
+        background: rgba(255, 255, 255, 0) !important;
+        color: var(--color-main) !important;
+        font-size: 20px !important;
+    }
+
+    .salla-theme_6 .site-header__mine-cart .badge {
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 7px;
+        font-weight: 600;
+        left: 20px;
+        color: var(--color-main) !important;
+    }
+
+    .salla-theme_6 .sub-nav .sub-nav-content.is-active a {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .salla-theme_6 .sub-nav .sub-nav-content.is-active a:hover, .salla-theme_6 .sub-nav .sub-nav-content.is-active li.sub-menu-header.categories-holder ul.store-categories li.has-children:hover, .salla-theme_6 .sub-nav .sub-nav-content.is-active li.has-children:hover a {
+        background: linear-gradient(227deg, rgb(37, 38, 43), var(--color-main)) !important;
+        color: rgb(12, 214, 216) !important;
+        border-radius: 0px !important;
+    }
+}
+
+.salla-theme_6 .site-header .header-top .search-container #searchbox {
+    height: 35px;
+    border-radius: 5px;
+    box-shadow: none;
+}
+
+.ui.category.search .results {
+    border-radius: 15px;
+    width: 75%;
+    margin-left: 12%;
+}
+
+.salla-theme_6 .site-header__mine-cart .badge {
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 7px;
+    color: rgb(241, 241, 241);
+    font-weight: 600;
+    left: 20px;
+}
+
+.sub-nav-header {
+    background: transparent !important;
+}
+
+.salla-theme_6 .product .product-footer .not-available {
+    display: block;
+    width: 100%;
+    margin: 10px 0px 0px;
+    background-color: rgb(255, 109, 109);
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    line-height: 30px;
+    text-align: center;
+    height: 50px !important;
+    padding: 10px 15px !important;
+    border-radius: 0px !important;
+    font-family: bokra-bold !important;
+}
+
+.sub-nav-header img {
+    display: none !important;
+    padding-bottom: 2px !important;
+    padding-top: 2px !important;
+}
+
+.sub-nav-header a {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    line-height: 35px;
+    border-radius: 7px;
+    color: var(--color-main) !important;
+}
+
+.salla-theme_6 .site-header .header-top .search-wrapper #search .results {
+    border-radius: 10px;
+    border: 1px solid rgb(247, 247, 247);
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 6px 6px;
+    margin-left: 11px;
+    top: 45px !important;
+    width: 95% !important;
+}
+
+.salla-theme_6 .site-header .header-top .search-wrapper #search .results .seach_container {
+    border: 0px !important;
+}
+
+.products-grid.eq-height .product, .products-grid.eq-height .thumbnail, .products-listing.eq-height .product, .products-listing.eq-height .thumbnail, body.salla-default #products_div.eq-height .product, body.salla-default #products_div.eq-height .thumbnail {
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.23) 0px 1px 12px -3px;
+}
+
+.salla-theme_6 .product-footer {
+    padding: 0px !important;
+}
+
+.salla-theme_6 .product .product-footer .product-add.add_to_cart_btn {
+    position: relative;
+    margin: 10px 0px 0px;
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 0px;
+    padding: 10px 15px !important;
+    color: rgb(255, 255, 255) !important;
+    font-family: bokra-bold !important;
+    height: 50px !important;
+}
+
+.salla-theme_6 .product .product-footer .product-add.add_to_cart_btn:hover {
+    background: linear-gradient(to left, rgb(0, 0, 0), rgb(34, 33, 39)) !important;
+    border: 0px !important;
+}
+
+.product-price {
+    font-weight: 400;
+}
+
+.salla-theme_6 .product .product-footer .product-add.add_to_cart_btn span:last-child {
+    font-family: bokra-bold !important;
+}
+
+.products-listing {
+    border: 0px !important;
+}
+
+.salla-theme_6 .product .product-price {
+    margin-bottom: 10px;
+}
+
+.salla-theme_6 .product > a .product-subtitle {
+    font-style: italic;
+    font-size: 12px;
+    color: rgb(50, 43, 33);
+    font-family: bokra-bold !important;
+}
+
+.product-details__price, .product-price {
+    color: var(--color-main) !important;
+}
+
+.salla-theme_6 .product > a .product-subtitle {
+    text-align: center !important;
+}
+
+.salla-theme_6 .product > a .promotion-title {
+    position: absolute;
+    font-size: 13px;
+    padding: 5px;
+    line-height: 14px;
+    font-weight: bold;
+    top: 20px !important;
+    color: rgb(185, 30, 34) !important;
+    background: linear-gradient(227deg, rgb(191, 149, 63), rgb(252, 246, 186)) !important;
+    left: 0px !important;
+    right: auto !important;
+}
+
+@media only screen and (max-width: 480px) {
+    .salla-theme_6 .product > a .promotion-title {
+        position: absolute;
+        font-size: 8px;
+        padding: 5px;
+        line-height: 14px;
+        font-weight: bold;
+        top: 11px !important;
+        color: rgb(185, 30, 34) !important;
+        background: rgb(226, 192, 150) !important;
+        left: 0px !important;
+        right: auto !important;
+    }
+
+    .feature-item {
+        margin: 9px 1px 1px;
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a {
+    font-size: 11px !important;
+}
+
+#sort #sort-toggle {
+    border-radius: 7px;
+    position: relative;
+    top: 8px;
+    left: 3px;
+    padding: 5px 10px;
+    box-shadow: rgba(0, 0, 0, 0.61) 0px 2px 5px -3px;
+    border: 0px !important;
+    font-size: 14px !important;
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+}
+
+.sub-nav__close svg {
+    fill: rgb(184, 194, 186);
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder > span {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    border-top: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(241, 241, 241);
+    padding: 5px 15px !important;
+}
+
+.footer-main p {
+    padding: 15px;
+    font-size: 13px;
+    line-height: 20px;
+    color: rgb(255, 255, 255) !important;
+    width: 100% !important;
+}
+
+.store-contact {
+    margin: 6px 0px 0px;
+    text-align: center;
+}
+
+.footer-links li {
+    font-size: 12px;
+}
+
+#order .add-cart-large {
+    width: 100%;
+    border-radius: 10px;
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    border: 0px !important;
+}
+
+.salla-theme_6 #ask_button {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    border: 0px !important;
+    border-radius: 7px !important;
+}
+
+#ask_register_link {
+    font-size: 10px;
+}
+
+#ask_textarea {
+    border-radius: 10px;
+    font-size: 12px;
+    line-height: 2;
+    border: 1px solid rgb(238, 238, 238) !important;
+}
+
+#sort #sort-options {
+    border-radius: 15px !important;
+}
+
+.salla-theme_6 .cart-box--custom .cart-step.active-step .step-cont .cart-title span {
+    color: rgb(55, 64, 66);
+}
+
+.salla-theme_6 .cart-box--custom .cart-step.active-step .step-cont svg *, .salla-theme_6 .cart-box--custom .cart-step .step-cont svg * {
+    fill: var(--color-main);
+    stroke: var(--color-main);
+}
+
+.salla-theme_6 .cart-box--custom .cart-step.active-step .step-cont .cart-number {
+    background-color: var(--color-main);
+}
+
+.list--product-fields li.form-group > label {
+    font-size: 15px;
+    line-height: 40px;
+}
+
+.salla-theme_6 .form-group.coupon {
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 9px -3px;
+    padding: 10px;
+    width: 80%;
+    position: relative;
+    right: 10%;
+    border-radius: 10px;
+}
+
+.form-group.coupon .btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+    padding: 18px;
+    border: 0px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    min-width: 65px;
+    color: rgb(255, 255, 255) !important;
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+#submit_cart {
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 5px 0px;
+    padding: 15px !important;
+    width: auto !important;
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    border: 0px !important;
+}
+
+.comment-badge {
+    font-size: 10px;
+    background: rgb(241, 241, 241);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+.salla-theme_6 .product-details .product-price {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+}
+
+.product-details__title.brand-title img {
+    margin: 0px;
+}
+
+.list--product-fields li.form-group--price > div, .list--product-fields li.form-group:not(.form-group--wide) label, .product-details__price, .product-show .product-details > div > div:nth-child(2) > div.mb-10 {
+    text-align: center;
+}
+
+.product-details__price .tax-label {
+    position: absolute;
+    width: 100%;
+    top: 95px;
+}
+
+.list--product-fields li.form-group--price > div .price-before {
+    position: inherit;
+    transform: translateY(0px);
+}
+
+li.form-group.qty-field-wrapper.form-group--wide {
+    padding: 0px;
+    text-align: center;
+}
+
+.list--product-fields li.form-group > label {
+    text-align: right;
+}
+
+.list--product-fields li.form-group > .product-option-select {
+    display: inline-table;
+}
+
+.comment-name {
+    margin-left: 60px;
+}
+
+.comment-badge {
+    margin-right: 45px;
+    margin-bottom: 10px;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont .fs-payment {
+    order: 1;
+}
+
+.comment-badge, div.comment-header > span.text-semibold {
+    position: relative;
+    top: -10px;
+}
+
+.product-details__title.brand-title > a {
+    margin-top: 15px;
+}
+
+.salla-theme_6 .site-header .header-top {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+body > header > div.container.py-3.header-top > div > div.col-md-3.d-flex.align-items-center.d-lg-block.actions-container > div {
+    display: flex;
+}
+
+@media only screen and (max-width: 700px) {
+    .salla-theme_6 .site-header .header-top .logo-wrapper {
+        width: calc(100% - 60px);
+    }
+
+    .salla-theme_6 .site-header .header-top .logo {
+        width: 100%;
+    }
+
+    .salla-theme_6 .site-header .header-top .logo a {
+        display: grid;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .salla-theme_6 .site-header .header-top .logo a img {
+        margin-right: 7%;
+    }
+
+    .list--product-fields li.form-group:not(.form-group--wide) label, .product-details__price {
+        margin-bottom: -2px;
+    }
+
+    body > header > div.container.py-3.header-top > div > div.col-md-3.d-flex.align-items-center.d-lg-block.actions-container {
+        position: absolute;
+        left: 1px;
+        top: 21px;
+        padding: 0px;
+    }
+}
+
+.store-contact a img {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.28) 0px 6px 6px -3px;
+    width: 130px !important;
+}
+
+.main-slider.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+    padding: 24px 0px 0px;
+}
+
+body > section:nth-child(44) .main-slider.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+    padding: 67px 0px 0px;
+}
+
+.main-slider.slick-dotted.slick-slider .slick-dots {
+    bottom: 10px !important;
+}
+
+.list--product-fields li.form-group:not(.form-group--wide) label, .product-details__price {
+    margin-bottom: 5px;
+}
+
+.social__item span {
+    font-size: 14px;
+}
+
+.salla-theme_6 .social__item {
+    border: 1px dashed rgba(255, 255, 255, 0.56);
+    border-radius: 53px;
+    padding: 8px;
+    background: linear-gradient(to left, var(--color-main), rgb(108 108 108 / 0%)) !important;
+}
+
+.salla-theme_6 .social__item:hover {
+    color: rgb(255, 255, 255) !important;
+    background: linear-gradient(to left, var(--color-main), rgb(12 12 12 / 0%)) !important;
+}
+
+.fs-payment {
+    display: initial;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont {
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.footer-sub {
+    background-color: rgb(255, 255, 255);
+}
+
+footer .footer-main .footer-payment img, footer .footer-sub .footer-wrapper img, footer .footer-sub .fs-cont img {
+    background: white;
+    border-radius: 7px;
+    padding: 2px 5px;
+}
+
+.fs-rights {
+    display: none;
+}
+
+.sub-header {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    color: rgb(255, 255, 255) !important;
+}
+
+.salla-theme_6 .site-header .sub-header {
+    padding: 6px 0px !important;
+}
+
+.salla-theme_6 .site-header .sub-header #cl_switcher_wrapper #cl_switcher #cl_toggle span {
+    color: rgb(241, 241, 241);
+}
+
+.salla-theme_6 .site-header .sub-header #cl_switcher_wrapper #cl_switcher #cl_toggle::after {
+    color: rgb(241, 241, 241) !important;
+}
+
+.sub-nav {
+    text-align: center;
+    margin-bottom: 1px;
+    background: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255)) !important;
+}
+
+.sub-nav a {
+    color: rgb(56, 66, 68) !important;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder > span {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    border-top: 0px solid rgb(238, 238, 238);
+    padding: 10px 15px !important;
+    background: transparent !important;
+}
+
+@media (max-width: 991px) {
+    .sub-nav .sub-nav-content .main-menu > li {
+        border-bottom: 0px solid rgb(244, 244, 244);
+        padding: 0px 1rem;
+        margin-left: 0px !important;
+    }
+}
+
+a.login-link {
+    color: rgb(241, 241, 241) !important;
+}
+
+.py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white {
+    background-color: rgb(230, 172, 62);
+    color: var(--color-main);
+    padding-left: 28px;
+    border-radius: 7px;
+    display: inline-block;
+    margin-bottom: 30px !important;
+}
+
+.section-header .section--title {
+    color: var(--color-main);
+}
+
+.salla-theme_6 .product > a .promotion-title {
+    background-color: rgb(230, 172, 62);
+}
+
+@media only screen and (max-width: 992px) {
+    .salla-theme_6 .section-header .btn.btn-rounded {
+        height: 37px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body.font-dubai .section-actions .circle-action.button-more, body.font-dubai .section-header .btn.btn-rounded {
+        line-height: 36px !important;
+    }
+}
+
+.salla-theme_6 .section-header .section-actions .button-more {
+    background: rgba(255, 255, 255, 0);
+}
+
+#sort #sort-toggle {
+    height: 37px;
+    line-height: 25px;
+    margin-right: 5px;
+    border-radius: 7px;
+    border: 1px solid rgb(226, 226, 226);
+}
+
+.section--title::before {
+    display: flex;
+    content: "";
+    flex-direction: column;
+}
+
+.py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white {
+    color: var(--color-main);
+    border-radius: 7px;
+    display: inline-flex;
+    flex-flow: column wrap;
+    place-content: stretch center;
+    align-items: center;
+    padding: 10px 30px;
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    margin-bottom: 30px !important;
+}
+
+.py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white {
+    background-color: rgb(230, 172, 62);
+    color: var(--color-main);
+}
+
+.footer-title, .store-contact, .social {
+    text-align: center !important;
+}
+
+.salla-theme_6 .social__item {
+    text-align: center !important;
+    margin: auto !important;
+    justify-items: center !important;
+    float: none !important;
+}
+
+.social {
+    justify-items: center;
+    text-align: center !important;
+    margin: auto !important;
+}
+
+.salla-theme_6 .section-header h2.section--title span {
+    position: relative;
+    right: 3px;
+    top: 15px;
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(241, 241, 241);
+    box-shadow: rgba(0, 0, 0, 0.61) 0px 2px 5px -3px;
+    padding: 11px 19px;
+    font-weight: 800 !important;
+    background: linear-gradient(227deg, var(--color-main), rgb(37, 37, 43)) !important;
+    font-size: 0.9rem !important;
+    border-radius: 7px !important;
+}
+
+.sub-nav-header a {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1) 0s;
+    color: rgb(255, 255, 255) !important;
+}
+
+.sub-nav-header a:hover {
+    transform: translateY(-3px);
+    box-shadow: rgb(35, 34, 40) 2.5px 2.5px 5px, rgb(66, 71, 77) -2.5px -2.5px 5px;
+    color: rgb(220, 220, 220) !important;
+}
+
+.salla-theme_6 footer .col-md-4:nth-of-type(2) .footer-title span {
+    color: rgb(68, 68, 70) !important;
+    border: none !important;
+}
+
+.salla-theme_6 footer .col-md-4:nth-of-type(2) .footer-title {
+    display: none;
+    color: rgb(68, 68, 70) !important;
+    border: none !important;
+}
+
+.list--horizontal {
+    flex-direction: inherit !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu > li.has-children > a:hover, .salla-theme_6 .sub-nav .main-menu > li > a:hover {
+    border-radius: 12px;
+    padding-left: 30px !important;
+    background: linear-gradient(227deg, rgb(191, 149, 63), rgb(252, 246, 186)) !important;
+    color: var(--color-main) !important;
+}
+
+.icons {
+    padding: 8px 18px;
+    border-radius: 24px;
+    color: var(--color-main) !important;
+}
+
+.icons b {
+    margin: 6px 7px 1px 1px;
+    color: var(--color-main) !important;
+}
+
+.font-13 b {
+    color: rgb(255, 255, 255) !important;
+}
+
+.fs-payment::before {
+    content: " الحقوق محفوظة  " " " "متجر FlixTeq للمنتجات الرقمية";
+    color: rgb(153, 153, 153);
+    font-size: 12px;
+    display: block;
+}
+
+.fs-payment::after {
+    content: "تصميم " " " "3lwaaa@gmail.com";
+    color: rgb(153, 153, 153);
+    font-size: 10px;
+    display: block;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont .fs-payment img {
+    width: auto;
+    max-width: 73px;
+    height: auto;
+    max-height: 29px;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont {
+    padding: 0px !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu > li#offers a:hover {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+}
+
+.qty-field--custom .form-control.single_product_quantity {
+    border-radius: 8px !important;
+}
+
+.promotion-title {
+    color: rgb(217, 217, 217) !important;
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+}
+
+.product-offer {
+    border-radius: 15px !important;
+}
+
+.banner img {
+    border-radius: 35px !important;
+}
+
+.banner img {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+}
+
+.modal-content, .panel {
+    /* background-color: rgb(250, 250, 250) !important; */
+}
+
+.products-listing {
+    background: transparent !important;
+}
+
+.salla-theme_6 .u-light {
+    background-color: transparent !important;
+}
+
+@media only screen and (max-width: 992px) {
+    body.font-dubai.salla-theme_6 .site-header .header-top .search-wrapper #search #searchbox.prompt {
+        margin: 5px;
+        padding: 19px 35px !important;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    body.font-dubai.salla-theme_6 .site-header .header-top .search-wrapper #search #searchbox.prompt {
+        margin: 5px;
+        padding: 19px 35px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .sub-nav .sub-nav-content {
+        background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    }
+}
+
+@media (max-width: 991px) {
+    .main-menu li i {
+        margin-left: 5px;
+        color: rgb(81, 77, 69);
+        font-size: 18px;
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a {
+    min-height: 40px;
+    padding: 13px 15px !important;
+}
+
+.footer-main:before {
+    content: "";
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='500' height='300'%3E%3Cpath d='M0 178c33.4-19.2 100.2-111.2 167-96 66.8 15.2 100.4 166.8 167 172 66.6 5.2 132.8-116.8 166-146v192H0z' fill='%23fafafa'/%3E%3C/svg%3E");
+    display: block;
+    background-repeat: round;
+    transform: rotate(180deg);
+    height: 144px;
+    margin: -52px -32px 1px 1px;
+}
+
+@media (max-width: 750px) {
+    .footer-main:before {
+        height: 117px;
+        margin: -33px -32px -3px 1px;
+    }
+}
+
+.footer-main {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+}
+
+.category-featured:hover::before, .feature-item:hover::before {
+    animation: 0.75s ease 0s 1 normal none running circle;
+}
+
+.product:hover::before {
+    animation: 0.75s ease 0s 1 normal none running circle;
+}
+
+@keyframes mvt {
+    0% {
+        transform: scale(0.8);
+    }
+
+    40% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes tournemoi {
+    0% {
+        transform: rotate(-2deg);
+    }
+
+    40% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.feature-item__icon {
+    background: rgb(26, 27, 29);
+    border: 1px solid rgb(255, 255, 255);
+}
+
+.feature-item__icon a * {
+    color: rgb(255, 255, 255) !important;
+}
+
+.feature-item p {
+    font-size: 14px;
+    color: rgb(241, 241, 241);
+    font-family: dinnextltarabic-regular !important;
+}
+
+.feature-item h3 {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-family: bokra !important;
+    color: rgb(255, 255, 255) !important;
+}
+
+.feature-item p {
+    color: rgb(255, 255, 255);
+}
+
+.product-details__hot, .product-details__hot strong {
+    color: var(--color-main) !important;
+}
+
+.feature-item {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) 0% 0% / 400% 400%;
+    animation: 15s ease 0s infinite normal none running gradient;
+    color: rgb(255, 255, 255);
+    border-radius: 4px 37px 7px;
+}
+
+@media only screen and (max-width: 700px) {
+    .salla-theme_6 .site-header .header-top .logo a img {
+        height: 80px !important;
+    }
+
+    .feature-item {
+        border-radius: 4px 37px 7px;
+        background: transparent !important;
+    }
+
+    .feature-item {
+        color: rgb(26, 27, 29) !important;
+    }
+
+    .feature-item h3 {
+        color: rgb(26, 27, 29) !important;
+    }
+
+    .feature-item p {
+        color: rgb(26, 27, 29) !important;
+    }
+}
+
+a.offers-link {
+    margin: 1px !important;
+}
+
+@media only screen and (min-width: 992px) {
+    .salla-theme_6 .sub-nav .main-menu > li#offers a {
+        padding-top: 9px;
+    }
+
+    .product:hover {
+        animation: 1s ease 0s 1 normal none running tournemoi;
+    }
+}
+
+.salla-theme_6 footer .footer-title {
+    border-bottom: 0px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 800px) {
+    .products-listing .slick-track .slick-slide {
+        display: inline-flex !important;
+        justify-content: flex-start !important;
+        margin: 0px !important;
+        max-width: 174px !important;
+        float: right !important;
+    }
+}
+
+.products-listing .slick-track {
+    justify-content: flex-start !important;
+}
+
+.banner img {
+    display: block;
+    max-width: 103%;
+    border-top: 0px solid var(--color-main);
+}
+
+@media only screen and (max-width: 700px) {
+    .banner img {
+        display: block;
+        max-width: 108%;
+        border-top: 0px solid var(--color-main);
+        margin: -37px -15px 0px 0px !important;
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories > li a::before, .sub-nav .main-menu li.sub-menu-logged-in a i, .sub-nav .main-menu li.sub-menu-header.categories-holder > span i {
+    content: "";
+    font-size: 16px;
+    margin-left: 5px;
+    color: rgb(238, 238, 238);
+    background: var(--color-main);
+    padding: 5px;
+    border-radius: 50px;
+    border: 1px solid rgb(178, 178, 178);
+    vertical-align: middle;
+    font-family: sallaicons, icomoon !important;
+}
+
+i.sicon-tag {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.main-menu li:not(.sub-menu-logged-in) > a::before {
+    content: "";
+    font-size: 16px;
+    margin-left: 5px;
+    padding: 5px;
+    vertical-align: middle;
+    font-family: sallaicons, icomoon !important;
+}
+
+.sub-nav .main-menu li#ls_switcher_mobile a::before {
+    content: "";
+    font-family: sallaicons;
+    display: initial;
+    vertical-align: middle;
+    font-size: 16px;
+    color: rgb(238, 238, 238) !important;
+    margin-left: 5px !important;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder > ul.store-categories > li > a:hover::before, .sub-nav .main-menu li.sub-menu-header.categories-holder > ul.store-categories > li.has-children:hover > a::before {
+    filter: brightness(0.81) !important;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder > ul.store-categories > li:nth-child(n) > a::before, .main-menu > li:nth-last-child(n) > a::before {
+    content: "" !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu li.has-children:hover a {
+    color: rgb(39, 41, 46) !important;
+}
+
+.salla-theme_6 .sub-nav .main-menu > li > a {
+    font-size: 0.7rem !important;
+}
+
+@media only screen and (min-width: 992px) {
+    .salla-theme_6 .sub-nav .main-menu > li > ul, .salla-theme_6 .sub-nav .main-menu > li > ul > li.has-children > ul {
+        background: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255)) !important;
+        color: rgb(47, 53, 57) !important;
+    }
+}
+
+.salla-theme_6 .site-header .header-top .search-wrapper #search #searchbox.prompt {
+    background-position: left 1rem center !important;
+}
+
+#sort #sort-toggle:focus, #sort #sort-toggle:hover {
+    background: rgb(209, 161, 75) !important;
+    border-color: var(--color-main) !important;
+}
+
+@media (max-width: 765px) {
+    .footer-main .store-contact {
+        margin: 15px 0px 0px !important;
+    }
+
+    .footer-links {
+        columns: auto 4;
+        padding-top: 0px !important;
+    }
+
+    footer .store-certificate img {
+        margin-bottom: -12px !important;
+    }
+}
+
+.footer-title {
+    padding-bottom: 0px !important;
+    margin-bottom: 0.5rem !important;
+}
+
+@media only screen and (min-width: 420px) {
+    .salla-theme_6 .section-header .section--title {
+        flex: 1 0 0px;
+        margin: -24px 1px 1px;
+    }
+}
+
+header.site-header::after {
+    content: "";
+    height: 5px;
+    position: absolute;
+    width: 100%;
+    background: repeating-linear-gradient(45deg, transparent, var(--color-main) 10%, transparent);
+    z-index: 0;
+    transform: scaleX(1);
+    transition: all 0.5s ease-in-out 0s;
+    opacity: 0.17;
+}
+
+body[style] .site-header::after {
+    transform: scaleX(0);
+}
+
+.salla-theme_6 .u-light .section--title {
+    border-radius: 30px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    width: 200px;
+    font-size: 0px;
+    padding-bottom: 8px !important;
+    padding-top: 0px !important;
+}
+
+.salla-theme_6 .u-light .section--title::after {
+    content: "بماذا نتميز";
+    text-indent: 0px;
+    line-height: initial;
+    font-size: 15pt;
+    display: block !important;
+    color: rgb(36, 35, 41) !important;
+}
+
+@media only screen and (max-width: 991px) {
+    .salla-theme_6 .u-light .section--title::after {
+        height: 15px;
+    }
+}
+
+body > section.u-light.py-5.text-center > div > div > div > div > i {
+    content: "";
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(255, 255, 255);
+    width: 90px;
+    height: 90px;
+    display: block;
+    background-position: center 5px;
+    background-size: 82% !important;
+    font-size: 0;
+}
+
+body > section.u-light.py-5.text-center > div > div > div:nth-child(1) > div > i {
+    background-image: url("https://cdn.salla.sa/WAaN/zVD2Aa9jD4MTRFqE6lBXbSBWOvpfd5mCpOExngOu.gif");
+}
+
+body > section.u-light.py-5.text-center > div > div > div:nth-child(2) > div > i {
+    background-image: url("https://cdn.salla.sa/WAaN/5pd8LcG9Xv0LDRNaxCN8rfSXSnZKcYZxiSMoLgxw.gif");
+}
+
+body > section.u-light.py-5.text-center > div > div > div:nth-child(3) > div > i {
+    background-image: url("https://cdn.salla.sa/WAaN/GV9jc9fKyvKik0tzDe1QXzPNtKQSKxivIzrU5vgE.gif");
+}
+
+section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item .feature-item__icon i.sicon-headset::before, section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item .feature-item__icon i.sicon-back::before, section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item .feature-item__icon i.sicon-crdit-card-alt::before {
+    display: none;
+}
+
+.u-light .row {
+    justify-content: space-evenly;
+    display: flex !important;
+}
+
+.feature-item__icon {
+    width: 84px;
+    height: 84px;
+}
+
+.u-light .section--title {
+    text-indent: -9999px;
+    line-height: 0;
+}
+
+.feature-item:not(:last-child) {
+    border-width: 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-top-color: rgb(218, 218, 218);
+    border-right-color: rgb(218, 218, 218);
+    border-left-color: rgb(218, 218, 218);
+    border-image: initial;
+    border-bottom-style: initial;
+    border-bottom-color: initial;
+}
+
+.feature-item__icon {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+.main-slider {
+    margin-top: 5px !important;
+}
+
+.main-slider img {
+    width: 98% !important;
+    max-width: 1200px !important;
+    margin: auto !important;
+    border-radius: 35px !important;
+}
+
+.py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid var(--color-main);
+    inset: -6px;
+    border-radius: 7px;
+    width: auto;
+    height: auto;
+    background: url("");
+}
+
+.py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white::after {
+    animation: 5s cubic-bezier(0.6, -0.28, 0.74, 0.05) 0s infinite normal none running ShineAnimation;
+}
+
+@-webkit-keyframes ShineAnimation {
+    0% {
+        background-repeat: no-repeat;
+        background-image: -webkit-linear-gradient(left top, rgba(255, 255, 255, 0) 0px, rgba(255, 255, 255, 0) 45%, rgba(255, 255, 255, 0.5) 48%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.5) 52%, rgba(255, 255, 255, 0) 57%, rgba(255, 255, 255, 0) 100%);
+        background-position: -250px -250px;
+        background-size: 600px 600px;
+    }
+
+    100% {
+        background-repeat: no-repeat;
+        background-position: 250px 250px;
+    }
+}
+
+.py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white {
+    background: linear-gradient(227deg, rgb(191, 149, 63), rgb(252, 246, 186));
+    color: var(--color-main);
+    border-radius: 7px;
+    display: inline-flex;
+    flex-flow: column wrap;
+    place-content: stretch center;
+    align-items: center;
+    padding: 10px 30px;
+    margin-bottom: 30px !important;
+}
+
+.icons {
+    background: var(--color-main);
+    padding: 8px 18px;
+    border-radius: 24px;
+    color: rgb(255, 255, 255) !important;
+}
+
+.salla-theme_6 footer .footer-sub .fs-cont {
+    text-align: center;
+    flex-direction: column;
+    padding-top: 50px !important;
+}
+
+.header-top, .site-header {
+    background: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.14) 0px 2px 5px -3px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.store-home .site-header {
+    margin-bottom: 10px;
+}
+
+.list--tags li a:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+}
+
+.sub-nav .main-menu li#ls_switcher_mobile {
+    border-top: 0px solid rgb(238, 238, 238) !important;
+}
+
+.salla-theme_6 .cart-box--custom .cart-step .step-cont .cart-number {
+    color: var(--color-main));
+    background-color: rgb(119, 175, 168);
+}
+
+.salla-theme_6 .cart-box--custom .cart-step.active-step .step-cont .cart-title small {
+    color: rgb(255, 255, 255);
+    background-color: var(--color-main);
+}
+
+.comment-badge {
+    font-size: 10px;
+    background: var(--color-main);
+    color: rgb(255, 255, 255);
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 991px) {
+    footer .footer-main .store-certificate {
+        margin: 15px 25px 0px 0px !important;
+    }
+
+    footer .store-certificate img {
+        max-width: 55px;
+        max-height: 39px;
+        margin-left: 10px;
+    }
+}
+
+.a2a_overlay {
+    background: rgb(0, 0, 0) !important;
+}
+
+#a2a_copy_link {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    animation: 8s ease 0s infinite normal none running zoomme !important;
+}
+
+#a2a_modal input#a2a_copy_link_text {
+    color: rgb(255, 255, 255) !important;
+    font-size: 1.1rem !important;
+}
+
+.a2a_menu {
+    border-radius: 20px !important;
+}
+
+@keyframes zoomme {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+i.sicon-tag {
+    background: transparent !important;
+    border: 0px !important;
+}
+
+@media only screen and (max-width: 991px) {
+    ol.breadcrumb li, ol.breadcrumb li a {
+        display: inline-block;
+        font-size: 0.7rem !important;
+    }
+
+    .sub-nav .main-menu li.sub-menu-header.categories-holder span, i.sicon-tag {
+        font-size: 1.3rem !important;
+        color: var(--3)!important;
+    }
+}
+
+.bg-danger {
+    font-size: 1rem;
+    text-shadow: rgb(38, 42, 53) 2px 1px 3px;
+    color: rgb(255, 255, 255) !important;
+    background-color: var(--color-main) !important;
+}
+
+.salla-theme_6 .slick-slider .slick-dots {
+    bottom: -20px;
+}
+
+.cart-fav .btn-rounded.add-to-wishlist, .cart-fav .btn-rounded.remove-from-wishlist {
+    color: rgb(222, 40, 40) !important;
+}
+
+@media only screen and (max-width: 450px) {
+    .banner img {
+        margin-top: 0px !important;
+    }
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a, .sub-nav .main-menu > li.sub-menu-logged-in a {
+    display: flex;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories > li a::before, .sub-nav .main-menu li.sub-menu-logged-in a i, .sub-nav .main-menu li.sub-menu-header.categories-holder > span i, .sub-nav .main-menu li.sub-menu-logged-in a i {
+    height: 30px;
+    width: 30px;
+    vertical-align: middle !important;
+    line-height: 15pt !important;
+}
+
+.sub-nav .main-menu li.sub-menu-header.categories-holder ul.store-categories li a {
+    line-height: 25pt !important;
+}
+
+.footer-main, .salla-theme_6 .product .product-footer .product-add.add_to_cart_btn, .sub-nav-header a, .store-notify, .sub-header {
+    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+}
+
+.salla-theme_6 .site-header .sub-header .th-main-phone-no {
+    background-color: transparent;
+    border-radius: 3px;
+    box-shadow: none;
+    color: transparent;
+    line-height: 1;
+    overflow: hidden;
+}
+
+@media (max-width: 991px) {
+    .sub-nav .sub-nav-content {
+        background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    }
+}
+
+.site-header, .header-top {
+    background: transparent !important;
+}
+
+.site-header.sticky {
+    backdrop-filter: blur(3px);
+    /* z-index: 10000000000000000000000000000; */
+    background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.sub-nav-header::before, .footer-main .container::before, .login-form .panel-title::before {
+    content: "";
+    background: transparent var(--logo) center 0rem/ 37% no-repeat;
+    height: 70px!important;
+    display: block;
+    margin: auto;
+}
+
+.sub-nav-header::before {
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 0rem;
+    height: 115px !important;
+    margin: 15px;
+}
+
+.footer-main .container::before {
+    background-position-x: center;
+    background-position-y: 0rem;
+    height: 83px!important;
+    width: 56%;
+    background-size: contain;
+    /* filter: contrast(0.5); */
+}
+
+.login-form .panel-title::before {
+    height: 100px!important;
+    width: 100%;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 0rem;
+}
+
+.login-form .panel-title .icon-object {
+    display: none !important;
+}
+
+.sub-nav-header img {
+    display: none;
+}
+
+.panel {
+    background-color: transparent;
+}
+
+.modal-content {
+    background: linear-gradient(10deg,#545488,#545488,#545488,#2a2a46) ;
+}
+
+.text-muted,.login-title,button.btn.login-option {
+    color: #ffffff!important;
+}
+
+.salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
+    border: 1px solid #ffffff5c;
+}
+
+@media screen and (min-width: 994px) {
+    .salla-theme_6 .site-header .header-top .logo a img {
+        backdrop-filter: blur(3px);
+        background: rgba(255, 255, 255, 0.1) !important;
+    }
+}
+
+.category-grid {
+    display: flex;
+    margin-left: -1.8rem;
+}
+
+@media (max-width: 965px) {
+    .category-grid {
+        margin-left: 0px !important;
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    body > section .category-grid {
+        margin-left: 0rem !important;
+    }
+
+    body > section .category-grid > div {
+        width: 30% !important;
+        padding: 3px !important;
+        margin-right: 8px !important;
+    }
+}
+
+body > section .category-grid > div .category-featured a img, body > section .category-grid > div .category-featured img.cat-featured-img {
+    display: none;
+}
+
+body > section .category-grid, body > section .category-grid > div .category-featured {
+    display: flex;
+    margin: 0px 0px 1px;
+    z-index: 1;
+    height: 480px !important;
+}
+
+body > section .container .category-grid > div .category-featured a {
+    border-radius: 15px;
+}
+
+body > section .category-grid > div .category-featured:hover {
+    opacity: 0.8;
+    transform: translateY(-5px);
+    filter: grayscale(1);
+}
+
+/* body > section .category-grid > div .category-featured:hover {
+    transform: rotate(5deg) translate3d(0px, 3%, 0px);
+    filter: none;
+} */
+@media only screen and (max-width: 1000px) {
+    body > section .category-grid > div {
+        width: 47% !important;
+        padding: 3px !important;
+        margin-right: 8px !important;
+    }
+}
+
+body > section .category-grid > div .category-featured a img, body > section .category-grid > div .category-featured img.cat-featured-img {
+    display: none;
+}
+
+@media only screen and (max-width: 850px) {
+    body > section:nth-of-type(n) .category-grid > div {
+        width: 22% !important;
+    }
+
+    body > section:nth-of-type(n) .category-grid, body > section:nth-of-type(n) .category-grid > div .category-featured {
+        display: flex;
+        margin: 0px 0px 1px;
+        height: 221px !important;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    body > section:nth-of-type(n) .category-grid, body > section:nth-of-type(n) .category-grid > div .category-featured {
+        height: 136px !important;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .salla-theme_6 .section {
+        padding: .5rem 0px 0 !important;
+    }
+}
+
+body > section:nth-of-type(n) .container .category-grid > div .category-featured a {
+    border-radius: 15px;
+}
+
+:root {
+    --main-color: #3c0080;
+    --main-text-color: #1c0060;
+    --main-text-color2: #000026;
+    --infinte-color: #1c0060;
+    --main-text-color-dark: #8f75ff;
+    --color-main: #3c0080;
+    --color-main-d: #8f75ff;
+    --color-main-l: #8f75ff;
+    --color-main-reverse: #aa46d7;
+    --color-text: #5a5a5a;
+    --color-text-reverse: #aa46d7;
+    --color-title: #aa46d7;
+    --1: #3c0080;
+    --2: #8f75ff;
+    --3: #aa46d7;
+    --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 333.4 257.22'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: url(%23linear-gradient-2); %7D .cls-2 %7B fill: %23fff; %7D .cls-3 %7B fill: url(%23linear-gradient-15); %7D .cls-4 %7B fill: url(%23linear-gradient-14); %7D .cls-5 %7B fill: url(%23linear-gradient-6); %7D .cls-6 %7B fill: url(%23linear-gradient-11); %7D .cls-7 %7B fill: url(%23linear-gradient-10); %7D .cls-8 %7B fill: url(%23linear-gradient-5); %7D .cls-9 %7B fill: url(%23linear-gradient-7); %7D .cls-10 %7B fill: url(%23linear-gradient-9); %7D .cls-11 %7B fill: url(%23linear-gradient-3); %7D .cls-12 %7B fill: url(%23linear-gradient); %7D .cls-13 %7B fill: url(%23linear-gradient-4); %7D .cls-14 %7B fill: url(%23linear-gradient-8); %7D .cls-15 %7B fill: url(%23linear-gradient-12); %7D .cls-16 %7B fill: url(%23linear-gradient-13); %7D %3C/style%3E%3ClinearGradient id='linear-gradient' x1='151.73' y1='-1617.38' x2='151.73' y2='-1746.6' gradientTransform='translate(0 -1604.16) scale(1 -1)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2374278f'/%3E%3Cstop offset='1' stop-color='%233c2d91'/%3E%3C/linearGradient%3E%3ClinearGradient id='linear-gradient-2' x1='167' y1='-1617.38' x2='167' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-3' x1='75.11' y1='-1617.38' x2='75.11' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-4' x1='85.5' y1='-1617.38' x2='85.5' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-5' x1='53.44' y1='-1617.38' x2='53.44' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-6' x1='76.26' y1='-1617.38' x2='76.26' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-7' x1='59.78' y1='-1617.38' x2='59.78' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-8' x1='263.38' y1='-1617.38' x2='263.38' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-9' x1='282.11' y1='-1617.38' x2='282.11' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-10' x1='247.85' y1='-1617.38' x2='247.85' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-11' x1='258.3' y1='-1617.38' x2='258.3' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-12' x1='285.06' y1='-1617.38' x2='285.06' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-13' x1='263.57' y1='-1617.38' x2='263.57' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-14' x1='279.8' y1='-1617.38' x2='279.8' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-15' x1='244.47' y1='-1617.38' x2='244.47' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3C/defs%3E%3Cg%3E%3Cpolygon class='cls-2' points='0 249.5 9.18 249.5 9.18 232.41 37.05 232.41 37.05 224.33 9.18 224.33 9.18 210.68 41.48 210.68 41.48 202.62 0 202.62 0 249.5'/%3E%3Crect class='cls-2' x='50.32' y='241.44' width='41.16' height='8.08'/%3E%3Crect class='cls-2' x='50.37' y='202.62' width='9.18' height='31.95'/%3E%3Cpolygon class='cls-2' points='100.37 249.5 109.53 249.5 109.53 219.33 100.37 219.1 100.37 249.5'/%3E%3Cpolygon class='cls-2' points='97.35 202.62 105.08 214.2 113.8 214.2 106.72 202.62 97.35 202.62'/%3E%3Cpolygon class='cls-2' points='129.65 202.62 118.42 202.62 136.79 225.47 117.03 249.5 129.06 249.5 142.59 232.64 156.02 249.28 156.2 249.5 168.16 249.5 129.82 202.84 129.65 202.62'/%3E%3Cpolygon class='cls-2' points='166.76 202.62 155.54 202.62 146.96 213.48 152.73 220.52 166.76 202.62'/%3E%3Crect class='cls-2' x='193.99' y='216.63' width='9.25' height='32.87'/%3E%3Crect class='cls-2' x='172.53' y='202.62' width='52.19' height='7.94'/%3E%3Crect class='cls-2' x='233.02' y='241.44' width='41.93' height='8.08'/%3E%3Crect class='cls-2' x='234.64' y='221.99' width='37.31' height='8.08'/%3E%3Cpolygon class='cls-2' points='249 217.67 245.74 210.68 274.55 210.68 274.55 202.62 232.65 202.62 239.7 217.67 249 217.67'/%3E%3Cpath class='cls-2' d='m330.48,237.92c1.93-3.3,2.92-7.29,2.92-11.86,0-4.13-.81-7.79-2.42-10.88s-3.69-5.68-6.23-7.7c-2.52-2.02-5.39-3.56-8.51-4.57-6.54-2.14-12.9-2-19.25.24-3.35,1.17-6.37,2.99-8.99,5.37l-.4.36,4.83,6.66.48-.33c1.31-.86,2.5-1.64,3.56-2.26,1.05-.64,2.12-1.16,3.19-1.59,1.07-.41,2.21-.74,3.38-.95,1.17-.21,2.5-.31,3.94-.31,1.97,0,3.99.35,6.01,1.02,2,.67,3.85,1.67,5.49,2.99,1.62,1.31,2.95,2.97,3.99,4.95,1.02,1.97,1.54,4.32,1.54,6.99,0,2.83-.57,5.3-1.71,7.34-1.04,1.85-2.37,3.44-3.94,4.71l-12.86-18.4h-10.29l15.3,21.96c-3.07.66-6.28.43-9.49-.66-2-.67-3.85-1.67-5.49-2.99-1.62-1.31-2.97-2.99-4.02-4.97-1.04-1.97-1.55-4.32-1.55-6.99v-.6h-9.37v.6c0,2.74.38,5.3,1.1,7.6.74,2.3,1.76,4.38,3.06,6.2,1.29,1.83,2.81,3.44,4.52,4.8,1.71,1.35,3.56,2.5,5.51,3.4,1.93.9,3.99,1.59,6.08,2.04,5.06,1.07,10,.85,15.09-.73l5.49,7.85,7.25-4.35-5.11-7.34c2.76-1.97,5.11-4.52,6.92-7.61Z'/%3E%3C/g%3E%3Cg%3E%3Cpolygon class='cls-12' points='128.18 68.19 95.91 107.41 95.98 130.98 88.04 130.98 88.04 142.92 88.75 142.92 96.02 142.92 99.99 142.92 99.99 133.32 104.32 133.32 104.32 148.91 96.03 148.91 96.12 181.69 131.61 141.02 131.61 100.4 187.39 100.19 215.41 68.31 146.72 68.12 128.18 68.19'/%3E%3Cpolygon class='cls-1' points='258.05 13.05 75.96 13.05 92.37 22.72 92.37 31.88 92.62 80.43 124.98 42.09 221.83 42.83 221.83 53.98 234.16 40.07 234.16 24.63 247.81 24.63 258.05 13.05'/%3E%3Crect class='cls-11' x='70.04' y='141.59' width='10.15' height='10.15'/%3E%3Crect class='cls-13' x='81.33' y='155.78' width='8.34' height='8.34'/%3E%3Crect class='cls-8' x='50.11' y='141.06' width='6.65' height='6.65'/%3E%3Crect class='cls-5' x='72.09' y='120.77' width='8.34' height='8.34'/%3E%3Crect class='cls-9' x='56.52' y='160.49' width='6.53' height='6.53'/%3E%3Crect class='cls-14' x='258.31' y='21.8' width='10.15' height='10.15'/%3E%3Crect class='cls-10' x='278.52' y='45.76' width='7.18' height='7.18'/%3E%3Crect class='cls-7' x='244.26' y='63.96' width='7.18' height='7.18'/%3E%3Crect class='cls-6' x='254.13' width='8.34' height='8.34'/%3E%3Crect class='cls-15' x='281.73' y='25.84' width='6.65' height='6.65'/%3E%3Crect class='cls-16' x='256.43' y='42.54' width='14.29' height='14.29'/%3E%3Crect class='cls-4' x='276.54' y='2.54' width='6.53' height='6.53'/%3E%3Cpolygon class='cls-3' points='248.76 40.22 248.76 32.3 241.03 32.3 240.18 32.3 240.18 33.25 240.18 40.22 240.18 40.9 248.76 40.9 248.76 40.22'/%3E%3C/g%3E%3C/svg%3E");
+}
