@@ -168,7 +168,7 @@ header.site-header.sticky .search-wrapper {
         display: block;
         position: absolute;
         margin: -64px 0px 0px;
-        border-radius: 43%;
+        border-radius: 15px;
         height: 101px !important;
         background: rgb(255, 255, 255) !important;
     }
