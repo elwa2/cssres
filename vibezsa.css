@@ -2,6 +2,7 @@ body > .section[data-type=banner]:nth-child(8) {
     position: relative;
     top: -13rem;
     padding: 0 0!important;
+    margin: 0px 0px -125px 0px;
 }
 
 body > .section[data-type=banner]:nth-child(8) .container {
@@ -22,6 +23,7 @@ body > .section[data-type=banner]:nth-child(8) .container {
         position: relative;
         top: -7rem;
         padding: 0 0!important;
+        margin: 0px 0px -125px 0px;
     }
 
     .site-header {
