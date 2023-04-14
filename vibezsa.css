@@ -1,0 +1,84 @@
+body > .section[data-type=banner]:nth-child(8) {
+    position: relative;
+    top: -13rem;
+    padding: 0 0!important;
+}
+
+body > .section[data-type=banner]:nth-child(8) .container {
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    body > .section[data-type=banner]:nth-child(8) {
+        top: -7rem;
+    }
+
+    body > .section[data-type=banner]:nth-child(8) {
+        position: relative;
+        top: -7rem;
+        padding: 0 0!important;
+    }
+
+    .site-header {
+        background: transparent;
+    }
+
+    .col-sm-12.col-md-6.d-lg-flex.search-container {
+        display: none;
+    }
+
+    body > .section[data-type=banner]:nth-child(8) .container {
+        padding: 0px;
+        margin: 0;
+    }
+
+    .salla-theme_6 .site-header .header-top .logo a img {
+        height: 78px!important;
+        position: relative;
+        right: 22px;
+        top: -13px;
+    }
+
+    .salla-theme_6 .site-header .header-top .logo-wrapper {
+        width: calc(100% - 72px);
+    }
+
+    .salla-theme_6 .site-header .header-top .logo a {
+        display: grid;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .salla-theme_6 .site-header .header-top .logo {
+        float: none !important;
+        margin: auto !important;
+        display: block;
+    }
+}
+
+.sicon-cart:before {
+    content: "\ef39";
+    font-size: 19px;
+}
+
+body > header > div.container.py-3.header-top > div > div.col-md-3.d-flex.align-items-center.d-lg-block.actions-container > a.ml-1.circle-action.d-lg-none.site-header__mine-cart {
+    background: transparent;
+}
+
+:root {
+    --main-color: #f6f6f6;
+    --main-text-color: #d6d6d6;
+    --main-text-color2: #9c9c9c;
+    --infinte-color: #d6d6d6;
+    --main-text-color-dark: #9c9c9c;
+    --color-main: #f6f6f6;
+    --color-main-d: #9c9c9c;
+    --color-main-l: #9c9c9c;
+    --color-main-reverse: #9c9c9c;
+    --color-text: #5a5a5a;
+    --color-text-reverse: #9c9c9c;
+    --color-title: #9c9c9c;
+}
