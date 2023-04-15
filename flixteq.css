@@ -2154,6 +2154,11 @@ body > section .category-grid > div .category-featured:hover {
     }
 }
 
+.sicon-cart:before {
+    content: "\ef39";
+    font-size: 19px;
+}
+
 /* الصور المربعة  */
 :root {
     --main-color: #3c0080;
