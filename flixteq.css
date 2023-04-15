@@ -604,7 +604,7 @@ ol.breadcrumb li {
 
 .section--title {
     font-weight: 400;
-    color: rgb(241, 241, 241) !important;
+    color: var(--5) !important;
     font-family: bokra !important;
 }
 
