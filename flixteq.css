@@ -1263,14 +1263,14 @@ a.login-link {
 .salla-theme_6 .section-header h2.section--title span {
     position: relative;
     right: 3px;
-    top: 15px;
+    top: 5px;
     color: rgb(255, 255, 255);
     border-bottom: 1px solid rgb(241, 241, 241);
     box-shadow: rgba(0, 0, 0, 0.61) 0px 2px 5px -3px;
     padding: 11px 19px;
     font-weight: 800 !important;
     background: linear-gradient(227deg, var(--color-main), rgb(37, 37, 43)) !important;
-    font-size: 0.9rem !important;
+    font-size: 0.8rem !important;
     border-radius: 7px !important;
 }
 
@@ -2138,6 +2138,20 @@ body > section .category-grid > div .category-featured:hover {
     z-index: 2;
     transition: transform .35s ease-out;
     transform: scale3d(1.9,1.4,1) rotate( 45deg) translate3d(0,-100%,0);
+}
+
+@media (min-width: 991px) {
+    .col-md-3.logo-wrapper.d-flex.d-lg-block {
+        order: 2;
+    }
+
+    .col-sm-12.col-md-6.d-lg-flex.search-container {
+        order: 1;
+    }
+
+    .col-md-3.d-flex.align-items-center.d-lg-block.actions-container {
+        order: 3;
+    }
 }
 
 /* الصور المربعة  */
