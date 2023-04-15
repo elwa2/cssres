@@ -239,7 +239,7 @@ header.site-header.sticky .search-wrapper {
 .salla-theme_6 .section-header .section-actions .circle-action, .salla-theme_6 .section-header .section-actions .button-more {
     box-shadow: rgba(0, 0, 0, 0.61) 0px 2px 5px -3px;
     transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1) 0s;
-    background: rgb(26, 27, 29) !important;
+    background: var(--5) !important;
     color: rgb(255, 255, 255) !important;
 }
 
@@ -356,12 +356,12 @@ header.site-header.sticky .search-wrapper {
 .salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
     border: 0px solid rgb(232, 232, 232);
     color: rgb(255, 255, 255);
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     border-radius: 15px !important;
 }
 
 .cart-nav-more, .cart-nav-solid, .cart-nav-submit {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     border: 0px !important;
     border-radius: 10px !important;
 }
@@ -369,7 +369,7 @@ header.site-header.sticky .search-wrapper {
 .btn-primary {
     border-radius: 10px;
     padding: 10px;
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     border: 0px !important;
 }
 
@@ -455,7 +455,7 @@ ol.breadcrumb li {
     left: 2px;
     box-shadow: rgba(0, 0, 0, 0.61) 0px 2px 5px -3px;
     line-height: 30px;
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     color: rgb(241, 241, 241) !important;
     border: 0px !important;
     font-size: 13px !important;
@@ -509,7 +509,7 @@ ol.breadcrumb li {
 }
 
 .store-notify {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    background: linear-gradient(to left, var(--color-main), var(--5));
     margin-bottom: 2px !important;
 }
 
@@ -580,7 +580,11 @@ ol.breadcrumb li {
         background: transparent;
         min-height: 46px;
         padding-top: 4px;
-        color: rgb(34, 33, 39) !important;
+        color: var(--5) !important;
+    }
+
+    .salla-theme_6 .sub-nav .main-menu > li#offers:hover a {
+        color: #fff !important;
     }
 }
 
@@ -716,7 +720,7 @@ ol.breadcrumb li {
 }
 
 .sub-nav-header a {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    background: linear-gradient(to left, var(--color-main), var(--5));
     line-height: 35px;
     border-radius: 7px;
     color: var(--color-main) !important;
@@ -747,7 +751,7 @@ ol.breadcrumb li {
 .salla-theme_6 .product .product-footer .product-add.add_to_cart_btn {
     position: relative;
     margin: 10px 0px 0px;
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    background: linear-gradient(to left, var(--color-main), var(--5));
     font-size: 15px;
     line-height: 30px;
     border-radius: 0px;
@@ -758,7 +762,7 @@ ol.breadcrumb li {
 }
 
 .salla-theme_6 .product .product-footer .product-add.add_to_cart_btn:hover {
-    background: linear-gradient(to left, rgb(0, 0, 0), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, rgb(0, 0, 0), var(--5)) !important;
     border: 0px !important;
 }
 
@@ -838,7 +842,7 @@ ol.breadcrumb li {
     box-shadow: rgba(0, 0, 0, 0.61) 0px 2px 5px -3px;
     border: 0px !important;
     font-size: 14px !important;
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
 }
 
 .sub-nav__close svg {
@@ -876,12 +880,12 @@ ol.breadcrumb li {
 #order .add-cart-large {
     width: 100%;
     border-radius: 10px;
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     border: 0px !important;
 }
 
 .salla-theme_6 #ask_button {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     border: 0px !important;
     border-radius: 7px !important;
 }
@@ -939,7 +943,7 @@ ol.breadcrumb li {
     border-top-left-radius: 10px;
     min-width: 65px;
     color: rgb(255, 255, 255) !important;
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     border-bottom-right-radius: 0px !important;
     border-top-right-radius: 0px !important;
 }
@@ -950,7 +954,7 @@ ol.breadcrumb li {
     box-shadow: rgba(0, 0, 0, 0.18) 0px 1px 5px 0px;
     padding: 15px !important;
     width: auto !important;
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     border: 0px !important;
 }
 
@@ -1127,7 +1131,7 @@ footer .footer-main .footer-payment img, footer .footer-sub .footer-wrapper img,
 }
 
 .sub-header {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    background: linear-gradient(to left, var(--color-main), var(--5));
     color: rgb(255, 255, 255) !important;
 }
 
@@ -1176,7 +1180,7 @@ a.login-link {
 }
 
 .py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white {
-    background-color: rgb(230, 172, 62);
+    background-color: var(--6);
     color: var(--color-main);
     padding-left: 28px;
     border-radius: 7px;
@@ -1189,7 +1193,7 @@ a.login-link {
 }
 
 .salla-theme_6 .product > a .promotion-title {
-    background-color: rgb(230, 172, 62);
+    background-color: var(--6);
 }
 
 @media only screen and (max-width: 992px) {
@@ -1230,12 +1234,12 @@ a.login-link {
     place-content: stretch center;
     align-items: center;
     padding: 10px 30px;
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     margin-bottom: 30px !important;
 }
 
 .py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white {
-    background-color: rgb(230, 172, 62);
+    background-color: #e6ac3e;
     color: var(--color-main);
 }
 
@@ -1296,11 +1300,11 @@ a.login-link {
     flex-direction: inherit !important;
 }
 
-.salla-theme_6 .sub-nav .main-menu > li.has-children > a:hover, .salla-theme_6 .sub-nav .main-menu > li > a:hover {
+.salla-theme_6 .sub-nav .main-menu > li.has-children > a:hover, .salla-theme_6 .sub-nav .main-menu > li > a:hover, .salla-theme_6 .sub-nav .main-menu:hover > li:hover > a:hover {
     border-radius: 12px;
     padding-left: 30px !important;
-    background: linear-gradient(227deg, rgb(191, 149, 63), rgb(252, 246, 186)) !important;
-    color: var(--color-main) !important;
+    background: linear-gradient(227deg, var(--1), var(--5)) !important;
+    color: #fff !important;
 }
 
 .icons {
@@ -1344,7 +1348,7 @@ a.login-link {
 }
 
 .salla-theme_6 .sub-nav .main-menu > li#offers a:hover {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
 }
 
 .qty-field--custom .form-control.single_product_quantity {
@@ -1353,7 +1357,7 @@ a.login-link {
 
 .promotion-title {
     color: rgb(217, 217, 217) !important;
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
 }
 
 .product-offer {
@@ -1398,7 +1402,7 @@ a.login-link {
 
 @media (max-width: 991px) {
     .sub-nav .sub-nav-content {
-        background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+        background: linear-gradient(to left, var(--color-main), var(--5));
     }
 }
 
@@ -1434,7 +1438,7 @@ a.login-link {
 }
 
 .footer-main {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    background: linear-gradient(to left, var(--color-main), var(--5));
 }
 
 .category-featured:hover::before, .feature-item:hover::before {
@@ -1474,7 +1478,7 @@ a.login-link {
 }
 
 .feature-item__icon {
-    background: rgb(26, 27, 29);
+    background: var(--5);
     border: 1px solid rgb(255, 255, 255);
 }
 
@@ -1504,7 +1508,7 @@ a.login-link {
 }
 
 .feature-item {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) 0% 0% / 400% 400%;
+    background: linear-gradient(to left, var(--color-main), var(--5)) 0% 0% / 400% 400%;
     animation: 15s ease 0s infinite normal none running gradient;
     color: rgb(255, 255, 255);
     border-radius: 4px 37px 7px;
@@ -1521,15 +1525,15 @@ a.login-link {
     }
 
     .feature-item {
-        color: rgb(26, 27, 29) !important;
+        color: var(--5) !important;
     }
 
     .feature-item h3 {
-        color: rgb(26, 27, 29) !important;
+        color: var(--5) !important;
     }
 
     .feature-item p {
-        color: rgb(26, 27, 29) !important;
+        color: var(--5) !important;
     }
 }
 
@@ -1902,7 +1906,7 @@ section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item
 }
 
 #a2a_copy_link {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39)) !important;
+    background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     animation: 8s ease 0s infinite normal none running zoomme !important;
 }
 
@@ -1979,7 +1983,7 @@ i.sicon-tag {
 }
 
 .footer-main, .salla-theme_6 .product .product-footer .product-add.add_to_cart_btn, .sub-nav-header a, .store-notify, .sub-header {
-    background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+    background: linear-gradient(to left, var(--color-main), var(--5));
 }
 
 .salla-theme_6 .site-header .sub-header .th-main-phone-no {
@@ -1993,7 +1997,7 @@ i.sicon-tag {
 
 @media (max-width: 991px) {
     .sub-nav .sub-nav-content {
-        background: linear-gradient(to left, var(--color-main), rgb(34, 33, 39));
+        background: linear-gradient(to left, var(--color-main), var(--5));
     }
 }
 
@@ -2082,11 +2086,13 @@ i.sicon-tag {
     grid-gap: 15px;
     grid-template-columns: 2fr 2fr ;
 }
+
 body > section .category-grid > div .category-featured:hover {
     opacity: 0.8;
     transform: translateY(-5px);
     filter: grayscale(1);
 }
+
 .salla-theme_6 .category-grid div .category-featured {
     height: 320px !important;
 }
@@ -2152,5 +2158,7 @@ body > section .category-grid > div .category-featured:hover {
     --2: #8f75ff;
     --3: #aa46d7;
     --4: #000026;
+    --5: #222127;
+    --6: #e6ac3e;
     --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 333.4 257.22'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: url(%23linear-gradient-2); %7D .cls-2 %7B fill: %23fff; %7D .cls-3 %7B fill: url(%23linear-gradient-15); %7D .cls-4 %7B fill: url(%23linear-gradient-14); %7D .cls-5 %7B fill: url(%23linear-gradient-6); %7D .cls-6 %7B fill: url(%23linear-gradient-11); %7D .cls-7 %7B fill: url(%23linear-gradient-10); %7D .cls-8 %7B fill: url(%23linear-gradient-5); %7D .cls-9 %7B fill: url(%23linear-gradient-7); %7D .cls-10 %7B fill: url(%23linear-gradient-9); %7D .cls-11 %7B fill: url(%23linear-gradient-3); %7D .cls-12 %7B fill: url(%23linear-gradient); %7D .cls-13 %7B fill: url(%23linear-gradient-4); %7D .cls-14 %7B fill: url(%23linear-gradient-8); %7D .cls-15 %7B fill: url(%23linear-gradient-12); %7D .cls-16 %7B fill: url(%23linear-gradient-13); %7D %3C/style%3E%3ClinearGradient id='linear-gradient' x1='151.73' y1='-1617.38' x2='151.73' y2='-1746.6' gradientTransform='translate(0 -1604.16) scale(1 -1)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%2374278f'/%3E%3Cstop offset='1' stop-color='%233c2d91'/%3E%3C/linearGradient%3E%3ClinearGradient id='linear-gradient-2' x1='167' y1='-1617.38' x2='167' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-3' x1='75.11' y1='-1617.38' x2='75.11' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-4' x1='85.5' y1='-1617.38' x2='85.5' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-5' x1='53.44' y1='-1617.38' x2='53.44' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-6' x1='76.26' y1='-1617.38' x2='76.26' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-7' x1='59.78' y1='-1617.38' x2='59.78' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-8' x1='263.38' y1='-1617.38' x2='263.38' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-9' x1='282.11' y1='-1617.38' x2='282.11' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-10' x1='247.85' y1='-1617.38' x2='247.85' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-11' x1='258.3' y1='-1617.38' x2='258.3' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-12' x1='285.06' y1='-1617.38' x2='285.06' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-13' x1='263.57' y1='-1617.38' x2='263.57' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-14' x1='279.8' y1='-1617.38' x2='279.8' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-15' x1='244.47' y1='-1617.38' x2='244.47' y2='-1746.6' xlink:href='%23linear-gradient'/%3E%3C/defs%3E%3Cg%3E%3Cpolygon class='cls-2' points='0 249.5 9.18 249.5 9.18 232.41 37.05 232.41 37.05 224.33 9.18 224.33 9.18 210.68 41.48 210.68 41.48 202.62 0 202.62 0 249.5'/%3E%3Crect class='cls-2' x='50.32' y='241.44' width='41.16' height='8.08'/%3E%3Crect class='cls-2' x='50.37' y='202.62' width='9.18' height='31.95'/%3E%3Cpolygon class='cls-2' points='100.37 249.5 109.53 249.5 109.53 219.33 100.37 219.1 100.37 249.5'/%3E%3Cpolygon class='cls-2' points='97.35 202.62 105.08 214.2 113.8 214.2 106.72 202.62 97.35 202.62'/%3E%3Cpolygon class='cls-2' points='129.65 202.62 118.42 202.62 136.79 225.47 117.03 249.5 129.06 249.5 142.59 232.64 156.02 249.28 156.2 249.5 168.16 249.5 129.82 202.84 129.65 202.62'/%3E%3Cpolygon class='cls-2' points='166.76 202.62 155.54 202.62 146.96 213.48 152.73 220.52 166.76 202.62'/%3E%3Crect class='cls-2' x='193.99' y='216.63' width='9.25' height='32.87'/%3E%3Crect class='cls-2' x='172.53' y='202.62' width='52.19' height='7.94'/%3E%3Crect class='cls-2' x='233.02' y='241.44' width='41.93' height='8.08'/%3E%3Crect class='cls-2' x='234.64' y='221.99' width='37.31' height='8.08'/%3E%3Cpolygon class='cls-2' points='249 217.67 245.74 210.68 274.55 210.68 274.55 202.62 232.65 202.62 239.7 217.67 249 217.67'/%3E%3Cpath class='cls-2' d='m330.48,237.92c1.93-3.3,2.92-7.29,2.92-11.86,0-4.13-.81-7.79-2.42-10.88s-3.69-5.68-6.23-7.7c-2.52-2.02-5.39-3.56-8.51-4.57-6.54-2.14-12.9-2-19.25.24-3.35,1.17-6.37,2.99-8.99,5.37l-.4.36,4.83,6.66.48-.33c1.31-.86,2.5-1.64,3.56-2.26,1.05-.64,2.12-1.16,3.19-1.59,1.07-.41,2.21-.74,3.38-.95,1.17-.21,2.5-.31,3.94-.31,1.97,0,3.99.35,6.01,1.02,2,.67,3.85,1.67,5.49,2.99,1.62,1.31,2.95,2.97,3.99,4.95,1.02,1.97,1.54,4.32,1.54,6.99,0,2.83-.57,5.3-1.71,7.34-1.04,1.85-2.37,3.44-3.94,4.71l-12.86-18.4h-10.29l15.3,21.96c-3.07.66-6.28.43-9.49-.66-2-.67-3.85-1.67-5.49-2.99-1.62-1.31-2.97-2.99-4.02-4.97-1.04-1.97-1.55-4.32-1.55-6.99v-.6h-9.37v.6c0,2.74.38,5.3,1.1,7.6.74,2.3,1.76,4.38,3.06,6.2,1.29,1.83,2.81,3.44,4.52,4.8,1.71,1.35,3.56,2.5,5.51,3.4,1.93.9,3.99,1.59,6.08,2.04,5.06,1.07,10,.85,15.09-.73l5.49,7.85,7.25-4.35-5.11-7.34c2.76-1.97,5.11-4.52,6.92-7.61Z'/%3E%3C/g%3E%3Cg%3E%3Cpolygon class='cls-12' points='128.18 68.19 95.91 107.41 95.98 130.98 88.04 130.98 88.04 142.92 88.75 142.92 96.02 142.92 99.99 142.92 99.99 133.32 104.32 133.32 104.32 148.91 96.03 148.91 96.12 181.69 131.61 141.02 131.61 100.4 187.39 100.19 215.41 68.31 146.72 68.12 128.18 68.19'/%3E%3Cpolygon class='cls-1' points='258.05 13.05 75.96 13.05 92.37 22.72 92.37 31.88 92.62 80.43 124.98 42.09 221.83 42.83 221.83 53.98 234.16 40.07 234.16 24.63 247.81 24.63 258.05 13.05'/%3E%3Crect class='cls-11' x='70.04' y='141.59' width='10.15' height='10.15'/%3E%3Crect class='cls-13' x='81.33' y='155.78' width='8.34' height='8.34'/%3E%3Crect class='cls-8' x='50.11' y='141.06' width='6.65' height='6.65'/%3E%3Crect class='cls-5' x='72.09' y='120.77' width='8.34' height='8.34'/%3E%3Crect class='cls-9' x='56.52' y='160.49' width='6.53' height='6.53'/%3E%3Crect class='cls-14' x='258.31' y='21.8' width='10.15' height='10.15'/%3E%3Crect class='cls-10' x='278.52' y='45.76' width='7.18' height='7.18'/%3E%3Crect class='cls-7' x='244.26' y='63.96' width='7.18' height='7.18'/%3E%3Crect class='cls-6' x='254.13' width='8.34' height='8.34'/%3E%3Crect class='cls-15' x='281.73' y='25.84' width='6.65' height='6.65'/%3E%3Crect class='cls-16' x='256.43' y='42.54' width='14.29' height='14.29'/%3E%3Crect class='cls-4' x='276.54' y='2.54' width='6.53' height='6.53'/%3E%3Cpolygon class='cls-3' points='248.76 40.22 248.76 32.3 241.03 32.3 240.18 32.3 240.18 33.25 240.18 40.22 240.18 40.9 248.76 40.9 248.76 40.22'/%3E%3C/g%3E%3C/svg%3E");
 }
