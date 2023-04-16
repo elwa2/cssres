@@ -1555,6 +1555,9 @@ a.offers-link {
     border-bottom: 0px solid rgba(255, 255, 255, 0.1);
 }
 
+ 
+
+
 @media screen and (max-width: 800px) {
     .products-listing .slick-track .slick-slide {
         display: inline-flex !important;
@@ -1984,6 +1987,22 @@ i.sicon-tag {
 
 .footer-main, .salla-theme_6 .product .product-footer .product-add.add_to_cart_btn, .sub-nav-header a, .store-notify, .sub-header {
     background: linear-gradient(to left, var(--color-main), var(--5));
+    background-size: 400%400%;
+    animation: gradient 15s ease infinite
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0%50%
+    }
+
+    50% {
+        background-position: 100%50%
+    }
+
+    100% {
+        background-position: 0%50%
+    }
 }
 
 .salla-theme_6 .site-header .sub-header .th-main-phone-no {
@@ -2075,6 +2094,12 @@ i.sicon-tag {
     }
 }
 
+
+ .salla-theme_6 .site-header .header-top .logo a:hover img {
+    
+    transform: translateY(-5px);
+}
+
 @media only screen and (max-width: 450px) {
     .salla-theme_6 .section {
         padding: .5rem 0px 0 !important;
@@ -2158,6 +2183,26 @@ body > section .category-grid > div .category-featured:hover {
     content: "\ef39";
     font-size: 19px;
 }
+
+body > section.u-light.py-5.text-center > div > div > div > div:hover i  {
+    animation: toRightFromLeft 1s forwards
+}
+
+@keyframes toRightFromLeft {
+    49% {
+        transform: translate(100%)
+    }
+
+    50% {
+        opacity: 0;
+        transform: translate(-100%)
+    }
+
+    51% {
+        opacity: 1
+    }
+}
+
 
 /* الصور المربعة  */
 :root {
