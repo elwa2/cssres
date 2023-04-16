@@ -2207,10 +2207,10 @@ body > section.u-light.py-5.text-center > div > div > div > div:hover i  {
 
 
 
-body {background-image: var(--bg)  !important;
+/* body {background-image: var(--bg)  !important;
       background-repeat: no-repeat no-repeat;
 background-position: center center;
-background-size: cover;}
+background-size: cover;} */
 
  
 :root {
