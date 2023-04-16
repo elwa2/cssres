@@ -10,10 +10,12 @@ body > .section[data-type=banner]:nth-child(8) .container {
     margin: 0;
     width: 100%;
 }
+
 .salla-theme_6 .container.banner a img {
     margin: 0 auto;
     width: 100%;
 }
+
 @media (max-width: 767px) {
     body > .section[data-type=banner]:nth-child(8) {
         top: -7rem;
@@ -42,12 +44,8 @@ body > .section[data-type=banner]:nth-child(8) .container {
     .salla-theme_6 .site-header .header-top .logo a img {
         height: 78px!important;
         position: relative;
-        right: 22px;
+        right: 108px;
         top: -13px;
-    }
-
-    .salla-theme_6 .site-header .header-top .logo-wrapper {
-        width: calc(100% - 72px);
     }
 
     .salla-theme_6 .site-header .header-top .logo a {
@@ -62,6 +60,14 @@ body > .section[data-type=banner]:nth-child(8) .container {
         margin: auto !important;
         display: block;
     }
+}
+
+.sub-nav-header a,.sub-nav-header p {
+    color: var(--main-text-color-dark);
+}
+
+.sub-nav__close svg {
+    fill: var(--main-text-color-dark);
 }
 
 .sicon-cart:before {
