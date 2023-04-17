@@ -217,15 +217,15 @@ footer.d-flex.flex-column {
     font-size: 14px
 }
 
-
 body, html {
     background: linear-gradient( 52deg ,var(--1)0%,var(--3)100%);
-     background: var(--bg);
+    background: var(--bg);
 }
 
 .theme-title-primary,.product-item small,.theme-text-primary,.feature p {
     /* color: #ffffff!important; */
 }
+
 @media only screen and (max-width: 768px) {
     .container-slider:after {
         display: flex;
@@ -238,7 +238,7 @@ body, html {
         background-repeat: repeat-x;
         background-position: center;
         margin: 0 auto auto;
-        background-color:#fff;
+        background-color: #fff;
         margin-bottom: 50px;
     }
 
@@ -253,21 +253,10 @@ body, html {
     }
 }
 
-
-:root {
-    --1: #c4a181;
-    --2: #a67c4d;
-    --3: #bd9672;
-    --4:#474747;
-    --logo: url(https://media.zid.store/cdn-cgi/image/h=175,q=85/https://media.zid.store/1aba6978-00d6-4e15-ae8f-ac6291fc5335/5d0386c5-0621-4e32-bc8f-890ae60db6fb-200x.png);
-    --bg:url(https://media.zid.store/1aba6978-00d6-4e15-ae8f-ac6291fc5335/18fc67c9-44cd-4424-a2b1-70f541b7268d.jpg);
-}
-
 .store-section .social-icons span {
     border: 2px solid var(--4);
     font-size: 17px;
 }
-
 
 .testimonials-customer-text {
     height: 170px;
@@ -294,4 +283,13 @@ body, html {
 .icon-account_circle_black_24dp:before {
     content: "\f007 ";
     color: var(--1)
+}
+
+:root {
+    --1: #c4a181;
+    --2: #a67c4d;
+    --3: #bd9672;
+    --4: #474747;
+    --logo: url(https://media.zid.store/cdn-cgi/image/h=175,q=85/https://media.zid.store/1aba6978-00d6-4e15-ae8f-ac6291fc5335/5d0386c5-0621-4e32-bc8f-890ae60db6fb-200x.png);
+    --bg: url(https://media.zid.store/1aba6978-00d6-4e15-ae8f-ac6291fc5335/9ab0b01f-d528-4128-8755-316b9209390f.jpg);
 }
