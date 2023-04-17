@@ -65,7 +65,10 @@ body > .section[data-type=banner]:nth-child(8) .container {
 .sub-nav-header a,.sub-nav-header p {
     color: var(--main-text-color-dark);
 }
-
+.sub-header {
+    color: #fff;
+    background-color: var(--main-color);
+}
 .sub-nav__close svg {
     fill: var(--main-text-color-dark);
 }
@@ -81,7 +84,7 @@ body > header > div.container.py-3.header-top > div > div.col-md-3.d-flex.align-
 
 :root {
     --main-color: #f6f6f6;
-    --main-text-color: #d6d6d6;
+    --main-text-color: #363636;
     --main-text-color2: #9c9c9c;
     --infinte-color: #d6d6d6;
     --main-text-color-dark: #9c9c9c;
