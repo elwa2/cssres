@@ -1236,10 +1236,11 @@ a.login-link {
     padding: 10px 30px;
     background: linear-gradient(to left, var(--color-main), var(--5)) !important;
     margin-bottom: 30px !important;
+    color:#fff !important
 }
 
 .py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white {
-    background-color: #e6ac3e;
+    background-color: var(--6);
     color: var(--color-main);
 }
 
@@ -1830,17 +1831,7 @@ section.u-light.py-5.text-center .container .row .col-sm-6.col-md-4.feature-item
     }
 }
 
-.py-4.text-center.bg-brand > .container > .section--title.mb-2.text-white {
-    background: linear-gradient(227deg, rgb(191, 149, 63), rgb(252, 246, 186));
-    color: var(--color-main);
-    border-radius: 7px;
-    display: inline-flex;
-    flex-flow: column wrap;
-    place-content: stretch center;
-    align-items: center;
-    padding: 10px 30px;
-    margin-bottom: 30px !important;
-}
+ 
 
 .icons {
     background: var(--color-main);
@@ -2213,7 +2204,10 @@ body > header > div.sub-header.p-10.d-none.d-lg-block > div > div > div:nth-chil
       background-repeat: no-repeat no-repeat;
 background-position: center center;
 background-size: cover;} */
-
+.salla-theme_6 #modal_login .form-group label {
+    
+    color: #fff;
+}
  
 :root {
     --main-color: #3c0080;
