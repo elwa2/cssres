@@ -284,6 +284,14 @@ salla-slider.details-slider .s-slider-container {
     background-color: #fff;
 }
 
+[dir=rtl] salla-slider[type]:not(.hydrated)>div, [dir=rtl] salla-slider[type]:not(.hydrated) .swiper>div>div, [dir=rtl] .carousel-slider .swiper {
+    padding-left: 0rem;
+}
+
+salla-slider .slide--one-fourth {
+    max-width: 50%;
+}
+
 :root {
     --1: #2e8de3;
     --2: #414042;
