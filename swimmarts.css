@@ -8,8 +8,8 @@
 }
 
 .navbar-brand img {
-    max-height: 3rem;
-    max-width: 140px;
+    max-height: 4rem;
+    max-width: 141px;
 }
 
 @media (max-width: 640px) {
@@ -242,7 +242,7 @@ section.cart-item.bg-white.border.overflow-hidden.p-5.sm\:p-7.rounded.mb-5.relat
 
 p.text-primary.flex-none.font-bold.text-sm.rtl\:xl\:pl-12.ltr\:xl\:pr-12 {
     color: var(--2);
-    ; }
+}
 
 p.text-sm.mb-2\.5 {
     color: var(--1);
@@ -269,6 +269,19 @@ a.social-link {
 
 .s-block__title h2:before, .s-slider-block__title h2:before {
     background-color: var(--3);
+}
+
+salla-slider.photos-slider .swiper-slide {
+    width: 100%;
+}
+
+.text-gray-800 {
+    color: var(--1);
+    text-align: center;
+}
+
+salla-slider.details-slider .s-slider-container {
+    background-color: #fff;
 }
 
 :root {
