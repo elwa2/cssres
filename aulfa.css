@@ -941,15 +941,15 @@ body .product-block .btn--add-to-cart:hover {
 
 .btn--floated.btn--add-to-cart .s-button-disabled {
     background: rgba(245, 81, 87, 0.12) !important;
-    color: #f55157 !important;
+    color: var(--1) !important;
     opacity: 1 !important;
 }
 
 .btn--floated.btn--add-to-cart .s-button-disabled .sicon-shopping-bag::before {
     content: "نفدت الكمية" !important;
-    color: #f55157 !important;
+    color: #fff !important;
     opacity: 1 !important;
-    font-family: "hani-R" !important;
+   
 }
 
 .btn--add-to-cart.disabled:before {
@@ -979,7 +979,10 @@ body .product-block .title {
 body .product-block .product-block__info {
     text-align: center;
 }
-
+.tabs-heads .tab-head .btn--grey.active, .tabs-heads .tab-head a--grey.active {
+    color: #fff;
+    background: var(--2);
+}
 :root {
     --1: #c898a9;
     --1-1-1: #a17182;
