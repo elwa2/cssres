@@ -551,7 +551,7 @@ ul.footer-list.footer-list--row.footer-list--social-links {
     }
 
     .product-block:not(.product-block--large) .product-block__info .price-wrapper * {
-        font-size: 0.65rem!important;
+        /* font-size: 0.65rem!important; */
     }
 
     .product-block:not(.product-block--large) .product-block__info .price-wrapper small {
