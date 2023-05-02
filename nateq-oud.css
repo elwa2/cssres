@@ -210,7 +210,7 @@ p.text-gray-400.mb-2\.5.md\:mb-0 {
     text-align: center;
     
 }
-@media (min: 900px) {
+@media (min-width: 768px)  {
     p.text-gray-400.mb-2\.5.md\:mb-0 {
     color: #ffffff!important;
     text-align: center;
