@@ -1349,11 +1349,19 @@ body.cart, body.product-index {
         grid-template-rows: 1fr 1fr;
         gap: 94px;
     }
-
-    footer .container.xl\:px-0.grid.grid-cols-6.gap-10.lg\:gap-6 div:nth-child(1) {
+  footer:has(div[class*="col-span-3 sm:col-span-2 lg:col-span-1 footer-list"]) .container.xl\:px-0.grid.grid-cols-6.gap-10.lg\:gap-6 div:nth-child(1) {
         position: relative;
         top: -55px;
         right: -191px;
+        grid-column: 2/3;
+        grid-row: 1/1;
+        text-align: center;
+        align-items: center;
+    }
+    footer .container.xl\:px-0.grid.grid-cols-6.gap-10.lg\:gap-6 div:nth-child(1) {
+        position: relative;
+        top: -55px;
+        right: -84px;
         grid-column: 2/3;
         grid-row: 1/1;
         text-align: center;
