@@ -1329,7 +1329,7 @@ body#app:before {
 }
 
 body.cart, body.product-index {
-    background: linear-gradient(134deg ,transparent -183%,#ffffffe6 83%), var(--bghed)!important;
+    background: linear-gradient(134deg ,#f0f0f0 -183%,#f6f6f6d1 83%), var(--bghed)!important;
     padding-left: 0px;
     padding-right: 0px;
     background-size: 117% !important;
@@ -1337,7 +1337,7 @@ body.cart, body.product-index {
 
 @media (min-width: 700px) {
     body.cart, body.product-index {
-        background-size: 50% !important;
+        background-size: 58% !important;
     }
 }
 
@@ -1516,6 +1516,23 @@ body.cart, body.product-index {
     color: var(--2);
 }
 
+@media only screen and (min-width: 912px) and (max-width: 1312px) {
+    footer:has(div[class*="col-span-3 sm:col-span-2 lg:col-span-1 footer-list"]) .container.xl\:px-0.grid.grid-cols-6.gap-10.lg\:gap-6 div:nth-child(1) {
+        
+        right: -89px;
+        
+    } 
+}
+@media only screen and (min-width: 1312px) and (max-width: 1704px) {
+    footer:has(div[class*="col-span-3 sm:col-span-2 lg:col-span-1 footer-list"]) .container.xl\:px-0.grid.grid-cols-6.gap-10.lg\:gap-6 div:nth-child(1) {
+        right: -106px;
+    }
+}
+ @media only screen and (min-width: 1468px) and (max-width: 1704px) {
+    footer:has(div[class*="col-span-3 sm:col-span-2 lg:col-span-1 footer-list"]) .container.xl\:px-0.grid.grid-cols-6.gap-10.lg\:gap-6 div:nth-child(1) {
+        right: -154px;
+    }
+}
 :root {
     --color-primary: #f18988;
     --color-primary-dark: #01468d;
