@@ -800,7 +800,26 @@ span.icon-search.header-theme-icon-primary {
     background-color: var(--primary-color);
     filter: none;
 }
+.gallery-section.container.section-padding-space .box-1-1:before {
+    padding: 0!important
+}
 
+.gallery-item.col-6 {
+    margin-top: 30px;
+}
+ 
+.gallery-section.container.section-padding-space .box-1-1 .content {
+    position: inherit!important
+}
+
+.gallery-section.container.section-padding-space img {
+    height: auto!important
+}
+
+.gallery-item.col-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 :root {
     --primary-color: #191919;
     --2: #f5f5f5;
