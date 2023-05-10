@@ -1626,8 +1626,41 @@ i.sicon-tag {
     filter: brightness(0.81) !important;
 }
 
+ 
 .sub-nav .main-menu li.sub-menu-header.categories-holder > ul.store-categories > li:nth-child(n) > a::before, .main-menu > li:nth-last-child(n) > a::before {
-    content: "" !important;
+    content: "" ;
+}
+
+a[href*="c1846956537"]::before {
+    content: "\eb14" !important;
+}
+
+a[href*="c656587888"]::before {
+    content: "\ec52"!important;
+}
+
+a[href*="c424734437"]::before {
+    content: "\ebd5" !important;
+}
+
+a[href*="c26902475"]::before {
+    content: "\ec7d" !important;
+}
+
+a[href*="c1962170164"]::before {
+    content: "\eafd" !important;
+}
+
+a[href*="c1923041250"]::before {
+    content: "\eb04" !important;
+}
+
+a[href*="c1758502368"]::before {
+    content: "\e967" !important;
+}
+
+a[href*="https://flixteq.com/offers"]::before {
+    content: "\ebf7" !important;
 }
 
 .salla-theme_6 .sub-nav .main-menu li.has-children:hover a {
