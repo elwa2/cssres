@@ -372,7 +372,7 @@ header.sticky {
 }
 
 .footer-wrapper {
-    background: var(--co-bg) !important;
+    background: var(--bg) !important;
     background-repeat: repeat-x;
     background-position: bottom;
     background-size: 500%;
@@ -884,7 +884,7 @@ footer.footer {
 }
 
 .main.home .section-title.m-5 {
-    background: var(--primary-color)!important;
+    background: var(--2)!important;
     padding: 10px;
     border-radius: 15px;
     font-weight: 700!important;
@@ -925,11 +925,17 @@ footer.footer {
     border-radius: 0 0 50px 50px!important;
 }
 
+body,.mobile-bottom-menu a, .mobile-bottom-menu button {
+    background-color: var(--bg);
+}
+
 :root {
     --primary-color: #7e525a;
     --primary-color2: #99656f;
     --co-bg: #ffffff;
-    --co-bg2:#fff0e3;
+    --co-bg2: #fff0e3;
+    --bg: #F9F6F4;
+    --2: #b4959a;
     --text-color-primary-bg: #ba9647;
     --logo: url(https://media.zid.store/b12b76fc-01c4-40a4-8956-c44c4fe81a60/b6ca2840-61c4-454b-a76b-bd6b7703ee59-200x.png);
 }
