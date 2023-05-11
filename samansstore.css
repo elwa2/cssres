@@ -331,7 +331,8 @@
 /* عدد منتجات السلة في الهدر */
 #cart_badge {
     line-height: 1.5384616;
-    background: #dda057;
+    background: var(--color-main);
+    color: #fff;
 }
 
 /* ويدجت تسجيل الدخول */
@@ -357,7 +358,7 @@
     vertical-align: middle;
     font-family: FontAwesome !important;
     content: "\f038";
-    color: #fff;
+    /* color: #fff; */
     font-size: 22px;
     float: right;
     width: 100px;
@@ -2423,6 +2424,18 @@ body > section.py-5.text-center > div > div.section-header > h2:before {
         border-radius: 5px;
         max-height: 21.5px !important;
     }
+
+    .salla-theme_4 .footer-header .footer-payment::before {
+        content: "";
+        background-image: url(https://cdn.salla.sa/form-builder/7Zsc4JuAB2A4DC8SsLAyow86i3OafdueX3GjNjhM.png);
+        background-repeat: no-repeat no-repeat;
+        background-position: center center;
+        height: 126px!important;
+        display: block !important;
+        margin: auto;
+        width: 100%;
+        background-size: contain;
+    }
 }
 
 .section-header .section--title span {
@@ -2435,17 +2448,13 @@ body > section.py-5.text-center > div > div.section-header > h2:before {
 }
 
 .slick-dotted.slick-slider {
-    margin-bottom: -80px;
+    margin-bottom: -51px;
 }
 
-.salla-theme_4 .footer-header .footer-payment::before {
-    content: "";
-    background-image: url(https://cdn.salla.sa/form-builder/7Zsc4JuAB2A4DC8SsLAyow86i3OafdueX3GjNjhM.png);
-    background-repeat: no-repeat no-repeat;
-    background-position: center center;
-    height: 126px!important;
-    display: block !important;
-    margin: auto;
-    width: 100%;
-    background-size: contain;
+.sub-nav .main-menu>li>a {
+    color: var(--1);
+}
+
+.sub-nav__menu:hover {
+    color: var(--1);
 }
