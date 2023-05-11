@@ -2150,14 +2150,15 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
 
 .product-add {
     display: inline-block;
-    width: 121px;
-    height: 40px;
+    width: 113px;
+    height: 54px;
     border-radius: 5px !important;
     background: var(--main-text-color);
     font-size: 21px;
     -webkit-transition: all .2s ease-out;
     padding: 0.3rem;
     transition: all .2s ease-out;
+    margin: 0 6px 15px;
 }
 
 .salla-theme_4 .product-footer .product-add:hover {
@@ -2458,4 +2459,7 @@ body > section.py-5.text-center > div > div.section-header > h2:before {
         border-radius: 5px;
         max-height: 21.5px !important;
     }
+}
+.section-header .section--title span {
+    background:var(--1);
 }
