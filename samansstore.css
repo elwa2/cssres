@@ -62,9 +62,7 @@
     text-align: center;
 }
 
-.product>a .product-subtitle {
-    font-size: 0.000001px;
-}
+ 
 
 /* زراضافة المنتج للسلة */
 .sicon-cart:before {
