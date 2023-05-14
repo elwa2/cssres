@@ -62,8 +62,6 @@
     text-align: center;
 }
 
- 
-
 /* زراضافة المنتج للسلة */
 .sicon-cart:before {
     color: var(--color-main);
@@ -2482,12 +2480,12 @@ body > section.py-5.text-center > div > div.section-header > h2:before {
 
 .slick-active button {
     background-color: #888888 !important;
-}@media only screen and (max-width: 767px) {
-    body.salla-theme_4 .section-header .section--title {
-         
-        text-align: center;
-        position: relative;
-        right: 2rem;
-    }
 }
 
+@media only screen and (max-width: 767px) {
+    body.salla-theme_4 .section-header .section--title>span {
+        text-align: center;
+        position: relative;
+        right: 7rem;
+    }
+}
