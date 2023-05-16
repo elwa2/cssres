@@ -655,6 +655,7 @@ a.circle-action.ml-1.site-header__cart .sicon-cart:before,.sicon-search:before {
 
 section.py-3[style="background: #FAFAFA;"] {
     background: #ffffff91 !important;
+    background: transparent !important;
 }
 
 /* 
@@ -1121,4 +1122,9 @@ body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a.offers-link::afte
 img[src="https://cdn.salla.sa/form-builder/rvQYJydTT1EtYlBHzqttuAi3AF6ZXIhO4BXpV71E.png"] {
     content: url(https://cdn.salla.sa/form-builder/KS8tJPJUFbSUtA7vNc89JDz3577QrdD3e90Y93XA.png);
     margin: 36px 0 0 0;
+}
+.thumbnail {
+  
+    background-color: transparent;
+     
 }
