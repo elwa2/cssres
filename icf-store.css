@@ -66,7 +66,7 @@ span.testimonials-item__author {
 .site-header {
     z-index: 3000;
     background: var(--color-main);
-    border-radius: 0 0 15px 15px;
+    /* border-radius: 0 0 15px 15px; */
 }
 
 .footer-main {
@@ -343,9 +343,10 @@ body.salla-theme_1 .product .product-footer {
 
 @media(min-width: 992px) {
     .sub-nav {
-        background: #fff;
+        background: var(--1);
         border: unset;
         font-size: 13px;
+        border-radius: 0 0 15px 15px;
         margin-bottom: 20px;
     }
 
@@ -1076,7 +1077,7 @@ body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a.offers-link,.sub-
 
 
  body:not(.salla-theme_6) > div.sub-nav > div > ul > li:not(.sub-menu-header) > a {
-    background: var(--1);
+    background: #ffffff;
     margin: 4px 0;
     padding: 6px;
     border-radius: 15px;
@@ -1089,6 +1090,7 @@ body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a.offers-link::afte
     font-size: 20px;
     color: #ff2424;
 }
+
 
 :root {
      --font-size-normal: 14px;
@@ -1119,3 +1121,4 @@ body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a.offers-link::afte
 }
 
  
+ img[src="https://cdn.salla.sa/form-builder/rvQYJydTT1EtYlBHzqttuAi3AF6ZXIhO4BXpV71E.png"]{content: url(https://cdn.salla.sa/form-builder/P9TMBbwBMftTBus2BQ8RDXuUIHK8UDPPJZhq0rBC.png);margin: 36px 0 0 0;}
