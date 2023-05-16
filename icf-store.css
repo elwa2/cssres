@@ -1047,6 +1047,12 @@ body > footer > div.footer-main > div > div > div:nth-child(3) > h2 > span:after
     height: 11rem;
 }
 
+@media (max-width: 700px) {
+.banner:has(img[src*="ajPHAFnTbd9UYH3mrUjQjdXvrGFo49hGo2eIhH2.png"]) {
+     background-size: 164rem;
+}
+   } 
+
 @keyframes elwaaa {
     0% {
         background-position-x: 0px;
