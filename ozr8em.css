@@ -359,12 +359,12 @@ header.sticky {
     display: block;
     content: "";
     width: 200px!important;
-    height: 100px;
+    height: 79px;
     background-size: contain!important;
     background-repeat: no-repeat!important;
     background-position: center!important;
     background: var(--logo);
-    margin: auto
+    margin: auto;
 }
 
 .footer-wrapper>.top-area>.footer__col--newsletter>p {
@@ -938,5 +938,5 @@ body,.mobile-bottom-menu a, .mobile-bottom-menu button,.footer-wrapper {
     --bg2: #F1EBE8;
     --2: #b4959a;
     --text-color-primary-bg: #ba9647;
-    --logo: url(https://media.zid.store/b12b76fc-01c4-40a4-8956-c44c4fe81a60/b6ca2840-61c4-454b-a76b-bd6b7703ee59-200x.png);
+    --logo: url(https://media.zid.store/b12b76fc-01c4-40a4-8956-c44c4fe81a60/6b6eab45-aa40-4573-beee-f3d0fccf8070.png);
 }
