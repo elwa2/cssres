@@ -226,8 +226,8 @@ footer .col-md-4 {
 }
 
 .footer-links {
-    /* -webkit-columns: 2; */
-    /* columns: 2; */
+    -webkit-columns: 2;
+    columns: 2;
     text-align: center;
     font-size: 13px;
 }
@@ -1127,4 +1127,68 @@ img[src="https://cdn.salla.sa/form-builder/rvQYJydTT1EtYlBHzqttuAi3AF6ZXIhO4BXpV
   
     background-color: transparent;
      
+} 
+
+
+
+
+
+.sub-nav-header::before, body > footer > div.footer-main > div > div > div:nth-child(1) > p::before, .login-form .panel-title::before {
+    content: "";
+    background-image: var(--logo);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-size: contain;
+    height: 70px!important;
+    display: block;
+    margin: auto;
+}
+
+.sub-nav-header::before {
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 0rem;
+    height: 45px !important;
+    margin: 15px;
+}
+
+body > footer > div.footer-main > div > div > div:nth-child(1) > p::before {
+    background-position-x: center;
+    background-position-y: 0rem;
+    height: 83px!important;
+    width: 83%;
+    background-size: contain;
+    /* filter: invert(1) brightness(96.5); */
+}
+
+.login-form .panel-title::before {
+    height: 100px!important;
+    width: 100%;
+    background-size: contain;
+    background-position-x: center;
+    background-position-y: 0rem;
+}
+
+.login-form .panel-title .icon-object {
+    display: none !important;
+}
+
+.sub-nav-header img {
+    display: none;
+}
+
+.panel {
+    background-color: transparent;
+}
+
+.modal-content {
+    background: linear-gradient(10deg,var(--color-main),#ffffff,#ffffff,#ffffff) ;
+}
+
+.text-muted,.login-title,button.btn.login-option {
+    color: var(--color-main)!important;
+}
+
+.salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
+    border: 1px solid #ffffff5c;
 }
