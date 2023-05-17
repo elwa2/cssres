@@ -1194,3 +1194,46 @@ body > footer > div.footer-main > div > div > div:nth-child(1) > p::before {
 .salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
     border: 1px solid #ffffff5c;
 }
+
+body > section:nth-child(7) > div > div.row > div.col-sm-4 div:after {
+    display: block!important;
+    color: var(--color-text);
+    font-family: var(--ff);
+    font-size: 27px;
+    font-weight: 800;
+    position: relative;
+    top: 0px;
+    background: var(--color-ffd);
+}
+
+body > section:nth-child(7) > div > div.row > div.col-sm-4:after {
+    display: block!important;
+    color: var(--color-text);
+    font-family: var(--ff);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(1) div:after {
+    content: " أثاث فندقي ";
+}
+
+body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(1):after {
+    content: " وصف التصنيف لبلللللللللللللللللللللللللللللللللللللللل ";
+}
+
+body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(2) div:after {
+    content: " أثاث فندقي ";
+}
+
+body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(2):after {
+    content: " وصف التصنيف لبلللللللللللللللللللللللللللللللللللللللل ";
+}
+
+body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(3) div:after {
+    content: " أثاث فندقي ";
+}
+
+body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(3):after {
+    content: " وصف التصنيف لبلللللللللللللللللللللللللللللللللللللللل ";
+}
