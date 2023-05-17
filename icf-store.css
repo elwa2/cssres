@@ -1214,6 +1214,16 @@ body > section:nth-child(7) > div > div.row > div.col-sm-4:after {
     font-weight: 700;
 }
 
+@media (max-width: 700px) {
+    body > section:nth-child(7) > div > div.row > div.col-sm-4 div:after {
+        font-size: 21px;
+    }
+
+    body > section:nth-child(7) > div > div.row > div.col-sm-4:after {
+        font-size: 12px;
+        margin: -16px 0px 13px 1px;
+    }
+}
 body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(1) div:after {
     content: " أثاث فندقي ";
 }
@@ -1223,7 +1233,7 @@ body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(1):after {
 }
 
 body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(2) div:after {
-    content: " أثاث فندقي ";
+    content: " أثاث منزلي ";
 }
 
 body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(2):after {
@@ -1231,7 +1241,7 @@ body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(2):after {
 }
 
 body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(3) div:after {
-    content: " أثاث فندقي ";
+    content: " أثاث مكتبى ";
 }
 
 body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(3):after {
