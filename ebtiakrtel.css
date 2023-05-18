@@ -290,7 +290,7 @@ a {
 
     header .dark.d-none.d-lg-block .top-level-link>a:hover {
         background: unset!important;
-        color: #fff!important
+        color: var(--2);
     }
 
     header .dark.d-none.d-lg-block .top-level-link:hover {
