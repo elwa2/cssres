@@ -1850,7 +1850,7 @@ button.more-button, a.more-button {
 
 .col-lg-6.col-product-info>.product-buttons.d-block .btn.btn-add-to-cart {
     border: 0;
-    background: linear-gradient(to left, var(--1), var(--1-1-h))!important;
+    background: linear-gradient(to left, var(--1), var(--1))!important;
     font-family: sky-bold;
     padding: 2px;
     font-size: 18px;
@@ -1884,7 +1884,8 @@ button.more-button, a.more-button {
     width: 17px;
     margin: 0 3px;
     vertical-align: sub;
-    padding: 7px 0 0
+    padding: 7px 0 0;
+    filter: brightness(26.5);
 }
 
 .col-lg-6.col-product-info>.border-product:last-child h4 {
@@ -1908,11 +1909,11 @@ button.more-button, a.more-button {
     font-family: sky-bold;
     margin: 0 5px;
     font-size: 25px;
-    color: #fff
+    color: var(--1);
 }
 
 .products-details-page .bundle-offer-details-section, .products-details-page #product-description, .products-details-page .review-details, section.mt-5.mb-5 {
-    background: linear-gradient(to bottom,var(--1),#fff,#fff)!important;
+    background: linear-gradient(to bottom,var(--1-1-h),#fff,#fff)!important;
     border-radius: 11px
 }
 
@@ -1988,8 +1989,8 @@ button.more-button, a.more-button {
 }
 
 .products-details-page .description-icon {
-    color: #fff;
-    font-size: 30px
+    color: var(--1);
+    font-size: 30px;
 }
 
 .products-details-page #product-description .description-paragrah * {
@@ -2588,14 +2589,14 @@ section.blog.mt-5.mb-5 {
     border: 0;
     border-radius: 0;
     padding: 10px;
-    background: var(--1);
+    background: var(--3);
     border-radius: 6px
 }
 
 .cart-view .cart-totals-div .cart-product-row-wrapper * {
     font-family: sky;
     padding: 10px;
-    background: var(--1);
+     
     border-radius: 6px;
     color: #292929!important;
     font-size: 1rem
@@ -2606,7 +2607,7 @@ section.blog.mt-5.mb-5 {
     border: 0;
     border-radius: 0;
     padding: 10px;
-    background: var(--2);
+    background: var(--1-1-h);
     border-radius: 6px
 }
 
@@ -2627,7 +2628,7 @@ section.blog.mt-5.mb-5 {
     border: 0;
     border-radius: 0;
     padding: 10px;
-    background: var(--1);
+    
     border-radius: 6px
 }
 
@@ -2736,4 +2737,7 @@ body>div[id*=gb-widget]>div[size="50"] {
     to {
         transform: scale3d(1,1,1) rotate(0)
     }
+}
+.header-theme-icon-primary {
+    color: #ffffff;
 }
