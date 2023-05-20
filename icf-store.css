@@ -227,7 +227,7 @@ footer .col-md-4 {
 
 .footer-links {
     -webkit-columns: 2;
-    columns: 2;
+    columns: 1;
     text-align: center;
     font-size: 13px;
 }
@@ -262,7 +262,7 @@ body.salla-theme_1 .product .product-footer {
     .sub-nav .sub-nav-header a {
         background-color: var(--2);
         color: #000;
-        color: #000000 !important;
+        color: var(--color-ff) !important;
     }
 
     .sub-nav .sub-nav-content .sub-nav-header a {
@@ -341,7 +341,7 @@ body.salla-theme_1 .product .product-footer {
 
 @media(min-width: 992px) {
     .sub-nav {
-        background: var(--1);
+        background: #b7b7b7;
         border: unset;
         font-size: 13px;
         border-radius: 0 0 15px 15px;
@@ -568,6 +568,24 @@ section.section,body,.pt-5, .py-5 {
     display: block;
 }
 
+@media(max-width: 750px) {
+    .logo a {
+        height: 62px;
+        width: 13rem;
+    }
+
+    #search {
+        position: relative;
+        display: inline-block;
+        display: none;
+    }
+
+    img[src="https://cdn.salla.sa/form-builder/rvQYJydTT1EtYlBHzqttuAi3AF6ZXIhO4BXpV71E.png"] {
+        content: url(https://cdn.salla.sa/form-builder/DyCrfFsRgXDCOqNF7co6JPhSx0gaXLzQDtQlRPGw.png);
+        margin: 0px 0 0 0;
+    }
+}
+
 .sub-nav-header::before, .login-form .panel-title::before {
     content: "";
     background-image: var(--logo);
@@ -764,14 +782,14 @@ footer,.footer-main {
     border-radius: 50%;
     border: 2px solid var(--color-bg);
 } */
-body > section > div > div.section-header.d-flex.justify-content-between.align-items-center.mb-4 > h2 > span:after {
+body > section > div > div.section-header.d-flex.justify-content-between.align-items-center.mb-4 > h2 > span:after,body > section:nth-child(11)[style="background: #FAFAFA;"]:before {
     text-indent: 0;
     display: block!important;
     line-height: initial;
     color: var(--color-text);
     font-weight: lighter;
     font-family: var(--ff);
-    font-size: 15px;
+    font-size: 15px !important;
     font-weight: 400;
 }
 
@@ -783,16 +801,11 @@ body > section:nth-child(8) > div > div.section-header.d-flex.justify-content-be
     content: "   مشاريعنا المميزة مع شركاء النجاح ";
 }
 
-body > section:nth-child(10)[style="background: #FAFAFA;"]:before {
-    content: "  اعمالنا ";
-    margin: auto;
+body > section:nth-child(11)[style="background: #FAFAFA;"]:before {
+    content: "  مشاريعنا ";
     text-align: center;
-    align-content: center;
-    display: block;
-    height: 70px;
     font-size: 33px !important;
     color: var(--3);
-    font-weight: bold;
 }
 
 .sicon-user:before,.sicon-bell:before {
@@ -1048,10 +1061,10 @@ body > footer > div.footer-main > div > div > div:nth-child(3) > h2 > span:after
 }
 
 @media (max-width: 700px) {
-.banner:has(img[src*="ajPHAFnTbd9UYH3mrUjQjdXvrGFo49hGo2eIhH2.png"]) {
-     background-size: 164rem;
+    .banner:has(img[src*="ajPHAFnTbd9UYH3mrUjQjdXvrGFo49hGo2eIhH2.png"]) {
+        background-size: 164rem;
+    }
 }
-   } 
 
 @keyframes elwaaa {
     0% {
@@ -1082,12 +1095,13 @@ body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a.offers-link,.sub-
 }
 
 body:not(.salla-theme_6) > div.sub-nav > div > ul > li:not(.sub-menu-header) > a {
-    background: #ffffff;
+    background: transparent;
     margin: 4px 0;
     padding: 6px;
     border-radius: 15px;
     height: 37px;
     width: 86px;
+    /* color: #fff; */
 }
 
 body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a.offers-link::after {
@@ -1127,8 +1141,8 @@ body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a.offers-link::afte
 }
 
 img[src="https://cdn.salla.sa/form-builder/rvQYJydTT1EtYlBHzqttuAi3AF6ZXIhO4BXpV71E.png"] {
-    content: url(https://cdn.salla.sa/form-builder/KS8tJPJUFbSUtA7vNc89JDz3577QrdD3e90Y93XA.png);
-    margin: 36px 0 0 0;
+    content: url(https://cdn.salla.sa/form-builder/TGV3Kjv87YnYxcjSWmNLDnRetuizABDXMg9NPiNG.png);
+    margin: 0px 0 0 0;
 }
 
 .thumbnail {
@@ -1188,7 +1202,7 @@ body > footer > div.footer-main > div > div > div:nth-child(1) > p::before {
 }
 
 .text-muted,.login-title,button.btn.login-option {
-    color: var(--color-main)!important;
+    color: #000000!important;
 }
 
 .salla-theme_6 .login-form #login-panel-actions .login-options .btn.login-option {
@@ -1224,6 +1238,7 @@ body > section:nth-child(7) > div > div.row > div.col-sm-4:after {
         margin: -16px 0px 13px 1px;
     }
 }
+
 body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(1) div:after {
     content: " أثاث فندقي ";
 }
@@ -1246,4 +1261,12 @@ body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(3) div:afte
 
 body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(3):after {
     content: " وصف التصنيف لبلللللللللللللللللللللللللللللللللللللللل ";
+}
+
+.product-price, .product-details__price, .product:hover .product-title, .footer-title, .footer-item p, .product-details__hot strong, .section-header .section--title, .footer-links a, .sub-nav-header p, .sub-nav-header a {
+    color: #96813f;
+}
+
+h3.product-title.mb-0 {
+    color: #96813f;
 }
