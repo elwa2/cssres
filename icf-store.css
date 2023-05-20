@@ -346,6 +346,7 @@ body.salla-theme_1 .product .product-footer {
         font-size: 13px;
         border-radius: 0 0 15px 15px;
         margin-bottom: 20px;
+        box-shadow: 1px 5px 6px #0000001a;
     }
 
     .main-menu > li:not(.sub-menu-logged-in) > a:hover::before {
