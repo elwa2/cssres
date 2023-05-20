@@ -43,6 +43,7 @@ header.site-header.sticky .search-wrapper {
 .salla-theme_6 .product .product-price {
     width: 100%;
     text-align: center;
+    place-content: center;
 }
 
 .salla-theme_6 .product-details__title {
