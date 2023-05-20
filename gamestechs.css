@@ -534,7 +534,7 @@ ol.breadcrumb li {
 }
 
 .footer-links {
-    columns: auto 3;
+    columns: auto 2;
     padding-top: 16px;
     font-size: 10px !important;
 }
