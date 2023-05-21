@@ -409,3 +409,9 @@ body.salla-theme_1 #sort {
         font-size: 5vw  !important;
     }
 }
+.product {
+    border: 1px solid #dfdfdf;
+    overflow: hidden;
+    transition: all .2s ease-out;
+    border-radius: 25px;
+}
