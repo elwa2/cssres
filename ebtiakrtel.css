@@ -1132,7 +1132,7 @@ button.more-button, a.more-button {
     .slide-menu__slider>ul>li:nth-child(1) {
         grid-column: 1/3;
         content: var(--logo);
-        height: 70px;
+        height: 53px;
         padding: 5px 0;
         margin: 25px auto 10px;
         border-bottom: 0;
