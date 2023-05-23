@@ -212,13 +212,14 @@ body {
     border: .5px solid var(--1);
     background-color: var(--1);
     color: #fff;
-    font-size: 14px
+    font-size: 14px;
+    border-radius: 24px;
 }
 
 #product-custom-user-dropdown-fields select, .select-quantity-div select {
-    background-color: var(--1);
-    color: #fff;
-    font-size: 14px
+    background-color: #fff;
+    /* color: #fff; */
+    font-size: 14px;
 }
 
 #product-custom-user-dropdown-fields>div.form-group>div:after, .select-quantity-div>div.form-group>div:after {
@@ -327,8 +328,12 @@ ul.main-nav {
     color: #fe6d6d!important;
     text-align: center;
 }
-div[style*="color: #494949"]{  text-align: center;}
-span[style="color:#f25f5f;"]{
+
+div[style*="color: #494949"] {
+    text-align: center;
+}
+
+span[style="color:#f25f5f;"] {
     background: #ffedee87;
     border-radius: 6px;
     padding: 3px 0 3px 5px;
@@ -429,7 +434,19 @@ ul.main-nav>li:last-child {
     width: 23px;
     margin: unset
 }
-
+.prod-col div[style="text-align: center"] a:before {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    content: "";
+    background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8.35 8.35'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; %7D %3C/style%3E%3C/defs%3E%3Crect class='cls-1' y='3.66' width='8.35' height='1.04'/%3E%3Crect class='cls-1' y='3.66' width='8.35' height='1.04' transform='translate(0 8.35) rotate(-90)'/%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-left: 5px;
+}
 body {
     background-color: var(--bg)
 }
@@ -499,6 +516,7 @@ body > div > div.footer > footer > div.footer-store-section.store-section.footer
     height: 31px;
     max-width: 52px;
 }
+
 .cart-badge {
     position: absolute;
     right: 20px;
@@ -513,3 +531,5 @@ body > div > div.footer > footer > div.footer-store-section.store-section.footer
     background-color: var(--1);
     left: 12px;
 }
+
+
