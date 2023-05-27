@@ -312,7 +312,7 @@ footer, .footer-theme-text-for-primary-bg {
 
 .btn:not(:disabled):not(.disabled):hover, .product-card-add-to-cart:hover {
     background-color: #fff;
-    color: var(--1)
+    color: var(--2)
 }
 
 .btn:not(:disabled):not(.disabled), .product-card-add-to-cart {
@@ -637,7 +637,7 @@ section .main-slider img {
     background-color: var(--1)!important
 }
 
-.home>div:nth-of-type(2) {
+.home>div:nth-of-type(1) {
     background-color: var(--1)
 }
 
@@ -650,7 +650,7 @@ section .main-slider img {
 
 .slick-next.slick-arrow>span, .slick-prev.slick-arrow>span {
     color: #fff!important;
-    background: var(--1);
+    background: var(--2);
     border-radius: 50%
 }
 
@@ -937,7 +937,10 @@ ul.main-nav>li>a.mega-menu>span:after {
         font-size: 1.2rem!important
     }
 }
-
+.size-box #product-variants-options ul li.active {
+    border: 1px solid var( --2);
+    color: var( --2);
+}
 :root {
     --1: #f2edda;
     --2: #121212;
