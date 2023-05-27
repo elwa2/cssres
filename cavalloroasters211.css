@@ -33,6 +33,7 @@ header.site-header::after {
     z-index: 0;
     transform: scaleX(1);
     transition: all .5s ease-in-out;
+    opacity: .2;
 }
 
 header.site-header {
