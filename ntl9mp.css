@@ -222,7 +222,7 @@ p.px-2.theme-text-for-primary-bg {
     border-bottom-left-radius: 19px;
     padding: 7px 1px!important;
     margin: 0!important;
-    color: var(--1)!important
+    color: var(--2)!important
 }
 
 @media(min-width: 747px) {
