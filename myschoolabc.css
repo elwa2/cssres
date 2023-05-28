@@ -40,7 +40,8 @@ ul.main-nav>li>a, .item-all-categories a {
 
 .slide-menu ul li:first-child>div {
     background: var(--logo)center top 2rem/11rem no-repeat transparent;
-    padding-top: 14rem
+    padding-top: 14rem;
+    background-size: 37%;
 }
 
 .slide-menu__slider>ul>li:nth-child(2) a {
@@ -180,7 +181,7 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
     z-index: 1;
     margin-right: -84px;
     height: 11px;
-    width: 166px;
+    width: 127px;
 }
 
 .footer {
@@ -228,10 +229,10 @@ body, html {
 }
 
 @media only screen and (max-width: 768px) {
-    .gallery-section:nth-child(2):after {
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > section:after {
         display: flex;
         width: 100%!important;
-        background-image: url(https://media.zid.store/1aba6978-00d6-4e15-ae8f-ac6291fc5335/2b310745-c372-4183-9860-0e2cea92c253.png);
+        background-image: url(https://media.zid.store/aff4be9d-652d-4d48-bcbb-24231ffad700/bd4357f1-e1ad-4d13-a71f-6216286282d5.svg);
         animation: Ads 80s infinite linear;
         content: "";
         height: 29px;
@@ -307,7 +308,7 @@ body, html {
     background-size: contain;
     /* filter: brightness(56.5); */
     position: relative;
-    top: -4px;
+    top: 5px;
 }
 
 .product-item-out-of-stock,.prod-col:has(.product-item-out-of-stock) {
