@@ -183,6 +183,10 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
     margin-right: -84px;
     height: 11px;
     width: 105px;
+    background: #fff;
+    height: 145px;
+    padding: 12px;
+    border-radius: 15px;
 }
 
 .footer {
@@ -211,7 +215,7 @@ footer.d-flex.flex-column {
     border-bottom: 0!important
 }
 
-.store-section h1 {
+.store-section h1,.footer-copyrights span {
     font-size: 15px;
     color: #ffffff;
 }
