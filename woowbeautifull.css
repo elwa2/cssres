@@ -1,5 +1,5 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */ 
- @import url('https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css'); /* fit content panner */
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@import url('https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css'); /* fit content panner */
 body {
     background-image: url(https://cdn.salla.sa/WxjxR/BVwkXNPy8vch5KsMhy4R9OQBxYEeEwXXk4OZgdmO.jpg);
     background-size: cover;
@@ -212,11 +212,13 @@ a.btn.btn-primary.btn-rounded {
         font-size: 20px;
     }
 }
-@media (max-width: 992px) {
 
-.col-sm-6.col-md-4.feature-item {
-    display: table-cell;
-}}
+@media (max-width: 992px) {
+    .col-sm-6.col-md-4.feature-item {
+        display: table-cell;
+    }
+}
+
 section {
     background: transparent !important;
 }
@@ -234,8 +236,9 @@ section {
     height: 60px;
     width: 4rem;
     display: block;
-    margin: 0px 0 -12px 0;
+    margin: 0px 0 2px 0;
 }
+
 body > section:nth-child(9).py-5.text-center {
     background: url(https://cdn.salla.sa/form-builder/9bVL3UYLiKEeG0oEzOm91bxXxfelKnhG37dAH9pH.jpg)!important;
 }
