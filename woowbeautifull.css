@@ -236,6 +236,9 @@ section {
     display: block;
     margin: 0px 0 -12px 0;
 }
+body > section:nth-child(9).py-5.text-center {
+    background: url(https://cdn.salla.sa/form-builder/9bVL3UYLiKEeG0oEzOm91bxXxfelKnhG37dAH9pH.jpg)!important;
+}
 
 :root {
     --main-color: #e6688d;
