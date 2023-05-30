@@ -229,7 +229,7 @@ body, html {
 }
 
 @media only screen and (max-width: 768px) {
-    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > section:after {
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > section:nth-child(1):after {
         display: flex;
         width: 100%!important;
         background-image: url(https://media.zid.store/aff4be9d-652d-4d48-bcbb-24231ffad700/3a9e2c82-13a7-46e2-8f98-2ffa8cc82ff3.svg);
@@ -331,4 +331,20 @@ body, html {
     border: 1px solid #ffffff;
     border-radius: 5px;
     overflow: hidden;
+}
+
+.gallery-section.container.section-padding-space {
+    width: 100%
+}
+
+.gallery-section .gallery.row {
+    flex-wrap: unset
+}
+
+.gallery-section .gallery.row>.gallery-item {
+    flex: unset
+}
+
+.gallery .gallery-item.bottom-row {
+    margin-top: 00px;
 }
