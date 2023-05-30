@@ -239,7 +239,7 @@ section {
     margin: 0px 0 2px 0;
 }
 
-body > section:nth-child(9).py-5.text-center {
+body > section.py-5.text-center:has(.row.testimonails-listing.slick-initialized.slick-slider.slick-dotted) {
     background: url(https://cdn.salla.sa/form-builder/9bVL3UYLiKEeG0oEzOm91bxXxfelKnhG37dAH9pH.jpg)!important;
 }
 
