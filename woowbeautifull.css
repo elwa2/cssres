@@ -242,7 +242,9 @@ section {
 body > section.py-5.text-center:has(.row.testimonails-listing.slick-initialized.slick-slider.slick-dotted) {
     background: url(https://cdn.salla.sa/form-builder/9bVL3UYLiKEeG0oEzOm91bxXxfelKnhG37dAH9pH.jpg)!important;
 }
-
+.store-notify {
+    background-color: #FAEFF4 !important;
+}
 :root {
     --main-color: #e6688d;
     --infinte-color: #e6688d;
