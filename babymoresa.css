@@ -485,6 +485,7 @@ body > div > div.footer > footer > div.footer-store-section.store-section.footer
     color: #000000!important;
     white-space: pre-wrap;
     text-align: center;
+    font-weight: 500;
 }
 
 .feature:first-child .theme-text-for-primary-bg:after {
@@ -899,4 +900,9 @@ div[style*="color: #494949"] {
     .home section:nth-of-type(1) .container {
         padding: 7px
     }
+}
+.feature p {
+    
+    font-weight: bolder;
+ 
 }
