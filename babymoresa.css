@@ -486,6 +486,7 @@ body > div > div.footer > footer > div.footer-store-section.store-section.footer
     white-space: pre-wrap;
     text-align: center;
     font-weight: 500;
+    position: relative;
 }
 
 .feature:first-child .theme-text-for-primary-bg:after {
@@ -502,15 +503,18 @@ body > div > div.footer > footer > div.footer-store-section.store-section.footer
 
 @media (max-width: 991px) {
     .feature:first-child .theme-text-for-primary-bg:after {
-        content: "         اطلب وأنت متطمن "
+        content: "         اطلب وأنت متطمن ";
+        right: -2px;
     }
 
     .feature:nth-child(2) .theme-text-for-primary-bg:after {
-        content: "      على مدار الساعة   "
+        content: "      على مدار الساعة   ";
+        right: 1px;
     }
 
     .feature:nth-child(3) .theme-text-for-primary-bg:after {
-        content: "      أسرع من البرق  "
+        content: "      أسرع من البرق  ";
+        right: 7px;
     }
 }
 
