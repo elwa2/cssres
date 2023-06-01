@@ -378,7 +378,7 @@ ul.main-nav>li:last-child {
     padding: 0;
     width: 100%!important;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 3rem 1rem;
     background-size: 43%;
 }
 
@@ -562,7 +562,7 @@ body > div > div.footer > footer > div.footer-store-section.store-section.footer
     }
 
     div[style="color: #494949"] {
-/*         margin: 0 -76px 1px 1px */
+        /*         margin: 0 -76px 1px 1px */
     }
 
     .slide-menu__slider>ul>li:nth-child(18) .container .language-currency {
@@ -884,8 +884,19 @@ body > div > div.footer > footer > div.footer-store-section.store-section.footer
     font-weight: 400;
     line-height: 3;
 }
+
 div[style*="color: #494949"] {
     text-align: center;
     position: relative;
     top: 13px;
+}
+
+@media(max-width: 991px) {
+    section:nth-of-type(1) .container.container-slider .slick-dotted.slick-slider {
+        border-radius: 15px !important;
+    }
+
+    .home section:nth-of-type(1) .container {
+        padding: 7px
+    }
 }
