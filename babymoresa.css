@@ -459,7 +459,7 @@ body > div > div.footer > footer > div.footer-store-section.store-section.footer
 
 @media (max-width: 768px) {
     .product-item {
-        width: 174px;
+        width: 163px;
     }
 
     .products-slider .prod-col, .categories-slider .cat-col {
