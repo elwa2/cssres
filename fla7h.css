@@ -2872,7 +2872,7 @@ section.blog.mt-5.mb-5 {
     transition: 0.1s;
     opacity: unset
 }
-.product-item img {
+.product-item img,.category-item img {
   
     border-radius: 11px;
 }
