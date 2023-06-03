@@ -911,8 +911,10 @@ ul>li>div[style="height: 50px"] {
     margin-top: 0;
     margin-bottom: 0;
     font-family: sky-bold;
-    font-size: 1.2rem;
-    color: #8c9b64
+    font-size: 1.9rem;
+    color: #8c9b64;
+    position: relative;
+    top: 13px;
 }
 
 [dir="rtl"] .slick-prev {
