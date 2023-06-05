@@ -284,6 +284,18 @@ a.social-link {
     margin: 0px 0 11px 0;
 }
 
+@media (max-width:70px){
+salla-slider.photos-slider .swiper-slide {
+    position: relative;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    height: auto;
+    width: 100% !important;
+    overflow: hidden;
+    border-radius: 0.375rem;
+    padding-left: 5px !important;
+}
+ }
 :root {
     --1: #ee1a3e;
     --2: #cecece;
