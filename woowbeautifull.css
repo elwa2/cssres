@@ -246,6 +246,9 @@ body > section.py-5.text-center:has(.row.testimonails-listing.slick-initialized.
 .store-notify {
     background-color: #FAEFF4 !important;
 }
+.footer-main,.footer-title,.store-contact a,.footer-links a,.social__item a {
+    color: #a07e88;
+}
 
 :root {
     --main-color: #e6688d;
