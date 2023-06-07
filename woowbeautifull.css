@@ -1,10 +1,13 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url('https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css'); /* fit content panner */
-body {
-    background-image: url(https://cdn.salla.sa/form-builder/rVp4k986HSk2P8Cf3nvyvhOPWKjBdbyl0w8nxQI3.jpg);
+body.store-home {
+    background-image: url(https://cdn.salla.sa/form-builder/20IBW5GO1bN0Xb08TYiSh0I7pqJMGqx20oNbgVq6.jpg);
     background-size: cover;
 }
-
+body:not(.store-home) {
+    background-image: url(https://cdn.salla.sa/form-builder/Y4P4CEYfYukPYHR3cCd41Pl0pI2fkTbUVpXO0l17.jpg);
+    background-size: cover;
+}
 .slick-track {
     margin-left: 0px !important;
     margin-right: 0px !important;
