@@ -337,7 +337,9 @@ ul.main-nav>li>a, .item-all-categories a {
 
     #fixed-header.sticky .header-logo a[href="/"] {
         background-size: contain;
-        width: 52px!important;
+        width: 44px!important;
+        position: relative;
+        right: 39%;
     }
 }
 
