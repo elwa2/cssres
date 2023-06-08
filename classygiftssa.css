@@ -477,6 +477,9 @@ footer:before {
         background-position: -2146px 0
     }
 }
+section[section-id="4432b670-9916-4eff-beed-6f184c2fc1c0"] .container.section-slider-padding-space.slider-container {
+    background-color: var(--1);
+}
 
 :root {
     --1: #c08d82;
