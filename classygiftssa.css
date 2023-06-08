@@ -37,11 +37,11 @@ a.d-flex.flex-column.justify-content-start+div::before {
 
 a.btn.btn-primary.product-card-add-to-cart,.product-item .btn-primary {
     position: absolute!important;
-    border-radius: 15px 0 15px 0!important;
+    /* border-radius: 15px 0 15px 0!important; */
     background: var(--1)!important;
     border: none!important;
     font-size: 16px!important;
-    font-weight: 700!important;
+    font-weight: 400!important;
     width: 100%;
 }
 
