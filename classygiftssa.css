@@ -480,7 +480,27 @@ footer:before {
 section[section-id="4432b670-9916-4eff-beed-6f184c2fc1c0"] .container.section-slider-padding-space.slider-container {
     background-color: var(--1);
 }
+ 
+.features-section.section-padding-space::before {
+    content: "ليه أكثر من الف عميل اختارنا؟";
+}
 
+@media (max-width: 700px) {
+    .features-section.section-padding-space::before {
+        width: 74%;
+        right: 13%;
+    }
+}
+body[data-template="home"]:before {
+    background-size: 25% !important;
+}
+.store-section h1 {
+ 
+    color: #231F20;
+}footer:before {
+  
+    top: 14px;
+}
 :root {
     --1: #c08d82;
     --1: #D49D91;
