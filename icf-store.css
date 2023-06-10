@@ -1293,3 +1293,6 @@ body > header > div > div > div.col-lg-4.header-row.pull-left > div.ml-md-2.drop
         margin: -125px 0px 0px 0px;
     }
 }
+.store-contact a,.social__item a {
+    color: var(--2);
+}
