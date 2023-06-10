@@ -793,7 +793,7 @@ body > section:nth-child(7) > div > div.section-header.d-flex.justify-content-be
     content: "     عالم مميز يسحرك بتفاصيله    ";
 }
 
-body > section:nth-child(8) > div > div.section-header.d-flex.justify-content-between.align-items-center.mb-4 > h2 > span:after {
+body > section:nth-child(11) > div > div.section-header.d-flex.justify-content-between.align-items-center.mb-4 > h2 > span:after {
     content: "   مشاريعنا المميزة مع شركاء النجاح ";
 }
 
@@ -990,6 +990,7 @@ body:not(.salla-theme_6) section:nth-child(7) .category-featured {
         position: relative;
         top: 15px;
         border-radius: 15px;
+        right: 15rem;
     }
 
     .site-header.sticky #searchbox.prompt {
@@ -1103,7 +1104,7 @@ body:not(.salla-theme_6) > div.sub-nav > div > ul > li:not(.sub-menu-header) > a
     padding: 6px;
     border-radius: 15px;
     height: 37px;
-    width: 86px;
+    /* width: 96px; */
     /* color: #fff; */
 }
 
