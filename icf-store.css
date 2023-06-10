@@ -915,8 +915,8 @@ body > footer > div.footer-main > div > div > div:nth-child(1) > h2 > a > img {
 }
 
 .circle-action:hover {
-    background: var(--2);
-    border-color: var(--2);
+    background: #f3f3f375;
+    border-color: #f7f7f79c;
 }
 
 .salla-theme_1 footer .store-certificate b, .salla-theme_6 footer .store-certificate b, body > footer > div.footer-main > div > div > div:nth-child(1) > div.store-certificate > span {
@@ -959,6 +959,13 @@ body > section.u-light.py-5.text-center > div > div > div > p {
 body:not(.salla-theme_6) section:nth-child(7) .category-featured {
     height: auto;
     padding: 155.25% 0 0;
+}
+
+@media (max-width: 700px) {
+    body:not(.salla-theme_6) section:nth-child(7) .category-featured {
+        height: auto;
+        padding: 81.25% 0 0;
+    }
 }
 
 @media (min-width: 700px) {
@@ -1219,6 +1226,7 @@ body > section:nth-child(7) > div > div.row > div.col-sm-4 div:after {
     position: relative;
     top: 0px;
     background: var(--color-ffd);
+    text-align: center;
 }
 
 body > section:nth-child(7) > div > div.row > div.col-sm-4:after {
@@ -1244,30 +1252,33 @@ body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(1) div:afte
     content: " أثاث فندقي ";
 }
 
-body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(1):after {
+/* body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(1):after {
     content: " وصف التصنيف لبلللللللللللللللللللللللللللللللللللللللل ";
 }
-
+ */
 body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(2) div:after {
     content: " أثاث منزلي ";
 }
 
-body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(2):after {
+/* body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(2):after {
     content: " وصف التصنيف لبلللللللللللللللللللللللللللللللللللللللل ";
 }
-
+ */
 body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(3) div:after {
     content: " أثاث مكتبى ";
 }
 
-body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(3):after {
+/* body > section:nth-child(7) > div > div.row > div.col-sm-4:nth-child(3):after {
     content: " وصف التصنيف لبلللللللللللللللللللللللللللللللللللللللل ";
-}
-
+} */
 .product-price, .product-details__price, .product:hover .product-title, .footer-title, .footer-item p, .product-details__hot strong, .section-header .section--title, .footer-links a, .sub-nav-header p, .sub-nav-header a {
     color: #96813f;
 }
 
 h3.product-title.mb-0 {
     color: #96813f;
+}
+
+body > header > div > div > div.col-lg-4.header-row.pull-left > div.ml-md-2.dropdown-store-header > button {
+    display: none;
 }
