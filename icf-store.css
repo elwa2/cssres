@@ -1094,7 +1094,7 @@ body > footer > div.footer-main > div > div > div:nth-child(1) > h2 > a > img[sr
     content: var(--logo);
 }
 
-body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a.offers-link,.sub-nav .main-menu li.sub-menu-header.categories-holder > ul.store-categories > li:nth-child(1) > a {
+body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a.offers-link {
     font-size: 0px!important;
 }
 
