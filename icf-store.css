@@ -1006,7 +1006,7 @@ body:not(.salla-theme_6) section:nth-child(7) .category-featured {
     }
 }
 
-body > section:nth-child(8) .col-sm-4 {
+body > section:nth-child(9) .col-sm-4 {
     width: calc(100%/4);
     float: right;
     padding-right: 5px;
