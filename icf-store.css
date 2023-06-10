@@ -978,7 +978,7 @@ body:not(.salla-theme_6) section:nth-child(7) .category-featured {
 }
 
 @media (min-width: 700px) {
-    .hide {
+    div#search .hide {
         display: block !important;
     }
 
