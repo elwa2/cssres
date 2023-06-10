@@ -226,8 +226,8 @@ footer .col-md-4 {
 }
 
 .footer-links {
-    -webkit-columns: 2;
-    columns: 2;
+    -webkit-columns: 1;
+    columns: 1;
     text-align: center;
     font-size: 13px;
 }
@@ -1297,6 +1297,15 @@ body > header > div > div > div.col-lg-4.header-row.pull-left > div.ml-md-2.drop
 
     body > section:nth-child(7) > div > div.section-header.d-flex.justify-content-between.align-items-center.mb-4 {
         margin: -125px 0px 0px 0px;
+    }
+
+    footer .col-md-4:nth-child(1) {
+        margin: 4px 0 -102px 0;
+    }
+
+    .salla-theme_1 footer .footer-main .store-certificate {
+        position: relative;
+        top: 18rem;
     }
 }
 
