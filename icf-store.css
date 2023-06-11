@@ -1336,3 +1336,7 @@ body > header > div > div > div.col-lg-4.header-row.pull-left > div.ml-md-2.drop
 .category-featured a:before {
     content: none;
 }
+body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) ul li:hover>a {
+    background-color: transparent;
+    color: #000; 
+}
