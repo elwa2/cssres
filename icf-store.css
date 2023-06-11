@@ -1307,6 +1307,10 @@ body > header > div > div > div.col-lg-4.header-row.pull-left > div.ml-md-2.drop
         position: relative;
         top: 18rem;
     }
+
+    .header-top {
+        margin-bottom: 20px;
+    }
 }
 
 .store-contact a,.social__item a {
