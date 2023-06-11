@@ -1060,7 +1060,7 @@ body > footer > div.footer-main > div > div > div:nth-child(3) > h2 > span:after
     animation: elwaaa 500s linear alternate both infinite;
     background-size: contain;
     opacity: 1 !important;
-    width: 47% !important;
+    /* width: 47% !important; */
     height: 11rem;
 }
 
