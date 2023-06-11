@@ -266,6 +266,36 @@ body > section.py-5.text-center:has(.row.testimonails-listing.slick-initialized.
 .styles__snippetWrapper--b97bf {
     background: #fff;
 }
+#tabbyPromoWrapper #tabbyPromo {
+    align-items: center;
+    display: contents;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#tabbyPromoWrapper {
+    border: 1px solid rgb(49, 232, 168);
+    border-radius: 9px;
+    /*   border: 0px solid #eee;*/
+    padding: 0px 0px;
+    background: #fff;
+}
+
+.spotii-wrapper {
+    border: 1px solid #dd7171;
+    border-radius: 10px;
+    margin: 10px 0 20px;
+    padding: 18px 15px; background: #fff;
+}
+
+.spotii-promo {
+    display: flex;
+    gap: 6px;
+}
+
+.tamara-product-widget {
+    border-color: rgb(242, 181, 151) !important;  background: #fff;
+}
 
 :root {
     --main-color: #e6688d;
