@@ -4,10 +4,12 @@ body.store-home {
     background-image: url(https://cdn.salla.sa/form-builder/20IBW5GO1bN0Xb08TYiSh0I7pqJMGqx20oNbgVq6.jpg);
     background-size: cover;
 }
+
 body:not(.store-home) {
     background-image: url(https://cdn.salla.sa/form-builder/Y4P4CEYfYukPYHR3cCd41Pl0pI2fkTbUVpXO0l17.jpg);
     background-size: cover;
 }
+
 .slick-track {
     margin-left: 0px !important;
     margin-right: 0px !important;
@@ -220,6 +222,13 @@ a.btn.btn-primary.btn-rounded {
     .col-sm-6.col-md-4.feature-item {
         display: table-cell;
     }
+
+    .styles__logo--8e422 {
+        width: 145px;
+        height: 28px;
+        position: relative;
+        top: 21px;
+    }
 }
 
 section {
@@ -249,8 +258,13 @@ body > section.py-5.text-center:has(.row.testimonails-listing.slick-initialized.
 .store-notify {
     background-color: #FAEFF4 !important;
 }
+
 .footer-main,.footer-title,.store-contact a,.footer-links a,.social__item a {
     color: #a07e88;
+}
+
+.styles__snippetWrapper--b97bf {
+    background: #fff;
 }
 
 :root {
