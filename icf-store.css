@@ -1080,6 +1080,7 @@ body > footer > div.footer-main > div > div > div:nth-child(3) > h2 > span:after
     .banner:has(img[src*="ajPHAFnTbd9UYH3mrUjQjdXvrGFo49hGo2eIhH2.png"]) {
         background-size: 164rem;
         height: 12rem;
+        background-repeat-y: no-repeat;
     }
 }
 
