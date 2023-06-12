@@ -784,3 +784,24 @@ body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) a {
     position: relative;
     color: #fff !important;
 }
+
+body > section:nth-child(5) > div > a > img {
+    position: relative;
+    top: -1.5rem;
+    margin-top: -2px;
+}
+.section[data-type=banner]{
+   
+    margin-top: -2px;
+}
+.pt-5, .py-5,body, section.section {
+background: #eae4e4;
+    background-color: #e1e1e3;
+}
+ .site-header {
+    background: #e29754;
+    background: linear-gradient( 90deg ,#d88a48 0%, #e29754 20%);
+}
+
+
+header.site-header.sticky,body.salla-theme_1 #sort { background: transparent;}
