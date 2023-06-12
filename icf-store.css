@@ -161,9 +161,21 @@ footer .footer-sub .font-13>span {
 }
 
 @media(min-width: 992px) {
+    footer .store-certificate {
+        /* width: max-content; */ /* margin: 30px auto -10px !important; */ position: relative;
+        right: -41rem;
+        border: 0;
+    }
+
+    p.font-13::before {
+        position: relative;
+        right: 8rem;
+    }
+
     .footer-main {
         /*! border-top:4px solid #18b5d8;
-      */border-radius:11px;
+      */
+        border-radius: 11px;
         text-align: center;
     }
 
@@ -1304,6 +1316,11 @@ body > header > div > div > div.col-lg-4.header-row.pull-left > div.ml-md-2.drop
     body > footer > div.footer-main > div > div > div:nth-child(3) {
         order: 3;
     }
+
+    body > footer > div.footer-main > div > div > div:nth-child(2), body > footer > div.footer-main > div > div > div:nth-child(3) {
+        position: relative;
+        top: 5rem;
+    }
 }
 
 @media (max-width: 700px) {
@@ -1337,7 +1354,12 @@ body > header > div > div > div.col-lg-4.header-row.pull-left > div.ml-md-2.drop
 .category-featured a:before {
     content: none;
 }
+
 body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) ul li:hover>a {
     background-color: transparent;
-    color: #000; 
+    color: #000;
+}
+
+.slick-list.draggable {
+    border-radius: 40px;
 }
