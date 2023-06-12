@@ -1360,6 +1360,6 @@ body:not(.salla-theme_6) .main-menu li:not(.sub-menu-header) ul li:hover>a {
     color: #000;
 }
 
-.slick-list.draggable {
-    border-radius: 40px;
+body > section:nth-child(11) .slick-list.draggable {
+    border-radius: 20px;
 }
