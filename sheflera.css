@@ -126,7 +126,7 @@ body,.footer-is-light .store-footer {
 
 section.s-block.s-block--categories {
     position: relative;
-    top: -137px;
+    top: -110px;
     margin: 0px 0 -130px 0;
 }
 
@@ -454,22 +454,26 @@ i.sicon-cart-add.border-primary {
     }
 
     .s-block--default-home-slider#home-slider-0,.s-block--default-home-slider .slider-height .swiper,.s-block--default-home-slider .slider-height .swiper-slide-image img,.s-block--default-home-slider .slider-height .swiper-slide-image,.s-block--default-home-slider .slider-height .swiper-slide {
-        height: 793px;
+        height: 488px;
     }
 
     img.object-cover[src*="https://cdn.salla.sa/form-builder/6KE0o3zBbokGOXpjR55TAkXgvjFxYF8f4GtmfajL.jpg"] {
         content: url(https://cdn.salla.sa/form-builder/5Bu8Tuh67lP14pwqDWmJTwFVS91Ed0rb339kGjCA.jpg);
+        transform: scale(1.1) translate(1px, 52px);
     }
 
     img.object-cover[src*="dPWd30fM2K5bb3GMdJS1rb2eg.jpg"] {
         content: url(https://cdn.salla.sa/form-builder/27LGqXJypFVEpPO98lQEuBpwTDkjAzzbbpauALU3.jpg);
+        transform: scale(1.1) translate(1px, 52px);
     }
 
     img.object-cover[src*="9Q9trhV01Ar14hekLM4UwxR9MaAa4.jpg"] {
-        content: url(https://cdn.salla.sa/form-builder/0YjznsHwVR2OYyL7ewncd74H4hyoEGyttnlctM1j.jpg);
+        content: url(https://cdn.salla.sa/BgWPY/8p116YDacQ9s7wzmrX2x4j6cjvWGGY38Q2EzSGEU.jpg);
+        transform: scale(1.1) translate(1px, 52px);
     }
 
     img.object-cover[src*=""] {
         content: url();
+        transform: scale(1.1) translate(1px, 52px);
     }
 }
