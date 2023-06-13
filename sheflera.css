@@ -458,18 +458,21 @@ i.sicon-cart-add.border-primary {
     }
 
     img.object-cover[src*="https://cdn.salla.sa/form-builder/6KE0o3zBbokGOXpjR55TAkXgvjFxYF8f4GtmfajL.jpg"] {
-        content: url(https://cdn.salla.sa/form-builder/5Bu8Tuh67lP14pwqDWmJTwFVS91Ed0rb339kGjCA.jpg);
-        transform: scale(1.1) translate(1px, 52px);
+        content: url(https://cdn.salla.sa/BgWPY/K6DkTlKeeyP5cSxPiYhmFdKuYTyIGzd4Ix6uQaRD.jpg);
+        /* transform: scale(1.1) translate(1px, 52px); */
+        transform: translate(1px, 0px);
     }
 
     img.object-cover[src*="dPWd30fM2K5bb3GMdJS1rb2eg.jpg"] {
-        content: url(https://cdn.salla.sa/form-builder/27LGqXJypFVEpPO98lQEuBpwTDkjAzzbbpauALU3.jpg);
-        transform: scale(1.1) translate(1px, 52px);
+        content: url(https://cdn.salla.sa/BgWPY/nlW7aRPvsBe5wUB7Ln56jztZQ2cafrLWiU6Js0Ao.jpg);
+        /*         transform: scale(1.1) translate(1px, 52px); */
+        transform: translate(1px, 0px);
     }
 
     img.object-cover[src*="9Q9trhV01Ar14hekLM4UwxR9MaAa4.jpg"] {
-        content: url(https://cdn.salla.sa/BgWPY/8p116YDacQ9s7wzmrX2x4j6cjvWGGY38Q2EzSGEU.jpg);
-        transform: scale(1.1) translate(1px, 52px);
+        content: url(https://cdn.salla.sa/BgWPY/EoIiqlatxVK6wsA74NjYSo6AYW1Mn9ytAUBXjjQD.jpg);
+        /*         transform: scale(1.1) translate(1px, 52px); */
+        transform: translate(1px, 0px);
     }
 
     img.object-cover[src*=""] {
