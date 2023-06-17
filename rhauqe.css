@@ -476,7 +476,7 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 }
 
 .footer-about-us-links-div.footer-about-us-div p {
-    color: #000
+    color: #000;
 }
 
 .store-section a {
@@ -975,11 +975,11 @@ section.subTitle-detail .d-flex .bread-title {
 }
 
 .products-details-page .btn-add-to-cart {
-    background: #000!important;
+    background: var(--1);
     border-radius: 20px;
     color: #f9f9f9;
     font-weight: 700;
-    font-size: 17px
+    font-size: 17px;
 }
 
 .product-item .product-title>span, .product-crd-spec {
@@ -1010,12 +1010,12 @@ section.subTitle-detail .d-flex .bread-title {
 }
 
 button.btn.btn-primary.add-review-btn {
-    background: #000!important;
-    border: 2px solid #000;
+    background: var(--2);
+    border: 2px solid var(--2);
     border-radius: 20px;
     color: #fff;
     font-weight: 700;
-    font-size: 14px
+    font-size: 14px;
 }
 
 .products-container .products-list {
@@ -1118,19 +1118,6 @@ body.ltr .home-products-section.section-padding-space:first-child .theme-title-p
     box-shadow: rgba(149,157,165,0.2)0px 8px 24px
 }
 
-.ltr .home section:nth-child(1):after {
-    content: "Shop by category"!important
-}
-
-.home section:nth-child(1):after {
-    content: "تسوق عبر الاقسام";
-    color: #000!important;
-    background: #fff;
-    font-size: 1.87rem;
-    font-weight: 600;
-    padding: 0 1rem
-}
-
 ul.main-nav>li>a, .item-all-categories a {
     color: #000
 }
@@ -1165,6 +1152,13 @@ ul.main-nav>li>a, .item-all-categories a {
 
 .cart-badge {
     background: var(--2);
+}
+
+@media(max-width: 768px) {
+    .footer-about-us-links-div.footer-about-us-div p,.store-section h1,.store-section p,.store-section .social-icons {
+        text-align: center;
+        justify-content: center;
+    }
 }
 
 :root {
