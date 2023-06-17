@@ -1162,7 +1162,10 @@ ul.main-nav>li>a, .item-all-categories a {
     width: 23px;
     margin: unset
 }
-
+.cart-header-total {
+    
+    color: var(--2);
+}
 :root {
     --1: #327ec3;
     --2: #ffa300;
