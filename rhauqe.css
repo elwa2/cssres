@@ -529,8 +529,6 @@ span.text-center.footer-copyrights a {
         max-height: unset;
         background-size: contain;
     }
-
-    
 }
 
 @media(max-width: 991px) {
@@ -1096,8 +1094,6 @@ button.btn.btn-primary.add-review-btn {
     }
 }
 
- 
-
 @media(min-width: 768px) {
     a.btn.round.large.primary.btn.add-to-cart.d-sm-block {
         width:178px;
@@ -1147,8 +1143,8 @@ ul.main-nav>li>a, .item-all-categories a {
 
 #fixed-header:not(.sticky) .icon-shopping_cart_black_36dp-1-1 .path2::before,#fixed-header.sticky .icon-shopping_cart_black_36dp-1-1 .path2::before {
     display: block;
-    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140.73 181.4'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %2300; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1-2'%3E%3Cg id='bag'%3E%3Cpath class='cls-1' d='M134.93,58.3c-.2-3.4-3-6.1-6.5-6.1h-25.8v-19.4C102.93,15,88.73,.3,70.93,0c-17.8-.3-32.6,13.9-32.9,31.7v20.5H12.23c-3.4,0-6.3,2.7-6.5,6.1L.03,160.9c-.6,10.7,7.6,19.8,18.3,20.5H121.33c10.7,0,19.4-8.6,19.4-19.4h0v-1.1l-5.8-102.6ZM51.03,32.8c-.2-10.7,8.3-19.6,19-19.8s19.6,8.3,19.8,19v20.2H51.03v-19.4Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-    width: 27px;
+    content: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 140.73 181.4'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23327ec3; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1-2'%3E%3Cg id='bag'%3E%3Cpath class='cls-1' d='M134.93,58.3c-.2-3.4-3-6.1-6.5-6.1h-25.8v-19.4C102.93,15,88.73,.3,70.93,0c-17.8-.3-32.6,13.9-32.9,31.7v20.5H12.23c-3.4,0-6.3,2.7-6.5,6.1L.03,160.9c-.6,10.7,7.6,19.8,18.3,20.5H121.33c10.7,0,19.4-8.6,19.4-19.4h0v-1.1l-5.8-102.6ZM51.03,32.8c-.2-10.7,8.3-19.6,19-19.8s19.6,8.3,19.8,19v20.2H51.03v-19.4Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    width: 19px;
     margin: unset;
 }
 
@@ -1162,10 +1158,15 @@ ul.main-nav>li>a, .item-all-categories a {
     width: 23px;
     margin: unset
 }
+
 .cart-header-total {
-    
     color: var(--2);
 }
+
+.cart-badge {
+    background: var(--2);
+}
+
 :root {
     --1: #327ec3;
     --2: #ffa300;
