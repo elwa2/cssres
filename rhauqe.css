@@ -407,12 +407,12 @@ a.btn.btn-primary.product-card-add-to-cart, div:not(.g)>a.btn.btn-primary.btn-pr
 }
 
 .theme-border-primary {
-    border-color: #000!important
+    border-color: var(--2) !important;
 }
 
 .theme-text-primary {
-    color: #000;
-    font-weight: 700
+    color: var(--2);
+    font-weight: 700;
 }
 
 .products-list .prod-col, .bundle-offer-products .prod-col {
