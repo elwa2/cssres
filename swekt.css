@@ -1032,13 +1032,17 @@ body.salla-theme_6 .product-details__title {
     transition: transform .35s ease-out;
     transform: scale3d(1.9,1.4,1) rotate( 45deg) translate3d(0,-100%,0);
 }
-@media (min-width: 992px){
-body > section.u-light.py-5.text-center > div > div > div.col-md-4 {
-    width: 24.333333%;
-}}
+
+@media (min-width: 992px) {
+    body > section.u-light.py-5.text-center > div > div > div.col-md-4 {
+        width: 24.333333%;
+    }
+}
+
 .salla-theme_6.color-mode-dark .site-header .sub-header * {
     color: #ffffff;
 }
+
 /* الصور المربعة */
 :root {
     --main-color: #373b94;
