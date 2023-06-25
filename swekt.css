@@ -1036,6 +1036,9 @@ body.salla-theme_6 .product-details__title {
 body > section.u-light.py-5.text-center > div > div > div.col-md-4 {
     width: 24.333333%;
 }}
+.salla-theme_6.color-mode-dark .site-header .sub-header * {
+    color: #ffffff;
+}
 /* الصور المربعة */
 :root {
     --main-color: #373b94;
