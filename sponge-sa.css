@@ -5,6 +5,7 @@
 
 salla-slider.photos-slider .swiper-slide {
     width: 100%;
+    margin-top: 3px;
 }
 
 [dir="rtl"] .carousel-slider .swiper {
@@ -143,4 +144,16 @@ salla-slider.photos-slider .swiper-pagination-bullets.swiper-pagination-horizont
 :root {
     --1: #2c2c2c;
     --2: #ecd549;
+}
+
+
+img.w-full.object-contain.rounded-md,salla-slider.photos-slider .swiper-slide {
+    border-radius: 0;
+}
+.promotion-badge.has-discount {
+    background-color: var(--2);
+    color: #000;
+    right: 0;
+    width: 64px;
+    border-radius: 15px;
 }
