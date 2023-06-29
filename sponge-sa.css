@@ -27,7 +27,7 @@ body.index salla-slider[type]:not(.hydrated) > div > div, salla-slider[type]:not
 }
 
 .leading-6 {
-    color: white;
+    /* color: white; */
 }
 
 salla-button .s-button-btn {
