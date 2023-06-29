@@ -1,0 +1,156 @@
+/* Add custom CSS styles below */
+#app > section.s-block.s-block--photos-slider {
+  margin-top: 0;
+}
+
+salla-slider.photos-slider .swiper-slide {
+  width: 100%;
+}
+
+[dir="rtl"] .carousel-slider .swiper {
+  padding: 0;
+}
+
+.product-entry--vertical.product-entry--fit-type .product-entry__image {
+  height: auto;
+  flex-basis: auto;
+}
+
+body.index salla-slider[type]:not(.hydrated) > div > div,
+salla-slider[type]:not(.hydrated) .swiper > div > div > div,
+.carousel-slider .swiper-wrapper > div > div.border.rounded.p-5.h-full {
+  color: white;
+  background: black;
+  border-radius: 10px;
+}
+
+.navbar-brand img {
+  transform: scale(1.3);
+}
+
+.leading-6 {
+  color: white;
+}
+
+salla-button .s-button-btn {
+  background: #3595ec;
+  color: white;
+}
+
+#single-product-form
+  > div
+  > div.product-form
+  > div.grow.sm\:grow-0
+  > salla-add-product-button
+  > salla-button
+  > button,
+salla-button .s-button-btn:hover {
+  color: #3595ec;
+  background: white;
+  border: 1px solid #3595ec;
+}
+[dir="rtl"] .product-entry .btn--wishlist {
+  display: none;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  background-color: black;
+}
+
+div.main-content.md\:sticky.w-full.md\:w-1\/2.py-8.md\:pb-16.rtl\:md\:pr-10.ltr\:md\:pl-10.rtl\:xl\:pr-20.ltr\:xl\:pl-20.space-y-2\.5.sm\:space-y-5
+  > div.border.py-2\.5.mb-5.rounded.flex.justify-center.text-sm {
+  background: white 
+  color: black
+}
+
+.product-tabs .tabs {
+  background: white
+}
+
+
+salla-slider.photos-slider
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+  display: flex;
+  flex-direction: column;
+  top: 35%;
+  right: 88%;
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-bottom: 0.5rem;
+  height: 1rem;
+  width: 0.3rem;
+}
+
+.swiper .swiper-pagination-bullet:after {
+  width: 50%;
+  height: 50%;
+}
+
+.promotion-badge {
+  left: 0 !important;
+  top: 0;
+  font-size: 0.7rem;
+  border-radius: 0 15px 15px 0;
+  padding:3px;
+}
+
+.tabs-wrapper .tabs__item.is-active {
+  background: white
+}
+
+
+
+@media screen and (max-width: 667px) {
+  salla-slider.photos-slider
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+    top: 10%;
+  }
+}
+
+#app > div.relative.z-0 > footer > div.store-footer__top.py-11.lg\:pt-22 > div.full-about-block > div > div > p::after {
+  content: "تابعنا على : ";
+  color: white;
+  display: block;
+  margin-top: 15px;
+}
+.footer-is-dark .store-footer .social-link {
+  font-size: 20px;
+      height:2.5rem;
+    width: 2.5rem;
+}
+
+
+
+#single-product-form > div > div.product-form > div.flex.justify-between.sm\:justify-start.items-center{
+
+    margin-bottom: 10px;
+
+}
+
+.s-add-product-button-with-quick-buy salla-quick-buy{
+    flex: 65% !important;
+}
+
+#app .s-quantity-input-container {
+    border-radius: 2px;
+    max-width: 90px;
+}  
+#app > div.container.mb-4.sm\:mb-12 > div > div > div > div.rating-header.gradient-bg.center-between > salla-button > button{color:black !important}
+
+.comment *{
+color:black !important
+}
+.product-tabs .tabs a:only-child{
+background-color: #fbbf24;
+color:black;
+}
+
+.text-green-500:before{
+color:#22c55e
+}
+.tabs-wrapper{
+color: #fbbf24;
+}
