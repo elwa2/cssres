@@ -139,10 +139,10 @@ a.d-flex.flex-column.justify-content-start+div::before {
 }
 
 body {
-    background: var(--3) var(--bg);
+    background: var(--ff) var(--bg);
     background-repeat: repeat;
     background-position: center center;
-    background-size: 9%;
+    background-size: 7%;
 }
 
 .text-center.mt-5.category-products-display-more-section>a {
