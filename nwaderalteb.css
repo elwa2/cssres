@@ -41,7 +41,7 @@
     padding-right: 30px;
     border: none;
     border-radius: 10px;
-    box-shadow: 0 0 10px var(--hover)
+    /* box-shadow: 0 0 10px var(--hover) */
 }
 
 .dark.d-none.d-lg-block {
@@ -783,6 +783,10 @@ span.icon-search.header-theme-icon-primary {
 }
 
 @media(min-width: 992px) {
+    #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
+        background-size:contain;
+    }
+
     .footer-copyrights span {
         color: var(--primary-color);
     }
@@ -896,4 +900,8 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
         position: relative;
         top: -38px;
     }
+}
+
+.form-control {
+    background-color: #f1f1f1cc !important;
 }
