@@ -253,7 +253,7 @@ a.btn.btn-primary.product-card-add-to-cart, .btn-primary {
 }
 
 .product-crd-spec {
-    min-height: 72px
+    min-height: 103px;
 }
 
 .product-item .product-title {
