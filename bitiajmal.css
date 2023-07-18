@@ -949,15 +949,11 @@ body {
 }
 
 .slider-container {
-    text-align: center
+    /* text-align: center */
 }
 
 section .main-slider img {
     object-fit: fill!important
-}
-
-.box-1-1.ratio21_9:before {
-    padding-top: 53%!important
 }
 
 .home-categories-section.section-padding-space>div {
@@ -972,8 +968,9 @@ section .main-slider img {
 }
 
 @media(max-width: 767.98px) {
+    
     .features-section-img {
-        max-height:80px;
+        max-height: 80px;
         max-width: 80px
     }
 
@@ -1001,5 +998,3 @@ section .main-slider img {
         font-size: 1.2rem!important
     }
 }
-
- 
