@@ -67,8 +67,8 @@
 }
 
 .d-flex.flex-column-reverse.flex-lg-row.flex-wrap.align-items-center.justify-content-between.footer-store-section-bars {
-    background: #000!important;
-    color: #fff!important
+    background: transparent;
+    color: #fff!important;
 }
 
 .footer-copyrights-vat-certificate span {
@@ -87,7 +87,7 @@
 }
 
 .footer-copyrights-vat-certificate {
-    background: #000
+    background: var(--1);
 }
 
 .footer-store-section-bars {
@@ -100,8 +100,8 @@
 }
 
 .features-section-img {
-    max-height: 50px!important;
-    max-width: 50px!important
+    max-height: 79px!important;
+    max-width: 79px!important;
 }
 
 .products-slider .prod-col {
@@ -462,10 +462,11 @@ h2, h3 {
 .store-section .social-icons span {
     height: 35px;
     width: 35px;
-    color: #8e8e8e;
+    color: #fff;
     font-size: 17px;
     border: 2px solid var(--1);
     padding: 5px;
+    background-color:var(--1);
     border-radius: 50%
 }
 
@@ -838,6 +839,8 @@ body {
     width: 215px!important;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    right: -11px;
 }
 
 .footer-about-us-links-div.footer-about-us-div h1 {
