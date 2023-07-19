@@ -500,7 +500,7 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
         transform: rotateZ(0);
     }
 }
-.category-item h3,.product-item .btn:not(:disabled):not(.disabled), .btn-add-to-cart, .card, .card-table-header, .add-review-btn, .breadcrumb,ul.main-nav>li>a span{
+.category-item h3,.product-item .btn:not(:disabled):not(.disabled), .btn-add-to-cart, .card, .card-table-header, .add-review-btn, .breadcrumb,ul.main-nav>li>a span,.footer-copyrights span{
 color: var(--1)!important;
     
 }
