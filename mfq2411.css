@@ -621,3 +621,29 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 .theme-icon-primary,.theme-text-for-primary-bg,.profile-section *  {
     color: var(--1);
 } 
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space div > div > div:before {
+    padding-bottom: 0!important
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space div > div {
+    margin-top: -11px;
+}
+
+@media (min-width: 767px) {
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space div > div {
+        margin-bottom: -8px;
+    }
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space {
+    position: inherit!important
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space > div > div > div > div > a > img {
+    height: auto!important
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space div > div {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
