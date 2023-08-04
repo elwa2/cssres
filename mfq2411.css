@@ -176,7 +176,7 @@ ul.main-nav>li:hover, .item-all-categories {
     color: #000
 }
 
-body:before {
+body[data-template="home"]:before {
     content: "";
     width: 100%;
     height: 100%;
@@ -206,7 +206,7 @@ body:before {
     }
 }
 
-body:after {
+body[data-template="home"]:after {
     content: "";
     width: 100%;
     height: 100%;
