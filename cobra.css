@@ -899,6 +899,10 @@ span.product-prev-price {
     .products-details-page #product-images-slick img {
         padding: 15px;
     }
+
+    .store-section .social-icons {
+        justify-content: center;
+    }
 }
 
 .product-features>div {
