@@ -4,13 +4,7 @@
         padding:15px
     }
 
-    .ss .main-slider {
-        max-height: unset
-    }
-
-    .ss .main-slider .slick-track {
-        width: 100%!important
-    }
+    
 
     .ss .main-slider .slick-track .slider-item {
         width: 100%!important
