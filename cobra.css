@@ -435,7 +435,7 @@ ul.main-nav>li>a {
     .cart-header-total {
         margin-right: 10px;
         font-size: 1.6rem;
-        color: #000!important
+        /* color: #000!important */
     }
 
     .menu-header-theme-text-for-primary-bg {
