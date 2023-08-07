@@ -687,6 +687,17 @@ h2.section-title.theme-title-primary,.section-title {
     padding-top: 10px!important;
 }
 
+
+h2.section-title.theme-title-primary,.section-title {
+    position: relative;
+    
+}
+.slider-container {
+     
+    text-align: center;
+}
+
+
 h2.section-title.theme-title-primary,.section-title {
     padding: 3px 1rem;
     animation: wiggle 2.5s infinite;
