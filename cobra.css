@@ -890,14 +890,14 @@ span.product-prev-price {
         margin-top: -1px;
     }
 
-    .products-details-page #product-images-slick img {
-        object-fit: contain;
-        cursor: pointer;
-        padding: 15px;
-    }
-
     .social-icons.d-flex.flex-wrap {
         justify-content: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .products-details-page #product-images-slick img {
+        padding: 15px;
     }
 }
 
