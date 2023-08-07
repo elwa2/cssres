@@ -900,3 +900,18 @@ span.product-prev-price {
         justify-content: center;
     }
 }
+
+.product-features>div {
+    font-size: 20px;
+}
+
+.btn-add-to-cart {
+    font-size: 1.4rem;
+    background: var(--1)!important;
+    border: 4px solid var(--2);
+    border-top-left-radius: 30px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 0;
+    box-shadow: rgb(0 0 0 / 40%) 0px 2px 4px, rgb(0 0 0 / 30%) 0px 7px 13px -3px, rgb(0 0 0 / 20%) 0px -3px 0px inset;
+}
