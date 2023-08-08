@@ -4,8 +4,6 @@
         padding:15px
     }
 
-    
-
     .ss .main-slider .slick-track .slider-item {
         width: 100%!important
     }
@@ -687,16 +685,13 @@ h2.section-title.theme-title-primary,.section-title {
     padding-top: 10px!important;
 }
 
-
 h2.section-title.theme-title-primary,.section-title {
     position: relative;
-    
-}
-.slider-container {
-     
-    text-align: center;
 }
 
+.slider-container {
+    text-align: center;
+}
 
 h2.section-title.theme-title-primary,.section-title {
     padding: 3px 1rem;
@@ -1033,12 +1028,36 @@ button.btn.btn-primary {
     display: flex;
     gap: 10px
 }
+
 #product-images-slick > div > div > div > div > div > a > img {
     padding: 15px;
 }
+
 .prod-col {
     background: #fff;
     box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
     margin: .5rem;
     border-radius: 11px
+}
+
+@media only screen and (max-width: 768px) {
+    .search-header .image-logo {
+        padding: 0px 0;
+    }
+
+    .product-item .product-title>span {
+        height: 73px;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.product-item .product-title {
+    font-size: 1.2rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .product-item .product-title>span {
+        width: 209px;
+    }
 }
