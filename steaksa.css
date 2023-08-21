@@ -276,10 +276,18 @@ h1.bread-title {
 #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
     background: var(--logo);
     padding: 0;
-    width: 47px!important;
+    width: 86px!important;
     background-repeat: no-repeat;
     background-position: center;
     /* animation: flash 5s ease infinite; */
+}
+
+@media(max-width: 991px) {
+    #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
+        
+        width: 47px!important;
+        
+    }
 }
 
 @keyframes flash {
@@ -301,8 +309,7 @@ h1.bread-title {
 
 @media (max-width: 991px) {
     #fixed-header:not(.sticky) .header-logo a[href="/"] {
-        /* margin-right: auto!important; */
-        /* padding: 8px 0 10px 15px!important; */
+        /* margin-right: auto!important; */ /* padding: 8px 0 10px 15px!important; */
     }
 
     #fixed-header.sticky .header-logo a[href="/"] {
