@@ -19,8 +19,7 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     font-family: sky-bold;
 }
 
-
- body.index:before,body[data-template="home"]:before {
+body.index:before,body[data-template="home"]:before {
     content: '';
     width: 100%;
     height: 100%;
@@ -94,8 +93,6 @@ body.index:after,body[data-template="home"]:after {
         transform: scale(0);
     }
 }
-
-
 
 body {
     background: #f1f1f1
@@ -581,6 +578,34 @@ footer .container>.row {
     margin-top: 1rem
 }
 
+.d-flex.flex-row.justify-content-center.align-items-center.flex-wrap.icons-wrapper.footer-store-section-bars::before {
+    content: "خيارات دفع امنة ومتعددة";
+    font-family: inherit;
+    font-size: 15px;
+    line-height: 2;
+    color: #ffffff
+}
+
+.footer .logistics-pay-icons:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 28px!important;
+    margin: 0;
+    background-image: url("https://media.zid.store/2b3633ee-4b48-437e-ab35-64dd1a33272f/125d0228-80dc-4a85-b5f2-75f6b6f15f17.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+.footer .logistics-pay-icons a {
+    display: none
+}
+
+.footer .footer-store-section-bars .icons {
+    width: 100%;
+    justify-content: center
+}
 /* فوتر */
 /* القائمة الجانبية */
 #fixed-header.sticky {
@@ -1089,6 +1114,7 @@ a.btn.btn-primary.product-card-add-to-cart, .btn-primary {
     height: 0!important;
     display: none!important
 }
+
 
 /* المنتج */
 :root {
