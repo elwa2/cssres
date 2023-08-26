@@ -1161,6 +1161,181 @@ a.btn.btn-primary.product-card-add-to-cart, .btn-primary {
 /*     border-radius: 0px 0px 42px 42px; */
 }
 
+
+
+.testimonials-customer-card .card-body:before {
+    content: "\f005 ""\f005 ""\f005 ""\f005 ""\f005 ";
+    display: block;
+    font-family: icomoon!important;
+    color: #ffd814;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3
+}
+
+.features-section {
+    background: transparent;
+    color: #fff
+}
+
+.main .features-section {
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+
+.main .features-section {
+    background-color: transparent;
+    margin-bottom: 0px;
+    margin-top: 0px
+}
+
+.main .features-section .feature p {
+    line-height: 1.7;
+    font-size: 13px!important;
+    padding-left: 60px!important;
+    padding-right: 60px!important
+}
+
+@media(max-width: 991px) {
+    .main .features-section {
+        background:0px center;
+        display: flex;
+        flex-wrap: wrap
+    }
+}
+
+.main .features-section {
+    margin: 34px auto
+}
+
+.main .features-section .feature p {
+    text-align: center
+}
+
+.header-theme-bg-primary {
+    padding-top: 10px;
+    padding-bottom: 10px
+}
+
+.main .features-section .feature p {
+    margin-bottom: 30px;
+    color: var(--2)
+}
+
+.main .features-section .feature p {
+    margin-bottom: 30px;
+    color: #000000
+}
+
+.features-section-img {
+    max-height: 63px;
+    max-width: 63px
+}
+
+.features-section-img {
+    margin-bottom: 0;
+    border: none;
+    position: relative;
+    top: 0px;
+    animation: float 4s ease-in-out infinite;
+    transition: all .4s ease
+}
+
+@keyframes float {
+    0% {
+        transform: translatey(0px)
+    }
+
+    50% {
+        transform: translatey(-20px)
+    }
+
+    100% {
+        transform: translatey(0px)
+    }
+}
+
+.features-section.section-padding-space::before {
+    content: "بماذا نتميز؟";
+    font-size: 21px;
+    font-weight: 600;
+    padding-right: 7px;
+    margin: auto;
+    color: #000000!important;
+    width: 100%;
+    text-align-last: center
+}
+
+@media(min-width: 768px) {
+    .features-section.section-padding-space::before {
+        position:absolute
+    }
+}
+
+.features-section.section-padding-space {
+    border-radius: 6px;
+    padding: 10px 0 15px
+}
+
+.features-section.section-padding-space>div {
+    background: unset
+}
+
+.feature .theme-text-for-primary-bg {
+    text-align: center;
+    font-weight: 700;
+    border-radius: 0 5rem!important;
+    font-size: 1.2rem
+}
+
+.feature .theme-text-for-primary-bg:after {
+    white-space: pre;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000!important;
+    white-space: pre-wrap
+}
+
+.feature:first-child .theme-text-for-primary-bg:after {
+    content: "\a       خدمة عملاء على مدار الاسبوع  "
+}
+
+.feature:nth-child(2) .theme-text-for-primary-bg:after {
+    content: "\a       مدى - بطاقة الائتمان - أبل باي   "
+}
+
+.feature:nth-child(3) .theme-text-for-primary-bg:after {
+    content: "\a     تغطية كاملة لجميع مناطق المملكة   "
+}
+
+img.features-section-img {
+    filter: none;
+    mix-blend-mode: normal
+}
+
+
+.testimonials-customer-text {
+    height: 151px;
+    text-align: center;
+    padding-top: 61px;
+    padding-left: 10px;
+    padding-right: 11px;
+    margin: 0;
+    font-size: 15px;
+    color: #434343;
+    background-image: url("https://media.zid.store/2b3633ee-4b48-437e-ab35-64dd1a33272f/2188cd7a-255e-4891-956d-6c7af6b3012e.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #f7f7f7;
+    background-position: 0px 0px;
+}
+
+@media(max-width: 767px) {
+    .testimonials-customer-text {
+        height:131px
+    }
+}
+
 :root {
     --primary-color: #3300ff;
     --1: #3300ff;
