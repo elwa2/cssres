@@ -183,7 +183,7 @@ header>.dark {
     font-size: unset
 }
 
-#fixed-header .icon-menu_open_black_24dp-1::before {
+#fixed-header .icon-menu_open_black_24dp-1::before,#fixed-header.sticky .icon-menu_open_black_24dp-1::before {
     display: block;
     content: "";
     background: url("https://media.zid.store/35f4531e-5b22-429a-a062-3a6ab1024247/2b329bb6-e020-4ef7-95e0-0c51cd93123f.svg");
@@ -209,19 +209,7 @@ header>.dark {
     transition: 0.1s
 }
 
-#fixed-header.sticky .icon-menu_open_black_24dp-1::before {
-    display: block;
-    content: "";
-    background: url("https://media.zid.store/35f4531e-5b22-429a-a062-3a6ab1024247/588200b7-9798-4148-9d01-7641ebbc1ed3.svg");
-    width: 80px;
-    height: 70px;
-    margin: auto;
-    background-size: 95%;
-    background-repeat: no-repeat;
-    background-position: center;
-    transition: 0.1s
-}
-
+ 
 :lang(en) #fixed-header.sticky .icon-menu_open_black_24dp-1::before {
     display: block;
     content: "";
