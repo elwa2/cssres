@@ -12,10 +12,10 @@
 }
 
 *:not(i),html, body, div, object, h1, h2,h4, h3 {
-    font-family: sky;
+    font-family: sky,icomoon!important;
 }
 
-h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, span, .section--title {
+h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, .section--title {
     font-family: sky-bold;
 }
 
@@ -209,7 +209,6 @@ header>.dark {
     transition: 0.1s
 }
 
- 
 :lang(en) #fixed-header.sticky .icon-menu_open_black_24dp-1::before {
     display: block;
     content: "";
@@ -594,6 +593,7 @@ footer .container>.row {
     width: 100%;
     justify-content: center
 }
+
 /* فوتر */
 /* القائمة الجانبية */
 #fixed-header.sticky {
@@ -1103,9 +1103,7 @@ a.btn.btn-primary.product-card-add-to-cart, .btn-primary {
     display: none!important
 }
 
-
 /* المنتج */
-
 /* gallery-section */
 .gallery-section.container.section-padding-space .box-1-1:before {
     padding: 0!important
@@ -1126,7 +1124,8 @@ a.btn.btn-primary.product-card-add-to-cart, .btn-primary {
 .gallery-item.col-6 {
     flex: 0 0 100%;
     max-width: 100%;
-} 
+}
+
 /* gallery-section */
 @media(min-width: 992px) {
     section:nth-of-type(1) .container.container-slider {
@@ -1146,10 +1145,8 @@ a.btn.btn-primary.product-card-add-to-cart, .btn-primary {
 }
 
 .slick-list.draggable {
-/*     border-radius: 0px 0px 42px 42px; */
+    /*     border-radius: 0px 0px 42px 42px; */
 }
-
-
 
 .testimonials-customer-card .card-body:before {
     content: "\f005 ""\f005 ""\f005 ""\f005 ""\f005 ";
@@ -1281,7 +1278,8 @@ a.btn.btn-primary.product-card-add-to-cart, .btn-primary {
     font-size: 1rem;
     font-weight: 700;
     color: #000000!important;
-    white-space: pre-wrap
+    white-space: pre-wrap;
+    font-family: 'sky';
 }
 
 .feature:first-child .theme-text-for-primary-bg:after {
@@ -1300,7 +1298,6 @@ img.features-section-img {
     filter: none;
     mix-blend-mode: normal
 }
-
 
 .testimonials-customer-text {
     height: 151px;
@@ -1323,10 +1320,11 @@ img.features-section-img {
         height:131px
     }
 }
+
 .section-title {
- 
     text-align: center;
 }
+
 :root {
     --primary-color: #3300ff;
     --1: #3300ff;
