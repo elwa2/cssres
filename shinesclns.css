@@ -1335,7 +1335,10 @@ img.features-section-img {
         height:131px
     }
 }
-
+.section-title {
+ 
+    text-align: center;
+}
 :root {
     --primary-color: #3300ff;
     --1: #3300ff;
