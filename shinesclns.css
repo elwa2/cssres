@@ -1075,7 +1075,7 @@ a.btn.btn-primary.product-card-add-to-cart, .btn-primary {
 }
 
 .product-item .product-title {
-    white-space: nowrap;
+    /* white-space: nowrap; */
     overflow: hidden;
     text-overflow: ellipsis;
     padding: 0 5px
@@ -1095,7 +1095,7 @@ a.btn.btn-primary.product-card-add-to-cart, .btn-primary {
 }
 
 .product-item .product-title>span {
-    height: 34px!important
+    height: 44px!important;
 }
 
 [data-template=home] .product-card-rating-wrapper {
