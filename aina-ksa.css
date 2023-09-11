@@ -441,3 +441,7 @@ body > div > div.main.flex-grow-1.app-content.app-content-padded > div > section
 body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-copyrights-vat-certificate > div > div > div.vat-crn-sections.py-4.d-flex.flex-row.flex-wrap.justify-content-end.align-items-center > div > span {
     color: #000;
 }
+
+body.rtl {
+    display: none;
+}
