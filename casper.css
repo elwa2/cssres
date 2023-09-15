@@ -385,7 +385,7 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
     background: var(--logo);
     padding: 0;
-    width: 123px!important;
+    width: 105px!important;
     background-repeat: no-repeat;
     background-position: center;
     /* position: relative; */
@@ -1397,7 +1397,7 @@ ul.main-nav>li>a {
 
     #fixed-header:not(.sticky) .header-logo a[href="/"], #fixed-header.sticky .header-logo a[href="/"] {
         position: relative;
-        right: 16rem;
+        right: -8rem;
     }
 
     #fixed-header .search-header-bar>.search-input {
