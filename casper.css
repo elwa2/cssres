@@ -1008,7 +1008,7 @@ ul.theme-text-for-primary-bg.menu-header-theme-bg-primary.menu-header-theme-bg-p
 }
 
 span.product-prev-price {
-    color: #ffffff;
+    /* color: #ffffff; */
 }
 
 .product-features>div {
@@ -1148,4 +1148,7 @@ ul.main-nav>li>a {
 
 .dark.d-none.d-lg-block {
     background: #fff;
+}
+.product-item .product-title {
+    font-size: 1.2rem;
 }
