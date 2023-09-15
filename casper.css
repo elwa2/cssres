@@ -1517,3 +1517,8 @@ ul.main-nav>li>a:hover {
 .header-theme-icon-primary {
     color: #000;
 }
+.cart-badge {
+ 
+    top: 8px;
+    
+}
