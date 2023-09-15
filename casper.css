@@ -361,10 +361,10 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
     background: var(--logo);
     padding: 0;
-    width: 105px!important;
+    width: 99px!important;
     background-repeat: no-repeat;
     background-position: center;
-    /* position: relative; */
+    position: relative;
     /* right: 16rem; */
 }
 
@@ -376,14 +376,10 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 }
 
 @media (max-width: 991px) {
-    #fixed-header:not(.sticky) .header-logo a[href="/"] {
+    #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
         margin-right: auto!important;
         /* padding: 8px 0 11px 15px!important; */
-    }
-
-    #fixed-header.sticky .header-logo a[href="/"] {
-        /* background-size: 85%; */
-        margin-right: auto!important;
+        right: -2rem;
     }
 }
 
@@ -699,6 +695,7 @@ h2.section-title.theme-title-primary,.section-title {
     padding-bottom: 10px!important;
     justify-items: center;
     padding-top: 10px!important;
+    border-radius: 16px;
 }
 
 h2.section-title.theme-title-primary,.section-title {
@@ -1492,4 +1489,10 @@ ul.main-nav>li>a:hover {
 
 .cart-badge {
     top: 8px;
+}
+
+@media only screen and (max-width: 768px) {
+    .section-title {
+        font-size: 1.7rem;
+    }
 }
