@@ -16,8 +16,6 @@ body {
     padding: 7px 0 9px
 }
 
- 
-
 .language-currency:hover, .vertical-line:hover, .account-lang-currency .account-btn:hover, .sm-search-icon:hover>span:hover {
     background: var(--2-2)!important;
     color: #fff!important
@@ -79,8 +77,6 @@ element.style {
 .icon-language_white:before {
     color: #fff
 }
-
- 
 
 ul.main-nav>li:hover, .item-all-categories {
 }
@@ -329,14 +325,16 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
     width: 24px;
 }
 
- #fixed-header:not(.sticky) .icon-shopping_cart_black_36dp-1-1 .path2::before, #fixed-header.sticky .icon-shopping_cart_black_36dp-1-1 .path2::before {
+#fixed-header:not(.sticky) .icon-shopping_cart_black_36dp-1-1 .path2::before, #fixed-header.sticky .icon-shopping_cart_black_36dp-1-1 .path2::before {
     display: block;
     content: "\e914 ";
     width: 25px;
     color: var(--1)!important;
     margin: unset;
     font-family: icomoon;
-}.header .icon-shopping_cart_black_36dp-1-1 .path1 {
+}
+
+.header .icon-shopping_cart_black_36dp-1-1 .path1 {
     display: none;
 }
 
@@ -361,11 +359,9 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
     background: var(--logo);
     padding: 0;
-    width: 105px!important;
+    width: 99px!important;
     background-repeat: no-repeat;
     background-position: center;
-    /* position: relative; */
-    /* right: 16rem; */
 }
 
 .footer-about-us-links-div.footer-about-us-div h1 {
@@ -383,7 +379,9 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 
     #fixed-header.sticky .header-logo a[href="/"] {
         /* background-size: 85%; */
-        margin-right: auto!important;
+        /* margin-right: auto!important; */
+        position: relative;
+        right: 7rem;
     }
 }
 
@@ -435,8 +433,6 @@ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app
     flex: 0 0 100%;
     max-width: 100%;
 }
-
- 
 
 body:not([data-template="home"]) .btn-primary,.btn-add-to-cart {
     font-size: 1.4rem;
@@ -502,7 +498,7 @@ button.btn.btn-primary {
     height: auto;
     overflow: hidden;
     line-height: 1.5;
-    width: 148px;
+    width: 100%;
     display: block;
 }
 
@@ -1006,9 +1002,16 @@ ul.main-nav>li>a {
 }
 
 .product-item .product-title {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
 }
-
+.product-item .product-price {
+   
+    font-size: 1.66rem;
+}
+.product-item .product-prev-price {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+}
 .search-header {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -1186,9 +1189,6 @@ ul.main-nav>li>a {
     background: unset;
     padding: 2px
 }
-
- 
- 
 
 .account-lang-currency {
     border-bottom: 0px solid #fff;
@@ -1475,5 +1475,5 @@ ul.main-nav>li>a:hover {
     width: 90%;
 }
 
- 
- 
+
+span {}
