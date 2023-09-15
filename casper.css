@@ -1040,7 +1040,7 @@ ul.main-nav>li>a {
 }
 
 .dark.d-none.d-lg-block {
-    background: #fff;
+    background: #f3f3f4;
     margin-top: 22px;
 }
 
@@ -1492,7 +1492,7 @@ ul.main-nav>li>a {
 }
 
 ul.main-nav>li:hover>a,.item-all-categories>a,ul.main-nav>li>a,.item-all-categories a {
-    color: #ffffff!important;
+    /* color: #ffffff!important; */
 }
 
 ul.main-nav>li>a:hover {
