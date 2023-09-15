@@ -912,7 +912,7 @@ h2.section-title.theme-title-primary,.section-title {
 }
 
 h2.pb-2 {
-    Text-shadow: 0px 4px 4px #000;
+    /* Text-shadow: 0px 4px 4px #000; */
     font-weight: bold;
     font-size: 19px;
     text-align: center;
