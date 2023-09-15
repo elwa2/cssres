@@ -372,12 +372,9 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 }
 
 @media (max-width: 991px) {
-    #fixed-header:not(.sticky) .header-logo a[href="/"] {
-        margin-right: auto!important;
-        /* padding: 8px 0 11px 15px!important; */
-    }
+     
 
-    #fixed-header.sticky .header-logo a[href="/"] {
+    #fixed-header.sticky .header-logo a[href="/"],#fixed-header:not(.sticky) .header-logo a[href="/"] {
         /* background-size: 85%; */
         /* margin-right: auto!important; */
         position: relative;
