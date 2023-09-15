@@ -1125,7 +1125,7 @@ ul.main-nav>li>a {
     }
 }
 
-.ss:nth-of-type(1) img {
+.ss img {
     box-shadow: 0 0 .1rem #fff,0 0 .02rem #fff,0 0 .5rem var(--1),0 0 .01rem var(--1),0 0 .8rem var(--1),inset 0 0 .5rem var(--1);
     border-radius: 10px;
 }
