@@ -457,20 +457,7 @@ section.product.products-details-page {
     font-weight: 600
 }
 
-section.mt-5.review-details {
-    margin: 2rem;
-    padding: 15px 15px 1px;
-    box-shadow: 0 1px 5px 0 #d7d7d7!important;
-    border-radius: 4px
-}
-
-.col-lg-6.col-product-info.col-product-info-single-image, .col-product-info {
-    text-align: center!important;
-    border-radius: 40px;
-    margin: 3rem;
-    padding: 40px 30px 50px;
-    background: #fff
-}
+ 
 
 section#product-description {
     text-align: center!important;
