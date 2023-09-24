@@ -286,10 +286,10 @@ div.slick-slide:not(.prod-col) div:not(.category-item):not(.product-item) img {
 
 .product-item {
     background: #fff;
-    margin-top: 10px;
+    margin-top: 2px;
     margin-bottom: 10px;
     border-radius: 0 20px 20px 20px;
-    min-width: 160px
+    min-width: 160px;
 }
 
 .product-item img {
@@ -787,8 +787,8 @@ button.btn.btn-primary {
     }
 
     .products-slider .prod-col {
-        width: 160px;
-        flex: 0 0 160px
+        width: 176px;
+        flex: 0 0 160px;
     }
 }
 
