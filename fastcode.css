@@ -1045,16 +1045,7 @@ h2.section-title.theme-title-primary,.section-title {
     }
 }
 
-nav#sliding-menu {
-    background-color: var(--1);
-    border-top-left-radius: 30px;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 0;
-    border: 4px solid var(--2);
-    box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em, rgb(0 0 0 / 25%) 0px 0.125em 0.5em, rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
-    margin-top: 10px;
-}
+ 
 
 ul.theme-text-for-primary-bg.menu-header-theme-bg-primary.menu-header-theme-bg-primary-brightness-100.menu-header-theme-text-for-primary-bg {
     background: transparent;
