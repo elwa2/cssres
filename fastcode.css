@@ -1311,7 +1311,7 @@ ul.theme-text-for-primary-bg.menu-header-theme-bg-primary.menu-header-theme-bg-p
     .cart-header-total {
         margin-right: 10px;
         font-size: 1.6rem;
-        color: #000!important
+        color: #fff !important
     }
 
     header .dark.d-none.d-lg-block .top-level-link>a {
