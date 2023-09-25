@@ -1355,7 +1355,9 @@ ul.theme-text-for-primary-bg.menu-header-theme-bg-primary.menu-header-theme-bg-p
 .sbsi7l-0.bmZSoU,sbsi7l-0 evMtho,sc-1au8ryl-0 dmopMx,#gb-widget-1989 > div.sbsi7l-0.bmZSoU > div > span,.sc-1au8ryl-0.dmopMx {
     display: none !important;
 }
-
+.fmubhz {
+   animation: signal 1200ms infinite;
+}
 [id*="gb-widget"] {
     bottom: 11px !important;
     position: relative;
