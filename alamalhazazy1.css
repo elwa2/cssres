@@ -1,0 +1,31 @@
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */ 
+body,*:not(i),html, body, div, object, h1, h2,h4, h3 {
+    font-family: "DIN-LIGHT", sans-serif !important;
+}
+
+h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, span, .section--title {
+    font-family: "DIN-BOLD", sans-serif !important;
+}
+
+.btn-primary {
+    padding: 10px;
+    background: #246d64;
+    border-color: #246d64;
+    padding: 9px 13px;
+}
+
+.slick-next.slick-arrow, .slick-prev.slick-arrow, .nav-sliderCarousel button {
+    background: #246d64;
+}
+
+.products-circle .slick-dots li.slick-active button, .partners .slick-dots li.slick-active button, .testimonials .slick-dots li.slick-active button {
+    background-color: #246d64;
+}
+
+@media (max-width: 776px) {
+    .slider .slide img, .slider .slide {
+        min-height: 350px;
+        height: 448px;
+        /* position: relative; */
+    }
+}
