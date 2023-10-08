@@ -37,7 +37,7 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
 .py-3,.pt-3 {
     padding-top: 1rem!important;
 }
-
+/* 
 .heading.d-flex.flex-wrap.justify-content-between.align-items-center.mb-3 {
     display: flex!important;
     flex-direction: column;
@@ -48,3 +48,4 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
 .heading.mb-4.text-start {
     text-align: center !important;
 }
+ */
