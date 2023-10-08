@@ -22,13 +22,13 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     background-color: #246d64;
 }
 
-@media (max-width: 776px) {
+/* @media (max-width: 776px) {
     .slider .slide img, .slider .slide {
         min-height: 350px;
         height: 448px;
-        /* position: relative; */
+        
     }
-}
+} */
 .my-3 {
     margin-top: 5px !important;
     margin-bottom: 0 !important;
