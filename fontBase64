@@ -16,7 +16,7 @@ body,*:not(i),html, body, div, object, h1, h2,h4, h3 {
    font-family: "DIN-LIGHT", sans-serif !important;
 }
 
-h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, span, .section--title {
+h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, span, .section--title, h3 {
     font-family: "DIN-BOLD", sans-serif !important;
 }
 
