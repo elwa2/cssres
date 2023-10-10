@@ -99,3 +99,26 @@ body > div.products-circle.my-3.square > div > div > div:nth-child(2) > div > di
     transition: all 0.8s ease;
     transform: translateY(-10px);
 }
+.owl-carousel .owl-nav button {
+    background: var(--1)!important;
+}
+
+:root {
+    --mainColor: #ffc700;
+    --2: #ffc700;
+    --1: #246d64;
+}
+
+.product-add:hover {
+    transition: all 0.8s ease;
+    transition: all .5s
+}
+
+.product img:hover {
+    transition: all 0.8s ease;
+    transform: scale(1.17,1.17)
+}
+
+.products-grid.eq-height .product>:first-child .img-cont img,.products-grid.eq-height .thumbnail>:first-child .img-cont img,.products-listing.eq-height .product>:first-child .img-cont img,.products-listing.eq-height .thumbnail>:first-child .img-cont img,body.salla-default #products_div.eq-height .product>:first-child .img-cont img,body.salla-default #products_div.eq-height .thumbnail>:first-child .img-cont img {
+    transition: all .5s!important
+}
