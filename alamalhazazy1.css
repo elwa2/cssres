@@ -57,7 +57,7 @@ body > div.products-circle.my-3.square > div > div > div:nth-child(2) > div > di
 body > div.products-circle.my-3.square > div > div > div:nth-child(2) > div > div.owl-stage-outer > div > div > div > a > div > div > div {
     background-repeat: no-repeat no-repeat;
     background-position: center center;
-    background-size: cover;
+    background-size: cover;background-size: 82%;
 }
 
 body > div.products-circle.my-3.square > div > div > div:nth-child(2) > div > div.owl-stage-outer > div > div:nth-child(1) > div > a > div > div > div {
