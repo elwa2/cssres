@@ -113,7 +113,9 @@ body > div.products-circle.my-3.square > div > div > div:nth-child(2) > div > di
     transition: all 0.8s ease;
     transition: all .5s
 }
-
+span.d-block.mt-2.h6.category-name {
+    font-size: 12px;
+}
 .product img:hover {
     transition: all 0.8s ease;
     transform: scale(1.17,1.17)
