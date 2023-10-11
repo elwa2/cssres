@@ -29,6 +29,11 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
         
     }
 } */
+ @media (min-width: 776px) {
+.product .title a {
+    line-height: 81px;
+    
+}}
 .my-3 {
     margin-top: 5px !important;
     margin-bottom: 0 !important;
