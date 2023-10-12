@@ -150,7 +150,8 @@ body > section:nth-child(30) ,body > section:nth-child(30) > div > div > div > a
 section.py-3.banner-img .container {
     max-width: 100%;
     margin: -1px 0 -20px 0;
-    padding: 0;
+    padding-right:0;
+    padding-left: 4px;
 }
 
 section.py-3.banner-img .container .row>* {
