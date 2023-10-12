@@ -129,3 +129,26 @@ span.d-block.mt-2.h6.category-name {
 .products-grid.eq-height .product>:first-child .img-cont img,.products-grid.eq-height .thumbnail>:first-child .img-cont img,.products-listing.eq-height .product>:first-child .img-cont img,.products-listing.eq-height .thumbnail>:first-child .img-cont img,body.salla-default #products_div.eq-height .product>:first-child .img-cont img,body.salla-default #products_div.eq-height .thumbnail>:first-child .img-cont img {
     transition: all .5s!important
 }
+body > section:nth-child(30) ,body > section:nth-child(30) > div > div > div > a > img.img-fluid.img-web {
+    background: #f8fafc;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+@media (min-width: 1400px) {
+    section.py-3.banner-img .container {
+        max-width: 100%;
+        margin: -1px 0 -20px 0;
+        padding: 0;
+    }
+}
+
+body > div:nth-child(14) {
+    background: var(--1);
+    margin: 0 !important;
+    color:#fff;
+}
