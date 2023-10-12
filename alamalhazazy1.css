@@ -150,11 +150,11 @@ body > section:nth-child(30) ,body > section:nth-child(30) > div > div > div > a
 section.py-3.banner-img .container {
     max-width: 100%;
     margin: -1px 0 -20px 0;
-    padding: 0;
+/*     padding: 0; */
 }
 
 section.py-3.banner-img .col,.products-circle.my-4.square.slider-type-2.product-home, .products-circle.my-4.square.slider-type-2.product-home .container {
-    padding: 0;
+/*     padding: 0; */
 }
 
 @media (min-width: 1400px) {
