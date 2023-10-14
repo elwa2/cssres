@@ -659,6 +659,10 @@ header.sticky {
 .products-catalog-home .product-wrapper:hover  {
     transform: translateY(-10px) !important;
     transition: all .3s ease !important;
+} 
+.category-home-card:hover  {
+    transform: translateY(-10px) !important;
+    transition: all .3s ease !important;
 }
 :root {
     --1: #284553;
