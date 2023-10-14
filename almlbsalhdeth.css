@@ -641,6 +641,24 @@ header.sticky {
 .footer {
      border-top: 6px solid var(--1);
      box-shadow: 0 2px 12px -3px #c8c8c8;
+}body > div > main > div.features-container.my-5 > div > div > div > img {
+    animation: scale-in-out 1000ms cubic-bezier(0, 1, 1, 1) infinite alternate;
+}
+
+@keyframes scale-in-out {
+    from {
+        transform: scale(0.7);
+        opacity: 0.5;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.products-catalog-home .product-wrapper:hover, .products-catalog-home .product-wrapper img:hover {
+    transform: translateY(-10px) !important;
+    transition: all .3s ease !important;
 }
 :root {
     --1: #284553;
