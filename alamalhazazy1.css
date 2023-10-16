@@ -192,3 +192,9 @@ body > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:nth-child(1) >
         height: 20rem;
     }
 }
+
+.footer a.logo img {
+    max-height: 79%;
+    height: 74%;
+    width: 85%;
+}
