@@ -171,11 +171,11 @@ section.py-3.banner-img .col,.products-circle.my-4.square.slider-type-2.product-
     }
 }
 
-body > div:nth-child(14) {
+/* body > div:nth-child(14) {
     background: var(--1);
     margin: 0 !important;
     color: #fff;
-}
+} */
 
 body > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:nth-child(1) > div > div:nth-child(2) {
     display: none;
