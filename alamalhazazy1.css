@@ -209,3 +209,43 @@ body > footer > div > div > div.col-md-5 > div {
         width: 100.333333%;
     }
 }
+.maroof-icon::before,.maroof-icon::after {
+    content: "رقم السجل";
+    font-size: 13px;
+    font-weight: 600;
+    padding-right: 7px;
+    margin: auto;
+    color: #fff!important;
+    margin: -11px 0px;
+    position: relative;
+    right: 160px;
+    top: 12px;
+}
+
+.maroof-icon::after {
+    content: "1010363373";
+    right: 160px;
+    top: -32px;
+}
+
+body > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:nth-child(2) > div > div.vat-number.d-flex.align-items-center.text-white.fs-13px > div > div > div > span:nth-child(1) {
+    margin: -18px 0 0 0;
+}
+
+@media (max-width: 767px) {
+    .maroof-icon::before {
+        right: -117px;
+        top: 64px;
+        margin: 0;
+    }
+
+    .maroof-icon::after {
+        right: -21px;
+        top: 3px;
+        margin: 0;
+    }
+
+    body > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:nth-child(2) > div > div.vat-number.d-flex.align-items-center.text-white.fs-13px > div > div > div > span:nth-child(1) {
+        margin: 0px 0 0 0;
+    }
+}
