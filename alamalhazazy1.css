@@ -177,7 +177,7 @@ section.py-3.banner-img .col,.products-circle.my-4.square.slider-type-2.product-
     color: #fff;
 } */
 body > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:nth-child(1) > div > div:nth-child(2) {
-    display: none;
+    /* display: none; */
 }
 
 @media (max-width: 1400px) {
@@ -197,4 +197,8 @@ body > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:nth-child(1) >
         height: 74%;
         width: 85%;
     }
+}
+
+body > footer > div > div > div.col-md-5 > div {
+    display: none;
 }
