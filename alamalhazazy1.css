@@ -189,7 +189,7 @@ body > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:nth-child(1) >
 @media (min-width: 1000px) {
     .product-details {
         padding: 7px!important;
-        height: 20rem;
+        height: 11rem;
     }
 
     .footer a.logo img {
