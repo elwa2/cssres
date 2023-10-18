@@ -35,7 +35,7 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     }
 }
 
-.my-3 {
+  section.slider.my-3 {
     margin-top: 5px !important;
     margin-bottom: -26px !important;
 }
