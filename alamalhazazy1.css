@@ -291,4 +291,9 @@ body > div.app.rtl > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:
         width: auto;
         max-height: 60px;
     }
+
+    .product-details {
+        padding: 5px!important;
+        min-height: 130px;
+    }
 }
