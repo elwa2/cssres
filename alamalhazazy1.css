@@ -35,7 +35,7 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     }
 }
 
-  section.slider.my-3 {
+section.slider.my-3 {
     margin-top: 5px !important;
     margin-bottom: -26px !important;
 }
@@ -256,23 +256,6 @@ body > div.app.rtl > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:
 }
 
 @media (max-width: 767px) {
-    .slider .slide {
-        min-height: 307px;
-        height: 374px;
-    }
-
-    .slider .slide img,.slider .slide.slider-2 img {
-        min-height: auto;
-        height: auto;
-        max-height: 100% !important;
-        max-width: 100%;
-        background-size: contain;
-        /* object-fit: unset; */
-        object-position: 0px -37px;
-        /* display: grid !important; */
-        /* grid-template-columns: repeat(auto-fit, minmax(27ch, 1fr)); */
-    }
-
     .my-3 {
         margin-top: 5px !important;
         margin-bottom: -26px !important;
@@ -298,16 +281,4 @@ body > div.app.rtl > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:
     }
 }
 
-@media (max-width: 500px) {
-    .slider .slide {
-        min-height: 333px;
-        height: 414px;
-    }
-}
-
-@media (max-width: 450px) {
-    .slider .slide {
-        min-height: 1vw;
-        height: 96vw;
-    }
-}
+ 
