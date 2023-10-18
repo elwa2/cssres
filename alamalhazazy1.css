@@ -296,4 +296,10 @@ body > div.app.rtl > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:
         padding: 5px!important;
         min-height: 130px;
     }
+}@media (max-width: 500px) {
+    .slider .slide {
+        min-height: 333px;
+        height: 414px;
+    }
 }
+
