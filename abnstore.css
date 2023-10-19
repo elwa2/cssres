@@ -909,6 +909,7 @@ body>div.app.d-flex.flex-column.visible>div.main.flex-grow-1.app-content.app-con
 .top-level-link:hover a span {
     color: #f0f0f0!important
 }
+
 .main .features-section {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -916,7 +917,7 @@ body>div.app.d-flex.flex-column.visible>div.main.flex-grow-1.app-content.app-con
 
 .main .features-section .feature p {
     line-height: 1.7;
-     font-size: 19px !important;
+    font-size: 19px !important;
     padding-left: 60px !important;
     padding-right: 60px !important;
 }
@@ -976,15 +977,21 @@ body>div.app.d-flex.flex-column.visible>div.main.flex-grow-1.app-content.app-con
 }
 
 .features-section.section-padding-space::before {
-    content: "why choose us ";
     font-size: 21px;
     font-weight: 600;
     padding-right: 7px;
     margin: auto;
-    
     color: #ffffff;
     width: 100%;
     text-align-last: center
+}
+
+:lang(en) .features-section.section-padding-space::before {
+    content: "Why Choose Us ";
+}
+
+:lang(ar) .features-section.section-padding-space::before {
+    content: "ليش تختارنا ";
 }
 
 @media(min-width: 768px) {
@@ -1017,16 +1024,42 @@ body>div.app.d-flex.flex-column.visible>div.main.flex-grow-1.app-content.app-con
     white-space: pre-wrap
 }
 
-.feature:first-child .theme-text-for-primary-bg:after {
+:lang(ar) .feature:first-child .theme-text-for-primary-bg:after {
+    content: "\a       مانقدم الا الافضل  "
+}
+
+:lang(en) .feature:first-child .theme-text-for-primary-bg:after {
     content: "\a       Warranty, Highest-quality  "
 }
 
-.feature:nth-child(2) .theme-text-for-primary-bg:after {
+:lang(ar) .feature:nth-child(2) .theme-text-for-primary-bg:after {
+    content: "\a       جودة محل ثقتكم مدعومة بضمان 12 شهر  "
+}
+
+:lang(en) .feature:nth-child(2) .theme-text-for-primary-bg:after {
     content: "\a       Quality you can trust, backed by 12 months.  "
 }
 
-.feature:nth-child(3) .theme-text-for-primary-bg:after {
+:lang(ar) .feature:nth-child(3) .theme-text-for-primary-bg:after {
+    content: "\a    هل مرة الشحن علينا  "
+}
+
+:lang(en) .feature:nth-child(3) .theme-text-for-primary-bg:after {
     content: "\a    Shipping's on us—no extra cost,   "
+}
+:lang(en) body > div.app.d-flex.flex-column.visible > div.header > header > div.dark.d-none.d-lg-block > div.container > div > nav > ul > li:nth-child(1) > a, :lang(en) body > div.app.d-flex.flex-column.visible > div.header > header > div.dark.d-none.d-lg-block > div.container > div > nav > ul > li:nth-child(2) > a {
+    font-size: 0px!important;
+}
+
+:lang(en) body > div.app.d-flex.flex-column.visible > div.header > header > div.dark.d-none.d-lg-block > div.container > div > nav > ul > li:nth-child(1) > a:before,:lang(en) body > div.app.d-flex.flex-column.visible > div.header > header > div.dark.d-none.d-lg-block > div.container > div > nav > ul > li:nth-child(2) > a:before {
+    content: ' Home Page ';
+    font-size: 16px;
+    position: relative;
+    top: 4px;
+}
+
+:lang(en) body > div.app.d-flex.flex-column.visible > div.header > header > div.dark.d-none.d-lg-block > div.container > div > nav > ul > li:nth-child(2) > a:before {
+    content: ' All Product ';
 }
 
 :root {
@@ -1040,3 +1073,4 @@ body>div.app.d-flex.flex-column.visible>div.main.flex-grow-1.app-content.app-con
     --4: #e8546c;
     --logo: url("https://media.zid.store/778ca7a2-6715-43a1-ac32-3ac5f8a695de/00189733-a04c-4c09-b2a0-0530fca92674-200x.png");
 }
+
