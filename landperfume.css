@@ -878,7 +878,7 @@ body[data-template="home"]:before {
     position: fixed;
     z-index: 99999999999999999 !important;
     transform: scale(0);
-    background-size: 15% !important;
+    background-size: 50% !important;
     background-repeat: no-repeat;
     background-position: center !important;
     animation-name: logobg;
