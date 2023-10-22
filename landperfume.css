@@ -819,7 +819,10 @@ button.btn.btn-primary {
 }
 
 @media only screen and (max-width: 768px) {
-    .products-slider.s-slider {
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > div:nth-child(3) .products-slider.s-slider,
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > div:nth-child(7) .products-slider.s-slider,
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > div:nth-child(9) .products-slider.s-slider
+     {
         display: grid;
         grid-template-columns: 1fr 1fr !important;
         /* grid-template-rows: 1fr 1fr ; */
