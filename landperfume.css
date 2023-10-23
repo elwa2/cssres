@@ -1309,6 +1309,10 @@ ul.main-nav {
     display: block;
     position: relative;
     justify-content: center !IMPORTANT;
+}ul.main-nav>li>a, .item-all-categories a {
+   
+    font-size: .9rem;
+  
 }}
 :root {
     --primary-color: #252116;
