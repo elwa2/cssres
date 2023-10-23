@@ -68,7 +68,7 @@ body * {
 }
 
 .account-lang-currency .account-btn {
-    background-color: transparent;
+    background-color: var(--1);
     border: 1px solid var(--1);
     border-radius: 15px;
     color: var(--1)
