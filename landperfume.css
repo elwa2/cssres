@@ -1297,7 +1297,19 @@ ul.theme-text-for-primary-bg.menu-header-theme-bg-primary.menu-header-theme-bg-p
 .gallery-item.col-6 {
     flex: 0 0 100%;
     max-width: 100%;
+}  li.top-level-link.d-none {
+    display: block !important;
 }
+.main-nav-wrapper {
+    height: 109px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}@media only screen and (min-width: 769px){
+ul.main-nav {
+    display: block;
+    position: relative;
+    justify-content: center !IMPORTANT;
+}}
 :root {
     --primary-color: #252116;
     --text-color-primary-bg: #ffffff;
