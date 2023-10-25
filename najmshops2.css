@@ -215,8 +215,8 @@ header .site-header .theme-logo a {
 }
 
 #search_form input::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: #B22244;
+   
+    color: var(--1);
 }
 
 #search_form input::-moz-placeholder {
@@ -241,18 +241,18 @@ input:-moz-placeholder {
 /*   buttons after banner for wasal hadisa muntajat tahzeer cake style */
 .tab-head button {
     background-color: #fff !important;
-    border: 2px solid #9f4450;
+    border: 2px solid var(--1);
     border-radius: 4px;
     padding: 3px 15px;
-    color: #9f4450;
+    color: var(--1);
 }
 
 .tab-head button.active {
-    background-color: #9f4450 !important;
+    background-color: var(--1) !important;
 }
 
 .tab-head button:hover {
-    background-color: #9f4450 !important;
+    background-color: var(--1) !important;
 }
 
 /*   buttons after banner for wasal hadisa muntajat tahzeer cake style */
@@ -596,8 +596,9 @@ figure.banner-effect-1:before {
 
 .home-block--slide-products {
     margin: 5px;
-    margin-top: -60px;
+    margin-top: -31px;
     background: none;
+    background: transparent;
 }
 
 .home-block--slide-products .container {
@@ -682,7 +683,7 @@ figure.banner-effect-1:before {
 
 .price-wrapper span,.product-section--totals {
     font-size: 24px;
-    color: #9f4450;
+    color: var(--1);
 }
 
 .price-wrapper>small,.price-wrapper-info .color-grey, .product-section--has-label small {
@@ -844,7 +845,7 @@ figure.banner-effect-1:before {
 }
 
 .view-comment__comment img {
-    background: #AE3C4F;
+    background: var(--1);
     width: 25px;
     height: 25px;
 }
@@ -859,7 +860,7 @@ figure.banner-effect-1:before {
 }
 
 .view-comment__comment .view-comment__comment {
-    background: red;
+    background: var(--1);
     padding: 5px;
     background: white;
     border: 1px solid var(--1);
@@ -882,7 +883,7 @@ figure.banner-effect-1:before {
     border-right: 15px solid transparent;
     border-bottom: 14px solid #fff;
     border-left: 12px solid transparent;
-    border-bottom-color: rgb(174 60 78);
+    border-bottom-color: var(--1);
     content: '';
 }
 
@@ -907,7 +908,7 @@ figure.banner-effect-1:before {
 
 .view-comment__comment .comment-wrapper .admin .name {
     font-size: 15px;
-    color: #6f0f29;
+    color: var(--2);
 }
 
 .splide--main-slider .splide__pagination {
