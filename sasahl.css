@@ -188,7 +188,7 @@ body.index .s-product-card-content * {
 }
 
 .mm-spn.mm-spn--light {
-    background: #f0dcff
+    background-color: var(--color-primary-reverse);
 }
 
 body.index .navbar-brand img, body.index .main-nav-container.fixed-pinned .navbar-brand img {
@@ -212,4 +212,26 @@ body.index .navbar-brand img, body.index .main-nav-container.fixed-pinned .navba
 
 .navbar-brand img {
     filter: brightness(24.5);
+}
+
+button.undefined.s-button-element.s-button-btn.s-button-outline.s-button-wide.s-button-primary-outline.s-button-loader-center {
+    font-size: 1rem;
+    background-color: var(--1);
+    color: var(--3);
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: rgb(0 0 0 / 15%) 0px 2px 4px, rgb(0 0 0 / 0%) 0px 7px 13px -3px, rgb(255 255 255 / 66%)0px -3px 0px inset;
+    animation: signal 1200ms infinite;
+}
+
+@keyframes signal {
+    0% {
+        box-shadow: 0 0 0 0 var(--1);
+    }
+
+    100% {
+        box-shadow: 0 0 0 6px #ffffff21;
+    }
 }
