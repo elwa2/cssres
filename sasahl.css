@@ -236,3 +236,6 @@ button.undefined.s-button-element.s-button-btn.s-button-outline.s-button-wide.s-
         box-shadow: 0 0 0 6px #ffffff21;
     }
 }
+ .topnav-is-dark .top-navbar .s-search-input::placeholder, .topnav-is-dark .top-navbar .s-search-input::-webkit-input-placeholder {
+    color: #fff;
+}
