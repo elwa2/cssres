@@ -27,7 +27,6 @@ body.index footer, body.index .top-navbar,.topnav-is-dark .top-navbar,.store-foo
     background-color: var(--2) !important;
 }
 
-
 footer * {
     color: white !important;
 }
@@ -196,15 +195,6 @@ body.index .navbar-brand img, body.index .main-nav-container.fixed-pinned .navba
     filter: brightness(9.5);
 }
 
-:root {
-    --color-primary-dark: #c39138;
-    --color-primary-light: #e0a948;
-    --color-primary-reverse: #cccccc;
-    --1: #c39138;
-    --2: #e0a948;
-    --logo: url(https://cdn.salla.sa/BrpwYY/E3q81oooQbEGJ76D5GVF5l7NIJalzAPVwWLDK5iZ.jpg);
-}
-
 .s-button-primary {
     border-color: var(--1);
     background-color: var(--1);
@@ -236,6 +226,83 @@ button.undefined.s-button-element.s-button-btn.s-button-outline.s-button-wide.s-
         box-shadow: 0 0 0 6px #ffffff21;
     }
 }
- .topnav-is-dark .top-navbar .s-search-input::placeholder, .topnav-is-dark .top-navbar .s-search-input::-webkit-input-placeholder {
+
+.topnav-is-dark .top-navbar .s-search-input::placeholder, .topnav-is-dark .top-navbar .s-search-input::-webkit-input-placeholder {
     color: #fff;
+}
+
+.navbar-brand img {
+    height: 0px;
+}
+
+.navbar-brand {
+    background-image: var(--logo);
+    background-repeat: no-repeat no-repeat;
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    height: 66px;
+    width: 7vw;
+    display: block;
+    animation: flash 5s ease infinite;
+    animation: wiggle 4s infinite;
+    animation-direction: alternate;
+    filter: brightness(18.5);
+}
+
+footer.store-footer a.navbar-brand {
+    filter: brightness(0.5);
+}
+
+@keyframes wiggle {
+    0%, 7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-10deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    40%, 100% {
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes flash {
+    0%, 50%, 100% {
+        opacity: 1;
+    }
+
+    25%, 75% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .navbar-brand {
+        width: 15vw;
+        margin: auto;
+    }
+}
+
+:root {
+    --color-primary-dark: #c39138;
+    --color-primary-light: #e0a948;
+    --color-primary-reverse: #cccccc;
+    --1: #c39138;
+    --2: #e0a948;
+    --logo2: url(https://cdn.salla.sa/BrpwYY/E3q81oooQbEGJ76D5GVF5l7NIJalzAPVwWLDK5iZ.jpg);
+    --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 218.96 69.6'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %231c1816; stroke-width: 0px; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='m21.97,21.98h-8.79c-4.15,0-6.23,2.44-6.23,7.32v18.31h-.73c-4.15,0-6.23,2.44-6.23,7.32v14.65c1.73.1,3.36-.42,4.87-1.54,1.56-1.29,2.38-2.99,2.45-5.09v-4.88c.17-1.86,1.14-2.92,2.93-3.14h12.82c3.94,0,5.99-1.89,6.19-5.64h.04v-21.09c0-4.15-2.44-6.23-7.32-6.23Zm-7.69,25.63v-15.17c.17-1.86,1.14-2.92,2.93-3.14h1.1c2.2,0,3.42.98,3.66,2.93v15.38h-7.69Z'/%3E%3Cpath class='cls-1' d='m99.79,34.51h-28.78c-1.95-.24-2.93-1.11-2.93-2.6-.02-1.49.94-2.36,2.89-2.6h31.6c.1-1.73-.42-3.36-1.54-4.87-1.29-1.56-2.99-2.38-5.09-2.45h-28.97c-4.17,0-6.25,2.08-6.23,6.23v6.3c0,4.88,2.07,7.32,6.23,7.32h31.71v5.79h-42.48v-18.31c0-4.88-2.08-7.32-6.23-7.32h-8.79c-4.88,0-7.32,2.08-7.32,6.23v21.09h.04c.2,3.75,2.24,5.64,6.19,5.64h8.79v8.02c.07,2.1.89,3.8,2.45,5.09,1.51,1.12,3.14,1.64,4.87,1.54v-14.65h49.8v-14.21c0-4.15-2.08-6.23-6.23-6.23Zm-58.59,13.11v-15.38c.24-1.95,1.46-2.93,3.66-2.93h1.1c1.79.22,2.76,1.28,2.93,3.14v15.17h-7.69Z'/%3E%3Cpath class='cls-1' d='m214.09,23.52c-1.54,1.29-2.36,2.98-2.45,5.05v19.04h-3.66v-25.63c-1.76-.1-3.38.42-4.87,1.54-1.54,1.29-2.36,2.98-2.45,5.05v19.04h-3.66v-25.63c-1.76-.1-3.38.42-4.87,1.54-1.54,1.29-2.36,2.98-2.45,5.05v19.04h-4.5v-19.41c0-3.98-1.9-6.05-5.71-6.23h-27.47c-.1,1.76.42,3.38,1.54,4.87,1.32,1.56,3.02,2.38,5.09,2.45h5.31c-4.15,0-6.24,2.08-6.26,6.23v4.76c.1,2.1.93,3.8,2.49,5.09,1.49,1.12,2.99,1.64,4.5,1.54v-9.56c.07-.73.5-1.22,1.28-1.46.81.24,1.23.73,1.28,1.46v10.25h-19.88V.01c-1.73-.1-3.36.42-4.87,1.54-1.56,1.29-2.38,2.99-2.45,5.09v55.63h-12.82v-19.01c-.1-2.1-.93-3.8-2.49-5.09-1.49-1.12-3.1-1.64-4.83-1.54v27.03c.1,3.96,2.17,5.93,6.23,5.93h15.01c4.15-.02,6.23-2.11,6.23-6.26v-8.39h71.63V21.98c-1.76-.1-3.38.42-4.87,1.54Zm-36.25,24.1h-3.66v-12.08c0-4.15-2.08-6.23-6.23-6.23h9.89v18.31Z'/%3E%3C/svg%3E");
 }
