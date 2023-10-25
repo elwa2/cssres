@@ -395,7 +395,7 @@ footer * {
     /* color: white !important; */
 }
 
-body.index salla-slider.photos-slider .swiper-slide {
+/* body.index salla-slider.photos-slider .swiper-slide {
     width: 100%;
     margin: 0;
     padding: 0;
@@ -403,6 +403,9 @@ body.index salla-slider.photos-slider .swiper-slide {
 
 body.index div.app-inner.flex.flex-col.min-h-full > section:nth-child(3) {
     margin-top: 0 !important;
+} */
+body.index salla-slider.photos-slider .swiper-slide a img {
+    border-radius: 31px;
 }
 
 body.index .store-footer__inner {
