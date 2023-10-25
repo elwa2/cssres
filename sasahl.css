@@ -23,9 +23,10 @@ body.index .s-block--features__item .feature-icon, .main-nav-container, .footer-
     border-radius: 50px;
 }
 
-body.index footer, body.index .top-navbar {
+body.index footer, body.index .top-navbar,.topnav-is-dark .top-navbar,.store-footer {
     background-color: var(--2) !important;
 }
+
 
 footer * {
     color: white !important;
