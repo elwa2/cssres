@@ -1031,7 +1031,7 @@ body.index:before {
     background-repeat: no-repeat;
     background-position: center !important;
     animation-name: logobg;
-    animation-duration: 3s
+    animation-duration: 1.5s
 }
 
 @keyframes logobg {
