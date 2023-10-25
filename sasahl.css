@@ -190,10 +190,11 @@ body.index .s-product-card-content * {
 .mm-spn.mm-spn--light {
     background: #f0dcff
 }
+
 body.index .navbar-brand img, body.index .main-nav-container.fixed-pinned .navbar-brand img {
-    
     filter: brightness(9.5);
 }
+
 :root {
     --color-primary-dark: #c39138;
     --color-primary-light: #e0a948;
@@ -202,4 +203,13 @@ body.index .navbar-brand img, body.index .main-nav-container.fixed-pinned .navba
     --2: #e0a948;
     --logo: url(https://cdn.salla.sa/BrpwYY/E3q81oooQbEGJ76D5GVF5l7NIJalzAPVwWLDK5iZ.jpg);
 }
- 
+
+.s-button-primary {
+    border-color: var(--1);
+    background-color: var(--1);
+    color: #fff;
+}
+
+.navbar-brand img {
+    filter: brightness(24.5);
+}
