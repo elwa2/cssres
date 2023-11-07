@@ -286,7 +286,7 @@ img[src*="https://media.zid.store/e4e83413-341b-472f-b974-32984d9d00e8/7e2e8da4-
     height: auto;
 }
 
-section.slider-img.my-3[section-id="1c991fda-46b0-4410-bd36-7b09131a5506"] a[href*="/categories/654526/باقات-التوفير"] img {
+section.slider-img.my-3[section-id] a[href*="/categories/654526/باقات-التوفير"] img {
     object-fit: contain !important;
     height: auto;
 }
