@@ -147,30 +147,6 @@ body > div.app.rtl > section:nth-child(30) ,body > div.app.rtl > section:nth-chi
     width: 100%;
 }
 
-body > section:nth-child(30).py-3.banner-img .container {
-    max-width: 100%;
-    margin: -1px 0 -20px 0;
-    padding-right: 0;
-    padding-left: 4px;
-}
-
-section.py-3.banner-img .container .row>* {
-    padding: 0;
-}
-
-section.py-3.banner-img .col,.products-circle.my-4.square.slider-type-2.product-home, .products-circle.my-4.square.slider-type-2.product-home .container {
-    /*     padding: 0; */
-}
-
-@media (min-width: 1400px) {
-    body > section:nth-child(30).py-3.banner-img .container {
-        max-width: 100%;
-        margin: -1px 0 -20px 0;
-        padding-right: 0;
-        padding-left: 4px;
-    }
-}
-
 /* body > div.app.rtl > div:nth-child(14) {
     background: var(--1);
     margin: 0 !important;
@@ -294,4 +270,28 @@ section.slider-img.my-3[section-id] a[href*="/categories/654526/باقات-ال�
 body[data-template="category"] .text-dark-1.fs-18px {
     position: relative;
     top: -2rem;
+}
+
+section:nth-child(n+30).py-3.banner-img .container {
+    max-width: 100%;
+    margin: -1px 0 -20px 0;
+    padding-right: 0;
+    padding-left: 4px;
+}
+
+section.py-3.banner-img .container .row>* {
+    padding: 0;
+}
+
+section.py-3.banner-img .col,.products-circle.my-4.square.slider-type-2.product-home, .products-circle.my-4.square.slider-type-2.product-home .container {
+    /*     padding: 0; */
+}
+
+@media (min-width: 1400px) {
+    section:nth-child(n+30).py-3.banner-img .container {
+        max-width: 100%;
+        margin: -1px 0 -20px 0;
+        padding-right: 0;
+        padding-left: 4px;
+    }
 }
