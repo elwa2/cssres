@@ -305,3 +305,12 @@ section.py-3.banner-img .col,.products-circle.my-4.square.slider-type-2.product-
         margin: -17rem 0 -20px 0;
     }
 }
+.results-cats,.heading-categories .breadcrumb-section li a,.heading-categories .breadcrumb-section li.active span,h1.mb-0.h2 {
+    color: var(--colorDark-1);
+}
+
+ 
+
+.bg-main.rounded-lg.p-3.p-md-5.text-white {
+    background: transparent !important;
+}
