@@ -147,7 +147,7 @@ body > div.app.rtl > section:nth-child(30) ,body > div.app.rtl > section:nth-chi
     width: 100%;
 }
 
-section.py-3.banner-img .container {
+body > section:nth-child(30).py-3.banner-img .container {
     max-width: 100%;
     margin: -1px 0 -20px 0;
     padding-right: 0;
@@ -163,7 +163,7 @@ section.py-3.banner-img .col,.products-circle.my-4.square.slider-type-2.product-
 }
 
 @media (min-width: 1400px) {
-    section.py-3.banner-img .container {
+    body > section:nth-child(30).py-3.banner-img .container {
         max-width: 100%;
         margin: -1px 0 -20px 0;
         padding-right: 0;
