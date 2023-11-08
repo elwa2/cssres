@@ -290,3 +290,8 @@ section.slider-img.my-3[section-id] a[href*="/categories/654526/باقات-ال�
     object-fit: contain !important;
     height: auto;
 }
+
+body[data-template="category"] .text-dark-1.fs-18px {
+    position: relative;
+    top: -2rem;
+}
