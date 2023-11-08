@@ -296,9 +296,9 @@ section.py-3.banner-img .col,.products-circle.my-4.square.slider-type-2.product-
     }
 }
 
-.bg-gray-1 {
+/* .bg-gray-1 {
     background-color: transparent;
-}
+} */
 
 @media (min-width: 1100px) {
     img[src*="https://media.zid.store/e4e83413-341b-472f-b974-32984d9d00e8/70fce00f-e28b-4f7b-8bba-c54a9c7bb092.png"] {
