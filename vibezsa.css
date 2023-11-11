@@ -1,11 +1,11 @@
-body > .section[data-type=banner]:nth-child(8) {
+body > .section[data-type=banner]:has(img[src*="EKxP065HQG5LYE4wdX7dT.jpg"]) {
     position: relative;
     top: -13rem;
     padding: 0 0!important;
     margin: 0px 0px -125px 0px;
 }
 
-body > .section[data-type=banner]:nth-child(8) .container {
+body > .section[data-type=banner]:has(img[src*="EKxP065HQG5LYE4wdX7dT.jpg"]) .container {
     padding: 0px;
     margin: 0;
     width: 100%;
@@ -17,11 +17,11 @@ body > .section[data-type=banner]:nth-child(8) .container {
 }
 
 @media (max-width: 767px) {
-    body > .section[data-type=banner]:nth-child(8) {
+    body > .section[data-type=banner]:has(img[src*="EKxP065HQG5LYE4wdX7dT.jpg"]) {
         top: -7rem;
     }
 
-    body > .section[data-type=banner]:nth-child(8) {
+    body > .section[data-type=banner]:has(img[src*="EKxP065HQG5LYE4wdX7dT.jpg"]) {
         position: relative;
         top: -7rem;
         padding: 0 0!important;
@@ -36,7 +36,7 @@ body > .section[data-type=banner]:nth-child(8) .container {
         display: none;
     }
 
-    body > .section[data-type=banner]:nth-child(8) .container {
+    body > .section[data-type=banner]:has(img[src*="EKxP065HQG5LYE4wdX7dT.jpg"]) .container {
         padding: 0px;
         margin: 0;
     }
