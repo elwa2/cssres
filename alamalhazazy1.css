@@ -232,7 +232,7 @@ body > div.app.rtl > footer > div > div > div.col-md-7.mt-3.mt-md-0 > div > div:
 }
 
 @media (max-width: 767px) {
-    .my-3 {
+   body:not(.rtl.product) .my-3 {
         margin-top: 5px !important;
         margin-bottom: -26px !important;
     }
