@@ -473,7 +473,7 @@ footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
     /* display: none!important; */
 }
 
-@media(min-width: 992px) {
+/* @media(min-width: 992px) {
     section:nth-of-type(1) .container.container-slider {
         width: 100%!important;
         max-width: 100%!important
@@ -488,7 +488,7 @@ footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
         max-height: unset;
         margin-top: 0
     }
-}
+} */
 
 a.btn.btn-primary.btn-product-card-out-of-stock {
     background-color: #cfcfcf;
