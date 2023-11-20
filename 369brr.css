@@ -4,7 +4,7 @@ body {
 }
 
 body[data-template=home] {
-    background: #f3f3f3!important;
+    background: #f3f3f378!important;
 }
 
 .blog-text img {
