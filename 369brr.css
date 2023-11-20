@@ -543,13 +543,13 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 }
 
 :root {
-    --header-primary-color: #939598;
-    --menu-header-primary-color: #939598;
-    --header-primary-brightness: brightness(100%);
-    --menu-header-text-color-primary-bg: #000000;
-    --header-text-color-primary-bg: #000000;
-    --footer-primary-color: #939598;
-    --footer-text-color-primary-bg: #ffffff;
+    --header-primary-color: #939598 !important;
+    --menu-header-primary-color: #939598 !important;
+    --header-primary-brightness: brightness(100%) !important;
+    --menu-header-text-color-primary-bg: #000000 !important;
+    --header-text-color-primary-bg: #000000 !important;
+    --footer-primary-color: #939598 !important;
+    --footer-text-color-primary-bg: #ffffff !important;
     --1: #000;
     --1-1: #171717;
     --2: #323232;
