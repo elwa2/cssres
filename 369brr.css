@@ -489,7 +489,6 @@ footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
         margin-top: 0
     }
 } */
-
 a.btn.btn-primary.btn-product-card-out-of-stock {
     background-color: #cfcfcf;
     color: #8b8b8b;
@@ -530,6 +529,30 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
     padding: 5px 0;
     font-size: .929rem;
     color: var(--footer-text-color-primary-bg);
+}
+
+a.btn.btn-primary.product-card-add-to-cart, div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
+    background: var(--00);
+    border-radius: 20px;
+    border: 1px solid var(--00);
+    font-size: 14px;
+    color: var(--ff);
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 0;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* تأثير عند التحريك */
+a.btn.btn-primary.product-card-add-to-cart:hover {
+    background-color: var(--ff);
+    color: var(--00);
+    transform: scale(1.1);
+}
+
+.product-item .product-title>span,.product-card-rating-wrapper,.product-item .product-price {
+    text-align: center;
 }
 
 :root {
