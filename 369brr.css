@@ -347,7 +347,7 @@ div.container div.row div.col-12.col-lg-7 div.row div.col-12.col-lg-4:nth-child(
 }
 
 .store-section .social-icons span {
-    border: 1px solid var(--ff)!important
+    border: 0px solid var(--ff)!important;
 }
 
 footer.d-flex>div:nth-child(2)>div:nth-child(1) {
