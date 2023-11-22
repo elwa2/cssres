@@ -1198,7 +1198,10 @@ body.dark-theme .s-product-options-wrapper,body.dark-theme .s-product-options-op
   padding: 0;
   background: transparent;
 }
-
+i.sicon-menu.text-primary.text-2xl {
+    color: #ffffff;
+    /* color: var(--color-primary); */
+}
 :root {
   --color-primary: #141446;
   --color-primary-dark: #0e0e35;
