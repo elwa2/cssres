@@ -683,14 +683,6 @@ ul>li>div[style="height: 50px"] {
     font-family: elmessiri
 }
 
-.slide-menu__backlink.slide-menu__control>span:before {
-    display: inline-block;
-    content: url(https://media.zid.store/914ec7c4-442b-4fa2-9c2d-af141a5b8762/13e1e91c-6d23-446f-8ae3-2e23045f1df9.png);
-    width: 12px;
-    margin-left: 10px;
-    transform: scale(-1)
-}
-
 .slide-menu-ul-li>.slide-menu__submenu--active>li>a:not(.slide-menu__backlink) {
     font-size: 1.4rem;
     background: #f9f9f9
@@ -2904,13 +2896,13 @@ body>div[id*=gb-widget] {
     right: unset!important
 }
 
+.footer-about-us-links-div h2.pb-2 {
+    color: #9d9d9d;
+    display: none;
+}
+
 :root {
     --1: #b1956e;
     --2: #d3b68c;
     --logo: url(https://media.zid.store/e89f6b26-aafb-407f-a777-77097d7ef557/81d77350-c096-40d5-9d85-1dc3095e7871-200x.png);
-}
-
-.footer-about-us-links-div h2.pb-2 {
-    color: #9d9d9d;
-    display: none;
 }
