@@ -306,16 +306,6 @@ header>.dark {
     padding-right: unset
 }
 
-.slide-menu__decorator>span:before {
-    display: inline-block;
-    content: url(https://media.zid.store/914ec7c4-442b-4fa2-9c2d-af141a5b8762/224b9512-34b6-49b1-aacf-5d3d1bf7d275.png);
-    width: 10px;
-    margin-right: 20px;
-    vertical-align: middle;
-    transform: translate3d(0,0,0);
-    transition: .2s all ease-in-out
-}
-
 :lang(en) .slide-menu__decorator>span:before {
     margin-left: 10px;
     margin-right: unset
@@ -2033,12 +2023,12 @@ ul.pagination {
 
 .col-lg-6.col-product-info>.product-buttons.d-block .btn.btn-add-to-cart {
     border: 0;
-    background: var(--2)!important;
+    background: var(--1)!important;
     font-family: elmessiri-bold;
     padding: 5px;
     font-size: 16px;
     line-height: 2;
-    color: #1f1f1f;
+    color: #fff;
     border-radius: 6px;
     margin-bottom: 1rem!important
 }
@@ -2062,7 +2052,7 @@ ul.pagination {
 }
 
 .col-lg-6.col-product-info .product-social i {
-    color: var(--2)
+    color: var(--1)
 }
 
 .products-details-page .description-title {
@@ -2929,6 +2919,11 @@ body>div[id*=gb-widget] {
 }
 
 #fixed-header .search-header-bar>.header-logo>a[href="/"] img {
+    display: none
+}
+
+div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
+    filter: brightness(0);
     display: none
 }
 
