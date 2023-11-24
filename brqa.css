@@ -209,7 +209,7 @@ header>.dark {
     display: block;
     background: transparent url("https://media.zid.store/914ec7c4-442b-4fa2-9c2d-af141a5b8762/9aac6751-3383-4b91-b43b-1cf2ed78276b.png")no-repeat;
     background-size: contain;
-    margin: unset
+    margin: unset;
 }
 
 #fixed-header .icon-arrow-right::before {
@@ -1304,7 +1304,7 @@ a.more-button::after {
 }
 
 footer {
-    background: linear-gradient(to top,var(--2),transparent);
+    background: linear-gradient(to top,var(--1),transparent);
     border-top: unset;
     animation: elwaaa 5s infinite linear;
     background-repeat: no-repeat;
@@ -2891,27 +2891,20 @@ body>div[id*=gb-widget] {
     display: none;
 }
 
-#fixed-header .search-header-bar>.header-logo>a[href="/"] {
+#fixed-header .search-header-bar>.header-logo>a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
     display: block;
     content: "";
     background: var(--logo);
-    width: 120px!important;
+    width: 64px!important;
     height: 55px!important;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center
+    background-position: center;
+    position: relative;
+    right: 24px;
 }
 
-#fixed-header.sticky .header-logo a[href="/"] {
-    animation-name: uplogo;
-    animation-duration: 1.5s;
-    background: var(--logo);
-    width: 120px!important;
-    height: 50px!important;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center
-}
+ 
 
 #fixed-header.sticky .search-header {
     padding: unset;
