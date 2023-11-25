@@ -842,7 +842,7 @@ button.more-button, a.more-button {
 }
 
 button.more-button:hover, a.more-button:hover {
-    background: var(--2)
+    background: var(--1)
 }
 
 a.more-button:hover::after {
@@ -1304,7 +1304,7 @@ a.more-button::after {
 }
 
 footer {
-    background: linear-gradient(to top,var(--1),transparent);
+    background: linear-gradient(to top,var(--2),transparent);
     border-top: unset;
     animation: elwaaa 5s infinite linear;
     background-repeat: no-repeat;
