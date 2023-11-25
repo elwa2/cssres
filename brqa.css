@@ -2672,7 +2672,8 @@ section.blog.mt-5.mb-5 {
         gap: 10px;
         padding: 5px 10px;
         flex-grow: unset!important;
-        justify-content: start!important
+        justify-content: start!important;
+        display: none !important;
     }
 
     .header .top-main-menu-wrapper ul .top-level-link {
