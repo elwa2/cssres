@@ -594,7 +594,7 @@ ul.main-nav>li>a {
 
 a.btn.btn-primary.product-card-add-to-cart {
     font-size: 1rem;
-    background-color: var(--2);
+    background-color: var(--2) !important;
     color: var(--1);
     margin: 10px 5% !important;
     padding: 0.35rem 0 !important;
@@ -623,8 +623,8 @@ a.btn.btn-primary.product-card-add-to-cart {
 }
 
 a.btn.btn-primary.product-card-add-to-cart:hover {
-    background-color: var(--1) !important;
-    color: #ffffff;
+    /* background-color: var(--1) !important; */
+    /* color: #ffffff; */
 }
 
 .container>.account-area>button:hover {
@@ -1069,7 +1069,7 @@ button.btn.btn-primary {
         grid-template-rows: 1fr 1fr ;
     }
 }
+
 .testimonials-customer-text {
-    
     color: #ffffff;
 }
