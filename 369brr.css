@@ -251,6 +251,8 @@ ul.main-nav>li.top-level-link:nth-of-type(2) {
     width: 7.5pc;
     margin: -10px auto 25px;
     filter: invert(1);
+    position: relative;
+    right: -21px;
 }
 
 .footer-about-us-links-div {
