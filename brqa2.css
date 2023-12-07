@@ -176,10 +176,7 @@ pre {
   padding-top:9px;
   padding-bottom:35px
 }
-.brand-logo img {
-  height:22px!important;
-  max-height:132px!important
-}
+ 
 .full-scroll-menu .container-fluid {
   padding-left:15px;
   padding-right:15px;
@@ -227,7 +224,7 @@ body {
 .fa-reorder:before,
 .fa-bars:before {
   content:"\f0c9 ";
-  color:#017281
+  /* color:#017281 */
 }
 .pixelstrap a,
 .pixelstrap a:hover,
@@ -250,17 +247,8 @@ header {
   background-color:transparent
 }
 @media(max-width:991px) {
-  .brand-logo {
-    position:absolute;
-    left:50%;
-    margin-right:-50%;
-    transform:translateX(-50%);
-    padding-top:0!important;
-    padding-bottom:25px!important
-  }
-  .rtl .main-menu .menu-left .navbar {
-    padding:12px 0 30px 45px!important
-  }
+  
+  
   .main-menu .menu-right .icon-nav .mobile-cart i.bottom-menu-icon,
   .main-menu .menu-right .icon-nav .mobile-cart .a-ti-shopping-cart {
     display:inline-block;
