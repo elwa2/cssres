@@ -291,4 +291,47 @@ header {
 }
 .added-notification {
   background-color:#fff
+}body,.sub-footer,.sidenav nav {
+    background: #f9f9f9;
 }
+
+div#gb-widget-7168 {
+    bottom: 45px !important;
+}
+
+div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
+    filter: brightness(0);
+    display: none
+}
+[id*="gb-widget"]  {
+    bottom: 52px !important;
+    position: relative;
+}.sm-vertical {
+    background-color: transparent;
+}
+
+
+@media (max-width: 767px) {
+    .footer-theme .footer-social {
+        margin-bottom: 0;
+        position: relative;
+        top: 5rem;
+        right: 0rem;
+        justify-content: center;
+    }
+
+    .footer-end.sub-footer-copyrights {
+        position: relative;
+        top: -1.5rem;
+    }
+
+    .col-xl-6.col-md-6.col-sm-12 {
+        /* display: none; */
+        margin: 0px 0 -36px 0px;
+    }
+}
+
+span.copyrights-text {
+    display: none;
+}
+
