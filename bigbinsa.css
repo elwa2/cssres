@@ -604,7 +604,7 @@ div#mainnav {
     background: transparent;
 }
 
-.s-button-primary,.topnav-link-item,nav.mobile-menu.mm-spn--light.mm-spn--navbar.mm-spn--main span,.header-btn__icon,.s-cart-summary-total {
+.sicon-menu:before,.s-button-primary,.topnav-link-item,.main-menu li.root-level > a,.header-btn__icon,.s-cart-summary-total {
     color: #fff !important
 }
 
