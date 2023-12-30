@@ -284,6 +284,7 @@ footer:before {
 footer.store-footer * {
     text-align: center;
     justify-content: center;
+    /* color: #000000 !important; */
 }
 
 body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-whatsapp2::after, i.sicon-whatsapp2::after {
@@ -596,16 +597,16 @@ salla-slider.photos-slider .swiper {
     background-color: transparent;
 }
 
-header.store-header {
+.main-nav-container.shadow-default.bg-white,header.store-header,.main-nav-container.shadow-default.bg-white.fixed-pinned.animated.fixed-header {
     background: var(--1);
-}
-
-div#mainnav {
-    background: transparent;
 }
 
 .sicon-menu:before,.s-button-primary,.topnav-link-item,.main-menu li.root-level > a,.header-btn__icon,.s-cart-summary-total {
     color: #fff !important
+}
+
+.copyright-text * {
+    color: #000000 !important;
 }
 
 :root {
