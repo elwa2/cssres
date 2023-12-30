@@ -161,7 +161,8 @@ salla-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
 }
 
 .s-product-card-entry {
-    outline: var(--color-primary) solid 1px!important
+    border: var(--color-primary) solid 2px!important;
+    /* outline: var(--color-primary) solid 7px!important; */
 }
 
 @media (min-width: 640px) {
