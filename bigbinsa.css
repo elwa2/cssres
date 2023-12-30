@@ -81,6 +81,10 @@ body {
         width:100%!important;
         max-width: 100%!important
     }
+
+    .s-block.s-block--fixed-banner>.container,salla-slider.photos-slider .swiper-slide {
+        border-radius: 0 0 13rem 13rem;
+    }
 }
 
 @media screen and (max-width: 767px) {
