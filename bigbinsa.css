@@ -69,7 +69,11 @@ body {
 }
 
 .s-block.s-block--fixed-banner>.container,salla-slider.photos-slider .swiper-slide {
-    width: 100%!important
+    width: 100%!important;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    border-radius: 0 0 49px 49px;
 }
 
 @media (min-width: 1280px) {
@@ -607,6 +611,10 @@ salla-slider.photos-slider .swiper {
 
 .copyright-text * {
     color: #000000 !important;
+}
+
+img.w-full.object-contain.rounded-md {
+    border-radius: 0;
 }
 
 :root {
