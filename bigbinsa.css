@@ -619,6 +619,17 @@ salla-slider.photos-slider .swiper {
 img.w-full.object-contain.rounded-md {
     border-radius: 0;
 }
+.sicon-menu::after {
+    content: 'القائمة';
+    position: absolute;
+    width: 86px;
+    height: 24px;
+    font-size: 10px;
+    top: 72%;
+    right: 1px;
+    color: #fff;
+    font-family: Tajawal,sans-serif!important;
+}
 
 :root {
     --color-primary: #1c274c;
