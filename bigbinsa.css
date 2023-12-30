@@ -36,7 +36,7 @@ body {
 }
 
 .swiper-wrapper {
-    margin: 30px 0!important
+    margin: 0 0!important;
 }
 
 .main-nav-container.shadow-default.bg-white.fixed-pinned animated.fixed-header,.s-slider-nav-arrow:not(:disabled):hover {
@@ -202,6 +202,7 @@ salla-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
     height: 66px;
     width: 10rem;
     display: block;
+    filter: invert(1) brightness(29.5);
 }
 
 .main-nav-container.fixed-header .navbar-brand {
@@ -236,7 +237,7 @@ salla-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
     .main-nav-container.fixed-header .inner {
         background: var(--color-primary);
         background: linear-gradient( 90deg, var(--color-primary) 0%, var(--color-primary) 100% );
-        background: var(--3);
+        /* background: var(--3); */
         width: 95%;
         margin: 5px auto 0;
         border-radius: 50px;
@@ -593,6 +594,18 @@ salla-slider.photos-slider .swiper {
 
 .bg-gray-100 {
     background-color: transparent;
+}
+
+header.store-header {
+    background: var(--1);
+}
+
+div#mainnav {
+    background: transparent;
+}
+
+.s-button-primary,.topnav-link-item,nav.mobile-menu.mm-spn--light.mm-spn--navbar.mm-spn--main span,.header-btn__icon,.s-cart-summary-total {
+    color: #fff !important
 }
 
 :root {
