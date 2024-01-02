@@ -2940,7 +2940,11 @@ footer .pb-2 {
 ul.main-nav>li>a, .item-all-categories a {
     color: #000 !important;
 }
-
+img.add-to-cart-progress {
+    width: 22px;
+    margin: -4px 11px 0 0;
+    filter: brightness(0.5);
+}
 :root {
     --1: #f2c00f;--1-1: #f2c00f21;
     --3:#c79c06;
