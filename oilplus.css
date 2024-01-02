@@ -2147,7 +2147,7 @@ ul.pagination {
 }
 
 .col-lg-6.col-product-info .product-social i {
-    color: #4c677f
+    color: var(--1)
 }
 
 .products-details-page .description-title {
@@ -2164,7 +2164,7 @@ ul.pagination {
 }
 
 .products-details-page .description-icon {
-    color: #4c677f;
+    color: var(--1);
     font-size: 30px
 }
 
