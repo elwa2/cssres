@@ -2948,6 +2948,10 @@ img.add-to-cart-progress {
 .categories-slider-wrapper .slick-list>.slick-track {
    
     place-content: center;
+}ul.main-nav>li>a.mega-menu>span:after {
+    
+    border-top: 5px solid #666;
+ 
 }
 :root {
     --1: #f2c00f;--1-1: #f2c00f21;
