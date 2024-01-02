@@ -2213,7 +2213,7 @@ ul.pagination {
     border: 0;
     border-radius: 6px;
     margin: 0 10px;
-    background: var(--2);
+    /* background: var(--2); */
     color: #000
 }
 
@@ -2348,7 +2348,7 @@ ul.pagination {
 
 .size-box #product-variants-options ul li.active {
     background: var(--2);
-    color: #000
+    color: #fff;
 }
 
 .col-lg-6.col-product-info>.product-buttons.d-block>a {
