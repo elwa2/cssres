@@ -2954,17 +2954,15 @@ ul.main-nav>li>a.mega-menu>span:after {
     border-top: 5px solid #666;
 }
 
-body[data-template="category"] .slick-track,body[data-template="category"] .categories-slider.s-slider {
+body[data-template="category"] .slick-track,body[data-template="category"] .categories-slider.s-slider,.categories-slider {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .categories-slider {
-    display: grid;
     gap: 1rem;
     height: auto;
     padding: 0 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 @media (max-width: 991px) {
