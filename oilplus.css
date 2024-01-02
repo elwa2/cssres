@@ -2959,18 +2959,24 @@ body[data-template="category"] .slick-track,body[data-template="category"] .cate
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
+.categories-slider {
+    display: grid;
+    gap: 1rem;
+    height: auto;
+    padding: 0 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
 @media (max-width: 991px) {
     body[data-template="category"] .slick-track,body[data-template="category"] .categories-slider.s-slider {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
         margin-right: -36.5px;
-    }    .categories-slider {
-        display: grid;
-        gap: 1rem;
-        height: auto;
-        padding: 0 1rem;
+    }
+
+    .categories-slider {
         grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
-}
+    }
 }
 
 :root {
