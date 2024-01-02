@@ -2964,7 +2964,13 @@ body[data-template="category"] .slick-track,body[data-template="category"] .cate
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
         margin-right: -36.5px;
-    }
+    }    .categories-slider {
+        display: grid;
+        gap: 1rem;
+        height: auto;
+        padding: 0 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+}
 }
 
 :root {
