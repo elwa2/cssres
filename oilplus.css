@@ -2946,13 +2946,14 @@ img.add-to-cart-progress {
     filter: brightness(0.5);
 }
 
-body[data-template="home"] .categories-slider-wrapper .slick-list>.slick-track {
+body[data-template="home"] > div > div.main.flex-grow-1.app-content > div > div:nth-child(3) .slick-list>.slick-track {
     place-content: center;
 }
 
 ul.main-nav>li>a.mega-menu>span:after {
     border-top: 5px solid #666;
 }
+
 body[data-template="category"] .slick-track,body[data-template="category"] .categories-slider.s-slider {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
