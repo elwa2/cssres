@@ -976,7 +976,7 @@ a.more-button::after {
     width: 100%;
     max-width: unset;
     max-height: unset;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden
 }
 
