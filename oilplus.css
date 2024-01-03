@@ -2977,7 +2977,7 @@ body[data-template="category"] .slick-track,body[data-template="category"] .cate
 }
 
 @media (min-width: 991px) {
-    .categories-slider-wrapper .slick-list>.slick-track {
+    body[data-template="category"] .categories-slider-wrapper .slick-list>.slick-track {
         display: grid;
         align-items: stretch;
         gap: 1rem;
