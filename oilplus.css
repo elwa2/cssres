@@ -775,7 +775,6 @@ header>.account-lang-currency {
 }
 
 .home-categories-section {
-    background-image: url(https://i.imgurf.com/8L0Kkco.png);
     background-size: contain;
     background-repeat: repeat-x;
     background-position: bottom;
@@ -2954,7 +2953,7 @@ ul.main-nav>li>a.mega-menu>span:after {
     border-top: 5px solid #666;
 }
 
-body[data-template="category"] .slick-track,body[data-template="category"] .categories-slider.s-slider,.categories-slider {
+body[data-template="category"] .slick-track,body[data-template="category"] .categories-slider.s-slider, body[data-template="home"] > div > div.main.flex-grow-1.app-content > div > div:nth-child(3) .categories-slider {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
@@ -2972,7 +2971,7 @@ body[data-template="category"] .slick-track,body[data-template="category"] .cate
         margin-right: -36.5px;
     }
 
-    .categories-slider {
+    body[data-template="home"] > div > div.main.flex-grow-1.app-content > div > div:nth-child(3) .categories-slider {
         grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
     }
 }
