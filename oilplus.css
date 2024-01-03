@@ -2976,6 +2976,21 @@ body[data-template="category"] .slick-track,body[data-template="category"] .cate
     }
 }
 
+@media (min-width: 991px) {
+    .categories-slider-wrapper .slick-list>.slick-track {
+        display: grid;
+        align-items: stretch;
+        gap: 1rem;
+        overflow-x: auto;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100% !important;
+        /* grid-template-rows: 1fr; */
+        /* align-content: stretch; */
+        /* justify-content: center; */
+        /* justify-items: stretch; */
+    }
+}
+
 :root {
     --1: #f2c00f;
     --1-1: #f2c00f21;
