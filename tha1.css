@@ -318,7 +318,7 @@ a.btn.btn-primary.btn-product-card-select-variant {
 }
 
 ul.main-nav>li.top-level-link:nth-of-type(2) {
-    display: none
+    /* display: none */
 }
 
 @media(min-width: 1200px) {
