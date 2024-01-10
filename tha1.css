@@ -1,12 +1,8 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
-@font-face {
-    font-family: Somar;
-    src: url(https://cdn.jsdelivr.net/gh/elwa2/font@main/somar-%20(1)/ArbFONTS-Somar-Bold.otf);
-    font-weight: Bold;
-}
+ 
 
 body,*:not(i),html, body, div, object, h1, h2,h4, h3 {
-    font-family: Somar;
+     font-family: "somar", sans-serif !important;
     font-size: 1.1666666666666667rem;
 }
 
