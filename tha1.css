@@ -608,6 +608,9 @@ footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
     width: 90%;
     font-size: 18px;
 }
+.products-slider .slick-list {
+    padding-bottom: 2rem!important
+}
 
 .testimonials-customer-text {
     height: 170px;
