@@ -217,7 +217,7 @@ body:before {
     content: "";
     width: 100%;
     height: 100%;
-    background: #fff;
+    background: #ffffff0d;
     position: fixed;
     z-index: 999999;
     transform: scale(0);
