@@ -1,4 +1,19 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@font-face {
+    font-family: Somar;
+    src: url(https://cdn.jsdelivr.net/gh/elwa2/font@main/somar-%20(1)/ArbFONTS-Somar-Bold.otf);
+    font-weight: Bold;
+}
+
+body,*:not(i),html, body, div, object, h1, h2,h4, h3 {
+    font-family: Somar;
+    font-size: 1.1666666666666667rem;
+}
+
+[class^=icon-], [class*=" icon-"],span.path2:before,span.path1:before {
+    font-family: icomoon!important;
+}
+
 body {
     background-color: #fff
 }
@@ -239,10 +254,10 @@ body:after {
     left: 0;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 160px;
+    background-size: 11vw;
     transform: scale(0);
     animation-name: pupup_logo;
-    animation-duration: 3s
+    animation-duration: 3s;
 }
 
 @keyframes pupup_logo {
@@ -577,6 +592,25 @@ footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
         background: transparent var(--logo) center 0rem/ 50% no-repeat;
         background-size: contain;
     }
+}
+
+.product-item {
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.13),0 6px 20px 0 rgba(255,255,255,.19)!important;
+}
+
+.product-item .btn:not(:disabled):not(.disabled) {
+    border-radius: 12px;
+    color: #fff;
+    background-color: var(--1);
+    border: none;
+    padding: 6px 15px;
+    margin: 0 0 10px;
+    width: 90%;
+    font-size: 18px;
 }
 
 :root {
