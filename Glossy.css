@@ -78,10 +78,6 @@ header .icon-shopping_cart_black_36dp-1-1 .path2:before {
     }
 }
 
-.footer {
-    background-color: var(--primary-color)
-}
-
 .footer-copyrights-vat-certificate {
     /* color: #fff */
 }
@@ -208,13 +204,11 @@ a.btn-product-card-out-of-stock {
 
 .product-price {
     text-align: center;
-    font-family: "noto serif hk";
     color: #111!important
 }
 
 .product-formatted-price {
     color: #111!important;
-    font-family: "noto serif hk";
     font-weight: 600;
     font-size: 24px;
     margin-bottom: 20px
@@ -471,7 +465,7 @@ a.btn-product-card-out-of-stock {
 
 .footer-store-section {
     text-align: center;
-    padding: 48px 12px
+    padding: 90px 12px 0;
 }
 
 .footer-about-us-links-div {
@@ -523,7 +517,7 @@ a.btn-product-card-out-of-stock {
 }
 
 .footer-copyrights-vat-certificate {
-    background-color: #f7f7f7!important
+    background-color: transparent;
 }
 
 .footer-copyrights {
@@ -606,7 +600,7 @@ a.btn-product-card-out-of-stock {
 #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
     background: var(--logo);
     padding: 0;
-    width: 215px!important;
+    width: 130px!important;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -619,12 +613,7 @@ a.btn-product-card-out-of-stock {
 }
 
 @media (max-width: 991px) {
-    #fixed-header:not(.sticky) .header-logo a[href="/"] {
-        margin-right: auto!important;
-        padding: 8px 0 10px 15px!important;
-    }
-
-    #fixed-header.sticky .header-logo a[href="/"] {
+    #fixed-header.sticky .header-logo a[href="/"],#fixed-header:not(.sticky) .header-logo a[href="/"] {
         background-size: contain;
     }
 }
@@ -715,10 +704,42 @@ a.btn-product-card-out-of-stock {
     color: var(--primary-color)
 }
 
+.footer {
+    background-color: var(--primary-color);
+}
+
 @media(max-width: 991px) {
-    .footer-theme-text-for-primary-bg {
+    .footer-theme-text-for-primary-bg,.footer {
         border-radius:500px 500px 0 0!important
     }
+}
+
+footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
+    color: #fff!important
+}
+
+.vat-crn-sections {
+    flex-direction: column!important;
+    color: #fff
+}
+
+.vat-crn-sections:after {
+    display: block;
+    content: url("https://media.zid.store/43645265-1d51-4651-a18d-e740e284c703/22ee00c6-a6c2-4e1a-9381-31d1656392e0.svg");
+    width: 250px;
+    margin: 10px auto -12px
+}
+
+.footer-store-section-bars div.d-flex.justify-content-center.align-items-center span {
+    color: #fff
+}
+
+.footer-copyrights-vat-certificate {
+    background: transparent;
+}
+
+.footer a[href*=facebook] {
+    display: none!important
 }
 
 :root {
