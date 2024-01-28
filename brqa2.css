@@ -334,4 +334,21 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
 span.copyrights-text {
     display: none;
 }
+body,.sub-footer,.sidenav nav {
+    background: #f9f9f9;
+}
 
+div#gb-widget-7168 {
+    bottom: 45px !important;
+}
+
+div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
+    filter: brightness(0);
+    display: none
+}
+[id*="gb-widget"]  {
+    bottom: 52px !important;
+    position: relative;
+}.sm-vertical {
+    background-color: transparent;
+}
