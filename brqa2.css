@@ -356,6 +356,14 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
     background-color: transparent;
 }
 
-@media (max-width: 480px) .brand-logo img {
+.brand-logo img {
     height: 63px;
-    max-height: 53px !important; }
+    max-height: 53px !important;
+}
+
+@media (max-width: 480px) {
+    .brand-logo img {
+        height: 63px;
+        max-height: 53px !important;
+    }
+}
