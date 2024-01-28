@@ -367,3 +367,26 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
         max-height: 53px !important;
     }
 }
+
+ul#sub-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidenav .pixelstrap li:nth-of-type(1) {
+    order: 1;
+}
+
+.sidenav .pixelstrap li:nth-of-type(2) {
+    order: 2;
+}
+
+.sidenav .pixelstrap li:nth-of-type(3) {
+    order: 6;
+}
+.sidenav .pixelstrap li:nth-of-type(4) {
+    order: 4;
+}
+.sidenav .pixelstrap li:nth-of-type(5) {
+    order: 5;
+}
