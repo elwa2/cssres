@@ -200,7 +200,7 @@ ul.main-nav>li>a {
     }
 
     .menu-header-theme-bg-primary {
-        box-shadow: inset 0 3px 0 0 #0a0a0a;
+        box-shadow: inset 0 3px 0 0 #353535;
     }
 
     .container>.account-area,.form-control {
@@ -573,13 +573,6 @@ ul.main-nav>li>a {
     overflow: hidden;
 }
 
-:root {
-    --1: #2a2a2a;
-    --2: #E7BD20;
-    --3: #fff;
-    --logo: url("https://media.zid.store/cca6349b-b846-4add-89ee-aeffcf3aa565/edf7dfca-c8b3-421f-845f-a9157007cdf5.png");
-}
-
 .footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg {
     background: var(--1)!important;
     border: 4px solid var(--2);
@@ -903,7 +896,7 @@ button.btn.btn-primary {
     background: #fff;
     box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
     margin: 1rem auto;
-    border-radius: 11px
+    border-radius: 11px;
 }
 
 .product-item img {
@@ -1068,8 +1061,58 @@ button.btn.btn-primary {
         grid-template-columns: 1fr 1fr !important;
         grid-template-rows: 1fr 1fr ;
     }
+
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(11) .products-slider.s-slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr ;
+    }
 }
 
 .testimonials-customer-text {
     color: #ffffff;
+}
+
+:root {
+    --1: #2a2a2a;
+    --2: #E7BD20;
+    --3: #fff;
+    --g: linear-gradient(180deg,var(--1)0%,#ffffff00 100%);
+    --sh: 0 1px 5px 2px #4f4e4e;
+    --logo: url("https://media.zid.store/cca6349b-b846-4add-89ee-aeffcf3aa565/edf7dfca-c8b3-421f-845f-a9157007cdf5.png");
+}
+
+/* دارك مود */
+body,.home,.card {
+    color: var(--3)!important;
+    background-color: var(--1);
+    background: var(--1)
+}
+
+.breadcrumb,.header-wrapper {
+    color: var(--3)!important;
+    background-color: var(--2);
+    background: var(--2)
+}
+
+ul.main-nav>li>a,.description-paragrah,.user-review-text,.description-title,body,.product-title {
+    color: var(--3)!important;
+}
+
+body, *:not(.fa,.far,.fas,.fab) {
+}
+
+.products-slider .prod-col {
+    background: var(--1) box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+}
+
+.slick-slide img.d-block.w-100.slider-image-0 {
+    box-shadow: var(--sh);
+    border-radius: 8px;
+    width: 95%;
+    margin: auto;
+}
+
+.search-header {
+    box-shadow: var(--sh);
 }
