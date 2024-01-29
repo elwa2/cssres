@@ -903,14 +903,6 @@ button.btn.btn-primary {
     border-radius: 11px 11px 0 0
 }
 
-.product-item img {
-    width: 100%;
-    max-width: unset;
-    max-height: unset;
-    object-fit: cover;
-    overflow: hidden
-}
-
 @media(min-width: 991px) {
     .products-slider .prod-col {
         width:250px!important
@@ -1083,10 +1075,10 @@ button.btn.btn-primary {
 }
 
 /* دارك مود */
-body,.home,.card {
+body,.home,.card,p[style*="background-color"],span[style*="background-color"],a[style*="background-color"] {
     color: var(--3)!important;
-    background-color: var(--1);
-    background: var(--1)
+    background-color: var(--1) !important;
+    background: var(--1) !important;
 }
 
 .breadcrumb,.header-wrapper {
