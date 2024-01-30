@@ -1107,12 +1107,23 @@ button.btn.btn-primary {
     color: var(--3)!important;
     background: #e7bd2014;
 }
+
+.payment-method-card{
+    color: var(--3)!important;
+    background: #ffffff;
+}
+
+
+
 .filter-result,.breadcrumb-item,.bread-text,.bread-title,ul.main-nav>li>a,.description-paragrah,.user-review-text,.description-title,body,.product-title {
     color: var(--3)!important;
 }
 .breadcrumb-item a{
     color: var(--2)!important;
 }
+
+
+
 body, *:not(.fa,.far,.fas,.fab) {
 }
 
