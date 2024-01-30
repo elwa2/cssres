@@ -1093,13 +1093,13 @@ button.btn.btn-primary {
 }
 
 /* دارك مود */
-.prod-col,nav,body,.home,.card,p[style*="background-color"],span[style*="background-color"],a[style*="background-color"] {
+.profile-title.d-none.d-lg-block.theme-text-primary,.profile-section.d-none.d-lg-block.flex-shrink-0,.prod-col,nav,body,.home,.card,p[style*="background-color"],span[style*="background-color"],a[style*="background-color"] {
     color: var(--3)!important;
     background-color: var(--1) !important;
     background: var(--1) !important;
 }
 
-.btn-filter,.breadcrumb,.header-wrapper  {
+.profile-row.active,.card-table-header,.pb-4, .py-4,.btn-filter,.breadcrumb,.header-wrapper  {
     color: var(--3)!important;
     background: #e7bd2036;
 }
