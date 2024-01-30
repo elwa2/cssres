@@ -1061,22 +1061,12 @@ button.btn.btn-primary {
     }
 }
 
-
-
-
-
-
-
 @media only screen and (min-width: 768px) {
-
-
-.products-list .prod-col, .bundle-offer-products .prod-col {
-    width: 26%;
-    padding: 15px;
-}}
-
-
-
+    .products-list .prod-col, .bundle-offer-products .prod-col {
+        width: 26%;
+        padding: 15px;
+    }
+}
 
 .testimonials-customer-text {
     color: #ffffff;
@@ -1088,7 +1078,7 @@ button.btn.btn-primary {
     --3: #fff;
     --g: linear-gradient(180deg,var(--1)0%,#ffffff00 100%);
     --sh: 0 1px 5px 2px #4f4e4e;
-        --secondary-color-alt3: #fff;
+    --secondary-color-alt3: #fff;
     --logo: url("https://media.zid.store/cca6349b-b846-4add-89ee-aeffcf3aa565/edf7dfca-c8b3-421f-845f-a9157007cdf5.png");
 }
 
@@ -1099,30 +1089,28 @@ button.btn.btn-primary {
     background: var(--1) !important;
 }
 
-.profile-row.active,.card-table-header,.pb-4, .py-4,.btn-filter,.breadcrumb,.header-wrapper  {
+.profile-row.active,.card-table-header,.pb-4, .py-4,.btn-filter,.breadcrumb,.header-wrapper {
     color: var(--3)!important;
     background: #e7bd2036;
 }
- .subTitle-detail {
+
+.subTitle-detail {
     color: var(--3)!important;
     background: #e7bd2014;
 }
 
-.payment-method-card{
+.payment-method-card {
     color: var(--3)!important;
     background: #ffffff;
 }
 
-
-
 .filter-result,.breadcrumb-item,.bread-text,.bread-title,ul.main-nav>li>a,.description-paragrah,.user-review-text,.description-title,body,.product-title {
     color: var(--3)!important;
 }
-.breadcrumb-item a{
+
+.breadcrumb-item a {
     color: var(--2)!important;
 }
-
-
 
 body, *:not(.fa,.far,.fas,.fab) {
 }
@@ -1152,9 +1140,13 @@ body, *:not(.fa,.far,.fas,.fab) {
 footer.d-flex>div:nth-child(2)>div:nth-child(1) {
     display: none!important;
 }
+
 .btn-filter {
-   
     border: .5px solid var(--1);
     border-radius: 5px;
     padding: 10px 40px;
+}
+
+.vat-crn-sections.py-4.d-flex.flex-row.flex-wrap.justify-content-end.align-items-center {
+    background: transparent;
 }
