@@ -508,3 +508,9 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
         transform: rotateZ(0);
     }
 }
+/* 
+html, body, div, object, h1, h2, h4, h3 {
+    color: #000000!important;
+}h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, span, .section--title {
+    color: #000000!important;
+} */
