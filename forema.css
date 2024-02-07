@@ -437,7 +437,10 @@ body > div > div.main.flex-grow-1.app-content.app-content-padded > div > section
 .cart-header-total {
     color: var(--primary-color) !important;
 }
-
+.category-item img {
+   
+    max-height: 16rem;
+}
 :root {
     --primary-color: #d1d3d4;
     --text-color-primary-bg: #d1d3d4;
