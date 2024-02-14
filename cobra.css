@@ -1150,3 +1150,10 @@ footer.d-flex>div:nth-child(2)>div:nth-child(1) {
 .vat-crn-sections.py-4.d-flex.flex-row.flex-wrap.justify-content-end.align-items-center {
     background: transparent;
 }
+
+
+.tamara-product-widget,div[class*="tabby"] {
+    background: #fff !important; color: var(--1)!important;
+}
+
+ 
