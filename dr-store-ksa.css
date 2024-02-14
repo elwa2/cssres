@@ -549,6 +549,12 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
     margin: 32px 0 28px;
 }
 
-.description-paragrah.text-justify.description-text-clear * {
+.description-paragrah.text-justify.description-text-clear *,.footer-theme-bg-primary *,.store-section .social-icons span {
     color: #fff !important;
+    border-color: #fff;
+    fill: #fff;
+}
+
+.footer-theme-bg-primary {
+    background-color: var(--1);
 }
