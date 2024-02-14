@@ -65,8 +65,14 @@ ul.main-nav>li {
     margin-bottom: 10px
 }
 
-.footer-companies, .account-lang-currency .account-btn, .footer-copyrights-vat-certificate {
+.footer-companies, body:not([data-template="home"]) .account-lang-currency .account-btn, .footer-copyrights-vat-certificate {
     background-color: #067A3E;
+}
+
+.search-header .image-logo {
+    max-height: 84px!important;
+    padding-top: 1px;
+    height: 88px;
 }
 
 @media(max-width: 600px) {
@@ -74,14 +80,8 @@ ul.main-nav>li {
         margin-top: -50px !important;
     }
 
-    .search-header .image-logo {
-        max-height: 74px!important;
-        padding-top: 1px;
-        height: 61px;
-    }
-
     div#fixed-header {
-        padding: 10px
+        padding: 27px 0px;
     }
 
     div#fixed-header.sticky {
@@ -327,7 +327,7 @@ div#fixed-header.sticky .header-theme-icon-primary:before {
 }
 
 .partners-slider .slick-track .slick-slide img {
-    box-shadow: 0 2px 8px -3px #ababab;
+    /* box-shadow: 0 2px 8px -3px #ababab; */
 }
 
 body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
@@ -467,7 +467,7 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
 
 @media(min-width: 992px) {
     #fixed-header .search-header-bar>div {
-        width: 33.33333%
+        width: 33.33333%;
     }
 
     #fixed-header .search-header-bar>.header-logo {
@@ -489,7 +489,8 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
         display: flex!important;
         position: relative;
         justify-self: center;
-        right: 50%
+        right: 31%;
+        top: -19px;
     }
 }
 
@@ -525,5 +526,13 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
     right: 27px;
 }
 
-body[data-template="home"] {
+body[data-template="home"],body:not([data-template="home"]) {
+}
+
+body:not([data-template="home"]) ul.main-nav>li>a, .item-all-categories a, body:not([data-template="home"]) .search-header.header-theme-bg-primary * {
+    color: #000 !important;
+}
+
+body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before, body:not([data-template="home"]) .icon-menu_open_black_24dp-1:before, body:not([data-template="home"]) div#fixed-header.sticky .header-theme-icon-primary:before, body:not([data-template="home"]) div#fixed-header.sticky .header-theme-icon-primary:before {
+    filter: unset;
 }
