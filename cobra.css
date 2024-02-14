@@ -1051,7 +1051,7 @@ button.btn.btn-primary {
     .products-slider.s-slider {
         display: grid;
         grid-template-columns: 1fr 1fr !important;
-        grid-template-rows: 1fr 1fr ;
+        /* grid-template-rows: 1fr 1fr ; */
     }
 
     body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(11) .products-slider.s-slider {
