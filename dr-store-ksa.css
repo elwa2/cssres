@@ -548,8 +548,13 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
     border-radius: 10px;
     margin: 32px 0 28px;
 }
-
-.description-paragrah.text-justify.description-text-clear *,.footer-theme-bg-primary *,.store-section .social-icons span {
+.card.card-review.mt-2.mb-5 {
+    background: var(--2);
+    padding: 8px;
+    border-radius: 10px;
+    margin: 32px 0 28px;
+}
+.card.card-review.mt-2.mb-5 * ,.description-paragrah.text-justify.description-text-clear *,.footer-theme-bg-primary *,.store-section .social-icons span {
     color: #fff !important;
     border-color: #fff;
     fill: #fff;
@@ -558,3 +563,8 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
 .footer-theme-bg-primary {
     background-color: var(--1);
 }
+
+
+ 
+
+.card.card-review.mt-2.mb-5 {}
