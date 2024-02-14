@@ -1,4 +1,9 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+:root {
+    --1: #067a3e;
+    --2: #332d66;
+}
+
 .home>.section-padding-space:first-child {
     margin: 0 !important;
     width: 100%;
@@ -66,7 +71,7 @@ ul.main-nav>li {
 }
 
 .footer-companies, body:not([data-template="home"]) .account-lang-currency .account-btn, .footer-copyrights-vat-certificate {
-    background-color: #067A3E;
+    background-color: var(--1);
 }
 
 .search-header .image-logo {
@@ -305,7 +310,7 @@ div#fixed-header.sticky .header-theme-icon-primary:before {
     position: relative;
     bottom: 0px;
     left: -16px;
-    background: #067a3e;
+    background: var(--1);
     border-radius: 0 20px 0 10px;
     padding: 10px;
     font-size: 15px;
@@ -419,7 +424,7 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
     }
 
     .account-lang-currency .account-btn {
-        background-color: #067a3e0f;
+        background-color: var(--1)0f;
     }
 }
 
@@ -535,4 +540,15 @@ body:not([data-template="home"]) ul.main-nav>li>a, .item-all-categories a, body:
 
 body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before, body:not([data-template="home"]) .icon-menu_open_black_24dp-1:before, body:not([data-template="home"]) div#fixed-header.sticky .header-theme-icon-primary:before, body:not([data-template="home"]) div#fixed-header.sticky .header-theme-icon-primary:before {
     filter: unset;
+}
+
+.description-paragrah.text-justify.description-text-clear {
+    background: var(--2);
+    padding: 8px;
+    border-radius: 10px;
+    margin: 32px 0 28px;
+}
+
+.description-paragrah.text-justify.description-text-clear * {
+    color: #fff !important;
 }
