@@ -85,7 +85,6 @@ ul.main-nav>li {
     }
 
     div#fixed-header.sticky {
-        padding: 29px 5px;
         background: #ffffff;
         background: #ffffff21;
         backdrop-filter: blur(10px);
@@ -112,15 +111,6 @@ ul.main-nav>li {
     display: block;
     padding-top: 12px;
     font-size: 12px;
-}
-
-.header-cart .header-theme-icon-primary:before {
-    content: url(https://assets.zid.store/themes/27e1e88a-3dc4-4c9b-8720-913b20533f9a/Cart.svg);
-    color: #fff;
-    height: 0px;
-    width: 30px !important;
-    display: block;
-    filter: invert(1) brightness(5.5);
 }
 
 span.path1::before, span.path2::before {
@@ -185,7 +175,7 @@ span.path1::before, span.path2::before {
     filter: invert(1) brightness(5.5);
 }
 
-.icon-menu_open_black_24dp-1:before,div#fixed-header.sticky .icon-menu_open_black_24dp-1:before {
+div#fixed-header.sticky .icon-menu_open_black_24dp-1:before {
     filter: brightness(5.5);
 }
 
@@ -198,8 +188,8 @@ span.path1::before, span.path2::before {
     filter: invert(1) brightness(5.5);
 }
 
-.header-cart .header-theme-icon-primary:before,div#fixed-header.sticky.header-cart .header-theme-icon-primary:before {
-  filter: brightness(5.5);
+div#fixed-header.sticky .header-theme-icon-primary:before {
+    filter: brightness(5.5) ;
 }
 
 .menu-header-theme-bg-primary-brightness-100 {
@@ -533,4 +523,7 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
     position: relative;
     top: -6px;
     right: 27px;
+}
+
+body[data-template="home"] {
 }
