@@ -2,7 +2,7 @@
 :root {
     --1: #067a3e;
     --2: #332d66;
-    --logo:url(https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/f4294bf8-4584-4bfe-8172-33beb8eaf240/6d15e487-1299-4044-a8c8-a62bac8a5d07.png);
+    --logo: url(https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/f4294bf8-4584-4bfe-8172-33beb8eaf240/6d15e487-1299-4044-a8c8-a62bac8a5d07.png);
 }
 
 .home>.section-padding-space:first-child {
@@ -112,7 +112,6 @@ div#fixed-header.sticky {
     padding-top: 12px;
     font-size: 12px;
 } */
-
 /* .section-padding-space:nth-child(2)>div>h2:after {
     content: "تسوّق حسب احتياجك";
     text-align: center;
@@ -120,7 +119,6 @@ div#fixed-header.sticky {
     padding-top: 12px;
     font-size: 12px;
 } */
-
 span.path1::before, span.path2::before {
     visibility: hidden !important;
 }
@@ -395,9 +393,9 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
 }
 
 @media only screen and (max-width: 600px) {
-    .box-1-1 .content a img {
+    .box-1-1 .content a {
         min-height: 155px;
-        height: 255px !important;
+        height: 231px !important;
     }
 
     .product-item {
@@ -612,17 +610,24 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
     content: "   نفخر بحصولنا على شهادة الجودة من الهيئة السعودية SASO   ";
 }
 
-.box-1-1 .content a img {
+.box-1-1 .content a {
     background: #fff;
     object-fit: contain !important;
+    border-radius: 20px;
+}
+
+.box-1-1 .content a img {
+    object-fit: contain !important;
     width: 100% !important;
-    padding: 5rem;
+    padding: 3rem;
+    border-radius: 20px;
 }
 
 @media (max-width: 767px) {
     .box-1-1 .content a img {
         padding: 2rem;
         position: relative;
+        top: -32px;
     }
 
     div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(1) a:after,div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(2) a:after {
@@ -631,7 +636,7 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
     }
 
     div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(1):after,div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(2):after {
-        top: 13px;
+        top: -18px;
         font-size: 12px;
     }
 }
