@@ -262,12 +262,6 @@ div#fixed-header.sticky .header-theme-icon-primary:before {
     padding: 8px;
 }
 
-.box-1-1 .content a img {
-    background: #fff;
-    object-fit: contain !important;
-    width: 100% !important;
-}
-
 .box-1-1.ratio21_9 {
     border-radius: 20px;
 }
@@ -580,12 +574,13 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
 
 .card.card-review.mt-2.mb-5 {
 }
+
 div.main div:nth-of-type(3) > div > div:nth-of-type(1) a:after,div.main div:nth-of-type(3) > div > div:nth-of-type(2) a:after {
     text-align: center;
     display: block;
     font-size: 2rem;
     position: relative;
-    top: -4rem;
+    top: -12rem;
     font-weight: 600;
     color: #000;
 }
@@ -594,7 +589,7 @@ div.main div:nth-of-type(3) > div > div:nth-of-type(1):after,div.main div:nth-of
     text-align: center;
     display: block;
     position: relative;
-    top: 0rem;
+    top: -6rem;
     font-size: 12px;
 }
 
@@ -612,4 +607,28 @@ div.main div:nth-of-type(3) > div > div:nth-of-type(2) a:after {
 
 div.main div:nth-of-type(3) > div > div:nth-of-type(2):after {
     content: "  جميع منتجاتنا صنعت بفخر في المملكة العربية السعودية وبجودة عالمية    ";
+}
+
+.box-1-1 .content a img {
+    background: #fff;
+    object-fit: contain !important;
+    width: 100% !important;
+    padding: 5rem;
+}
+
+@media (max-width: 767px) {
+    .box-1-1 .content a img {
+        padding: 2rem;
+    }
+    
+div.main div:nth-of-type(3) > div > div:nth-of-type(1) a:after,div.main div:nth-of-type(3) > div > div:nth-of-type(2) a:after {
+    font-size: 1.2rem;
+    top: -6rem;
+}
+
+
+    div.main div:nth-of-type(3) > div > div:nth-of-type(1):after,div.main div:nth-of-type(3) > div > div:nth-of-type(2):after {
+        top: -4rem;
+        font-size: 12px;
+    }
 }
