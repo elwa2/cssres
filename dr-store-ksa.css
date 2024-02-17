@@ -595,19 +595,19 @@ div.main div:nth-of-type(3) > div > div:nth-of-type(1):after,div.main div:nth-of
     font-size: 12px;
 }
 
-div.main div:nth-of-type(3) > div > div:nth-of-type(1) a:after {
+div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div > div:nth-of-type(1) a:after {
     content: "صنع بالسعودية";
 }
 
-div.main div:nth-of-type(3) > div > div:nth-of-type(1):after {
+div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div > div:nth-of-type(1):after {
     content: "  جميع منتجاتنا صنعت بفخر في المملكة العربية السعودية وبجودة عالمية    ";
 }
 
-div.main div:nth-of-type(3) > div > div:nth-of-type(2) a:after {
+div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div > div:nth-of-type(2) a:after {
     content: "صنع بالسعودية";
 }
 
-div.main div:nth-of-type(3) > div > div:nth-of-type(2):after {
+div.main  .gallery-section.container.section-padding-space:nth-of-type(3) > div > div:nth-of-type(2):after {
     content: "  جميع منتجاتنا صنعت بفخر في المملكة العربية السعودية وبجودة عالمية    ";
 }
 
@@ -634,3 +634,6 @@ div.main div:nth-of-type(3) > div > div:nth-of-type(2):after {
         font-size: 12px;
     }
 }
+
+
+.gallery-section.container.section-padding-space {}
