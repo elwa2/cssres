@@ -283,7 +283,7 @@ div#fixed-header.sticky .header-theme-icon-primary:before {
     height: 110px;
     width: 140px;
     margin: auto auto 20px;
-    background-image: url(https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/f4294bf8-4584-4bfe-8172-33beb8eaf240/6d15e487-1299-4044-a8c8-a62bac8a5d07.png);
+    background-image: var(--logo);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -642,4 +642,52 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
 }
 
 .gallery-section.container.section-padding-space {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space div > div > div:before {
+    padding-bottom: 0!important
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space div > div {
+    margin-top: -11px;
+}
+
+@media (min-width: 767px) {
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space div > div {
+        margin-bottom: -8px;
+    }
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space {
+    position: inherit!important
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space > div > div > div > div > a > img {
+    height: auto!important
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div:nth-child(n+5).gallery-section.container.section-padding-space div > div {
+    flex: 0 0 100%;
+    max-width: 100%;
 }
