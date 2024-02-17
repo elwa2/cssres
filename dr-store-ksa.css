@@ -525,6 +525,14 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
 
 @media(max-width: 991px) {
     .testimonials-customer-text {
+        height: 159px;
+        padding-top: 56px;
+        padding-left: 7px;
+    }
+}
+
+@media(max-width: 360px) {
+    .testimonials-customer-text {
         height: 129px;
         padding-top: 38px;
         padding-left: 7px;
