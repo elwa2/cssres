@@ -2,6 +2,7 @@
 :root {
     --1: #067a3e;
     --2: #332d66;
+    --logo:url(https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/f4294bf8-4584-4bfe-8172-33beb8eaf240/6d15e487-1299-4044-a8c8-a62bac8a5d07.png);
 }
 
 .home>.section-padding-space:first-child {
@@ -102,21 +103,21 @@ div#fixed-header.sticky {
     background-color: transparent;
 }
 
-.section-padding-space:nth-child(5)>div>h2:after {
-    /* content: "مجموعة DR الشاملة لتوفير أكبر"; */
+/* .section-padding-space:nth-child(5)>div>h2:after {
+     content: "مجموعة DR الشاملة لتوفير أكبر";
     text-align: center;
     display: block;
     padding-top: 12px;
     font-size: 12px;
-}
+} */
 
-.section-padding-space:nth-child(2)>div>h2:after {
+/* .section-padding-space:nth-child(2)>div>h2:after {
     content: "تسوّق حسب احتياجك";
     text-align: center;
     display: block;
     padding-top: 12px;
     font-size: 12px;
-}
+} */
 
 span.path1::before, span.path2::before {
     visibility: hidden !important;
@@ -143,7 +144,6 @@ span.path1::before, span.path2::before {
 }
 
 .slide-menu ul a[href="/"]:before {
-    font-family: "Font Awesome 5 Free";
     content: "🏠";
     font-size: 20px;
     display: inline-block;
@@ -153,7 +153,6 @@ span.path1::before, span.path2::before {
 }
 
 .slide-menu ul a[href="/shipping-and-payment"]:before {
-    font-family: "Font Awesome 5 Free";
     content: "🚚";
     font-size: 20px;
     display: inline-block;
@@ -169,7 +168,7 @@ span.path1::before, span.path2::before {
     height: 110px;
     width: 140px;
     margin: auto auto 20px;
-    background-image: url(https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/f4294bf8-4584-4bfe-8172-33beb8eaf240/6d15e487-1299-4044-a8c8-a62bac8a5d07.png);
+    background-image: var(--logo);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
