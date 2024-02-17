@@ -79,6 +79,8 @@ ul.main-nav>li {
     max-height: 84px!important;
     padding-top: 1px;
     height: 88px;
+    position: relative;
+    right: -14px;
 }
 
 div#fixed-header.sticky {
