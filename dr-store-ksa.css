@@ -103,7 +103,7 @@ div#fixed-header.sticky {
 }
 
 .section-padding-space:nth-child(5)>div>h2:after {
-    content: "مجموعة DR الشاملة لتوفير أكبر";
+    /* content: "مجموعة DR الشاملة لتوفير أكبر"; */
     text-align: center;
     display: block;
     padding-top: 12px;
@@ -579,4 +579,37 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
 }
 
 .card.card-review.mt-2.mb-5 {
+}
+div.main div:nth-of-type(3) > div > div:nth-of-type(1) a:after,div.main div:nth-of-type(3) > div > div:nth-of-type(2) a:after {
+    text-align: center;
+    display: block;
+    font-size: 2rem;
+    position: relative;
+    top: -4rem;
+    font-weight: 600;
+    color: #000;
+}
+
+div.main div:nth-of-type(3) > div > div:nth-of-type(1):after,div.main div:nth-of-type(3) > div > div:nth-of-type(2):after {
+    text-align: center;
+    display: block;
+    position: relative;
+    top: 0rem;
+    font-size: 12px;
+}
+
+div.main div:nth-of-type(3) > div > div:nth-of-type(1) a:after {
+    content: "صنع بالسعودية";
+}
+
+div.main div:nth-of-type(3) > div > div:nth-of-type(1):after {
+    content: "  جميع منتجاتنا صنعت بفخر في المملكة العربية السعودية وبجودة عالمية    ";
+}
+
+div.main div:nth-of-type(3) > div > div:nth-of-type(2) a:after {
+    content: "صنع بالسعودية";
+}
+
+div.main div:nth-of-type(3) > div > div:nth-of-type(2):after {
+    content: "  جميع منتجاتنا صنعت بفخر في المملكة العربية السعودية وبجودة عالمية    ";
 }
