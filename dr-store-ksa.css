@@ -393,7 +393,7 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
 }
 
 @media only screen and (max-width: 600px) {
-    .box-1-1 .content a {
+    body[data-template="home"] .box-1-1 .content a {
         min-height: 155px;
         height: 231px !important;
     }
@@ -633,7 +633,7 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
     border-radius: 20px;
 }
 
-.box-1-1 .content a img {
+body[data-template="home"] .box-1-1 .content a img {
     object-fit: contain !important;
     width: 100% !important;
     padding: 3rem;
@@ -641,7 +641,7 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
 }
 
 @media (max-width: 1050px) {
-    .box-1-1 .content a img {
+    body[data-template="home"] .box-1-1 .content a img {
         padding: 2rem;
         position: relative;
         top: -46px;
@@ -660,7 +660,7 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
 
 /* ايفون 14  */
 @media (max-width: 500px) {
-    .box-1-1 .content a img {
+    body[data-template="home"] .box-1-1 .content a img {
         padding: 2rem;
         position: relative;
         top: -46px;
@@ -679,7 +679,7 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
 
 /* ايفون 12  */
 @media (max-width: 420px) {
-    .box-1-1 .content a img {
+    body[data-template="home"] .box-1-1 .content a img {
         padding: 2rem;
         position: relative;
         top: -46px;
@@ -698,7 +698,7 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
 
 /* جلاكسي  */
 @media (max-width: 370px) {
-    .box-1-1 .content a img {
+    body[data-template="home"] .box-1-1 .content a img {
         padding: 2rem;
         position: relative;
         top: -44px;
