@@ -83,6 +83,10 @@ ul.main-nav>li {
     right: -14px;
 }
 
+body:not([data-template="home"]) .search-header .image-logo {
+  right: -49px;
+}
+
 div#fixed-header.sticky {
     background: #ffffff;
     background: #ffffff21;
