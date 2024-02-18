@@ -444,7 +444,7 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
 }
 
 .section-padding-space {
-    padding-bottom: 0px !important;
+    padding: 0px !important;
 }
 
 .product-item .product-price+div {
@@ -607,7 +607,7 @@ div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(1):after,div
     display: block;
     position: relative;
     top: -6rem;
-    font-size: 12px;
+    font-size: 12px; padding: 19px;
 }
 
 div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div > div:nth-of-type(1) a:after {
@@ -616,6 +616,7 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
 
 div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div > div:nth-of-type(1):after {
     content: "  جميع منتجاتنا صنعت بفخر في المملكة العربية السعودية وبجودة عالمية    ";
+   
 }
 
 div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div > div:nth-of-type(2) a:after {
@@ -638,21 +639,37 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
     padding: 3rem;
     border-radius: 20px;
 }
-
-@media (max-width: 767px) {
+@media (max-width: 1050px) {
     .box-1-1 .content a img {
         padding: 2rem;
         position: relative;
-        top: -32px;
+        top: -46px;
     }
 
     div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(1) a:after,div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(2) a:after {
         font-size: 1.2rem;
-        top: -7rem;
+        top: -9rem;
     }
 
     div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(1):after,div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(2):after {
-        top: -18px;
+        top: 1;
+        font-size: 12px;
+    }
+}
+@media (max-width: 500px) {
+    .box-1-1 .content a img {
+        padding: 2rem;
+        position: relative;
+        top: -46px;
+    }
+
+    div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(1) a:after,div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(2) a:after {
+        font-size: 1.2rem;
+        top: -9rem;
+    }
+
+    div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(1):after,div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(2):after {
+        top: -54px;
         font-size: 12px;
     }
 }
@@ -661,16 +678,16 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
     .box-1-1 .content a img {
         padding: 2rem;
         position: relative;
-        top: -32px;
+        top: -44px;
     }
 
     div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(1) a:after,div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(2) a:after {
         font-size: 1.2rem;
-        top: -8rem;
+        top: -9rem;
     }
 
     div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(1):after,div.main div.gallery-section:nth-of-type(3) > div > div:nth-of-type(2):after {
-        top: 7px;
+        top: -28px;
         font-size: 12px;
     }
 }
@@ -742,4 +759,11 @@ div.main div.gallery-section:nth-of-type(8) > div > div:nth-of-type(1):after {
         top: -3rem;
         font-size: 12px;
     }
+}
+
+
+h2.section-title.theme-title-primary {}
+
+.testimonials-customer-card {
+    background: transparent;
 }
