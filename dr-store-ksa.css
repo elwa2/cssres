@@ -448,7 +448,9 @@ col-12.col-lg-4 .footer-about-us-links-div h2>p {
 }
 
 .section-padding-space {
-    padding: 0px !important;
+    /* padding: 0px !important; */
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .product-item .product-price+div {
