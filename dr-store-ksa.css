@@ -836,3 +836,6 @@ h2.section-title.theme-title-primary {
     vertical-align: middle;
     margin-left: 5px;
 }
+#product-description img {
+    height: 100%;
+}
