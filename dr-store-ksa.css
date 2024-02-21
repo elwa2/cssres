@@ -576,6 +576,7 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
     padding: 8px;
     border-radius: 10px;
     margin: 32px 0 28px;
+    background: #332d661a;
 }
 
 .card.card-review.mt-2.mb-5 {
@@ -586,7 +587,7 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
 }
 
 .card.card-review.mt-2.mb-5 * ,.description-paragrah.text-justify.description-text-clear *,.footer-theme-bg-primary *,.store-section .social-icons span {
-    color: #fff !important;
+    /* color: #fff !important; */
     border-color: #fff;
     fill: #fff;
 }
@@ -838,4 +839,6 @@ h2.section-title.theme-title-primary {
     background-position: center;
     vertical-align: middle;
     margin-left: 5px;
+}#product-description img {
+    height: 100%;
 }
