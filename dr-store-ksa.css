@@ -576,7 +576,6 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
     padding: 8px;
     border-radius: 10px;
     margin: 32px 0 28px;
-    background: #332d661a;
 }
 
 .card.card-review.mt-2.mb-5 {
@@ -587,7 +586,7 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
 }
 
 .card.card-review.mt-2.mb-5 * ,.description-paragrah.text-justify.description-text-clear *,.footer-theme-bg-primary *,.store-section .social-icons span {
-    /* color: #fff !important; */
+    color: #fff !important;
     border-color: #fff;
     fill: #fff;
 }
@@ -628,10 +627,12 @@ div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div >
 
 div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div > div:nth-of-type(2) a:after {
     content: "المواصفات السعودية ";
+    content: " شهادة الآيزو ";
 }
 
 div.main .gallery-section.container.section-padding-space:nth-of-type(3) > div > div:nth-of-type(2):after {
     content: "   نفخر بحصولنا على شهادة الجودة من الهيئة السعودية SASO   ";
+    content: "    منتجات حاصلة على شهادة الآيزو الدولية للجودة        ";
 }
 
 .box-1-1 .content a {
@@ -756,6 +757,7 @@ div.main div.gallery-section:nth-of-type(8) > div > div:nth-of-type(1) a:after {
     font-weight: 600;
     color: #000;
     content: " شهادة الآيزو ";
+    content: "  مرخص ";
 }
 
 div.main div.gallery-section:nth-of-type(8) > div > div:nth-of-type(1):after {
@@ -765,6 +767,7 @@ div.main div.gallery-section:nth-of-type(8) > div > div:nth-of-type(1):after {
     top: -4rem;
     font-size: 12px;
     content: "    منتجات حاصلة على شهادة الآيزو الدولية للجودة        ";
+    content: "    مرخص من وزارة الصناعة والثروة المعدنية        ";
 }
 
 @media (max-width: 767px) {
@@ -819,7 +822,7 @@ h2.section-title.theme-title-primary {
     .products-slider.s-slider {
         display: grid;
         grid-template-columns: 1fr 1fr !important;
-        grid-template-rows: 1fr 1fr ;
+        /* grid-template-rows: 1fr 1fr ; */
     }
 }
 
@@ -835,7 +838,4 @@ h2.section-title.theme-title-primary {
     background-position: center;
     vertical-align: middle;
     margin-left: 5px;
-}
-#product-description img {
-    height: 100%;
 }
