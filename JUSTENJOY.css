@@ -1,7 +1,5 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
-@import "https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css"; 
-@import "https://kit-free.fontawesome.com/releases/latest/css/free.min.css"; 
-section[section-id=c53501ed-8b53-4bba-9e45-29642a91a95c] .box-1-1.ratio21_9:before {
+@import "https://kit-pro.fontawesome.com/releases/latest/css/pro.min.css"; @import "https://kit-free.fontawesome.com/releases/latest/css/free.min.css"; section[section-id=c53501ed-8b53-4bba-9e45-29642a91a95c] .box-1-1.ratio21_9:before {
     padding-top: 43.5%
 }
 
@@ -554,4 +552,22 @@ div[section-id=f684e90f-6384-46df-84be-d53d19ab45fe] .gallery-item img {
 .x-icon-twitter {
     border-radius: 4px;
     border-width: 1px
+}
+
+.product-item {
+    border-radius: 10px;
+    border: none;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 6px 0 rgba(0,0,0,.13),0 6px 20px 0 rgba(255,255,255,.19)!important;
+}
+
+.product-item .btn:not(:disabled):not(.disabled) {
+    border-radius: 12px;
+    color: #fff;
+    border: none;
+    padding: 6px 15px;
+    margin: 0 0 10px;
+    width: 90%;
+    font-size: 18px;
 }
