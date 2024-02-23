@@ -43,7 +43,8 @@ body[data-template=home] .gallery .col-6 {
 
 .features-section-img {
     max-height: 70px;
-    max-width: 70px
+    max-width: 70px;
+    filter: brightness(3.5) hue-rotate(-305deg);
 }
 
 .rtl .user-review-text {
