@@ -67,7 +67,7 @@ body[data-template=home] .gallery .col-6 {
 }
 
 body>div.app.d-flex.flex-column.visible>div.footer>footer>div.footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg>div>div>div.col-12.col-lg-5:before {
-    background-image: url(https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/5b656fb4-1599-4536-bd90-c32af00a9ba1/52dffd6d-4c9b-484a-8671-2e030eb19444-200x.png);
+    background-image: var(--logo);
     content: "";
     width: 10rem;
     height: 8rem;
@@ -570,4 +570,51 @@ div[section-id=f684e90f-6384-46df-84be-d53d19ab45fe] .gallery-item img {
     margin: 0 0 10px;
     width: 90%;
     font-size: 18px;
+}
+
+/* شاشة البداية  */
+body[data-template="home"]:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #ffffff var(--logo);
+    position: fixed;
+    z-index: 99999999999999999 !important;
+    transform: scale(0);
+    background-size: 250px !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+    animation-name: logobg;
+    animation-duration: 3s
+}
+
+@keyframes logobg {
+    0% {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(1);
+    }
+
+    78% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+/* شاشة البداية  */
+section.ss .slick-list {
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.2)!important;
+    border-radius: 0 0 50px 50px!important;
+}
+
+:root {
+    --logo: url(https://media.zid.store/5b656fb4-1599-4536-bd90-c32af00a9ba1/52dffd6d-4c9b-484a-8671-2e030eb19444-200x.png);
 }
