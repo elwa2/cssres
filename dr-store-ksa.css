@@ -844,3 +844,10 @@ h2.section-title.theme-title-primary {
 #product-description img {
     height: 100%;
 }
+
+
+.card-body,.card-paragraph.text-justify.mt-2.user-review-text {
+    color: #fff !important;
+}
+
+ 
