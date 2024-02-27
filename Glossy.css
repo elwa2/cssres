@@ -807,6 +807,17 @@ header .dark.d-none.d-lg-block .top-level-link>a:after {
 header .dark.d-none.d-lg-block .top-level-link>a:hover:after {
     transform: scaleX(1)
 }
+.footer,.footer-theme-text-for-primary-bg,.header-theme-bg-primary, .subTitle-detail, .breadcrumb,.product-item .btn:not(:disabled):not(.disabled) {
+    background-color: #efa69d;
+}
+
+.footer-about-us-links-div a,.footer-about-us-links-div p {
+    color: #ffffff!important;
+}
+
+.language-currency {
+    border: 0;
+}
 
 :root {
     --primary-color: #303030;
