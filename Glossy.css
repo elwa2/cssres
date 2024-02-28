@@ -818,7 +818,9 @@ header .dark.d-none.d-lg-block .top-level-link>a:hover:after {
 .language-currency {
     border: 0;
 }
-
+footer.d-flex.flex-column * {
+    color: #141212 !important;
+}
 :root {
     --primary-color: #303030;
     --1: #303030;
