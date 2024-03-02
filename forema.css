@@ -505,7 +505,7 @@ body[data-template="home"] .product-item .btn:not(:disabled):not(.disabled),body
     }
 
     25% {
-        transform: translateY(-10px) rotate(15deg);
+        transform: translateY(-10px) rotate(5deg);
     }
 
     50% {
@@ -513,7 +513,7 @@ body[data-template="home"] .product-item .btn:not(:disabled):not(.disabled),body
     }
 
     75% {
-        transform: translateY(10px) rotate(-15deg);
+        transform: translateY(10px) rotate(-5deg);
     }
 
     100% {
