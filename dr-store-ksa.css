@@ -836,7 +836,21 @@ h2.section-title.theme-title-primary {
 
     .section-padding-space[section-id="4e741995-c0e4-4017-b8ec-b25a2424c441"] .products-slider.s-slider {
         grid-template-columns: 1fr !important;
-    }
+    }.partners-slider-wrapper:before,.partners-slider-wrapper:after {
+    content: "\e905";
+    color: var(--primary-color);
+    font-family: icomoon !important;
+    line-height: 1;
+    font-size: 3.3rem;
+    position: absolute;
+    top: 33px;
+}
+
+.partners-slider-wrapper:after {
+    content: "\e904";
+    left: 0;
+}
+
 }
 
 .prod-col div[style="text-align: center"] a:before {
@@ -864,6 +878,8 @@ h2.section-title.theme-title-primary {
 .rtl .testimonials-customer-name {
     color: var(--2);
 }
+
 a.btn.btn-lg.btn-block.btn-disabled {
     color: #fff;
 }
+
