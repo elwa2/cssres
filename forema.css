@@ -492,10 +492,13 @@ body {
     background: var(--2)!important;
     background-color: var(--2);
     border-color: var(--ff);
+  
+}
+body[data-template="home"] .product-item .btn:not(:disabled):not(.disabled),body[data-template="home"] .btn-add-to-cart {
+   
     animation: move-fanoos 3s ease-in-out infinite;
     /* جعل التحريك دائما */
 }
-
 @keyframes move-fanoos {
     0% {
         transform: translateY(0) rotate(0deg);
