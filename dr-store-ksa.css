@@ -864,3 +864,6 @@ h2.section-title.theme-title-primary {
 .rtl .testimonials-customer-name {
     color: var(--2);
 }
+a.btn.btn-lg.btn-block.btn-disabled {
+    color: #fff;
+}
