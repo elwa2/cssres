@@ -577,6 +577,7 @@ body:not([data-template="home"]) .header-cart .header-theme-icon-primary:before,
     border-radius: 10px;
     margin: 32px 0 28px;
     background: #332d661a;
+    background: transparent;
 }
 
 .card.card-review.mt-2.mb-5 {
