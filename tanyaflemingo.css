@@ -7,6 +7,13 @@ body {
     background-repeat: repeat;
     background-position: -23rem 54rem !important;
 }
+@media only screen and (max-width: 992px) {
+
+body {
+    background-position: -34rem 60rem !important;
+}}
+
+
 
 * {
     font-weight: unset!important
@@ -315,7 +322,7 @@ a.theme-border-primary {
     }
 
     .store-section .social-icons a {
-        background: #d9d9d9;
+        background: var(--1);
         border-radius: 6px;
         color: #000!important
     }
@@ -481,7 +488,7 @@ a.theme-border-primary {
     }
 
     .store-section .social-icons a {
-        background: #d9d9d9;
+        background: var(--1);
         border-radius: 6px;
         color: #000!important
     }
