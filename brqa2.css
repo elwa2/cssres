@@ -389,4 +389,8 @@ ul#sub-menu {
 }
 .sidenav .pixelstrap li:nth-of-type(5) {
     order: 5;
+}.sidenav .pixelstrap li:nth-of-type(6) {
+    order: 6;
+}.sidenav .pixelstrap li:nth-of-type(7) {
+    order: 7;
 }
