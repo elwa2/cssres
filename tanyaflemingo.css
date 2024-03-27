@@ -251,7 +251,7 @@ a.theme-border-primary {
     content: "";
     width: 194px;
     height: 124px;
-    background: url(https://media.zid.store/f623215e-aba1-487a-a1fd-e999279447b5/fb03c5b2-dedf-4b77-a206-77906c5cafcc.png);
+    /* background: url(https://media.zid.store/f623215e-aba1-487a-a1fd-e999279447b5/fb03c5b2-dedf-4b77-a206-77906c5cafcc.png); */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -739,7 +739,7 @@ a.theme-border-primary {
 footer:before {
     display: block;
     width: 100%!important;
-    background: url(https://media.zid.store/f623215e-aba1-487a-a1fd-e999279447b5/766c13d3-0028-46ac-98f1-caf7b4d3d78d-200x.png);
+    /* background: url(https://media.zid.store/f623215e-aba1-487a-a1fd-e999279447b5/766c13d3-0028-46ac-98f1-caf7b4d3d78d-200x.png); */
     animation: scrollAli 80s infinite linear;
     content: "";
     height: 5vw;
@@ -805,7 +805,7 @@ body:after {
     top: 0;
     position: fixed;
     z-index: 999999;
-    background: url(https://media.zid.store/f623215e-aba1-487a-a1fd-e999279447b5/fb03c5b2-dedf-4b77-a206-77906c5cafcc.png);
+    /* background: url(https://media.zid.store/f623215e-aba1-487a-a1fd-e999279447b5/fb03c5b2-dedf-4b77-a206-77906c5cafcc.png); */
     left: 0;
     background-repeat: no-repeat;
     background-position: center;
@@ -1515,4 +1515,10 @@ body:after {
 :root {
     --1: #7da76238;
     --bg: linear-gradient(90deg,transparent,#fff,#fff),url(https://media.zid.store/f623215e-aba1-487a-a1fd-e999279447b5/fb03c5b2-dedf-4b77-a206-77906c5cafcc.png)-3rem -21rem/ 100% no-repeat!IMPORTANT;
+}
+
+
+.category-item a, .category-item img {
+    background: #000 !important;
+    background-image: none !important;
 }
