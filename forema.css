@@ -82,9 +82,9 @@ ul.main-nav>li>a:hover {
 }
 
 .product-item .btn:not(:disabled):not(.disabled):hover {
-    color: #fff;
+    color: #fff !important;
     filter: none;
-    background-color: #000
+    background-color: #000;
 }
 
 .products-slider {
@@ -273,7 +273,7 @@ span.icon-instagram.d-flex.align-items-center.justify-content-center {
     width: 215px!important;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 42%;
+    background-size: 68%;
     animation: wiggle 2s infinite;
     transform-origin: 50% 5em;
 }
