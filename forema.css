@@ -447,6 +447,11 @@ img.d-block {
     -webkit-mask-image: linear-gradient(180deg,transparent,#000 20%,#000 100%,transparent);
     mask-image: linear-gradient(180deg,transparent,#000 20%,#000 100%,transparent);
 }
+html, body, div, object, h1, h2, h4, h3 {
+    color: #000000!important;
+}h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, span, .section--title {
+    color: #000000!important;
+}
 
 :root {
     --primary-color: #d1d3d4;
@@ -459,7 +464,7 @@ img.d-block {
 }
 
 /* أضافات شهر رمضان */
-:root {
+/* :root {
     --primary-color: #d1d3d4;
     --text-color-primary-bg: #d1d3d4;
     --2: #272660;
@@ -497,8 +502,7 @@ body {
 body[data-template="home"] .product-item .btn:not(:disabled):not(.disabled),body[data-template="home"] .btn-add-to-cart {
    
     animation: move-fanoos 3s ease-in-out infinite;
-    /* جعل التحريك دائما */
-}
+ }
 @keyframes move-fanoos {
     0% {
         transform: translateY(0) rotate(0deg);
@@ -559,10 +563,5 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     }
 }
 
-*/ /* أضافات شهر رمضان */
-/* 
-html, body, div, object, h1, h2, h4, h3 {
-    color: #000000!important;
-}h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label, span, .section--title {
-    color: #000000!important;
-}
+  /* أضافات شهر رمضان */ 
+  
