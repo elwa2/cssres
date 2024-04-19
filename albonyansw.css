@@ -1,0 +1,1864 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+@font-face {
+    font-family: sky;
+    src: url(https://www.fontstatic.com/fonts/sky/sky.eot?#iefix);
+    src: local("sky"), url("https://www.fontstatic.com/fonts/sky/sky.woff")format("woff")
+}
+
+@font-face {
+    font-family: sky-bold;
+    src: url(https://www.fontstatic.com/fonts/sky-bold/sky-bold.eot?#iefix);
+    src: local("sky-bold"), url("https://www.fontstatic.com/fonts/sky-bold/sky-bold.woff")format("woff")
+}
+
+h1, h2 {
+    font-family: sky-bold;
+    font-weight: unset
+}
+
+.header-theme-bg-primary {
+    background-color: var(--1)
+}
+
+@media(max-width: 991px) {
+    .header-logo {
+        width:60%!important
+    }
+
+    .header-logo a[href="/"] {
+        padding: 8px 0 12px!important;
+        margin: 0 auto 0 -16px!important;
+    }
+}
+
+.header-logo a[href="/"] img {
+    display: none
+}
+
+.header-logo a[href="/"] {
+    display: block;
+    content: var(--logo);
+    padding: 0;
+    height: 90%!important;
+}
+
+.search-header-bar {
+    height: 75px
+}
+
+.rtl .ic.menu, .sm-search-icon {
+    margin-left: 10px
+}
+
+.sm-search-div {
+    padding: 5px 10px 15px;
+    background-color: var(--1)
+}
+
+.sm-search-div input {
+    border-radius: 5px;
+    border: 0
+}
+
+.sm-search-div .autocomplete-items, .lg-search-div .autocomplete-items {
+    border: 0 solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 90%;
+    left: 0;
+    right: 0
+}
+
+@media(min-width: 992px) {
+    .theme-bg-primary-dark-1 {
+        background-color:#151515;
+        filter: unset!important
+    }
+
+    .account-lang-currency {
+        padding: 15px 0 20px
+    }
+}
+
+.gallery-section.container.section-padding-space .gallery img {
+    border-radius: 11px!important
+}
+
+.home-categories-section.section-padding-space {
+}
+
+.home-categories-section.section-padding-space .section-title {
+    margin: 0!important
+}
+
+.home-categories-section img {
+    border-radius: 11px!important
+}
+
+.categories-slider {
+    height: 252px
+}
+
+.categories-slider h3 {
+    margin: 7px 0!important;
+    text-align: center;
+    font-family: sky;
+    font-size: 14px
+}
+
+.footer p {
+    font-family: sky;
+    font-size: 12px;
+    padding: 0 5px
+}
+
+.footer-theme-text-for-primary-bg {
+    background-color: var(--1)!important;
+    padding-top: 35px;
+    padding-bottom: 0
+}
+
+.footer-theme-text-for-primary-bg .col-lg-4:nth-child(2) {
+}
+
+.footer-about-us-div h1 {
+    display: none
+}
+
+.footer-about-us-div p:before {
+    display: block;
+    content: "";
+    width: 20rem;
+    margin: -20px auto 8px;
+    height: 99px;
+    background-size: contain;
+    background: var(--logo);
+    /* filter: opacity(0.5)brightness(1002.5); */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.footer-about-us-div p {
+    text-align: center;
+    padding-bottom: 20px
+}
+
+.footer-about-us-links-div {
+    text-align: center
+}
+
+.rtl .footer-about-us-div {
+    padding-right: unset;
+    padding-left: unset
+}
+
+.footer .col-12.col-lg-7 h1 {
+    font-size: 20px;
+    font-weight: unset
+}
+
+.footer .col-12.col-lg-7 .col-lg-4 {
+    padding-bottom: 20px
+}
+
+.store-section .social-icons {
+    margin-left: -5px;
+    margin-right: -5px;
+    justify-content: center
+}
+
+.store-section .social-icons {
+    flex-wrap: nowrap!important;
+    justify-content: center
+}
+
+.store-section .social-icons span {
+    border: 0!important
+}
+
+.icon-facebook-f.d-flex.align-items-center.justify-content-center {
+    font-size: 20px
+}
+
+footer.d-flex>div:nth-child(2)>div:nth-child(2) {
+    background: #151515;
+    color: #fff!important
+}
+
+footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
+    color: #fff!important
+}
+
+.vat-crn-sections {
+    flex-direction: column!important
+}
+
+.dfBDQI {
+    display: none!important
+}
+
+.footer-store-section-bars div.d-flex.justify-content-center.align-items-center span {
+    display: none
+}
+
+.footer-store-section-bars div.d-flex.justify-content-center.align-items-center:after {
+    display: block;
+    content: var(--con);
+    text-align: center;
+    font-family: sky;
+    font-size: 14px;
+    margin: 0 auto 15px
+}
+
+.footer-store-section-bars {
+    min-height: 80px;
+    border-bottom: 0 solid #ccc
+}
+
+.logistics-pay-icons.d-flex.flex-wrap.justify-content-center a:nth-of-type(1), .logistics-pay-icons.d-flex.flex-wrap.justify-content-center a:nth-of-type(2), .logistics-pay-icons.d-flex.flex-wrap.justify-content-center a:nth-of-type(3), .logistics-pay-icons.d-flex.flex-wrap.justify-content-center a:nth-of-type(4), .logistics-pay-icons.d-flex.flex-wrap.justify-content-center a:nth-of-type(5), .logistics-pay-icons.d-flex.flex-wrap.justify-content-center a:nth-of-type(6) {
+    display: none
+}
+
+.prod-col {
+    background: 0 0;
+    border-radius: 11px;
+    padding: 0!important;
+    margin: 0 10px;
+    font-family: sky-bold;
+    font-weight: unset!important;
+    text-align: center
+}
+
+.product-item {
+    display: block;
+    margin: auto;
+    padding-bottom: 5px
+}
+
+.product-item div .btn {
+    display: block;
+    text-align: center;
+    border: 0;
+    padding: 5px 0;
+    font-size: 1.1rem;
+    border-radius: 50px;
+    width: 95%;
+    margin: auto
+}
+
+.product-item .d-flex .product-crd-spec {
+    min-height: auto
+}
+
+.product-item .d-flex .product-crd-spec .product-price {
+    font-weight: unset
+}
+
+a.d-flex.flex-column.justify-content-start div.product-crd-spec small {
+    display: none
+}
+
+.categories-slider .category-item {
+    width: 90px
+}
+
+.categories-slider h3 {
+    color: var(--1);
+    font-weight: 700;
+    overflow-wrap: unset;
+    white-space: pre-wrap!important;
+    position: relative;
+    right: 14px
+}
+
+.categories-slider .cat-col {
+    padding: 0 3px
+}
+
+.categories-slider {
+    height: auto;
+    padding: 0 0 20px
+}
+
+@media(min-width: 992px) {
+    .categories-slider .category-item {
+        width:100%!important
+    }
+
+    .categories-slider .cat-col {
+    }
+}
+
+.home-categories-section.section-padding-space .text-center.mt-5 {
+    margin: 0!important
+}
+
+button.more-button, a.more-button {
+    min-width: 125px;
+    border-radius: 5px;
+    font-size: 1.286rem;
+    cursor: pointer;
+    padding: 5px 25px;
+    font-family: sky-bold;
+    line-height: 1
+}
+
+div.home-categories-section.section-padding-space div.container.slider-container h2.section-title {
+    display: none
+}
+
+.container.pt-2.category-page-slider .category-item {
+    width: 90px
+}
+
+.category-page-slider .categories-slider {
+    height: auto;
+    padding: 10px
+}
+
+.category-page-slider .categories-slider h3 {
+    font-size: 12px
+}
+
+.features-section {
+    background: 0 0;
+    color: #fff
+}
+
+.features-section .feature.d-flex img {
+    display: none
+}
+
+.features-section .feature.d-flex:before {
+    display: block;
+    content: var(--logo);
+    width: 25%;
+    margin: auto
+}
+
+.features-section .px-2.theme-text-for-primary-bg {
+    margin: 5px auto
+}
+
+.section-title {
+    padding: 0;
+    text-align: center;
+    font-weight: unset;
+    width: max-content;
+    margin: 0 auto 10px;
+    color: var(--1)!important
+}
+
+div.home div.home-categories-section.section-padding-space div.container.slider-container h1.section-title.theme-text-primary {
+    display: none!important
+}
+
+.rtl.body-checkout {
+    padding: 0!important
+}
+
+.checkout-header {
+    background: var(--1)!important
+}
+
+.checkout-header .btn {
+    border-radius: 0!important;
+    font-size: 14px;
+    background: unset!important
+}
+
+.checkout-header .btn .icon-arrow-right {
+    color: #fff
+}
+
+.checkout-header .logo-div a img {
+    display: none
+}
+
+.checkout-header .logo-div a {
+    display: block;
+    background-image: var(--logo);
+    width: 50px!important;
+    height: 50px!important;
+    margin: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain
+}
+
+.rtl.body-checkout .form-container h1 {
+    text-align: center;
+    font-weight: unset;
+    font-size: 23px
+}
+
+.rtl.body-checkout .form-container p {
+    text-align: justify;
+    font-weight: unset;
+    font-size: 15px;
+    font-family: sky!important;
+    line-height: 1
+}
+
+.checkout-footer {
+    background: var(--1)!important;
+    color: #fff!important;
+    font-family: sky!important
+}
+
+.checkout-footer p {
+    font-family: sky!important;
+    font-size: 12px
+}
+
+.checkout-footer img {
+    width: 28px
+}
+
+.col-product-info-single-image {
+    padding-top: 5px
+}
+
+.col-product-info-single-image {
+    padding-top: 5px
+}
+
+.col-product-info-single-image section {
+    display: flex;
+    flex-direction: column
+}
+
+.col-product-info-single-image section .d-flex {
+    order: 2
+}
+
+.col-product-info-single-image section>h1 {
+    text-align: center;
+    font-size: 20px;
+    padding: 0 10px;
+    order: 1
+}
+
+.col-product-info-single-image section p {
+    text-align: justify;
+    font-family: sky;
+    font-size: 13px;
+    order: 3
+}
+
+.col-product-info-single-image section div.product-features {
+    order: 4
+}
+
+.col-product-info-single-image section .d-flex {
+    text-align: justify;
+    font-family: sky;
+    align-items: center;
+    justify-content: center
+}
+
+.col-product-info-single-image section .d-flex h1 {
+    font-size: 20px
+}
+
+.rtl .description-title {
+    margin-left: unset;
+    margin-right: 5px
+}
+
+.col-product-info-single-image .border-product {
+    display: none
+}
+
+.col-product-info-single-image .div-product-sku {
+    text-align: center;
+    font-family: sky
+}
+
+.col-product-info-single-image .div-product-weight {
+    text-align: center;
+    font-family: sky
+}
+
+.col-product-info-single-image #product-form {
+    text-align: center;
+    font-family: sky
+}
+
+.col-product-info-single-image .form-group {
+    width: 100%!important
+}
+
+.product.products-details-page .text-justify h6 {
+    line-height: 1.6;
+    text-align: justify!important
+}
+
+.rtl #product-variants-options>div.form-group>div::after, .select-quantity-div div.form-group>div::after {
+    border-right: 0
+}
+
+.products-container.pt-4 .row.products-list .prod-col-tb {
+    margin: 10px auto;
+    width: 40%
+}
+
+.gallery.row {
+    flex-wrap: unset;
+    overflow-x: scroll
+}
+
+.icon-shopping_cart_black_36dp-1-1, .icon-language_white:before {
+    color: var(--1)!important
+}
+
+.blog-text img {
+    max-width: 100vw!important;
+    display: inline-block;
+    height: auto!important
+}
+
+.blog-text.mt-3.mb-5 * {
+    padding: 0 2px 0 0!important;
+    margin: 0!important
+}
+
+.blog-title h1 {
+    margin: 0 5px 0 0!important
+}
+
+section:nth-of-type(1) .container div.blog-text.mt-3.mb-5 {
+    font-size: 13pt;
+    margin: 0 5px!important
+}
+
+section:nth-of-type(1) .container {
+    padding-right: 0;
+    padding-left: 0
+}
+
+.menu-header-theme-bg-primary {
+    padding: 0 0 0 1px
+}
+
+.header-theme-bg-primary, .theme-bg-primary-dark-1 {
+    background: #fff;
+    filter: brightness(100%)
+}
+
+.theme-bg-primary-dark-1 {
+    background: #fff!important
+}
+
+.search-header.header-theme-bg-primary {
+}
+
+.search-header {
+    padding: 0;
+    margin: 0 0 -8px
+}
+
+.account-lang-currency {
+    border-bottom: 0 solid #fff;
+    padding: 7px 0 9px
+}
+
+.icon-shopping_cart_black_36dp-1-1, .sm-search-icon>span {
+    font-size: 19px;
+    padding: 9px;
+    border-radius: 49%;
+    color: var(--1);
+    border-color: var(--1)!important
+}
+
+.search-header-bar {
+    height: 90px
+}
+
+.language-currency, .vertical-line, .account-lang-currency .account-btn, .icon-shopping_cart_black_36dp-1-1, .sm-search-icon>span {
+}
+
+.footer-store-section-bars {
+    min-height: 5px
+}
+
+.box-1-1 .content {
+    border-radius: 5%
+}
+
+.category-item img {
+    border-radius: 12px!important
+}
+
+@media(max-width: 767px) {
+    .store-section:after {
+        content:"Designed by: 3lwaaa@gmail.com";
+        text-align: center;
+        color: #fff;
+        font-family: sky;
+        position: inherit;
+        display: block
+    }
+}
+
+.product-item img {
+    border-radius: 11px!important;
+    background: #fff
+}
+
+@media(max-width: 770px) {
+    button.c-btn.currency-btn, .language-btn, .currency-btn, button.btn.btn-dark.account-btn {
+        color:#fff!important
+    }
+
+    .language-currency, .vertical-line, .account-lang-currency .account-btn {
+        box-shadow: 2.5px 2.5px 5px #c4c4c4,-2.5px -2.5px 5px #fff
+    }
+
+    .language-currency:hover, .vertical-line:hover, .account-lang-currency .account-btn:hover, .sm-search-icon:hover>span:hover {
+        background: var(--1)!important;
+        color: #fff!important
+    }
+}
+
+button.c-btn.currency-btn {
+    color: var(--1)
+}
+
+.language-btn, .currency-btn {
+    color: var(--1)
+}
+
+button.c-btn.currency-btn:hover, .language-btn:hover, .icon-language_white:hover:before {
+    color: #d59b05!important
+}
+
+ul.main-nav>li>a, .item-all-categories a {
+    color: #fff;
+    margin: 7px 0 0
+}
+
+.header .account-lang-currency .account-btn {
+    border: 2px solid var(--1)
+}
+
+button.btn.btn-dark.account-btn {
+    color: var(--1)
+}
+
+element.style {
+    position: relative;
+    bottom: 2px
+}
+
+*, *::before, *::after {
+    box-sizing: border-box
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer
+}
+
+.btn-primary {
+    background: var(--2) ;
+}
+
+.btn-primary:hover {
+    filter: brightness(4.1)
+}
+
+.account-lang-currency .account-btn {
+    color: var(--1)
+}
+
+.icon-language_white:before {
+    color: #fff
+}
+
+.header-theme-icon-primary {
+    color: var(--1);
+    transition: all .5s cubic-bezier(.2,1,.3,1)!important
+}
+
+.icon-menu_open_black_24dp-1:before {
+    transform: translateY(-3px)!important
+}
+
+ul.main-nav>li:hover, .item-all-categories {
+}
+
+.footer-theme-bg-primary, footer.d-flex.flex-column {
+    background-color: var(--1) !important;
+    color: #fff!important;
+    background-image: url(https://media.zid.store/65d44d36-eff6-4bf7-bbda-907f75793e32/4a585c53-87c8-4c5b-9a06-4ab522d224bb.png)
+}
+
+.btn-primary {
+    width: 177px
+}
+
+.store-section .social-icons span {
+    font-size: 17px!important
+}
+
+.slide-menu, .slide-menu a {
+    font-size: 1.2rem;
+    color: var(--1)
+}
+
+.store-section .social-icons span {
+    font-size: 14px!important;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,.2);
+    font-size: 18px
+}
+
+.store-section .social-icons span:hover {
+    filter: brightness(.9)
+}
+
+.store-section a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer
+}
+
+.store-section .social-icons a {
+    margin: 0 2.5px 5px
+}
+
+body:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: 0 0!important;
+    position: fixed;
+    z-index: 999999;
+    transform: scale(0);
+    animation-name: pupup;
+    animation-duration: 1.5s
+}
+
+@keyframes pupup {
+    0% {
+        transform: scale(1)
+    }
+
+    18% {
+        transform: scale(1)
+    }
+
+    80% {
+        transform: scale(1)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+body:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: fixed;
+    z-index: 999999;
+    background: var(--logo);
+    left: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25vw;
+    transform: scale(0);
+    animation-name: pupup_logo;
+    animation-duration: 1.5s
+}
+
+@keyframes pupup_logo {
+    0% {
+        transform: scale(0)
+    }
+
+    18% {
+        transform: scale(1)
+    }
+
+    75% {
+        transform: scale(1)
+    }
+
+    95% {
+        transform: scale(0)
+    }
+
+    100% {
+        transform: scale(0)
+    }
+}
+
+.category-item a, .category-item img {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: 1px 10%1px 1px!important;
+    border-radius: 50%!important
+}
+
+@media(max-width: 767px) {
+}
+
+@media(max-width: 357px) {
+    .home-categories-section .cat-col {
+        width:22%!important
+    }
+
+    .category-item a, .category-item img {
+        display: block;
+        text-align: center;
+        width: 76%;
+        margin: 9px 4px -5px -8px!important
+    }
+
+    .categories-slider h3 {
+        font-size: 7px;
+        color: transparent
+    }
+}
+
+@media(min-width: 1200px) {
+    .vat-crn-sections {
+        margin:-33px -9px -4px -28px
+    }
+
+    .footer-store-section-bars div.d-flex.justify-content-center.align-items-center:after {
+        margin: -23px 86px 0 0
+    }
+}
+
+@media(max-width: 991px) {
+    .header .dark.d-none.d-lg-block .theme-bg-primary-dark-1 {
+        background:#fff;
+        filter: none
+    }
+
+    .header .top-main-menu-wrapper ul {
+        padding: 5px 65px
+    }
+
+    .header .top-main-menu-wrapper ul li {
+        display: none;
+        margin: auto
+    }
+
+    .header .top-main-menu-wrapper ul li a {
+        font-size: 11px;
+        padding: 0;
+        color: var(--1)
+    }
+
+    .header .top-main-menu-wrapper ul li:hover {
+        background: unset!important
+    }
+
+    .header .top-main-menu-wrapper .main-nav {
+        flex-wrap: nowrap!important
+    }
+
+    .header .top-main-menu-wrapper ul .top-level-link:nth-child(1) {
+        display: block!important
+    }
+
+    .header .top-main-menu-wrapper ul .top-level-link:nth-child(2) {
+        display: block!important
+    }
+
+    .header .top-main-menu-wrapper ul .top-level-link:nth-child(3) {
+        display: block!important
+    }
+
+    .header .top-main-menu-wrapper ul .top-level-link:nth-child(3) .sub-menu-block {
+        display: none!important
+    }
+
+    .header .top-main-menu-wrapper ul .top-level-link:nth-child(4) {
+        display: block!important
+    }
+
+    .header .top-main-menu-wrapper ul .top-level-link:nth-child(4) .sub-menu-block {
+        display: none!important
+    }
+}
+
+@media(max-width: 991px) {
+    .slide-menu__slider>ul>li:nth-child(1) {
+        grid-column:1/3;
+        border-bottom: 0;
+        display: block;
+        content: "";
+        width: 20rem;
+        margin: 11px auto 8px;
+        height: 135px;
+        background-size: cover!important;
+        background: var(--logo);
+        background-position: center;
+    }
+}
+
+.slide-menu a {
+    color: var(--1);
+    border: 0 solid #d59b05;
+    margin: -2px 0 0
+}
+
+@media(max-width: 767px) {
+    .icon-language_white:before {
+        color:var(--1)!important
+    }
+}
+
+@media(max-width: 991px) {
+    .menu-header-theme-bg-primary {
+        background: linear-gradient(190deg, transparent 2%,#dadada 50%),url("https://media.zid.store/c1750331-e5ca-47ef-860a-a7c56421e496/bf71b43c-c875-483c-8e7e-ad9166e56977.png")no-repeat!important;
+        background-size: 317%!important;
+        background-color: #fff!important;
+    }
+}
+
+@media(min-width: 991px) {
+    .menu-header-theme-bg-primary {
+        background:linear-gradient(to bottom,transparent,var(--1)),url("https://media.zid.store/c1750331-e5ca-47ef-860a-a7c56421e496/bf71b43c-c875-483c-8e7e-ad9166e56977.png")no-repeat!important;
+        background-size: 100%!important;
+        background-color: var(--1)!important;
+    }
+}
+
+@media(max-width: 991px) {
+    .slide-menu-ul-li {
+        border-top:.5px solid #d6d6d6
+    }
+
+    .slide-menu__slider>ul {
+        display: grid;
+        grid-template-columns: 50%50%;
+        font-family: sky-bold
+    }
+
+    .slide-menu__slider>ul>li:nth-child(2) {
+        grid-column: 1/3;
+        grid-row: 3/17;
+        border: 0;
+        margin-top: 10px;
+    }
+
+    .slide-menu__slider a[href="/"] {
+        padding: 0 0 8px
+    }
+
+    .slide-menu__slider a[href="/"] span {
+        display: block;
+        text-align: center;
+        border: 2px solid var(--1);
+        width: 150px;
+        margin: auto;
+        padding: 0 5px;
+        background: var(--1)!important;
+        color: #fff!important;
+        font-size: 13px;
+        line-height: 1.8
+    }
+
+    .slide-menu__slider a[href$="/products"]:before, .slide-menu__slider a[href$=exclusive]:before, .slide-menu__slider a[href$=brand]:before, .slide-menu__slider a[href$=womenfashion]:before, .slide-menu__slider a[href$=mens]:before, .slide-menu__slider a[href$=sportswear]:before, .slide-menu__slider a[href$=beauty]:before, .slide-menu__slider a[href$=kidsproduct]:before, .slide-menu__slider a[href$=household]:before, .slide-menu__slider a[href$=accessories]:before, .slide-menu__slider a[href$=electronics]:before {
+        border: 2px solid #eee;
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        content: "";
+        border-radius: 50px;
+        background-size: contain!important;
+        background-repeat: no-repeat!important;
+        background-position: center!important;
+        vertical-align: middle!important;
+        margin-left: 7px
+    }
+
+    .slide-menu__slider>ul>li:nth-child(3) {
+        display: none!important
+    }
+
+    .slide-menu__slider>ul>li:nth-child(4), .slide-menu__slider>ul>li:nth-child(5), .slide-menu__slider>ul>li:nth-child(6), .slide-menu__slider>ul>li:nth-child(7), .slide-menu__slider>ul>li:nth-child(8), .slide-menu__slider>ul>li:nth-child(9), .slide-menu__slider>ul>li:nth-child(10), .slide-menu__slider>ul>li:nth-child(11), .slide-menu__slider>ul>li:nth-child(12), .slide-menu__slider>ul>li:nth-child(13), .slide-menu__slider>ul>li:nth-child(14), .slide-menu__slider>ul>li:nth-child(15) {
+        grid-column: 1/3
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(1) {
+        grid-column: 1/3;
+        border: 0
+    }
+
+    .slide-menu__slider>ul>li a[href="/shipping-and-payment"] {
+        display: none!important
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(3) {
+        grid-column: 1/3;
+        grid-row: 13/12;
+        border: 0;
+        margin-top: 10px
+    }
+
+    .slide-menu__slider a[href$=categories] {
+        border: 2px solid var(--1);
+        border-radius: 0;
+        width: 150px;
+        padding: 7px 5px;
+        margin: 0 auto;
+        text-align: center;
+        font-family: sky-bold;
+        line-height: 1;
+        font-size: 12px;
+        background: var(--1)!important;
+        color: #fff!important
+    }
+
+    .slide-menu__slider a[href$=categories] span {
+        color: #fff!important
+    }
+
+    .slide-menu__slider a[href$=categories] span:before {
+        font-family: icomoon;
+        content: "\e957 ";
+        display: inline-block;
+        margin: 0 3px;
+        font-size: 20px;
+        vertical-align: middle;
+        line-height: 0
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) {
+        grid-area: 2/1/3/3;
+        border-bottom: 0;
+        margin: 10px 0
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .container {
+        grid-gap: 10px
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .container .currency-button-area, .slide-menu__slider>ul>li:nth-last-child(2) .container .vertical-line {
+        display: none!important
+    }
+
+    :lang(ar) .slide-menu__slider>ul>li:nth-last-child(2) .container .language-currency {
+        margin: auto 0 auto auto!important
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .language-currency .c-btn {
+        margin: auto!important
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .c-btn .px-2 {
+        padding: unset!important
+    }
+
+    :lang(ar) .slide-menu__slider>ul>li:nth-last-child(2) .container .account-area {
+        margin: auto auto auto 0
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .account-area .account-btn {
+        padding: unset;
+        min-width: 100px;
+        margin: auto;
+        padding: 3px;
+        border-radius: 0;
+        background: var(--1)!important;
+        transition: all .5s cubic-bezier(.2,1,.3,1)
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .account-area .account-btn:hover, .slide-menu__slider>ul>li:nth-last-child(2) .language-currency:hover {
+        transform: translateY(-3px)
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .account-btn>span {
+        color: #fff!important
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .account-lang-currency {
+        padding: unset
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .language-currency {
+        padding: unset;
+        min-width: 100px;
+        margin: auto;
+        padding: 3px;
+        border-radius: 0!important;
+        background: var(--1)!important;
+        border: 0;
+        max-height: 29.2px;
+        transition: all .5s cubic-bezier(.2,1,.3,1)
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .language-currency .c-btn {
+        color: #fff!important;
+        height: unset;
+        line-height: 2
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .language-currency span {
+        color: #fff!important
+    }
+
+    .slide-menu__slider>ul>li:nth-last-child(2) .language-currency span:before {
+        color: #fff!important;
+        font-size: 20px;
+        line-height: unset;
+        vertical-align: top
+    }
+
+    .slide-menu__slider>ul>li a[href$="/categories"]:before, .slide-menu__slider>ul>li a[href$="/"]:before {
+        display: none!important
+    }
+
+    li>ul.slide-menu__submenu--active {
+        display: grid!important;
+        grid-template-columns: 50%50%;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px
+    }
+
+    li>ul.slide-menu__submenu--active>li:first-child {
+        grid-area: 1/1/2/3;
+        margin: auto;
+        height: unset
+    }
+
+    li>ul.slide-menu__submenu--active>li:first-child>a {
+        border: 2px solid #fff;
+        padding: 2px 9px!important;
+        margin: 15px auto;
+        width: max-content;
+        font-family: sky-bold!important;
+        line-height: 1.5;
+        font-size: 14px
+    }
+
+    li>ul.slide-menu__submenu--active>li:first-child>a:before {
+        display: none!important
+    }
+
+    li>ul.slide-menu__submenu--active>li:first-child>a>span {
+        top: 1px
+    }
+
+    li>ul.slide-menu__submenu--active>li {
+        margin: auto
+    }
+
+    li>ul.slide-menu__submenu--active>li>a {
+        text-align: center;
+        padding-bottom: 8px!important;
+        line-height: 1;
+        font-size: 12px
+    }
+}
+
+.product-crd-spec .product-prev-price {
+    font-weight: unset!important;
+    color: #ab0000!important
+}
+
+.breadcrumb-section {
+    font-family: sky
+}
+
+.subTitle-detail {
+    background: var(--1)
+}
+
+.subTitle-detail .bread-title {
+    margin-bottom: 0!important;
+    color: #fff!important
+}
+
+.subTitle-detail .bread-text {
+    margin: auto!important;
+    color: #fff!important;
+    padding: 0 25px;
+    text-align: justify;
+    text-justify: inter-character;
+    font-size: 12px
+}
+
+.main .filter-buttons-container>div.d-inline-block:first-child {
+    margin: auto
+}
+
+.main .filter-buttons-container>div.d-inline-block:first-child>div:first-child, .main .filter-buttons-container>div.d-inline-block:last-child>div>div:first-child {
+    display: none!important
+}
+
+@media(max-width: 991px) {
+    .main .products-container.pt-2>div>.products-filter .filter-buttons-container {
+        display:flex;
+        width: 100%;
+        margin: 10px auto 20px!important
+    }
+
+    .main .products-container.pt-4>div>.products-filter .filter-buttons-container {
+        display: flex;
+        width: 100%;
+        margin: 10px auto 35px!important
+    }
+
+    .main .filter-buttons-container>div.d-inline-block:last-child {
+        margin: auto
+    }
+}
+
+.main .filter-buttons-container>div.d-inline-block .btn-filter {
+    padding: 5px 15px 4px;
+    border: 2px solid var(--1);
+    border-radius: 0;
+    font-size: 15px;
+    font-family: sky-bold;
+    width: 150px
+}
+
+.main .products-container.pt-2>div:first-child button:hover span, .main .products-container.pt-2>div:first-child button:focus span {
+    color: #fff!important
+}
+
+.main .products-container.pt-4>div:first-child button:hover span, .main .products-container.pt-4>div:first-child button:focus span {
+    color: #fff!important
+}
+
+.products-filter button i {
+    display: none
+}
+
+.main .products-container.pt-2>div:first-child span {
+    color: var(--1)
+}
+
+.main .products-container.pt-4>div:first-child span {
+    color: var(--1)
+}
+
+button#products-list-sort.btn.btn-filter i.icon-swap_vert.text.hide-ie:before {
+    color: var(--1)
+}
+
+button#products-list-filter.btn.btn-filter.filter-block-width.d-lg-none.products-list-filter-sm i.icon-remove.filter-icons.filters_not_expanded:before {
+    color: #fff
+}
+
+.main .filter-buttons-container>div.d-inline-block .btn-filter:hover, .main .filter-buttons-container>div.d-inline-block .btn-filter:focus {
+    background: var(--1)!important;
+    color: #fff!important;
+    box-shadow: unset
+}
+
+#filters-form-collapse-sm .form-products-filter>span {
+    font-family: sky-bold;
+    font-size: 18px;
+    font-weight: unset!important;
+    text-align: center
+}
+
+#filters-form-collapse-sm .form-products-filter>div:nth-child(2) {
+    padding: 10px 30px 0
+}
+
+#filters-form-collapse-sm .form-products-filter>div:nth-child(2) input {
+    border: 2px solid #eee;
+    border-radius: 0
+}
+
+#filters-form-collapse-sm .form-products-filter>div:nth-child(3) {
+    display: none!important
+}
+
+#filters-form-collapse-sm .form-products-filter>div:nth-child(4) {
+    padding: 0 30px
+}
+
+#filters-form-collapse-sm .form-products-filter>div:nth-child(5) {
+    justify-content: center!important
+}
+
+#filters-form-collapse-sm #products-list-filter-form-clear {
+    display: flex!important;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 15px
+}
+
+#filters-form-collapse-sm #products-list-filter-form-save {
+    background: var(--1);
+    border: 2px solid var(--1);
+    border-radius: 0
+}
+
+#filters-form-collapse-sm #products-list-filter-form-save span {
+    color: #fff!important
+}
+
+.sort-block-width .dropdown-menu {
+    padding: 0;
+    border-radius: 0
+}
+
+.sort-block-width .dropdown-item {
+    border-bottom: 1px dashed #eee
+}
+
+.sort-block-width .dropdown-item:last-child {
+    border-bottom: 0
+}
+
+.main .products-container.pt-2 .products-list .prod-col {
+    width: 31.5%;
+    margin: 3.3px
+}
+
+@media(min-width: 992px) {
+    .main .products-container.pt-2 .products-list .prod-col {
+        width:24%;
+        margin: 3.3px
+    }
+}
+
+.main .products-container.pt-4 .products-list .prod-col {
+    width: 31.5%;
+    margin: 3.3px
+}
+
+.main nav.products-pagination a {
+    border-radius: 0!important;
+    margin: 0 5px;
+    line-height: 1;
+    border: 1px solid #eee
+}
+
+.products-pagination .page-link.active {
+    color: #fff;
+    background-color: var(--1)
+}
+
+#products-list-filter-form-checkbox-on-sale.btn.btn-sale-price {
+    padding: 0
+}
+
+section.blog.mt-5.mb-5 .container>.blog-title {
+    margin: 0!important;
+    font-family: sky-bold;
+    padding: 0 5px
+}
+
+section.blog.mt-5.mb-5 .container>.blog-title h1 {
+    font-size: 25px
+}
+
+:lang(ar) section.blog.mt-5.mb-5 .container>.blog-title h1 {
+    font-size: 21px
+}
+
+section.blog.mt-5.mb-5 .container>.blog-text {
+    margin: 0!important;
+    color: #9c9c9c!important
+}
+
+section.blog.mt-5.mb-5 .container>.blog-text p font {
+    color: var(--1)!important;
+    font-size: 13px
+}
+
+:lang(ar) section.blog.mt-5.mb-5 .container>.blog-text p font {
+    font-family: sarem
+}
+
+section.blog.mt-5.mb-5 .container>.blog-text p {
+    text-align: justify!important;
+    padding: 0 5px
+}
+
+.products-details-page .lg-thumbs {
+    display: flex!important;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 15px;
+    width: 100%!important;
+    margin: auto!important;
+    justify-content: center;
+    align-items: center
+}
+
+.products-details-page .lg-thumbs .col-3 {
+    flex: 0 0 18%;
+    max-width: 20%;
+    margin-top: 22px;
+    padding-right: 5px;
+    padding-left: 5px
+}
+
+.products-details-page .lg-thumbs .col-3>.box-1-1:hover, .products-details-page .lg-thumbs .col-3>.box-1-1:focus {
+    border: 2px solid var(--1)!important
+}
+
+.products-details-page .col-lg-6.col-product-info>section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.product.products-details-page .col-lg-6.col-product-info {
+    padding: 0 15px
+}
+
+.products-details-page .col-lg-6.col-product-info>section>h1 {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+    color: var(--1)
+}
+
+.products-details-page .col-lg-6.col-product-info>section>.flex-lg-row {
+    font-size: 12px;
+    margin-bottom: 5px;
+    order: 1;
+    font-family: sky;
+    color: var(--1)
+}
+
+.products-details-page .col-lg-6.col-product-info>section>p {
+    display: none
+}
+
+.products-details-page .col-lg-6.col-product-info>section>.d-flex:nth-child(4)>div {
+    margin: auto
+}
+
+.products-details-page .col-lg-6.col-product-info>section>.d-flex:nth-child(4)>div h1 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--1)
+}
+
+.products-details-page .col-lg-6.col-product-info>section>.d-flex:nth-child(4)>div .product-formatted-price-old {
+    text-align: center;
+    font-size: 20px;
+    font-family: sky
+}
+
+.products-details-page .col-lg-6.col-product-info>section>.d-flex:nth-child(4)>div .product-formatted-price-discount {
+    text-align: center;
+    font-size: 22px;
+    font-family: sky
+}
+
+.products-details-page .col-lg-6.col-product-info>div:nth-child(2) {
+    display: none
+}
+
+.products-details-page .col-lg-6.col-product-info>.div-product-weight, .products-details-page .col-lg-6.col-product-info>.div-product-sku {
+    font-family: sky;
+    text-align: center;
+    font-size: 10px!important;
+    margin: 5px 0!important;
+    color: var(--1)!important
+}
+
+.products-details-page .col-lg-6.col-product-info>.div-product-weight h4, .products-details-page .col-lg-6.col-product-info>.div-product-sku h4 {
+    font-size: 13px!important;
+    font-weight: unset
+}
+
+.products-details-page .col-lg-6.col-product-info .select-quantity-div>div.form-group {
+    width: unset!important
+}
+
+.products-details-page .col-lg-6.col-product-info>form select {
+    border: 0;
+    border-radius: 0!important
+}
+
+.rtl #product-variants-options>div.form-group>div::after, .select-quantity-div div.form-group>div::after {
+    border: 0
+}
+
+.products-details-page .col-lg-6.col-product-info>form h4, .products-details-page .col-lg-6.col-product-info>form label {
+    font-size: 12px!important;
+    margin: 5px 0!important
+}
+
+.products-details-page .col-lg-6.col-product-info>form select {
+    font-size: 12px!important;
+    margin: 5px 0!important;
+    color: var(--1)!important;
+    background: #ebebeb
+}
+
+.col-lg-6.col-product-info>.product-buttons.d-block .btn.btn-add-to-cart {
+    border: 2px solid var(--1);
+    border-radius: 0;
+    background: var(--1);
+    padding: 2px 2px 0;
+    font-size: 15px;
+    line-height: 2
+}
+
+:lang(ar) .col-lg-6.col-product-info>.product-buttons.d-block .btn.btn-add-to-cart>span {
+    display: none!important
+}
+
+:lang(ar) .col-lg-6.col-product-info>.product-buttons.d-block .btn.btn-add-to-cart:after {
+    display: inline-block!important;
+    content: "أضف إلى حقيبة التسوق"!important
+}
+
+.col-lg-6.col-product-info>.product-buttons.d-block .btn.btn-add-to-cart:before {
+    display: inline-block;
+    content: "\e92b ";
+    width: 17px;
+    margin: 0 3px;
+    vertical-align: sub;
+    font-family: icomoon!important;
+    padding: 5px 0 0
+}
+
+:lang(en) .col-lg-6.col-product-info>.product-buttons.d-block>a {
+    font-size: 0
+}
+
+:lang(en) .col-lg-6.col-product-info>.product-buttons.d-block>a:after {
+    font-size: 15px;
+    content: "ask about the product"
+}
+
+:lang(en) .col-lg-6.col-product-info>.product-buttons.d-block>a:before {
+    font-size: 16px;
+    margin: 0 5px
+}
+
+.col-lg-6.col-product-info>.product-buttons.d-block>a {
+    border: 2px solid #25d366;
+    border-radius: 0;
+    background: var(--1);
+    background-color: #25d366;
+    color: #fff;
+    width: 100%;
+    padding: 2px;
+    font-size: 15px;
+    line-height: 2
+}
+
+.col-lg-6.col-product-info>.product-buttons.d-block>a:after {
+    content: "\f232 "" ""للطلب عبر الواتس اب";
+    display: inline-block;
+    font-size: 16px;
+    font-family: icomoon!important
+}
+
+.col-lg-6.col-product-info>.product-buttons.d-block>a:hover {
+    background-color: #fff;
+    color: var(--1);
+    border: 2px solid #fff
+}
+
+:lang(ar) .col-lg-6.col-product-info>.product-buttons.d-block>a {
+    font-size: 0
+}
+
+.col-lg-6.col-product-info>.product-buttons.d-block>div {
+    height: 10px!important
+}
+
+.col-lg-6.col-product-info>.border-product:last-child h4 {
+    font-family: sky-bold;
+    text-align: center;
+    font-size: 15px!important;
+    font-weight: unset!important
+}
+
+.col-lg-6.col-product-info>.border-product:last-child>.product-icon {
+    width: max-content;
+    margin: auto
+}
+
+.products-details-page #product-description .description-paragrah p {
+    margin: 0 5px;
+    text-align: justify
+}
+
+.products-details-page #product-description .description-paragrah * {
+    background: 0 0!important
+}
+
+.products-details-page .product-selection>div {
+    display: flex;
+    flex-wrap: nowrap!important;
+    flex-direction: row!important;
+    overflow-x: scroll
+}
+
+.products-details-page .product-selection>div>.d-flex:nth-child(1) {
+    display: none!important
+}
+
+.products-details-page .product-selection>div .card-table.options-table>.card {
+    width: 95px!important;
+    border: 1px solid var(--1);
+    border-radius: 0;
+    margin: 0 3px;
+    font-size: 9px
+}
+
+div div.card-table.options-table div.card h4.d-inline-block {
+    font-size: 8px!important;
+    margin: unset
+}
+
+.card-body {
+    padding: 5px
+}
+
+.options-table .col {
+    margin: unset
+}
+
+.products-details-page .product-selection .card-body .variant-name-sm {
+    font-family: sky-bold
+}
+
+.products-details-page .product-selection .card-body .col.m-col>span:nth-child(2), .products-details-page .product-selection .card-body .col.m-col>h4 {
+    float: left
+}
+
+:lang(en) .products-details-page .product-selection .card-body .col.m-col>span:nth-child(2), :lang(en) .products-details-page .product-selection .card-body .col.m-col>h4 {
+    float: right
+}
+
+.rtl .variant-image-wrapper {
+    margin-right: auto;
+    margin-left: auto;
+    width: 90px;
+    border: 2px solid #eee
+}
+
+.options-table .variant-name-sm {
+    width: unset
+}
+
+.products-details-page .description-title {
+    margin: 0 5px;
+    font-size: 17px;
+    color: var(--1)
+}
+
+.products-details-page section .description-icon {
+    font-size: 25px;
+    display: block;
+    line-height: 0;
+    width: max-content;
+    color: var(--1)
+}
+
+.products-details-page section .description-icon .icon-uniE011:before {
+    font-size: 19px
+}
+
+.btn.btn-primary.add-review-btn {
+    border: 0;
+    border-radius: 0
+}
+
+.products-details-page .mt-5.review-details .rating-section {
+    margin: 0
+}
+
+.products-details-page .reviews-break-down-div.description-paragrah {
+    display: none!important;
+    margin: auto!important;
+    width: max-content;
+    font-family: sky;
+    color: var(--1)!important
+}
+
+.products-details-page .comment-section.description-paragrah>.card {
+    display: flex;
+    background-color: #fff;
+    border: 2px solid var(--1);
+    border-radius: 0;
+    margin: 10px 5px 0!important
+}
+
+.products-details-page .comment-section.description-paragrah p.card-name-customer {
+    font-family: sky-bold
+}
+
+.products-details-page .card-paragraph.text-justify.mt-2.user-review-text {
+    padding: 10px 5px 0
+}
+
+.reviews-break-down-div.description-paragrah .rating-average {
+    font-size: 2rem!important
+}
+
+:lang(ar) .reviews-break-down-div.description-paragrah .rating-average {
+    font-size: 2rem!important;
+    width: max-content;
+    margin: 0 0 0 30px!important;
+    min-width: unset
+}
+
+.products-details-page #exampleModalCenter .modal-comment-content {
+    border: 2px solid var(--1);
+    border-radius: 0;
+    font-family: sky-bold
+}
+
+.products-details-page #exampleModalCenter .modal-comment-content button {
+    border-radius: 0
+}
+
+.products-details-page #exampleModalCenter textarea {
+    border-radius: 0;
+    border: 2px solid #eee
+}
+
+.products-details-page .bundle-offer-details-section .description-title {
+    font-family: sky-bold;
+    margin: 0 5px
+}
+
+.products-details-page .bundle-offer-details-section .description-paragrah {
+    margin-top: 20px!important
+}
+
+@media(min-width: 992px) {
+    .header .account-lang-currency {
+        border-bottom:1px solid var(--1)
+    }
+
+    .header .account-lang-currency .account-btn {
+        border: 2px solid var(--1);
+        border-radius: 0;
+        color: var(--1)
+    }
+
+    .header .account-lang-currency span, .header .account-lang-currency .c-btn, .header .account-lang-currency .icon-account_circle_black_24dp {
+        color: var(--1)
+    }
+
+    .rtl .search-input-input {
+        padding: 0 40px;
+        border-radius: 0
+    }
+}
+
+@media(min-width: 1370px) {
+    .container {
+        max-width:1439px!important
+    }
+}
+
+.store-section .social-icons a::before {
+    content: "";
+    width: 33px;
+    height: 33px;
+    background: 0 0!important;
+    display: block;
+    position: absolute!important;
+    border-left: #fff solid 1px!important;
+    border-right: #d59b05 solid 1px!important;
+    border-radius: 50%!important;
+    animation: social 2s infinite!important
+}
+
+@keyframes social {
+    0% {
+        transform: rotate(180deg)
+    }
+
+    100% {
+        transform: rotate(-180deg)
+    }
+}
+
+.footer-about-us-links-div.mt-5 {
+    margin: -5px 0 0!important
+}
+
+.product-item .d-flex .product-title {
+    color: var(--1);
+    font-size: 1.2rem;
+    font-weight: unset;
+    min-height: auto!important;
+    padding: 0;
+    line-height: 1.2
+}
+
+.header .icon-shopping_cart_black_36dp-1-1 .path2::before {
+    display: block;
+    content: "\e92b ";
+    width: 25px;
+    margin: unset;
+    transition: all .5s cubic-bezier(.2,1,.3,1)
+}
+
+.header .icon-shopping_cart_black_36dp-1-1 .path2:hover::before {
+    transform: translateY(-3px)
+}
+
+.header .icon-shopping_cart_black_36dp-1-1 .path1 {
+    display: none
+}
+
+.footer .col-12.col-lg-7 .col-lg-4:nth-child(3) .footer-about-us-links-div:nth-child(1) {
+    display: none
+}
+
+@media(min-width: 992px) {
+    section:nth-of-type(1) .container.container-slider {
+        width:100%!important;
+        max-width: 100%!important
+    }
+
+    .home section:nth-of-type(1) .container {
+        max-width: unset!important;
+        padding: 0
+    }
+
+    .home section:nth-of-type(1) .main-slider {
+        max-height: unset;
+        margin-top: 0
+    }
+}
+
+body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg > div > div > div.col-12.col-lg-5 > div > h2 {
+    font-size: 0;
+    margin: 15px 0 0;
+}
+
+.home>.section-padding-space:first-child {
+    padding: 0;
+}
+:root {
+    --primary-color: #2d3685;
+    --gr: linear-gradient(45deg,var(--color-primary) 0,var(--color-primary) 0,var(--color-primary) 39%,var(--color-primary-dark) 100%);
+    --1: #2d3685;
+    --2: #f2812f;
+    --2-2: #9865266e;
+    --3: #edf5ff;
+    --4: #3b3b39;
+    --4-4-4: #20201f;
+    --4-4: #3131309c;
+    --con: "    جميع الحقوق محفوظة لـ  "" ""albonyansw";
+    --logo: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 454.45 253.09'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23f3852c; %7D .cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6, .cls-7, .cls-8, .cls-9 %7B stroke-width: 0px; %7D .cls-10 %7B isolation: isolate; %7D .cls-2 %7B fill: url(%23linear-gradient-4); %7D .cls-2, .cls-4, .cls-7, .cls-9 %7B mix-blend-mode: multiply; %7D .cls-3 %7B fill: %232d3685; %7D .cls-4 %7B fill: url(%23linear-gradient); %7D .cls-5 %7B fill: %23fff; %7D .cls-6 %7B fill: %23f2812f; %7D .cls-7 %7B fill: url(%23linear-gradient-2); %7D .cls-8 %7B fill: %23eb7324; %7D .cls-9 %7B fill: url(%23linear-gradient-3); %7D %3C/style%3E%3ClinearGradient id='linear-gradient' x1='266.15' y1='87.22' x2='358.73' y2='87.22' gradientTransform='translate(-15.22 -18) rotate(6.08)' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23fff'/%3E%3Cstop offset='.18' stop-color='%23fefcfb'/%3E%3Cstop offset='.32' stop-color='%23fdf6f2'/%3E%3Cstop offset='.45' stop-color='%23fceae2'/%3E%3Cstop offset='.57' stop-color='%23fadacb'/%3E%3Cstop offset='.68' stop-color='%23f8c6ad'/%3E%3Cstop offset='.78' stop-color='%23f5ac88'/%3E%3Cstop offset='.88' stop-color='%23f18e5d'/%3E%3Cstop offset='.98' stop-color='%23ed6c2c'/%3E%3Cstop offset='1' stop-color='%23ed6623'/%3E%3C/linearGradient%3E%3ClinearGradient id='linear-gradient-2' x1='255.23' y1='99.86' x2='306.64' y2='99.86' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-3' x1='222.62' y1='107.54' x2='282.75' y2='107.54' xlink:href='%23linear-gradient'/%3E%3ClinearGradient id='linear-gradient-4' x1='116.59' y1='92.61' x2='212.81' y2='92.61' xlink:href='%23linear-gradient'/%3E%3C/defs%3E%3Cg class='cls-10'%3E%3Cg id='Layer_1' data-name='Layer 1'%3E%3Cg%3E%3Cg%3E%3Cpath class='cls-3' d='M315.82,14.92c-2.61,1.09-5.25,2.22-7.91,3.4-2.72,1.2-5.4,2.4-8.03,3.61,10.44,3.07,22.6,7.64,35.67,14.57,14.44,7.66,26.38,16.27,35.82,24.17-12.28,11.35-24.55,22.7-36.83,34.05,1.55,1.41,3.56,3.59,5.41,6.75,1.4,2.41,2.32,4.72,2.92,6.59-16.82,11.45-33.64,22.9-50.46,34.35-1.35-4.49-3.81-10.62-8.4-16.21-1.39-1.69-2.79-3.1-4.12-4.29,1.28,3.71,2.56,7.42,3.85,11.13-8.06,2.47-16.11,4.95-24.17,7.42-2.24-6.49-4.49-12.97-6.73-19.46.59,5.58,1.17,11.16,1.76,16.73-5.42,1.88-10.83,3.75-16.25,5.63-.01-2.79-.22-6.23-.89-10.09-.66-3.79-1.6-6.97-2.49-9.47.26,1.97.63,6.46-1.23,11.27-2.59,6.71-7.69,9.3-9.71,10.33-7.98,4.06-15.33.47-17.06-.45,1.03-1.42,10.39-14.69,6.8-26.35-.29-.94-1.38-4.35-4.1-6.84-10.41-9.51-34.73,3.3-47.67,13.5-3.51,2.76-10.76,8.95-21.53,11.66-2.69.68-4.93.97-6.43,1.11.27-.71.73-1.9,1.3-3.36,7.79-19.99,10.54-23.72,11.12-31.22.26-3.36.66-8.66-1.66-13.44-6.19-12.72-28.18-14.56-34.16-3.29-.57,1.08-3.46,6.91.23,18.29-9.61,1.59-18.88-3.26-23.8-12.56-6.68-12.62-2.22-27.54,1.19-34.08,2-3.83,4.45-6.55,4.9-7.02,3.04-3.15,6.52-5.35,10.19-7.11,5-2.41,9.02-3.62,13.64-4.85,3.87-1.03,7.12-1.65,9.4-2.03-1.34-2.99-2.68-5.97-4.01-8.96,20.33,3.47,34.87-.6,44.51-5.09,12-5.59,18.31-12.73,36.52-18.59,9.93-3.2,17.59-4.14,22.31-4.49,8.57-.64,15.86.06,21.37.98-1.97,1.65-3.95,3.3-5.92,4.95,13.08-.64,28.17-.26,44.73,2.21,10.93,1.63,20.94,3.93,29.95,6.53Z'/%3E%3Cpath class='cls-5' d='M255.23,44.96c7.74,1.46,13.65,3.86,17.7,5.84,2.54,1.24,4.71,2.51,7.13,3.91,3.35,1.93,7.8,4.69,12.93,8.25,2.25,1.57,4.94,3.49,8.06,5.95,1.46,1.14,3.02,2.43,4.65,3.84,4.06,3.52,9.2,8.41,14.76,14.9-5.07-3.46-9.52-6.04-12.94-7.85-.14-.07-.37-.21-.67-.35-12.78-6.75-24.53-9.89-24.53-9.89-4.36-1.16-10.1-2.37-17-2.99,2.63,1.58,5.32,3.28,8.07,5.1,2.85,1.89,5.57,3.8,8.17,5.7-8.57-2.49-19.82-4.72-33.11-4.69-12.35.03-23,2-31.33,4.27,5.74-.76,19.14-1.56,33.21,7.24,9.63,6.02,15.68,14.09,18.95,19.25-4.9-5.22-14.68-14.07-29.06-17.5-7.26-1.73-13.68-1.6-18.56-.99,3.23.84,7.75,2.59,12.18,6.55,3.86,3.45,6.89,7.92,6.51,8.47-.38.55-3.6-3.52-9.46-6.62-8.42-4.45-16.45-3.81-19.92-3.48-3.95.37-7.07,1.3-8.49,1.76-2.77.91-5.32,2.08-7.64,3.38,1.5-1.16,3.04-2.31,4.64-3.47,1.81-1.32,3.6-2.58,5.36-3.76-2.12.21-4.86.34-8.05.19-5.78-.27-10.1-1.34-11.72-1.76-3.5-.94-7.02-1.9-11.22-4.5-2.43-1.52-4.11-2.97-4.52-3.33-3.79-3.34-6.31-7.11-7.91-10.01,1.01,1.22,4.61,5.16,10,5.17,2.17.02,3.97-.61,5.23-1.22-.59.03-1.4.03-2.32-.13-2.24-.36-3.86-1.33-4.7-1.81-1.54-.91-2.86-2.16-3.9-3.85-.98-1.58-1.57-3.37-1.83-5.53,1.62,1.61,3.39,2.58,5.24,3.32,4.23,1.65,8.56,2.35,13.08,1.54,1.5-.28,2.94-.8,4.31-1.71.56-.4,1.11-.85,1.62-1.47-.83-.28-1.65-.55-2.47-.84,1.88-3.1,4.92-7.39,9.5-11.19,2.96-2.46,5.78-4.06,8.07-5.12t-.03-.02c-2.15-.04-4.3-.07-6.44-.11,1.45-1.86,3.62-4.36,6.57-6.71,4.24-3.39,7.94-4.82,10.74-5.87,3.55-1.33,8.95-2.85,15.75-2.87-1.91-.52-3.9-.97-5.99-1.27-16.01-2.34-29.92,4.24-38.82,9.98.94-2.56,1.89-5.1,2.84-7.66-2.57,2.84-6.74,6.88-12.53,10.15-4.91,2.78-13.34,7.58-23.45,5.14-9.54-2.31-15.41-9.76-17.74-13.14,15.13.97,26.53-2.09,33.99-4.94,17.97-6.87,26.14-17.52,45.56-21.55,8.6-1.78,15.78-1.51,20.25-1.06-1.46,1.75-2.91,3.51-4.37,5.26-.75,1.12-1.51,2.24-2.26,3.36,11.42-2.07,25.11-3.49,40.52-2.95,12.96.46,24.51,2.21,34.37,4.42-3.3,1.06-6.74,2.26-10.3,3.65-3.1,1.2-6.06,2.45-8.89,3.73,10.22,2.27,21.98,5.74,34.67,11.19,14.19,6.07,26.17,13.15,35.92,19.88-8.1-4.13-18.31-8.22-30.45-10.6-5.99-1.18-11.6-1.76-16.72-1.96,8.36,6.33,16.71,12.68,25.08,19.02-6.08-3.61-13.12-7.1-21.11-9.95-21.8-7.78-41.38-7.49-55.15-5.69Z'/%3E%3Cpath class='cls-6' d='M187,92.63c-4.03,7.06-9.49,14.86-16.76,22.09-6.95,6.92-13.26,10.8-18.63,14.16-6.88,4.3-12.97,7.22-17.59,9.17,1.49-3.91,3.66-9.69,6.2-16.81,2.82-7.92,3.16-9.25,3.44-10.92.41-2.42,1.93-12.16-2.54-21.37-1.77-3.64-3.9-6.01-5.3-7.36,2.32,1.19,8.2,4.71,11.28,12.67,4.04,10.44,1.59,24.23-6.33,34.45,4.41-2.18,10.22-5.68,16.3-11.34,6.95-6.46,11.68-13.33,14.68-18.42-3.58-4.59-8.33-9.56-14.47-13.73-15.57-10.57-36.88-13.87-46.54-3.94-.88.9-2.93,3.07-3.9,6.65-2.15,7.99,3.09,15.78,4,17.09-.58.17-1.73.07-2.65-.14-7.78-1.79-14.24-10.9-15.88-20.5-1.65-9.65,1.71-18,3.15-21.04,6.59-13.96,22.26-21.27,39.61-19.17.92,1.84,3.01,5.42,6.83,8.07,3.59,2.48,6.99,2.95,8.76,3.04,1.17,4.59,2.58,8.21,3.72,10.78,1.49,3.35,4.12,9.14,9.29,14.58.53.56,2.3,2.39,4.86,4.32,3.31,2.51,9.4,6.3,18.46,7.67Z'/%3E%3Cpath class='cls-6' d='M252.75,135.62c-3.99,1.59-7.99,3.18-11.98,4.77,0-3.28-.3-8.05-1.73-13.43-1.25-4.73-4.05-12.56-10.28-19.01-6.32-6.54-13.56-8.93-18.65-9.86-2.22-.43-4.02-.56-5.16-.65-3.55-.26-6.53.01-8.65.35,2.26-1.55,5.57-3.52,9.79-4.78.42-.12,2.11-.59,4.63-.9,17.65-2.17,29.94,11.31,29.94,11.31,6.06,6.15,8.97,14.05,10.28,19.38.73,2.94,1.57,7.3,1.81,12.82Z'/%3E%3Cpath class='cls-6' d='M183.12,44.97c3.11,13.36-12.44,21.24-16.36,7.97.84,2.25,2.41,3.95,4.22,4.69,5.4,2.44,11.26-4.61,8.72-10.99,0,0,3.42-1.67,3.42-1.67h0Z'/%3E%3Cpath class='cls-5' d='M174.23,53.7c.11,2.05-1.16,3.88-2.84,4.08s-3.13-1.29-3.24-3.33c-.11-2.05,1.16-3.88,2.84-4.08s3.13,1.29,3.24,3.33Z'/%3E%3Cpath class='cls-6' d='M334.43,106.89c-6.94-8.65-18.59-20.8-35.6-29.22-9.35-4.63-18-6.99-25.07-8.2,2.8,1.43,6.25,3.69,9.6,7.33,1.15,1.25,2.15,2.51,3.02,3.73-10.84-2.69-23.5-4.79-37.71-5.28-7.52-.26-14.6-.04-21.16.5-1.16.09,18.76-.61,35.28,13.14,5.45,4.53,9,9.41,15.81,18.79,7.38,10.15,12.72,19.36,16.25,25.94,13.19-8.91,26.38-17.81,39.58-26.72Z'/%3E%3Cpath class='cls-4' d='M332.05,108.56c-6.28-7.83-15.83-17.8-29.14-25.82-7.75-4.67-15.04-7.63-21.24-9.55,1.33.6,3.96,2.07,5.97,5.42.91,1.52,1.45,3.02,1.78,4.21-9.41-1.75-19.2-3.3-29.35-4.6-6-.77-11.89-1.42-17.67-1.96,14.03,4.49,23.32,11.85,28.68,16.97,5.73,5.47,9.96,11.17,13.46,15.99,6.28,8.64,10.83,16.48,13.83,22.08,11.23-7.58,22.46-15.16,33.69-22.74Z'/%3E%3Cpath class='cls-6' d='M277.42,129.56c-1.86-6.7-5.93-17.95-14.78-27.4-4.47-4.78-8.85-7.7-11.79-9.37-8.32-4.74-15.96-5.72-20.58-5.88,3.63,2.13,7.64,5.02,11.66,8.95,12.94,12.68,18.44,28.94,20.79,38,4.9-1.43,9.8-2.86,14.7-4.29Z'/%3E%3Cpath class='cls-6' d='M361.08,62.83c-4.91-3.83-11.13-7.96-18.65-11.43-11.01-5.08-21.02-7-28.58-7.69,3.98,2.82,8.34,6.31,12.81,10.65,2.9,2.81,5.5,5.63,7.8,8.35-2.13-.9-5.17-2.16-8.85-3.59-9.9-3.86-19.89-7.76-30.59-10.18-7.2-1.63-17.28-3.18-29.79-2.78,11.17,4.51,24.34,11.07,38.3,20.78,10.7,7.45,19.75,15.28,27.24,22.61,10.1-8.91,20.21-17.81,30.31-26.72Z'/%3E%3Cpath class='cls-8' d='M361.08,62.83c-6.4-4.35-14.49-8.93-24.2-12.54-6.31-2.34-12.2-3.85-17.47-4.84,3.71,2.42,8.38,6.16,12.87,11.87,2.2,2.8,3.98,5.58,5.41,8.14-7.15-3.06-14.96-6-23.42-8.63-10.98-3.41-21.31-5.75-30.74-7.35,7.38,3.45,16.2,8.43,25.53,15.71,9.83,7.66,17.52,15.77,23.29,22.78'/%3E%3Cpath class='cls-8' d='M120.44,46.67c-2.62-.11-6.87.13-11.66,2.41-2.47,1.18-10.97,5.23-15.27,16.46-.52,1.37-4.15,11.23-1.03,22.24,1.15,4.06,2.85,6.98,4.08,8.76-.52-3.02-2.51-16.31,4.09-30.19,6.67-14.01,17.39-18.71,19.79-19.69Z'/%3E%3Cpath class='cls-6' d='M217.38,126.5c1.43,5.87.22,12.47-3.54,17.33,0,0-.7-1.65-.7-1.65,2.52.11,5.17-.4,7.5-1.49,7.44-3.42,11.16-11.7,12.09-19.52,1.37,11.53-7.28,24.3-19.79,23.05,0,0-1.92-.22-1.92-.22,4.47-4.64,6.55-11.09,6.35-17.49h0Z'/%3E%3Cpath class='cls-5' d='M255.23,44.96c7.74,1.46,13.65,3.86,17.7,5.84,2.54,1.24,4.71,2.51,7.13,3.91,3.35,1.93,7.8,4.69,12.93,8.25,2.25,1.57,4.94,3.49,8.06,5.95,1.46,1.14,3.02,2.43,4.65,3.84,4.06,3.52,9.2,8.41,14.76,14.9-5.07-3.46-9.52-6.04-12.94-7.85-.14-.07-.37-.21-.67-.35-12.78-6.75-24.53-9.89-24.53-9.89-4.36-1.16-10.1-2.37-17-2.99,2.63,1.58,5.32,3.28,8.07,5.1,2.85,1.89,5.57,3.8,8.17,5.7-8.57-2.49-19.82-4.72-33.11-4.69-12.35.03-23,2-31.33,4.27,5.74-.76,19.14-1.56,33.21,7.24,9.63,6.02,15.68,14.09,18.95,19.25-4.9-5.22-14.68-14.07-29.06-17.5-7.26-1.73-13.68-1.6-18.56-.99,3.23.84,7.75,2.59,12.18,6.55,3.86,3.45,6.89,7.92,6.51,8.47-.38.55-3.6-3.52-9.46-6.62-8.42-4.45-16.45-3.81-19.92-3.48-3.95.37-7.07,1.3-8.49,1.76-2.77.91-5.32,2.08-7.64,3.38,1.5-1.16,3.04-2.31,4.64-3.47,1.81-1.32,3.6-2.58,5.36-3.76-2.12.21-4.86.34-8.05.19-5.78-.27-10.1-1.34-11.72-1.76-3.5-.94-7.02-1.9-11.22-4.5-2.43-1.52-4.11-2.97-4.52-3.33-3.79-3.34-6.31-7.11-7.91-10.01,1.01,1.22,4.61,5.16,10,5.17,2.17.02,3.97-.61,5.23-1.22-.59.03-1.4.03-2.32-.13-2.24-.36-3.86-1.33-4.7-1.81-1.54-.91-2.86-2.16-3.9-3.85-.98-1.58-1.57-3.37-1.83-5.53,1.62,1.61,3.39,2.58,5.24,3.32,4.23,1.65,8.56,2.35,13.08,1.54,1.5-.28,2.94-.8,4.31-1.71.56-.4,1.11-.85,1.62-1.47-.83-.28-1.65-.55-2.47-.84,1.88-3.1,4.92-7.39,9.5-11.19,2.96-2.46,5.78-4.06,8.07-5.12t-.03-.02c-2.15-.04-4.3-.07-6.44-.11,1.45-1.86,3.62-4.36,6.57-6.71,4.24-3.39,7.94-4.82,10.74-5.87,3.55-1.33,8.95-2.85,15.75-2.87-1.91-.52-3.9-.97-5.99-1.27-16.01-2.34-29.92,4.24-38.82,9.98.94-2.56,1.89-5.1,2.84-7.66-2.57,2.84-6.74,6.88-12.53,10.15-4.91,2.78-13.34,7.58-23.45,5.14-9.54-2.31-15.41-9.76-17.74-13.14,15.13.97,26.53-2.09,33.99-4.94,17.97-6.87,26.14-17.52,45.56-21.55,8.6-1.78,15.78-1.51,20.25-1.06-1.46,1.75-2.91,3.51-4.37,5.26-.75,1.12-1.51,2.24-2.26,3.36,11.42-2.07,25.11-3.49,40.52-2.95,12.96.46,24.51,2.21,34.37,4.42-3.3,1.06-6.74,2.26-10.3,3.65-3.1,1.2-6.06,2.45-8.89,3.73,10.22,2.27,21.98,5.74,34.67,11.19,14.19,6.07,26.17,13.15,35.92,19.88-8.1-4.13-18.31-8.22-30.45-10.6-5.99-1.18-11.6-1.76-16.72-1.96,8.36,6.33,16.71,12.68,25.08,19.02-6.08-3.61-13.12-7.1-21.11-9.95-21.8-7.78-41.38-7.49-55.15-5.69Z'/%3E%3Cpath class='cls-6' d='M182.28,36.5c2.06-2.2,4.13-4.42,6.23-6.58l-.4,1.18-2.62,7.74-.78-.59c6.66-5.16,14.43-9.02,22.74-10.71,8.34-1.79,17.18-1.17,25.25,1.59,0,0,8.49,2.89,8.49,2.89l-8.97-.36c-12.48-.56-25,4.63-33.3,13.98,0,0-.81-2.14-.81-2.14,2.94.36,9.09,1.09,12,1.45,0,0-4.95,1.74-4.95,1.74-7.84,2.77-14.3,8.66-18.74,15.63,0,0-.65-1.34-.65-1.34l2.57.36h-.07c.7.03,2.68.14,3.41.18-8.67,7.34-19.29,6.61-27.79-.49,7.31,5.41,17.75,6.72,24.99.53,0,0,.46,1.44.46,1.44h-1.13c-.9-.1-3.12-.31-4.01-.4l.71-1.21c4.41-7.52,11.11-13.94,19.41-17.01,0,0,.28,2.37.28,2.37l-6.78-.69-2.5-.26,1.69-1.89c8.72-10.02,22.09-15.55,35.32-14.84,0,0-.48,2.52-.48,2.52-3.82-1.35-7.81-2.25-11.86-2.58-12.32-1.08-24.58,3.14-34.67,10.08,0,0-1.41.96-1.41.96l.63-1.56,3.06-7.58.46.3c-1.9,1.79-3.84,3.53-5.76,5.29h0Z'/%3E%3Cpath class='cls-7' d='M277.42,129.56c-1.86-6.7-5.93-17.95-14.78-27.4-4.47-4.78-8.85-7.7-11.79-9.37-8.32-4.74-15.96-5.72-20.58-5.88,3.63,2.13,7.64,5.02,11.66,8.95,12.94,12.68,18.44,28.94,20.79,38,4.9-1.43,9.8-2.86,14.7-4.29Z'/%3E%3Cpath class='cls-9' d='M252.75,135.62c-3.99,1.59-7.99,3.18-11.98,4.77,0-3.28-.3-8.05-1.73-13.43-1.25-4.73-4.05-12.56-10.28-19.01-6.32-6.54-13.56-8.93-18.65-9.86-2.22-.43-4.02-.56-5.16-.65-3.55-.26-6.53.01-8.65.35,2.26-1.55,5.57-3.52,9.79-4.78.42-.12,2.11-.59,4.63-.9,17.65-2.17,29.94,11.31,29.94,11.31,6.06,6.15,8.97,14.05,10.28,19.38.73,2.94,1.57,7.3,1.81,12.82Z'/%3E%3Cpath class='cls-2' d='M187,92.63c-4.03,7.06-9.49,14.86-16.76,22.09-6.95,6.92-13.26,10.8-18.63,14.16-6.88,4.3-12.97,7.22-17.59,9.17,1.49-3.91,3.66-9.69,6.2-16.81,2.82-7.92,3.16-9.25,3.44-10.92.41-2.42,1.93-12.16-2.54-21.37-1.77-3.64-3.9-6.01-5.3-7.36,2.32,1.19,8.2,4.71,11.28,12.67,4.04,10.44,1.59,24.23-6.33,34.45,4.41-2.18,10.22-5.68,16.3-11.34,6.95-6.46,11.68-13.33,14.68-18.42-3.58-4.59-8.33-9.56-14.47-13.73-15.57-10.57-36.88-13.87-46.54-3.94-.88.9-2.93,3.07-3.9,6.65-2.15,7.99,3.09,15.78,4,17.09-.58.17-1.73.07-2.65-.14-7.78-1.79-14.24-10.9-15.88-20.5-1.65-9.65,1.71-18,3.15-21.04,6.59-13.96,22.26-21.27,39.61-19.17.92,1.84,3.01,5.42,6.83,8.07,3.59,2.48,6.99,2.95,8.76,3.04,1.17,4.59,2.58,8.21,3.72,10.78,1.49,3.35,4.12,9.14,9.29,14.58.53.56,2.3,2.39,4.86,4.32,3.31,2.51,9.4,6.3,18.46,7.67Z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='cls-1' d='M10.01,180.37c.57,0,1.05-.19,1.44-.56.38-.37.58-.86.58-1.45s-.19-1.08-.58-1.45-.86-.56-1.44-.56-1.05.19-1.44.56-.58.86-.58,1.45.19,1.08.58,1.45c.38.38.86.56,1.44.56Z'/%3E%3Cpath class='cls-1' d='M5.39,180.37c.57,0,1.05-.19,1.44-.56.38-.37.58-.86.58-1.45s-.19-1.08-.58-1.45c-.39-.38-.86-.56-1.44-.56s-1.05.19-1.44.56-.58.86-.58,1.45.19,1.08.58,1.45c.38.38.86.56,1.44.56Z'/%3E%3Cpath class='cls-1' d='M33.27,185.4h-3.94v10.27h-11.43c-.79,0-1.39-.06-1.81-.19-.41-.13-.7-.38-.84-.74-.15-.37-.22-.87-.22-1.52v-9.95h-3.94v.89c-1.5.13-2.91.36-4.2.73-1.38.4-2.58.93-3.61,1.6s-1.83,1.5-2.41,2.47c-.58.98-.87,2.11-.87,3.39,0,1.12.22,2.11.67,2.96.44.85,1.05,1.55,1.83,2.12.78.56,1.69.99,2.72,1.27s2.15.43,3.33.43c.91,0,1.82-.09,2.74-.27.54-.1,1.06-.24,1.56-.4.37.38.8.7,1.29.96,1.01.53,2.26.8,3.76.8h15.36v-14.83ZM8.53,195.02c-.89,0-1.68-.1-2.37-.3-.69-.2-1.23-.49-1.63-.89s-.59-.89-.59-1.48.21-1.16.64-1.66c.42-.49,1-.91,1.72-1.24.72-.33,1.54-.61,2.46-.81.75-.17,1.54-.28,2.35-.35v4.92c0,.52.04.99.1,1.45-.21.06-.43.11-.65.16-.62.13-1.3.19-2.03.19Z'/%3E%3Cpath class='cls-1' d='M27.59,203.4c-.57,0-1.05.19-1.44.56s-.58.86-.58,1.45.19,1.05.58,1.42c.38.37.86.56,1.44.56s1.05-.19,1.44-.56c.38-.38.58-.85.58-1.42s-.19-1.08-.58-1.45-.86-.56-1.44-.56Z'/%3E%3Cpath class='cls-1' d='M32.21,203.4c-.57,0-1.05.19-1.44.56s-.58.86-.58,1.45.19,1.05.58,1.42c.38.37.86.56,1.44.56s1.05-.19,1.44-.56c.38-.38.58-.85.58-1.42s-.19-1.08-.58-1.45-.86-.56-1.44-.56Z'/%3E%3Cpath class='cls-1' d='M40.53,201.12c0,.67-.12,1.22-.37,1.66-.25.43-.65.75-1.21.96-.56.21-1.34.31-2.32.31l.74,4.35c1.48-.06,2.75-.38,3.8-.98s1.87-1.42,2.44-2.49c.57-1.07.86-2.34.86-3.82v-15.72h-3.94v15.72Z'/%3E%3Cpath class='cls-1' d='M70.1,203.87c-.67,0-1.23.22-1.69.67-.45.44-.68,1.01-.68,1.7s.23,1.23.68,1.69,1.02.68,1.69.68,1.26-.23,1.7-.68c.44-.45.67-1.02.67-1.69s-.22-1.26-.67-1.7c-.44-.44-1.01-.67-1.7-.67Z'/%3E%3Cpath class='cls-1' d='M92.12,182.23c.57,0,1.05-.19,1.44-.56s.58-.86.58-1.45-.19-1.08-.58-1.45-.86-.56-1.44-.56-1.05.19-1.44.56-.58.86-.58,1.45.19,1.08.58,1.45.86.56,1.44.56Z'/%3E%3Cpath class='cls-1' d='M96.74,182.23c.57,0,1.05-.19,1.44-.56s.58-.86.58-1.45-.19-1.08-.58-1.45-.86-.56-1.44-.56-1.05.19-1.44.56c-.38.38-.58.86-.58,1.45s.19,1.08.58,1.45c.39.38.86.56,1.44.56Z'/%3E%3Cpath class='cls-1' d='M110.56,195.67h-11.13c-.81,0-1.42-.06-1.83-.19-.42-.13-.69-.38-.83-.74-.14-.37-.21-.87-.21-1.52v-7.82h-3.97v7.82c0,.65-.07,1.16-.21,1.52-.14.37-.42.61-.83.74-.41.13-1.03.19-1.83.19h-7.52s0,0,0,0,0,0,0,0h-3.49v-3.29c0-1.32-.24-2.51-.73-3.55s-1.15-1.94-2.01-2.69c-.86-.75-1.86-1.32-2.99-1.72-1.13-.39-2.35-.59-3.66-.59-1.15,0-2.28.16-3.39.47-1.12.32-2.17.78-3.15,1.39l1.66,3.73c.65-.3,1.41-.54,2.26-.74s1.72-.3,2.59-.3c1.14,0,2.13.17,2.95.52.82.34,1.45.81,1.88,1.41.43.59.65,1.28.65,2.07v3.29h-19.03s0,0,0,0,0,0,0,0h-3.37v-20.57h-3.97v25.13h7.34s0,0,0,0,0,0,0,0h26.46s0,0,0,0,0,0,0,0h7.52c1.52,0,2.78-.27,3.79-.81.39-.21.74-.47,1.05-.76.32.3.68.56,1.08.77,1.01.53,2.27.8,3.79.8h15.1v-25.13h-3.97v20.57Z'/%3E%3Crect class='cls-1' x='118.44' y='175.1' width='3.97' height='25.13'/%3E%3Cpath class='cls-1' d='M139.16,180.1c.57,0,1.05-.19,1.44-.56s.58-.86.58-1.45-.19-1.08-.58-1.45-.86-.56-1.44-.56-1.05.19-1.44.56-.58.86-.58,1.45.19,1.08.58,1.45.86.56,1.44.56Z'/%3E%3Cpath class='cls-1' d='M143.78,180.1c.57,0,1.05-.19,1.44-.56s.58-.86.58-1.45-.19-1.08-.58-1.45-.86-.56-1.44-.56-1.05.19-1.44.56-.58.86-.58,1.45.19,1.08.58,1.45.86.56,1.44.56Z'/%3E%3Cpath class='cls-1' d='M142.86,183.27h-2.72c-4.08,3.41-6.13,6.78-6.13,10.09,0,1.34.32,2.53.95,3.57s1.5,1.85,2.62,2.43c1.11.58,2.41.87,3.89.87s2.81-.29,3.92-.87c1.12-.58,1.98-1.39,2.61-2.43s.93-2.23.93-3.6c0-3.32-2.02-6.67-6.07-10.06ZM145.14,192.89c0,.55-.15,1.04-.44,1.46-.3.42-.72.75-1.26.98-.54.23-1.2.34-1.97.34s-1.4-.11-1.95-.34c-.55-.23-.98-.54-1.27-.95-.3-.4-.44-.89-.44-1.46,0-.79.28-1.64.83-2.56s1.43-1.91,2.63-2.98h.5c1.14,1.07,1.99,2.06,2.55,2.98s.83,1.76.83,2.53Z'/%3E%3Cpath class='cls-1' d='M156.18,181.76c.69,0,1.26-.23,1.7-.68s.67-1.02.67-1.69-.22-1.26-.67-1.7-1.01-.67-1.7-.67-1.23.22-1.69.67-.68,1.01-.68,1.7.23,1.23.68,1.69,1.02.68,1.69.68Z'/%3E%3Cpath class='cls-1' d='M171.54,203.4c-.57,0-1.05.19-1.44.56s-.58.86-.58,1.45.19,1.05.58,1.42c.38.37.86.56,1.44.56s1.05-.19,1.44-.56c.38-.38.58-.85.58-1.42s-.19-1.08-.58-1.45-.86-.56-1.44-.56Z'/%3E%3Cpath class='cls-1' d='M176.16,203.4c-.57,0-1.05.19-1.44.56-.38.38-.58.86-.58,1.45s.19,1.05.58,1.42c.39.37.86.56,1.44.56s1.05-.19,1.44-.56c.38-.38.58-.85.58-1.42s-.19-1.08-.58-1.45-.86-.56-1.44-.56Z'/%3E%3Cpath class='cls-1' d='M249.9,195.67h-11.13c-.75,0-1.33-.06-1.75-.18s-.7-.34-.84-.67c-.1-.22-.16-.52-.2-.86,0-.04,0-.09,0-.13,0-1.12-.13-2.2-.4-3.21s-.66-1.91-1.18-2.69c-.52-.78-1.19-1.4-2-1.85s-1.76-.68-2.84-.68c-1.03,0-1.95.19-2.77.56-.82.38-1.56.88-2.22,1.51-.66.63-1.26,1.32-1.81,2.07-.54.75-1.06,1.5-1.55,2.25-.49.81-.99,1.5-1.48,2.09-.49.58-1.04,1.03-1.64,1.33-.6.31-1.34.46-2.21.46h-7.08c-.75,0-1.33-.06-1.75-.18s-.7-.34-.84-.67c-.1-.22-.16-.52-.2-.86,0-.04,0-.09,0-.13,0-1.12-.13-2.2-.4-3.21s-.66-1.91-1.18-2.69c-.52-.78-1.19-1.4-2-1.85s-1.76-.68-2.84-.68c-1.03,0-1.95.19-2.77.56-.82.38-1.56.88-2.22,1.51-.66.63-1.26,1.32-1.81,2.07-.54.75-1.06,1.5-1.55,2.25-.49.81-.99,1.5-1.48,2.09-.49.58-1.04,1.03-1.64,1.33-.6.31-1.34.46-2.21.46h-7.08c-.81,0-1.42-.06-1.83-.19-.42-.13-.69-.38-.83-.74-.14-.37-.21-.87-.21-1.52v-7.82h-3.97v7.82c0,.65-.07,1.16-.21,1.52-.14.37-.42.61-.83.74-.41.13-1.03.19-1.83.19h-11.01v-10.27h-3.94v15.72c0,.67-.12,1.22-.37,1.66-.25.43-.65.75-1.21.96-.56.21-1.34.31-2.32.31l.74,4.35c1.48-.06,2.75-.38,3.8-.98s1.87-1.42,2.44-2.49c.57-1.07.86-2.34.86-3.82v-.89h11.01c1.52,0,2.78-.27,3.79-.81.39-.21.74-.47,1.05-.76.32.3.68.56,1.08.77,1.01.53,2.27.8,3.79.8h7.08c1.3,0,2.43-.21,3.39-.64.89-.4,1.73-.99,2.51-1.78.38.33.78.63,1.19.92.8.56,1.72,1.02,2.77,1.38,1.05.35,2.26.6,3.64.72,1.38.13,3.02.14,4.91.04.27-.51.5-1.04.7-1.59.07.05.14.1.22.14.97.53,2.15.8,3.55.8h7.08c1.3,0,2.43-.21,3.39-.64.89-.4,1.73-.99,2.51-1.78.38.33.78.63,1.19.92.8.56,1.72,1.02,2.77,1.38,1.05.35,2.26.6,3.64.72,1.38.13,3.02.14,4.91.04.27-.51.5-1.04.7-1.59.07.05.14.1.22.14.97.53,2.15.8,3.55.8h15.1v-25.13h-3.97v20.57ZM199.34,196.33c-1.34-.1-2.49-.34-3.43-.73-.59-.24-1.12-.55-1.61-.91.08-.13.17-.24.25-.37.69-1.09,1.32-1.95,1.88-2.59.56-.64,1.1-1.1,1.61-1.39.51-.29,1.03-.43,1.54-.43.81,0,1.43.32,1.85.95.42.63.64,1.63.64,2.99,0,.86-.11,1.71-.32,2.56-.87,0-1.67-.02-2.4-.07ZM229.3,196.33c-1.34-.1-2.49-.34-3.43-.73-.59-.24-1.12-.55-1.61-.91.08-.13.17-.24.25-.37.69-1.09,1.32-1.95,1.88-2.59.56-.64,1.1-1.1,1.61-1.39.51-.29,1.03-.43,1.54-.43.81,0,1.43.32,1.85.95.42.63.64,1.63.64,2.99,0,.86-.11,1.71-.32,2.56-.87,0-1.67-.02-2.4-.07Z'/%3E%3Crect class='cls-1' x='257.77' y='175.1' width='3.97' height='25.13'/%3E%3Cpath class='cls-1' d='M283.62,185.58c.69,0,1.26-.23,1.7-.68.44-.45.67-1.02.67-1.69s-.22-1.26-.67-1.7c-.44-.44-1.01-.67-1.7-.67s-1.23.22-1.69.67c-.45.44-.68,1.01-.68,1.7s.23,1.23.68,1.69c.45.45,1.02.68,1.69.68Z'/%3E%3Cpath class='cls-1' d='M290.1,196.77c0,1.5-.26,2.78-.77,3.83-.51,1.06-1.26,1.85-2.24,2.4-.98.54-2.17.81-3.6.81s-2.58-.27-3.52-.81-1.66-1.34-2.15-2.38c-.48-1.05-.73-2.31-.73-3.79,0-.67.04-1.34.13-2.01.09-.67.2-1.36.34-2.07l-3.79-.71c-.18.77-.33,1.56-.44,2.37-.12.81-.18,1.62-.18,2.43,0,1.62.22,3.12.65,4.51.43,1.39,1.09,2.61,1.95,3.66s1.95,1.87,3.24,2.46,2.79.89,4.49.89,3.23-.3,4.53-.89c1.3-.59,2.4-1.41,3.3-2.46.9-1.05,1.58-2.27,2.04-3.67.46-1.4.7-2.92.7-4.56v-11.37h-3.97v11.37Z'/%3E%3Cpath class='cls-1' d='M313.9,203.4c-.57,0-1.05.19-1.44.56-.38.38-.58.86-.58,1.45s.19,1.05.58,1.42c.39.37.86.56,1.44.56s1.05-.19,1.44-.56c.38-.38.58-.85.58-1.42s-.19-1.08-.58-1.45-.86-.56-1.44-.56Z'/%3E%3Cpath class='cls-1' d='M309.28,203.4c-.57,0-1.05.19-1.44.56s-.58.86-.58,1.45.19,1.05.58,1.42c.38.37.86.56,1.44.56s1.05-.19,1.44-.56c.38-.38.58-.85.58-1.42s-.19-1.08-.58-1.45-.86-.56-1.44-.56Z'/%3E%3Cpath class='cls-1' d='M323.99,181.76c.69,0,1.26-.23,1.7-.68.44-.45.67-1.02.67-1.69s-.22-1.26-.67-1.7c-.44-.44-1.01-.67-1.7-.67s-1.23.22-1.69.67-.68,1.01-.68,1.7.23,1.23.68,1.69,1.02.68,1.69.68Z'/%3E%3Cpath class='cls-1' d='M336.4,203.87c-.67,0-1.23.22-1.69.67-.45.44-.68,1.01-.68,1.7s.23,1.23.68,1.69,1.02.68,1.69.68,1.26-.23,1.7-.68c.44-.45.67-1.02.67-1.69s-.22-1.26-.67-1.7-1.01-.67-1.7-.67Z'/%3E%3Cpath class='cls-1' d='M346.58,195.67h-5.18c-.81,0-1.42-.06-1.83-.19-.42-.13-.69-.38-.83-.74-.14-.37-.21-.87-.21-1.52v-7.82h-3.97v7.82c0,.65-.07,1.16-.21,1.52-.14.37-.42.61-.83.74-.41.13-1.03.19-1.83.19h-2.69c-.81,0-1.42-.06-1.83-.19-.42-.13-.69-.38-.83-.74-.14-.37-.21-.87-.21-1.52v-7.82h-3.97v7.82c0,.65-.07,1.16-.21,1.52-.14.37-.42.61-.83.74-.41.13-1.03.19-1.83.19h-2.69c-.81,0-1.42-.06-1.83-.19-.42-.13-.69-.38-.83-.74-.14-.37-.21-.87-.21-1.52v-7.82h-3.97v7.82c0,.65-.07,1.16-.21,1.52-.14.37-.42.61-.83.74-.41.13-1.03.19-1.83.19h-4.94v-20.57h-3.97v25.13h8.91c1.52,0,2.78-.27,3.79-.81.39-.21.74-.47,1.05-.76.32.3.68.56,1.08.77,1.01.53,2.27.8,3.79.8h2.69c1.52,0,2.78-.27,3.79-.81.39-.21.74-.47,1.05-.76.32.3.68.56,1.08.77,1.01.53,2.27.8,3.79.8h2.69c1.52,0,2.78-.27,3.79-.81.39-.21.74-.47,1.05-.76.32.3.68.56,1.08.77,1.01.53,2.27.8,3.79.8h9.15v-25.13h-3.97v20.57Z'/%3E%3Crect class='cls-1' x='354.45' y='175.1' width='3.97' height='25.13'/%3E%3Cpath class='cls-1' d='M375.23,180.37c.57,0,1.05-.19,1.44-.56.38-.37.58-.86.58-1.45s-.19-1.08-.58-1.45c-.39-.38-.86-.56-1.44-.56s-1.05.19-1.44.56-.58.86-.58,1.45.19,1.08.58,1.45c.38.38.86.56,1.44.56Z'/%3E%3Cpath class='cls-1' d='M379.85,180.37c.57,0,1.05-.19,1.44-.56.38-.37.58-.86.58-1.45s-.19-1.08-.58-1.45-.86-.56-1.44-.56-1.05.19-1.44.56-.58.86-.58,1.45.19,1.08.58,1.45c.38.38.86.56,1.44.56Z'/%3E%3Cpath class='cls-1' d='M395.75,185.64l1.78,1.33c1.48,1.07,2.67,1.95,3.55,2.65.89.7,1.56,1.27,2.03,1.72s.77.82.93,1.12c.16.31.24.6.24.87,0,.43-.17.83-.5,1.18-.34.35-.82.64-1.45.84-.63.21-1.41.31-2.34.31h-12.23c-.79,0-1.39-.06-1.81-.19-.41-.13-.7-.38-.84-.74-.15-.37-.22-.87-.22-1.52v-9.95h-3.94v.89c-1.5.13-2.91.36-4.2.73-1.38.4-2.58.93-3.61,1.6s-1.83,1.5-2.41,2.47c-.58.98-.87,2.11-.87,3.39,0,1.12.22,2.11.67,2.96.44.85,1.05,1.55,1.83,2.12.78.56,1.69.99,2.72,1.27s2.15.43,3.33.43c.91,0,1.82-.09,2.74-.27.54-.1,1.06-.24,1.56-.4.37.38.8.7,1.29.96,1.01.53,2.26.8,3.76.8h12.23c1.58,0,2.99-.28,4.23-.83,1.24-.55,2.22-1.35,2.93-2.38.71-1.04,1.07-2.26,1.07-3.69,0-.91-.15-1.74-.46-2.49s-.78-1.49-1.42-2.22c-.64-.73-1.46-1.5-2.46-2.29-.97-.78-2.12-1.65-3.46-2.63l9.21-3.81v-4.91l-13.88,6.39v4.26ZM378.37,195.02c-.89,0-1.68-.1-2.37-.3-.69-.2-1.23-.49-1.63-.89s-.59-.89-.59-1.48.21-1.16.64-1.66c.42-.49,1-.91,1.72-1.24.72-.33,1.54-.61,2.46-.81.75-.17,1.54-.28,2.35-.35v4.92c0,.52.04.99.1,1.45-.21.06-.43.11-.65.16-.62.13-1.3.19-2.03.19Z'/%3E%3Cpath class='cls-1' d='M444,180.16c0,.59.19,1.08.58,1.45s.86.56,1.44.56,1.05-.19,1.44-.56.58-.86.58-1.45-.19-1.05-.58-1.42c-.38-.37-.86-.56-1.44-.56s-1.05.19-1.44.56c-.38.38-.58.85-.58,1.42Z'/%3E%3Cpath class='cls-1' d='M450.51,185.4v7.82c0,.89-.26,1.55-.77,1.98-.51.43-1.08.65-1.72.65-.55,0-1.07-.17-1.55-.5-.37-.25-.63-.6-.79-1.04.01-.2.03-.4.03-.62v-6.84h-3.94v6.36c0,.89-.26,1.55-.77,1.98-.51.43-1.08.65-1.72.65-.55,0-1.07-.17-1.55-.5-.41-.28-.68-.68-.83-1.19.02-.3.04-.61.04-.94v-4.91h-3.94v4.91c0,.65-.07,1.16-.22,1.52-.15.37-.42.61-.83.74-.41.13-1.01.19-1.82.19h-11.01v-10.27h-3.94v15.72c0,.67-.12,1.22-.37,1.66-.25.43-.65.75-1.21.96-.56.21-1.34.31-2.32.31l.74,4.35c1.48-.06,2.75-.38,3.8-.98s1.87-1.42,2.44-2.49c.57-1.07.86-2.34.86-3.82v-.89h11.01c1.5,0,2.75-.27,3.76-.8.67-.35,1.22-.83,1.67-1.41.01.02.02.03.03.05.56.75,1.23,1.3,2,1.64.77.34,1.57.52,2.4.52.97,0,1.88-.24,2.75-.71.62-.34,1.16-.81,1.62-1.41.55.73,1.21,1.26,1.96,1.6.77.34,1.57.52,2.4.52.97,0,1.88-.24,2.75-.71.87-.47,1.58-1.19,2.13-2.16s.83-2.19.83-3.67v-8.29h-3.94Z'/%3E%3Cpath class='cls-1' d='M443.7,178.06c.57,0,1.04-.18,1.41-.55.37-.36.55-.83.55-1.41s-.18-1.04-.55-1.42c-.37-.37-.83-.56-1.41-.56s-1.02.19-1.41.56c-.38.38-.58.85-.58,1.42s.19,1.04.58,1.41c.38.37.85.55,1.41.55Z'/%3E%3Cpath class='cls-1' d='M441.39,182.17c.57,0,1.05-.19,1.44-.56s.58-.86.58-1.45-.19-1.05-.58-1.42c-.38-.37-.86-.56-1.44-.56s-1.05.19-1.44.56c-.38.38-.58.85-.58,1.42s.19,1.08.58,1.45.86.56,1.44.56Z'/%3E%3C/g%3E%3Cg%3E%3Cpath class='cls-3' d='M6.72,241.73l-1.37,5H.8l5.94-19.46h5.76l6.06,19.46h-4.74l-1.5-5h-5.6ZM11.67,238.45l-1.21-4.14c-.33-1.15-.68-2.61-.98-3.75h-.06c-.29,1.14-.58,2.62-.89,3.75l-1.16,4.13h4.3Z'/%3E%3Cpath class='cls-3' d='M21.16,227.27h4.4v15.77h7.74v3.69h-12.14v-19.46Z'/%3E%3Cpath class='cls-3' d='M41.47,246.72c.06-.93.12-2.62.12-4.22v-16.28h4.39v8.05h.06c.84-1.21,2.3-2,4.26-2,3.39,0,5.86,2.8,5.83,7.13,0,5.09-3.23,7.63-6.46,7.63-1.65,0-3.24-.61-4.22-2.29h-.06l-.18,1.97h-3.73ZM45.98,240.73c0,.28.03.54.08.77.29,1.17,1.3,2.09,2.59,2.09,1.87,0,3.03-1.45,3.03-3.99,0-2.2-.98-3.93-3.02-3.93-1.21,0-2.3.89-2.58,2.17-.05.25-.09.53-.09.81v2.08Z'/%3E%3Cpath class='cls-3' d='M72.88,239.52c0,5.16-3.66,7.52-7.45,7.52-4.11,0-7.3-2.72-7.3-7.28s3.01-7.49,7.55-7.49,7.19,2.97,7.19,7.24ZM62.66,239.66c0,2.41,1.02,4.24,2.89,4.24,1.71,0,2.8-1.71,2.8-4.26,0-2.08-.8-4.22-2.79-4.22-2.1,0-2.9,2.15-2.9,4.25Z'/%3E%3Cpath class='cls-3' d='M75.6,237.11c0-1.76-.05-3.25-.12-4.51h3.81l.2,1.96h.09c.57-.91,2.01-2.28,4.37-2.28,2.89,0,5.06,1.92,5.06,6.08v8.36h-4.4v-7.83c0-1.82-.65-3.07-2.23-3.07-1.21,0-1.92.85-2.23,1.66-.11.28-.15.69-.15,1.09v8.15h-4.4v-9.62Z'/%3E%3Cpath class='cls-3' d='M95.26,232.59l2.11,6.95c.24.83.51,1.88.71,2.62h.09c.2-.76.42-1.81.63-2.63l1.74-6.94h4.69l-3.27,9.3c-2.03,5.61-3.38,7.85-4.98,9.26-1.51,1.33-3.13,1.81-4.23,1.93l-.94-3.7c.56-.11,1.24-.36,1.91-.75.67-.35,1.4-1.06,1.81-1.76.15-.22.25-.45.25-.63,0-.16-.04-.38-.2-.73l-5.18-12.93h4.86Z'/%3E%3Cpath class='cls-3' d='M114.92,246.72l-.26-1.4h-.09c-.92,1.12-2.36,1.72-4.04,1.72-2.88,0-4.57-2.07-4.57-4.32,0-3.68,3.29-5.43,8.29-5.42v-.18c0-.75-.4-1.82-2.59-1.82-1.44,0-2.95.49-3.89,1.05l-.81-2.81c.98-.56,2.91-1.27,5.49-1.27,4.7,0,6.19,2.78,6.19,6.1v4.93c0,1.35.07,2.63.22,3.42h-3.96ZM114.38,240.04c-2.31-.01-4.1.54-4.1,2.23,0,1.14.75,1.69,1.74,1.69,1.07,0,1.98-.72,2.27-1.62.07-.23.08-.5.08-.75v-1.54Z'/%3E%3Cpath class='cls-3' d='M122.12,237.11c0-1.76-.05-3.25-.12-4.51h3.81l.2,1.96h.09c.57-.91,2.01-2.28,4.37-2.28,2.89,0,5.06,1.92,5.06,6.08v8.36h-4.4v-7.83c0-1.82-.65-3.07-2.23-3.07-1.21,0-1.92.85-2.23,1.66-.11.28-.15.69-.15,1.09v8.15h-4.4v-9.62Z'/%3E%3Cpath class='cls-3' d='M149.54,241.73l-1.37,5h-4.55l5.94-19.46h5.76l6.06,19.46h-4.74l-1.5-5h-5.6ZM154.49,238.45l-1.21-4.14c-.33-1.15-.68-2.61-.98-3.75h-.06c-.29,1.14-.58,2.62-.89,3.75l-1.16,4.13h4.3Z'/%3E%3Cpath class='cls-3' d='M163.64,226.23h4.4v20.5h-4.4v-20.5Z'/%3E%3Cpath class='cls-3' d='M171.58,237.11c0-1.76-.05-3.25-.12-4.51h3.71l.19,1.91h.09c.6-.89,1.86-2.23,4.26-2.23,1.84,0,3.26.94,3.87,2.42h.06c.53-.75,1.15-1.32,1.84-1.72.76-.46,1.63-.7,2.68-.7,2.7,0,4.76,1.91,4.76,6.13v8.32h-4.27v-7.67c0-2.05-.66-3.23-2.08-3.23-1.02,0-1.72.69-2.02,1.53-.11.32-.16.76-.16,1.12v8.26h-4.27v-7.92c0-1.78-.63-2.99-2.04-2.99-1.13,0-1.8.87-2.06,1.58-.13.34-.16.75-.16,1.11v8.22h-4.27v-9.62Z'/%3E%3Cpath class='cls-3' d='M209.72,242.2c0,1.84.05,3.35.12,4.53h-3.81l-.2-1.99h-.09c-.55.87-1.87,2.31-4.4,2.31-2.87,0-4.96-1.79-4.96-6.14v-8.31h4.4v7.59c0,2.07.66,3.3,2.21,3.3,1.19,0,1.9-.83,2.18-1.54.11-.26.16-.58.16-.93v-8.42h4.4v9.6Z'/%3E%3Cpath class='cls-3' d='M213.25,237.11c0-1.76-.05-3.25-.12-4.51h3.71l.19,1.91h.09c.6-.89,1.86-2.23,4.26-2.23,1.84,0,3.26.94,3.87,2.42h.06c.53-.75,1.15-1.32,1.84-1.72.76-.46,1.63-.7,2.68-.7,2.7,0,4.76,1.91,4.76,6.13v8.32h-4.27v-7.67c0-2.05-.66-3.23-2.08-3.23-1.02,0-1.72.69-2.02,1.53-.11.32-.16.76-.16,1.12v8.26h-4.27v-7.92c0-1.78-.63-2.99-2.04-2.99-1.13,0-1.8.87-2.06,1.58-.13.34-.16.75-.16,1.11v8.22h-4.27v-9.62Z'/%3E%3Cpath class='cls-3' d='M246.12,246.72l-.26-1.4h-.09c-.92,1.12-2.36,1.72-4.04,1.72-2.88,0-4.57-2.07-4.57-4.32,0-3.68,3.29-5.43,8.29-5.42v-.18c0-.75-.4-1.82-2.59-1.82-1.44,0-2.95.49-3.89,1.05l-.81-2.81c.98-.56,2.91-1.27,5.49-1.27,4.7,0,6.19,2.78,6.19,6.1v4.93c0,1.35.07,2.63.22,3.42h-3.96ZM245.59,240.04c-2.31-.01-4.1.54-4.1,2.23,0,1.14.75,1.69,1.74,1.69,1.07,0,1.98-.72,2.27-1.62.07-.23.08-.5.08-.75v-1.54Z'/%3E%3Cpath class='cls-3' d='M257.85,228.67c0,1.22-.9,2.19-2.36,2.19s-2.29-.97-2.29-2.19c0-1.26.92-2.2,2.33-2.2s2.3.94,2.32,2.2ZM253.33,246.72v-14.13h4.4v14.13h-4.4Z'/%3E%3Cpath class='cls-3' d='M260.12,244.2l4.45-5.56c.8-.94,1.44-1.65,2.24-2.5v-.06h-6.2v-3.48h11.56v2.64s-4.26,5.35-4.26,5.35c-.77.91-1.5,1.8-2.3,2.59v.06h6.79v3.48h-12.27v-2.52Z'/%3E%3Cpath class='cls-3' d='M282.82,246.72l-.26-1.4h-.09c-.92,1.12-2.36,1.72-4.04,1.72-2.88,0-4.57-2.07-4.57-4.32,0-3.68,3.29-5.43,8.29-5.42v-.18c0-.75-.4-1.82-2.59-1.82-1.44,0-2.95.49-3.89,1.05l-.81-2.81c.98-.56,2.91-1.27,5.49-1.27,4.7,0,6.19,2.78,6.19,6.1v4.93c0,1.35.07,2.63.22,3.42h-3.96ZM282.29,240.04c-2.31-.01-4.1.54-4.1,2.23,0,1.14.75,1.69,1.74,1.69,1.07,0,1.98-.72,2.27-1.62.07-.23.08-.5.08-.75v-1.54Z'/%3E%3Cpath class='cls-3' d='M290.03,226.23h4.4v8.07h.06c.46-.62,1.02-1.09,1.72-1.46.65-.35,1.47-.56,2.29-.56,2.8,0,4.95,1.94,4.95,6.2v8.24h-4.4v-7.76c0-1.86-.64-3.13-2.27-3.13-1.17,0-1.89.75-2.2,1.55-.11.26-.14.64-.14.96v8.38h-4.4v-20.5Z'/%3E%3Cpath class='cls-3' d='M315.57,230.96h-5.25v-3.69h14.98v3.69h-5.33v15.76h-4.4v-15.76Z'/%3E%3Cpath class='cls-3' d='M325.92,237.25c0-2.07-.04-3.44-.12-4.66h3.77l.16,2.62h.11c.73-2.07,2.45-2.93,3.81-2.93.41,0,.61.01.94.08v4.13c-.34-.07-.69-.12-1.19-.12-1.61,0-2.72.86-3.01,2.23-.05.28-.08.62-.08.98v7.15h-4.4v-9.47Z'/%3E%3Cpath class='cls-3' d='M344.62,246.72l-.26-1.4h-.09c-.92,1.12-2.36,1.72-4.04,1.72-2.88,0-4.57-2.07-4.57-4.32,0-3.68,3.29-5.43,8.29-5.42v-.18c0-.75-.4-1.82-2.59-1.82-1.44,0-2.95.49-3.89,1.05l-.81-2.81c.98-.56,2.91-1.27,5.49-1.27,4.7,0,6.19,2.78,6.19,6.1v4.93c0,1.35.07,2.63.22,3.42h-3.96ZM344.08,240.04c-2.31-.01-4.1.54-4.1,2.23,0,1.14.75,1.69,1.74,1.69,1.07,0,1.98-.72,2.27-1.62.07-.23.08-.5.08-.75v-1.54Z'/%3E%3Cpath class='cls-3' d='M365.51,226.23v16.28c0,1.6.05,3.27.12,4.22h-3.91l-.18-2.07h-.06c-.89,1.58-2.6,2.39-4.42,2.39-3.33,0-6.03-2.86-6.03-7.25-.02-4.75,2.96-7.51,6.32-7.51,1.75,0,3.08.62,3.71,1.6h.06v-7.65h4.39ZM361.11,238.59c0-.25,0-.54-.06-.8-.25-1.18-1.21-2.15-2.55-2.15-2.01,0-3.03,1.79-3.03,4.01,0,2.38,1.17,3.88,3,3.88,1.25,0,2.27-.87,2.54-2.11.07-.3.09-.64.09-.99v-1.85Z'/%3E%3Cpath class='cls-3' d='M373.56,228.67c0,1.22-.9,2.19-2.36,2.19s-2.29-.97-2.29-2.19c0-1.26.92-2.2,2.33-2.2s2.3.94,2.32,2.2ZM369.03,246.72v-14.13h4.4v14.13h-4.4Z'/%3E%3Cpath class='cls-3' d='M376.95,237.11c0-1.76-.05-3.25-.12-4.51h3.81l.2,1.96h.09c.57-.91,2.01-2.28,4.37-2.28,2.89,0,5.06,1.92,5.06,6.08v8.36h-4.4v-7.83c0-1.82-.65-3.07-2.23-3.07-1.21,0-1.92.85-2.23,1.66-.11.28-.15.69-.15,1.09v8.15h-4.4v-9.62Z'/%3E%3Cpath class='cls-3' d='M407.36,232.59c-.07.91-.12,2.11-.12,4.21v7.86c0,2.71-.55,4.94-2.15,6.35-1.55,1.34-3.65,1.74-5.73,1.74-1.87,0-3.82-.38-5.08-1.08l.87-3.33c.89.51,2.44,1.06,4.09,1.06,2.08,0,3.67-1.11,3.67-3.72v-.91h-.06c-.83,1.16-2.19,1.82-3.81,1.82-3.48,0-5.97-2.83-5.97-6.88,0-4.56,2.93-7.44,6.4-7.44,1.94,0,3.15.84,3.87,2.01h.06l.15-1.69h3.81ZM402.84,238.35c0-.28-.03-.57-.09-.81-.3-1.16-1.14-1.94-2.36-1.94-1.6,0-2.87,1.46-2.87,4.02,0,2.1,1.04,3.75,2.87,3.75,1.14,0,2.04-.75,2.33-1.77.1-.33.13-.8.13-1.16v-2.08Z'/%3E%3Cpath class='cls-3' d='M431.02,246.19c-.79.39-2.63.84-4.97.84-6.74,0-10.21-4.21-10.21-9.76,0-6.63,4.75-10.31,10.63-10.31,2.29,0,4.03.45,4.79.86l-.9,3.48c-.88-.38-2.12-.73-3.7-.73-3.47,0-6.19,2.12-6.19,6.44,0,3.9,2.3,6.35,6.22,6.35,1.35,0,2.81-.26,3.68-.63l.66,3.45Z'/%3E%3Cpath class='cls-3' d='M447.16,239.52c0,5.16-3.66,7.52-7.45,7.52-4.11,0-7.3-2.72-7.3-7.28s3.01-7.49,7.55-7.49,7.19,2.97,7.19,7.24ZM436.94,239.66c0,2.41,1.02,4.24,2.89,4.24,1.71,0,2.8-1.71,2.8-4.26,0-2.08-.8-4.22-2.79-4.22-2.1,0-2.9,2.15-2.9,4.25Z'/%3E%3Cpath class='cls-3' d='M448.58,244.38c0-1.57,1.08-2.67,2.6-2.67s2.57,1.08,2.58,2.67c0,1.55-1.04,2.66-2.6,2.66s-2.59-1.12-2.58-2.66Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
