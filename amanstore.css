@@ -36,7 +36,7 @@
 
 .features-section.section-padding-space::before {
     content: "بماذا نتميز؟";
-    color: #1c73b9!important;
+    color: var(--1)!important;
     margin-right: 15px;
     font-weight: 700;
     font-size: 1.87rem;
@@ -117,12 +117,12 @@ a.btn.btn-primary.product-card-add-to-cart {
 }
 
 .account-lang-currency.upper-bar.header-theme-bg-primary.header-theme-text-for-primary-bg {
-    background: linear-gradient(278deg,#1c73b9,#438bc9);
+    background: linear-gradient(278deg,var(--1),var(--1));
 }
 
 .product-buttons a.btn.round.large.primary.btn.add-to-cart.d-sm-block {
     color: #fff!important;
-    background: #1c73b9;
+    background: var(--1);
     border-radius: 20px
 }
 
@@ -135,7 +135,7 @@ header {
 }
 
 header .dark {
-    background: linear-gradient(278deg,#1c73b9,#438bc9);
+    background: linear-gradient(278deg,var(--2),var(--2));
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -154,39 +154,36 @@ header .dark {
     }
 }
 
-.search-header.header-theme-bg-primary {
-    background: linear-gradient(278deg,#1c73b9,#438bc9);
+.search-header.header-theme-bg-primary,.account-lang-currency.upper-bar.header-theme-bg-primary.header-theme-text-for-primary-bg {
+    background: var(--header-primary-color,var(--primary-color));
     background-size: 400%400%!important;
     animation: gradient 5s ease infinite!important;
 }
-
-.header-theme-icon-primary {
-    color: #ffffff;
-}
+ 
 
 .account-lang-currency {
     border-bottom: 0px solid #fefefe;
 }
 
 .account-lang-currency .account-btn {
-    border: 1px solid #4592d1;
-    color: #ffffff;
+    border: 1px solid var(--1);
+    color: var(--1);
 }
 
 .language-currency {
-    border: 1px solid #4592d1;
+    border: 1px solid var(--1);
 }
 
 .vertical-line {
-    border-right: 1px solid #4592d1;
+    border-right: 1px solid var(--1);
 }
 
-.language-btn, .currency-btn {
-    color: #ffffff;
+.language-btn, .currency-btn,.header-theme-icon-primary  {
+    color:var(--1);
 }
 
 .icon-language_white:before {
-    color: #4592d1;
+    color: var(--1);
 }
 
 .menu-header-theme-text-for-primary-bg {
@@ -198,12 +195,12 @@ header .dark {
 }
 
 ul.main-nav>li:hover>a, .item-all-categories>a {
-    color: #1c73b9!important
+    color: var(--1)!important
 }
 
 .slick-dots li.slick-active button:before {
     opacity: .75;
-    color: #1c73b9
+    color: var(--1)
 }
 
 @media only screen and (max-width: 992px) {
@@ -238,7 +235,7 @@ body.ltr .slider-container .section-title {
     font-size: 1.87rem;
     padding-bottom: 10px!important;
     padding-top: 10px!important;
-    color: #1c73b9!important
+    color: var(--1)!important
 }
 
 @media(max-width: 574px) {
@@ -256,20 +253,20 @@ body.ltr .slider-container .section-title {
 }
 
 .btn-primary:hover, .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show>.btn-primary.dropdown-toggle {
-    background-color: #1c73b9!important;
-    border-color: #1c73b9;
+    background-color: var(--1)!important;
+    border-color: var(--1);
     filter: brightness(100%);
-    color: #4592d1;
+    color: var(--1);
     font-weight: 700;
     border-radius: 20px;
 }
 
 .theme-border-primary {
-    border-color: #4592d1!important
+    border-color: var(--1)!important
 }
 
 .theme-text-primary {
-    color: #4592d1;
+    color: var(--1);
     font-weight: 700
 }
 
@@ -353,14 +350,11 @@ span.text-center.footer-copyrights a {
 }
 
 .footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg {
-    background: #1c73b9 url(https://media.zid.store/ad93dde1-a5ca-4d89-81f4-ee07aa0236a7/05913729-b4fd-47c3-aa74-1ee59c9ed8f3.png)center top 20px/120px;
-    background-repeat: no-repeat;
+    background: var(--2);
+    
 }
 
-.footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg div.container {
-    margin-top: 75px;
-    width: auto
-}
+
 
 .testimonials-customer-card {
     border-top-right-radius: 20px;
@@ -368,12 +362,12 @@ span.text-center.footer-copyrights a {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 0;
     background-color: #fff;
-    border: 2px solid #1c73b9;
+    border: 2px solid var(--1);
     min-height: 137px
 }
 
 h2.testimonials-customer-name {
-    color: #1c73b9;
+    color: var(--1);
     font-weight: 700
 }
 
@@ -407,7 +401,7 @@ button.more-button, a.more-button {
 }
 
 .testimonials-customer-date {
-    color: #4592d1!important;
+    color: var(--1)!important;
     font-weight: 700!important
 }
 
@@ -420,7 +414,7 @@ button.more-button, a.more-button {
 }
 
 #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
-    background: url(https://media.zid.store/ad93dde1-a5ca-4d89-81f4-ee07aa0236a7/05913729-b4fd-47c3-aa74-1ee59c9ed8f3.png);
+    background: var(--logo);
     padding: 0;
     width: 100% !important;
     background-size: contain;
@@ -461,13 +455,13 @@ button.more-button, a.more-button {
 }
 
 p.px-2.theme-text-for-primary-bg.features-section-title {
-    color: #1c73b9!important;
+    color: var(--1)!important;
     text-align: center;
 }
 
 .features-section {
     background: #fff;
-    color: #1c73b9!important
+    color: var(--1)!important
 }
 
 .feature:nth-child(3) img {
@@ -491,7 +485,7 @@ p.px-2.theme-text-for-primary-bg.features-section-title {
     /* border-bottom-left-radius: 20px; */
     /* border-top-left-radius: 0; */
     background-color: #fff;
-    /* border: 2px solid #1c73b9; */
+    /* border: 2px solid var(--1); */
     min-width: 107px;
     /* box-shadow: 0 1px 5px 0 rgba(0,0,0,.3)!important; */
 }
@@ -531,8 +525,8 @@ section.subTitle-detail .d-flex .bread-title {
 }
 
 .products-details-page .btn-add-to-cart {
-    background: #4592d1!important;
-    border: 2px solid #4592d1;
+    background: var(--1)!important;
+    border: 2px solid var(--1);
     border-radius: 20px;
     color: #ffffff;
     font-weight: 700;
@@ -542,7 +536,7 @@ section.subTitle-detail .d-flex .bread-title {
 .products-details-page .div-product-sku .product-title {
     background-color: #fff;
     font-size: 16px;
-    color: #4592d1!important
+    color: var(--1)!important
 }
 
 .products-details-page .border-product .product-title {
@@ -552,20 +546,20 @@ section.subTitle-detail .d-flex .bread-title {
 .products-details-page .div-product-weight .product-title {
     background-color: #fff;
     font-size: 16px;
-    color: #4592d1!important
+    color: var(--1)!important
 }
 
 .products-details-page .select-quantity-div .product-title {
     background-color: #fff;
     font-size: 16px;
-    color: #4592d1!important
+    color: var(--1)!important
 }
 
 button.btn.btn-primary.add-review-btn {
-    background: #4592d1!important;
-    border: 2px solid #4592d1;
+    background: var(--1)!important;
+    border: 2px solid var(--1);
     border-radius: 20px;
-    color: #1c73b9;
+    color: var(--1);
     font-weight: 700;
     font-size: 14px
 }
@@ -576,7 +570,7 @@ button.btn.btn-primary.add-review-btn {
     border-bottom-left-radius: 20px;
     border-top-left-radius: 0;
     background-color: #fff;
-    border: 2px solid #1c73b9;
+    border: 2px solid var(--1);
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.3)!important
 }
 
@@ -592,7 +586,7 @@ button.btn.btn-primary.add-review-btn {
     text-align: center;
     margin-top: 6px;
     padding-left: 5px;
-    background-color: #1c73b9
+    background-color: var(--1)
 }
 
 .col-lg-6.col-product-info .d-flex p {
@@ -600,12 +594,12 @@ button.btn.btn-primary.add-review-btn {
 }
 
 .products-details-page .card-name-customer {
-    color: #1c73b9;
+    color: var(--1);
     font-weight: 700
 }
 
 .products-details-page .user-review-date {
-    color: #4592d1!important;
+    color: var(--1)!important;
     font-weight: 700!important
 }
 
@@ -622,7 +616,7 @@ button.btn.btn-primary.add-review-btn {
 }
 
 .product-buttons a.btn.round.large.primary.btn.add-to-cart.d-sm-block {
-    color: #1c73b9;
+    color: var(--1);
     font-weight: 700;
     font-size: 15px
 }
@@ -761,13 +755,13 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
         width: 20rem;
         margin: 6px auto 8px;
         height: 149px;
-        background: transparent url(https://media.zid.store/ad93dde1-a5ca-4d89-81f4-ee07aa0236a7/05913729-b4fd-47c3-aa74-1ee59c9ed8f3.png) center 1rem/ 50% no-repeat;
+        background: transparent var(--logo) center 1rem/ 50% no-repeat;
         background-size: contain;
     }
 }
 
 .footer .footer-about-us-links-div.footer-about-us-div h1 {
-    /* background: url(https://media.zid.store/ad93dde1-a5ca-4d89-81f4-ee07aa0236a7/05913729-b4fd-47c3-aa74-1ee59c9ed8f3.png); */
+    /* background: var(--logo); */
     /* background-size: contain; */
     /* background-repeat: no-repeat; */
     /* background-position: center; */
@@ -779,7 +773,7 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
     font-family: inherit;
     font-size: 15px;
     line-height: 2;
-    color: #1c73b9;
+    color: var(--1);
     position: relative;
     right: -15px;
 }
@@ -801,7 +795,7 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
 }
 
 .btn-add-to-cart {
-    background-color: #1c73b9;
+    background-color: var(--1);
 }
 
 .slick-slide img {
@@ -830,7 +824,7 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
     background-image: url(https://media.zid.store/e372fb81-9e10-4c34-b41d-8cf0cb5a8acc/f0bdf9ac-d0cc-4e97-9a8a-aa5f563f4633.png);
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #2a7bbf;
+    background-color: var(--2);
 }
 
 @media (max-width: 767px) {
@@ -849,7 +843,7 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
     white-space: pre;
     font-size: 1rem;
     font-weight: 700;
-    color: #2a7bbf!important;
+    color: var(--1)!important;
     white-space: pre-wrap;
 }
 
@@ -863,4 +857,18 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
 
 .feature:nth-child(3) .theme-text-for-primary-bg:after {
     content: "\a    تغطية كاملة لجميع مناطق المملكة    "
+}.language-btn, .currency-btn,.header-theme-icon-primary,.account-lang-currency .account-btn  {
+    color:var(--1);
+}
+:root {
+    --header-primary-color: #fffffd;
+    --menu-header-primary-color: #448bc9;
+    --header-primary-brightness: brightness(100%);
+    --menu-header-text-color-primary-bg: #ffffff;
+    --header-text-color-primary-bg: #448bc9;
+    --footer-primary-color: #448bc9;
+    --footer-text-color-primary-bg: #ffffff;
+    --1:#2882b6;
+    --2:#606060;
+    --logo:url(https://media.zid.store/ad93dde1-a5ca-4d89-81f4-ee07aa0236a7/9dc8670f-eaa4-48a5-812f-04f581b747d0-200x.png);
 }
