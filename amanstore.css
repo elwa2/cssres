@@ -159,7 +159,6 @@ header .dark {
     background-size: 400%400%!important;
     animation: gradient 5s ease infinite!important;
 }
- 
 
 .account-lang-currency {
     border-bottom: 0px solid #fefefe;
@@ -178,8 +177,8 @@ header .dark {
     border-right: 1px solid var(--1);
 }
 
-.language-btn, .currency-btn,.header-theme-icon-primary  {
-    color:var(--1);
+.language-btn, .currency-btn,.header-theme-icon-primary {
+    color: var(--1);
 }
 
 .icon-language_white:before {
@@ -351,10 +350,7 @@ span.text-center.footer-copyrights a {
 
 .footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg {
     background: var(--2);
-    
 }
-
-
 
 .testimonials-customer-card {
     border-top-right-radius: 20px;
@@ -417,7 +413,7 @@ button.more-button, a.more-button {
     background: var(--logo);
     padding: 0;
     width: 100% !important;
-    background-size: contain;
+    background-size: 51%;
     background-repeat: no-repeat;
     background-position: center;
     /* transform: scale(1.2); */
@@ -752,11 +748,12 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
         border-bottom: 0;
         display: block;
         content: '';
-        width: 20rem;
-        margin: 6px auto 8px;
-        height: 149px;
+        width: 14rem;
+        margin: 26px auto 0px;
+        height: 99px;
         background: transparent var(--logo) center 1rem/ 50% no-repeat;
         background-size: contain;
+        filter: invert(1) brightness(12.5);
     }
 }
 
@@ -826,11 +823,17 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
     background-repeat: no-repeat;
     background-color: var(--2);
 }
+.language-btn, .currency-btn,.header-theme-icon-primary,.account-lang-currency .account-btn {
+    color: var(--1);
+}
 
 @media (max-width: 767px) {
     .testimonials-customer-text {
         height: 131px;
-    }
+    }.language-btn, .currency-btn,.header-theme-icon-primary,.account-lang-currency .account-btn {
+    color: #fff;
+}
+
 }
 
 .cart-header-total {
@@ -857,9 +860,14 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
 
 .feature:nth-child(3) .theme-text-for-primary-bg:after {
     content: "\a    تغطية كاملة لجميع مناطق المملكة    "
-}.language-btn, .currency-btn,.header-theme-icon-primary,.account-lang-currency .account-btn  {
-    color:var(--1);
 }
+
+
+
+
+
+
+
 :root {
     --header-primary-color: #fffffd;
     --menu-header-primary-color: #448bc9;
@@ -868,11 +876,16 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
     --header-text-color-primary-bg: #448bc9;
     --footer-primary-color: #448bc9;
     --footer-text-color-primary-bg: #ffffff;
-    --1:#2882b6;
-    --2:#606060;
-    --logo:url(https://media.zid.store/ad93dde1-a5ca-4d89-81f4-ee07aa0236a7/9dc8670f-eaa4-48a5-812f-04f581b747d0-200x.png);
+    --1: #2882b6;
+    --2: #606060;
+    --logo: url(https://media.zid.store/ad93dde1-a5ca-4d89-81f4-ee07aa0236a7/9dc8670f-eaa4-48a5-812f-04f581b747d0-200x.png);
 }
 
 a.d-flex.flex-column.justify-content-start {
     background-color: transparent !important;
+}
+
+.menu-header-theme-bg-primary {
+    background-color: var(--2);
+    filter: var(--header-primary-brightness);
 }
