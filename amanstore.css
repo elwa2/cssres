@@ -872,3 +872,7 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
     --2:#606060;
     --logo:url(https://media.zid.store/ad93dde1-a5ca-4d89-81f4-ee07aa0236a7/9dc8670f-eaa4-48a5-812f-04f581b747d0-200x.png);
 }
+
+a.d-flex.flex-column.justify-content-start {
+    background-color: transparent !important;
+}
