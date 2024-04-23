@@ -823,6 +823,7 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
     background-repeat: no-repeat;
     background-color: var(--2);
 }
+
 .language-btn, .currency-btn,.header-theme-icon-primary,.account-lang-currency .account-btn {
     color: var(--1);
 }
@@ -830,10 +831,11 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
 @media (max-width: 767px) {
     .testimonials-customer-text {
         height: 131px;
-    }.language-btn, .currency-btn,.header-theme-icon-primary,.account-lang-currency .account-btn {
-    color: #fff;
-}
+    }
 
+    .language-btn, .currency-btn,.header-theme-icon-primary,.account-lang-currency .account-btn {
+        color: #fff;
+    }
 }
 
 .cart-header-total {
@@ -862,12 +864,6 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
     content: "\a    تغطية كاملة لجميع مناطق المملكة    "
 }
 
-
-
-
-
-
-
 :root {
     --header-primary-color: #fffffd;
     --menu-header-primary-color: #448bc9;
@@ -877,7 +873,7 @@ div:not(.g)>a.btn.btn-primary.btn-product-card-select-variant {
     --footer-primary-color: #448bc9;
     --footer-text-color-primary-bg: #ffffff;
     --1: #2882b6;
-    --2: #606060;
+    --2: #858585;
     --logo: url(https://media.zid.store/ad93dde1-a5ca-4d89-81f4-ee07aa0236a7/9dc8670f-eaa4-48a5-812f-04f581b747d0-200x.png);
 }
 
