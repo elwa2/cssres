@@ -1862,12 +1862,12 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
 
 @keyframes slide {
     0% {
-        transform: translateX(-500%);
+        transform: translateX(-100%);
         /* بداية الحركة من اليسار خارج الشاشة */
     }
 
     100% {
-        transform: translateX(500%);
+        transform: translateX(50%);
         /* نهاية الحركة إلى اليمين خارج الشاشة */
     }
 }
