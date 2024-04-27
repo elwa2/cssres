@@ -1,6 +1,11 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
-.slide-menu ul,.menu-header-theme-bg-primary {
-    background: var(--1)
+.slide-menu ul,.slide-menu__slider {
+    background: transparent;
+}
+
+.menu-header-theme-bg-primary {
+    background: var(--1);
+    background: var(--gr)
 }
 
 .slide-menu ul a {
@@ -351,12 +356,11 @@ footer {
 .footer-theme-bg-primary {
     border-radius: 20px;
     background: #F7F7F7 var(--logo)no-repeat top 1rem center;
-     background-size: 16rem;
+    background-size: 16rem;
     padding-top: 8.5rem;
     text-align: center;
     margin: 0 18px;
     box-shadow: 0 1px 5px 0 rgba(0,0,0,.3)!important;
-   
 }
 
 .store-section h1 {
