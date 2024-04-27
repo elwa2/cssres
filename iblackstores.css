@@ -1,1 +1,13 @@
 
+.s-block--tabs-produtcs .tab-trigger.is-active button {
+    background-color: #6b3e98;
+     color: #fff;
+   
+}
+
+
+.s-button-primary-outline:hover {
+    background-color: #08a981;
+     fill: #fff;
+     color: #fff;
+ }
