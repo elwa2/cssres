@@ -1,13 +1,4 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
-.slide-menu ul,.slide-menu__slider {
-    background: transparent;
-}
-
-.menu-header-theme-bg-primary {
-    background: var(--1);
-    background: var(--gr)
-}
-
 .slide-menu ul a {
     background-color: var(--1)!important;
     color: #fff;
@@ -16,6 +7,10 @@
     padding: 12px 17px;
     margin: 2px 6px;
     font-weight: 700
+}
+
+.menu-header-theme-bg-primary {
+    background: var(--fff);
 }
 
 .slide-menu__slider>ul>li:nth-child(2) a {
@@ -58,6 +53,15 @@ li.slide-menu-ul-li:nth-child(11) {
 
     .slide-menu-static .container.d-flex.flex-wrap {
         justify-content: center
+    }
+
+    .slide-menu ul,.slide-menu__slider {
+        background: transparent;
+    }
+
+    .menu-header-theme-bg-primary {
+        background: var(--1);
+        background: var(--gr)
     }
 }
 
