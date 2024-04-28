@@ -543,10 +543,11 @@ header.d-flex.flex-column {
     backdrop-filter: blur(10px);
 }
 
-.menu-header-theme-text-for-primary-bg {
+body[data-template="home"] .menu-header-theme-text-for-primary-bg {
     color: #ffffff;
 }
 
+ 
 
 :root {
     --1: #2d2d2d;
@@ -572,6 +573,3 @@ header.d-flex.flex-column {
 }
 
 
-video {
-    /* height: 56vw; */
-}
