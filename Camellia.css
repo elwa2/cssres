@@ -485,7 +485,7 @@ section.ss .container.container-slider {
     max-height: initial
 }
 
-.account-area *,.language-currency,.language-currency *,.icon-language_white:before {
+body[data-template="home"] .account-area *,body[data-template="home"] .language-currency,body[data-template="home"] .language-currency *,body[data-template="home"] .icon-language_white:before {
     color: #fff!important;
     border-color: transparent!important
 }
@@ -573,3 +573,4 @@ body[data-template="home"] .menu-header-theme-text-for-primary-bg {
 }
 
 
+ 
