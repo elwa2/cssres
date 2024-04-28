@@ -289,9 +289,9 @@ select#product-quantity {
     border-radius: 25px;
     padding: 3px;
     margin: auto;
-    width: 35%;
+    /* width: 35%; */
     margin-bottom: 8px;
-    text-align: center
+    text-align: center;
 }
 
 .description-icon {
@@ -547,7 +547,12 @@ body[data-template="home"] .menu-header-theme-text-for-primary-bg {
     color: #ffffff;
 }
 
- 
+  
+.form-notify-me {
+    border: 1px solid var(--1-h);
+}
+   
+
 
 :root {
     --1: #2d2d2d;
@@ -573,4 +578,3 @@ body[data-template="home"] .menu-header-theme-text-for-primary-bg {
 }
 
 
- 
