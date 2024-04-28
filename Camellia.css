@@ -451,6 +451,101 @@ span.text-center.footer-copyrights a {
 .breadcrumb {
     background-color: var(--1-h);
 }
+.home>.section-padding-space:first-child {
+    margin: 0 !important;
+    width: 100%;
+    max-width: 100%;
+    padding: 0 !important;
+}
+
+.account-lang-currency.upper-bar {
+    border: 0;
+    padding-bottom: 0
+}
+
+.search-header.header-theme-bg-primary,.account-lang-currency.upper-bar {
+    background: 0 0
+}
+
+.rtl .search-input-input {
+    border-radius: 10px;
+    box-shadow: 0 6px 10px -6px transparent;
+    border: 0;
+    border-bottom: 3px solid 00;
+    background: transparent
+}
+
+section.ss .container.container-slider {
+    max-width: 100%!important;
+    padding: 0
+}
+
+.main-slider.slider.s-slider.slick-initialized.slick-slider {
+    max-height: initial
+}
+
+.account-area *,.language-currency,.language-currency *,.icon-language_white:before {
+    color: #fff!important;
+    border-color: transparent!important
+}
+
+header {
+    background: 0 0;
+    position: relative;
+    z-index: 20
+}
+
+.main-slider.slider.s-slider.slick-initialized.slick-slider .box-1-1.ratio21_9:before {
+    padding-top: 55.85%
+}
+
+.home>.section-padding-space:first-child {
+    margin-top: -155px !important;
+    position: relative ;
+    z-index: 10
+}
+
+.search-header.header-theme-bg-primary *,.account-lang-currency.upper-bar * {
+    /* color: #fff!important; */
+}
+
+.align-items-center.search-header-bar {
+    height: 30px
+}
+
+ul.main-nav>li {
+    margin-bottom: 10px
+}
+
+@media(max-width: 600px) {
+    .home>.section-padding-space:first-child {
+        margin-top: -50px !important;
+    }
+
+    .search-header .image-logo {
+        max-height: 35px!important;
+        padding-top: 3px
+    }
+
+    div#fixed-header {
+        padding: 10px
+    }
+
+    div#fixed-header.sticky {
+        padding: 10px 5px;
+        background: #ffffff;
+    }
+}
+
+header.d-flex.flex-column {
+    background: #ffffff21;
+    backdrop-filter: blur(10px);
+}
+
+.menu-header-theme-text-for-primary-bg {
+    color: #ffffff;
+}
+
 
 :root {
     --1: #2d2d2d;
