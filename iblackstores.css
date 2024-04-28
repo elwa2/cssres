@@ -9,7 +9,7 @@
     color: #fff;
 }
 
-footer > .col-span-12.sm\:col-span-6.lg\:col-span-3:has(a[href="https://iblackstores.com/whatsapp/send"]):after {
+footer .col-span-12.sm\:col-span-6.lg\:col-span-3:has(a[href="https://iblackstores.com/whatsapp/send"]):after {
     background: url(https://cdn.salla.sa/form-builder/QZfG9HyXCwK5Lgh6t6tzT2XfBegWe85S0wXanwAi.png);
     content: '';
     width: 50%;
