@@ -564,7 +564,39 @@ input.form-control.search-input-input::placeholder, input.form-control.search-in
     color: #fff;
 }
 
+body[data-template="home"]:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--ff) var(--logo);
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999999 !important;
+    background-size: 250px !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+    animation-name: logobg;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
 
+@keyframes logobg {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden
+    }
+}
 :root {
     --1: #2d2d2d;
     --1-h: #cdcdcd9e;
