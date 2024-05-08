@@ -1,0 +1,63 @@
+@media (max-width: 750px) {
+    section[section-id="6862d57f-fd34-4360-9dfc-fc8cf5af0cdd"] .slick-track {
+        display: grid;
+        grid-template-columns: repeat(2,minmax(0,1fr));
+        grid-row-gap: 1px;
+        width: 100% !important;
+        transform: translate3d(0px, 0px, 0px) !important;
+        justify-items: center;
+    }
+
+    section[section-id="6862d57f-fd34-4360-9dfc-fc8cf5af0cdd"] .slick-track:before, .slick-track:after {
+        display: none;
+    }
+
+    section[section-id="6862d57f-fd34-4360-9dfc-fc8cf5af0cdd"] .slick-track:before, .slick-track:after {
+        display: none;
+    }
+
+    section[section-id="6862d57f-fd34-4360-9dfc-fc8cf5af0cdd"] .slick-slide.slick-cloned {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+.popular-categories .carausel-8-columns-2-rows a.card-4 img {
+    height: 120px !important;
+    width: 126px !important
+}
+.hero-slider-1 img {
+    max-height: 715px;
+}
+@media(max-width: 600px) {
+    .popular-categories .carausel-8-columns-2-rows a.card-4 img {
+        height: 65px !important;
+        width: 93px !important
+    }
+
+    section.home-slider.style-2.position-relative.mb-50.lazyloaded {
+        margin-bottom: -10px !important;
+    }
+    .product-detail.accordion-detail.fancybox_content_wrapper .product-info table {
+    width: 100% !important;
+}
+}
+@media only screen and (max-width: 768px) {
+    .home-slider.style-1 .hero-slider-1.style-4 .single-hero-slider .hero-slider-content-wrapper {
+        padding-top: 42% !important;
+    }
+}
+@media only screen and (min-width: 768px) {
+    section.home-slider.style-1.position-relative.mb-30.lazyloaded .hero-slider-1 .single-hero-slider {
+        height: 623px !important;
+    }
+}
+ 
+pre ul {
+    padding-right: 30px;
+}
