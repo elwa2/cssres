@@ -1151,9 +1151,19 @@ footer.d-flex>div:nth-child(2)>div:nth-child(1) {
     background: transparent;
 }
 
-
 .tamara-product-widget,div[class*="tabby"] {
-    background: #fff !important; color: var(--1)!important;
+    background: #fff !important;
+    color: var(--1)!important;
 }
 
- 
+select#product-quantity {
+    color: #fff;
+}
+
+.select-quantity-div>div.form-group>div:after {
+    color: #fff;
+}
+
+select#product-quantity option {
+    color: #010101;
+}
