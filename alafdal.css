@@ -111,11 +111,11 @@ img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/ea8342f1-96dc-4408-926c-0d630d147d3b.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/592ea90d-3788-48f4-80e8-37e59e4688e3.jpg"] {
+img[src*=""] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/480b010d-c235-4d5b-bd35-d7966120bde3.png);
 }
 
-img[src*=""] {
+img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/592ea90d-3788-48f4-80e8-37e59e4688e3.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/0f00c212-dc8b-4727-aef6-a1c63af0b114.png);
 }
 
