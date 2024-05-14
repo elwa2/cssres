@@ -7,7 +7,6 @@
 .slick-list.draggable {
   margin: 6px 0px;
 }*/
-
 .home-products-section.section-padding-space[section-id="87313f8f-58e5-413d-9d5d-ad6e87c7ecc3"]:before {
     content: '';
     background: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/dbb20f5a-6183-48fb-9655-1ada8d3cba9b.svg);
@@ -15,10 +14,12 @@
     background-position-x: 0;
     animation: scrollBrands 500s linear alternate both infinite;
     background-size: contain;
+    background-size: 71%;
     height: 50px;
     /* width: 32rem; */
     display: block;
     background-color: #222;
+    background-position: center;
 }
 
 @keyframes scrollBrands {
@@ -35,4 +36,10 @@
     }
 }
 
- 
+@media (max-width: 767px) {
+    .home-products-section.section-padding-space[section-id="87313f8f-58e5-413d-9d5d-ad6e87c7ecc3"]:before {
+        background-size: 253%;
+        height: 40px;
+        background-position: center;
+    }
+}
