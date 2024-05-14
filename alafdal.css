@@ -51,7 +51,7 @@
         gap: 10px;
         transform: none !important;
         position: static !important;
-        width: 100% !important;
+        width: 100% !important;    justify-items: start;
     }
 
     .home-categories-section.section-padding-space[section-id="a767ef2c-b658-4f65-b4cb-ebb316277130"] div:before {
