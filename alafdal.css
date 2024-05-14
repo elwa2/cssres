@@ -68,9 +68,7 @@
      
 } */
 @media (min-width: 767px) {
-    .categories-slider .category-item a h3 {
-        display: none;
-    }
+  
 
     .category-page-slider .products-slider .prod-col, .categories-slider .cat-col {
         padding: 0;
@@ -86,8 +84,10 @@
         box-shadow: 0 4px 20px 0 rgba(65, 64, 66, .12);
     }
 }
-
-@media (min-width: 767px) {
+  .categories-slider .category-item a h3 {
+        display: none;
+    }
+ 
     img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/d9cd3a69-657b-4111-895d-da7ff9bb75dd.jpg"] {
         content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/bcf42991-9ebd-469d-9c3f-a5eb4fb76088.png);
     }
@@ -139,4 +139,4 @@
     img[src*=""] {
         content: url();
     }
-}
+ 
