@@ -43,3 +43,22 @@
         background-position: center;
     }
 }
+
+@media (min-width: 767px) {
+    .home-categories-section.section-padding-space[section-id="a767ef2c-b658-4f65-b4cb-ebb316277130"] .slick-track {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        transform: none !important;
+        position: static !important;
+        width: 100% !important;
+    }
+
+    .home-categories-section.section-padding-space[section-id="a767ef2c-b658-4f65-b4cb-ebb316277130"] div:before {
+        display: none;
+    }
+
+    .home-categories-section.section-padding-space[section-id="a767ef2c-b658-4f65-b4cb-ebb316277130"] span.icon-keyboard_arrow_right, .home-categories-section.section-padding-space[section-id="a767ef2c-b658-4f65-b4cb-ebb316277130"] span.icon-keyboard_arrow_left {
+        display: none;
+    }
+}
