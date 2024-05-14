@@ -62,3 +62,81 @@
         display: none;
     }
 }
+
+/* .categories-slider .category-item a img {
+    content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/bcf42991-9ebd-469d-9c3f-a5eb4fb76088.png);
+     
+} */
+@media (min-width: 767px) {
+    .categories-slider .category-item a h3 {
+        display: none;
+    }
+
+    .category-page-slider .products-slider .prod-col, .categories-slider .cat-col {
+        padding: 0;
+    }
+
+    .categories-slider .category-item {
+        width: 100%;
+        max-width: unset;
+    }
+
+    .categories-slider .category-item a img:hover {
+        border: 1px solid #036fa4;
+        box-shadow: 0 4px 20px 0 rgba(65, 64, 66, .12);
+    }
+}
+
+@media (min-width: 767px) {
+    img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/d9cd3a69-657b-4111-895d-da7ff9bb75dd.jpg"] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/bcf42991-9ebd-469d-9c3f-a5eb4fb76088.png);
+    }
+
+    img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/2bf9f46c-bee1-47e7-839b-bf4c680e0c3f.jpg"] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/5ef0b403-2f8f-417b-84de-40fc1452e850.png);
+    }
+
+    img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/0965a1bb-0536-4562-9a25-cb13502b6683.jpg"] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/59a59f21-88dd-40ce-82dc-c944fe045792.png);
+    }
+
+    img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/847d4404-062d-4cdf-aa73-273621292290.jpg"] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/70d9cd27-3e2d-4ceb-b3d9-b5c178565850.png);
+    }
+
+    img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/92a909fd-393c-41d2-8d0f-4877cf65fa9d.jpg"] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/af85539f-78e7-4964-a952-d487317ea9e2.png);
+    }
+
+    img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/099db46e-5565-4f3a-8dde-1f91289c0334.jpg"] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/ea8342f1-96dc-4408-926c-0d630d147d3b.png);
+    }
+
+    img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/592ea90d-3788-48f4-80e8-37e59e4688e3.jpg"] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/480b010d-c235-4d5b-bd35-d7966120bde3.png);
+    }
+
+    img[src*=""] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/0f00c212-dc8b-4727-aef6-a1c63af0b114.png);
+    }
+
+    img[src*=""] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/d479b68b-8096-4498-b836-0493e6b012d6.png);
+    }
+
+    img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/f211d332-84d6-4d2b-b1b1-c7a2a2885e90.jpg"] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/95a71faa-a43c-4e30-b65f-85c83ff0c380.png);
+    }
+
+    img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/217af13e-c8e3-46ac-8a7b-41aea61a138b.jpg"] {
+        content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/4fb37fcf-8ac5-471e-9ec3-33a3c7cbe95d.png);
+    }
+
+    img[src*=""] {
+        content: url();
+    }
+
+    img[src*=""] {
+        content: url();
+    }
+}
