@@ -14,7 +14,7 @@
     background-position-x: 0;
     animation: scrollBrands 500s linear alternate both infinite;
     background-size: contain;
-    background-size: 71%;
+    background-size: cover;
     height: 50px;
     /* width: 32rem; */
     display: block;
@@ -28,7 +28,7 @@
     }
 
     50% {
-        background-position-x: 10000px;
+        background-position-x: 50000px;
     }
 
     100% {
