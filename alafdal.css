@@ -132,6 +132,30 @@ img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media
 }
 
 img[src*=""] {
+    content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/fb14f363-2067-4f11-a55a-eb896941533b.png);
+}
+
+img[src*=""] {
+    content: url();
+}
+
+img[src*=""] {
+    content: url();
+}
+
+img[src*=""] {
+    content: url();
+}
+
+img[src*=""] {
+    content: url();
+}
+
+img[src*=""] {
+    content: url();
+}
+
+img[src*=""] {
     content: url();
 }
 
