@@ -84,7 +84,7 @@
     }
 }
 
-.products-slider .prod-col, .categories-slider .cat-col {
+.products-slider .prod-col{
     padding-left: 3px;
     padding-right: 3px;
     width: auto;
