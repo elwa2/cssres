@@ -90,23 +90,23 @@
     display: none;
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/d9cd3a69-657b-4111-895d-da7ff9bb75dd.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/d9cd3a69-657b-4111-895d-da7ff9bb75dd.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/bcf42991-9ebd-469d-9c3f-a5eb4fb76088.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/2bf9f46c-bee1-47e7-839b-bf4c680e0c3f.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/2bf9f46c-bee1-47e7-839b-bf4c680e0c3f.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/5ef0b403-2f8f-417b-84de-40fc1452e850.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/0965a1bb-0536-4562-9a25-cb13502b6683.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/0965a1bb-0536-4562-9a25-cb13502b6683.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/59a59f21-88dd-40ce-82dc-c944fe045792.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/847d4404-062d-4cdf-aa73-273621292290.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/847d4404-062d-4cdf-aa73-273621292290.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/70d9cd27-3e2d-4ceb-b3d9-b5c178565850.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/92a909fd-393c-41d2-8d0f-4877cf65fa9d.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/92a909fd-393c-41d2-8d0f-4877cf65fa9d.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/af85539f-78e7-4964-a952-d487317ea9e2.png);
 }
 
@@ -114,51 +114,51 @@ img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/ea8342f1-96dc-4408-926c-0d630d147d3b.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/91f486e3-ad41-40eb-b011-842304644505.png"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/91f486e3-ad41-40eb-b011-842304644505.png"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/480b010d-c235-4d5b-bd35-d7966120bde3.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/592ea90d-3788-48f4-80e8-37e59e4688e3.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/592ea90d-3788-48f4-80e8-37e59e4688e3.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/0f00c212-dc8b-4727-aef6-a1c63af0b114.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/8b9c92e5-fc9d-4727-b011-f9f8ccadee00.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/8b9c92e5-fc9d-4727-b011-f9f8ccadee00.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/d479b68b-8096-4498-b836-0493e6b012d6.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/f211d332-84d6-4d2b-b1b1-c7a2a2885e90.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/f211d332-84d6-4d2b-b1b1-c7a2a2885e90.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/95a71faa-a43c-4e30-b65f-85c83ff0c380.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/217af13e-c8e3-46ac-8a7b-41aea61a138b.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/217af13e-c8e3-46ac-8a7b-41aea61a138b.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/4fb37fcf-8ac5-471e-9ec3-33a3c7cbe95d.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/0a01edf5-0e1c-440c-bbf1-7db4c77a79eb.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/0a01edf5-0e1c-440c-bbf1-7db4c77a79eb.jpg"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/fb14f363-2067-4f11-a55a-eb896941533b.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/e1d7b8a3-fd93-4a13-b2c6-6cf8b453c437.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/e1d7b8a3-fd93-4a13-b2c6-6cf8b453c437.jpg"] {
     content: url(https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/91f486e3-ad41-40eb-b011-842304644505.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/ed8d627c-bd91-479b-81c5-b9d3adba54a2.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/ed8d627c-bd91-479b-81c5-b9d3adba54a2.jpg"] {
     content: url(https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/a2eafeca-ec79-4362-b860-0e4473afe255.png);
 }
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/05e2b8a5-0ec1-4c5c-8291-a29c62ea9938.jpg"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/05e2b8a5-0ec1-4c5c-8291-a29c62ea9938.jpg"] {
     content: url(https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/667df9a6-5538-4d98-a511-e44a399108f3.png);
 }
  
 
-img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/fe2a707b-3e80-41b9-b5e4-b0f912b972b8.png"] {
+div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/fe2a707b-3e80-41b9-b5e4-b0f912b972b8.png"] {
     content: url(https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/848608f5-6f2a-448c-857d-dc72055528e8.png);
 }
 
-img[src*=""] {
+div.main > div > div:nth-of-type(2) img[src*=""] {
     content: url();
 }
 
-img[src*=""] {
+div.main > div > div:nth-of-type(2) img[src*=""] {
     content: url();
 }
