@@ -179,7 +179,7 @@ div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/im
 #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
     background: var(--logo);
     padding: 0;
-    width: 59px!important;
+    width: 105px!important;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -192,12 +192,11 @@ div.main > div > div:nth-of-type(2) img[src*="https://media.zid.store/cdn-cgi/im
 }
 
 @media (max-width: 991px) {
-    #fixed-header:not(.sticky) .header-logo a[href="/"] {
-        /* margin-right: auto!important; */ /* padding: 8px 0 10px 15px!important; */
-    }
-
-    #fixed-header.sticky .header-logo a[href="/"] {
+    #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
         background-size: contain;
+        /* margin-right: auto!important; */
+        /* padding: 8px 0 10px 15px!important; */
+        width: 58px !important;
     }
 }
 
