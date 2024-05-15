@@ -73,7 +73,7 @@
         padding: 0;
     }
 
-    .categories-slider .category-item {
+    div.main > div > div:nth-of-type(2)  .categories-slider .category-item {
         width: 100%;
         max-width: unset;
     }
