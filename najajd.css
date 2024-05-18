@@ -589,8 +589,21 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
     background-color: #7d7d7db3;
     -webkit-border-radius: 0px;
 }
+
 a.d-flex.flex-column.justify-content-start,a.d-flex.flex-column.justify-content-start img {
     background: transparent !important;
+}
+
+.form-control {
+    width: 100%;
+    color: #ffffff;
+    background-color: var(--1-1-h);
+    border: 1px solid var(--1-1);
+    border-radius: 2.25rem;
+}
+
+input.form-control.search-input-input::placeholder, input.form-control.search-input-input::-webkit-input-placeholder {
+    color: var(--2);
 }
 
 :root {
@@ -623,7 +636,3 @@ a.d-flex.flex-column.justify-content-start,a.d-flex.flex-column.justify-content-
     --con2: "\a        تقدم مجوهرات نجد توصيل مجاني لجميع مناطق المملكة  ";
     --con3: "\a     دعم فني على مدار 24 ساعة لخدمة عملائنا على أكمل وجه  ";
 }
-
-
-
- 
