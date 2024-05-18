@@ -168,21 +168,22 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 }
 
 .feature:nth-child(1) .features-section-img {
-    background: var(--1)
+    /* background: var(--1) */
 }
 
 .feature:nth-child(2) .features-section-img {
-    background: #c6bdb2
+    /* background: var(--1) */
 }
 
 .feature:nth-child(3) .features-section-img {
-    background: var(--1)
+    /* filter: invert(0%) sepia(100%) saturate(1%) hue-rotate(346deg) brightness(100%) contrast(100%); */
+    filter: invert(0%)sepia(0%)saturate(2900%)hue-rotate( 111deg )brightness(100%)contrast(100%);
 }
 
 .features-section-img {
-    box-shadow: 1px 3px 3px 1px #f1f1f1;
+    /* box-shadow: 1px 3px 3px 1px #f1f1f1; */
     border-radius: 100%;
-    padding: 10px
+    padding: 10px;
 }
 
 .footer::before {
@@ -473,17 +474,15 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
     border: 0;
     box-shadow: none
 }
+
 .icon-account_circle_black_24dp:before {
     content: "\f007 ";
     color: var(--1)
 }
 
-
-
-
 .features-section {
     background: transparent;
- }
+}
 
 .main .features-section {
     padding-top: 0px;
@@ -514,7 +513,6 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
 .main .features-section {
     margin: 34px auto;
 }
- 
 
 .features-section-img {
     margin-bottom: 0;
@@ -538,7 +536,7 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
         transform: translatey(0px)
     }
 }
- 
+
 .feature .theme-text-for-primary-bg {
     text-align: center;
     font-weight: 700;
@@ -555,16 +553,42 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
 }
 
 .feature:first-child .theme-text-for-primary-bg:after {
-    content:var(--con1)
+    content: var(--con1)
 }
 
 .feature:nth-child(2) .theme-text-for-primary-bg:after {
- content:var(--con2)}
+    content: var(--con2)
+}
 
 .feature:nth-child(3) .theme-text-for-primary-bg:after {
- content:var(--con3)}
- 
+    content: var(--con3)
+}
 
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #00000033;
+    -webkit-border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    height: 200px;
+    background-color: var(--1);
+    -webkit-border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+    background-color: var(--1);
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    width: 200px;
+    background-color: #7d7d7db3;
+    -webkit-border-radius: 0px;
+}
 
 :root {
     --1: #513a4a;
@@ -591,14 +615,8 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
     --cart: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 67.14 84.59'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23da9028; %7D %3C/style%3E%3C/defs%3E%3Cg id='Layer_2' data-name='Layer 2'%3E%3Cg id='Layer_1-2' data-name='Layer 1-2'%3E%3Cg id='Layer_2-2' data-name='Layer 2-2'%3E%3Cpath class='cls-1' d='m33.56,47.43c-8.07,0-15.02-5.68-16.61-13.59-.21-1.56.9-3,2.46-3.2,1.5-.2,2.9.81,3.18,2.3,1.28,6.1,7.26,10,13.35,8.73,4.38-.92,7.81-4.34,8.73-8.73.25-1.56,1.71-2.62,3.27-2.37s2.62,1.71,2.37,3.27c-1.6,7.96-8.63,13.67-16.75,13.59Z'/%3E%3Cpath class='cls-1' d='m58.66,84.59H8.47C3.8,84.6,0,80.81,0,76.14h0c0-.14,0-.29.01-.43L2.29,27.1c.2-4.53,3.93-8.1,8.46-8.09h45.63c4.53,0,8.26,3.56,8.46,8.09l2.29,48.61c.23,4.67-3.36,8.64-8.03,8.87h0c-.15,0-.3.01-.44.01ZM10.75,24.67c-1.56,0-2.82,1.26-2.82,2.82l-2.29,48.5c-.08,1.56,1.12,2.88,2.67,2.96,0,0,0,0,.01,0h50.33c1.56,0,2.82-1.26,2.82-2.82v-.14l-2.29-48.61c0-1.56-1.26-2.82-2.82-2.82l-45.62.12Z'/%3E%3Cpath class='cls-1' d='m50.48,21.85h-5.64v-4.93c0-6.23-5.05-11.28-11.28-11.28s-11.28,5.05-11.28,11.28v4.93h-5.64v-4.93C16.65,7.57,24.22,0,33.56,0s16.92,7.57,16.92,16.92v4.93Z'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
-
-
 :root {
     --con1: "\a       يتم تحديث أسعار الذهب بشكل لحظي ودقيق تلقائياً ";
-    --con2:"\a        تقدم مجوهرات نجد توصيل مجاني لجميع مناطق المملكة  ";
-    --con3:"\a     دعم فني على مدار 24 ساعة لخدمة عملائنا على أكمل وجه  ";
-    
+    --con2: "\a        تقدم مجوهرات نجد توصيل مجاني لجميع مناطق المملكة  ";
+    --con3: "\a     دعم فني على مدار 24 ساعة لخدمة عملائنا على أكمل وجه  ";
 }
-
-
-
