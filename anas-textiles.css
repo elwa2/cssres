@@ -1305,6 +1305,10 @@ section:nth-of-type(1).s-block.s-block--photos-slider,section.s-block.s-block--f
     background: transparent;
 }
 
+section:nth-of-type(1) .s-slider-has-notitle .s-slider-block__title {
+    display: none;
+}
+
 .s-block--fixed-banner .container img {
     border-radius: 0;
     background: transparent;
