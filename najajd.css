@@ -479,7 +479,7 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
 
 .icon-account_circle_black_24dp:before {
     content: "\f007 ";
-    color: var(--1)
+    /* color: var(--1) */
 }
 
 .features-section {
