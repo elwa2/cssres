@@ -1332,3 +1332,65 @@ img.w-full.object-contain.rounded-md {
         padding: 0;
     }
 }
+.sicon-whatsapp2::after,a[href*="whatsapp"].s-contacts-item::after {
+     content:url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='Layer_1' data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 31.84 32'%3E%3Cdefs%3E%3Cstyle%3E .cls-1 %7B fill: %23fff; stroke-width: 0px; %7D %3C/style%3E%3C/defs%3E%3Cpath class='cls-1' d='M27.2,4.65C24.21,1.65,20.22,0,15.98,0,7.24,0,.13,7.11.13,15.86c0,2.79.73,5.53,2.12,7.93l-2.25,8.22,8.41-2.21c2.32,1.26,4.93,1.93,7.58,1.93h0c8.74,0,15.86-7.11,15.86-15.86,0-4.24-1.65-8.22-4.64-11.22h0ZM15.99,29.05h0c-2.37,0-4.69-.64-6.71-1.84l-.48-.29-4.99,1.31,1.33-4.86-.31-.5c-1.33-2.09-2.02-4.52-2.02-7.01,0-7.27,5.91-13.18,13.19-13.18,3.52,0,6.83,1.38,9.32,3.86,2.49,2.49,3.86,5.8,3.86,9.32,0,7.27-5.92,13.19-13.18,13.19ZM23.21,19.17c-.39-.2-2.34-1.16-2.71-1.29s-.62-.2-.89.2c-.26.39-1.02,1.29-1.26,1.56-.23.26-.46.3-.86.1s-1.68-.62-3.19-1.97c-1.18-1.05-1.98-2.35-2.21-2.74s-.02-.61.18-.81c.18-.18.39-.46.59-.69s.26-.39.39-.66c.13-.26.07-.49-.03-.69s-.89-2.15-1.22-2.94c-.32-.77-.65-.67-.89-.68-.23-.01-.49-.01-.76-.01s-.69.1-1.06.49c-.36.39-1.39,1.36-1.39,3.31s1.42,3.83,1.62,4.1c.2.26,2.79,4.27,6.77,5.98.94.41,1.68.65,2.26.84.95.3,1.81.26,2.49.16.76-.11,2.34-.96,2.67-1.88s.33-1.72.23-1.88c-.09-.17-.36-.27-.76-.48h0Z'/%3E%3C/svg%3E");
+     text-align: center;
+     cursor: pointer;
+     background: #46a51e;
+     z-index: 999;
+     display: flex;    display: block;
+     justify-content: center;
+     align-items: center;
+     font-size: 0px;
+     color: #fff;
+     box-shadow: #00000022 1.5px 1.5px 5px;
+     width: 58px;
+     height: 58px;
+     border-radius: 27.5px;
+     position: fixed;
+     bottom: 19px;
+     right: 17px;
+     transform: rotate(360);
+     transition: all .2s ease-in-out;
+}
+
+body[style] a[href*="whatsapp"].s-contacts-item::after, body[cz-shortcut-listen="true"] a[href*="whatsapp"].s-contacts-item::after, a[href*="whatsapp"].s-contacts-item::after,
+body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-whatsapp2::after,i.sicon-whatsapp2::after{
+    width: 56px;
+    height: 56px;
+    border-radius: 32.5px;
+    font-size: 32px;
+    box-shadow: #0000006b 2px 2px 8px;
+}
+
+.sicon-whatsapp2:after:hover,a[href*="whatsapp"].s-contacts-item:after:hover {
+    border-radius: 0;
+    border: 0;
+    width: 180px;
+    height: 60px;
+}
+
+.sicon-whatsapp2:hover::after,a[href*="whatsapp"].s-contacts-item:hover::after {
+    content: "حاب نساعدك 😃؟ ";
+    content: "     في خدمتك ؟ ";
+    font-family: var(--font-main)!important;
+    width: 260px !important;
+    animation: trns 1s;
+    font-size: 20px !important;
+    color: #ffffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes trns {
+    0% {
+        color: #ffffff00;
+    }
+
+    100% {
+        color: #ffffff99;
+    }
+}
+
+ 
