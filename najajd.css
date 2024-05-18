@@ -589,6 +589,9 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
     background-color: #7d7d7db3;
     -webkit-border-radius: 0px;
 }
+a.d-flex.flex-column.justify-content-start,a.d-flex.flex-column.justify-content-start img {
+    background: transparent !important;
+}
 
 :root {
     --1: #513a4a;
@@ -620,3 +623,7 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
     --con2: "\a        تقدم مجوهرات نجد توصيل مجاني لجميع مناطق المملكة  ";
     --con3: "\a     دعم فني على مدار 24 ساعة لخدمة عملائنا على أكمل وجه  ";
 }
+
+
+
+ 
