@@ -608,6 +608,10 @@ input.form-control.search-input-input::placeholder, input.form-control.search-in
     color: var(--2);
 }
 
+.product-crd-spec {
+    text-align: center;
+}
+
 :root {
     --1: #513a4a;
     --1-1: #45313f;
@@ -638,3 +642,4 @@ input.form-control.search-input-input::placeholder, input.form-control.search-in
     --con2: "\a        تقدم مجوهرات نجد توصيل مجاني لجميع مناطق المملكة  ";
     --con3: "\a     دعم فني على مدار 24 ساعة لخدمة عملائنا على أكمل وجه  ";
 }
+
