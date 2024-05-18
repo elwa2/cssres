@@ -1047,7 +1047,7 @@ body.index .swiper-wrapper.s-slider-swiper-wrapper {
     padding: 0 0 28px
 }
 
-body.index .s-slider-block__title {
+section:nth-of-type(n+2) .s-slider-block__title {
     display: flex;
     flex-direction: column;
     justify-content: center!important;
