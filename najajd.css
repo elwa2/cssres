@@ -177,7 +177,7 @@ a.btn.btn-primary.btn-product-card-out-of-stock {
 
 .feature:nth-child(3) .features-section-img {
     /* filter: invert(0%) sepia(100%) saturate(1%) hue-rotate(346deg) brightness(100%) contrast(100%); */
-    filter: invert(0%)sepia(0%)saturate(2900%)hue-rotate( 111deg )brightness(100%)contrast(100%);
+    filter: invert(0%)sepia(0%)saturate(100%)hue-rotate(201deg)brightness(100%)contrast(100%);
 }
 
 .features-section-img {
