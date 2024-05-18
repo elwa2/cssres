@@ -327,6 +327,8 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center g {
         /* margin-right: auto!important; */
         /* padding: 8px 0 10px 15px!important; */
         width: 101px !important;
+        position: relative;
+        right: -3rem;
     }
 }
 
