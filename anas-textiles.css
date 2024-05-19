@@ -1388,5 +1388,9 @@ body[style] .sicon-whatsapp2::after, body[cz-shortcut-listen="true"] .sicon-what
         color: #ffffff99;
     }
 }
-
+@media only screen and (max-width: 1024px) {
+    .mm-spn li img {
+       display: none;
+    }
+}
  
