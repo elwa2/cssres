@@ -367,7 +367,9 @@ section.ss .main-slider p {
 }
 
 .home-categories-section.section-padding-space .category-item img {
-    border-radius: 10px 10px 0 0
+    border-radius: 10px 10px 0 0;
+    box-shadow: var(--sh);
+    border-radius: 18px;
 }
 
 .home-categories-section.section-padding-space .category-item h3 {
@@ -1210,7 +1212,7 @@ button.more-button, a.more-button {
     #sliding-menu, #sliding-menu a, #sliding-menu span, #sliding-menu .d-flex button {
         color: var(--1);
         color: #fff;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     .icon-account_circle_black_24dp:before {
@@ -1278,8 +1280,8 @@ button.more-button, a.more-button {
 
     .slide-menu__slider>ul>li:nth-last-child(4) a:after {
         display: block;
-        font-family: "GESSTextMedium"!important;
-        content: "الدفع والتوصيل"
+        content: "الدفع والتوصيل";
+        font-size: 15px;
     }
 
     .slide-menu__slider>ul>li:nth-last-child(4) a:before {
