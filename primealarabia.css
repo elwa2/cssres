@@ -321,9 +321,7 @@ a {
     }
 }
 
-section.ss .main-slider {
-    max-height: unset
-}
+ 
 
 section.ss .main-slider h1 {
     color: #fff;
@@ -335,17 +333,7 @@ section.ss .main-slider p {
     font-family: sky
 }
 
-@media(min-width: 992px) {
-    .ss .container {
-        max-width:unset!important;
-        padding: 0
-    }
-
-    section.ss .main-slider {
-        max-height: unset;
-        margin-top: 0
-    }
-}
+ 
 
 .home-categories-section .section-title {
     margin: 10px auto;
@@ -446,9 +434,7 @@ button.more-button, a.more-button {
     padding-bottom: 5px
 }
 
-.home-products-section.section-padding-space {
-    background: #f1f1f1;
-}
+ 
 
 .home-products-section .section-title,section#product-description .d-flex.align-items-center {
     font-size: 2rem;
@@ -2742,3 +2728,6 @@ body[data-template="home"]:before {
 .account-lang-currency.upper-bar.header-theme-bg-primary.header-theme-text-for-primary-bg {
     padding: 0px 0!important;
 }
+
+
+section.ss {}
