@@ -2746,5 +2746,12 @@ body[data-template="home"]:before {
         margin-top: 0
     }
 
- 
+ [dir=rtl] .slick-next {
+    right: auto;
+    left: -62px;
+}
+[dir=rtl] .slick-prev {
+    right: -62px;
+    left: auto;
+}
 }
