@@ -167,6 +167,9 @@
 .home-categories-section.section-padding-space[section-id="a767ef2c-b658-4f65-b4cb-ebb316277130"] img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/fe2a707b-3e80-41b9-b5e4-b0f912b972b8.png"] {
     content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/60adf4d3-e7a4-4444-85b2-9f88be1adf2e.png);
 }
+.home-categories-section.section-padding-space[section-id="a767ef2c-b658-4f65-b4cb-ebb316277130"] img[src*="https://media.zid.store/cdn-cgi/image/w=400,q=100,f=auto/https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/56445172-a50c-4788-b775-b87a20cf9722.jpg"] {
+    content: url(https://media.zid.store/35cc7795-8826-46e9-854b-974334c4ac8f/986bf916-5208-4372-bc44-416732ff9344.png);
+}
 
 .product-item img {
     border-radius: 15px 15px 0 0;
