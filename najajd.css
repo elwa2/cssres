@@ -32,7 +32,7 @@ span.text-center.footer-copyrights {
 }
 
 ul.main-nav>li>a, .item-all-categories a {
-    color: var(--2-2);
+    color: var(--ff);
     font-weight: 700
 }
 
