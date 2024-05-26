@@ -83,7 +83,8 @@ ul.main-nav>li>a, .item-all-categories a {
 }
 
 .menu-header-theme-bg-primary {
-    background: linear-gradient(52deg,var(--1)0%,var(--1-1)100%)
+    background: linear-gradient(52deg,var(--1)0%,var(--1-1)100%);
+    background: var(--ff);
 }
 
 .header-theme-bg-primary {
