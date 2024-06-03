@@ -59,9 +59,9 @@ section .products-container .row.products-list>div.col-6 {
 }
 
 .slider-home {
-    width: 95%;
-    margin: auto;
-    border-radius: 12px
+    /* width: 95%; */
+    /* margin: auto; */
+    /* border-radius: 12px; */
 }
 
 .item-slider img {
@@ -69,7 +69,7 @@ section .products-container .row.products-list>div.col-6 {
 }
 
 .slider-home {
-    margin-top: 50px
+    /* margin-top: 50px; */
 }
 
 .announcement-slider * {
@@ -606,9 +606,9 @@ body {
 
 .header .logo img {
     height: auto;
-    width: 161px;
+    width: 223px;
     padding: 5px;
-    max-width: 183px;
+    max-width: 196px;
 }
 
 .single-title {
@@ -659,7 +659,7 @@ body {
     border-bottom-left-radius: 12px;
     border-top-right-radius: 12px;
     height: 42px;
-    width: 140px;
+    width: 100%;
     margin-right: 10px
 }
 
