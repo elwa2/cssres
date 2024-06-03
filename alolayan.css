@@ -723,6 +723,8 @@ body.rtl.home-page.js-stickybit-parent:before {
         opacity: 0;
         visibility: hidden
     }
+}.footer-logo img {
+    width: 270px;
 }
 :root {
     --1: #d2b87f;
