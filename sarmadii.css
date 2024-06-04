@@ -1269,3 +1269,19 @@ body.overflow-x-hidden.customer-orders-single .s-button-btn {
  
 
  
+
+
+.s-add-product-button-mini-checkout-content {
+    color: #fff !important;
+}
+
+ .s-fast-checkout-button.outline {
+    background: #fff !important;
+    background-color: #fff !important;
+    order: 1px solid var(--3);
+}
+
+salla-mini-checkout-widget.s-add-product-button-mini-checkout.s-mini-checkout.hide-scroll.hydrated {
+    background: var(--2);
+    border-radius: 15px;
+}
