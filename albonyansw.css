@@ -1886,9 +1886,9 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center {
     background-repeat-y: no-repeat;
     background-position-x: 0;
     animation: scrollBrands 500s linear alternate both infinite;
-    background-size: contain;
-    /* background-size: 15%; */
-    height: 50px;
+    /* background-size: contain; */
+    background-size: 18%;
+    height: 42px;
     /* width: 32rem; */
     display: block;
     background-color: var(--1);
@@ -1918,6 +1918,7 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center {
         margin-bottom: -2px;
     }
 }
+
 :root {
     --primary-color: #2d3685;
     --gr: linear-gradient(45deg,var(--color-primary) 0,var(--color-primary) 0,var(--color-primary) 39%,var(--color-primary-dark) 100%);
