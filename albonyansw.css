@@ -1851,26 +1851,7 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
     max-width: 100% !important;
 }
 
-.announcement-text {
-    width: 100%;
-    /* لجعل العنصر يمتلك عرض كامل للشاشة */
-    animation: slide 5s linear infinite;
-    /* تحديد الحركة */
-    white-space: nowrap;
-    /* لمنع النص من الانقسام إلى عدة أسطر */
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(-100%);
-        /* بداية الحركة من اليسار خارج الشاشة */
-    }
-
-    100% {
-        transform: translateX(50%);
-        /* نهاية الحركة إلى اليمين خارج الشاشة */
-    }
-}
+ 
 
 svg.x-icon-twitter.d-flex.align-items-center.justify-content-center {
     width: 27px;
@@ -1913,7 +1894,7 @@ svg.x-icon-twitter.d-flex.align-items-center.justify-content-center {
 @media (max-width: 767px) {
     .header:before {
         background-size: 80%;
-        height: 55px;
+        height: 38px;
         background-position: center;
         margin-bottom: -2px;
     }
