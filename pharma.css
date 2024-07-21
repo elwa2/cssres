@@ -15,8 +15,6 @@
     height: auto!important
 }
 
-
-
 body {
     background-color: #f3f3f4;
 }
@@ -711,7 +709,7 @@ ul.theme-text-for-primary-bg.menu-header-theme-bg-primary.menu-header-theme-bg-p
     align-self: center;
 }
 
-.section-padding-space {
+.section-padding-space:not(.features-section.section-padding-space) {
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -1178,3 +1176,6 @@ nav.d-flex.flex-grow-1,.container>.account-area, .form-control {
 :host {
     --inline-outlined-background-color-hover: var(--1);
 }
+
+
+.features-section.section-padding-space {}
