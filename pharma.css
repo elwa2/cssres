@@ -1029,45 +1029,6 @@ select#product-quantity option {
     margin-top: 00px;
 }
 
-:root {
-    --1: #2d2d2d;
-    --1-h: #cdcdcd9e;
-    --2: #171401;
-    --bg: #F2F2F2;
-    --3: #441818;
-    --ff: #ededed;
-    --00: #2d2d2d;
-    --primary-color: #2d2d2d;
-    --text-color-primary-bg: #1c1c1c !important;
-    --sub-primary-color: #282323 !important;
-    --header-primary-color: #fff !important;
-    --menu-header-primary-color: #fff !important;
-    --header-primary-brightness: brightness(100%) !important;
-    --menu-header-text-color-primary-bg: #000000 !important;
-    --header-text-color-primary-bg: #191919 !important;
-    --footer-primary-color: #fff !important;
-    --footer-text-color-primary-bg: #000000 !important;
-    --menu-header-text-color-primary-bg: #191919 !important;
-    --sh: 0 0 transparent, 0 0 transparent, 0 3px 16px rgba(47, 83, 109, .12157);
-    --gr: linear-gradient(45deg,var(--1) 0,var(--1) 0,var(--2) 39%,var(--2) 100%);
-    --sh: 0 0 transparent, 0 0 transparent, 0 3px 16px rgba(47, 83, 109, .12157);
-}
-
-:root {
-    --1: var(--bg);
-    --2: #2c8bc7;
-    --4: #1f426d33;
-    --3: #1f426d;
-    --g: linear-gradient(180deg,var(--2)0%,#ffffff00 100%);
-    --sh: 0 1px 5px 2px #4f4e4e;
-    --secondary-color-alt3: #fff;
-    --con: "الحقوق محفوظة © متجــر    ";
-    --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/94224d7d-3b30-4941-a9da-e3d65089d324/8c29f2ac-ef2d-4abd-8092-4e0c27891e05.png");
-}
-
-:host {
-    --inline-outlined-background-color-hover: var(--1);
-}
 
 .breadcrumb {
     background-color: var(--1-h);
@@ -1161,4 +1122,45 @@ nav.d-flex.flex-grow-1,.container>.account-area, .form-control {
     max-height: 90px;
     max-width: 90px;
     filter: brightness(0.5);
+}
+
+
+:root {
+    --1: #2d2d2d;
+    --1-h: #cdcdcd9e;
+    --2: #171401;
+    --bg: #ffffff;
+    --3: #441818;
+    --ff: #ededed;
+    --00: #2d2d2d;
+    --primary-color: #2d2d2d;
+    --text-color-primary-bg: #1c1c1c !important;
+    --sub-primary-color: #282323 !important;
+    --header-primary-color: #fff !important;
+    --menu-header-primary-color: #fff !important;
+    --header-primary-brightness: brightness(100%) !important;
+    --menu-header-text-color-primary-bg: #000000 !important;
+    --header-text-color-primary-bg: #191919 !important;
+    --footer-primary-color: #fff !important;
+    --footer-text-color-primary-bg: #000000 !important;
+    --menu-header-text-color-primary-bg: #191919 !important;
+    --sh: 0 0 transparent, 0 0 transparent, 0 3px 16px rgba(47, 83, 109, .12157);
+    --gr: linear-gradient(45deg,var(--1) 0,var(--1) 0,var(--2) 39%,var(--2) 100%);
+    --sh: 0 0 transparent, 0 0 transparent, 0 3px 16px rgba(47, 83, 109, .12157);
+}
+
+:root {
+    --1: var(--bg);
+    --2: #2c8bc7;
+    --4: #1f426d33;
+    --3: #1f426d;
+    --g: linear-gradient(180deg,var(--2)0%,#ffffff00 100%);
+    --sh: 0 1px 5px 2px #4f4e4e;
+    --secondary-color-alt3: #fff;
+    --con: "الحقوق محفوظة © متجــر    ";
+    --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/94224d7d-3b30-4941-a9da-e3d65089d324/8c29f2ac-ef2d-4abd-8092-4e0c27891e05.png");
+}
+
+:host {
+    --inline-outlined-background-color-hover: var(--1);
 }
