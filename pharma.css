@@ -128,7 +128,6 @@ ul.main-nav>li>a {
         height: 30px;
         width: 100%;
         text-align: right;
-        color: #fff;
         font-weight: 600!important;
     }
 
@@ -142,7 +141,7 @@ ul.main-nav>li>a {
         background-color: unset;
         left: 0;
         background-size: contain;
-        filter: invert(1) brightness(103.5);
+        /* filter: invert(1) brightness(103.5); */
         background-repeat: no-repeat;
         background-position: center;
         background-image: url("https://media.zid.store/5ec935b4-46d2-4323-9685-ef0cbaba4112/06ddccef-7a57-4111-97a9-5789ac58d0bf.png");
@@ -179,7 +178,7 @@ ul.main-nav>li>a {
     }
 
     .language-btn,.currency-btn {
-        color: #cca643!important
+       
     }
 
     .container>.language-currency>.currency-button-area>.c-btn {
@@ -1039,7 +1038,7 @@ select#product-quantity option {
     --ff: #ededed;
     --00: #2d2d2d;
     --primary-color: #2d2d2d;
-    --text-color-primary-bg: #ededed !important;
+    --text-color-primary-bg: #1c1c1c !important;
     --sub-primary-color: #282323 !important;
     --header-primary-color: #fff !important;
     --menu-header-primary-color: #fff !important;
@@ -1113,7 +1112,6 @@ header {
 }
 
 .search-header.header-theme-bg-primary *,.account-lang-currency.upper-bar * {
-    /* color: #fff!important; */
 }
 
 .align-items-center.search-header-bar {
@@ -1156,4 +1154,11 @@ body[data-template="home"] .menu-header-theme-text-for-primary-bg {
 
 nav.d-flex.flex-grow-1,.container>.account-area, .form-control {
     background: transparent !important;
+}
+
+
+.features-section-img {
+    max-height: 90px;
+    max-width: 90px;
+    filter: brightness(0.5);
 }
