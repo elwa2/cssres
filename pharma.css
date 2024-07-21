@@ -1123,7 +1123,21 @@ nav.d-flex.flex-grow-1,.container>.account-area, .form-control {
     max-width: 90px;
     filter: brightness(0.5);
 }
-
+.product-card-bundle-offer {
+    display: none;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    max-width: 80%;
+    padding: 4px 7px;
+    color: var(--text-color-primary-bg);
+    background-color: var(--2);
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 5px;
+}
 
 :root {
     --1: #2d2d2d;
