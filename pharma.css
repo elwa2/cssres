@@ -15,10 +15,7 @@
     height: auto!important
 }
 
-.gallery-item.col-6 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
+
 
 body {
     background-color: #f3f3f4;
@@ -178,7 +175,6 @@ ul.main-nav>li>a {
     }
 
     .language-btn,.currency-btn {
-       
     }
 
     .container>.language-currency>.currency-button-area>.c-btn {
@@ -1013,26 +1009,28 @@ select#product-quantity option {
     color: var(--2);
 }
 
-.gallery-section.container.section-padding-space {
-    width: 100%
-}
+@media(min-width: 600px) {
+    .gallery-section.container.section-padding-space {
+        width: 100%
+    }
 
-.gallery-section .gallery.row {
-    flex-wrap: unset
-}
+    .gallery-section .gallery.row {
+        flex-wrap: unset
+    }
 
-.gallery-section .gallery.row>.gallery-item {
-    flex: unset
-}
+    .gallery-section .gallery.row>.gallery-item {
+        flex: unset
+    }
 
-.gallery .gallery-item.bottom-row {
-    margin-top: 00px;
+    .gallery .gallery-item.bottom-row {
+        margin-top: 00px;
+    }
 }
-
 
 .breadcrumb {
     background-color: var(--1-h);
 }
+
 .home > .section-padding-space:first-child {
     margin: 0 !important;
     width: 100%;
@@ -1057,14 +1055,11 @@ select#product-quantity option {
     background: transparent
 }
 
- 
-  
 header {
     background: 0 0;
     position: relative;
     z-index: 20
 }
- 
 
 .home>.section-padding-space:first-child {
     margin-top: -155px !important;
@@ -1112,17 +1107,16 @@ body[data-template="home"] .menu-header-theme-text-for-primary-bg {
     color: #ffffff;
 }
 
-
 nav.d-flex.flex-grow-1,.container>.account-area, .form-control {
     background: transparent !important;
 }
-
 
 .features-section-img {
     max-height: 90px;
     max-width: 90px;
     filter: brightness(0.5);
 }
+
 .product-card-bundle-offer {
     display: none;
     position: absolute;
@@ -1138,11 +1132,13 @@ nav.d-flex.flex-grow-1,.container>.account-area, .form-control {
     text-overflow: ellipsis;
     border-radius: 5px;
 }
+
 .slide-menu, .slide-menu a {
     font-size: 1.2rem;
     color: inherit;
     color: var(--3);
 }
+
 :root {
     --1: #2d2d2d;
     --1-h: #cdcdcd9e;
