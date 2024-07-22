@@ -468,8 +468,8 @@ ul.main-nav>li>a {
 
 a.btn.btn-primary.product-card-add-to-cart {
     font-size: 1rem;
-    background-color: var(--2) !important;
-    color: var(--1);
+    background-color: #cfedf5 !important;
+    color: #303030;
     margin: 10px 5% !important;
     padding: 0.35rem 0 !important;
     display: block;
@@ -711,7 +711,7 @@ ul.theme-text-for-primary-bg.menu-header-theme-bg-primary.menu-header-theme-bg-p
 
 .section-padding-space:not(.features-section.section-padding-space) {
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 17px;
 }
 
 span.product-prev-price {
@@ -917,7 +917,7 @@ button.btn.btn-primary {
 .profile-title.d-none.d-lg-block.theme-text-primary,.profile-section.d-none.d-lg-block.flex-shrink-0,.prod-col,nav,body,.home,.card,p[style*="background-color"],span[style*="background-color"],a[style*="background-color"] {
     color: var(--3)!important;
     background-color: var(--1) !important;
-    background: var(--bg) !important;
+    background: transparent !important;
 }
 
 .profile-row.active,.card-table-header,.pb-4, .py-4,.btn-filter,.breadcrumb,.header-wrapper {
@@ -1177,5 +1177,54 @@ nav.d-flex.flex-grow-1,.container>.account-area, .form-control {
     --inline-outlined-background-color-hover: var(--1);
 }
 
+ 
+body.rtl {
+    background: linear-gradient(134deg ,transparent -183%,#fff 200%),url(https://media.zid.store/94224d7d-3b30-4941-a9da-e3d65089d324/9874bd1d-5e5f-4a5b-8cbc-29b96b78a27b.jpg) !important;
+}
 
-.features-section.section-padding-space {}
+
+
+h2.section-title.theme-title-primary,.section-title {
+    color: var(--2);
+    background-color: var(--1);
+     display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    border: 4px solid var(--2);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0;
+     padding-bottom: 10px!important;
+    justify-items: center;
+    padding-top: 10px!important;
+}
+
+h2.section-title.theme-title-primary,.section-title {
+    padding: 3px 1rem;
+    animation: wiggle 2.5s infinite;
+    margin-bottom: 8px;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
