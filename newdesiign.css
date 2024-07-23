@@ -521,6 +521,10 @@ li.s-social-link a span:before {
 footer.store-footer .text-gray-400 {
     color: #fff;
     margin-top: 1rem;
+}body>div.app-inner.flex.flex-col.min-h-full>section.s-block.s-block--photos-slider,[dir=rtl] salla-slider.photos-slider .swiper,salla-slider.photos-slider .swiper-slide,body>div.app-inner.flex.flex-col.min-h-full>section.s-block.s-block--photos-slider img.w-full.object-contain.rounded-md {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
 }
 :root {
     --color-primary: var(--1);
