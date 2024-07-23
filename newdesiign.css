@@ -518,7 +518,10 @@ li.s-social-link a span:before {
     text-align: center;
     justify-items: center;
 }
-
+footer.store-footer .text-gray-400 {
+    color: #fff;
+    margin-top: 1rem;
+}
 :root {
     --color-primary: var(--1);
     --color-primary-dark: #022723;
