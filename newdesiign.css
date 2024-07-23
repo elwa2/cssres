@@ -16,7 +16,9 @@ section.s-block.s-block--photos-slider salla-slider.photos-slider .swiper-slide 
 salla-slider.photos-slider .swiper:where([dir=rtl],[dir=rtl] *) {
     padding-left: 0
 }
-
+.sicon-user-circle:before {
+    content: "\f078";
+}
 section.s-block.s-block--photos-slider:first-of-type {
     margin-top: 0
 }
