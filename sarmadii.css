@@ -1138,7 +1138,7 @@ body.index .s-slider-block__title {
     color: #ae0a0a!important;
 }
 
-.product__description.p-2.px-5.sm\:p-1.leading-7.mb-3 {
+.product__description.p-2.px-5.sm\:p-1.leading-7.mb-3,salla-comment-item.s-comments-item.hydrated.animated {
     background: var(--2);
     padding: 8px;
     border-radius: 10px;
@@ -1147,6 +1147,10 @@ body.index .s-slider-block__title {
 
 article.article--main.pb-1 p,.product__description ul, .product__description li {
     font-weight: 500;
+    color: #ffffff;
+}
+
+salla-comment-item.s-comments-item.hydrated.animated * {
     color: #ffffff;
 }
 
@@ -1266,16 +1270,11 @@ body.overflow-x-hidden.customer-orders-single .s-button-btn {
     padding: 5px 1px 11px 0px;
 }
 
- 
-
- 
-
-
 .s-add-product-button-mini-checkout-content {
     color: #fff !important;
 }
 
- .s-fast-checkout-button.outline {
+.s-fast-checkout-button.outline {
     background: #fff !important;
     background-color: #fff !important;
     order: 1px solid var(--3);
@@ -1284,4 +1283,15 @@ body.overflow-x-hidden.customer-orders-single .s-button-btn {
 salla-mini-checkout-widget.s-add-product-button-mini-checkout.s-mini-checkout.hide-scroll.hydrated {
     background: var(--2);
     border-radius: 15px;
+}
+
+span.s-rating-stars-reviews {
+    display: none;
+}
+
+p.s-comments-item-timestamp.s-ltr {
+    display: none;
+}
+
+salla-comment-item.s-comments-item.hydrated.animated {
 }
