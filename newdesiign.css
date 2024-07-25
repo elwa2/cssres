@@ -362,7 +362,19 @@ header.store-header:before {
         height: 39px;
         background-position: center;
         margin-bottom: -2px
+    }@keyframes scrollBrands {
+    0% {
+        background-position-x: 0
     }
+
+    50% {
+        background-position-x: 15000px
+    }
+
+    100% {
+        background-position-x: 0
+    }
+}
 }
 
 i.sicon-menu.text-primary.text-2xl {
