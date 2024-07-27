@@ -1295,3 +1295,12 @@ p.s-comments-item-timestamp.s-ltr {
 
 salla-comment-item.s-comments-item.hydrated.animated {
 }
+
+
+salla-social.s-social-list.hydrated {
+    justify-content: center;
+}
+
+h2.s-comments-count-label {
+    display: none;
+}
