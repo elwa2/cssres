@@ -1349,4 +1349,8 @@ h2.s-comments-count-label {
 }
 .s-reviews-testimonial * {
     color: #fff;
+}button.undefined.s-button-element.s-button-btn.s-button-solid.s-button-primary.s-button-loader-after,.s-button-element:not(:disabled):not([loading]) {
+    padding: 8px 17px;
 }
+
+
