@@ -593,7 +593,7 @@ section:nth-of-type(1) .container {
 
 @media(max-width: 767px) {
     .store-section:after {
-        content:"Designed by: 3lwaaa@gmail.com";
+        content:"Designed by: 3lwaaa@gmail.com";content:"";
         text-align: center;
         color: #fff;
         font-family: sky;
