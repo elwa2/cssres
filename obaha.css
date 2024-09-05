@@ -1,0 +1,12 @@
+  /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */ 
+ 
+.percentage.rounded-pill.p-1.px-2.fw-bold.fs-14px,.label-star.product-box-rating.d-flex.align-items-center.justify-content-between.bg-white.rounded-pill.p-1.px-2 {
+    display: none !important;
+}
+.text-dark-1.discount-price {
+    font-size: 1rem !important;
+    margin-top: -5px;
+    color: red !important;
+}
+
+ 
