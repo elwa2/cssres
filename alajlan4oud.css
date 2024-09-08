@@ -94,11 +94,13 @@ a.text-decoration-none.text-dark-1 {
 }
 
 del.text-decoration-line-through {
-    color: #ff483b
+    color: #ff483b;
+     color: #54b370 !important;
+     color: #838383 !important
 }
 
 .text-dark-1.discount-price {
-    color: #54b370!important
+    color: #ff483b !important
 }
 
 .heading.d-flex.flex-wrap.justify-content-between.align-items-center.mb-3 h2.h3.fw-bold {
