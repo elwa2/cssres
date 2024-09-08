@@ -89,7 +89,7 @@ a.text-decoration-none.text-dark-1 {
     }
 
     .product-details.p-2.pb-2.bg-white a.text-decoration-none.text-dark-1 {
-        font-size: 1rem
+        font-size: .8rem;
     }
 }
 
