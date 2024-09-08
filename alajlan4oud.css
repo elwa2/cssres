@@ -95,8 +95,8 @@ a.text-decoration-none.text-dark-1 {
 
 del.text-decoration-line-through {
     color: #ff483b;
-     color: #54b370 !important;
-     color: #838383 !important
+    color: #54b370 !important;
+    color: #838383 !important
 }
 
 .text-dark-1.discount-price {
@@ -173,14 +173,12 @@ section[section-id="1a772799-1340-4977-832a-24be26616057"] h3.w-100 {
 
 @media (max-width: 776px) {
     .slider-img img {
-      
-    }
-}@media (max-width: 776px) {
-    .slider-img img {
         height: 383px;
         object-fit: cover;
     }
+
+    .slider .slide img, .slider .slide {
+        min-height: 407px;
+        height: 397px;
+    }
 }
-
-
- 
