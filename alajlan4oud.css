@@ -44,7 +44,7 @@
 
 @media(max-width: 776px) {
     .dev3-mobile-header .dev3-mobile-logo .logo {
-        height: 61px;
+        height: 49px;
         width: 11rem;
         position: relative;
         right: -30px;
@@ -52,7 +52,7 @@
 
     .dev3-mobile-header .dev3-mobile-logo .logo:after {
         width: 100%;
-        height: 53px;
+        height: 41px;
         margin: -17px 117px 0 0;
     }
 }
