@@ -122,11 +122,13 @@ del.text-decoration-line-through {
     display: none!important
 }
 
-.label-star,.product .img>div.translate-middle-x,
+.label-star,
 .product .img>div.translate-middle-x,
 div.app-content li:has(button#product-questions-tab),
- .div-product-sku, .product-desc.fs-14px.text-gray-1,
-  .label-star.product-box-rating.d-flex.align-items-center.justify-content-between.bg-white.rounded-pill.p-1.px-2,.product .img>div.translate-middle-x {
+.div-product-sku, 
+.product-desc.fs-14px.text-gray-1,
+.label-star.product-box-rating.d-flex.align-items-center.justify-content-between.bg-white.rounded-pill.p-1.px-2,
+.product .img>div.translate-middle-x {
     display: none!important
 }
 
@@ -162,6 +164,10 @@ section[section-id="1a772799-1340-4977-832a-24be26616057"] h3.w-100 {
 }
 
 
-.product .img>div.translate-middle-x {
+.rtl .stars-position,.product .img>div.translate-middle-x {
     display: none !important;
 }
+
+.rating.d-flex.align-items-center {  display: none !important;}
+
+.product-desc.fs-14px.text-gray-1 { display: none !important;}
