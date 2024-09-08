@@ -175,6 +175,12 @@ section[section-id="1a772799-1340-4977-832a-24be26616057"] h3.w-100 {
     .slider-img img {
       
     }
+}@media (max-width: 776px) {
+    .slider-img img {
+        height: 383px;
+        object-fit: cover;
+    }
 }
+
 
  
