@@ -187,3 +187,8 @@ div#product-reviews {
     display: block;
     opacity: 1;
 }
+
+div#product-reviews .row .col-md-5,.box-review {
+    display: none;
+    width: 100%;
+}
