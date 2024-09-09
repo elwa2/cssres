@@ -192,3 +192,7 @@ div#product-reviews .row .col-md-5,.box-review {
     display: none;
     width: 100%;
 }
+
+div#product-reviews .row .col-md-7 {
+    width: 100%;
+}
