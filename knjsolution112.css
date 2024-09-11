@@ -1,5 +1,7 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
-@import url(https://raw.githack.com/elwa2/cssres/main/knjsolution112.css);@media(max-width: 768px) {
+@import url(https://raw.githack.com/elwa2/cssres/main/knjsolution112.css)
+
+/* ;@media(max-width: 768px) {
     body.rtl:has(.container.pt-2.category-page-slider) section.subTitle-detail {
         display:none
     }
@@ -30,7 +32,7 @@
         
         
         }
-}
+} */
 
 .container.pt-2.category-page-slider .slider-container:after {
     content: '';
