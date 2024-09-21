@@ -900,11 +900,12 @@ body:after {
         display: block;
         content: "";
         width: 20rem;
-        margin: 11px auto 8px;
-        height: 135px;
-        background-size: cover!important;
+        margin: 9px auto -15px;
+        height: 127px;
+        background-size: 12rem !important;
         background: var(--logo);
         background-position: center;
+        background-repeat: no-repeat;
     }
 }
 
@@ -922,7 +923,7 @@ body:after {
 
 @media(max-width: 991px) {
     .menu-header-theme-bg-primary {
-        background: linear-gradient(190deg, transparent 2%,#dadada 50%),url("https://media.zid.store/c1750331-e5ca-47ef-860a-a7c56421e496/bf71b43c-c875-483c-8e7e-ad9166e56977.png")no-repeat!important;
+        /* background: linear-gradient(190deg, transparent 2%,#dadada 50%),url("https://media.zid.store/c1750331-e5ca-47ef-860a-a7c56421e496/bf71b43c-c875-483c-8e7e-ad9166e56977.png")no-repeat!important; */
         background-size: 317%!important;
         background-color: #fff!important;
     }
@@ -1072,10 +1073,10 @@ body:after {
         padding: unset;
         min-width: 100px;
         margin: auto;
-        padding: 3px;
+        padding: 2px;
         border-radius: 0;
         background: var(--1)!important;
-        transition: all .5s cubic-bezier(.2,1,.3,1)
+        transition: all .5s cubic-bezier(.2,1,.3,1);
     }
 
     .slide-menu__slider>ul>li:nth-last-child(2) .account-area .account-btn:hover, .slide-menu__slider>ul>li:nth-last-child(2) .language-currency:hover {
