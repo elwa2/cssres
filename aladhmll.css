@@ -547,10 +547,10 @@ button.more-button, a.more-button {
     }
 
     .footer-store-section-bars>.justify-content-end * {
-        display: block;
+        /* display: block; */
         font-family: sky;
         color: #4c4c4c;
-        font-size: 14px
+        font-size: 14px;
     }
 
     .footer .google-app-stores {
