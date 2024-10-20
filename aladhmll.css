@@ -1960,7 +1960,7 @@ span.icon-delete {
     }
 
     .menu-header-theme-bg-primary {
-        background: #d19954
+        background: #d1995457 !important;
     }
 
     .slide-menu__slider>ul {
@@ -2213,7 +2213,7 @@ footer div.col-lg-4:nth-child(1) {
 }
 
 .header .account-lang-currency .container.d-flex.flex-wrap {
-    background: #1d1d1b!important;
+    background: #1d1d1b6b!important;
     max-width: 97%!important;
     margin: 1%!important;
     border-radius: 1rem!important;
