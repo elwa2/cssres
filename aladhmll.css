@@ -2494,11 +2494,11 @@ a.footer-marketing-link {
 
 @media (max-width: 767px) {
     img[src*="https://media.zid.store/cdn-cgi/image/w=2220,q=100,f=auto/https://media.zid.store/1aebefd7-e5ff-4002-84be-c78218f8c40a/523b7369-d69a-422f-aed1-01806a0057b5.jpg"] {
-        content: url(https://media.zid.store/1aebefd7-e5ff-4002-84be-c78218f8c40a/8f94b591-2034-477d-bf44-01fe249fac59.jpg);
+        content: url(https://media.zid.store/1aebefd7-e5ff-4002-84be-c78218f8c40a/6f4bb046-1e0e-49ed-8bfe-4e75e3c1ab13.jpg);
     }
 
     .main-slider.slider.s-slider.slick-initialized.slick-slider .box-1-1.ratio21_9:before {
-        padding-top: 165.85%;
+        padding-top: 110.85%;
     }
 }
 
