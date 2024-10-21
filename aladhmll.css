@@ -496,7 +496,8 @@ button.more-button, a.more-button {
         font-family: sky;
         font-size: 1.1rem;
         text-align: justify;
-        color: #1d1d1b
+        color: #1d1d1b;
+        text-align: center;
     }
 
     .footer .footer-store-section .row>.col-lg-7 h1 {
