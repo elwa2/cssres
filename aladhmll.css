@@ -2231,9 +2231,7 @@ section.ss:first-of-type {
     }
 }
 
-footer div.col-lg-4:nth-child(1) {
-    display: none!important
-}
+ 
 
 .footer h2.pb-2 {
     text-align: center!important;
