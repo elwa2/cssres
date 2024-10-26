@@ -67,7 +67,19 @@ section .card-buttons, .products-container .row.products-list .card-buttons, .bl
 
 @media (max-width: 767px) {
     .categories-slider-item {
-        /* width: 215px !important; */ max-width: 29.333333%;
+        /* width: 310px !important; */ max-width: unset;
+        /* flex: 0 0 50.333333%; */
+    }
+
+    .row.align-items-center.justify-content-center.categories-grid {
+        display: grid;
+        grid-template-columns: repeat(4,minmax(0,1fr));
+    }
+
+    .header .logo img {
+        height: auto;
+        width: 141px;
+        max-width: unset;
     }
 }
 
@@ -223,7 +235,6 @@ body.rtl.home-page.js-stickybit-parent:before {
     overflow: hidden;
     box-shadow: var(--normal-box-shadow);
 }
-
 
 .products-slider-home.small-slider {
     padding: 30px 0;
