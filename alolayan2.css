@@ -113,7 +113,7 @@ section .card-buttons, .products-container .row.products-list .card-buttons, .bl
     -webkit-border-radius: 0px;
 }
 
-.footer {
+.footer,.home section .section-title {
     border-radius: 20px 20px 0 0;
     background-color: var(--1);
     background: var(--bg-f)!important;
