@@ -197,3 +197,13 @@ body.rtl.home-page.js-stickybit-parent:before {
     }
 }
 
+@media screen and (min-width: 800px) {
+    .logo img {
+        width: 214px;
+        margin: 5px;
+    }
+}
+
+.announcement-bar {--primary-color: #a58b52;
+    background-color: var(--primary-color) ;
+}
