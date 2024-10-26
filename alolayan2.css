@@ -51,7 +51,6 @@ section .card-buttons, .products-container .row.products-list .card-buttons, .bl
     width: 270px;
 }
 
-
 .categories-slider-item {
     /* width: 215px !important; */
     max-width: 10.333333%;
@@ -245,6 +244,7 @@ body.rtl.home-page.js-stickybit-parent:before {
 .categories-slider-item:hover {
     transform: scale(1.1);
 }
+
 :root {
     --1: #d2b87f;
     --2: #b89e77;
@@ -256,4 +256,11 @@ body.rtl.home-page.js-stickybit-parent:before {
     --second-color: #ffffff;
     --primary-transparent: #d2b87f12;
     --store-background: none;
+}
+
+@media screen and (min-width: 800px) {
+    .categories-row .sl_cat_01 img, .categories-grid .sl_cat_01 img {
+        width: unset;
+        height: unset;
+    }
 }
