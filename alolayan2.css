@@ -163,3 +163,37 @@
 
 .col-md-3.col-lg-2.product-item-slide.col-6 {
 }
+body.rtl.home-page.js-stickybit-parent:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--1) var(--logo);
+    position: fixed;
+    top: 0;
+    z-index: 99999999999999999 !important;
+    background-size: 45% !important;
+    background-repeat: no-repeat;
+    background-position: center !important;
+    animation-name: logobg;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@keyframes logobg {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden
+    }
+}
+
