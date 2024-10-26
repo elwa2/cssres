@@ -219,8 +219,8 @@ body.rtl.home-page.js-stickybit-parent:before {
 }
 
 .announcement-bar {
-    --primary-color: #a58b52;
-    background-color: var(--primary-color) ;
+    /* --primary-color: #a58b52; */
+    background-color: var(--primary-color);
 }
 
 .home section .section-title {
@@ -245,3 +245,14 @@ body.rtl.home-page.js-stickybit-parent:before {
         max-width: 1140px;
     }
 }
+
+.categories-slider-item {
+    transition: transform 0.3s ease;
+}
+
+.categories-slider-item:hover {
+    transform: scale(1.1);
+}
+ 
+
+ 
