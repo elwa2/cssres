@@ -239,3 +239,9 @@ body.rtl.home-page.js-stickybit-parent:before {
 .products-slider-home.small-slider {
     padding: 30px 0;
 }
+
+@media (min-width: 1200px) {
+    section .container {
+        max-width: 1140px;
+    }
+}
