@@ -264,3 +264,7 @@ body.rtl.home-page.js-stickybit-parent:before {
         height: unset;
     }
 }
+
+.products-slider-home.small-slider {
+    overflow-x: hidden;
+}
