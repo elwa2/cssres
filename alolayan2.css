@@ -268,3 +268,44 @@ body.rtl.home-page.js-stickybit-parent:before {
 .products-slider-home.small-slider {
     overflow-x: hidden;
 }
+
+.footer .footer-menu li a[href="/blogs/شهادة-القيمة-المضافة"],.footer .footer-menu li a[href="/blogs/شهادة-توثيق-التجارة-الإلكترونية"] {
+    font-size: 0;
+}
+
+.footer .footer-menu li a[href="/blogs/شهادة-القيمة-المضافة"]:before,.footer .footer-menu li a[href="/blogs/شهادة-توثيق-التجارة-الإلكترونية"]:before {
+    content: '';
+    width: 21rem;
+    height: 180px;
+    display: block;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    position: relative;
+    top: -7rem;
+    right: 11rem;
+    margin: -61px 0 -131px;
+}
+
+.footer .footer-menu li a[href="/blogs/شهادة-القيمة-المضافة"]:before {
+    background: url(https://media.zid.store/e1d059a5-4122-42f8-b441-09a9a383c6f6/668657ee-f25f-467c-9ef3-2901b1042f1d.jpg);
+    top: -6rem;
+    right: -19rem;
+}
+
+.footer .footer-menu li a[href="/blogs/شهادة-توثيق-التجارة-الإلكترونية"]:before {
+    background: url(https://media.zid.store/e1d059a5-4122-42f8-b441-09a9a383c6f6/ae0f373d-4ca8-4a64-87f0-aeec982aed7d.jpg);
+}
+
+@media (max-width: 767px) {
+    .footer .footer-menu li a[href="/blogs/شهادة-القيمة-المضافة"]:before {
+        top: -6rem;
+        right: -15rem;
+    }
+
+    .footer .footer-menu li a[href="/blogs/شهادة-توثيق-التجارة-الإلكترونية"]:before {
+        top: -2rem;
+        right: 15rem;
+        width: 8rem;
+        height: 171px;
+    }
+}
