@@ -1,0 +1,26 @@
+body {
+    line-height: 1.5;
+    font-size: 17px;
+    color: #4b4b4b;
+    background-color: #ffffff;
+ }
+
+body {
+    background-color: #19302817;
+}
+
+.categories-grid .categories-slider-item.col-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 8%;
+    max-width: 50%;
+}
+
+.product-box .card-bottom .card-btn {
+    background: linear-gradient(to bottom,#4a4466 20%,#4a4466 80%)!important;
+    border-radius: 50px;
+    width: 141px;
+}
+
+.col-md-3.col-lg-2.block-logos-section {
+    background: transparent !important;
+}
