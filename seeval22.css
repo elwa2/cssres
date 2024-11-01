@@ -54,7 +54,6 @@ body {
 i.svg-icon.card-add-icon,i.svg-icon.card-outstock-icon {
     display: none;
 }
- 
 
 .products-list .block-product .mt-2.price, .product-box .mt-2.price {
     margin-top: 16px !important;
@@ -78,6 +77,7 @@ i.svg-icon.card-add-icon,i.svg-icon.card-outstock-icon {
     width: 100%;
     text-align: center;
 }
+
 .product-box .label-block {
     direction: ltr;
     position: absolute;
@@ -96,3 +96,22 @@ i.svg-icon.card-add-icon,i.svg-icon.card-outstock-icon {
     overflow: hidden;
     box-sizing: content-box;
 }
+
+.col-md-6.mt-2.mt-md-4.text-start.p-0.product-info-block.in-stock {
+    margin-bottom: 0px;
+    padding: 40px 30px 50px;
+    background: #fff;
+    /* display: flex; */
+}
+
+
+h1.title-p-q.product-name {
+    text-align: center;
+    font-size: 2rem;
+}.product-main-block .product-info-block .short-description {
+    margin: 15px 30px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.product-info-block .block-price-w {margin: auto;justify-content: center !important;}
