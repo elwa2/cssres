@@ -15,12 +15,84 @@ body {
     max-width: 50%;
 }
 
-.product-box .card-bottom .card-btn {
-    background: linear-gradient(to bottom,#4a4466 20%,#4a4466 80%)!important;
-    border-radius: 50px;
-    width: 141px;
-}
-
 .col-md-3.col-lg-2.block-logos-section {
     background: transparent !important;
+}
+
+.product-box .card-bottom .card-btn {
+    font-size: 14px;
+    font-weight: 700;
+    width: 120px!important;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    height: 33px;
+}
+
+.card-rating {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -1px;
+    margin-bottom: 14px;
+}
+
+.row.products-list .product-box.block-product .product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.card-bottom.d-flex {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+
+i.svg-icon.card-add-icon,i.svg-icon.card-outstock-icon {
+    display: none;
+}
+ 
+
+.products-list .block-product .mt-2.price, .product-box .mt-2.price {
+    margin-top: 16px !important;
+}
+
+.product-box .card-bottom .card-btn.quick-cart span,.product-box .card-bottom .card-btn.out-stock span {
+    font-size: 0;
+}
+
+.product-box .card-bottom .card-btn.quick-cart span:before {
+    font-size: 0.875rem;
+    content: ' أضف للسلة ';
+}
+
+.product-box .card-bottom .card-btn.out-stock span:before {
+    font-size: 0.875rem;
+    content: ' نفذت الكمية  ';
+}
+
+.product-box .card-bottom .card-btn.quick-cart span, .product-box .card-bottom .card-btn.out-stock span {
+    width: 100%;
+    text-align: center;
+}
+.product-box .label-block {
+    direction: ltr;
+    position: absolute;
+    left: -7px;
+    top: 11rem;
+    margin: 0 8px;
+    padding: 0;
+    right: auto;
+    color: #fff;
+    border-radius: 3px;
+    background-color: var(--label-color);
+    height: 20px;
+    width: 50px;
+    font-weight: 400;
+    font-size: 12px;
+    overflow: hidden;
+    box-sizing: content-box;
 }
