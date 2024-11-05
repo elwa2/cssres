@@ -191,21 +191,21 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
     color: #fff!important;
 }
 
+
 :root {
-    --primary-color: #464a62;
-    --second-color: #ffffff;
-    --primary-transparent: #4a446612;
-    --primary-font: DINNextLTW23;
-    --body-color: #fafafa;
-    --btn-color: #464a62;
-    --card-color: #fff;
-    --header-color: #ffffff;
-    --sticky-header-color: #464a62;
-    --header-icons: #464a62;
-    --sticky-header-icons: #ffffff;
+    --primary-color: #464a62 !important;
+    --second-color: #ffffff !important;
+    --primary-transparent: #4a446612 !important;
+    --body-color: #fafafa !important;
+    --btn-color: #464a62 !important;
+    --card-color: #fff !important;
+    --header-color: #ffffff !important;
+    --sticky-header-color: #464a62 !important;
+    --header-icons: #464a62 !important;
+    --sticky-header-icons: #ffffff !important;
     --font-weight: 500;
     --loadMore-font-weight: 700;
-    --footer-bgcolor: #464a62;
+    --footer-bgcolor: #464a62 !important;
     --footer-txtcolor: #ffffff;
     --footer-boxbgcolor: #fff;
     --product-bgcolor: #fafafa;
@@ -213,6 +213,7 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
     --reviews-bgcolor: #fff;
     --cart-bgcolor: #fafafa;
     --cart-boxbgcolor: #fff;
-    --label-color: #464a62;
+    --label-color: #464a62 !important;
     --card-image-size: contain;
 }
+
