@@ -190,3 +190,29 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
 .footer .block-vat p, .footer .block-vat a,.footer .block-vat .number, .footer .block-vat a {
     color: #fff!important;
 }
+
+:root {
+    --primary-color: #464a62;
+    --second-color: #ffffff;
+    --primary-transparent: #4a446612;
+    --primary-font: DINNextLTW23;
+    --body-color: #fafafa;
+    --btn-color: #464a62;
+    --card-color: #fff;
+    --header-color: #ffffff;
+    --sticky-header-color: #464a62;
+    --header-icons: #464a62;
+    --sticky-header-icons: #ffffff;
+    --font-weight: 500;
+    --loadMore-font-weight: 700;
+    --footer-bgcolor: #464a62;
+    --footer-txtcolor: #ffffff;
+    --footer-boxbgcolor: #fff;
+    --product-bgcolor: #fafafa;
+    --desc-bgcolor: #fff;
+    --reviews-bgcolor: #fff;
+    --cart-bgcolor: #fafafa;
+    --cart-boxbgcolor: #fff;
+    --label-color: #464a62;
+    --card-image-size: contain;
+}
