@@ -219,7 +219,7 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
 }
 
 @media (min-width: 767px) {
-    body > div.home > section:nth-child(n+5) .swiper-wrapper  {
+    body > div.home > section:nth-child(n+5)[class="main-slider"] .swiper-wrapper  {
         width: 60% !important;
         margin: auto;
         overflow: hidden;
