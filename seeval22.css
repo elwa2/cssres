@@ -167,16 +167,18 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
 }
 
 .col-md-6.mt-2.mt-md-4.text-start.p-0.product-info-block.in-stock:after {
-    background: url(https://media.zid.store/15c6b6ec-e71a-45d2-9f35-f65b7f2e1a56/eb1cb7ed-5c76-46c9-bd4c-5f51652302a1.svg);
+    background: url(https://media.zid.store/15c6b6ec-e71a-45d2-9f35-f65b7f2e1a56/03a20377-00dd-4d67-bcac-b61fdca48f54.svg);
     content: '';
     /* width: 100%; */
-    height: 227px;
+    height: 152px;
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
     /* position: relative; */
     /* right: 33px; */
     /* top: 15px; */
+    margin: auto;
+    background-position: center;
 }
 
 #side-menu > div > div.px-3.side-menu-links > ul > li:nth-child(n+2) {
