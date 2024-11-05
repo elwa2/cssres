@@ -177,3 +177,7 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
     /* right: 33px; */
     /* top: 15px; */
 }
+#side-menu > div > div.px-3.side-menu-links > ul > li:nth-child(n+2) {
+    display: none;
+}
+ 
