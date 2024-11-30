@@ -1,4 +1,4 @@
-/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @font-face {
     font-family: sky;
     src: url(https://www.fontstatic.com/fonts/sky/sky.eot?#iefix);
@@ -1147,11 +1147,11 @@ button.more-button, a.more-button {
         padding: 5px 0;
         margin: 25px auto 10px;
         border-bottom: 0;
-        filter: brightness(31.5);
+        /* filter: brightness(31.5); */
     }
 
     .menu-header-theme-bg-primary {
-        background: var(--2);
+        background: #ffffff9e;
         filter: var(--header-primary-brightness);
     }
 
@@ -1193,7 +1193,7 @@ button.more-button, a.more-button {
 
     #sliding-menu, #sliding-menu a, #sliding-menu span, #sliding-menu .d-flex button {
         color: var(--1);
-        color: #fff;
+        /* color: #fff; */
         font-size: 15px;
     }
 
@@ -1242,7 +1242,7 @@ button.more-button, a.more-button {
 
     .slide-menu__slider>ul>li:nth-last-child(4) a, .slide-menu__slider>ul>li:nth-last-child(3) a, .slide-menu__slider>ul>li:nth-child(2) a, .slide-menu__slider>ul>li:nth-child(3) a {
         text-align: center;
-        background: var(--2-2);
+        background: var(--2);
         font-size: 10px!important;
         border-radius: 8px;
         padding: 10px 15px 8px;
@@ -1335,7 +1335,7 @@ button.more-button, a.more-button {
         margin: auto;
         padding: 3px 10px;
         border-radius: 6px;
-        background: var(--2-2);
+        background: var(--2);
         border: 0;
         font-size: 9px;
         line-height: 1.8;
