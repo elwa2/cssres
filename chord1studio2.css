@@ -1,4 +1,4 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url(https://raw.githack.com/elwa2/cssres/main/chord1studio2.css);:root {
     --color-primary: var(--1);
     --color-primary-dark: #0e001f;
@@ -327,10 +327,7 @@ salla-slider.photos-slider .swiper {
         font-weight: bolder;
     }
 
-    section:nth-child(5) .s-block__title ,section:nth-child(6) .s-block__title ,
-section:nth-child(25) .s-block__title
-
-    {
+    section:nth-child(5) .s-block__title ,section:nth-child(6) .s-block__title , section:nth-child(25) .s-block__title {
         display: block;
         padding: 0;
         text-align: center;
@@ -596,3 +593,38 @@ section:nth-child(21).s-block.s-block--banners > .grid, section:nth-child(24).s-
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(21) ///////////////////////////////////////////// */
+.product-entry__image {
+    height: 18rem;
+}
+
+
+/* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
+
+section:nth-child(28).s-block.s-block--banners > .grid{
+    grid-template-columns: 1fr 1fr 1fr    ; 
+ }
+
+section:nth-child(n+28) .grid div:nth-child(1), section:nth-child(0) .grid div:nth-child(2) {
+    grid-column: span 2;
+}
+
+
+
+/* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+ 
