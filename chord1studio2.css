@@ -1,4 +1,4 @@
-/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url(https://raw.githack.com/elwa2/cssres/main/chord1studio2.css);:root {
     --color-primary: var(--1);
     --color-primary-dark: #0e001f;
@@ -597,34 +597,30 @@ section:nth-child(21).s-block.s-block--banners > .grid, section:nth-child(24).s-
     height: 18rem;
 }
 
-
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
-
-section:nth-child(28).s-block.s-block--banners > .grid{
-    grid-template-columns: 1fr 1fr 1fr    ; 
- }
+section:nth-child(28).s-block.s-block--banners > .grid {
+    grid-template-columns: 1fr 1fr 1fr ;
+}
 
 section:nth-child(n+28) .grid div:nth-child(1), section:nth-child(0) .grid div:nth-child(2) {
     grid-column: span 2;
 }
 
-
-
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
 
 
-
-
-
-
-
-
+.store-footer {
  
+    background-color: transparent;
+    background-image: linear-gradient(45deg, #342345 10%, #653696 100%);
+}
 
+.footer_is_dark .footer-bottom,.footer_is_dark .footer-bottom a,.footer_is_dark .footer-bottom a span {
+     background-color: #fff;
+     color: var(--1);
+     border-color: var(--1);
+}
 
-
-
-
-
- 
- 
+a.footer-logo {
+    display: none;
+}
