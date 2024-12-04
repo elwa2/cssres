@@ -1,4 +1,4 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url(https://raw.githack.com/elwa2/cssres/main/chord1studio2.css);:root {
     --color-primary: var(--1);
     --color-primary-dark: #0e001f;
@@ -606,19 +606,40 @@ section:nth-child(n+28) .grid div:nth-child(1), section:nth-child(0) .grid div:n
     grid-column: span 2;
 }
 
+section:nth-child(28), section:nth-child(29), section:nth-child(30), section:nth-child(31) {
+    position: relative;
+}
+
+section:nth-child(28)::before , section:nth-child(29)::before , section:nth-child(30)::before , section:nth-child(31)::before {
+    background-size: cover;
+    background: url(https://firebasestorage.googleapis.com/v0/b/salla-storage.appspot.com/o/chord-Images%2FPC%2F%D8%B2%D9%81%D8%A7%D8%AA%20%D8%B2%D9%88%D8%A7%D8%AC%20-%20PC.png?alt=media&token=fa3b7b53-f9b9-4cd1-8490-45c443c81d1a);
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: -1px;
+    left: -8.2vw;
+    width: 100vw;
+    /* عرض الشاشة بالكامل */
+    height: 100%;
+    /* ارتفاع العنصر */
+    margin: auto;
+    z-index: -1;
+    /* اجعل العنصر في الخلف */
+}
+
+
+
+
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
-
-
 .store-footer {
- 
     background-color: transparent;
     background-image: linear-gradient(45deg, #342345 10%, #653696 100%);
 }
 
 .footer_is_dark .footer-bottom,.footer_is_dark .footer-bottom a,.footer_is_dark .footer-bottom a span {
-     background-color: #fff;
-     color: var(--1);
-     border-color: var(--1);
+    background-color: #fff;
+    color: var(--1);
+    border-color: var(--1);
 }
 
 a.footer-logo {
