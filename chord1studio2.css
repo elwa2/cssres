@@ -1,4 +1,4 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url(https://raw.githack.com/elwa2/cssres/main/chord1studio2.css);:root {
     --color-primary: var(--1);
     --color-primary-dark: #0e001f;
@@ -549,4 +549,47 @@ section:nth-child(18).s-block.s-block--banners > .grid {
 section:nth-child(n+18) {
     margin-top: 1em !important;
 }
+
 /* ///////////////////////////////////////////////////////////////// section:nth-child(18) ///////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////// section:nth-child(20) ///////////////////////////////////////////// */
+section:nth-child(20).s-block.s-block--banners > .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (min-width: 767px) {
+    section:nth-child(20) .banner-entry {
+        min-height: 213px;
+    }
+}
+
+@media (max-width: 767px) {
+    section:nth-child(20).s-block.s-block--banners > .grid {
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    section:nth-child(20) .banner-entry {
+        min-height: 213px;
+    }
+
+    section:nth-child(20).s-block.s-block--banners > .grid .banner-entry {
+        padding-top: 0;
+        /* max-height: 657px; */
+        min-height: 113px;
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////// section:nth-child(20) ///////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////// section:nth-child(21) ///////////////////////////////////////////// */
+section:nth-child(21).s-block.s-block--banners > .grid {
+    grid-template-columns: 1fr 1fr;
+}
+
+@media (max-width: 767px) {
+    section:nth-child(21).s-block.s-block--banners > .grid .banner-entry {
+        padding-top: 0;
+        /* max-height: 657px; */
+        min-height: 113px;
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////// section:nth-child(21) ///////////////////////////////////////////// */
