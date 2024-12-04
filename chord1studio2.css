@@ -1,4 +1,4 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url(https://raw.githack.com/elwa2/cssres/main/chord1studio2.css);:root {
     --color-primary: var(--1);
     --color-primary-dark: #0e001f;
@@ -626,22 +626,22 @@ section:nth-child(n+28) .grid div:nth-child(1), section:nth-child(0) .grid div:n
         z-index: -1;
         /* اجعل العنصر في الخلف */
     }
-}
 
-section:nth-child(28)::before {
-    background: url(https://cdn.salla.sa/form-builder/20ISMMrF3idxO7eh4Iwxf7h6cOrIVCtcPvBPrBZf.png);
-}
+    section:nth-child(28)::before {
+        background: url(https://cdn.salla.sa/form-builder/20ISMMrF3idxO7eh4Iwxf7h6cOrIVCtcPvBPrBZf.png);
+    }
 
-section:nth-child(29)::before {
-    background: url(https://cdn.salla.sa/form-builder/xwbn6QwOwBK8e8waKqsSpkg44Wl9z3dLPMr5sijx.png);
-}
+    section:nth-child(29)::before {
+        background: url(https://cdn.salla.sa/form-builder/xwbn6QwOwBK8e8waKqsSpkg44Wl9z3dLPMr5sijx.png);
+    }
 
-section:nth-child(30)::before {
-    background: url(https://cdn.salla.sa/form-builder/10WfNtwA5rHWi1Kvkmea8wJc4wRmIMNdFILJZHtc.png);
-}
+    section:nth-child(30)::before {
+        background: url(https://cdn.salla.sa/form-builder/10WfNtwA5rHWi1Kvkmea8wJc4wRmIMNdFILJZHtc.png);
+    }
 
-section:nth-child(31)::before {
-    background: url(https://cdn.salla.sa/form-builder/VeXhyrS3qEAdWhufu7TDRFF4RrESWNR44aohIfJY.png);
+    section:nth-child(31)::before {
+        background: url(https://cdn.salla.sa/form-builder/VeXhyrS3qEAdWhufu7TDRFF4RrESWNR44aohIfJY.png);
+    }
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
