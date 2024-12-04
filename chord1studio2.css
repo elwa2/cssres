@@ -1,4 +1,4 @@
-/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url(https://raw.githack.com/elwa2/cssres/main/chord1studio2.css);:root {
     --color-primary: var(--1);
     --color-primary-dark: #0e001f;
@@ -327,7 +327,10 @@ salla-slider.photos-slider .swiper {
         font-weight: bolder;
     }
 
-    section:nth-child(5) .s-block__title ,section:nth-child(6) .s-block__title {
+    section:nth-child(5) .s-block__title ,section:nth-child(6) .s-block__title ,
+section:nth-child(25) .s-block__title
+
+    {
         display: block;
         padding: 0;
         text-align: center;
@@ -365,7 +368,7 @@ salla-slider.photos-slider .swiper {
 /* /////////////////////////////////////////////////////////////////  اسماء الاقسام المتحركة///////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////// section:nth-child(7) ///////////////////////////////////////////// */
 @media (min-width: 1200px) {
-    section:nth-child(7), section:nth-child(8) {
+    section:nth-child(7), section:nth-child(8), section:nth-child(22), section:nth-child(26), section:nth-child(27), section:nth-child(23), section:nth-child(23) {
         max-width: 1580px;
         margin: auto;
     }
@@ -580,12 +583,12 @@ section:nth-child(20).s-block.s-block--banners > .grid {
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(20) ///////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////// section:nth-child(21) ///////////////////////////////////////////// */
-section:nth-child(21).s-block.s-block--banners > .grid {
+section:nth-child(21).s-block.s-block--banners > .grid, section:nth-child(24).s-block.s-block--banners > .grid {
     grid-template-columns: 1fr 1fr;
 }
 
 @media (max-width: 767px) {
-    section:nth-child(21).s-block.s-block--banners > .grid .banner-entry {
+    section:nth-child(21).s-block.s-block--banners > .grid .banner-entry, section:nth-child(24).s-block.s-block--banners > .grid .banner-entry {
         padding-top: 0;
         /* max-height: 657px; */
         min-height: 113px;
