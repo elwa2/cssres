@@ -621,12 +621,14 @@ section:nth-child(n+28).s-block.s-block--banners > .grid {
 section:nth-child(n+28).s-block.s-block--banners > .grid div {
     flex: 1 1 calc(50% - 0.5rem);
     /* عرض 50% لكل مربع مع مراعاة الفجوة */
+    min-height: 128px;
 }
 
 /* تخصيص الصف الثاني */
 section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
     flex: 1 1 calc(30.33% - 0.5rem);
     /* عرض 33.33% لكل مربع */
+    min-height: 90px;
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
