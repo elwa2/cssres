@@ -1,5 +1,5 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
-@import url(https://raw.githack.com/elwa2/cssres/main/chord1studio2.css);:root {
+@import url(https://raw.githack.com/elwa2/cssres/main/chord1studio 2.css);:root {
     --color-primary: var(--1);
     --color-primary-dark: #0e001f;
     --color-primary-light: #5a496b;
@@ -597,15 +597,39 @@ section:nth-child(21).s-block.s-block--banners > .grid, section:nth-child(24).s-
     height: 18rem;
 }
 
+@media (max-width: 768px) {
+    .product-entry__image {
+        height: 15rem;
+    }
+}
+
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
-section:nth-child(28).s-block.s-block--banners > .grid {
+/* section:nth-child(28).s-block.s-block--banners > .grid {
     grid-template-columns: 1fr 1fr 1fr ;
 }
 
 section:nth-child(n+28) .grid div:nth-child(1), section:nth-child(0) .grid div:nth-child(2) {
     grid-column: span 2;
 }
+ */
+section:nth-child(n+28).s-block.s-block--banners > .grid {
+    display: flex;
+    flex-wrap: wrap;
+    /* يسمح بالتفاف العناصر إلى صفوف جديدة */
+}
 
+section:nth-child(n+28).s-block.s-block--banners > .grid div {
+    flex: 1 1 calc(50% - 0.5rem);
+    /* عرض 50% لكل مربع مع مراعاة الفجوة */
+}
+
+/* تخصيص الصف الثاني */
+section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
+    flex: 1 1 calc(30.33% - 0.5rem);
+    /* عرض 33.33% لكل مربع */
+}
+
+/* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
 @media (min-width: 767px) {
     section:nth-child(28), section:nth-child(29), section:nth-child(30), section:nth-child(31) {
         position: relative;
@@ -626,22 +650,22 @@ section:nth-child(n+28) .grid div:nth-child(1), section:nth-child(0) .grid div:n
         z-index: -1;
         /* اجعل العنصر في الخلف */
     }
+}
 
-    section:nth-child(28)::before {
-        background: url(https://cdn.salla.sa/form-builder/20ISMMrF3idxO7eh4Iwxf7h6cOrIVCtcPvBPrBZf.png);
-    }
+section:nth-child(28)::before {
+    background: url(https://cdn.salla.sa/form-builder/20ISMMrF3idxO7eh4Iwxf7h6cOrIVCtcPvBPrBZf.png);
+}
 
-    section:nth-child(29)::before {
-        background: url(https://cdn.salla.sa/form-builder/xwbn6QwOwBK8e8waKqsSpkg44Wl9z3dLPMr5sijx.png);
-    }
+section:nth-child(29)::before {
+    background: url(https://cdn.salla.sa/form-builder/xwbn6QwOwBK8e8waKqsSpkg44Wl9z3dLPMr5sijx.png);
+}
 
-    section:nth-child(30)::before {
-        background: url(https://cdn.salla.sa/form-builder/10WfNtwA5rHWi1Kvkmea8wJc4wRmIMNdFILJZHtc.png);
-    }
+section:nth-child(30)::before {
+    background: url(https://cdn.salla.sa/form-builder/10WfNtwA5rHWi1Kvkmea8wJc4wRmIMNdFILJZHtc.png);
+}
 
-    section:nth-child(31)::before {
-        background: url(https://cdn.salla.sa/form-builder/VeXhyrS3qEAdWhufu7TDRFF4RrESWNR44aohIfJY.png);
-    }
+section:nth-child(31)::before {
+    background: url(https://cdn.salla.sa/form-builder/VeXhyrS3qEAdWhufu7TDRFF4RrESWNR44aohIfJY.png);
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
@@ -658,4 +682,24 @@ section:nth-child(n+28) .grid div:nth-child(1), section:nth-child(0) .grid div:n
 
 a.footer-logo {
     display: none;
+}
+
+.footer-is-light .store-footer {
+    color: #fff;
+}
+
+div#item-text {
+}
+
+.relative.text-gray-600.break-words {
+    background: #fff;
+    padding: 15px;
+    position: relative;
+    background: #fff url("../images/quote.svg") top 1rem center no-repeat;
+    padding: 2.5rem 1rem 1.5rem;
+    border: 1px solid #D6D6D6;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
 }
