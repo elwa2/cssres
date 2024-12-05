@@ -785,6 +785,20 @@ section:nth-child(4):after {
     /* z-index: -1; */
 }
 
+@media (max-width: 767px) {
+    section:nth-child(4):after {
+        content: "";
+        left: -1px;
+        top: 237px;
+        width: 519px;
+        height: 482px;
+        background: url(https://cdn.salla.sa/form-builder/gj4EcjSVx5MXLKk6xSFV6nmiQsLBRVj9izuJZkP4.png) no-repeat !important;
+        position: absolute;
+        /* background: #000 !important; */
+        /* z-index: -1; */
+    }
+}
+
 /* ////////////////////
 
 https://cdn.salla.sa/form-builder/gj4EcjSVx5MXLKk6xSFV6nmiQsLBRVj9izuJZkP4.png
