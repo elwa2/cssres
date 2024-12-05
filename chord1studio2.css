@@ -440,6 +440,72 @@ section:nth-child(10) {
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(9) 10 ///////////////////////////////////////////// */
+
+
+
+
+
+
+ 
+section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:hover:after ,
+section:nth-child(9).s-block.s-block--banners > .grid .banner-entry:hover:after ,
+section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after ,
+section:nth-child(18).s-block.s-block--banners > .grid .banner-entry:hover:after ,
+section:nth-child(n+19).s-block.s-block--banners > .grid .banner-entry:hover:after ,
+section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after ,
+section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after 
+
+
+
+
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid #fff; /* سماكة ولون الحدود */
+    border-radius: 25px; /* حواف مستديرة إذا لزم الأمر */
+    opacity: 1; /* تظهر عند التفاعل */
+    transform: scale(.9); /* الحجم النهائي */
+    transition: all 0.3s ease-out; /* تأثير السلاسة */
+    z-index: 1; /* يظهر فوق الخلفية */
+}
+
+section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:after,
+section:nth-child(9).s-block.s-block--banners > .grid .banner-entry:after,
+section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after,
+section:nth-child(n+18).s-block.s-block--banners > .grid .banner-entry:after,
+section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after
+
+
+
+ {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid transparent; /* يبدأ بدون حدود */
+    border-radius: 20px;
+    opacity: 0; /* مخفي افتراضيًا */
+    transform: scale(0.8); /* حجم أصغر لبدء التحريك */
+    transition: all 0.3s ease-out; /* تأثير السلاسة */
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* ///////////////////////////////////////////////////////////////// section:nth-child(12) ///////////////////////////////////////////// */
 section:nth-child(13).s-block.s-block--banners > .grid, section:nth-child(14).s-block.s-block--banners > .grid, section:nth-child(15).s-block.s-block--banners > .grid, section:nth-child(16).s-block.s-block--banners > .grid, section:nth-child(17).s-block.s-block--banners > .grid {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -619,6 +685,20 @@ section:nth-child(n+28).s-block.s-block--banners > .grid {
 }
 
 section:nth-child(n+28).s-block.s-block--banners > .grid div {
+    flex: 1 1 calc(44% - 0.5rem);
+    /* عرض 50% لكل مربع مع مراعاة الفجوة */
+}
+
+/* تخصيص الصف الثاني */
+section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
+    flex: 1 1 calc(30.33% - 0.5rem);
+    /* عرض 33.33% لكل مربع */
+}
+
+
+@media (max-width: 767px) {
+    
+section:nth-child(n+28).s-block.s-block--banners > .grid div {
     flex: 1 1 calc(50% - 0.5rem);
     /* عرض 50% لكل مربع مع مراعاة الفجوة */
     min-height: 128px;
@@ -629,6 +709,9 @@ section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
     flex: 1 1 calc(30.33% - 0.5rem);
     /* عرض 33.33% لكل مربع */
     min-height: 90px;
+}
+
+
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
@@ -705,3 +788,4 @@ div#item-text {
     border-radius: 5px;
     margin-bottom: 1.5rem;
 }
+
