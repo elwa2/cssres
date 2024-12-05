@@ -1,4 +1,4 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url(https://raw.githack.com/elwa2/cssres/main/chord1studio 2.css);:root {
     --color-primary: var(--1);
     --color-primary-dark: #0e001f;
@@ -716,14 +716,14 @@ section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
         content: '';
         position: absolute;
         top: -1px;
-        left: -8.2vw;
+        left: -10rem;
         width: 100vw;
-        /* عرض الشاشة بالكامل */
         height: 100%;
-        /* ارتفاع العنصر */
         margin: auto;
         z-index: -1;
-        /* اجعل العنصر في الخلف */
+        background-position: 154px 64px !important;
+        z-index: -1;
+        background-size: contain !important;
     }
 }
 
@@ -756,7 +756,7 @@ section:nth-child(16):after {
     height: 146px;
     background: url(https://cdn.salla.sa/form-builder/v6OGquZ3oax0Da0NR4n3SvUTHbVLUjpcIfIr5XEi.png) no-repeat;
     position: absolute;
-     z-index: -1;
+    z-index: -1;
 }
 
 section:nth-child(18):after {
@@ -773,8 +773,6 @@ section.s-block.container.s-block--banners {
     background: url(https://cdn.salla.sa/form-builder/LB6YBQXXJm1cl5dTY2SyL5KMdpgrPWoxz5M1pM8J.png) repeat center/80% transparent !important;
 }
 
-
-
 section:nth-child(4):after {
     content: "";
     left: -139px;
@@ -786,8 +784,6 @@ section:nth-child(4):after {
     /* background: #000 !important; */
     /* z-index: -1; */
 }
-
-
 
 /* ////////////////////
 
