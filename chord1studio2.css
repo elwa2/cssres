@@ -359,6 +359,8 @@ salla-slider.photos-slider .swiper {
 
     .s-block__title .center-side {
         background-color: transparent;
+        position: relative;
+        top: -16px;
     }
 }
 
@@ -440,71 +442,44 @@ section:nth-child(10) {
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(9) 10 ///////////////////////////////////////////// */
-
-
-
-
-
-
- 
-section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:hover:after ,
-section:nth-child(9).s-block.s-block--banners > .grid .banner-entry:hover:after ,
-section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after ,
-section:nth-child(18).s-block.s-block--banners > .grid .banner-entry:hover:after ,
-section:nth-child(n+19).s-block.s-block--banners > .grid .banner-entry:hover:after ,
-section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after ,
-section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after 
-
-
-
-
-{
+section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(9).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(18).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(n+19).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid #fff; /* سماكة ولون الحدود */
-    border-radius: 25px; /* حواف مستديرة إذا لزم الأمر */
-    opacity: 1; /* تظهر عند التفاعل */
-    transform: scale(.9); /* الحجم النهائي */
-    transition: all 0.3s ease-out; /* تأثير السلاسة */
-    z-index: 1; /* يظهر فوق الخلفية */
+    border: 2px solid #fff;
+    /* سماكة ولون الحدود */
+    border-radius: 25px;
+    /* حواف مستديرة إذا لزم الأمر */
+    opacity: 1;
+    /* تظهر عند التفاعل */
+    transform: scale(.9);
+    /* الحجم النهائي */
+    transition: all 0.3s ease-out;
+    /* تأثير السلاسة */
+    z-index: 1;
+    /* يظهر فوق الخلفية */
 }
 
-section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:after,
-section:nth-child(9).s-block.s-block--banners > .grid .banner-entry:after,
-section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after,
-section:nth-child(n+18).s-block.s-block--banners > .grid .banner-entry:after,
-section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after
-
-
-
- {
+section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(9).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(n+18).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    border: 2px solid transparent; /* يبدأ بدون حدود */
+    border: 2px solid transparent;
+    /* يبدأ بدون حدود */
     border-radius: 20px;
-    opacity: 0; /* مخفي افتراضيًا */
-    transform: scale(0.8); /* حجم أصغر لبدء التحريك */
-    transition: all 0.3s ease-out; /* تأثير السلاسة */
+    opacity: 0;
+    /* مخفي افتراضيًا */
+    transform: scale(0.8);
+    /* حجم أصغر لبدء التحريك */
+    transition: all 0.3s ease-out;
+    /* تأثير السلاسة */
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(12) ///////////////////////////////////////////// */
 section:nth-child(13).s-block.s-block--banners > .grid, section:nth-child(14).s-block.s-block--banners > .grid, section:nth-child(15).s-block.s-block--banners > .grid, section:nth-child(16).s-block.s-block--banners > .grid, section:nth-child(17).s-block.s-block--banners > .grid {
@@ -695,33 +670,48 @@ section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
     /* عرض 33.33% لكل مربع */
 }
 
-
 @media (max-width: 767px) {
-    
-section:nth-child(n+28).s-block.s-block--banners > .grid div {
-    flex: 1 1 calc(50% - 0.5rem);
-    /* عرض 50% لكل مربع مع مراعاة الفجوة */
-    min-height: 128px;
-}
+    section:nth-child(n+28).s-block.s-block--banners > .grid div {
+        flex: 1 1 calc(50% - 0.5rem);
+        /* عرض 50% لكل مربع مع مراعاة الفجوة */
+        min-height: 128px;
+    }
 
-/* تخصيص الصف الثاني */
-section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
-    flex: 1 1 calc(30.33% - 0.5rem);
-    /* عرض 33.33% لكل مربع */
-    min-height: 90px;
-}
-
-
+    /* تخصيص الصف الثاني */
+    section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
+        flex: 1 1 calc(30.33% - 0.5rem);
+        /* عرض 33.33% لكل مربع */
+        min-height: 90px;
+    }
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
+@media (max-width: 767px) {
+    section:nth-child(28), section:nth-child(29), section:nth-child(30), section:nth-child(31) {
+        position: relative;
+        padding-top: 42px;
+    }
+
+    section:nth-child(28)::before , section:nth-child(29)::before , section:nth-child(30)::before , section:nth-child(31)::before {
+        background-size: cover;
+        content: '';
+        position: absolute;
+        top: -79px;
+        left: 0vw;
+        width: 100vw;
+        height: 100%;
+        background-position: -63px 64px !important;
+        z-index: -1;
+        background-size: contain !important;
+    }
+}
+
 @media (min-width: 767px) {
     section:nth-child(28), section:nth-child(29), section:nth-child(30), section:nth-child(31) {
         position: relative;
     }
 
     section:nth-child(28)::before , section:nth-child(29)::before , section:nth-child(30)::before , section:nth-child(31)::before {
-        background-size: cover;
         background-size: cover;
         content: '';
         position: absolute;
@@ -747,6 +737,7 @@ section:nth-child(29)::before {
 
 section:nth-child(30)::before {
     background: url(https://cdn.salla.sa/form-builder/10WfNtwA5rHWi1Kvkmea8wJc4wRmIMNdFILJZHtc.png);
+    /* background: #000; */
 }
 
 section:nth-child(31)::before {
@@ -789,3 +780,7 @@ div#item-text {
     margin-bottom: 1.5rem;
 }
 
+
+.s-block__title .center-side::after {
+    display: none;
+}
