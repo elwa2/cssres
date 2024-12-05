@@ -712,19 +712,19 @@ section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
     }
 
     section:nth-child(28)::before , section:nth-child(29)::before , section:nth-child(30)::before , section:nth-child(31)::before {
-        background-size: cover !important;
+        background-size: cover;
         content: '';
         position: absolute;
         top: -1px;
         left: -8.2vw;
         width: 100vw;
+        /* عرض الشاشة بالكامل */
         height: 100%;
+        /* ارتفاع العنصر */
         margin: auto;
         z-index: -1;
-        background-position: 151px 62px !important;
-        z-index: -1;
-        background-size: contain !important;
-     }
+        /* اجعل العنصر في الخلف */
+    }
 }
 
 section:nth-child(28)::before {
@@ -742,6 +742,36 @@ section:nth-child(30)::before {
 
 section:nth-child(31)::before {
     background: url(https://cdn.salla.sa/form-builder/VeXhyrS3qEAdWhufu7TDRFF4RrESWNR44aohIfJY.png);
+}
+
+section:nth-child(n) {
+    position: relative;
+}
+
+section:nth-child(16):after {
+    content: "";
+    right: 0;
+    top: 0;
+    width: 286px;
+    height: 146px;
+    background: url(https://i.ibb.co/BjfrtwB/shap3.png) no-repeat;
+    position: absolute;
+    /* background: #000 !important; */
+    z-index: -1;
+}
+
+section:nth-child(18):after {
+    content: "";
+    right: 0;
+    top: 0;
+    width: 286px;
+    height: 146px;
+    position: absolute;
+    z-index: -1;
+}
+
+section.s-block.container.s-block--banners {
+    background: url(https://i.ibb.co/54Ywywc/bg.png) repeat center/80% transparent !important;
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
@@ -780,7 +810,10 @@ div#item-text {
     margin-bottom: 1.5rem;
 }
 
-
 .s-block__title .center-side::after {
     display: none;
+}
+
+section.s-block.container.s-block--banners {
+    /* background: #000; */
 }
