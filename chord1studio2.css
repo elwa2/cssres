@@ -712,19 +712,19 @@ section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
     }
 
     section:nth-child(28)::before , section:nth-child(29)::before , section:nth-child(30)::before , section:nth-child(31)::before {
-        background-size: cover;
+        background-size: cover !important;
         content: '';
         position: absolute;
         top: -1px;
         left: -8.2vw;
         width: 100vw;
-        /* عرض الشاشة بالكامل */
         height: 100%;
-        /* ارتفاع العنصر */
         margin: auto;
         z-index: -1;
-        /* اجعل العنصر في الخلف */
-    }
+        background-position: 151px 62px !important;
+        z-index: -1;
+        background-size: contain !important;
+     }
 }
 
 section:nth-child(28)::before {
