@@ -1,4 +1,4 @@
-/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 /* @font-face {
     
     src: url(https://www.fontstatic.com/fonts/sky/sky.eot?#iefix);
@@ -2689,7 +2689,7 @@ body {
     display: flex!important;
     justify-content: center;
     align-items: center;
-    width: 80px
+    /* width: 80px */
 }
 
 header>.dark {
