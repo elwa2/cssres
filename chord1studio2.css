@@ -930,3 +930,25 @@ div#item-text {
 section.s-block.container.s-block--banners {
     /* background: #000; */
 }
+
+#app > div.relative.z-0.s-block > footer > div.store-footer__top > div > div > div:nth-child(3) {
+    display: none;
+}
+
+.s-menu-footer-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* يسمح بتوزيع العناصر على عدة صفوف */
+}
+
+.s-menu-footer-item {
+    width: 50%;
+    /* عرض كل رابط 50% من عرض الحاوية */
+    box-sizing: border-box;
+    /* لضمان أن الحواف والهوامش لا تؤثر على العرض */
+}
+
+
+.footer-content.grid.grid-cols-2.md\:flex.flex-wrap.gap-2\.5.lg\:gap-4 {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
