@@ -437,7 +437,7 @@ section:nth-child(10).s-block.s-block--banners > .grid .banner-entry .lazy__bg.l
 section:nth-child(9).s-block.s-block--banners > .grid .banner-entry {
     height: unset;
     min-height: 219px;
-    min-height: 83px;
+    min-height: 83px !important;
 }
 
 section:nth-child(9).s-block.s-block--banners > .grid .banner-entry .lazy__bg.loaded:after {
