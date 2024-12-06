@@ -1550,12 +1550,12 @@ button.more-button, a.more-button {
     justify-content: center;
     align-items: center;
     gap: 5px;
-    margin: 15px
+    margin: 15px;
 }
 
 .products-container>div>.d-flex>div>div {
     margin: unset;
-    width: 50%
+    width: 50%;
 }
 
 .products-container>div>.d-flex>div>div label {
@@ -2715,3 +2715,10 @@ header>.dark {
     font-size: 14px;
     top: -9px;
 }
+
+
+.d-inline-block {
+    top: -9px;
+}
+
+#products-list-filter {}
