@@ -2716,9 +2716,8 @@ header>.dark {
     top: -9px;
 }
 
-
-.d-inline-block {
-    top: -9px;
+@media (min-width: 1100px) {
+    .d-inline-block {
+        top: -9px;
+    }
 }
-
-#products-list-filter {}
