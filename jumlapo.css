@@ -1621,10 +1621,9 @@ button.more-button, a.more-button {
 #filters-form-collapse-sm #products-list-filter-form-clear {
     display: flex!important;
     flex-wrap: nowrap;
-    overflow-x: scroll;
     padding: 5px;
-    background: var(--1);
-    border-radius: 3px
+    background: #ffffff;
+    border-radius: 3px;
 }
 
 #filters-form-collapse-sm #products-list-filter-form-save {
