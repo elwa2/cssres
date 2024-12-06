@@ -1,4 +1,4 @@
-/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url(https://raw.githack.com/elwa2/cssres/main/chord1studio 2.css); div#s-theme_preview_bar, div#s-theme_edit_bar,salla-maintenance-alert.s-maintenance-alert-wrapper.hydrated {
     display: none !important;
 }
@@ -487,13 +487,13 @@ section:nth-child(4).s-block.s-block--banners > .grid .banner-entry a:hover:afte
     /* تأثير السلاسة */
     z-index: 1;
     /* يظهر فوق الخلفية */
-    top: -85px;
+    top: 0px;
 }
 
 section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(9).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(n+18).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after {
     content: "";
     position: absolute;
-    top: -21px;
+    top: 0px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -502,7 +502,7 @@ section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:after, secti
     border-radius: 20px;
     opacity: 0;
     /* مخفي افتراضيًا */
-    transform: scale(2);
+    transform: scale(1);
     /* حجم أصغر لبدء التحريك */
     transition: all 0.3s ease-out;
     /* تأثير السلاسة */
