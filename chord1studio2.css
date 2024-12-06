@@ -259,7 +259,7 @@ section:nth-child(4) .two-row .banner-entry:nth-child(4), section:nth-child(4) .
     .banner-entry h3 {
         position: absolute;
         left: 0;
-        right: 0;
+        right: -12px;
         top: 35%;
         -webkit-transform: translateY(70%);
         transform: translateY(70%);
