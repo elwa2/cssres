@@ -141,7 +141,6 @@ section:nth-child(4).s-block.s-block--banners > .grid {
 
 section:nth-child(4).s-block.s-block--banners > .grid .banner-entry {
     height: unset;
-    padding-top: 19%;
     /* max-height: 657px; */
     min-height: 277px;
     -webkit-box-shadow: 0px 0px 40px 0px rgb(0 0 0 / 32%);
@@ -261,11 +260,12 @@ section:nth-child(4) .two-row .banner-entry:nth-child(4), section:nth-child(4) .
         color: #fff;
         text-align: center;
         font-size: 14px;
+        font-weight: 200;
     }
 
     section:nth-child(9) .banner-entry h3 {
         right: -43px;
-        top: 2%;
+        top: 21%;
     }
 }
 
@@ -350,7 +350,26 @@ salla-slider.photos-slider .swiper {
         position: relative;
         right: 45px;
     }
+
+    #app > section:nth-child(13) > div.s-block__title > div > h2 {
+        position: relative;
+        right: 31px;
+        top: -40px;
+    }
 }
+
+
+
+@media (max-width: 950px) {
+  
+
+    #app > section:nth-child(13) > div.s-block__title > div > h2 {
+        position: relative;
+        right: -17px;
+        top: -8px;
+    }
+}
+
 
 salla-slider.photos-slider .swiper {
     margin-left: 0px;
@@ -413,7 +432,7 @@ section:nth-child(9).s-block.s-block--banners > .grid, section:nth-child(10).s-b
 
     section:nth-child(10) .banner-entry h3 {
         right: -43px;
-        top: 2%;
+        top: 14%;
     }
 }
 
@@ -528,6 +547,12 @@ section:nth-child(13) .banner-entry h3, section:nth-child(14) .banner-entry h3, 
     right: 16px;
 }
 
+@media (max-width: 1450px) {
+    section:nth-child(13) .banner-entry h3, section:nth-child(14) .banner-entry h3, section:nth-child(15) .banner-entry h3, section:nth-child(16) .banner-entry h3, section:nth-child(17) .banner-entry h3, section:nth-child(13) .banner-entry h3 {
+        right: -18px;
+    }
+}
+
 section:nth-child(13).s-block.s-block--banners > .grid .banner-entry .lazy__bg.lazy.entered.loaded, section:nth-child(14).s-block.s-block--banners > .grid .banner-entry .lazy__bg.lazy.entered.loaded, section:nth-child(15).s-block.s-block--banners > .grid .banner-entry .lazy__bg.lazy.entered.loaded, section:nth-child(16).s-block.s-block--banners > .grid .banner-entry .lazy__bg.lazy.entered.loaded, section:nth-child(17).s-block.s-block--banners > .grid .banner-entry .lazy__bg.lazy.entered.loaded {
     width: 336px;
     height: 199px;
@@ -613,8 +638,18 @@ section:nth-child(n+18).s-block.s-block--banners > .grid .banner-entry .lazy__bg
 
 @media (max-width: 767px) {
     section:nth-child(n+18) .banner-entry h3 {
-        right: -43px;
-        top: 2%;
+        right: -6px;
+        top: 27%;
+    }
+
+    section:nth-child(n+20) .banner-entry h3 {
+        right: -6px;
+        top: 44%;
+    }
+
+    section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3).banner-entry h3 {
+        right: -45px;
+        top: 28%;
     }
 }
 
@@ -671,6 +706,12 @@ section:nth-child(21).s-block.s-block--banners > .grid, section:nth-child(24).s-
 /* ///////////////////////////////////////////////////////////////// section:nth-child(21) ///////////////////////////////////////////// */
 .product-entry__image {
     height: 18rem;
+}
+
+@media (max-width: 1450px) {
+    .product-entry__image {
+        height: 14rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -883,9 +924,9 @@ https://cdn.salla.sa/form-builder/gj4EcjSVx5MXLKk6xSFV6nmiQsLBRVj9izuJZkP4.png
 
 
 ///////////////////////////////////////////// section:nth-child(28) ///////////////////////////////////////////// */
-.store-footer {
+.store-footer,.page-header {
     background-color: transparent;
-    background-image: linear-gradient(45deg, #342345 10%, #653696 100%);
+    background-image: linear-gradient(45deg, #342345 10%, #653696 100%) !important;
 }
 
 .footer_is_dark .footer-bottom,.footer_is_dark .footer-bottom a,.footer_is_dark .footer-bottom a span {
@@ -943,7 +984,9 @@ section.s-block.container.s-block--banners {
     /* لضمان أن الحواف والهوامش لا تؤثر على العرض */
 }
 
-
 .footer-content.grid.grid-cols-2.md\:flex.flex-wrap.gap-2\.5.lg\:gap-4 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.page-header {
 }
