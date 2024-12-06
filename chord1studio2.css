@@ -1,4 +1,4 @@
-/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 @import url(https://raw.githack.com/elwa2/cssres/main/chord1studio 2.css);:root {
     --color-primary: var(--1);
     --color-primary-dark: #0e001f;
@@ -356,8 +356,11 @@ salla-slider.photos-slider .swiper {
         padding-right: 30px !important;
         color: var(--1);
     }
-
-    .s-block__title .center-side {
+  section:nth-child(n) .s-block__title .center-side {
+        background-color: transparent;
+      
+    }
+    section:nth-child(n+26) .s-block__title .center-side {
         background-color: transparent;
         position: relative;
         top: -16px;
@@ -367,8 +370,12 @@ salla-slider.photos-slider .swiper {
 /* /////////////////////////////////////////////////////////////////  اسماء الاقسام المتحركة///////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////////////// section:nth-child(7) ///////////////////////////////////////////// */
 @media (min-width: 1200px) {
-    section:nth-child(7), section:nth-child(8), section:nth-child(22), section:nth-child(26), section:nth-child(27), section:nth-child(23), section:nth-child(23) {
-        max-width: 1580px;
+    section:nth-child(7), section:nth-child(8), section:nth-child(11), section:nth-child(12),  section:nth-child(n+5).s-block.s-block--photos-slider, 
+    
+    section:nth-child(22), section:nth-child(26), 
+    section:nth-child(27), section:nth-child(23),
+     section:nth-child(23) {
+        max-width: 1567px;
         margin: auto;
     }
 }
