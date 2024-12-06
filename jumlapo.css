@@ -1,4 +1,4 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 /* @font-face {
     
     src: url(https://www.fontstatic.com/fonts/sky/sky.eot?#iefix);
@@ -2699,4 +2699,19 @@ header>.dark {
     fill: #ffffff;
     border: 2px solid #b73b3b00;
     olor: #ffffff;
+}
+
+.testimonials-customer-card .card-body:before {
+    content: "\f005 ""\f005 ""\f005 ""\f005 ""\f005 ";
+    display: block;
+    font-family: icomoon!important;
+    color: #ffd814;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 3;
+}
+
+.testimonials-slider .slick-dots li button:before {
+    font-size: 14px;
+    top: -9px;
 }
