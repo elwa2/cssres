@@ -442,7 +442,13 @@ section:nth-child(10) {
 }
 
 /* ///////////////////////////////////////////////////////////////// section:nth-child(9) 10 ///////////////////////////////////////////// */
-section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(9).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(18).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(n+19).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after , section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:hover:after {
+section:nth-child(4).s-block.s-block--banners > .grid .banner-entry a:hover:after ,
+ section:nth-child(9).s-block.s-block--banners > .grid .banner-entry a:hover:after ,
+  section:nth-child(10).s-block.s-block--banners > .grid .banner-entry a:hover:after , 
+  section:nth-child(18).s-block.s-block--banners > .grid .banner-entry a:hover:after , 
+  section:nth-child(n+19).s-block.s-block--banners > .grid .banner-entry a:hover:after , 
+  section:nth-child(10).s-block.s-block--banners > .grid .banner-entry a:hover:after ,
+   section:nth-child(10).s-block.s-block--banners > .grid .banner-entry a:hover:after {
     content: "";
     position: absolute;
     top: 0;
