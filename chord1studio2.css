@@ -1057,7 +1057,7 @@ header.flex.items-center.justify-center.mb-2\.5.md\:mb-7.space-x-2.rtl\:space-x-
 @media (max-width: 767px) {
     body.product-index h1.font-bold.text-xl.rtl\:pl-3.ltr\:pr-3 {
         width: 74%;
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -1081,8 +1081,11 @@ span.before-price.text-gray-400.line-through.whitespace-nowrap.leading-none {
 }
 
 @media (max-width: 767px) {
-    .flex.gap-6.md\:gap-8.items-center {
+    body.product-index .flex.gap-6.md\:gap-8.items-center {
         gap: 0;
+        position: relative;
+        /* right: 20px; */
+        width: 160px;
     }
 }
 
