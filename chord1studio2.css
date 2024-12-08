@@ -235,6 +235,13 @@ section:nth-child(4) .two-row .banner-entry:nth-child(4), section:nth-child(4) .
     transform: translateY(-50%);
 }
 
+@media (max-width: 991px) {
+    .banner-entry:hover h3 {
+        top: -2rem;
+        right: 6px;
+    }
+}
+
 .banner-entry h3 {
     position: absolute;
     left: 0;
@@ -264,8 +271,13 @@ section:nth-child(4) .two-row .banner-entry:nth-child(4), section:nth-child(4) .
     }
 
     section:nth-child(9) .banner-entry h3 {
-        right: -43px;
+        right: -45px;
         top: 21%;
+    }
+
+    section:nth-child(n+9) .banner-entry:hover h3 {
+        top: -1rem;
+        right: 6px;
     }
 }
 
@@ -358,18 +370,13 @@ salla-slider.photos-slider .swiper {
     }
 }
 
-
-
 @media (max-width: 950px) {
-  
-
     #app > section:nth-child(13) > div.s-block__title > div > h2 {
         position: relative;
         right: -17px;
-        top: -8px;
+        top: 1px;
     }
 }
-
 
 salla-slider.photos-slider .swiper {
     margin-left: 0px;
@@ -385,6 +392,8 @@ salla-slider.photos-slider .swiper {
         background: transparent;
         padding-right: 30px !important;
         color: var(--1);
+        top: 3px;
+        text-align: center;
     }
 
     section:nth-child(n) .s-block__title .center-side {
@@ -395,6 +404,11 @@ salla-slider.photos-slider .swiper {
         background-color: transparent;
         position: relative;
         top: -16px;
+    }
+
+    section:nth-child(n+32) .s-block__title h2 {
+        position: relative;
+        top: 8px;
     }
 }
 
@@ -525,7 +539,7 @@ section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:after, secti
 @media (max-width: 1290px) {
     section:nth-child(4).s-block.s-block--banners > .grid .banner-entry a:hover:after , section:nth-child(9).s-block.s-block--banners > .grid .banner-entry a:hover:after , section:nth-child(10).s-block.s-block--banners > .grid .banner-entry a:hover:after , section:nth-child(18).s-block.s-block--banners > .grid .banner-entry a:hover:after , section:nth-child(n+19).s-block.s-block--banners > .grid .banner-entry a:hover:after , section:nth-child(10).s-block.s-block--banners > .grid .banner-entry a:hover:after , section:nth-child(10).s-block.s-block--banners > .grid .banner-entry a:hover:after {
         transform: scale(1);
-        top: 0px;
+        top: 6px;
     }
 
     section:nth-child(4).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(9).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(n+18).s-block.s-block--banners > .grid .banner-entry:after, section:nth-child(10).s-block.s-block--banners > .grid .banner-entry:after {
@@ -716,7 +730,17 @@ section:nth-child(21).s-block.s-block--banners > .grid, section:nth-child(24).s-
 
 @media (max-width: 768px) {
     .product-entry__image {
-        height: 15rem;
+        height: 12rem;
+    }
+}
+
+@media (max-width: 767px) {
+    salla-slider .slide--one-fourth {
+        height: auto;
+        width: 100%;
+        max-width: 203px;
+        padding-left: 5px;
+        padding-right: 5px;
     }
 }
 
@@ -745,12 +769,18 @@ section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
     flex: 1 1 calc(30.33% - 0.5rem);
     /* عرض 33.33% لكل مربع */
 }
-
+    section:nth-child(n+28).s-block.s-block--banners > .grid div {
+      
+        
+        background-position: 0px -2px;
+    }
 @media (max-width: 767px) {
     section:nth-child(n+28).s-block.s-block--banners > .grid div {
         flex: 1 1 calc(50% - 0.5rem);
         /* عرض 50% لكل مربع مع مراعاة الفجوة */
-        min-height: 128px;
+        min-height: 140px;
+        background-size: 129%;
+        background-position: 0px -2px;
     }
 
     /* تخصيص الصف الثاني */
@@ -780,6 +810,13 @@ section:nth-child(n+28).s-block.s-block--banners > .grid div:nth-child(n+3) {
         z-index: -1;
         background-size: contain !important;
     }
+}
+
+section:nth-child(28) .s-block__title h2::after , section:nth-child(29) .s-block__title h2::after , section:nth-child(30) .s-block__title h2::after , section:nth-child(31) .s-block__title h2::after {
+    content: '( تصفّح حسب النسخة )';
+    display: block;
+    text-align: center;
+    font-size: 15px;
 }
 
 @media (min-width: 1300px) {
@@ -851,9 +888,10 @@ section:nth-child(16):after {
     top: 0;
     width: 286px;
     height: 146px;
-    background: url(https://cdn.salla.sa/form-builder/v6OGquZ3oax0Da0NR4n3SvUTHbVLUjpcIfIr5XEi.png) no-repeat;
+    background: url(https://cdn.salla.sa/form-builder/ML8aFKtN0CO0ew2nSUsq3oI1okWFxtnxzm8cVXVM.png) no-repeat;
     position: absolute;
     z-index: -1;
+    opacity: 0.5;
 }
 
 section:nth-child(18):after {
@@ -915,6 +953,7 @@ section:nth-child(4):after {
         position: absolute;
         /* background: #000 !important; */
         /* z-index: -1; */
+        opacity: 0.5;
     }
 }
 
@@ -989,4 +1028,21 @@ section.s-block.container.s-block--banners {
 }
 
 .page-header {
+}
+
+header.flex.items-center.justify-center.mb-2\.5.md\:mb-7.space-x-2.rtl\:space-x-reverse.min-h-\[40px\] {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    body.product-index h1.font-bold.text-xl.rtl\:pl-3.ltr\:pr-3 {
+        width: 74%;
+    }
+}
+
+.tab-accordion .panel {
+    transition-duration: 400ms;
+    grid-template-rows: 0fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 1rem;
 }
