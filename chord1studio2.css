@@ -1057,6 +1057,7 @@ header.flex.items-center.justify-center.mb-2\.5.md\:mb-7.space-x-2.rtl\:space-x-
 @media (max-width: 767px) {
     body.product-index h1.font-bold.text-xl.rtl\:pl-3.ltr\:pr-3 {
         width: 74%;
+        font-size: 1rem;
     }
 }
 
@@ -1078,3 +1079,23 @@ span.before-price.text-gray-400.line-through.whitespace-nowrap.leading-none {
     position: relative;
     right: 6px;
 }
+
+@media (max-width: 767px) {
+    .flex.gap-6.md\:gap-8.items-center {
+        gap: 0;
+    }
+}
+
+body.product-index select#product-filter {
+    width: 83%;
+}
+
+body.product-index .main-content.flex-1.w-full.ltr\:lg\:ml-8.rtl\:lg\:mr-8 .mb-4.sm\:mb-6.flex.justify-between.items-center .center-between {
+}
+
+
+body.product-single .accordion.details-accordion,body.product-single .s-product-options-wrapper,body.product-single .tab-accordion .panel {
+    background: transparent !important;
+}
+
+body.product-single.salla-349994915.color-mode-light.rtl.font-dinnextltarabic-regular.bg-white.header-is-light.footer_is_dark.has-breadcrumbs {}
