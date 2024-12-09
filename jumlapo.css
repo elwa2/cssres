@@ -2777,8 +2777,15 @@ header>.dark {
 }
 
 .partners-slider.s-slider img {
-    max-width: 133px !important;
+    max-width: 213px !important;
     max-height: 90px !important;
+}
+
+@media (max-width: 1024px) {
+    .partners-slider.s-slider img {
+        max-width: 187px !important;
+        max-height: 90px !important;
+    }
 }
 
 .partners-item {
