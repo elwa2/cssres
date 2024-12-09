@@ -1,4 +1,4 @@
-  /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 /* @font-face {
     
     src: url(https://www.fontstatic.com/fonts/sky/sky.eot?#iefix);
@@ -2772,11 +2772,15 @@ header>.dark {
 
 @media (min-width: 1024px) {
     .search-input .icon-search {
-        /* display: inline-block !important; */
-        /* عرض الأيقونة في الشاشات الكبيرة */
-        /* visibility: visible !important; */
-        /* إظهار الأيقونة */
-        /* opacity: 1 !important; */
-        /* إزالة أي تأثير شفاف */
+        /* display: inline-block !important; */ /* عرض الأيقونة في الشاشات الكبيرة */ /* visibility: visible !important; */ /* إظهار الأيقونة */ /* opacity: 1 !important; */ /* إزالة أي تأثير شفاف */
     }
+}
+
+.partners-slider.s-slider img {
+    max-width: 133px !important;
+    max-height: 90px !important;
+}
+
+.partners-item {
+    margin: 10px 7px;
 }
