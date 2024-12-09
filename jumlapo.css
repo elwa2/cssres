@@ -205,7 +205,7 @@ a {
     }
 
     .search-header-bar>div {
-        width: 33.33333%
+        width: 32.33333%;
     }
 
     .search-header-bar>div:nth-child(1) {
@@ -219,14 +219,14 @@ a {
     }
 
     .search-header-bar>div:nth-child(2) {
-        order: 1
+        order: 2;
     }
 
     .search-header-bar>div:nth-child(2)>div {
-        width: 60%;
+        width: 80%;
         border: 0;
         border-radius: unset!important;
-        border-bottom: 1px solid #eee
+        border-bottom: 1px solid #eee;
     }
 
     .search-header-bar>div:nth-child(2)>div input {
@@ -2666,7 +2666,9 @@ body {
 }
 
 #fixed-header .search-header-bar>.search-input {
-    display: none!important
+    /* display: none!important */
+    position: relative;
+    right: 23rem;
 }
 
 #fixed-header .search-header-bar>.header-logo {
@@ -2719,5 +2721,62 @@ header>.dark {
 @media (min-width: 1100px) {
     .d-inline-block {
         top: -9px;
+    }
+}
+
+.icon-menu_open_black_24dp-1 {
+    display: inline-flex;
+    /* يضع الأيقونة والنص في صف واحد */
+    align-items: center;
+    /* يضمن محاذاة النص مع الأيقونة */
+}
+
+.icon-menu_open_black_24dp-1::after {
+    content: 'القائمة';
+    /* النص الذي تريد عرضه */
+    font-family: 'Changa';
+    /* يرث الخط الافتراضي للموقع */
+    font-size: 20px;
+    /* حجم النص */
+    font-weight: bold;
+    /* يجعل الخط عريضًا */
+    color: #ed8b28;
+    /* لون النص */
+    padding-right: 8px;
+    /* مسافة بين الأيقونة والنص */
+}
+
+/* إخفاء النص على الشاشات الصغيرة */
+@media (max-width: 768px) {
+    .icon-menu_open_black_24dp-1::after {
+        content: '';
+        /* إخفاء النص */
+    }
+}
+
+/* إظهار أيقونة البحث على الشاشات الكبيرة */
+.search-input .icon-search {
+    /* display: inline-block !important; */
+    /* إجبار الأيقونة على الظهور */
+    /* visibility: visible !important; */
+    /* التأكد من أنها ليست مخفية */
+    opacity: 1 !important;
+    /* التأكد من عدم وجود شفافية */
+    font-size: 24px !important;
+    /* تحديد حجم الأيقونة */
+    width: 24px !important;
+    /* عرض الأيقونة */
+    height: 24px !important;
+    /* ارتفاع الأيقونة */
+}
+
+@media (min-width: 1024px) {
+    .search-input .icon-search {
+        /* display: inline-block !important; */
+        /* عرض الأيقونة في الشاشات الكبيرة */
+        /* visibility: visible !important; */
+        /* إظهار الأيقونة */
+        /* opacity: 1 !important; */
+        /* إزالة أي تأثير شفاف */
     }
 }
