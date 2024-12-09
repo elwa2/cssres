@@ -1116,7 +1116,7 @@ button.more-button, a.more-button {
     width: 100%
 }
 
-@media(max-width: 991px) {
+ 
     .slide-menu__slider>ul>li:nth-child(1) {
         grid-column: 1/3;
         content: var(--logo);
@@ -1171,7 +1171,7 @@ button.more-button, a.more-button {
     #sliding-menu, #sliding-menu a, #sliding-menu span, #sliding-menu .d-flex button {
         color: var(--1);
         /* color: #fff; */
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .icon-account_circle_black_24dp:before {
@@ -1480,7 +1480,7 @@ button.more-button, a.more-button {
         position: relative;
         text-align: right;
     }
-}
+ 
 
 .breadcrumb-section {
 }
