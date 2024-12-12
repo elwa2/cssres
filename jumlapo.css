@@ -1,4 +1,4 @@
-/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+ /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 /* @font-face {
     
     src: url(https://www.fontstatic.com/fonts/sky/sky.eot?#iefix);
@@ -1203,11 +1203,24 @@ div[style="color: #494949"] {
     margin: 5px auto 35px 5px
 }
 
+:lang(en) .slide-menu__slider>ul>li:nth-last-child(4) {
+    margin: 5px 5px 35px auto
+}
+
+:lang(en) .slide-menu__slider>ul>li:nth-last-child(4) a {
+    width: 113px;
+    margin: 5px 5px 35px auto;
+}
+
 .slide-menu__slider>ul>li:nth-last-child(3) {
     grid-column: 2/3;
     grid-row: 25/26;
     border: 0;
     margin: 5px 5px 35px auto
+}
+
+:lang(en) .slide-menu__slider>ul>li:nth-last-child(3) {
+    margin: 5px auto 35px 5px;
 }
 
 .slide-menu__slider>ul>li:nth-child(2) {
@@ -1217,11 +1230,23 @@ div[style="color: #494949"] {
     margin: 5px auto 5px 5px
 }
 
+:lang(en) .slide-menu__slider>ul>li:nth-child(2) {
+    margin: 5px 5px 5px auto
+}
+
+:lang(en) .slide-menu__slider>ul>li:nth-child(2) a,:lang(en) .slide-menu__slider>ul>li:nth-child(3) a,:lang(en) .slide-menu__slider>ul>li:nth-last-child(3) a,:lang(en) .slide-menu__slider>ul>li:nth-last-child(3) a {
+    width: 121px;
+}
+
 .slide-menu__slider>ul>li:nth-child(3) {
     grid-column: 2/3;
     grid-row: 23/24;
     border: 0;
     margin: 5px 5px 5px auto
+}
+
+:lang(en) .slide-menu__slider>ul>li:nth-child(3) {
+    margin: 5px auto 5px 5px;
 }
 
 .slide-menu__slider>ul>li:nth-last-child(4) a, .slide-menu__slider>ul>li:nth-last-child(3) a, .slide-menu__slider>ul>li:nth-child(2) a, .slide-menu__slider>ul>li:nth-child(3) a {
@@ -1248,6 +1273,10 @@ div[style="color: #494949"] {
     display: block;
     content: "الدفع والتوصيل";
     font-size: 15px;
+}
+
+:lang(en) .slide-menu__slider>ul>li:nth-last-child(4) a:after {
+    content: "  Payment and delivery ";
 }
 
 .slide-menu__slider>ul>li:nth-last-child(4) a:before {
@@ -1493,8 +1522,6 @@ li>ul.slide-menu__submenu--active>li>a:before {
     position: relative;
     text-align: left;
 }
-
-
 
 .breadcrumb-section {
 }
@@ -2689,11 +2716,6 @@ body {
     left: 23rem;
 }
 
-
-
-
-
-
 #fixed-header .search-header-bar>.header-logo {
     width: 100%;
     justify-content: space-between;
@@ -2769,7 +2791,6 @@ header>.dark {
     /* مسافة بين الأيقونة والنص */
 }
 
-
 :lang(en) .icon-menu_open_black_24dp-1::after {
     content: 'Menu';
     /* النص الذي تريد عرضه */
@@ -2784,7 +2805,6 @@ header>.dark {
     padding-left: 8px;
     /* مسافة بين الأيقونة والنص */
 }
-
 
 /* إخفاء النص على الشاشات الصغيرة */
 @media (max-width: 768px) {
