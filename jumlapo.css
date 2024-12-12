@@ -88,6 +88,10 @@ a {
         margin-left: 10px
     }
 
+    :lang(en) .rtl .ic.menu, .sm-search-icon {
+        margin-right: 10px;
+    }
+
     .ltr .ic.menu, .sm-search-div {
         padding: 0;
         background-color: #fff
@@ -101,6 +105,13 @@ a {
     #fixed-header:not(.sticky) .header-logo a[href="/"] {
         margin-right: auto!important;
         padding: 8px 0 10px 15px!important
+    }
+
+    :lang(en) #fixed-header:not(.sticky) .header-logo a[href="/"],:lang(en) #fixed-header.sticky .header-logo a[href="/"] {
+        margin-left: auto!important;
+        padding: 8px 15px 10px 0!important;
+        position: relative;
+        left: 47px;
     }
 
     #fixed-header.sticky .header-logo a[href="/"] {
@@ -2808,7 +2819,7 @@ header>.dark {
 
 /* إخفاء النص على الشاشات الصغيرة */
 @media (max-width: 768px) {
-    .icon-menu_open_black_24dp-1::after {
+    .icon-menu_open_black_24dp-1::after,:lang(en) .icon-menu_open_black_24dp-1::after {
         content: '';
         /* إخفاء النص */
     }
