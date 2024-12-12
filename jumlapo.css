@@ -1016,6 +1016,10 @@ button.more-button, a.more-button {
         background-position: right;
     }
 
+    :lang(en) .footer .footer-store-section .row>.col-lg-5:before {
+        background-position: left;
+    }
+
     .footer>footer .footer-store-section {
         padding: 40px 10px;
         background: unset
