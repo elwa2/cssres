@@ -1,4 +1,4 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+  /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 /* @font-face {
     
     src: url(https://www.fontstatic.com/fonts/sky/sky.eot?#iefix);
@@ -1113,7 +1113,8 @@ button.more-button, a.more-button {
     .footer-store-section-bars>.justify-content-end * {
         display: block;
         color: #4c4c4c;
-        font-size: 14px
+        font-size: 14px;
+        margin: auto;
     }
 
     .footer .google-app-stores {
