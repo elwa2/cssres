@@ -1,4 +1,4 @@
- /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+  /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 /* @font-face {
     
     src: url(https://www.fontstatic.com/fonts/sky/sky.eot?#iefix);
@@ -1338,7 +1338,7 @@ div[style="color: #494949"] {
 }
 
 .slide-menu__slider>ul>li:nth-last-child(2) .container .currency-button-area, .slide-menu__slider>ul>li:nth-last-child(2) .container .vertical-line {
-    display: none!important
+    /* display: none!important; */
 }
 
 :lang(ar) .slide-menu__slider>ul>li:nth-last-child(2) .container .language-currency {
@@ -1387,9 +1387,9 @@ div[style="color: #494949"] {
     border: 0;
     max-height: 29.2px;
     border-radius: 6px;
-    font-family: droid-naskh;
+    /* font-family: droid-naskh; */
     font-size: 10px;
-    line-height: 1.8
+    line-height: 1.8;
 }
 
 .slide-menu__slider>ul>li:nth-last-child(2) .language-currency .c-btn {
@@ -1515,7 +1515,7 @@ li>ul.slide-menu__submenu--active>li>a:before {
 
 :lang(ar) .slide-menu__slider>ul>li:nth-last-child(2) .container .language-currency {
     margin: auto 0 auto auto!important;
-    display: none!important
+    /* display: none!important */
 }
 
 .slide-menu__slider>ul>li:nth-last-child(2) .language-currency .c-btn {
