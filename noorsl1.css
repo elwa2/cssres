@@ -1,0 +1,10 @@
+a.btn-cart.btn-reset.btn-add-to-cart.btn-transparent.w-100.p-2.d-flex.align-items-center.justify-content-center.btn-primary.text-white.rounded-3.fs-14px {
+    z-index: -1;
+    background: #29ade100 !important;
+}
+
+section,.products-circle.square {
+    display: none;
+}
+
+ 
