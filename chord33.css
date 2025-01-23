@@ -743,9 +743,15 @@ body.index .product-entry__image {
     height: 18rem;
 }
 
-@media (max-width: 1450px) {
-   body.index .product-entry__image {
+@media (max-width: 1150px) {
+    body.index .product-entry__image {
         height: 14rem;
+    }
+}
+
+@media (max-width: 1650px) {
+    body.index .product-entry__image {
+        height: 22vw;
     }
 }
 
