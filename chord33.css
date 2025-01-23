@@ -1150,7 +1150,7 @@ div:nth-child(2n+1)>svg[xmlns="http://www.w3.org/2000/svg"]:nth-child(2n+1) {
     display: none
 }
 
-[id*="gb-widget"] a[href="https://wa.me/966538361647"].jfKmYd {
+[id*="gb-widget"] a[href*="https://wa.me/"].jfKmYd {
     display: none;
 }
 
