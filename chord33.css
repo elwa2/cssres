@@ -744,7 +744,7 @@ body.index .product-entry__image {
 }
 
 @media (max-width: 1450px) {
-    .product-entry__image {
+   body.index .product-entry__image {
         height: 14rem;
     }
 }
