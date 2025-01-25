@@ -2,4 +2,5 @@
     display: none !important;
 }
 
-
+ 
+.s-slider-wrapper,img.lazy.loaded {display: none !important;}
