@@ -1,0 +1,1 @@
+body { display: none; } body.show-content { display: block; } body.hide-content { display: none; }
