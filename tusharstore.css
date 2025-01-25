@@ -1,1 +1,5 @@
-body { display: none; } body.show-content { display: block; } body.hide-content { display: none; }
+/*body { display: none; } body.show-content { display: block; } body.hide-content { display: none; }*/link[href*=".css"] {
+    display: none !important;
+}
+
+
