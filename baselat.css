@@ -579,3 +579,10 @@ nav.navbar-wrap.d-none.d-lg-block{
 }}
 
  
+
+
+ 
+
+.slick-track div{
+    border: 1px solid var(--1);
+}
