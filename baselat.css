@@ -389,7 +389,7 @@ a.block-category.not-image .content.d-flex.align-items-center.justify-content-ce
         float: left
     }
 }
-
+/* 
 .header .col-lg-2.col-6.order-0.d-flex.gap-lg-0.gap-2.d-lg-block.align-items-center img.logo-img,.footer-logo.mb-3 img {
     max-height: 0rem !important
 }
@@ -404,7 +404,7 @@ a.block-category.not-image .content.d-flex.align-items-center.justify-content-ce
     display: block;
     max-width: 198px;
     max-height: 66px;
-}
+} */
 
 .footer-logo.mb-3 {
     width: 100%;
