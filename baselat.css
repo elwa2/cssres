@@ -432,7 +432,9 @@ footer.footer .copyright.text-center.pt-3 {
 }
 
 nav.navbar-wrap.d-none.d-lg-block .d-flex.gap-3 {
-    align-items: center
+    align-items: center;
+    margin: auto;
+    justify-content: center;
 }
 
 .dropdown-allcategories .btn-allcategories {
@@ -571,6 +573,9 @@ body.home-page:before {
 }
 
 
-.block-product.out-stock {}
+@media (min-width: 992px){
+nav.navbar-wrap.d-none.d-lg-block{
+    display: block!important;
+}}
 
-.actions.mb-3 {}
+ 
