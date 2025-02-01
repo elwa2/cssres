@@ -319,7 +319,9 @@ a.block-category.not-image .content.d-flex.align-items-center.justify-content-ce
     }
 
     .header .col-lg-2.col-6.order-0.d-flex.gap-lg-0.gap-2.d-lg-block.align-items-center img.logo-img {
-        max-height: 6rem !important
+        max-height: 3rem !important;
+        padding-bottom: 9px;
+        padding-top: 2px;
     }
 
     .justify-content-lg-start {
