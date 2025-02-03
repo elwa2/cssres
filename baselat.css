@@ -141,7 +141,7 @@ div#swiper-wrapper-c95ac974a10b2b3b10 .swiper-slide.swiper-slide-active {
 
 @media screen and (max-width: 992px) {
     .block-product .thumb img {
-        height:135px
+        /* height: 168px; */
     }
 }
 
