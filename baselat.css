@@ -577,3 +577,33 @@ body.home-page:before {
 .slick-track div {
     border: 1px solid var(--1);
 }
+.container.pt-5.single--product {
+    text-align: center;
+}
+
+.single--product .box-title--form .single--product-name {
+    color: var(--2);
+}
+
+.d-flex.flex-wrap {
+    margin: auto;
+    justify-content: center;
+}
+
+.block-price .new {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f15b5b;
+}
+
+
+.px-3.product-sold.mb-3 span {
+    color: #ef3d3d;
+}
+
+.box-title--form.md-text-center ul {
+    text-align: initial;
+    background: #00000008;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
