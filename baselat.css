@@ -607,3 +607,8 @@ body.home-page:before {
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+
+.dropdown.dropdown-allcategories {
+    display: none;
+}
