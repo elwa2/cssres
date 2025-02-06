@@ -356,7 +356,7 @@ a.block-category.not-image .content.d-flex.align-items-center.justify-content-ce
     }
 
     .col-lg-2 {
-        width: 33%
+        width: 33%;
     }
 
     .col-lg-5 {
@@ -610,5 +610,10 @@ body.home-page:before {
 
 
 .dropdown.dropdown-allcategories {
+    display: none;
+}
+
+
+.col-lg-2.col-6.mb-3 {
     display: none;
 }
