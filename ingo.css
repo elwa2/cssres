@@ -465,7 +465,7 @@ body.hide-content {
 }
 
 .s-modal-header-inner, .s-login-modal-sub-title {
-    display: none;
+    /* display: none; */
 }
 
 div.app-inner.flex.flex-col.min-h-full > footer > div.store-footer__inner > div > div.lg\:col-span-2.rtl\:lg\:pl-20.ltr\:lg\:pr-20 > p.max-w-sm.leading-6.mb-6:before {
