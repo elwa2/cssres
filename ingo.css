@@ -562,3 +562,6 @@ p.text-primary.flex-none.font-bold.text-sm.rtl\:md\:pl-12.ltr\:md\:pr-12 {
 }
 
 .s-quantity-input-container {border-color: #ef8015;}
+.s-product-card-promotion-title {
+    background: #ef8015;
+}
