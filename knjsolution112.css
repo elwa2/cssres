@@ -119,9 +119,9 @@
 }
 
 .store-section .social-icons span {
-    color: #004aad !important;
+    color: #ffffff !important;
     border: 2px solid #ffffff00;
-    background: #fed300;
+    /* background: #fed300; */
 }
 
 .btn-product-card-select-variant, .product-card-add-to-cart {
