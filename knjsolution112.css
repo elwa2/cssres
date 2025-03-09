@@ -107,3 +107,12 @@
         background: #fed300;
     }
 }
+.btn-product-card-select-variant, .product-card-add-to-cart {
+    background-color: #004aad;
+    color: #ffffff;
+    border-color: #004aad;
+    width: auto;
+    margin: 0px 10px 10px 10px;
+    padding: 7px;
+    display: block;
+}
