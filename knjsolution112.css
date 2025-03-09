@@ -85,6 +85,22 @@
     }
 }
 
+@media (min-width: 767px) {
+    .footer-about-us-links-div.velvet-footer-social-media {
+        height: 0;
+    }
+
+    .rtl .velvet-footer-social-media-title {
+        display: none;
+    }
+
+    .social-icons.d-flex.align-items-center.flex-wrap {
+        position: relative;
+        top: 9rem;
+        width: 28rem;
+    }
+}
+
 @media (max-width: 767px) {
     footer.d-flex.flex-column ,.store-section .social-icons {
         text-align: center;
@@ -98,15 +114,16 @@
 
     body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg > div > div:nth-child(2) > div.col-12.col-lg-5 {
         position: relative;
-        top: -7rem;
-    }
-
-    .store-section .social-icons span {
-        color: #004aad;
-        border: 2px solid #ffffff00;
-        background: #fed300;
+        top: -6rem;
     }
 }
+
+.store-section .social-icons span {
+    color: #004aad !important;
+    border: 2px solid #ffffff00;
+    background: #fed300;
+}
+
 .btn-product-card-select-variant, .product-card-add-to-cart {
     background-color: #004aad;
     color: #ffffff;
@@ -116,6 +133,7 @@
     padding: 7px;
     display: block;
 }
+
 body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content .subTitle-detail {
     background: linear-gradient(45deg, #004aad, #3270c4);
     padding: 2rem 0;
@@ -134,26 +152,24 @@ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content .su
     animation: animatePattern 20s linear infinite;
 }
 
- 
-
 body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content .bread-title {
-     background: linear-gradient(90deg, #a5c9f9, #cfe3fc, #ffffff);
-     -webkit-background-clip: text;
-     background-clip: text;
-     color: transparent;
-     text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
-     animation: textScale 1.5s ease-in-out;
+    background: linear-gradient(90deg, #a5c9f9, #cfe3fc, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+    animation: textScale 1.5s ease-in-out;
 }
 
 body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content .bread-text {
-     background: #004aad;
-     color: white;
-     padding: 0.8rem 1.5rem;
-     border-radius: 30px;
-     box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-     position: relative;
-     animation: float 3s ease-in-out infinite;
-     margin-right: 7.25rem;
+    background: #004aad;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    position: relative;
+    animation: float 3s ease-in-out infinite;
+    margin-right: 7.25rem;
 }
 
 body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content .bread-text::after {
@@ -207,12 +223,12 @@ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content .br
     }
 }
 
- @media (max-width: 768px) {
-  .bread-title {
-    font-size: 2.5rem;
-  }
-  
-  .bread-text {
-    font-size: 1.2rem;
-  }
+@media (max-width: 768px) {
+    .bread-title {
+        font-size: 2.5rem;
+    }
+
+    .bread-text {
+        font-size: 1.2rem;
+    }
 }
