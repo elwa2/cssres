@@ -1,6 +1,5 @@
 /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
-  @import "https://raw.githack.com/elwa2/cssres/main/knjsolution112.css"; 
-.container.pt-2.category-page-slider .slider-container:after {
+@import "https://raw.githack.com/elwa2/cssres/main/knjsolution112.css"; .container.pt-2.category-page-slider .slider-container:after {
     content: '';
     width: 52px;
     height: 52px;
@@ -83,5 +82,28 @@
     100% {
         transform: scale(1);
         opacity: 1
+    }
+}
+
+@media (max-width: 767px) {
+    footer.d-flex.flex-column ,.store-section .social-icons {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .social-icons.d-flex.align-items-center.flex-wrap {
+        position: relative;
+        top: 7rem;
+    }
+
+    body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg > div > div:nth-child(2) > div.col-12.col-lg-5 {
+        position: relative;
+        top: -7rem;
+    }
+
+    .store-section .social-icons span {
+        color: #004aad;
+        border: 2px solid #ffffff00;
+        background: #fed300;
     }
 }
