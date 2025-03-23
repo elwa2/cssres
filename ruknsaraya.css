@@ -1,0 +1,11 @@
+.banner--fixed img {
+    display: none;
+}
+
+img.w-full.object-contain.rounded-md {
+    display: none;
+}
+
+.footer-is-light .store-footer .store-footer__inner {
+    display: none;
+}
