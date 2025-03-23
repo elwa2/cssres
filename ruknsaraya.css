@@ -1,4 +1,4 @@
-.banner--fixed img {
+/*.banner--fixed img {
     display: none;
 }
 
@@ -22,4 +22,4 @@ header.store-header:before,.footer-is-light .store-footer .store-footer__inner {
     --4-4-4: var(--2);
     --4-4: var(--2);
     --logo: var(--2);
-}
+}*/
