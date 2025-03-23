@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <base target="_top">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>نظام زكاة المال</title>
+  <style>
+    body {
+      font-family: 'Cairo', sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    .notification {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #4CAF50;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.25rem;
+      z-index: 1000;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      font-size: 1rem;
+    }
+
+    .notification.show {
+      opacity: 1;
+    }
+
+    #suggestions li {
+      color: #000;
+      padding: 0.5rem;
+    }
+
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 125%;
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    #selected-data > div {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #selected-data > div > span {
+      width: auto;
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      font-size: 0.9rem;
+      margin-left: 0.5rem;
+    }
+    .month-icon {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
+      border: 1px solid #fff;
+      border-radius: 0.25rem;
+      margin: 0.25rem;
+      cursor: pointer;
+    }
+
+    .month-icon.checked {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 0.5rem;
+      }
+
+      h1 {
+        font-size: 1.75rem;
+      }
+
+      h2 {
+        font-size: 1.25rem;
+      }
+
+      .notification {
+        font-size: 0.9rem;
+      }
+
+      #selected-data > div > div:nth-of-type(2) {
+        width: 100%;
+      }
+
+      #selected-data > div {
+        justify-content: center;
+      }
+
+      #selected-data > div > span {
+        width: 100%;
+      }
+
+      span.w-40.text-center {
+        width: 100%;
+      }
+    }
+
+    @media (min-width: 769px) and (max-width: 1200px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+
+    #selected-data > div > span.w-10.text-center {
+      width: 10%;
+    }
+
+    div#warning,
+    .warning-bar,
+    div[role="banner"] {
+      display: none !important;
+    }
+
+    #selected-data > div > span.w-10.text-center {
+      width: 10%;
+      display: none;
+    }
+
+    .month-icon {
+      background: linear-gradient(45deg, #111827, #111827, #10b981);
+      background-size: 300% 300%;
+      animation: gradientAnimation 3s ease infinite;
+    }
+
+    @keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .hover\:bg-gray-700:hover {
+      color: #ffffff !important;
+    }
+
+    /* Style the autocomplete suggestions */
+    #suggestions {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #suggestions li {
+      padding: 8px;
+      cursor: pointer;
+      background-color: #f9f9f9;
+      border-bottom: 1px solid #ddd;
+    }
+
+    #suggestions li:hover {
+      background-color: #ddd;
+    }
+
+    #suggestions li:last-child {
+      border-bottom: none;
+    }
+    body.dark .bg-gray-800 {
+  
+    background-color:     #fff;
+}
+
+
+body.dark .text-white {
+    color: #111827;
+}
+
+body.dark .month-icon {
+    background: linear-gradient(45deg, #eaf1ff, #eaeef6, #10b981);
+    background-size: 300% 300%;
+    animation: gradientAnimation 3s ease infinite;
+}
+
+  #suggestions li:hover {
+    background-color: #2f2f2f;
+}
+
+
+  </style>
+
+  
+  <style media="print">
+    body {
+      font-family: 'Cairo', sans-serif !important;
+      direction: rtl !important;
+      color: #000 !important; /* لون النص بالأسود للطباعة */
+      background-color: #fff !important; /* خلفية بيضاء للطباعة */
+    }
+
+    .container {
+      max-width: 100% !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    /* إخفاء العناصر غير الضرورية في الطباعة */
+    #search-container,
+    #open-excel,
+    #clear-report,
+    #print-report,
+    #theme-toggle,
+    #notification,
+    .month-icon,
+    .bg-yellow-500, /* زر التكرار */
+    .bg-red-500 /* زر الحذف */
+    {
+      display: none !important;
+    }
+
+    /* تنسيق جدول البيانات المحددة */
+    #selected-data {
+      border: 1px solid #000 !important;
+      border-collapse: collapse !important;
+      width: 100% !important;
+    }
+
+    #selected-data > div {
+      display: table-row !important;
+      border: 1px solid #000 !important;
+    }
+
+    #selected-data > div > span {
+      display: table-cell !important;
+      border: 1px solid #000 !important;
+      text-align: center !important;
+      padding: 8px !important;
+    }
+
+    /* تنسيق رأس الجدول */
+    #selected-data > div:first-child {
+      font-weight: bold !important;
+      background-color: #f2f2f2 !important;
+    }
+     #total-amount {
+         display: block !important;
+         text-align: center !important;
+         margin-top: 20px !important;
+         font-size: 1.2em !important;
+     }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+  <div class="container">
+    <h1 class="text-3xl font-bold text-center mb-4">نظام زكاة المال</h1>
+    <h2 class="text-xl text-center mb-8">شركة السلام</h2>
+
+    <!-- Search box with autocomplete -->
+    <div class="mb-4 relative">
+      <div class="flex items-center">
+        <input type="text" id="search" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline dark:bg-gray-800 dark:border-gray-600 dark:text-gray-200" placeholder="ابحث عن اسم..." autocomplete="off">
+        <button id="clear-search" class="ml-2 px-4 py-2 rounded bg-gray-600 hover:bg-gray-700 text-white focus:outline-none">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <ul id="suggestions" class="absolute top-full left-0 w-full bg-white border rounded shadow-md mt-2 dark:bg-gray-800 dark:border-gray-700 z-10"></ul>
+    </div>
+
+    <!-- Selected data display -->
+    <div id="selected-data" class="bg-gray-800 rounded shadow-md p-4">
+      <!-- The selected data will be displayed here -->
+    </div>
+
+    <!-- Report and actions section -->
+   <div class="flex justify-between mt-4">
+  <div>
+    <span id="total-amount" class="text-white">اجمالي المبلغ: 0 EGP</span>
+    <span id="current-date" class="text-white ml-2"></span> <!-- عنصر جديد لعرض التاريخ -->
+  </div>
+  <div>
+        <!-- Open Excel file button -->
+        <button id="open-excel" class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-2">
+          <i class="fas fa-file-excel"></i> فتح ملف Excel
+        </button>
+
+        <!-- Clear report button -->
+        <button id="clear-report" class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline ml-2">
+          <i class="fas fa-trash"></i>
+        </button>
+
+        <!-- Print report button -->
+        <button id="print-report" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+          <i class="fas fa-print"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Notification area -->
+    <div id="notification" class="notification"></div>
+
+    <!-- Theme toggle button -->
+    <button id="theme-toggle" class="fixed bottom-4 right-4 bg-gray-700 hover:bg-gray-600 text-white py-2 px-4 rounded-full focus:outline-none focus:shadow-outline">
+      <i id="theme-icon" class="fas fa-sun"></i>
+      <span id="theme-text">الوضع الداكن</span>
+    </button>
+
+  </div>
+
+  <script>
+    // Function to format date in DD/MM/YYYY format
+    function formatDate(date) {
+      if (date) {
+        try {
+          const jsDate = new Date(date);
+          if (!isNaN(jsDate.getTime())) {
+            const day = String(jsDate.getDate()).padStart(2, '0');
+            const month = String(jsDate.getMonth() + 1).padStart(2, '0'); // Months are 0-based
+            const year = jsDate.getFullYear();
+            return `${day}/${month}/${year}`;
+          } else {
+            return ""; // Indicate date is invalid
+          }
+        } catch (e) {
+          console.error("Error formatting date:", date, e);
+          return ""; // Return "N/A" as a fallback in case of an error
+        }
+      }
+      return ""; // Make sure the function returns a value even if date is null
+    }
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const searchInput = document.getElementById('search');
+      const suggestionsList = document.getElementById('suggestions');
+      const selectedDataContainer = document.getElementById('selected-data');
+      const printReportButton = document.getElementById('print-report');
+      const clearReportButton = document.getElementById('clear-report');
+      const themeToggle = document.getElementById('theme-toggle');
+      const themeIcon = document.getElementById('theme-icon');
+      const themeText = document.getElementById('theme-text');
+      const notification = document.getElementById('notification');
+      const totalAmountSpan = document.getElementById('total-amount');
+      const openExcelButton = document.getElementById('open-excel');
+      const clearSearchButton = document.getElementById('clear-search');
+      let allData = [];
+      let selectedNames = [];
+
+      // Function to toggle dark mode
+      function toggleDarkMode() {
+          document.body.classList.toggle('bg-gray-900');
+          document.body.classList.toggle('text-white');
+          document.body.classList.toggle('dark');  // Add this line
+
+          const isDarkMode = document.body.classList.contains('bg-gray-900');
+          themeIcon.classList.toggle('fa-sun', !isDarkMode);
+          themeIcon.classList.toggle('fa-moon', isDarkMode);
+          themeText.textContent = isDarkMode ? 'الوضع الفاتح' : 'الوضع الداكن';
+
+          localStorage.setItem('darkMode', isDarkMode);
+      }
+
+      // Initialize dark mode based on localStorage
+      if (localStorage.getItem('darkMode') === 'true') {
+        toggleDarkMode();
+      }
+
+      // Event listener for the theme toggle button
+      if (themeToggle) {
+        themeToggle.addEventListener('click', toggleDarkMode);
+      } else {
+        console.error("themeToggle element not found");
+      }
+
+      // Function to load data from Local Storage
+      function loadFromLocalStorage() {
+        const storedData = localStorage.getItem('dailyReport');
+        if (storedData) {
+          selectedNames = JSON.parse(storedData);
+          displaySelectedData();
+        }
+      }
+
+      // Function to save data to Local Storage
+      function saveToLocalStorage() {
+        localStorage.setItem('dailyReport', JSON.stringify(selectedNames));
+      }
+
+      // Function to get payment count from Local Storage
+      function getPaymentCount(name) {
+        const paymentCounts = JSON.parse(localStorage.getItem('paymentCounts') || '{}');
+        return paymentCounts[name] || 0;
+      }
+
+      // Function to set payment count in Local Storage
+      function setPaymentCount(name, count) {
+        const paymentCounts = JSON.parse(localStorage.getItem('paymentCounts') || '{}');
+        paymentCounts[name] = count;
+        localStorage.setItem('paymentCounts', JSON.stringify(paymentCounts));
+      }
+
+      // Function to display a notification message
+      function showNotification(message) {
+        notification.textContent = message;
+        notification.classList.add('show');
+
+        setTimeout(() => {
+          notification.classList.remove('show');
+        }, 3000); // Hide after 3 seconds
+      }
+
+      // Function to fetch data from Google Sheets
+      function fetchData() {
+        google.script.run
+          .withSuccessHandler(function(data) {
+            allData = JSON.parse(data);
+            console.log("Data received from Google Sheets:", allData);
+          })
+          .getData();
+      }
+
+      // Function to display search suggestions
+      function displaySuggestions(searchTerm) {
+        suggestionsList.innerHTML = '';
+
+        if (searchTerm.length < 2) {
+          return;
+        }
+
+        const matchingNames = allData.filter(item => {
+          if (item && item['الاسم'] && typeof item['الاسم'] === 'string') {
+            return item['الاسم'].toLowerCase().includes(searchTerm.toLowerCase());
+          } else {
+            return false;
+          }
+        });
+
+        matchingNames.forEach(item => {
+          const listItem = document.createElement('li');
+          listItem.classList.add("px-4", "py-2", "hover:bg-gray-700", "cursor-pointer", "text-black");
+          let suggestionText = `${item['الاسم']} - المبلغ: ${item['المبلغ']} EGP`;
+          google.script.run
+            .withSuccessHandler(function(lastDate) {
+              if (lastDate && lastDate !== "N/A") {
+                suggestionText += ` - آخر تاريخ: ${lastDate}`;
+              } else {
+                suggestionText += ` - لا يوجد تاريخ سابق`;
+              }
+              listItem.textContent = suggestionText;
+            })
+            .withFailureHandler(function(error) {
+              console.error("Error getting last date:", error);
+              suggestionText += ` - خطأ في جلب التاريخ`;
+              listItem.textContent = suggestionText;
+            })
+            .getLastPaymentDate(item['الاسم']);
+          listItem.textContent = suggestionText;
+
+          listItem.addEventListener('click', function() {
+            selectName(item['الاسم']); // Select the name
+            searchInput.value = ''; // Clear the search input
+            suggestionsList.innerHTML = ''; // Hide the suggestions
+          });
+
+          suggestionsList.appendChild(listItem);
+        });
+      }
+
+      // Function to select a name and add it to the selected data
+      function selectName(name) {
+        const selectedItem = allData.find(item => item['الاسم'] === name);
+        if (selectedItem) {
+          selectedNames.push(name);
+          displaySelectedData();
+          saveToLocalStorage();
+          updateTotalAmount();
+        }
+      }
+
+      // Function to record payment for a specific month
+      function recordPaymentForMonth(name, monthIndex) {
+        google.script.run
+          .withSuccessHandler(function(success) {
+            if (success) {
+              showNotification(`تم تسجيل الدفعة لشهر ${monthIndex} بنجاح.`);
+              displaySelectedData();
+            } else {
+              showNotification(`فشل تسجيل الدفعة لشهر ${monthIndex}.`);
+            }
+          })
+          .updateDateForMonth(name, monthIndex);
+      }
+
+      // Function to display the selected data
+      function displaySelectedData() {
+        selectedDataContainer.innerHTML = '';
+
+        selectedNames.forEach(selectedName => {
+          const selectedItem = allData.find(item => item['الاسم'] === selectedName);
+          if (!selectedItem) return;
+
+          const itemDiv = document.createElement('div');
+          itemDiv.classList.add('flex', 'items-center', 'justify-between', 'border-b', 'border-gray-700', 'py-2');
+
+          // Add a number element
+          const numberElement = document.createElement('span');
+          numberElement.textContent = selectedNames.indexOf(selectedName) + 1;
+          numberElement.classList.add('w-10', 'text-center');
+          itemDiv.appendChild(numberElement);
+
+          // Add a name element
+          const nameElement = document.createElement('span');
+          nameElement.textContent = selectedName;
+          nameElement.classList.add('w-40', 'text-center');
+          itemDiv.appendChild(nameElement);
+
+          // Add an amount element
+          const amountElement = document.createElement('span');
+          amountElement.textContent = `${selectedItem['المبلغ']} EGP`;
+          amountElement.classList.add('w-32', 'text-center');
+          itemDiv.appendChild(amountElement);
+
+          // Display last two payment dates
+          google.script.run
+            .withSuccessHandler(function(lastTwoDates) {
+              let lastTwoDatesText = "";
+              try {
+                const parsedLastTwoDates = typeof lastTwoDates === 'string' ? JSON.parse(lastTwoDates) : lastTwoDates;
+
+                if (parsedLastTwoDates && Array.isArray(parsedLastTwoDates)) {
+                  lastTwoDatesText = parsedLastTwoDates.map(date => {
+                    return date;
+                  }).join(", ");
+                } else {
+                  lastTwoDatesText = ", ";
+                }
+              } catch (e) {
+                console.error("Error parsing lastTwoDates:", e);
+                lastTwoDatesText = "خطأ في جلب آخر صرف";
+              }
+
+              const lastTwoDatesElement = document.createElement('span');
+              lastTwoDatesElement.innerHTML = "اخر شهرين:" + lastTwoDatesText;
+              lastTwoDatesElement.classList.add('w-24', 'text-center');
+              itemDiv.appendChild(lastTwoDatesElement);
+            })
+            .getLastTwoDates(selectedName);
+
+          // Display month icons
+          const monthsDiv = document.createElement('div');
+          monthsDiv.classList.add('flex', 'space-x-2', 'mb-2');
+
+          const months = ['رجب', 'شعبان', 'رمضان', 'التمر'];
+          months.forEach((month, index) => {
+            const monthButton = document.createElement('button');
+            monthButton.textContent = month;
+            monthButton.classList.add('bg-green-500', 'hover:bg-green-700', 'text-white', 'font-bold', 'py-1', 'px-2', 'rounded', 'focus:outline-none', 'focus:shadow-outline');
+
+            google.script.run
+              .withSuccessHandler(function(hasDate) {
+                if (hasDate) {
+                  monthButton.textContent = `${month} ✅`;
+                  monthButton.disabled = true;
+                }
+              })
+              .hasMonthDate(selectedName, month);
+
+            monthButton.addEventListener('click', function() {
+              const monthColumnIndex = index + 1;
+              const now = new Date();
+              const day = String(now.getDate()).padStart(2, '0');
+              const monthNum = String(now.getMonth() + 1).padStart(2, '0');
+              const year = now.getFullYear();
+              const formattedDate = `${day}/${monthNum}/${year}`;
+
+              google.script.run
+                .withSuccessHandler(function(success) {
+                  if (success) {
+                    showNotification(`تم تسجيل ${month} بنجاح لـ ${selectedName}`);
+                    monthButton.textContent = `${month} ✅`;
+                    monthButton.disabled = true;
+                  } else {
+                    showNotification(`فشل تسجيل ${month} لـ ${selectedName}`);
+                  }
+                })
+                .updateDate(selectedName, month, formattedDate);
+            });
+
+            monthsDiv.appendChild(monthButton);
+          });
+          itemDiv.appendChild(monthsDiv);
+
+          // Display the next month icon
+          const nextMonthIcon = document.createElement('div');
+          nextMonthIcon.classList.add('month-icon');
+          google.script.run
+            .withSuccessHandler(function(nextMonth) {
+              nextMonthIcon.textContent = nextMonth || '-';
+
+              const isNextMonthAvailable = nextMonth !== null && nextMonth !== undefined && nextMonth !== '-';
+
+              if (!isNextMonthAvailable) {
+                nextMonthIcon.style.cursor = 'not-allowed';
+                nextMonthIcon.classList.add('opacity-50');
+                nextMonthIcon.title = 'لا يوجد شهر متاح';
+              }
+
+              nextMonthIcon.addEventListener('click', function() {
+                if (isNextMonthAvailable) {
+                  recordPaymentForMonth(selectedName, nextMonth);
+                }
+              });
+            })
+            .getNextAvailableMonthNumber(selectedName);
+          itemDiv.appendChild(nextMonthIcon);
+
+          // Add action buttons (duplicate and remove)
+          const actionsElement = document.createElement('div');
+          actionsElement.classList.add('w-24', 'text-center');
+
+          // Duplicate button
+          const duplicateButton = document.createElement('button');
+          duplicateButton.innerHTML = '<i class="fas fa-copy"></i>';
+          duplicateButton.classList.add('bg-yellow-500', 'hover:bg-yellow-700', 'text-white', 'font-bold', 'py-1', 'px-2', 'rounded', 'focus:outline-none', 'focus:shadow-outline', 'mr-2');
+          duplicateButton.addEventListener('click', function() {
+            duplicateRow(selectedName);
+          });
+          actionsElement.appendChild(duplicateButton);
+
+          // Remove button
+          const removeButton = document.createElement('button');
+          removeButton.innerHTML = '<i class="fas fa-trash"></i>';
+          removeButton.classList.add('bg-red-500', 'hover:bg-red-700', 'text-white', 'font-bold', 'py-1', 'px-2', 'rounded', 'focus:outline-none', 'focus:shadow-outline');
+          removeButton.addEventListener('click', function() {
+            removeRow(selectedName);
+          });
+          actionsElement.appendChild(removeButton);
+
+          itemDiv.appendChild(actionsElement);
+          selectedDataContainer.appendChild(itemDiv);
+        });
+
+        updateTotalAmount();
+      }
+
+      // Function to duplicate a row
+      function duplicateRow(name) {
+        selectedNames.push(name);
+        displaySelectedData();
+        saveToLocalStorage();
+        updateTotalAmount();
+      }
+
+      // Function to remove a row
+      function removeRow(name) {
+        selectedNames = selectedNames.filter(n => n !== name);
+        displaySelectedData();
+        saveToLocalStorage();
+        updateTotalAmount();
+      }
+
+      // Function to update the total amount
+      function updateTotalAmount() {
+        let totalAmount = 0;
+        selectedNames.forEach(selectedName => {
+          const selectedItem = allData.find(item => item['الاسم'] === selectedName);
+          if (selectedItem) {
+            totalAmount += Number(selectedItem['المبلغ']);
+          }
+        });
+        totalAmountSpan.textContent = `اجمالي المبلغ: ${totalAmount} EGP`;
+      }
+
+      // Event listener for the search input
+      searchInput.addEventListener('input', function() {
+        displaySuggestions(searchInput.value);
+      });
+        // Event listener for the clear search button
+      clearSearchButton.addEventListener('click', function() {
+        searchInput.value = '';
+        suggestionsList.innerHTML = '';
+      });
+
+      // Event listener for the print report button
+      printReportButton.addEventListener('click', function() {
+        window.print();
+      });
+
+      // Event listener for the clear report button
+      clearReportButton.addEventListener('click', function() {
+        selectedNames = [];
+        localStorage.removeItem('dailyReport');
+        localStorage.removeItem('paymentCounts');
+        displaySelectedData();
+        updateTotalAmount();
+      });
+
+      // Event listener for the open Excel button
+      openExcelButton.addEventListener('click', function() {
+        window.open('https://docs.google.com/spreadsheets/d/1PfCljqdEZlAkNGjlERbazFBpJesC39xJFWJXEo-kxWs/edit?gid=1063185778#gid=1063185778', '_blank');
+      });
+
+      // Fetch data on page load
+      fetchData();
+
+      // Load data from local storage on page load
+      loadFromLocalStorage();
+
+      // Update the total amount on page load
+      updateTotalAmount();
+    });
+  </script>
+</body>
+
+</html>
