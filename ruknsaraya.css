@@ -6,7 +6,7 @@ img.w-full.object-contain.rounded-md {
     display: none;
 }
 
-.footer-is-light .store-footer .store-footer__inner {
+header.store-header:before,.footer-is-light .store-footer .store-footer__inner {
     display: none;
 }
 :root {
