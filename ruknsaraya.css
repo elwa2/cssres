@@ -9,3 +9,17 @@ img.w-full.object-contain.rounded-md {
 .footer-is-light .store-footer .store-footer__inner {
     display: none;
 }
+:root {
+    --color-primary: var(--2);
+    --color-primary-dark: var(--2);
+    --color-primary-light: #80b76f;
+    --color-primary-reverse: var(--2);
+    --1: var(--2);
+    --2: #06fa02;
+    --2-2: var(--2);
+    --3: var(--2);
+    --4: var(--2);
+    --4-4-4: var(--2);
+    --4-4: var(--2);
+    --logo: var(--2);
+}
