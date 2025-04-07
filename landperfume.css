@@ -1348,3 +1348,6 @@ li.top-level-link.d-none {
 section.ss {
     margin-top: 20px;
 }
+.theme-title-primary {
+    color: #9e8453 !important;
+}
