@@ -1,4 +1,4 @@
-  /* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 /* @font-face {
     
     src: url(https://www.fontstatic.com/fonts/sky/sky.eot?#iefix);
@@ -48,16 +48,11 @@ a {
     padding-top: unset
 }
 
-.header-logo a[href="/"] img {
-    display: none !important;
-}
-
 #fixed-header:not(.sticky) .header-logo a[href="/"],#fixed-header.sticky .header-logo a[href="/"] {
-    background: var(--logo);
-    width: 155px!important;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 12rem;
+    /* width: 175px!important; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-size: 12rem; */
 }
 
 @media(max-width: 991px) {
@@ -1139,6 +1134,7 @@ button.more-button, a.more-button {
     color: #4c4c4c;
     width: 100%
 }
+
 :lang(en) .footer-store-section-bars>.justify-content-center:after,.footer-store-section-bars>.justify-content-center:after {
     display: block;
     content: var(--conen);
@@ -2886,4 +2882,15 @@ header>.dark {
     .slide-menu {
         width: 25%;
     }
+}
+
+img.image-logo.d-none.d-lg-block {
+}
+
+.search-header .image-logo {
+    padding: 0px;
+    width: auto;
+    max-height: 100%;
+    position: relative;
+    z-index: 1;
 }
