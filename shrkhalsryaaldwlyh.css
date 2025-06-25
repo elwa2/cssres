@@ -1056,7 +1056,19 @@ select#product-quantity option {
     background: 0 0
 }
 
- 
+/* .rtl .search-input-input {
+    border-radius: 10px;
+    box-shadow: 0 6px 10px -6px transparent;
+    border: 0;
+    border-bottom: 3px solid 00;
+    background: transparent
+}
+
+section.ss .container.container-slider {
+    max-width: 100%!important;
+    padding: 0;
+} */
+
 .main-slider.slider.s-slider.slick-initialized.slick-slider {
     max-height: initial
 }
