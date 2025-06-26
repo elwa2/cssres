@@ -512,6 +512,7 @@ a.btn.btn-primary.product-card-add-to-cart:hover {
     color: var(--2);
     border-color: var(--3);
 }
+
 /* 
 body[data-template="home"]:before {
     content: '';
@@ -545,7 +546,6 @@ body[data-template="home"]:before {
         transform: scale(0);
     }
 } */
-
 h2.section-title.theme-title-primary,.section-title {
     color: var(--2);
     background-color: var(--1);
@@ -1068,7 +1068,6 @@ section.ss .container.container-slider {
     max-width: 100%!important;
     padding: 0;
 } */
-
 .main-slider.slider.s-slider.slick-initialized.slick-slider {
     max-height: initial
 }
@@ -1162,6 +1161,10 @@ span.text-center.footer-copyrights {
 
 img.image-logo {
     filter: brightness(0.0);
+}
+
+.theme-text-for-primary-bg {
+    color: #000;
 }
 
 :root {
