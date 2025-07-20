@@ -1278,3 +1278,9 @@ select#product-quantity option {
 :host {
     --inline-outlined-background-color-hover: #181818;
 }
+
+
+.logistics-pay-icons a {
+    background: #fff;
+    border-radius: 5px;
+}
