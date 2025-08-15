@@ -1,3 +1,4 @@
+/* develope By Package +201002241591  3lwaaa@gmail.com - https://wa.me/201002241591 */
 html,body.rtl {
     background-color: #121212!important;
     background-image: linear-gradient(rgba(255,255,255,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,0.04) 1px,transparent 1px)!important;
@@ -354,12 +355,9 @@ body[data-template="product"] {
 }
 
 .description-box,.description-box p,.description-box span,.description-box li,.description-box a,.description-box ul {
-    color: #ccc!important;
-    background-color: transparent!important
 }
 
 .description-box strong {
-    color: #ffc30c!important
 }
 
 .tp-product-details-review-wrapper,.tp-product-details-review-avater {
@@ -430,6 +428,7 @@ footer::after {
         font-size: 1.7rem;
     }
 }
+
 .product-count.sold-count {
     display: inline-flex!important;
     align-items: center;
@@ -469,6 +468,7 @@ footer::after {
         box-shadow: 0 0 15px rgb(134 244 188 / 20%)
     }
 }
+
 .tp-title-section h3 {
     background-color: #33333361 !important;
     text-shadow: 3px 3px 0 #cda10520;
@@ -481,4 +481,80 @@ footer::after {
     animation: up-down linear 4s;
     animation-iteration-count: infinite;
     transform-origin: 3% 3%;
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > section[class="tp-product-card s-block"]:before {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 182px;
+    animation: floatAnimation 3s ease-in-out infinite;
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > section[section-id="18578f84-87b9-4c32-91c4-46d5395a828b"]:before {
+    background: url(https://media.zid.store/13ea4659-5b09-4e8a-bc16-ad588fb93e1e/54e8f4d0-ffb6-4735-8095-6f6289a03ed5.png) no-repeat center center / contain;
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > section[section-id="d48f1eea-c344-4354-a8a1-c21dcfaf052e"]:before {
+    background: url(https://media.zid.store/13ea4659-5b09-4e8a-bc16-ad588fb93e1e/5b1aba24-91e9-499c-afba-fad16270797c.png) no-repeat center center / contain;
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > section[section-id="618af5c9-462e-467f-91b1-ae52a2a6f510"]:before {
+    background: url(https://media.zid.store/13ea4659-5b09-4e8a-bc16-ad588fb93e1e/ec6211a4-ff30-48c0-9e9c-18ce2dfad224.png) no-repeat center center / contain;
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > section[section-id="fd4c1d6d-cd30-4a1d-b798-6a8e75db610d"]:before {
+    background: url(https://media.zid.store/13ea4659-5b09-4e8a-bc16-ad588fb93e1e/220d5917-e60b-4537-9493-17e6a0a22715.png) no-repeat center center / contain;
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > div > section[section-id="95611b46-e69c-4cc4-913f-fed83837f5ff"]:before {
+    background: url(https://media.zid.store/13ea4659-5b09-4e8a-bc16-ad588fb93e1e/58fc7997-94fa-4a15-aec5-af830d9d6e96.png) no-repeat center center / contain;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-grid-ul .banner-content h3, .search-modal .search-content h3, .tp-products-container .tp-product-content .tp-product-price .new-price, .tp-slider-banners a .box-text-info h3, .tp-title-section h3 {
+        font-size: 1.5rem;
+    }
+
+    .s-block {
+        padding-top: 43px;
+    }
+
+    .blog-box h4 a, .product-box .tp-content-product h2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+}
+
+.tp-footer-area.center-footer-content .col-xl-2.col-lg-3.col-md-3.col-sm-6.col-6 {
+    width: 100%;
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .tp-footer-area.center-footer-content .tp-footer-desc, .tp-footer-area.center-footer-content .tp-footer-logo img {
+        text-align: center;
+    }
+
+    .tp-footer-widget-content li:not(:last-child) {
+        border: 1px solid #ffc40c;
+        box-shadow: 0 0 15px rgb(255 196 12 / 5%);
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 25px;
+        background-color: rgba(0,195,255,0.05);
+        height: 100%
+    }
 }
