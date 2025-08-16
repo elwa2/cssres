@@ -548,7 +548,7 @@ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content > d
         text-align: center;
     }
 
-    .tp-footer-widget-content li:not(:last-child) {
+    div.footer .tp-footer-widget-content li {
         border: 1px solid #ffc40c;
         box-shadow: 0 0 15px rgb(255 196 12 / 5%);
         border-radius: 8px;
