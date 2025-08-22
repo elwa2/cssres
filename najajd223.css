@@ -19,14 +19,14 @@ ul.main-nav>li>a {
     color: var(--1)!important
 }
 
-section.ss>.container {
+section.ss:first-child >.container {
     padding: 0!important;
     margin: 0!important;
     max-width: unset!important;
     width: 100%!important
 }
 
-section.ss .main-slider {
+section.ss:first-child .main-slider {
     max-height: 100%!important
 }
 
