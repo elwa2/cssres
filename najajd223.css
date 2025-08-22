@@ -75,6 +75,10 @@ h3.cart-header-total {
     }
 }
 
+section.ss:not(:first-child) .container .main-slider {
+    border-radius: 5rem;
+}
+
 :root {
     --1: #513a4a;
     --1-1: #45313f;
