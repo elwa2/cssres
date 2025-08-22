@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const newFeature = document.createElement('div');
         newFeature.className = 'feature d-flex flex-column justify-content-center align-items-center';
         newFeature.innerHTML = `
-            <img class="features-section-img" src="https://assets.zid.store/themes/f9f0914d-3c58-493b-bd83-260ed3cb4e82/shield-check.svg" loading="lazy" alt="جودة مضمونة">
+            <img class="features-section-img" src="https://media.zid.store/97232ca1-270e-459a-b7ca-a79b35db27b3/435bfa5e-ab3c-4c59-a4a6-5cf87c4d7453.svg" loading="lazy" alt="جودة مضمونة">
             <p class="px-2 theme-text-for-primary-bg features-section-title">تغليف أنيق وآمن</p>
         `;
         featureContainer.appendChild(newFeature);
