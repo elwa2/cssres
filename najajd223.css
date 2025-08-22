@@ -1,5 +1,5 @@
 .header-theme-bg-primary:not(.sticky .header-theme-bg-primary) {
-    background-color: white;
+    background-color: #ffffff00;
     border-bottom: 1px solid var(--2);
 }
 
