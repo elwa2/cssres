@@ -111,7 +111,8 @@ section.ss:not(:first-child) .container .main-slider {
 :root {
     --con1: "\a       يتم تحديث أسعار الذهب بشكل لحظي ودقيق تلقائياً ";
     --con2: "\a        نحرص على توفير طرق شحن سريعة ليصل إليكم في أسرع وقت  ";
-    --con3: "\a     دعم فني على مدار 24 ساعة لخدمة عملائنا على أكمل وجه  "
+    --con3: "\a     دعم فني على مدار 24 ساعة لخدمة عملائنا على أكمل وجه  ";
+    --con4: "\a     نحرص على توفير تغليف يحمي منتجاتك ويوصلها بأفضل حال!  ";
 }
 
 .gallery-section.container.section-padding-space .box-1-1:before {
@@ -243,6 +244,9 @@ section.ss:not(:first-child) .container .main-slider {
 
 .feature:nth-child(3) .theme-text-for-primary-bg:after {
     content: var(--con3)
+}
+.feature:nth-child(4) .theme-text-for-primary-bg:after {
+    content: var(--con4)
 }
 
 .search-header .image-logo {
@@ -654,14 +658,20 @@ body {
     transition: transform 0.3s ease,box-shadow 0.3s ease
 }
 
-.features-section .feature:nth-child(1),body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(3) {
+.features-section .feature:nth-child(1),
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(3) {
     background-color: var(--1);
     color: #ffffff
 }
 
-body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2),body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2) > p:after,body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2) > p {
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(4),
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(4) p:after,
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(4) p,
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2),
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2) > p:after,
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2) > p {
     background-color: #F5F1EB;
-    color: var(--1)!important
+    color: var(--1) !important
 }
 
 .features-section .feature .features-section-img {
