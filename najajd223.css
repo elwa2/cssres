@@ -229,8 +229,8 @@ section.ss:not(:first-child) .container .main-slider {
     white-space: pre;
     font-size: 1rem;
     font-weight: 700;
-    color: #000000!important;
-    white-space: pre-wrap
+    /* color: #000000!important; */
+    white-space: pre-wrap;
 }
 
 .feature:first-child .theme-text-for-primary-bg:after {
@@ -625,5 +625,114 @@ body {
     .product-item {
         width: 196px;
         padding: 0 15px 9px;
+    }
+}
+
+.main .features-section .feature p {
+    line-height: 1.7;
+    font-size: 13px!important;
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+}
+
+.features-section .container.d-flex {
+    gap: 0px;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.features-section .feature {
+    flex-basis: calc(50% - 20px);
+    min-height: 250px;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease,box-shadow 0.3s ease
+}
+
+.features-section .feature:nth-child(1),body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(3) {
+    background-color: var(--1);
+    color: #ffffff
+}
+
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2),body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2) > p:after,body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2) > p {
+    background-color: #F5F1EB;
+    color: var(--1)!important
+}
+
+.features-section .feature .features-section-img {
+    height: 80px;
+    width: auto;
+    margin-bottom: 20px
+}
+
+.features-section .feature:nth-child(1) img,.features-section .feature:nth-child(4) img {
+    filter: brightness(0) invert(1)
+}
+
+@media (max-width: 767px) {
+    .features-section .feature {
+        flex-basis: 100%;
+        padding: 0;
+    }
+}
+
+.features-section .container.d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center
+}
+
+.features-section .feature {
+    flex: 1 1 300px;
+    max-width: 350px;
+    min-height: 220px;
+    padding: 25px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease,box-shadow 0.3s ease
+}
+
+.features-section .feature .features-section-img {
+    height: 45px;
+    margin-bottom: 15px
+}
+
+.features-section .feature:nth-child(1) img,.features-section .feature:nth-child(3) img {
+}
+
+.features-section .feature .features-section-title {
+    font-size: 1.1rem;
+    font-weight: bold
+}
+
+.features-section .feature:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1)
+}
+
+@media (max-width: 767px) {
+    .features-section .feature:nth-child(1),.features-section .feature:nth-child(2) {
+        flex-basis:calc(50% - 10px);
+        flex-grow: 0;
+        min-height: 180px
+    }
+
+    .features-section .feature:nth-child(3) {
+        flex-basis: 100%;
+        max-width: 85%
+    }
+
+    .features-section .container.d-flex {
+        gap: 15px
     }
 }
