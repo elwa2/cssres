@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
         newFeature.className = 'feature d-flex flex-column justify-content-center align-items-center';
         newFeature.innerHTML = `
             <img class="features-section-img" src="https://assets.zid.store/themes/f9f0914d-3c58-493b-bd83-260ed3cb4e82/shield-check.svg" loading="lazy" alt="جودة مضمونة">
-            <p class="px-2 theme-text-for-primary-bg features-section-title">جودة مضمونة</p>
+            <p class="px-2 theme-text-for-primary-bg features-section-title">تغليف أنيق وآمن</p>
         `;
         featureContainer.appendChild(newFeature);
     }
