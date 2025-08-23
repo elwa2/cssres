@@ -1,8 +1,18 @@
+window.addEventListener("load", () => {
+    const url = "https://raw.githack.com/elwa2/cssres/main/najajd.js";
+    const script = document.createElement("script");
+    script.src = url;
+    script.defer = true;
+    document.body.append(script);
+});
+
 document.addEventListener("DOMContentLoaded", function() {
+    // إضافة الميزة الرابعة (تغليف أنيق وآمن)
     const featureContainer = document.querySelector('div[section-id="c7119089-f42e-47e9-bdcf-ba2591cc4a14"] .features-section.container');
     if (featureContainer && featureContainer.children.length === 3) {
         const newFeature = document.createElement('div');
         newFeature.className = 'feature d-flex flex-column justify-content-center align-items-center';
+        //  التصحيح: تم وضع الـ HTML داخل ` ` ليصبح نصًا
         newFeature.innerHTML = `
             <img class="features-section-img" src="https://media.zid.store/97232ca1-270e-459a-b7ca-a79b35db27b3/435bfa5e-ab3c-4c59-a4a6-5cf87c4d7453.svg" loading="lazy" alt="جودة مضمونة">
             <p class="px-2 theme-text-for-primary-bg features-section-title">تغليف أنيق وآمن</p>
@@ -10,25 +20,22 @@ document.addEventListener("DOMContentLoaded", function() {
         featureContainer.appendChild(newFeature);
     }
 
-    const faqsData = [
-        {
-            question: "من هو متجر نجد؟",
-            answer: "“نجد” للمجوهرات – علامة سعودية فاخرة انطلقت من قلب الرياض في عام 2018. نسعى لابتكار قطع ذهب تعكس الأصالة بأحدث تصاميم، مع توفير أفضل خدمات التوصيل وأسعار تنافسية. لأن فخامتك تستحق اختيارًا أصيلاً."
-        },
-        {
-            question: "كم يستغرق توصيل الطلب داخل وخارج الرياض؟",
-            answer: "داخل الرياض: يتم تسليم الطلب خلال 24 إلى 48 ساعة. خارج الرياض: خلال 2 إلى 7 أيام عمل، حسب شركة الشحن والمنطقة."
-        },
-        {
-            question: "ما هي سياسة الضمان والاستبدال والاسترجاع؟",
-            answer: "<ul><li><b>الضمان:</b> جميع منتجات “نجد” من الذهب أصلية ومطابقة للمواصفات.</li><li><b>الاستبدال:</b> يمكن استبدال القطعة خلال 3 أيام من تاريخ الاستلام.</li><li><b>الاسترجاع:</b> يمكن استرجاع القطعة خلال يوم واحد من تاريخ الاستلام.</li><li><b>ملاحظات:</b> يتم خصم مبلغ التوصيل والتغليف في حالة الإلغاء أو الاسترجاع، ويجب أن تكون القطعة بحالتها الأصلية.</li></ul>"
-        },
-        {
-            question: "كيف أعرف مقاس الذهب المناسب قبل الشراء؟",
-            answer: "نوفر دليل مقاسات مفصّل لكل منتج على موقعنا، كما يمكنك التواصل مع فريق خدمة العملاء وسنساعدك في اختيار المقاس الأنسب لك بسهولة."
-        }
-    ];
+    // بيانات الأسئلة الشائعة
+    const faqsData = [{
+        question: "من هو متجر نجد؟",
+        answer: "“نجد” للمجوهرات – علامة سعودية فاخرة انطلقت من قلب الرياض في عام 2018. نسعى لابتكار قطع ذهب تعكس الأصالة بأحدث تصاميم، مع توفير أفضل خدمات التوصيل وأسعار تنافسية. لأن فخامتك تستحق اختيارًا أصيلاً."
+    }, {
+        question: "كم يستغرق توصيل الطلب داخل وخارج الرياض؟",
+        answer: "داخل الرياض: يتم تسليم الطلب خلال 24 إلى 48 ساعة. خارج الرياض: خلال 2 إلى 7 أيام عمل، حسب شركة الشحن والمنطقة."
+    }, {
+        question: "ما هي سياسة الضمان والاستبدال والاسترجاع؟",
+        answer: "<ul><li><b>الضمان:</b> جميع منتجات “نجد” من الذهب أصلية ومطابقة للمواصفات.</li><li><b>الاستبدال:</b> يمكن استبدال القطعة خلال 3 أيام من تاريخ الاستلام.</li><li><b>الاسترجاع:</b> يمكن استرجاع القطعة خلال يوم واحد من تاريخ الاستلام.</li><li><b>ملاحظات:</b> يتم خصم مبلغ التوصيل والتغليف في حالة الإلغاء أو الاسترجاع، ويجب أن تكون القطعة بحالتها الأصلية.</li></ul>"
+    }, {
+        question: "كيف أعرف مقاس الذهب المناسب قبل الشراء؟",
+        answer: "نوفر دليل مقاسات مفصّل لكل منتج على موقعنا، كما يمكنك التواصل مع فريق خدمة العملاء وسنساعدك في اختيار المقاس الأنسب لك بسهولة."
+    }];
 
+    // إنشاء قسم الأسئلة الشائعة
     const faqSection = document.createElement('div');
     faqSection.className = 'custom-faq-section';
     faqSection.innerHTML = '<h2 class="section-title">الأسئلة الشائعة</h2>';
@@ -39,13 +46,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
         const faqQuestion = document.createElement('div');
         faqQuestion.className = 'faq-question';
-        faqQuestion.innerHTML = `
-            <span class="faq-question-text">${faq.question}</span>
-            <span class="faq-icon">+</span>
-        `;
+        // التصحيح: استخدام ` ` لإنشاء نص يحتوي على متغير
+        faqQuestion.innerHTML = `<span class="faq-question-text">${faq.question}</span> <span class="faq-icon">+</span>`;
 
         const faqAnswer = document.createElement('div');
         faqAnswer.className = 'faq-answer';
+        // التصحيح: استخدام ` ` لإنشاء نص يحتوي على متغير
         faqAnswer.innerHTML = `<p>${faq.answer}</p>`;
 
         faqItem.appendChild(faqQuestion);
@@ -53,11 +59,13 @@ document.addEventListener("DOMContentLoaded", function() {
         faqSection.appendChild(faqItem);
     });
 
+    // إضافة القسم قبل الفوتر
     const footer = document.querySelector('.footer');
     if (footer) {
         footer.parentNode.insertBefore(faqSection, footer);
     }
 
+    // إضافة وظيفة فتح وإغلاق الأسئلة عند النقر
     const questions = document.querySelectorAll('.faq-question');
     questions.forEach(question => {
         question.addEventListener('click', () => {
