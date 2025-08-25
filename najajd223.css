@@ -185,11 +185,11 @@ section.ss:not(:first-child) .container .main-slider {
 }
 
 @media(max-width: 991px) {
-    .main .features-section {
+    /*     .main .features-section {
         background:0 center;
         display: flex;
         flex-wrap: wrap
-    }
+    } */
 }
 
 .main .features-section {
@@ -659,18 +659,12 @@ body {
     transition: transform 0.3s ease,box-shadow 0.3s ease
 }
 
-.features-section .feature:nth-child(n),
- body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(4) {
+.features-section .feature:nth-child(n), body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(4) {
     background-color: var(--1);
     color: #ffffff
 }
 
-body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(311),
- body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(311) p:after,
-  body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(311) p,
-   body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(211),
-    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(211) > p:after, 
-    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(211) > p {
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(311), body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(311) p:after, body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(311) p, body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(211), body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(211) > p:after, body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(211) > p {
     background-color: #F5F1EB;
     color: var(--1) !important
 }
@@ -692,13 +686,12 @@ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app
     }
 }
 
-.features-section .container.d-flex {
+/* .features-section .container.d-flex {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center
-}
-
+} */
 .features-section .feature {
     flex: 1 1 300px;
     max-width: 379px;
@@ -714,7 +707,7 @@ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app
 }
 
 .features-section .feature .features-section-img {
-    height: 74px;
+    height: 53px;
     margin-bottom: 15px;
 }
 
@@ -735,6 +728,7 @@ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app
     flex-basis: calc(50% - 10px);
     flex-grow: 0;
     min-height: 180px;
+    min-width: 129px;
 }
 
 /*     .features-section .feature:nth-child(3) {
