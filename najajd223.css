@@ -245,6 +245,7 @@ section.ss:not(:first-child) .container .main-slider {
 .feature:nth-child(3) .theme-text-for-primary-bg:after {
     content: var(--con3)
 }
+
 .feature:nth-child(4) .theme-text-for-primary-bg:after {
     content: var(--con4)
 }
@@ -658,18 +659,18 @@ body {
     transition: transform 0.3s ease,box-shadow 0.3s ease
 }
 
-.features-section .feature:nth-child(1),
-body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(4) {
+.features-section .feature:nth-child(n),
+ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(4) {
     background-color: var(--1);
     color: #ffffff
 }
 
-body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(3),
-body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(3) p:after,
-body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(3) p,
-body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2),
-body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2) > p:after,
-body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(2) > p {
+body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(311),
+ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(311) p:after,
+  body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(311) p,
+   body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(211),
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(211) > p:after, 
+    body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app-content-padded > div > div.features-section.section-padding-space > div > div:nth-child(211) > p {
     background-color: #F5F1EB;
     color: var(--1) !important
 }
@@ -680,7 +681,7 @@ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app
     margin-bottom: 20px
 }
 
-.features-section .feature:nth-child(1) img,.features-section .feature:nth-child(4) img {
+.features-section .feature:nth-child(n) img,.features-section .feature:nth-child(4) img {
     filter: brightness(0) invert(1)
 }
 
@@ -730,22 +731,19 @@ body > div.app.d-flex.flex-column.visible > div.main.flex-grow-1.app-content.app
     box-shadow: 0 10px 25px rgba(0,0,0,0.1)
 }
 
-     .features-section .feature:nth-child(1),.features-section .feature:nth-child(2),.features-section .feature:nth-child(n) {
-        flex-basis:calc(50% - 10px);
-        flex-grow: 0;
-        min-height: 180px;
-    }
+.features-section .feature:nth-child(1),.features-section .feature:nth-child(2),.features-section .feature:nth-child(n) {
+    flex-basis: calc(50% - 10px);
+    flex-grow: 0;
+    min-height: 180px;
+}
 
 /*     .features-section .feature:nth-child(3) {
         flex-basis: 100%;
         max-width: 85%
     } */
-
-    .features-section .container.d-flex {
-        gap: 15px
-    }
- 
-
+.features-section .container.d-flex {
+    gap: 15px
+}
 
 .custom-faq-section {
     width: 100%;
