@@ -243,7 +243,7 @@ header>.dark {
     display: block;
     content: "";
     background: var(--logo2);
-    width: 88px!important;
+    width: 124px!important;
     height: 100%!important;
     background-size: contain;
     background-repeat: no-repeat;
