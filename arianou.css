@@ -509,6 +509,10 @@ ul>li>a[href="/"]:before, ul>li>a[href="/products"]:before, ul>li>a[href="/shipp
     grid-row: 3/3;
 }
 
+.slide-menu__slider>ul>li.slide-menu-ul-li.all-categories {
+    grid-row: 4/4;
+}
+
 .slide-menu__slider>ul>li:last-child {
     display: none!important
 }
