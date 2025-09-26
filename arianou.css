@@ -2900,3 +2900,8 @@ section.blog.mt-5.mb-5 {
 
 li.slide-menu-ul-li {
 }
+.col-lg-6.col-product-info>.product-buttons.d-block .btn.btn-add-to-cart {
+     background: var(--1)!important;
+ 
+    color: var(--ff)!important;
+  }
