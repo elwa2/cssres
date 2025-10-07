@@ -1,6 +1,6 @@
 :root {
     --logo: url("https://media.zid.store/5704f47c-cd8f-40db-b1a6-6b4bc015afac/232504db-29b5-4842-986d-a5f163239ed0.png");
-    --loading-gif: url("https://media.zid.store/5704f47c-cd8f-40db-b1a6-6b4bc015afac/24ea5290-9dba-4a35-be6a-c76820e2be3b.gif")
+    --loading-gif: url("https://media.zid.store/5704f47c-cd8f-40db-b1a6-6b4bc015afac/077ae2a5-b8d8-4615-9e8e-9e10c853ffc8.gif")
 }
 
 body[data-template="home"]:before {
