@@ -38,4 +38,8 @@ body[data-template="home"]:before {
 
 .main.flex-grow-1.app-content {
     background-image: none !important;
+}nav#sliding-menu > div > ul > li:nth-of-type(12) > a  {
+    display: none;
+}nav#sliding-menu > div > ul > li:nth-of-type(13) > a  {
+    display: none;
 }
