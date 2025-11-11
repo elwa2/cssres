@@ -979,9 +979,9 @@ a.more-button::after {
 
 .prod-col {
     background: #fff;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+    /* box-shadow: 0 0 15px 0 rgba(0,0,0,0.1); */
     margin: 0.5rem;
-    border-radius: 11px
+    border-radius: 11px;
 }
 
 .products-slider .prod-col {
@@ -991,9 +991,9 @@ a.more-button::after {
     width: auto;
     padding: 1rem;
     background: #fff;
-    box-shadow: 0 0 15px 0 rgba(0,0,0,0.1);
+    /* box-shadow: 0 0 15px 0 rgba(0,0,0,0.1); */
     margin: 1rem auto;
-    border-radius: 11px
+    border-radius: 11px;
 }
 
 @media(min-width: 991px) {
@@ -1112,16 +1112,16 @@ a.more-button::after {
 }
 
 .product-item>div>.btn {
-    width: 100%;
+    width: 53%;
     margin-top: 5px;
     border-radius: 5px;
     border: unset;
     font-size: 0;
-    padding: unset;
+    padding: 10px;
     line-height: 2;
-    background: var(--2);
-    color: #000;
-    transition: 0.3s all ease
+    /* background: var(--2); */
+    color: #fff;
+    transition: 0.3s all ease;
 }
 
 .product-item-out-of-stock {
@@ -1150,10 +1150,13 @@ a.more-button::after {
     color: #5c5c5c
 }
 
+
 .product-item>div>.btn.product-card-add-to-cart:before {
-    content: "أضف للسلة";
+    content: "أضف ";
     font-size: 1.2rem;
     color: #fff;
+    position: relative;
+    top: 2px;
 }
 
 .product-item>div>.btn.btn-product-card-out-of-stock:before {
@@ -1164,7 +1167,8 @@ a.more-button::after {
 .product-item>div>.btn.btn-product-card-select-variant:before {
     content: "تصفح الخيارات";
     font-size: 1.2rem
-}
+} 
+
 
 .product-item>div>.btn:hover {
     filter: unset
@@ -2812,4 +2816,40 @@ section.blog.mt-5.mb-5 {
     --con: "الحقوق محفوظة © متجــر شرفة";
     --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
     --logo2: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
+}
+
+body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
+    background: #F2F2F2 !important;
+}
+
+.product-crd-spec,.product-item small,.product-card-rating-wrapper, .product-item .product-price, .product-item .product-title>span {
+    background: #fff !important;
+}
+
+.product-item .product-price {
+    padding-bottom: 12px !important;
+}
+
+.product-item .section-product-price {
+    margin-top: 0px;
+}
+
+.product-item .product-title {
+    background: #fff !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.prod-col div[style="text-align: center"] a[href="javascript:void(0)"]:after {
+    display: inline-block;
+    height: 25px;
+    width: 21px;
+    content: "";
+    background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='49px' height='40px' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cg transform='matrix(1,0,0,1,808.111891,-781.37342)'%3E%3Cg transform='matrix(4.087527,0,0,4.087527,81.086306,-2479.379063)'%3E%3Crect x='-217.539' y='797.732' width='11.934' height='9.677' style='fill:white;'/%3E%3C/g%3E%3Cg transform='matrix(4.087527,0,0,4.087527,70.717678,-2532.878921)'%3E%3Cg transform='matrix(1,0,0,1,2.445655,13.106028)'%3E%3Crect x='-212.031' y='800.038' width='1.099' height='5.031'/%3E%3C/g%3E%3Cg transform='matrix(0,1,-1,0,593.517607,1027.140386)'%3E%3Crect x='-212.031' y='800.038' width='1.099' height='5.031'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin-right: 6px;
 }
