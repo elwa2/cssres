@@ -989,7 +989,7 @@ a.more-button::after {
     padding-right: unset;
     display: block;
     width: auto;
-    padding: 1rem;
+    padding: 0;
     background: #fff;
     /* box-shadow: 0 0 15px 0 rgba(0,0,0,0.1); */
     margin: 1rem auto;
@@ -1112,12 +1112,12 @@ a.more-button::after {
 }
 
 .product-item>div>.btn {
-    width: 53%;
+    width: 43%;
     margin-top: 5px;
     border-radius: 5px;
     border: unset;
     font-size: 0;
-    padding: 10px;
+    padding: 9px 0;
     line-height: 2;
     /* background: var(--2); */
     color: #fff;
@@ -2852,4 +2852,12 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
     background-position: center;
     vertical-align: middle;
     margin-right: 6px;
+}
+
+
+.d-flex.justify-content-center {
+    width: 100%;
+    height: 107% !important;
+    position: relative;
+    top: -4px;
 }
