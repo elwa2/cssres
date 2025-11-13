@@ -1137,6 +1137,14 @@ a.more-button::after {
     top: -9px;
 }
 
+@media(min-width: 991px) {
+    .product-item>div>.btn {
+        width: 37%;
+        right: 67px;
+        top: -16px;
+    }
+}
+
 .product-item-out-of-stock {
     filter: unset
 }
@@ -2897,9 +2905,6 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
         grid-template-rows: 1fr 1fr ;
     }
 }
-
-
-a {}
 
 .store-section .social-icons a {
     border: 2px solid var(--footer-text-color-primary-bg, var(--text-color-primary-bg));
