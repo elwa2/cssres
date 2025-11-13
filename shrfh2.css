@@ -1455,7 +1455,8 @@ footer .container>.row {
     margin-right: unset;
     justify-content: center;
     align-items: center;
-    gap: 5px
+    gap: 5px;
+    margin-bottom: 21px;
 }
 
 .store-section .social-icons a {
@@ -1468,7 +1469,7 @@ footer .container>.row {
 
 .store-section .social-icons span {
     color: #181818;
-    font-size: 25px;
+    font-size: 21px;
     border: unset;
     padding: unset;
     border-radius: unset;
@@ -1543,10 +1544,10 @@ footer .container>.row {
 }
 
 .footer .logistics-pay-icons>a>img {
-    width: 50px;
-    height: 30px;
-    object-fit: fill!important;
-    padding: 0.4rem
+    /* width: 50px; */
+    /* height: 30px; */
+    /* object-fit: fill!important; */
+    padding: 0px;
 }
 
 .footer-copyrights-vat-certificate>div>.d-flex {
@@ -2896,4 +2897,20 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
         grid-template-rows: 1fr 1fr ;
     }
 }
- 
+
+
+a {}
+
+.store-section .social-icons a {
+    border: 2px solid var(--footer-text-color-primary-bg, var(--text-color-primary-bg));
+    border-radius: 50%;
+}
+
+.x-icon-twitter {
+    border: 0;
+}
+
+h2.pb-2 {
+    font-weight: 700 !important;
+    font-size: 22px;
+}
