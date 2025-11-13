@@ -1008,7 +1008,14 @@ a.more-button::after {
     width: 100%;
     max-width: unset;
     position: relative;
-    border-radius: 120px 15px 0 0 !important;
+    /* border-radius: 120px 15px 0 0 !important; */
+}
+
+@media (max-width: 768px) {
+    .product-item {
+        /* width: 135px; */
+        /* zoom: 158%; */
+    }
 }
 
 .product-item>a[href$="جديد"]:before {
@@ -1121,7 +1128,7 @@ a.more-button::after {
     border-radius: 10px;
     border: unset;
     font-size: 0;
-    padding: 3px 0;
+    padding: 1px 0 5px;
     line-height: 2;
     /* background: var(--2); */
     color: #fff;
@@ -2501,6 +2508,9 @@ section.blog.mt-5.mb-5 {
     .products-slider .prod-col {
         width: 160px;
         flex: 0 0 160px;
+        /* max-width: 260px; */
+        /* width: 232px; */
+        zoom: 123%;
     }
 
     .products-container .products-list {
@@ -2858,6 +2868,8 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
     background-position: center;
     vertical-align: middle;
     margin-right: 6px;
+    position: relative;
+    top: -2px;
 }
 
 .home-products-section.section-padding-space .d-flex.justify-content-center {
@@ -2866,4 +2878,15 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
     position: relative;
     top: -13px;
     /* border-radius: 105px 15px 0 0; */
+}
+
+.add-to-wishlist {
+    display: none;
+}
+
+@media(max-width: 991px) {
+    .badge-name {
+        right: 7px;
+        top: 15px;
+    }
 }
