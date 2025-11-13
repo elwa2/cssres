@@ -235,11 +235,13 @@ header>.dark {
     display: block;
     content: "";
     background: var(--logo2);
-    width: 124px!important;
+    width: 48px!important;
     height: 100%!important;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    right: -33px;
 }
 
 #fixed-header.sticky .header-logo a[href="/"] {
