@@ -1112,16 +1112,19 @@ a.more-button::after {
 }
 
 .product-item>div>.btn {
-    width: 43%;
+    width: 60%;
     margin-top: 5px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: unset;
     font-size: 0;
-    padding: 9px 0;
+    padding: 3px 0;
     line-height: 2;
     /* background: var(--2); */
     color: #fff;
     transition: 0.3s all ease;
+    position: relative;
+    right: 15px;
+    top: -9px;
 }
 
 .product-item-out-of-stock {
@@ -1150,7 +1153,6 @@ a.more-button::after {
     color: #5c5c5c
 }
 
-
 .product-item>div>.btn.product-card-add-to-cart:before {
     content: "أضف ";
     font-size: 1.2rem;
@@ -1167,8 +1169,7 @@ a.more-button::after {
 .product-item>div>.btn.btn-product-card-select-variant:before {
     content: "تصفح الخيارات";
     font-size: 1.2rem
-} 
-
+}
 
 .product-item>div>.btn:hover {
     filter: unset
@@ -2836,7 +2837,7 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
 
 .product-item .product-title {
     background: #fff !important;
-    padding: 0 9px  !important;
+    padding: 0 9px !important;
     margin: 0px !important;
 }
 
@@ -2845,7 +2846,7 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
     height: 25px;
     width: 21px;
     content: "";
-    background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='49px' height='40px' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cg transform='matrix(1,0,0,1,808.111891,-781.37342)'%3E%3Cg transform='matrix(4.087527,0,0,4.087527,81.086306,-2479.379063)'%3E%3Crect x='-217.539' y='797.732' width='11.934' height='9.677' style='fill:white;'/%3E%3C/g%3E%3Cg transform='matrix(4.087527,0,0,4.087527,70.717678,-2532.878921)'%3E%3Cg transform='matrix(1,0,0,1,2.445655,13.106028)'%3E%3Crect x='-212.031' y='800.038' width='1.099' height='5.031'/%3E%3C/g%3E%3Cg transform='matrix(0,1,-1,0,593.517607,1027.140386)'%3E%3Crect x='-212.031' y='800.038' width='1.099' height='5.031'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8' standalone='no'%3F%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg width='66px' height='45px' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xml:space='preserve' xmlns:serif='http://www.serif.com/' style='fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;'%3E%3Cg transform='matrix(1,0,0,1,-1390.747232,-1360.617149)'%3E%3Cg transform='matrix(1,0,0,1,95.039355,112.041345)'%3E%3Cpath d='M1360.714,1257.46L1360.714,1284.113C1360.714,1289.016 1356.733,1292.997 1351.83,1292.997L1304.592,1292.997C1299.689,1292.997 1295.708,1289.016 1295.708,1284.113L1295.708,1257.46C1295.708,1252.557 1299.689,1248.576 1304.592,1248.576L1351.83,1248.576C1356.733,1248.576 1360.714,1252.557 1360.714,1257.46Z' style='fill:white;'/%3E%3CclipPath id='_clip1'%3E%3Cpath d='M1360.714,1257.46L1360.714,1284.113C1360.714,1289.016 1356.733,1292.997 1351.83,1292.997L1304.592,1292.997C1299.689,1292.997 1295.708,1289.016 1295.708,1284.113L1295.708,1257.46C1295.708,1252.557 1299.689,1248.576 1304.592,1248.576L1351.83,1248.576C1356.733,1248.576 1360.714,1252.557 1360.714,1257.46Z'/%3E%3C/clipPath%3E%3Cg clip-path='url(%23_clip1)'%3E%3Cg transform='matrix(1,0,0,1,0.887555,80.32371)'%3E%3Cg transform='matrix(1.006942,0,0,0.776304,-9.239111,203.493546)'%3E%3Crect x='1314.478' y='1269.373' width='25.739' height='3.994' style='fill:rgb(58,114,103);'/%3E%3C/g%3E%3Cg transform='matrix(0,-1.006942,0.776304,0,340.354463,2527.025294)'%3E%3Crect x='1314.478' y='1269.373' width='25.739' height='3.994' style='fill:rgb(58,114,103);'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-repeat: no-repeat no-repeat;
     background-size: contain;
     background-repeat: no-repeat;
@@ -2854,13 +2855,9 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
     margin-right: 6px;
 }
 
-
 .home-products-section.section-padding-space .d-flex.justify-content-center {
     width: 100%;
     height: 107% !important;
     position: relative;
     top: -13px;
 }
-
-
- 
