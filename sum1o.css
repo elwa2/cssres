@@ -1395,7 +1395,7 @@ footer .container>.row {
 .store-section>div>.row>.col-lg-5>.footer-about-us-div {
     padding: unset!important;
     text-align: center;
-    color: #fff
+    /* color: #fff */
 }
 
 .store-section>div>.row>.col-lg-5>.footer-about-us-div>h1 {
