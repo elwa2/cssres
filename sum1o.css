@@ -2836,6 +2836,7 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
 
 .product-item .product-price {
     padding-bottom: 12px !important;
+    padding-right: 13px;
 }
 
 .product-item .section-product-price {
