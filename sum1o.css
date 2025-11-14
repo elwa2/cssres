@@ -247,7 +247,7 @@ header>.dark {
 #fixed-header.sticky .header-logo a[href="/"] {
     animation-name: uplogo;
     animation-duration: 1.5s;
-    filter: brightness(9.5);
+    filter: invert(1) brightness(9.5);
 }
 
 #fixed-header.sticky .search-header {
