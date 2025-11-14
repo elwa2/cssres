@@ -2907,13 +2907,13 @@ h2.pb-2 {
 }
 
 :root {
-    --1: #3A7267;
+    --1: #5d4335;
     --2: #A2745A;
     --3: #e9cba9;
     --4: #f4f7d6;
     --ff: #f2f2f2;
     --primary-color: var(--1);
-    --text-color-primary-bg: #323232;
+    --text-color-primary-bg: #ffffff;
     --primary-color-op-5: #2e2e2e;
     --sub-primary-color: #222222;
     --con: "الحقوق محفوظة © sumo perfume";
