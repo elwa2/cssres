@@ -1038,7 +1038,7 @@ a.more-button::after {
 
 .product-item>a>.box-1-1>.content {
     background: #fff;
-    border-radius: 154px 113px 0 0;
+    /* border-radius: 154px 113px 0 0; */
 }
 
 .product-item .product-title>span {
@@ -2813,7 +2813,7 @@ section.blog.mt-5.mb-5 {
 
 .product-item img,.category-item img {
     border-radius: 11px;
-    border-radius: 24px 28px 0 0;
+    /* border-radius: 24px 28px 0 0; */
 }
 
 .announcement-bar {
@@ -2873,7 +2873,7 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
     height: 107% !important;
     position: relative;
     top: -13px;
-    /* border-radius: 105px 15px 0 0; */
+    /* border-radius: 105px 15px 0 0 !important; */
 }
 
 .add-to-wishlist {
@@ -2882,7 +2882,7 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
 
 @media(max-width: 991px) {
     .badge-name {
-        right: 7px;
+        right: -7px;
         top: 15px;
     }
 }
