@@ -2882,8 +2882,8 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
 
 @media(max-width: 991px) {
     .badge-name {
-        right: -22px;
-        top: 3px;
+        right: 0px;
+        top: 16px;
     }
 }
 
