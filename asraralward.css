@@ -2922,24 +2922,6 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-com
     display: none;
 }
 
-:root {
-    --1: #76064e;
-    --2: #787441;
-    --3: #e9cba9;
-    --4: #f4f7d6;
-    --ff: #f2f2f2;
-    --bg: #F2F2F2;
-    --primary-color: var(--1);
-    --text-color-primary-bg: #323232;
-    --primary-color-op-5: #2e2e2e;
-    --sub-primary-color: #222222;
-    --footer-text-color-primary-bg: var(--1);
-    --con: "الحقوق محفوظة © متجــر ";
-    --logo: url("");
-    --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/157c7661-d250-41d7-b18b-540421f4f465/b0a7f61d-7895-4028-b457-0139af5a04d0-200x.png");
-    --logo2: var(--logo);
-}
-
 .menu-header-theme-bg-primary {
     background-color: var(--1);
     filter: none;
@@ -3016,4 +2998,22 @@ section.ss:first-of-type .container.container-slider {
 
 ul.main-nav>li {
     margin-bottom: 10px
+}
+
+:root {
+    --1: #76064e;
+    --2: #787441;
+    --3: #e9cba9;
+    --4: #f4f7d6;
+    --ff: #f2f2f2;
+    --bg: #F2F2F2;
+    --primary-color: var(--1);
+    --text-color-primary-bg: #323232;
+    --primary-color-op-5: #2e2e2e;
+    --sub-primary-color: #222222;
+    --footer-text-color-primary-bg: var(--1);
+    --con: "الحقوق محفوظة © متجر اسرار الورد ";
+    --logo: url("");
+    --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/157c7661-d250-41d7-b18b-540421f4f465/b0a7f61d-7895-4028-b457-0139af5a04d0-200x.png");
+    --logo2: var(--logo);
 }
