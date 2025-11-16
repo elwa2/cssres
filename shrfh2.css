@@ -1096,12 +1096,12 @@ a.more-button::after {
     margin: unset;
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: -5px;
     background: #bc3333;
     padding: 0 0 0 9px;
     color: #fff!important;
     line-height: 1.7;
-    border-radius: 4px
+    border-radius: 4px;
 }
 
 .product-item .section-product-price {
@@ -2882,8 +2882,8 @@ body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
 
 @media(max-width: 991px) {
     .badge-name {
-        right: -7px;
-        top: 15px;
+        right: -22px;
+        top: 3px;
     }
 }
 
@@ -2932,4 +2932,16 @@ span.product-prev-price {
 
 body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-companies > div > div > div > div > div > a:nth-child(8),body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-companies > div > div > div > div > div > a:nth-child(9) {
     display: none;
+}
+
+@media (max-width: 991px) {
+    [data-template="products"] .badge-name {
+        right: -22px;
+        top: 3px;
+    }
+
+    [data-template="products"] .product-item>a>.product-crd-spec>.section-product-price span[style="color:#f25f5f;"] {
+        top: 5px;
+        left: -5px;
+    }
 }
