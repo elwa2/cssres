@@ -2983,9 +2983,15 @@ header {
 }
 
 section.ss:first-of-type .container.container-slider {
-    margin-top: -155px;
+    margin-top: -305px;
     position: relative;
-    z-index: 10
+    z-index: 10;
+}
+
+@media(max-width: 991px) {
+    section.ss:first-of-type .container.container-slider {
+        margin-top: -72px;
+    }
 }
 
 .search-header.header-theme-bg-primary *,.account-lang-currency.upper-bar * {
