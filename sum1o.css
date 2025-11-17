@@ -2905,7 +2905,13 @@ h2.pb-2 {
     font-weight: 700 !important;
     font-size: 22px;
 }
-
+@media only screen and (max-width: 768px) {
+    .products-slider.s-slider {
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr ;
+    }
+}
 :root {
     --1: #5d4335;
     --2: #A2745A;
