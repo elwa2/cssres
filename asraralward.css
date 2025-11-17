@@ -182,8 +182,10 @@ body[data-template="home"] #fixed-header .search-header-bar>.header-logo>a[href=
     filter: brightness(17.5);
 }
 
-body[data-template="home"] #fixed-header .icon-menu_open_black_24dp-1::before , body[data-template="home"] #fixed-header .icon-shopping_cart_black_36dp-1-1 .path1::before, body[data-template="home"] #fixed-header .icon-search::before {
-    filter: invert(1);
+body[data-template="home"] #fixed-header:not(.sticky) .icon-menu_open_black_24dp-1::before ,
+ body[data-template="home"] #fixed-header:not(.sticky) .icon-shopping_cart_black_36dp-1-1 .path1::before,
+  body[data-template="home"] #fixed-header:not(.sticky) .icon-search::before {
+    filter: invert(1) !important;
 }
 
 :lang(en) #fixed-header .icon-menu_open_black_24dp-1::before {
