@@ -1535,6 +1535,11 @@ footer .container>.row {
     border-radius: unset;
 }
 
+.store-section .social-icons span ,.x-icon-twitter,.store-section .social-icons span{
+    color: #181818 !important;
+    fill: #181818 !important;
+}
+
 .store-section .social-icons span:hover {
     color: var(--2);
     transition: 0.2s all ease-in-out
