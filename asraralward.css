@@ -3087,3 +3087,260 @@ body[data-template="home"] .cart-header-total {
     margin: 0;
     padding: 0;
 }
+:root {
+    /* لوحة ألوان "الفخامة الهادئة" */
+    --p-bg-color: #f3f4f6;
+    --p-accent: #922a8f;
+    /* أزرق ملكي */
+    --p-text-head: #1e293b;
+    /* كحلي غامق جداً */
+    --p-text-body: #475569;
+    /* رمادي رصين */
+    --p-card-bg: #ffffff;
+    /* الظلال الناعمة المتطورة */
+    --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    --shadow-float: 0 25px 50px -12px rgba(37, 99, 235, 0.15);
+    /* ظل ملون خفيف جداً */
+}
+
+/* ========================================= */
+/* 2. خلفية القسم (Mesh Gradient Animation) */
+/* ========================================= */
+section[section-id="3a34cafc-b40a-4995-942d-a0f55548a077"] {
+    padding: 100px 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #f8fafc;
+    direction: rtl;
+}
+
+/* دوائر لونية عائمة في الخلفية تعطي مظهراً حيوياً */
+section::before, section::after {
+    content: '';
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    filter: blur(80px);
+    /* تمويه عالي جداً */
+    z-index: 0;
+    opacity: 0.6;
+    animation: floatBlob 10s infinite alternate ease-in-out;
+}
+
+ 
+
+section::after {
+    background: #7c12561f;
+    /* أخضر فاتح جداً */
+    bottom: -100px;
+    right: -100px;
+    animation-delay: -5s;
+}
+
+@keyframes floatBlob {
+    0% {
+        transform: translate(0, 0) scale(1);
+    }
+
+    100% {
+        transform: translate(50px, 50px) scale(1.1);
+    }
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+}
+
+/* ========================================= */
+/* 3. العنوان الاحترافي */
+/* ========================================= */
+.section-title {
+    font-size: 2.8rem;
+    color: var(--p-text-head);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    letter-spacing: -0.02em;
+}
+
+/* ========================================= */
+/* 4. بطاقة العميل (The Masterpiece) */
+/* ========================================= */
+.testimonials-customer-card {
+    background: var(--p-card-bg);
+    border-radius: 20px;
+    padding: 3rem 2.5rem;
+    margin: 30px 15px;
+    /* هوامش خارجية لظهور الظل */
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    /* الظل الاحترافي */
+    box-shadow: var(--shadow-xl);
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    overflow: visible !important;
+    /* مهم جداً لظهور الأيقونة العائمة */
+}
+
+.testimonials-customer-card:hover {
+    transform: translateY(-8px);
+    /* صعود ناعم */
+    box-shadow: var(--shadow-float);
+}
+
+/* علامة الاقتباس العائمة (Floating Quote) */
+.testimonials-customer-card::after {
+    content: '❝';
+    /* رمز الاقتباس */
+    position: absolute;
+    top: -25px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--p-accent);
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3);
+    transform: rotate(-5deg);
+    /* ميلان بسيط */
+    z-index: 10;
+}
+
+/* ========================================= */
+/* 5. محتوى البطاقة */
+/* ========================================= */
+.card-body {
+    padding: 0;
+}
+
+.testimonials-customer-card .d-flex {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f1f5f9;
+    padding-bottom: 15px;
+}
+
+/* الأيقونة الشخصية */
+.testimonials-customer-icon {
+    font-size: 2.8rem;
+    color: #cbd5e1;
+    /* لون محايد */
+    background: #f8fafc;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.testimonials-customer-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--p-text-head);
+    margin: 0;
+}
+
+.testimonials-customer-date {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin: 0;
+    font-weight: 500;
+}
+
+/* نص الرأي */
+.testimonials-customer-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--p-text-body);
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* ========================================= */
+/* 6. تحسين أزرار التنقل (Minimalist) */
+/* ========================================= */
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-dots li {
+    margin: 0 6px;
+}
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    background: #cbd5e1;
+    border-radius: 50%;
+    opacity: 1;
+    transition: all 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+    background: var(--p-accent);
+    transform: scale(1.4);
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.2);
+    /* حلقة خارجية شفافة */
+}
+
+/* الأسهم بتصميم نظيف */
+.slick-prev, .slick-next {
+    width: 44px;
+    height: 44px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    z-index: 10;
+    transition: all 0.2s;
+    box-shadow: var(--shadow-sm);
+}
+
+.slick-prev:hover, .slick-next:hover {
+    background: var(--p-accent);
+    border-color: var(--p-accent);
+    color: #fff;
+}
+
+.slick-prev span, .slick-next span {
+    font-size: 1.2rem;
+    color: inherit;
+    display: block;
+    line-height: 44px;
+}
+
+/* تحريك الأسهم بعيداً عن الكروت */
+.slick-prev {
+    right: -50px;
+}
+
+.slick-next {
+    left: -50px;
+}
+
+/* hover على السهم يغير لون الأيقونة */
+.slick-prev:hover span, .slick-next:hover span {
+    color: #fff;
+}
+
+/* ========================================= */
+/* 7. التجاوب (Responsive) */
+/* ========================================= */
+@media (max-width: 991px) {
+    .slick-prev, .slick-next {
+        display: none !important;
+    }
+
+    .testimonials-customer-card {
+        margin: 15px 5px;
+        padding: 2rem 1.5rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
