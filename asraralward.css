@@ -3082,3 +3082,9 @@ ul.main-nav>li {
  body[data-template="home"] .cart-header-total {
     color: #fff;
 }
+
+.categories-slider-wrapper .slick-list>.slick-track {
+    width: 2899px !important;
+    margin: 0;
+    padding: 0;
+}
