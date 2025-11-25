@@ -3087,6 +3087,7 @@ body[data-template="home"] .cart-header-total {
     margin: 0;
     padding: 0;
 }
+
 :root {
     /* لوحة ألوان "الفخامة الهادئة" */
     --p-bg-color: #f3f4f6;
@@ -3129,8 +3130,6 @@ section::before, section::after {
     animation: floatBlob 10s infinite alternate ease-in-out;
 }
 
- 
-
 section::after {
     background: #7c12561f;
     /* أخضر فاتح جداً */
@@ -3170,14 +3169,14 @@ section::after {
 /* 4. بطاقة العميل (The Masterpiece) */
 /* ========================================= */
 .testimonials-customer-card {
-    background: var(--p-card-bg);
+    background: #891818;
     border-radius: 20px;
     padding: 3rem 2.5rem;
     margin: 30px 15px;
     /* هوامش خارجية لظهور الظل */
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(255, 255, 255, 0.8); */
     /* الظل الاحترافي */
-    box-shadow: var(--shadow-xl);
+    /* box-shadow: var(--shadow-xl); */
     position: relative;
     transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     overflow: visible !important;
@@ -3195,7 +3194,7 @@ section::after {
     content: '❝';
     /* رمز الاقتباس */
     position: absolute;
-    top: -25px;
+    top: -13px;
     right: 30px;
     width: 50px;
     height: 50px;
