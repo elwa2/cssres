@@ -135,46 +135,11 @@ section.ss:first-of-type .container.container-slider {
     }
 }
 
-.account-area *,.language-currency,.language-currency *,.icon-language_white:before {
-}
+ 
+ 
+ 
 
-section[section-id="3a34cafc-b40a-4995-942d-a0f55548a077"] {
-    padding: 100px 0;
-    position: relative;
-    overflow: hidden;
-    background-color: #f8fafc;
-    direction: rtl
-}
-
-section::before,section::after {
-    content: '';
-    position: absolute;
-    width: 600px;
-    height: 600px;
-    border-radius: 50%;
-    filter: blur(80px);
-    z-index: 0;
-    opacity: 0.6;
-    animation: floatBlob 10s infinite alternate ease-in-out
-}
-
-section::after {
-    background: #7c12561f;
-    bottom: -100px;
-    right: -100px;
-    animation-delay: -5s
-}
-
-@keyframes floatBlob {
-    0% {
-        transform: translate(0,0) scale(1)
-    }
-
-    100% {
-        transform: translate(50px,50px) scale(1.1)
-    }
-}
-
+ 
 .container {
     position: relative;
     z-index: 2
@@ -556,7 +521,7 @@ body[data-template="home"] #fixed-header:not(.sticky) .icon-shopping_cart_black_
     display: block;
     content: "";
     background: var(--logo2);
-    width: 15rem !important;
+    width: 10rem !important;
     height: 13rem !important;
     background-size: contain;
     background-repeat: no-repeat;
@@ -715,4 +680,9 @@ footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
 
 body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg > div > div > div.col-12.col-lg-5 > div > h2 {
     font-size: 0;
+}
+.btn-primary {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
