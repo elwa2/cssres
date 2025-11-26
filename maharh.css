@@ -135,11 +135,6 @@ section.ss:first-of-type .container.container-slider {
     }
 }
 
- 
- 
- 
-
- 
 .container {
     position: relative;
     z-index: 2
@@ -492,9 +487,15 @@ body[data-template="home"] #fixed-header:not(.sticky) .icon-shopping_cart_black_
 }
 
 #sliding-menu {
-    width: 25%;
-    height: 100%;
     background: #eee
+}
+
+@media(min-width: 991px) {
+    #sliding-menu {
+        width: 25%;
+        height: 100%;
+        background: #eee
+    }
 }
 
 #sliding-menu * {
@@ -681,6 +682,7 @@ footer.d-flex>div:nth-child(2)>div:nth-child(2) a {
 body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg > div > div > div.col-12.col-lg-5 > div > h2 {
     font-size: 0;
 }
+
 .btn-primary {
     color: #ffffff;
     background-color: var(--primary-color);
