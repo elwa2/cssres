@@ -1,0 +1,130 @@
+section.ss:first-of-type .container.container-slider {
+    max-width: 100%!important;
+    padding: 0;
+}
+
+.main-slider.slider.s-slider.slick-initialized.slick-slider {
+    max-height: initial;
+}
+
+.account-area *,.language-currency,.language-currency *,.icon-language_white:before {
+    color: #fff!important;
+    border-color: transparent!important
+}
+
+header {
+    background: 0 0;
+    position: relative;
+    z-index: 20
+}
+
+.menu-header-theme-bg-primary {
+    background: 0 0;
+}
+
+.main-slider.slider.s-slider.slick-initialized.slick-slider .box-1-1.ratio21_9:before {
+    padding-top: 55.85%
+}
+
+section.ss:first-of-type .container.container-slider {
+    margin-top: -305px;
+    position: relative;
+    z-index: 10;
+}
+
+@media(max-width: 991px) {
+    section.ss:first-of-type .container.container-slider {
+        margin-top: -72px;
+    }
+}
+
+.account-lang-currency.upper-bar {
+    border: 0;
+    padding-bottom: 0
+}
+
+.search-header.header-theme-bg-primary,.account-lang-currency.upper-bar {
+    background: 0 0
+}
+
+.rtl .search-input-input {
+    border-radius: 10px;
+    box-shadow: 0 6px 10px -6px transparent;
+    border: 0;
+    border-bottom: 3px solid 00;
+    background: transparent
+}
+
+.gallery-section.container {
+    width: 100%;
+    padding-right: unset;
+    padding-left: unset
+}
+
+.gallery.row {
+    margin: unset;
+    gap: 10px;
+    flex-direction: row!important;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 0
+}
+
+@media(max-width: 991px) {
+    .gallery.row {
+        flex-direction:row!important
+    }
+}
+
+.gallery.row>.gallery-item {
+    margin: unset;
+    padding: unset;
+    flex: unset;
+    max-width: unset;
+    border-radius: 11px
+}
+
+.gallery.row .box-1-1::before {
+    display: none
+}
+
+.gallery.row .box-1-1>.content {
+    position: unset
+}
+
+.gallery.row .box-1-1>.content img {
+    object-fit: contain!important;
+    transform: scale(1);
+    transition: 0.3s all ease-in-out;
+    border-radius: 6px
+}
+
+.gallery.row .box-1-1>.content img:hover {
+    transform: scale(1.05)
+}
+
+.container {
+    max-width: 1500px
+}
+
+.ss .main-slider {
+    max-height: unset
+}
+
+.ss .main-slider {
+    max-height: unset
+}
+
+.ss .box-1-1:before {
+    display: none
+}
+
+.ss .box-1-1 .content {
+    display: block;
+    position: unset;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
