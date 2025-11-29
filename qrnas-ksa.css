@@ -130,9 +130,7 @@ body {
     color: var(--text-main);
     margin: 21px 0;
     position: relative;
-    padding-inline-start: 1rem;
-    border-inline-start: 5px solid var(--primary-color);
-    }
+    padding-inline-start: 1rem; border-inline-start: 5px solid var(--primary-color); }
 
 .products-slider-wrapper {
     position: relative;
@@ -224,4 +222,24 @@ section.tp-double-banner.s-block .banner {
     --radius-lg: 16px;
     --radius-xl: 24px;
     --radius-pill: 500px;
+}
+
+@media (max-width: 576px) {
+    .products-slider .prod-col, .categories-slider .cat-col {
+        padding-left: 0;
+        padding-right: 5px;
+    }
+
+    .product-item {
+        background: #fff;
+    }
+
+    .section-title {
+        text-align: center;
+    }
+
+    .footer-theme-bg-primary {
+        background-position: -23rem 0rem !important;
+        background-size: 292% !important;
+    }
 }
