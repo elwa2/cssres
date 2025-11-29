@@ -1,0 +1,209 @@
+body {
+    background-color: #F2F2F2;
+    color: #333;
+}
+
+.btn-primary-hosam {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--secondary-color);
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    border: none;
+    border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+    transition: all var(--transition-base);
+    position: relative;
+    overflow: hidden;
+    margin-top: -1px;
+}
+
+@media (max-width: 768px) {
+    .hosam-pro-image-wrapper {
+        padding-top: 100%;
+    }
+}
+
+.hosam-pro-image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: kenBurns 20s infinite alternate;
+}
+
+@keyframes kenBurns {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+.hmln_zid_cat_section {
+    padding: var(--gap-xl) 0;
+}
+
+.hmln_zid_cat_header {
+    text-align: center;
+    margin-bottom: var(--gap-lg);
+}
+
+.hmln_zid_cat_title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--secondary-color);
+    margin-bottom: var(--gap-sm);
+}
+
+.hmln_zid_cat_layout_wrapper {
+    position: relative;
+    padding: 0 var(--gap-md);
+}
+
+@media (min-width: 576px) {
+    .hmln_zid_cat_card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: var(--gap-md);
+        border-radius: var(--radius-lg);
+        background-color: var(--bg-surface);
+        box-shadow: var(--shadow-sm);
+        transition: all var(--transition-base);
+        border: 1px solid var(--border-color);
+        text-decoration: none;
+        height: 100%;
+    }
+}
+
+.hmln_zid_cat_card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--primary-color);
+}
+
+.hmln_zid_cat_image_wrapper {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: var(--gap-md);
+    border: 4px solid var(--bg-body);
+    box-shadow: var(--shadow-md);
+    transition: border-color var(--transition-base);
+}
+
+.hmln_zid_cat_card:hover .hmln_zid_cat_image_wrapper {
+    border-color: var(--primary-color);
+}
+
+.hmln_zid_cat_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-slow);
+}
+
+.hmln_zid_cat_card:hover .hmln_zid_cat_image {
+    transform: scale(1.1);
+}
+
+.hmln_zid_cat_item_name {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.home-products-section {
+    padding: var(--gap-xl) 0;
+    /* background-color: var(--bg-body); */
+}
+
+.section-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-main);
+    margin-bottom: var(--gap-lg);
+    position: relative;
+    padding-inline-start: 1rem; border-inline-start: 5px solid var(--primary-color); }
+
+.products-slider-wrapper {
+    position: relative;
+}
+
+:root {
+    --primary-color: #7d431a;
+    --text-color-primary-bg: #ffffff;
+    --sub-primary-color: #521B25;
+    --secondary-color: #0b132b;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --radius-pill: 500px;
+}
+
+section.tp-double-banner.s-block .banner {
+    flex: 1 1 calc(100% - 16px);
+    max-width: calc(100% - 16px);
+}
+
+.hosam-logo.align-items-center.header-logo img.image-logo {
+    filter: brightness(9.5);
+}
+
+.hosam-logo.align-items-center.header-logo {
+}
+
+@media (max-width: 576px) {
+    .header-logo img {
+        height: 57px;
+    }
+}
+
+.prod-col.slick-slide.slick-active {
+}
+
+/* Custom Scrollbar for any scrollable areas (global) */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #c8c8c8;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #6b6b6b;
+}
+
+.product-detailshosam {
+    background: #fff;
+}
+
+.product-item .product-price {
+    text-align: center;
+}
+
+.product-crd-spec {
+    align-self: center;
+}
+
+.product-item .product-title > span {
+    text-align: center;
+}
+
+.product-card-rating-wrapper {
+    align-self: center;
+}
