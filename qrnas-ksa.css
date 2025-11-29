@@ -242,4 +242,8 @@ section.tp-double-banner.s-block .banner {
         background-position: -23rem 0rem !important;
         background-size: 292% !important;
     }
+
+    .social-proof-widgets {
+        gap: 7px;
+    }
 }
