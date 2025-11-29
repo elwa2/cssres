@@ -6,7 +6,7 @@ body {
 .btn-primary-hosam {
     width: 100%;
     padding: 0.75rem;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     font-weight: 700;
     text-align: center;
@@ -245,5 +245,16 @@ section.tp-double-banner.s-block .banner {
 
     .social-proof-widgets {
         gap: 7px;
+    }
+}
+
+@media (max-width: 576px) {
+    .menu-header-theme-bg-primary {
+        border-radius: 20px 20px 0 0;
+        /* margin: 15px; */
+        background-color: var(--1);
+        background: linear-gradient(134deg ,transparent -0%,#292929 83% ,#fff 200%),url(https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/6ccf211e-ae78-4c57-b7f1-851f999a3781.jpg)-3rem -14rem/100%no-repeat!important;
+        background-position: -23rem 0rem !important;
+        background-size: 292% !important;
     }
 }
