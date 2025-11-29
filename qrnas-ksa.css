@@ -215,9 +215,9 @@ section.tp-double-banner.s-block .banner {
 }
 
 :root {
-    --primary-color: #7d431a;
+    --primary-color: #7b331a;
     --text-color-primary-bg: #ffffff;
-    --sub-primary-color: #521B25;
+    --sub-primary-color: #7b331a;
     --secondary-color: #0b132b;
     --radius-sm: 4px;
     --radius-md: 8px;
