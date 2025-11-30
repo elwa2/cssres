@@ -2979,7 +2979,8 @@ svg.x-icon-twitter {
 
 .cart-product-row-wrapper {
     border: 0 !important;
-    border-bottom: 1px solid #cccccc !important;
+    border-bottom: 1px solid #cccccc !important;    border-bottom: 1px solid #ff8181 !important;
+
 }
 
 @media (max-width: 991px) {
