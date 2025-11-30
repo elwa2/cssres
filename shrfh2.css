@@ -2940,8 +2940,7 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-com
 }
 
 @media (max-width: 991px) {
-    body:not([data-template="home"]) a.ic.menu.icon-menu-top.d-block.d-lg-none, 
-    body[data-template="product"] a.ic.menu.icon-menu-top.d-block.d-lg-none {
+    body:not([data-template="home"]) a.ic.menu.icon-menu-top.d-block.d-lg-none, body[data-template="product"] a.ic.menu.icon-menu-top.d-block.d-lg-none {
         position: relative;
         right: 150px !important;
     }
@@ -2964,6 +2963,54 @@ svg.x-icon-twitter {
     background-position: center;
 }
 
+.aaddress-personal-btn ,.theme-text-for-primary-bg,.theme-icon-primary {
+    color: #ffffff;
+}
+
+#sliding-menu .container>.language-currency {
+    position: relative;
+    top: 36rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.cart-product-row-wrapper {
+    border-bottom: 1px solid #cccccc;
+}
+
+@media (max-width: 991px) {
+}
+
+.cart-product-total-price {
+    font-size: 1.52rem;
+    position: relative;
+    top: -72px;
+    right: 65px;
+}
+
+.cart-product-col-img {
+    width: 101px;
+}
+
+.cart-product-row {
+    margin-bottom: -55px;
+}
+
+.btn-primary {
+    color: #ffffff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.cart-product-delete {
+    display: none;
+}
+
+.cart-products-action {
+    position: relative;
+    top: -32px;
+}
+
 :root {
     --1: #3A7267;
     --2: #A2745A;
@@ -2977,16 +3024,4 @@ svg.x-icon-twitter {
     --con: "الحقوق محفوظة © متجــر شرفة";
     --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
     --logo2: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
-}
-
-.aaddress-personal-btn ,.theme-text-for-primary-bg,.theme-icon-primary {
-    color: #ffffff;
-}
-
-
-#sliding-menu .container>.language-currency {
-    position: relative;
-    top: 36rem;
-    display: flex;
-    flex-direction: row;
 }
