@@ -2982,3 +2982,11 @@ svg.x-icon-twitter {
 .aaddress-personal-btn ,.theme-text-for-primary-bg,.theme-icon-primary {
     color: #ffffff;
 }
+
+
+#sliding-menu .container>.language-currency {
+    position: relative;
+    top: 36rem;
+    display: flex;
+    flex-direction: row;
+}
