@@ -2940,9 +2940,9 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-com
 }
 
 @media (max-width: 991px) {
-    a.ic.menu.icon-menu-top.d-block.d-lg-none {
+   body[data-template="product"] a.ic.menu.icon-menu-top.d-block.d-lg-none {
         position: relative;
-        right: -40px !important;
+        right: 150px !important;
     }
 }
 
@@ -2977,3 +2977,6 @@ svg.x-icon-twitter {
     --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
     --logo2: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
 }
+
+
+body[data-template="product"] {}
