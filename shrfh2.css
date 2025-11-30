@@ -1137,12 +1137,15 @@ a.more-button::after {
     right: 15px;
     top: -15px;
 }
-@media(max-width: 991px) { .product-item>div>.btn {
-    zoom: 77%;
-    width: 44%;
-    right: 43px;
+
+@media(max-width: 991px) {
+    .product-item>div>.btn {
+        zoom: 77%;
+        width: 44%;
+        right: 43px;
     }
 }
+
 @media(min-width: 991px) {
     .product-item>div>.btn {
         width: 37%;
@@ -2941,6 +2944,23 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-com
         position: relative;
         right: -40px !important;
     }
+}
+
+.icon-instagram:before {
+    content: "\f16d";
+    position: relative;
+    right: -2px;
+}
+
+ svg.x-icon-twitter g {
+    display: none !important;
+}
+
+svg.x-icon-twitter {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000000' d='M21.742 21.75l-7.563-11.179 7.056-8.321h-2.456l-5.691 6.714-4.54-6.714H2.359l7.29 10.776L2.25 21.75h2.456l6.035-7.118 4.818 7.118h6.191-.008zM7.739 3.818L18.81 20.182h-2.447L5.29 3.818h2.447z'/%3E%3C/svg%3E");
+    background-size: 74%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 :root {
