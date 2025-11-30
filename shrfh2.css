@@ -2796,7 +2796,7 @@ section.blog.mt-5.mb-5 {
 }
 
 .cart-empty .btn-outline-primary {
-    color: #000;
+    color: #fff;
     border: unset;
     background: var(--2);
 }
@@ -2952,7 +2952,7 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-com
     right: -2px;
 }
 
- svg.x-icon-twitter g {
+svg.x-icon-twitter g {
     display: none !important;
 }
 
