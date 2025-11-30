@@ -2979,18 +2979,8 @@ svg.x-icon-twitter {
 
 .cart-product-row-wrapper {
     border: 0 !important;
-    border-bottom: 1px solid #cccccc !important;    border-bottom: 1px solid #ff8181 !important;
-
-}
-
-@media (max-width: 991px) {
-}
-
-.cart-product-total-price {
-    font-size: 1.52rem;
-    position: relative;
-    top: -72px;
-    right: 65px;
+    border-bottom: 1px solid #cccccc !important;
+    border-bottom: 1px solid var(--1)!important;
 }
 
 .cart-product-col-img {
@@ -3009,26 +2999,6 @@ svg.x-icon-twitter {
 
 .cart-product-delete {
     display: none;
-}
-
-.cart-products-action {
-    position: relative;
-    top: -32px;
-}
-
-:root {
-    --1: #3A7267;
-    --2: #A2745A;
-    --3: #e9cba9;
-    --4: #f4f7d6;
-    --ff: #f2f2f2;
-    --primary-color: var(--1);
-    --text-color-primary-bg: #323232;
-    --primary-color-op-5: #2e2e2e;
-    --sub-primary-color: #222222;
-    --con: "الحقوق محفوظة © متجــر شرفة";
-    --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
-    --logo2: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
 }
 
 #fixed-header.sticky .cart-header-total {
@@ -3050,7 +3020,37 @@ svg.x-icon-twitter {
     top: -6rem;
     color: var(--2);
 }
+
 .cart-product-price-each.d-block {
     font-size: 0;
     display: none !important;
+}
+
+@media (max-width: 991px) {
+    .cart-products-action {
+        position: relative;
+        top: -32px;
+    }
+
+    .cart-product-total-price {
+        font-size: 1.52rem;
+        position: relative;
+        top: -72px;
+        right: 65px;
+    }
+}
+
+:root {
+    --1: #3A7267;
+    --2: #A2745A;
+    --3: #e9cba9;
+    --4: #f4f7d6;
+    --ff: #f2f2f2;
+    --primary-color: var(--1);
+    --text-color-primary-bg: #323232;
+    --primary-color-op-5: #2e2e2e;
+    --sub-primary-color: #222222;
+    --con: "الحقوق محفوظة © متجــر شرفة";
+    --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
+    --logo2: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
 }
