@@ -1946,9 +1946,7 @@ ul.pagination {
     margin-bottom: 10px
 }
 
-.product-formatted-price {
-    font-size: 1.8rem
-}
+
 
 .col-product-info>section>.d-flex:not(.product-features)>div {
     flex-direction: row!important;
@@ -1960,8 +1958,8 @@ ul.pagination {
     gap: 1rem
 }
 
-.col-product-info .product-formatted-price-old {
-    font-size: 1.5rem
+.product-formatted-price, .col-product-info .product-formatted-price-old {
+    font-size: 1.8rem;
 }
 
 .col-product-info .product-formatted-price-discount {
@@ -3037,4 +3035,10 @@ svg.x-icon-twitter {
 
 #fixed-header.sticky .cart-header-total {
     color: #fff;
+}
+
+
+.col-product-info .product-formatted-price-old {
+    position: relative;
+    top: 3px;
 }
