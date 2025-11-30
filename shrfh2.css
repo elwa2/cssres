@@ -1093,15 +1093,15 @@ a.more-button::after {
 }
 
 .product-item>a>.product-crd-spec>.section-product-price span[style="color:#f25f5f;"] {
-    margin: unset;
-    position: absolute;
-    top: 5px;
-    left: -5px;
-    background: #bc3333;
-    padding: 0 0 0 9px;
+    margin: unset !important;
+    position: absolute !important;
+    top: 5px !important;
+    left: -5px !important;
+    background: #bc3333 !important;
+    padding: 0 0 0 9px !important;
     color: #fff!important;
-    line-height: 1.7;
-    border-radius: 4px;
+    line-height: 1.7 !important;
+    border-radius: 4px !important;
 }
 
 .product-item .section-product-price {
@@ -1137,7 +1137,12 @@ a.more-button::after {
     right: 15px;
     top: -15px;
 }
-
+@media(max-width: 991px) { .product-item>div>.btn {
+    zoom: 77%;
+    width: 44%;
+    right: 43px;
+    }
+}
 @media(min-width: 991px) {
     .product-item>div>.btn {
         width: 37%;
