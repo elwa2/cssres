@@ -1745,7 +1745,7 @@ footer .container>.row {
 .filter-buttons-container .dropdown-menu .dropdown-item {
     font-size: 1.2rem;
     padding: 5px 10px;
-    color: var(--1)
+    color: #ffffff;
 }
 
 .filter-buttons-container .dropdown-menu .dropdown-item:hover {
@@ -2515,7 +2515,7 @@ section.blog.mt-5.mb-5 {
     }
 
     .products-list .prod-col {
-        width: 48%
+        width: 48%;
     }
 
     .products-slider .prod-col {
@@ -2925,8 +2925,8 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-com
 
 @media (max-width: 991px) {
     [data-template="products"] .badge-name {
-        right: -22px;
-        top: 3px;
+        right: -2px !important;
+        top: 3px !important;
     }
 
     [data-template="products"] .product-item>a>.product-crd-spec>.section-product-price span[style="color:#f25f5f;"] {
@@ -3053,4 +3053,14 @@ svg.x-icon-twitter {
     --con: "الحقوق محفوظة © متجــر شرفة";
     --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
     --logo2: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/47a3d235-27be-4714-abae-8164d0a250b1/c231baaf-e3ee-494a-ba5b-4300a52cfca6-200x.png");
+}
+
+body.rtl[data-template="products"] .products-list .prod-col {
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    body.rtl[data-template="products"] .products-list .prod-col .product-item {
+        width: 102%;
+    }
 }
