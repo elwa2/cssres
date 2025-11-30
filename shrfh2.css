@@ -3049,3 +3049,7 @@ svg.x-icon-twitter {
     top: -6rem;
     color: var(--2);
 }
+.cart-product-price-each.d-block {
+    font-size: 0;
+    display: none !important;
+}
