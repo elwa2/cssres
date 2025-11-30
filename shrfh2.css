@@ -2213,7 +2213,7 @@ ul.pagination {
     background: var(--2);
     border: unset;
     border-radius: 3px;
-    color: #000;
+    color: #fff;
 }
 
 .products-details-page #exampleModalCenter .modal-comment-content button {
@@ -2939,7 +2939,12 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-com
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 451px) {
+    body:not([data-template="home"]) a.ic.menu.icon-menu-top.d-block.d-lg-none, body[data-template="product"] a.ic.menu.icon-menu-top.d-block.d-lg-none {
+        position: relative;
+        right: 175px !important;
+    }
+}@media (max-width: 351px) {
     body:not([data-template="home"]) a.ic.menu.icon-menu-top.d-block.d-lg-none, body[data-template="product"] a.ic.menu.icon-menu-top.d-block.d-lg-none {
         position: relative;
         right: 150px !important;
