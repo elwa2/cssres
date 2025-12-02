@@ -258,7 +258,8 @@ section.tp-double-banner.s-block .banner {
         background-size: 292% !important;
     }
 }
-@media (max-width: 576px) {
+
+@media (min-width: 576px) {
     .hmln_zid_cat_image_wrapper {
         width: 289px;
         height: 289px;
