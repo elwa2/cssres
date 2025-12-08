@@ -1,6 +1,6 @@
 body {
     background-color: #F2F2F2;
-    color: #333;
+    color: #333
 }
 
 .btn-primary-hosam {
@@ -15,13 +15,7 @@ body {
     transition: all var(--transition-base);
     position: relative;
     overflow: hidden;
-    margin-top: -1px;
-}
-
-@media (max-width: 768px) {
-    .hosam-pro-image-wrapper {
-        padding-top: 100%;
-    }
+    margin-top: -1px
 }
 
 .hosam-pro-image-wrapper img {
@@ -31,61 +25,34 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    animation: kenBurns 20s infinite alternate;
-}
-
-@keyframes kenBurns {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(1.1);
-    }
+    animation: kenBurns 20s infinite alternate
 }
 
 .hmln_zid_cat_section {
-    padding: var(--gap-xl) 0;
+    padding: var(--gap-xl) 0
 }
 
 .hmln_zid_cat_header {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .hmln_zid_cat_title {
     font-size: 2rem;
     font-weight: 800;
     color: var(--secondary-color);
-    margin-bottom: var(--gap-sm);
+    margin-bottom: var(--gap-sm)
 }
 
 .hmln_zid_cat_layout_wrapper {
     position: relative;
-    padding: 0 var(--gap-md);
-}
-
-@media (min-width: 576px) {
-    .hmln_zid_cat_card {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: var(--gap-md);
-        border-radius: var(--radius-lg);
-        background-color: var(--bg-surface);
-        box-shadow: var(--shadow-sm);
-        transition: all var(--transition-base);
-        border: 1px solid var(--border-color);
-        text-decoration: none;
-        height: 100%;
-    }
+    padding: 0 var(--gap-md)
 }
 
 .hmln_zid_cat_card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
-    border-color: var(--primary-color);
+    border-color: var(--primary-color)
 }
 
 .hmln_zid_cat_image_wrapper {
@@ -96,32 +63,31 @@ body {
     margin-bottom: var(--gap-md);
     border: 4px solid var(--bg-body);
     box-shadow: var(--shadow-md);
-    transition: border-color var(--transition-base);
+    transition: border-color var(--transition-base)
 }
 
 .hmln_zid_cat_card:hover .hmln_zid_cat_image_wrapper {
-    border-color: var(--primary-color);
+    border-color: var(--primary-color)
 }
 
 .hmln_zid_cat_image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform var(--transition-slow);
+    transition: transform var(--transition-slow)
 }
 
 .hmln_zid_cat_card:hover .hmln_zid_cat_image {
-    transform: scale(1.1);
+    transform: scale(1.1)
 }
 
 .hmln_zid_cat_item_name {
     font-size: 1.125rem;
-    font-weight: 700;
+    font-weight: 700
 }
 
 .home-products-section {
-    padding: var(--gap-xl) 0;
-    /* background-color: var(--bg-body); */
+    padding: var(--gap-xl) 0
 }
 
 .section-title {
@@ -130,86 +96,69 @@ body {
     color: var(--text-main);
     margin: 21px 0;
     position: relative;
-    padding-inline-start: 1rem; border-inline-start: 5px solid var(--primary-color); }
+    padding-inline-start:1rem;border-inline-start:5px solid var(--primary-color)}
 
 .products-slider-wrapper {
-    position: relative;
+    position: relative
 }
 
 section.tp-double-banner.s-block .banner {
     flex: 1 1 calc(100% - 16px);
-    max-width: calc(100% - 16px);
+    max-width: calc(100% - 16px)
 }
 
 .hosam-logo.align-items-center.header-logo img.image-logo {
-    filter: brightness(9.5);
+    filter: brightness(9.5)
 }
 
-.hosam-logo.align-items-center.header-logo {
-}
-
-@media (max-width: 576px) {
-    .header-logo img {
-        height: 57px;
-    }
-}
-
-.prod-col.slick-slide.slick-active {
-}
-
-/* Custom Scrollbar for any scrollable areas (global) */
 ::-webkit-scrollbar {
     width: 8px;
-    height: 8px;
+    height: 8px
 }
 
 ::-webkit-scrollbar-track {
-    background: #c8c8c8;
+    background: #c8c8c8
 }
 
 ::-webkit-scrollbar-thumb {
     background: var(--primary-color);
-    border-radius: 15px;
+    border-radius: 15px
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #6b6b6b;
+    background: #6b6b6b
 }
 
 .product-detailshosam {
-    background: #fff;
+    background: #fff
 }
 
 .product-item .product-price {
-    text-align: center;
+    text-align: center
 }
 
 .product-crd-spec {
-    align-self: center;
+    align-self: center
 }
 
 .product-item .product-title > span {
-    text-align: center;
+    text-align: center
 }
 
 .product-card-rating-wrapper {
-    align-self: center;
+    align-self: center
 }
 
 .footer-theme-bg-primary {
     border-radius: 20px 20px 0 0;
-    /* margin: 15px; */
     background-color: var(--1);
-    background: linear-gradient(134deg ,transparent -0%,#292929 83% ,#fff 200%),url(https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/6ccf211e-ae78-4c57-b7f1-851f999a3781.jpg)-3rem -14rem/100%no-repeat!important;
-}
-
-.footer-theme-bg-primary {
+    background: linear-gradient(134deg,transparent -0%,#292929 83%,#fff 200%),url(https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/6ccf211e-ae78-4c57-b7f1-851f999a3781.jpg)-3rem -14rem/100%no-repeat!important;
     border-radius: 20px;
-    margin: 15px;
+    margin: 15px
 }
 
 .store-footer__inner {
-    background: transparent;
+    background: transparent
 }
 
 :root {
@@ -221,47 +170,128 @@ section.tp-double-banner.s-block .banner {
     --radius-md: 8px;
     --radius-lg: 16px;
     --radius-xl: 24px;
-    --radius-pill: 500px;
+    --radius-pill: 500px
+}
+
+@media (max-width: 768px) {
+    .hosam-pro-image-wrapper {
+        padding-top:100%
+    }
+}
+
+@keyframes kenBurns {
+    from {
+        transform: scale(1)
+    }
+
+    to {
+        transform: scale(1.1)
+    }
+}
+
+@media (min-width: 576px) {
+    .hmln_zid_cat_card {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: var(--gap-md);
+        border-radius: var(--radius-lg);
+        background-color: var(--bg-surface);
+        box-shadow: var(--shadow-sm);
+        transition: all var(--transition-base);
+        border: 1px solid var(--border-color);
+        text-decoration: none;
+        height: 100%
+    }
 }
 
 @media (max-width: 576px) {
-    .products-slider .prod-col, .categories-slider .cat-col {
-        padding-left: 0;
-        padding-right: 5px;
+    .header-logo img {
+        height:57px
+    }
+}
+
+@media (max-width: 576px) {
+    .products-slider .prod-col,.categories-slider .cat-col {
+        padding-left:0;
+        padding-right: 5px
     }
 
     .product-item {
-        background: #fff;
+        background: #fff
     }
 
     .section-title {
-        text-align: center;
+        text-align: center
     }
 
     .footer-theme-bg-primary {
         background-position: -23rem 0rem !important;
-        background-size: 292% !important;
+        background-size: 292% !important
     }
 
     .social-proof-widgets {
-        gap: 7px;
+        gap: 7px
     }
 }
 
 @media (max-width: 576px) {
     .menu-header-theme-bg-primary {
-        border-radius: 20px 20px 0 0;
-        /* margin: 15px; */
+        border-radius:20px 20px 0 0;
         background-color: var(--1);
-        background: linear-gradient(134deg ,transparent -0%,#292929 83% ,#fff 200%),url(https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/6ccf211e-ae78-4c57-b7f1-851f999a3781.jpg)-3rem -14rem/100%no-repeat!important;
+        background: linear-gradient(134deg,transparent -0%,#292929 83%,#fff 200%),url(https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/6ccf211e-ae78-4c57-b7f1-851f999a3781.jpg)-3rem -14rem/100%no-repeat!important;
         background-position: -23rem 0rem !important;
-        background-size: 292% !important;
+        background-size: 292% !important
     }
 }
 
 @media (min-width: 576px) {
     .hmln_zid_cat_image_wrapper {
-        width: 289px;
-        height: 289px;
+        width:289px;
+        height: 289px
     }
+}
+
+body {
+    background-color: #ffffff;
+    color: #333
+}
+
+body section.subTitle-detail .container::after {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 567px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1)
+}
+
+@media (max-width: 768px) {
+    body section.subTitle-detail .container::after {
+        height:41vw;
+        background-size: contain;
+        margin-top: 15px
+    }
+}
+
+section.subTitle-detail {
+    padding: 0
+}
+
+body[data-category-id="420037"] section.subTitle-detail .container::after {
+    content: "";
+    background-image: url('https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/570efd70-94e9-4790-8d22-e354b2a85ae4.png')
+}
+
+body[data-category-id="420035"] section.subTitle-detail .container::after {
+    content: "";
+    background-image: url('https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/c3e65229-a4c7-47ce-888d-847d58d20abd.png')
+}
+body[data-category-id="420036"] section.subTitle-detail .container::after {
+    content: "";
+    background-image: url('https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/91cabe50-6628-40f5-a0a3-dbcbb50dec8a.png')
 }
