@@ -1,5 +1,7 @@
 body {
     background-color: #F2F2F2;
+    color: #333;
+    background-color: #ffffff;
     color: #333
 }
 
@@ -173,6 +175,37 @@ section.tp-double-banner.s-block .banner {
     --radius-pill: 500px
 }
 
+body section.subTitle-detail .container::after {
+    display: block;
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 567px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1)
+}
+
+section.subTitle-detail {
+    padding: 0
+}
+
+body[data-category-id="420037"] section.subTitle-detail .container::after {
+    content: "";
+    background-image: url('https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/570efd70-94e9-4790-8d22-e354b2a85ae4.png')
+}
+
+body[data-category-id="420035"] section.subTitle-detail .container::after {
+    content: "";
+    background-image: url('https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/c3e65229-a4c7-47ce-888d-847d58d20abd.png')
+}
+
+body[data-category-id="420036"] section.subTitle-detail .container::after {
+    content: "";
+    background-image: url('https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/91cabe50-6628-40f5-a0a3-dbcbb50dec8a.png')
+}
+
 @media (max-width: 768px) {
     .hosam-pro-image-wrapper {
         padding-top:100%
@@ -253,45 +286,10 @@ section.tp-double-banner.s-block .banner {
     }
 }
 
-body {
-    background-color: #ffffff;
-    color: #333
-}
-
-body section.subTitle-detail .container::after {
-    display: block;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 567px;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1)
-}
-
 @media (max-width: 768px) {
     body section.subTitle-detail .container::after {
         height:41vw;
         background-size: contain;
         margin-top: 15px
     }
-}
-
-section.subTitle-detail {
-    padding: 0
-}
-
-body[data-category-id="420037"] section.subTitle-detail .container::after {
-    content: "";
-    background-image: url('https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/570efd70-94e9-4790-8d22-e354b2a85ae4.png')
-}
-
-body[data-category-id="420035"] section.subTitle-detail .container::after {
-    content: "";
-    background-image: url('https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/c3e65229-a4c7-47ce-888d-847d58d20abd.png')
-}
-body[data-category-id="420036"] section.subTitle-detail .container::after {
-    content: "";
-    background-image: url('https://media.zid.store/601a3aad-33a2-4e33-b759-27d62cbf3114/91cabe50-6628-40f5-a0a3-dbcbb50dec8a.png')
 }
