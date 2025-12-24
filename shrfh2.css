@@ -2988,7 +2988,7 @@ svg.x-icon-twitter {
 }
 
 .cart-product-row {
-    margin-bottom: -55px;
+    margin-bottom: 2px;
 }
 
 .btn-primary {
@@ -3063,4 +3063,12 @@ body.rtl[data-template="products"] .products-list .prod-col {
     body.rtl[data-template="products"] .products-list .prod-col .product-item {
         width: 102%;
     }
+}
+
+
+body[data-template="cart"] .cart-product-total-before-price {
+    right: unset;
+    position: inherit;
+    top: unset;
+    color: var(--2);
 }
