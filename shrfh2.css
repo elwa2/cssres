@@ -3078,4 +3078,7 @@ body[data-template="cart"] .cart-product-total-before-price {
     position: inherit;
     top: unset;
     color: var(--2);
+}.bread-text {
+    color: #3a7267;
+    font-weight: unset;
 }
