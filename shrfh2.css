@@ -1786,7 +1786,7 @@ ul.pagination {
 }
 
 .products-details-page #product-form .size-box label span {
-    color: #fff
+    color: #3a7267;
 }
 
 .products-details-page #product-form .size-box select, .products-details-page #product-form .size-box input, .products-details-page #product-form .size-box .form-control {
@@ -1796,6 +1796,13 @@ ul.pagination {
     background: var(--1);
     color: #eee!important
 }
+
+
+.products-details-page #product-form .size-box .form-control::placeholder, .products-details-page #product-form .size-box .form-control::-webkit-input-placeholder,.products-details-page #product-form .size-box .form-control::placeholder,.products-details-page #product-form .size-box .form-control::-webkit-input-placeholder {
+    color: #fff !important;
+}
+
+
 
 .rtl #product-variants-options>div.form-group>div::after, .rtl #product-custom-user-dropdown-fields>div.form-group>div::after, .select-quantity-div div.form-group>div::after {
     border-right: 0
