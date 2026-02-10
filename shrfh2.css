@@ -3092,3 +3092,19 @@ body[data-template="cart"] .cart-product-total-before-price {
 
 span.icon-delete {
 }
+
+@media (max-width: 768px) {
+    .cart-products-action {
+        width: 57%;
+        position: relative;
+        top: -1px;
+        right: 42px;
+    }
+
+    .cart-product-prices {
+        width: 84%;
+        position: relative;
+        top: -5px;
+        right: 15px;
+    }
+}
