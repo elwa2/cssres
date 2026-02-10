@@ -3081,4 +3081,9 @@ body[data-template="cart"] .cart-product-total-before-price {
 }.bread-text {
     color: #3a7267;
     font-weight: unset;
+}.product-card-bundle-offer {
+ 
+    color: #ffffff;
+    background-color: var(--primary-color);
+
 }
