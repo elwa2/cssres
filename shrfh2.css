@@ -3005,7 +3005,7 @@ svg.x-icon-twitter {
 }
 
 .cart-product-delete {
-    display: none;
+    /* display: none; */
 }
 
 #fixed-header.sticky .cart-header-total {
@@ -3087,3 +3087,5 @@ body[data-template="cart"] .cart-product-total-before-price {
     background-color: var(--primary-color);
 
 }
+
+span.icon-delete {}
