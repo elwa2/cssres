@@ -3021,6 +3021,7 @@ svg.x-icon-twitter {
 .cart-product-total-before-price {
     color: var(--2);
 }
+
 /* 
 .cart-product-total-before-price {
     right: 79px;
@@ -3033,9 +3034,8 @@ svg.x-icon-twitter {
     font-size: 0;
     display: none !important;
 } */
-
 @media (max-width: 991px) {
-    .cart-products-action {
+    /*     .cart-products-action {
         position: relative;
         top: -32px;
     }
@@ -3045,7 +3045,7 @@ svg.x-icon-twitter {
         position: relative;
         top: -72px;
         right: 65px;
-    }
+    } */
 }
 
 :root {
