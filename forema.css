@@ -965,3 +965,160 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     color: #ffffff !important;
     transform: scale(1.1) !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=========================================================
+   FOREMA - LUXURY ANIMATED TESTIMONIALS (V2)
+   (ألوان واضحة، زجاج فخم، وترتيب صحيح للنصوص)
+========================================================= 
+*/
+
+/* 1. هيكل البطاقة: الزجاج مع إطار خفيف ليفصلها عن خلفية الموقع */
+.testimonials-customer-card {
+    background: rgba(255, 255, 255, 0.85) !important; /* تقليل الشفافية قليلاً ليبرز النص */
+    backdrop-filter: blur(25px) !important;
+    -webkit-backdrop-filter: blur(25px) !important;
+    border: 1px solid rgba(0, 0, 0, 0.05) !important;
+    border-radius: 16px !important;
+    padding: 0 !important; /* تم نقل البادينق للداخل */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.04) !important;
+    margin: 20px 15px !important;
+    position: relative !important;
+    overflow: hidden !important;
+    min-height: 260px !important;
+    z-index: 1 !important;
+    transition: transform 0.4s ease !important;
+}
+
+.testimonials-customer-card:hover {
+    transform: translateY(-8px) !important;
+}
+
+/* 2. حاوية النصوص الداخلية (إجبار الترتيب: التقييم فوق، العميل تحت) */
+.testimonials-customer-card .card-body {
+    display: flex !important;
+    flex-direction: column !important; /* تحويل الحاوية لعمود */
+    height: 100% !important;
+    padding: 35px 25px 25px !important;
+    position: relative !important;
+    z-index: 2 !important; /* لتبقى النصوص فوق الأنيميشن */
+}
+
+/* 3. نص التقييم (يصعد للأعلى) */
+.testimonials-customer-text {
+    order: 1 !important; /* الترتيب الأول في العمود */
+    font-size: 1.15rem !important;
+    font-weight: 600 !important;
+    color: #111111 !important; /* لون داكن جداً ليقرأ بوضوح */
+    line-height: 1.8 !important;
+    text-align: right !important;
+    background: transparent !important;
+    margin: 0 0 30px 0 !important;
+    padding: 0 !important;
+}
+
+/* 4. منطقة العميل (تنزل للأسفل دائماً) */
+.testimonials-customer-card .card-body .d-flex {
+    order: 2 !important; /* الترتيب الثاني في العمود */
+    margin-top: auto !important; /* يدفع هذه المنطقة لأسفل البطاقة دائماً */
+    align-items: center !important;
+    border-top: 1px solid rgba(0,0,0,0.06) !important; /* خط فاصل فوق الاسم */
+    padding-top: 20px !important;
+    width: 100% !important;
+}
+
+/* 5. الأنيميشن السائل (الألوان الآن قوية وواضحة) */
+.testimonials-customer-card::before,
+.testimonials-customer-card::after {
+    content: '';
+    position: absolute;
+    width: 250px; /* تكبير حجم بقعة اللون */
+    height: 250px;
+    border-radius: 50%;
+    filter: blur(40px); /* تنعيم الأطراف */
+    z-index: 0 !important; /* خلف النصوص */
+    opacity: 0.4 !important; /* رفعنا الشفافية لتصبح الألوان واضحة جداً */
+    animation: floatBlobs 7s infinite alternate ease-in-out;
+}
+
+/* بقعة اللون الأولى (لون البراند الخاص بكم) */
+.testimonials-customer-card::before {
+    background: var(--primary-color) !important; 
+    top: -60px;
+    right: -60px;
+}
+
+/* بقعة اللون الثانية (لون ذهبي/بيج دافئ يتناسب مع الأزياء) */
+.testimonials-customer-card::after {
+    background: #e3c485 !important; 
+    bottom: -60px;
+    left: -60px;
+    animation-delay: -3.5s;
+}
+
+@keyframes floatBlobs {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    50% { transform: translate(-40px, 30px) scale(1.3) rotate(45deg); }
+    100% { transform: translate(30px, -40px) scale(0.9) rotate(90deg); }
+}
+
+/* 6. علامة الاقتباس (تتوسط البطاقة بشفافية) */
+.testimonials-customer-card .card-body::after {
+    content: '\201D' !important;
+    position: absolute !important;
+    top: 10px !important;
+    right: 20px !important;
+    font-size: 100px !important;
+    font-family: Georgia, serif !important;
+    color: var(--primary-color) !important;
+    opacity: 0.25 !important; /* وضوح أعلى للعلامة */
+    line-height: 1 !important;
+    z-index: -1 !important;
+    pointer-events: none !important;
+}
+
+/* 7. أيقونة واسم العميل */
+.testimonials-customer-icon {
+    font-size: 38px !important;
+    color: var(--primary-color) !important;
+    background: transparent !important;
+    margin-left: 15px !important;
+}
+
+.testimonials-customer-name {
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    margin: 0 !important;
+}
+
+.testimonials-customer-date { display: none !important; }
+
+/* 8. أسهم السلايدر */
+.testimonials-slider-wrapper .slick-arrow {
+    background: #ffffff !important;
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    color: #111 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    width: 45px !important;
+    height: 45px !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+.testimonials-slider-wrapper .slick-arrow:hover {
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+    transform: scale(1.1) !important;
+}
