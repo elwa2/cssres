@@ -785,3 +785,183 @@ h5, h6, p, blockquote, a, abbr, img, small, strong, ol, ul, li, dd, form, label,
     background: #ffffff !important;
     transform: scale(1.1) !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+=========================================================
+   FOREMA - LUXURY ANIMATED TESTIMONIALS 
+   (تأثير الزجاج + أنيميشن أورورا سائل في الخلفية)
+========================================================= 
+*/
+
+/* 1. هيكل البطاقة: تأثير الزجاج المفرغ (Glassmorphism) */
+.testimonials-customer-card {
+    background: rgba(255, 255, 255, 0.7) !important; /* خلفية بيضاء شفافة */
+    backdrop-filter: blur(15px) !important; /* تأثير غشاوة الزجاج الفخم */
+    -webkit-backdrop-filter: blur(15px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.6) !important; /* لمعة خفيفة على أطراف الزجاج */
+    border-radius: 20px !important;
+    padding: 40px 30px 25px !important;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.03) !important;
+    margin: 20px 15px !important;
+    position: relative !important;
+    overflow: hidden !important; /* لمنع الأنيميشن من الخروج عن البطاقة */
+    min-height: 250px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    z-index: 1 !important;
+    transition: transform 0.4s ease !important;
+}
+
+.testimonials-customer-card:hover {
+    transform: translateY(-8px) !important;
+}
+
+/* 2. الأنيميشن السائل (Liquid Blobs) - يعمل كخلفية SVG متحركة */
+.testimonials-customer-card::before,
+.testimonials-customer-card::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: blur(45px); /* هذا السطر يحول الشكل الدائري إلى بقعة ضوء ناعمة جداً */
+    z-index: -1; /* لجعلها خلف النص */
+    opacity: 0.15; /* شفافية هادئة تعطي فخامة بدون تشويش على القراءة */
+    animation: floatBlobs 8s infinite alternate ease-in-out;
+}
+
+/* بقعة الضوء الأولى (تأخذ لون البراند) */
+.testimonials-customer-card::before {
+    background: var(--primary-color);
+    top: -50px;
+    right: -50px;
+}
+
+/* بقعة الضوء الثانية (لون ذهبي أو رملي دافئ ليكسر اللون) */
+.testimonials-customer-card::after {
+    background: #d4af37; /* لون ذهبي ناعم */
+    bottom: -50px;
+    left: -50px;
+    animation-delay: -4s; /* لتتحرك عكس البقعة الأولى */
+}
+
+/* مفاتيح الحركة: دوران وتمدد ناعم جداً */
+@keyframes floatBlobs {
+    0% { transform: translate(0, 0) scale(1) rotate(0deg); }
+    50% { transform: translate(-30px, 20px) scale(1.2) rotate(45deg); }
+    100% { transform: translate(20px, -30px) scale(0.9) rotate(90deg); }
+}
+
+/* 3. علامة اقتباس عائمة ومتحركة */
+.testimonials-customer-card .card-body::before {
+    content: '\201D' !important;
+    position: absolute !important;
+    top: 20px !important;
+    right: 30px !important;
+    font-size: 90px !important;
+    font-family: Georgia, serif !important;
+    color: var(--primary-color) !important;
+    opacity: 0.1 !important;
+    line-height: 1 !important;
+    z-index: -1 !important;
+    animation: floatQuote 4s infinite ease-in-out;
+}
+
+/* حركة تنفس ناعمة لعلامة الاقتباس */
+@keyframes floatQuote {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* 4. ترتيب النصوص فوق الأنيميشن (عكس الترتيب ليكون التقييم أعلى) */
+.testimonials-customer-text {
+    order: -1 !important; /* يرفع النص للأعلى */
+    font-size: 1.15rem !important;
+    font-weight: 500 !important;
+    color: #222 !important;
+    line-height: 1.8 !important;
+    text-align: right !important;
+    background: transparent !important;
+    margin: 0 0 25px 0 !important;
+    padding: 0 !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* 5. تنسيق منطقة العميل في الأسفل */
+.testimonials-customer-card .card-body .d-flex {
+    align-items: center !important;
+    border-top: 1px solid rgba(0,0,0,0.05) !important;
+    padding-top: 15px !important;
+    margin: 0 !important;
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* أيقونة العميل: تصميم لامع وأنيق */
+.testimonials-customer-icon {
+    font-size: 38px !important;
+    color: var(--primary-color) !important;
+    background: #ffffff !important;
+    border-radius: 50% !important;
+    padding: 6px !important;
+    margin-left: 15px !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06) !important;
+}
+
+.testimonials-customer-name {
+    font-size: 1.05rem !important;
+    font-weight: 700 !important;
+    color: #111 !important;
+    margin: 0 !important;
+}
+
+.testimonials-customer-date {
+    display: none !important; /* إخفاء التاريخ لنظافة التصميم */
+}
+
+/* 6. تحسين أسهم السلايدر لتناسب الفخامة */
+.testimonials-slider-wrapper .slick-arrow {
+    background: #ffffff !important;
+    border: 1px solid rgba(0,0,0,0.05) !important;
+    color: #000 !important;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    transition: all 0.3s ease !important;
+}
+
+.testimonials-slider-wrapper .slick-arrow:hover {
+    background: var(--primary-color) !important;
+    color: #ffffff !important;
+    transform: scale(1.1) !important;
+}
