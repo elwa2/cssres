@@ -122,7 +122,9 @@ header>.dark {
 
 #fixed-header .search-header {
     padding: unset;
-    background-color: var(--bgd)
+    background-color: var(--bgd);
+    background-color: var(--bg2);
+    
 }
 
 #fixed-header>div>.search-header>.container {
@@ -1374,6 +1376,7 @@ a.more-button::after {
 footer {
     background: var(--1);
     background: #fff;
+    background: var(--bg2);
     /* border-top: 5px solid var(--2) */
 }
 
@@ -3122,6 +3125,7 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
     --bgd: #F2F2F2;
     --bgd: #f7fbff;
     --bgd: #ffffff;
+    --bg2: #0e4a900d;
     --primary-color: var(--1);
     --text-color-primary-bg: #323232;
     --primary-color-op-5: #2e2e2e;
@@ -3205,7 +3209,6 @@ div[id="ae07c387-efc6-4556-b5d5-a10a6253288c"] .section-title::before,div[id="1b
     opacity: 0.04;
     pointer-events: none
 } */
-
 @keyframes floatTitle {
     0%,100% {
         transform: translateY(0)
