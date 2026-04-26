@@ -3212,6 +3212,12 @@ div[id="ae07c387-efc6-4556-b5d5-a10a6253288c"] .section-title::before,div[id="1b
     }
 }
 
+button.loyalty_footer_btn {
+    --text-color-primary-bg: #ffffff;
+    --primary-color: var(--1);
+    --1: #102439;
+}
+
 :root {
     --1: #0e4a90;
     --2: #1b6ecf;
