@@ -3094,7 +3094,9 @@ span.icon-delete {
         right: 15px;
     }
 }
-
+body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg > div > div > div.col-12.col-lg-7 > div > div:nth-child(3) > div:nth-child(1) {
+    display: none;
+}
 :root {
     --1: #0e4a90;
     --2: #1b6ecf;
