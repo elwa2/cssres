@@ -3217,6 +3217,15 @@ button.loyalty_footer_btn {
     --primary-color: var(--1);
     --1: #102439;
 }
+.product-item {
+    background-color: #ffffff!important;
+    border-radius: 16px!important;
+    border: 1px solid rgba(0,0,0,0.03)!important;
+    box-shadow: 0px 8px 24px -6px rgba(14,74,144,0.12)!important;
+    transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1)!important;
+    overflow: hidden!important;
+    margin: 5px!important
+}
 
 :root {
     --1: #0e4a90;
