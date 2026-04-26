@@ -2386,8 +2386,18 @@ section.blog.mt-5.mb-5 {
         background-size: 95%;
         background-repeat: no-repeat;
         background-position: center;
-        transition: 0.1s
+        transition: 0.1s;
     }
+
+  body.rtl[data-template="product_details"] #fixed-header .icon-menu_open_black_24dp-1::before {
+      position: relative;
+      right: -4rem;
+    }
+
+
+
+
+    
 
     :lang(en) #fixed-header .icon-menu_open_black_24dp-1::before {
         display: block;
@@ -2847,7 +2857,7 @@ section.blog.mt-5.mb-5 {
 
 body, html,.ss, section, .gallery-item.col-6 .box-1-1, .section-padding-space {
     background: #F2F2F2 !important;
-    background: var(--bgd) !important;
+    background: #ffffff1c !important;
 }
 
 .product-crd-spec,.product-item small,.product-card-rating-wrapper, .product-item .product-price, .product-item .product-title>span {
@@ -3127,7 +3137,9 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
 .home-products-section .slider-container {
     text-align: center!important;
     padding-top: 60px!important;
+    padding-top: 00px!important;
     padding-bottom: 40px!important;
+    padding-bottom: 0px!important;
     position: relative
 }
 
@@ -3245,3 +3257,8 @@ button.loyalty_footer_btn {
     --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/cfc208a7-23d5-4393-9d5d-44be4c3457f9/40de005f-c839-43e0-9967-cf86078d19f9-200x.png");
     --logo2: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/cfc208a7-23d5-4393-9d5d-44be4c3457f9/40de005f-c839-43e0-9967-cf86078d19f9-200x.png");
 }
+
+
+::before {}
+
+{}
