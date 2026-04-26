@@ -3113,7 +3113,7 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
 
 @media (max-width: 768px) {
     .slick-initialized .slick-slide, .rtl .testimonials-customer-card {
-        min-height: 217px;
+        min-height: 250px;
     }
 }
 
