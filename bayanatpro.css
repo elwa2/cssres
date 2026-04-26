@@ -3172,11 +3172,11 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
 }
 
 div[id="16e0d224-684c-48cb-8295-0415d1f96a44"] .section-title::before,div[id="72dc923d-c60e-4daa-86c4-089cec22a54c"] .section-title::before {
-    content: "قسم الدورات التدريبية"
+    content: " الدورات التدريبية"
 }
 
 div[id="ae07c387-efc6-4556-b5d5-a10a6253288c"] .section-title::before,div[id="1b33ac63-d90d-411e-83ad-b1e664cff6a0"] .section-title::before {
-    content: "قسم الخدمات الإحترافية"
+    content: " الخدمات الإحترافية"
 }
 
 /* .home-products-section::before {
