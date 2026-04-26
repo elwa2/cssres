@@ -3100,13 +3100,13 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
     display: none;
 }
 
-  .slick-initialized .slick-slide, .rtl .testimonials-customer-card {
+.slick-initialized .slick-slide, .rtl .testimonials-customer-card {
     min-height: 195px;
 }
 
 @media (max-width: 768px) {
     .slick-initialized .slick-slide, .rtl .testimonials-customer-card {
-     min-height: 217px;  
+        min-height: 217px;
     }
 }
 
@@ -3118,6 +3118,7 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
     --ff: #f2f2f2;
     --bgd: #F2F2F2;
     --bgd: #f7fbff;
+    --bgd: #ffffff;
     --primary-color: var(--1);
     --text-color-primary-bg: #323232;
     --primary-color-op-5: #2e2e2e;
