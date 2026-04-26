@@ -361,7 +361,7 @@ header>.dark {
 #sliding-menu {
     width: 25%;
     height: 100%;
-    background: #eee
+    background: var(--bgd);
 }
 
 #sliding-menu * {
@@ -378,7 +378,7 @@ header>.dark {
 }
 
 .slide-menu__slider>ul>li {
-    background: #f9f9f9;
+    background: var(--bgd);
     margin: 0 0 3px;
     position: relative;
     border: unset
@@ -568,7 +568,7 @@ ul>li>div[style="height: 50px"] {
 }
 
 #sliding-menu .container>.account-area {
-    background: #f9f9f9!important;
+    background:var(--bgd) !important;
     margin-bottom: 3px!important
 }
 
