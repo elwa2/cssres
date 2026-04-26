@@ -1198,8 +1198,8 @@ a.more-button::after {
 }
 
 .product-item>div>.btn.btn-product-card-select-variant:before {
-    content: "تصفح الخيارات";
-    font-size: 1.2rem
+    content: " أضف";
+    font-size: 1.2rem;
 }
 
 .product-item>div>.btn:hover {
