@@ -3117,25 +3117,6 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
     }
 }
 
-:root {
-    --1: #0e4a90;
-    --2: #1b6ecf;
-    --3: #e9cba9;
-    --4: #f4f7d6;
-    --ff: #f2f2f2;
-    --bgd: #F2F2F2;
-    --bgd: #f7fbff;
-    --bgd: #ffffff;
-    --bg2: #0e4a900d;
-    --primary-color: var(--1);
-    --text-color-primary-bg: #323232;
-    --primary-color-op-5: #2e2e2e;
-    --sub-primary-color: #222222;
-    --con: "الحقوق محفوظة © متجــر أبعاد";
-    --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/cfc208a7-23d5-4393-9d5d-44be4c3457f9/40de005f-c839-43e0-9967-cf86078d19f9-200x.png");
-    --logo2: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/cfc208a7-23d5-4393-9d5d-44be4c3457f9/40de005f-c839-43e0-9967-cf86078d19f9-200x.png");
-}
-
 .add-to-cart-icon {
     width: 20px;
     height: 20px;
@@ -3162,7 +3143,7 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
 
 .home-products-section .section-title::before {
     display: inline-block;
-    background: linear-gradient(135deg,#0e4a90 0%,#1c68c4 100%);
+    background: linear-gradient(135deg,var(--1) 0%,var(--2) 100%);
     color: #ffffff;
     font-size: 16px;
     font-weight: 700;
@@ -3185,7 +3166,7 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
     content: "";
     width: 60px;
     height: 4px;
-    background: #0e4a90;
+    background: var(--1);
     border-radius: 10px;
     margin-top: 15px
 }
@@ -3205,7 +3186,7 @@ div[id="ae07c387-efc6-4556-b5d5-a10a6253288c"] .section-title::before,div[id="1b
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(#0e4a90 1.2px,transparent 1.2px);
+    background-image: radial-gradient(var(--1) 1.2px,transparent 1.2px);
     background-size: 40px 40px;
     opacity: 0.04;
     pointer-events: none
@@ -3229,4 +3210,23 @@ div[id="ae07c387-efc6-4556-b5d5-a10a6253288c"] .section-title::before,div[id="1b
         font-size: 14px;
         padding: 6px 20px
     }
+}
+
+:root {
+    --1: #0e4a90;
+    --2: #1b6ecf;
+    --3: #e9cba9;
+    --4: #f4f7d6;
+    --ff: #f2f2f2;
+    --bgd: #F2F2F2;
+    --bgd: #f7fbff;
+    --bgd: #ffffff;
+    --bg2: var(--1)0d;
+    --primary-color: var(--1);
+    --text-color-primary-bg: #323232;
+    --primary-color-op-5: #2e2e2e;
+    --sub-primary-color: #222222;
+    --con: "الحقوق محفوظة © متجــر أبعاد";
+    --logo: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/cfc208a7-23d5-4393-9d5d-44be4c3457f9/40de005f-c839-43e0-9967-cf86078d19f9-200x.png");
+    --logo2: url("https://media.zid.store/cdn-cgi/image/h=175,q=100/https://media.zid.store/cfc208a7-23d5-4393-9d5d-44be4c3457f9/40de005f-c839-43e0-9967-cf86078d19f9-200x.png");
 }
