@@ -124,7 +124,7 @@ header>.dark {
     padding: unset;
     background-color: var(--bgd);
     background-color: #c09637;
-    background-color: var(--bg2);
+    /* background-color: var(--bg2); */
 }
 
 #fixed-header>div>.search-header>.container {
@@ -3242,6 +3242,7 @@ button.loyalty_footer_btn {
     --3: #e9cba9;
     --4: #f4f7d6;
     --ff: #f2f2f2;
+    --00: #222222;
     --bgd: #F2F2F2;
     --bgd: #f7fbff;
     --bgd: #ffffff;
@@ -3274,4 +3275,8 @@ button.loyalty_footer_btn {
     .home section:nth-of-type(1) .box-1-1.ratio21_9::before,.home section .box-1-1.ratio21_9::before {
         padding-top: 50%!important
     }
+}
+
+span.text-center.footer-copyrights {
+    font-size: 0;
 }
