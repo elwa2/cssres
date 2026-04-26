@@ -858,7 +858,8 @@ ul>li>div[style="height: 50px"] {
     padding-right: 0;
     text-align: center;
     margin-bottom: 0.5rem;
-    color: var(--1) !important
+    color: var(--1) !important;
+    color: var(--00) !important;
 }
 
 .categories-slider-wrapper, .products-slider-wrapper, .testimonials-slider-wrapper, .partners-slider-wrapper {
@@ -1043,6 +1044,7 @@ a.more-button::after {
 
 .product-item .product-title>span {
     height: auto;
+    color: var(--00) !important;
     color: var(--1);
     overflow: hidden;
     white-space: nowrap;
@@ -1275,7 +1277,8 @@ a.more-button::after {
 }
 
 .features-section.container p {
-    color: var(--2);
+    color: var(--00);
+    color: #000;
     font-size: 1.7rem;
     margin-bottom: unset;
     position: relative;
