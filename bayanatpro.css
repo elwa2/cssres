@@ -1787,7 +1787,7 @@ ul.pagination {
 }
 
 .products-details-page #product-form .size-box label span {
-    color: #3a7267;
+    color: # var(--2);
 }
 
 .products-details-page #product-form .size-box select, .products-details-page #product-form .size-box input, .products-details-page #product-form .size-box .form-control {
@@ -3068,7 +3068,7 @@ body[data-template="cart"] .cart-product-total-before-price {
 }
 
 .bread-text {
-    color: #3a7267;
+    color: # var(--2);
     font-weight: unset;
 }
 
