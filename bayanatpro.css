@@ -3138,10 +3138,6 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
     mask-size: contain !important;
 }
 
-
-
-
-
 .home-products-section .slider-container {
     text-align: center!important;
     padding-top: 60px!important;
@@ -3197,7 +3193,7 @@ div[id="ae07c387-efc6-4556-b5d5-a10a6253288c"] .section-title::before,div[id="1b
     content: "قسم الخدمات الإحترافية"
 }
 
-.home-products-section::before {
+/* .home-products-section::before {
     content: "";
     position: absolute;
     top: 0;
@@ -3208,7 +3204,7 @@ div[id="ae07c387-efc6-4556-b5d5-a10a6253288c"] .section-title::before,div[id="1b
     background-size: 40px 40px;
     opacity: 0.04;
     pointer-events: none
-}
+} */
 
 @keyframes floatTitle {
     0%,100% {
