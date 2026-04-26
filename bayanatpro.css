@@ -124,7 +124,6 @@ header>.dark {
     padding: unset;
     background-color: var(--bgd);
     background-color: var(--bg2);
-    
 }
 
 #fixed-header>div>.search-header>.container {
@@ -1308,8 +1307,8 @@ a.more-button::after {
     position: absolute;
     animation-name: float;
     animation-duration: 4s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite
+    /* animation-timing-function: ease-in-out; */
+    /* animation-iteration-count: infinite; */
 }
 
 .features-section.container .feature:nth-child(2) img {
@@ -2490,7 +2489,9 @@ section.blog.mt-5.mb-5 {
     }
 
     .features-section.container p {
-        font-size: 1.3rem
+        font-size: 1.3rem;
+        font-size: 1.1rem;
+        text-align: center;
     }
 
     .category-page-slider .categories-slider {
