@@ -3156,10 +3156,10 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
 }
 
 .home-products-section .section-title.theme-title-primary {
-    font-size: 34px!important;
-    font-weight: 900!important;
+    font-size: 30px!important;
+    font-weight: 575!important;
     color: #1a1a1a!important;
-    margin: 0!important
+    margin: 0!important;
 }
 
 .home-products-section .section-title::after {
