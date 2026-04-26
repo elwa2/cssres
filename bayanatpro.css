@@ -568,7 +568,7 @@ ul>li>div[style="height: 50px"] {
 }
 
 #sliding-menu .container>.account-area {
-    background:var(--bgd) !important;
+    background: var(--bgd) !important;
     margin-bottom: 3px!important
 }
 
@@ -1405,6 +1405,7 @@ footer .container>.row {
     padding: unset!important;
     text-align: center;
     color: var(--1);
+    color: var(--00);
 }
 
 .store-section>div>.row>.col-lg-5>.footer-about-us-div>h1 {
@@ -3094,9 +3095,11 @@ span.icon-delete {
         right: 15px;
     }
 }
+
 body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-store-section.store-section.footer-theme-bg-primary.footer-theme-text-for-primary-bg > div > div > div.col-12.col-lg-7 > div > div:nth-child(3) > div:nth-child(1) {
     display: none;
 }
+
 :root {
     --1: #0e4a90;
     --2: #1b6ecf;
