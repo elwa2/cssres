@@ -3119,7 +3119,7 @@ body > div.app.d-flex.flex-column.visible > div.footer > footer > div.footer-sto
 
 @media (max-width: 768px) {
     .slick-initialized .slick-slide, .rtl .testimonials-customer-card {
-        min-height: 250px;
+        min-height: 140px;
     }
 }
 
@@ -3318,5 +3318,9 @@ span.text-center.footer-copyrights {
     span.product-prev-price {
         position: relative;
         right: 1px;
+    }
+
+    .gallery-section.container {
+        padding: 0;
     }
 }
