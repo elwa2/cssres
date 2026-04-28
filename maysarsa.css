@@ -3230,10 +3230,10 @@ button.loyalty_footer_btn {
     background-color: #ffffff!important;
     border-radius: 16px!important;
     border: 1px solid rgba(0,0,0,0.03)!important;
-    box-shadow: 0px 8px 24px -6px rgba(14,74,144,0.12)!important;
+    /* box-shadow: 0px 8px 24px -6px rgba(14,74,144,0.12)!important; */
     transition: all 0.3s cubic-bezier(0.25,0.8,0.25,1)!important;
     overflow: hidden!important;
-    margin: 5px!important
+    margin: 0px!important;
 }
 
 :root {
@@ -3279,4 +3279,44 @@ button.loyalty_footer_btn {
 
 span.text-center.footer-copyrights {
     font-size: 0;
+}
+
+@media (max-width: 767px) {
+    /* 1. جعل الحاوية شبكة مرنة لتوزيع المنتجات ثنائياً */ [section-id="fd088089-9696-4d60-ac6c-f68f4e6ef4c1"] .products-slider {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        /* يسمح بنزول المنتجات تحت بعضها */
+        justify-content: space-between !important;
+        /* توزيع متساوي للمسافات */
+        white-space: normal !important;
+        overflow-x: hidden !important;
+    }
+
+    /* 3. جعل كل منتج يأخذ نصف عرض الشاشة بالضبط (مع خصم مسافة الفراغ) */
+    [section-id="fd088089-9696-4d60-ac6c-f68f4e6ef4c1"] .prod-col {
+        display: block !important;
+        width: calc(50% - 8px) !important;
+        /* 50% من الشاشة مخصوماً منها 8px للمسافة الفاصلة */
+        max-width: calc(50% - 8px) !important;
+        margin-bottom: 16px !important;
+        /* مسافة عمودية بين الصفوف */
+        float: none !important;
+        padding: 0 !important;
+        /* إزالة البادينج الزائد لضبط الحجم */
+    }
+
+    /* 4. تحسينات بصرية صغيرة لتناسب الحجم الأصغر في الجوال */
+    [section-id="fd088089-9696-4d60-ac6c-f68f4e6ef4c1"] .product-title {
+        font-size: .9rem !important;
+        /* تصغير الخط قليلاً ليناسب المساحة */
+    }
+
+    .product-item .product-price {
+        padding: 0;
+    }
+
+    span.product-prev-price {
+        position: relative;
+        right: 1px;
+    }
 }
