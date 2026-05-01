@@ -3368,6 +3368,6 @@ span.text-center.footer-copyrights {
 
 @media (max-width: 767px) {
     .search-header .image-logo {
-        right: -39px;
+        /* right: -39px; */
     }
 }
