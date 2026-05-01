@@ -1377,6 +1377,7 @@ footer {
     background: var(--1);
     background: #fff;
     background: var(--bg2);
+    background: #393939;
     /* border-top: 5px solid var(--2) */
 }
 
@@ -1412,6 +1413,7 @@ footer .container>.row {
     text-align: center;
     color: var(--1);
     color: var(--00);
+    color: var(--fff);
 }
 
 .store-section>div>.row>.col-lg-5>.footer-about-us-div>h1 {
@@ -1518,6 +1520,7 @@ footer .container>.row {
 
 .store-section>div>.row>.col-lg-7>.row>.col-lg-4:nth-child(1) p a {
     color: #262626;
+    color: #ffffff;
     transition: 0.2s all ease-in-out;
     position: relative;
 }
@@ -1564,14 +1567,16 @@ footer .container>.row {
     height: 25px;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    background: #fff;
 }
 
 .footer .logistics-pay-icons>a>img {
-    /* width: 50px; */
+    width: 39px;
     /* height: 30px; */
     /* object-fit: fill!important; */
     padding: 0px;
+    background: #fff;
 }
 
 .footer-copyrights-vat-certificate>div>.d-flex {
@@ -1589,6 +1594,7 @@ footer .container>.row {
     content: var(--con);
     font-size: 1.1rem;
     color: #222;
+    color: #fff;
     width: 100%;
     margin-top: 1rem;
 }
