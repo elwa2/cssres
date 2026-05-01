@@ -3283,7 +3283,7 @@ span.text-center.footer-copyrights {
 }
 
 @media (max-width: 767px) {
-    /* 1. جعل الحاوية شبكة مرنة لتوزيع المنتجات ثنائياً */ [section-id="fd088089-9696-4d60-ac6c-f68f4e6ef4c1"] .products-slider {
+    [section-id="fd088089-9696-4d60-ac6c-f68f4e6ef4c1"] .products-slider {
         display: flex !important;
         flex-wrap: wrap !important;
         /* يسمح بنزول المنتجات تحت بعضها */
@@ -3364,4 +3364,10 @@ span.text-center.footer-copyrights {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+}
+
+@media (max-width: 767px) {
+    .search-header .image-logo {
+        right: -39px;
+    }
 }
