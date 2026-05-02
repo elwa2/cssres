@@ -2,73 +2,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); body, *:not(i,.fa,.far,.fas,.fab) {
     font-family: 'Rubik',sans-serif,sallaicons,icomoon!important
 }
-
-body[data-template="home"]:before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: var(--bgd);
-    position: fixed;
-    z-index: 999999;
-    transform: scale(0);
-    animation-name: pupup;
-    animation-duration: 2s
-}
-
-@keyframes pupup {
-    0% {
-        transform: scale(1)
-    }
-
-    18% {
-        transform: scale(1)
-    }
-
-    80% {
-        transform: scale(1)
-    }
-
-    100% {
-        transform: scale(0)
-    }
-}
-
-body[data-template="home"]:after {
+ body::after {
     content: "";
     width: 100%;
     height: 100%;
     top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 1000000;
+    background-image: var(--logo), url('https://media.zid.store/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/8a9b64cd-2877-42a1-8782-2f95062fa1ed.gif');
+    background-repeat: no-repeat, no-repeat;
+    background-position: center 46%, center 54%;
+    background-size: 120px, 80px;
+    transform: scale(0);
+    animation: pupup_logo 1s ease-in-out forwards;
+}
+
+body::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--bgd, #fff);
     position: fixed;
     z-index: 999999;
-    background: var(--logo);
-    left: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 120px;
     transform: scale(0);
-    animation-name: pupup_logo;
-    animation-duration: 2s
+    animation: pupup 1s ease-in-out forwards;
+}
+
+@keyframes pupup {
+    0% {
+        transform: scale(1);
+    }
+
+    80% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 0;
+        visibility: hidden;
+    }
 }
 
 @keyframes pupup_logo {
     0% {
-        transform: scale(0)
+        transform: scale(0);
+        opacity: 0;
     }
 
     18% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 1;
     }
 
     75% {
-        transform: scale(1)
+        transform: scale(1);
+        opacity: 1;
     }
 
     95% {
-        transform: scale(0)
+        transform: scale(0);
+        opacity: 0;
     }
 
     100% {
-        transform: scale(0)
+        transform: scale(0);
+        opacity: 0;
+        visibility: hidden;
     }
 }
 
