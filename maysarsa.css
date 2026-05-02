@@ -123,7 +123,7 @@ header>.dark {
 #fixed-header .search-header {
     padding: unset;
     background-color: var(--bgd);
-    background-color: #c09637;
+    /* background-color: #c09637; */
     /* background-color: var(--bg2); */
 }
 
@@ -3289,7 +3289,7 @@ span.text-center.footer-copyrights {
 }
 
 @media (max-width: 767px) {
-    [section-id="fd088089-9696-4d60-ac6c-f68f4e6ef4c1"] .products-slider {
+    [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .products-slider {
         display: flex !important;
         flex-wrap: wrap !important;
         /* يسمح بنزول المنتجات تحت بعضها */
@@ -3300,7 +3300,7 @@ span.text-center.footer-copyrights {
     }
 
     /* 3. جعل كل منتج يأخذ نصف عرض الشاشة بالضبط (مع خصم مسافة الفراغ) */
-    [section-id="fd088089-9696-4d60-ac6c-f68f4e6ef4c1"] .prod-col {
+    [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col {
         display: block !important;
         width: calc(50% - 8px) !important;
         /* 50% من الشاشة مخصوماً منها 8px للمسافة الفاصلة */
@@ -3313,7 +3313,7 @@ span.text-center.footer-copyrights {
     }
 
     /* 4. تحسينات بصرية صغيرة لتناسب الحجم الأصغر في الجوال */
-    [section-id="fd088089-9696-4d60-ac6c-f68f4e6ef4c1"] .product-title {
+    [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .product-title {
         font-size: .9rem !important;
         /* تصغير الخط قليلاً ليناسب المساحة */
     }
@@ -3377,4 +3377,58 @@ span.text-center.footer-copyrights {
         /* right: -39px; */
     }
 }
-.footer-about-us-div{text-align:center!important}.footer-about-us-div h2{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important}.footer-about-us-div h2::before{content:"";display:block;width:50px;height:75px;margin-bottom:12px;background-image:url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 69.07 101.6'%3E%3Cpath fill='%23c49b3d' d='M14.42,67.54v-8.24l.05.05c1.23.99,2.44,2.02,3.65,3.06,2.12,1.85,4.14,3.81,5.99,5.96,1.67,1.88,3.2,3.89,4.57,6.04.11.16.22.32.3.48.08.11.13.21.19.32,1.75,2.88,3.06,5.53,4.03,7.73.3.67.67,1.37.89,1.96.16.4.29.8.46,1.15.16-.35.29-.75.46-1.15.21-.59.59-1.29.88-1.96.97-2.2,2.28-4.86,4.03-7.73.05-.11.11-.21.19-.32.08-.16.19-.32.3-.48,1.37-2.15,2.9-4.16,4.57-6.04,1.85-2.15,3.87-4.11,5.99-5.96,1.21-1.05,2.42-2.07,3.65-3.06l.05-.05v42.3h14.42V31.64h-4.89l-1.37,1.42-1.66,1.74C53.58,18.88,34.54,0,34.54,0c0,0-19.04,18.88-26.62,34.81l-1.66-1.74-1.37-1.42H0v69.96h14.42v-34.05Z'/%3E%3C/svg%3E");background-size:contain;background-repeat:no-repeat;background-position:center}
+
+.footer-about-us-div {
+    text-align: center!important
+}
+
+.footer-about-us-div h2 {
+    display: flex!important;
+    flex-direction: column!important;
+    align-items: center!important;
+    justify-content: center!important
+}
+
+.footer-about-us-div h2::before {
+    content: "";
+    display: block;
+    width: 50px;
+    height: 75px;
+    margin-bottom: 12px;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 69.07 101.6'%3E%3Cpath fill='%23c49b3d' d='M14.42,67.54v-8.24l.05.05c1.23.99,2.44,2.02,3.65,3.06,2.12,1.85,4.14,3.81,5.99,5.96,1.67,1.88,3.2,3.89,4.57,6.04.11.16.22.32.3.48.08.11.13.21.19.32,1.75,2.88,3.06,5.53,4.03,7.73.3.67.67,1.37.89,1.96.16.4.29.8.46,1.15.16-.35.29-.75.46-1.15.21-.59.59-1.29.88-1.96.97-2.2,2.28-4.86,4.03-7.73.05-.11.11-.21.19-.32.08-.16.19-.32.3-.48,1.37-2.15,2.9-4.16,4.57-6.04,1.85-2.15,3.87-4.11,5.99-5.96,1.21-1.05,2.42-2.07,3.65-3.06l.05-.05v42.3h14.42V31.64h-4.89l-1.37,1.42-1.66,1.74C53.58,18.88,34.54,0,34.54,0c0,0-19.04,18.88-26.62,34.81l-1.66-1.74-1.37-1.42H0v69.96h14.42v-34.05Z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center
+}
+
+@media (min-width: 992px) {
+    [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .products-slider.slick-initialized {
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 20px !important;
+        padding: 0 !important;
+    }
+
+    [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .products-slider .slick-track, [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .products-slider .slick-list {
+        display: contents !important;
+        width: auto !important;
+        transform: none !important;
+    }
+
+    [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .products-slider .slick-slide {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+        float: none !important;
+    }
+
+    [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .products-slider .slick-arrow {
+        display: none !important;
+    }
+
+    .slick-track:before, .slick-track:after {
+        display: table;
+        content: '';
+        display: none;
+    }
+}
