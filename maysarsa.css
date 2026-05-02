@@ -321,7 +321,7 @@ header>.dark {
 #fixed-header.sticky .icon-shopping_cart_black_36dp-1-1 .path1::before {
     display: block;
     content: "";
-    background: url("https://media.zid.store/35f4531e-5b22-429a-a062-3a6ab1024247/6ddcb49f-8d9d-49e9-bccf-82e39a88bcea.svg");
+    /* background: url("https://media.zid.store/35f4531e-5b22-429a-a062-3a6ab1024247/6ddcb49f-8d9d-49e9-bccf-82e39a88bcea.svg"); */
     width: 25px;
     height: 70px;
     margin: auto;
@@ -329,7 +329,7 @@ header>.dark {
     background-repeat: no-repeat;
     background-position: center;
     transition: 0.1s;
-    opacity: unset
+    opacity: unset;
 }
 
 #fixed-header .icon-shopping_cart_black_36dp-1-1 .path1:hover:before {
@@ -3431,4 +3431,8 @@ span.text-center.footer-copyrights {
         content: '';
         display: none;
     }
+}
+
+.d-inline-flex.product-card-rating {
+    display: none !important;
 }
