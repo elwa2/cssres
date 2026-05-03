@@ -246,7 +246,7 @@ header>.dark {
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    right: -33px;
+    /* right: -4px; */
 }
 
 #fixed-header.sticky .header-logo a[href="/"] {
