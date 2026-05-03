@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap'); body, *:not(i,.fa,.far,.fas,.fab) {
     font-family: 'Rubik',sans-serif,sallaicons,icomoon!important
 }
- body::after {
+
+body::after {
     content: "";
     width: 100%;
     height: 100%;
@@ -3344,6 +3345,7 @@ span.text-center.footer-copyrights {
     border-top: 14px solid #ebebeb;
 }
 
+/* 
 .product-card-rating-wrapper {
     display: flex !important;
     align-items: center;
@@ -3355,13 +3357,7 @@ span.text-center.footer-copyrights {
     clear: both;
 }
 
-.product-card-rating-wrapper::before {
-    content: "التقييم";
-    font-size: 13px;
-    color: #4a4a4a;
-    font-weight: 500;
-    line-height: 1;
-}
+
 
 .product-card-rating-wrapper::after {
     content: "";
@@ -3372,6 +3368,13 @@ span.text-center.footer-copyrights {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
+} */
+.d-inline-flex.product-card-rating::before {
+    content: "التقييم";
+    font-size: 13px;
+    color: #4a4a4a;
+    font-weight: 500;
+    line-height: 1;
 }
 
 @media (max-width: 767px) {
@@ -3437,5 +3440,5 @@ span.text-center.footer-copyrights {
 }
 
 .d-inline-flex.product-card-rating {
-    display: none !important;
+    /* display: none !important; */
 }
