@@ -3785,3 +3785,132 @@ form#product-form .size-box > div:has([option-id*="417e2c1c"]), form#product-for
 
 
 
+[option-id*="417e2c1c"],
+[option-id*="10eca3cb"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+}
+
+[option-id*="417e2c1c"] .form-group label,
+[option-id*="10eca3cb"] .form-group label {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: flex-start;
+    align-items: stretch;
+    background: #fbfbfb !important;
+    border: 1px solid #dcdcdc !important;
+    border-radius: 8px !important;
+    overflow: hidden;
+    height: 110px !important;
+    cursor: pointer;
+    padding: 0 !important;
+    margin: 0 !important;
+    transition: all 0.2s ease;
+    box-shadow: none !important;
+}
+
+[option-id*="417e2c1c"] .form-group label:has(input:checked),
+[option-id*="10eca3cb"] .form-group label:has(input:checked) {
+    border-color: #c09b47 !important;
+    box-shadow: 0 0 0 1px #c09b47 !important;
+}
+
+[option-id*="417e2c1c"] .form-group label::before,
+[option-id*="10eca3cb"] .form-group label::before {
+    content: "";
+    display: block;
+    width: 45% !important;
+    height: 100% !important;
+    background-color: #eaeaea;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: 1px solid #dcdcdc !important;
+    border-bottom: none !important;
+    flex-shrink: 0;
+}
+
+[option-id*="417e2c1c"] .custom-checkbox-label,
+[option-id*="10eca3cb"] .custom-checkbox-label {
+    padding: 8px 5px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    text-align: center;
+    width: 55% !important;
+    background: transparent !important;
+}
+
+[option-id*="417e2c1c"] .custom-checkbox-label > span:first-child,
+[option-id*="10eca3cb"] .custom-checkbox-label > span:first-child {
+    font-weight: 700 !important;
+    font-size: 11.5px !important;
+    color: #111 !important;
+    line-height: 1.4 !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2 !important;
+    -webkit-box-orient: vertical !important;
+    overflow: hidden !important;
+    margin-bottom: 2px !important;
+}
+
+[option-id*="417e2c1c"] .custom-checkbox-label > span:nth-child(2),
+[option-id*="10eca3cb"] .custom-checkbox-label > span:nth-child(2) {
+    font-size: 13px !important;
+    color: #c09b47 !important;
+    font-weight: 700 !important;
+    margin-top: 0 !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 2px;
+}
+
+[option-id*="417e2c1c"] .custom-checkbox-label::after,
+[option-id*="10eca3cb"] .custom-checkbox-label::after {
+    content: "أضف +";
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    background-color: #c09b47;
+    color: #fff;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    padding: 4px 0 !important;
+    width: 95% !important;
+    border-radius: 4px !important;
+    margin-top: auto !important;
+    transition: all 0.2s ease;
+}
+
+[option-id*="417e2c1c"] .form-group label:has(input:checked) .custom-checkbox-label::after,
+[option-id*="10eca3cb"] .form-group label:has(input:checked) .custom-checkbox-label::after {
+    content: "✓ مضافة";
+    background-color: #5aa788 !important;
+}
+
+@media (min-width: 768px) {
+    [option-id*="417e2c1c"] .form-group label,
+    [option-id*="10eca3cb"] .form-group label {
+        height: 140px !important;
+    }
+    
+    [option-id*="417e2c1c"] .custom-checkbox-label > span:first-child,
+    [option-id*="10eca3cb"] .custom-checkbox-label > span:first-child {
+        font-size: 14px !important;
+    }
+    
+    [option-id*="417e2c1c"] .custom-checkbox-label > span:nth-child(2),
+    [option-id*="10eca3cb"] .custom-checkbox-label > span:nth-child(2) {
+        font-size: 16px !important;
+    }
+    
+    [option-id*="417e2c1c"] .custom-checkbox-label::after,
+    [option-id*="10eca3cb"] .custom-checkbox-label::after {
+        font-size: 14px !important;
+        padding: 6px 0 !important;
+    }
+}
