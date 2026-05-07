@@ -3503,11 +3503,24 @@ span.text-center.footer-copyrights {
 
 
 
-
-
-#product-custom-user-option-fields > div:nth-child(3) > label > span.custom-checkbox-label > span {
-    color: #eee!important;
+/* --- 1. قسم نوع الإحرام (الأزرار الذهبية) - النص أبيض بالكامل --- */
+[option-id*="6a45f6ea"] .custom-checkbox-label span,
+[option-id*="6a45f6ea"] .custom-checkbox-label * {
+    color: #ffffff !important;
 }
-#product-custom-user-option-fields > div:nth-child(4) > label > span.custom-checkbox-label * {
-    color: #eee!important;
+
+/* --- 2. قسم صمم باقتك (البطاقات البيضاء) - النص أسود --- */
+/* اسم المنتج */
+[option-id*="417e2c1c"] .custom-checkbox-label > span:first-child {
+    color: #000000 !important;
+}
+
+/* السعر داخل البطاقة (يفضل يكون ذهبي أو أسود ليظهر) */
+[option-id*="417e2c1c"] .custom-checkbox-label .text-color-primary {
+    color: #c09b47 !important; 
+}
+
+/* الأقواس وعلامة الزائد داخل البطاقة البيضاء */
+[option-id*="417e2c1c"] .custom-checkbox-label span {
+    color: #000000 !important;
 }
