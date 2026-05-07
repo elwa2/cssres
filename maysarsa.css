@@ -3460,3 +3460,45 @@ span.text-center.footer-copyrights {
         width: 100%;
     }
 }
+
+
+
+
+
+
+[option-id="product-custom-user-option-fields-group-6a45f6ea-9d30-44d2-a5db-b7588324d6bf"] {
+    display: grid !important;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 20px !important;
+}
+
+[option-id="product-custom-user-option-fields-group-6a45f6ea-9d30-44d2-a5db-b7588324d6bf"] input[type="hidden"] {
+    display: none !important;
+}
+
+[option-id="product-custom-user-option-fields-group-6a45f6ea-9d30-44d2-a5db-b7588324d6bf"] .form-group {
+    margin: 0 !important;
+}
+
+[option-id="product-custom-user-option-fields-group-6a45f6ea-9d30-44d2-a5db-b7588324d6bf"] > label {
+    margin-bottom: 0 !important;
+    white-space: nowrap;
+}
+
+[option-id="product-custom-user-option-fields-group-6a45f6ea-9d30-44d2-a5db-b7588324d6bf"] .form-group label {
+    min-width: 120px;
+    justify-content: center;
+}
+
+@media (max-width: 480px) {
+    [option-id="product-custom-user-option-fields-group-6a45f6ea-9d30-44d2-a5db-b7588324d6bf"] {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+}
+
+
+
+
