@@ -1858,7 +1858,7 @@ ul.pagination {
 }
 
 #product-custom-user-option-fields>.form-group>label span {
-    color: #eee!important
+    /* color: #eee!important; */
 }
 
 #product-custom-user-option-fields>.form-group>label:before {
@@ -3503,3 +3503,11 @@ span.text-center.footer-copyrights {
 
 
 
+
+
+#product-custom-user-option-fields > div:nth-child(3) > label > span.custom-checkbox-label > span {
+    color: #eee!important;
+}
+#product-custom-user-option-fields > div:nth-child(4) > label > span.custom-checkbox-label * {
+    color: #eee!important;
+}
