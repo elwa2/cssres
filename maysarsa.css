@@ -3914,3 +3914,37 @@ form#product-form .size-box > div:has([option-id*="417e2c1c"]), form#product-for
         padding: 6px 0 !important;
     }
 }
+
+
+
+
+
+
+[option-id*="417e2c1c"] .custom-checkbox-label::after,
+[option-id*="10eca3cb"] .custom-checkbox-label::after {
+    content: "أضف " !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background-color: #c09b47 !important;
+    color: #fff !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    padding: 6px 0px 6px 10px !important;
+    width: 90% !important;
+    border-radius: 6px !important;
+    margin-top: auto !important;
+    transition: all 0.3s ease !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23ffffff' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z' /%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: left 15px center !important;
+    background-size: 16px !important;
+}
+
+[option-id*="417e2c1c"] .form-group label:has(input:checked) .custom-checkbox-label::after,
+[option-id*="10eca3cb"] .form-group label:has(input:checked) .custom-checkbox-label::after {
+    content: "مضافة ✓" !important;
+    background-color: #5aa788 !important;
+    background-image: none !important;
+    padding: 6px 10px !important;
+}
