@@ -1851,10 +1851,10 @@ ul.pagination {
     background-color: var(--1);
     background-clip: padding-box;
     border: 0!important;
-    border-radius: 90px!important;
+    border-radius: 12px!important;
     color: #eee!important;
     padding: 5px 10px;
-    min-height: 42px
+    min-height: 42px;
 }
 
 #product-custom-user-option-fields>.form-group>label span {
@@ -1865,12 +1865,13 @@ ul.pagination {
     display: block;
     border: 0;
     content: "";
-    border-radius: 50px;
+    border-radius: 0 12px 12px 0;
     background-size: contain!important;
     background-repeat: no-repeat!important;
     background-position: center!important;
     vertical-align: middle!important;
-    margin: auto
+    margin: auto;
+    /* border: 1px solid #00000029; */
 }
 
 #product-custom-user-option-fields input+span, .add-review-form-checkbox input+span {
