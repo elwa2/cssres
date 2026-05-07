@@ -1838,8 +1838,8 @@ ul.pagination {
 }
 
 #product-custom-user-option-fields>label {
-    width: 50%;
-    margin: auto
+    /* width: 50%; */
+    margin: auto;
 }
 
 #product-custom-user-option-fields>.form-group {
@@ -3462,11 +3462,6 @@ span.text-center.footer-copyrights {
     }
 }
 
-
-
-
-
-
 [option-id="product-custom-user-option-fields-group-6a45f6ea-9d30-44d2-a5db-b7588324d6bf"] {
     display: grid !important;
     grid-template-columns: auto auto auto;
@@ -3504,15 +3499,27 @@ form#product-form .size-box {
     display: flex;
     flex-direction: column;
 }
-form#product-form .size-box > .border-product:first-child { order: 0; margin-top: 10px !important; }
-form#product-form .size-box > div:has([option-id*="6a45f6ea"]) { order: 1; }
-form#product-form .size-box > .custom-field-separator { order: 2; margin: 30px 0; border-bottom: 1px solid #eee; }
-form#product-form .size-box > div:has([option-id*="417e2c1c"]),
-form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
 
-[option-id*="6a45f6ea"] > label, 
-[option-id*="417e2c1c"] > label,
-[option-id*="10eca3cb"] > label {
+form#product-form .size-box > .border-product:first-child {
+    order: 0;
+    margin-top: 10px !important;
+}
+
+form#product-form .size-box > div:has([option-id*="6a45f6ea"]) {
+    order: 1;
+}
+
+form#product-form .size-box > .custom-field-separator {
+    order: 2;
+    margin: 30px 0;
+    border-bottom: 1px solid #eee;
+}
+
+form#product-form .size-box > div:has([option-id*="417e2c1c"]), form#product-form .size-box > div:has([option-id*="10eca3cb"]) {
+    order: 3;
+}
+
+[option-id*="6a45f6ea"] > label, [option-id*="417e2c1c"] > label, [option-id*="10eca3cb"] > label {
     font-size: 22px !important;
     font-weight: 800 !important;
     color: #000 !important;
@@ -3520,13 +3527,13 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     display: block !important;
 }
 
-[option-id*="6a45f6ea"] > label small, 
-[option-id*="417e2c1c"] > label small,
-[option-id*="10eca3cb"] > label small { display: none !important; }
+[option-id*="6a45f6ea"] > label small, [option-id*="417e2c1c"] > label small, [option-id*="10eca3cb"] > label small {
+    display: none !important;
+}
 
-[option-id*="6a45f6ea"] .checkbox-container, 
-[option-id*="417e2c1c"] .checkbox-container,
-[option-id*="10eca3cb"] .checkbox-container { display: none !important; }
+[option-id*="6a45f6ea"] .checkbox-container, [option-id*="417e2c1c"] .checkbox-container, [option-id*="10eca3cb"] .checkbox-container {
+    display: none !important;
+}
 
 [option-id*="6a45f6ea"] {
     display: flex;
@@ -3534,8 +3541,15 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     gap: 15px;
     justify-content: flex-start;
 }
-[option-id*="6a45f6ea"] > label { width: 100%; margin-bottom: 5px !important; }
-[option-id*="6a45f6ea"] .form-group { margin: 0 !important; }
+
+[option-id*="6a45f6ea"] > label {
+    width: 100%;
+    margin-bottom: 5px !important;
+}
+
+[option-id*="6a45f6ea"] .form-group {
+    margin: 0 !important;
+}
 
 [option-id*="6a45f6ea"] .form-group label {
     background-color: #c09b47;
@@ -3550,6 +3564,7 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     min-width: 100px;
     opacity: 0.6;
 }
+
 [option-id*="6a45f6ea"] .custom-checkbox-label span {
     color: #fff !important;
     font-weight: 700 !important;
@@ -3562,25 +3577,29 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     box-shadow: 0 4px 10px rgba(191, 160, 69, 0.4);
 }
 
-[option-id*="417e2c1c"],
-[option-id*="10eca3cb"] {
+[option-id*="417e2c1c"], [option-id*="10eca3cb"] {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
-[option-id*="417e2c1c"] > label,
-[option-id*="10eca3cb"] > label { grid-column: 1 / -1; margin-bottom: 5px !important; }
 
-[option-id*="417e2c1c"] .form-group,
-[option-id*="10eca3cb"] .form-group { margin: 0 !important; }
-
-@media (max-width: 768px) {
-    [option-id*="417e2c1c"],
-    [option-id*="10eca3cb"] { grid-template-columns: 1fr; gap: 15px; }
+[option-id*="417e2c1c"] > label, [option-id*="10eca3cb"] > label {
+    grid-column: 1 / -1;
+    margin-bottom: 5px !important;
 }
 
-[option-id*="417e2c1c"] .form-group label,
-[option-id*="10eca3cb"] .form-group label {
+[option-id*="417e2c1c"] .form-group, [option-id*="10eca3cb"] .form-group {
+    margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+    [option-id*="417e2c1c"], [option-id*="10eca3cb"] {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+[option-id*="417e2c1c"] .form-group label, [option-id*="10eca3cb"] .form-group label {
     display: flex !important;
     flex-direction: row;
     justify-content: flex-start;
@@ -3597,14 +3616,12 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     box-shadow: 0 2px 8px rgba(0,0,0,0.03);
 }
 
-[option-id*="417e2c1c"] .form-group label:has(input:checked),
-[option-id*="10eca3cb"] .form-group label:has(input:checked) {
+[option-id*="417e2c1c"] .form-group label:has(input:checked), [option-id*="10eca3cb"] .form-group label:has(input:checked) {
     border-color: #c09b47;
     box-shadow: 0 4px 12px rgba(192, 155, 71, 0.15);
 }
 
-[option-id*="417e2c1c"] .form-group label::before,
-[option-id*="10eca3cb"] .form-group label::before {
+[option-id*="417e2c1c"] .form-group label::before, [option-id*="10eca3cb"] .form-group label::before {
     content: "";
     display: block;
     width: 45%;
@@ -3617,8 +3634,7 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     flex-shrink: 0;
 }
 
-[option-id*="417e2c1c"] .custom-checkbox-label,
-[option-id*="10eca3cb"] .custom-checkbox-label {
+[option-id*="417e2c1c"] .custom-checkbox-label, [option-id*="10eca3cb"] .custom-checkbox-label {
     padding: 12px 10px;
     display: flex;
     flex-direction: column;
@@ -3629,8 +3645,7 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     background: #fff;
 }
 
-[option-id*="417e2c1c"] .custom-checkbox-label > span:first-child,
-[option-id*="10eca3cb"] .custom-checkbox-label > span:first-child {
+[option-id*="417e2c1c"] .custom-checkbox-label > span:first-child, [option-id*="10eca3cb"] .custom-checkbox-label > span:first-child {
     font-weight: 800 !important;
     font-size: 15px !important;
     color: #111 !important;
@@ -3639,8 +3654,7 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     display: block !important;
 }
 
-[option-id*="417e2c1c"] .custom-checkbox-label > span:nth-child(2),
-[option-id*="10eca3cb"] .custom-checkbox-label > span:nth-child(2) {
+[option-id*="417e2c1c"] .custom-checkbox-label > span:nth-child(2), [option-id*="10eca3cb"] .custom-checkbox-label > span:nth-child(2) {
     font-size: 17px !important;
     color: #c09b47 !important;
     margin-top: 5px;
@@ -3652,13 +3666,11 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     gap: 3px;
 }
 
-[option-id*="417e2c1c"] .custom-checkbox-label > span:nth-child(2) span:not(:nth-child(3)),
-[option-id*="10eca3cb"] .custom-checkbox-label > span:nth-child(2) span:not(:nth-child(3)) {
+[option-id*="417e2c1c"] .custom-checkbox-label > span:nth-child(2) span:not(:nth-child(3)), [option-id*="10eca3cb"] .custom-checkbox-label > span:nth-child(2) span:not(:nth-child(3)) {
     display: none !important;
 }
 
-[option-id*="417e2c1c"] .custom-checkbox-label::after,
-[option-id*="10eca3cb"] .custom-checkbox-label::after {
+[option-id*="417e2c1c"] .custom-checkbox-label::after, [option-id*="10eca3cb"] .custom-checkbox-label::after {
     content: "أضف +";
     display: inline-block;
     background-color: #c09b47;
@@ -3672,50 +3684,53 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
     transition: all 0.3s ease;
 }
 
-[option-id*="417e2c1c"] .form-group label:has(input:checked) .custom-checkbox-label::after,
-[option-id*="10eca3cb"] .form-group label:has(input:checked) .custom-checkbox-label::after {
+[option-id*="417e2c1c"] .form-group label:has(input:checked) .custom-checkbox-label::after, [option-id*="10eca3cb"] .form-group label:has(input:checked) .custom-checkbox-label::after {
     content: "✓ مضافة";
     background-color: #5aa788;
 }
 
-[option-id*="417e2c1c"] label:has(input[name*="مناشف"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="مناشف"])::before { background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/0a4d86b1-ed84-4d76-abfd-0de2f6e93fc9-thumbnail-500x500.png'); }
+[option-id*="417e2c1c"] label:has(input[name*="مناشف"])::before, [option-id*="10eca3cb"] label:has(input[name*="مناشف"])::before {
+    background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/0a4d86b1-ed84-4d76-abfd-0de2f6e93fc9-thumbnail-500x500.png');
+}
 
-[option-id*="417e2c1c"] label:has(input[name*="فرشاة"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="فرشاة"])::before { background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/4c83d6b4-0232-4c18-aa13-9e060cc8bf2c-thumbnail-500x500-70.jpeg'); }
+[option-id*="417e2c1c"] label:has(input[name*="فرشاة"])::before, [option-id*="10eca3cb"] label:has(input[name*="فرشاة"])::before {
+    background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/4c83d6b4-0232-4c18-aa13-9e060cc8bf2c-thumbnail-500x500-70.jpeg');
+}
 
-[option-id*="417e2c1c"] label:has(input[name*="حزام"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="حزام"])::before { background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/201580d3-fa62-4fa4-9262-82e9ee52bef7-thumbnail-500x500-70.jpg'); }
+[option-id*="417e2c1c"] label:has(input[name*="حزام"])::before, [option-id*="10eca3cb"] label:has(input[name*="حزام"])::before {
+    background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/201580d3-fa62-4fa4-9262-82e9ee52bef7-thumbnail-500x500-70.jpg');
+}
 
-[option-id*="417e2c1c"] label:has(input[name*="حذاء"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="حذاء"])::before { background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/7f104aac-72ef-4e76-a206-f8578deb2904-thumbnail-500x500-70.jpg'); }
+[option-id*="417e2c1c"] label:has(input[name*="حذاء"])::before, [option-id*="10eca3cb"] label:has(input[name*="حذاء"])::before {
+    background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/7f104aac-72ef-4e76-a206-f8578deb2904-thumbnail-500x500-70.jpg');
+}
 
-[option-id*="417e2c1c"] label:has(input[name*="منديل"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="منديل"])::before { background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/c1fd1fc1-12a8-43f7-b1c5-26725d74ccee-thumbnail-500x500-70.jpeg'); }
+[option-id*="417e2c1c"] label:has(input[name*="منديل"])::before, [option-id*="10eca3cb"] label:has(input[name*="منديل"])::before {
+    background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/c1fd1fc1-12a8-43f7-b1c5-26725d74ccee-thumbnail-500x500-70.jpeg');
+}
 
-[option-id*="417e2c1c"] label:has(input[name*="بخاخ"])::before, 
-[option-id*="417e2c1c"] label:has(input[name*="منقي"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="بخاخ"])::before, 
-[option-id*="10eca3cb"] label:has(input[name*="منقي"])::before { background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/3d2386f3-0197-47a4-a501-557e5b759b4c-thumbnail-500x500-70.jpeg'); }
+[option-id*="417e2c1c"] label:has(input[name*="بخاخ"])::before, [option-id*="417e2c1c"] label:has(input[name*="منقي"])::before, [option-id*="10eca3cb"] label:has(input[name*="بخاخ"])::before, [option-id*="10eca3cb"] label:has(input[name*="منقي"])::before {
+    background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/3d2386f3-0197-47a4-a501-557e5b759b4c-thumbnail-500x500-70.jpeg');
+}
 
-[option-id*="417e2c1c"] label:has(input[name*="كتف"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="كتف"])::before { background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/2a9d2e8b-d8cd-4364-9bf9-960466e45a73-thumbnail-500x500-70.jpeg'); }
+[option-id*="417e2c1c"] label:has(input[name*="كتف"])::before, [option-id*="10eca3cb"] label:has(input[name*="كتف"])::before {
+    background-image: url('https://media.zid.store/thumbs/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/2a9d2e8b-d8cd-4364-9bf9-960466e45a73-thumbnail-500x500-70.jpeg');
+}
 
-[option-id*="417e2c1c"] label:has(input[name*="قماشية"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="قماشية"])::before,
-[option-id*="417e2c1c"] label:has(input[name*="العناية"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="العناية"])::before { background-image: url('https://media.zid.store/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/bd2485b8-f2ed-4fa8-a5c2-d396a8e50d72.png'); }
+[option-id*="417e2c1c"] label:has(input[name*="قماشية"])::before, [option-id*="10eca3cb"] label:has(input[name*="قماشية"])::before, [option-id*="417e2c1c"] label:has(input[name*="العناية"])::before, [option-id*="10eca3cb"] label:has(input[name*="العناية"])::before {
+    background-image: url('https://media.zid.store/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/bd2485b8-f2ed-4fa8-a5c2-d396a8e50d72.png');
+}
 
-[option-id*="417e2c1c"] label:has(input[name*="شاحن"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="شاحن"])::before { background-image: url('https://media.zid.store/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/c1fd1fc1-12a8-43f7-b1c5-26725d74ccee.jpeg'); }
+[option-id*="417e2c1c"] label:has(input[name*="شاحن"])::before, [option-id*="10eca3cb"] label:has(input[name*="شاحن"])::before {
+    background-image: url('https://media.zid.store/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/c1fd1fc1-12a8-43f7-b1c5-26725d74ccee.jpeg');
+}
 
-[option-id*="417e2c1c"] label:has(input[name*="كمامة"])::before,
-[option-id*="10eca3cb"] label:has(input[name*="كمامة"])::before { background-image: url('https://media.zid.store/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/b53088c3-002a-43c6-ba18-f263a76e16d1.jpeg'); }
-
+[option-id*="417e2c1c"] label:has(input[name*="كمامة"])::before, [option-id*="10eca3cb"] label:has(input[name*="كمامة"])::before {
+    background-image: url('https://media.zid.store/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/b53088c3-002a-43c6-ba18-f263a76e16d1.jpeg');
+}
 
 /* --- 1. قسم نوع الإحرام (الأزرار الذهبية) - النص أبيض بالكامل --- */
-[option-id*="6a45f6ea"] .custom-checkbox-label span,
-[option-id*="6a45f6ea"] .custom-checkbox-label * {
+[option-id*="6a45f6ea"] .custom-checkbox-label span, [option-id*="6a45f6ea"] .custom-checkbox-label * {
     color: #ffffff !important;
 }
 
@@ -3727,10 +3742,46 @@ form#product-form .size-box > div:has([option-id*="10eca3cb"]) { order: 3; }
 
 /* السعر داخل البطاقة (يفضل يكون ذهبي أو أسود ليظهر) */
 [option-id*="417e2c1c"] .custom-checkbox-label .text-color-primary {
-    color: #c09b47 !important; 
+    color: #c09b47 !important;
 }
 
 /* الأقواس وعلامة الزائد داخل البطاقة البيضاء */
 [option-id*="417e2c1c"] .custom-checkbox-label span {
     color: #000000 !important;
 }
+/* توسيط العنوان ورفعه للأعلى قليلاً */
+[option-id*="417e2c1c"] > label,
+[option-id*="10eca3cb"] > label {
+    text-align: center !important;
+    margin-top: -10px !important; /* تقليل الفراغ العلوي لرفع العنوان */
+    margin-bottom: 25px !important;
+    width: 100%;
+}
+
+/* إخفاء النص القديم ("صمم باقتك" أو "اضف للباقة") */
+[option-id*="417e2c1c"] > label span,
+[option-id*="10eca3cb"] > label span {
+    font-size: 0 !important; 
+    letter-spacing: -1px;
+}
+
+/* حقن النص الجديد وتنسيقه */
+[option-id*="417e2c1c"] > label span::after,
+[option-id*="10eca3cb"] > label span::after {
+    content: "أضف للباقة و وفر أكثر";
+    font-size: 22px !important;
+    font-weight: 800 !important;
+    color: #000 !important;
+    letter-spacing: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
