@@ -3948,3 +3948,80 @@ form#product-form .size-box > div:has([option-id*="417e2c1c"]), form#product-for
     background-image: none !important;
     padding: 6px 10px !important;
 }
+/* تحويل حاوية الأزرار إلى شريط لاصق أسفل الشاشة */
+.product-buttons {
+    position: fixed !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    z-index: 9999 !important;
+    background-color: #ffffff !important;
+    padding: 12px 15px !important;
+    box-shadow: 0 -5px 20px rgba(0,0,0,0.08) !important;
+    margin: 0 !important;
+    animation: slideUp 0.5s ease-out forwards;
+}
+
+/* حركة دخول ناعمة للشريط */
+@keyframes slideUp {
+    from { transform: translateY(100%); opacity: 0;}
+    to { transform: translateY(0); opacity: 1;}
+}
+
+/* إخفاء الخط الفاصل القديم */
+.product-buttons .border-product {
+    display: none !important;
+}
+
+/* تنسيق الحاوية الداخلية لصف الأزرار معاً */
+.product-buttons > .d-flex {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 10px !important;
+    max-width: 800px !important; /* لضبط العرض في شاشات الكمبيوتر */
+    margin: 0 auto !important;
+}
+
+/* توحيد أحجام أزرار الشراء */
+.product-buttons .btn-add-to-cart,
+.product-buttons .btn-buy-now {
+    flex: 1 !important;
+    margin-bottom: 0 !important;
+    height: 52px !important;
+    font-size: 16px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 8px !important;
+}
+
+/* تنسيق زر اشترِ الآن (مفرغ بإطار ذهبي كما في الصورة) */
+.product-buttons .btn-buy-now {
+    background-color: transparent !important;
+    color: #c09b47 !important;
+    border: 2px solid #c09b47 !important;
+    font-weight: 700 !important;
+    flex-direction: row-reverse !important;
+    gap: 10px !important;
+}
+
+/* تنسيق زر المفضلة (القلب) ليكون مربعاً متناسقاً بجوار الأزرار */
+.product-buttons .add-to-wishlist {
+    margin: 0 !important;
+    height: 52px !important;
+    width: 52px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #fbfbfb !important;
+    border: 1px solid #eaeaea !important;
+    border-radius: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+/* إضافة مسافة فارغة أسفل الصفحة بالكامل حتى لا يغطي الشريط على الفوتر */
+body[data-template="product_details"] .main.app-content {
+    padding-bottom: 85px !important;
+}
