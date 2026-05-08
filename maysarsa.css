@@ -3769,6 +3769,7 @@ form#product-form .size-box > div:has([option-id*="417e2c1c"]), form#product-for
 [option-id*="417e2c1c"] > label span::after,
 [option-id*="10eca3cb"] > label span::after {
     content: "أضف للباقة و وفر أكثر";
+    content: "    أضف للسلة مباشرة   ";
     font-size: 22px !important;
     font-weight: 800 !important;
     color: #000 !important;
@@ -4024,4 +4025,9 @@ form#product-form .size-box > div:has([option-id*="417e2c1c"]), form#product-for
 /* إضافة مسافة فارغة أسفل الصفحة بالكامل حتى لا يغطي الشريط على الفوتر */
 body[data-template="product_details"] .main.app-content {
     padding-bottom: 85px !important;
+}
+form#product-form .size-box > .custom-field-separator {
+    order: 2;
+    margin: -2px 0;
+    border-bottom: 1px solid #eee;
 }
