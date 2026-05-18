@@ -144,7 +144,8 @@ ul#pills-tab {
   border-radius: 6px;
   font-size: 13px;
   font-weight: bold;
-  margin-bottom: -1px;
+  margin-bottom: -12px;
+  margin-top: 15px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
