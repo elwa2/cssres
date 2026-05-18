@@ -824,4 +824,6 @@ div#product_details {
 
 div#product-reviews {
     margin: 22px 0px 15px;
+}.product-details-share {
+    display: flex !important;
 }
