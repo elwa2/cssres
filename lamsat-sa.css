@@ -515,7 +515,7 @@ ul#pills-tab {
   display: flex !important;
   /* align-items: center !important; */
   /* justify-content: space-between !important; */
-  margin-bottom: 10px !important;
+  margin-bottom: 3px !important;
   gap: 9px !important;
 }
 #product-reviews .box-review .number .text {
@@ -543,11 +543,11 @@ ul#pills-tab {
 }
 #product-reviews .box-review .number .number-reviews {
   order: 3 !important;
-  width: 35px !important;
+  width: 40px !important;
   text-align: center !important;
   color: var(--mainColor) !important;
   font-weight: 700 !important;
-  font-size: 12px !important;
+  font-size: 10px !important;
   line-height: 1.3 !important;
 }
 #product-reviews .col-md-7 .table {
@@ -820,4 +820,8 @@ div#product_details {
     width: 75px !important;
     text-align: left !important;
     flex-shrink: 0 !important;
+}
+
+div#product-reviews {
+    margin: 22px 0px 15px;
 }
