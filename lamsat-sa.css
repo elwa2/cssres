@@ -485,7 +485,7 @@ ul#pills-tab {
   }
   #product-reviews .box-review .title,
   #product-reviews .box-review .number {
-    width: 100% !important;
+    width: 118% !important;
   }
   #product-reviews .box-review .title {
     border-bottom: 1px solid #EAEAEA !important;
@@ -512,18 +512,20 @@ ul#pills-tab {
 }
 #product-reviews .box-review .number > div {
   display: flex !important;
-  align-items: center !important;
-  justify-content: space-between !important;
-  margin-bottom: 14px !important;
-  gap: 12px !important;
+  /* align-items: center !important; */
+  /* justify-content: space-between !important; */
+  margin-bottom: 10px !important;
+  gap: 9px !important;
 }
 #product-reviews .box-review .number .text {
   order: 1 !important;
-  width: 60px !important;
+  width: 10px !important;
   text-align: right !important;
   color: var(--mainColor) !important;
   font-weight: 700 !important;
-  font-size: 13px !important;
+  /*! font-size: 13px !important; */
+  text-align: left !important;
+  min-width: 35px;
 }
 #product-reviews .box-review .number .progress {
   order: 2 !important;
@@ -766,4 +768,55 @@ div#product_details {
   #pills-tabContent .tab-pane[aria-labelledby="prodcut-details-tab"] {
     display: none !important;
   }
+}
+#product-reviews .box-review .number .text {
+ 
+ 
+	font-size: 0px !important;
+}
+
+.box-review .number .d-flex {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 15px !important;
+    flex-wrap: nowrap !important;
+}
+
+.box-review .number .text {
+    font-size: 0 !important;
+    width: 20px !important;
+    text-align: center !important;
+    flex-shrink: 0 !important;
+}
+
+.box-review .number .text::after {
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    color: var(--mainColor) !important;
+    display: inline-block !important;
+    text-align: left;
+}
+
+.box-review .number > div:nth-child(1) .text::after { content: "5"; }
+.box-review .number > div:nth-child(2) .text::after { content: "4"; }
+.box-review .number > div:nth-child(3) .text::after { content: "3"; }
+.box-review .number > div:nth-child(4) .text::after { content: "2"; }
+.box-review .number > div:nth-child(5) .text::after { content: "1"; }
+
+.box-review .number .progress {
+    flex-grow: 1 !important;
+    width: auto !important;
+    height: 8px !important;
+    border-radius: 10px !important;
+    margin: 0 !important;
+    background-color: #f0f0f0 !important;
+}
+
+.box-review .number .number-reviews {
+    font-size: 14px !important;
+    width: 75px !important;
+    text-align: left !important;
+    flex-shrink: 0 !important;
 }
