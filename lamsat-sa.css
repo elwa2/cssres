@@ -826,4 +826,26 @@ div#product-reviews {
     margin: 22px 0px 15px;
 }.product-details-share {
     display: flex !important;
+}.dev3-mobile-header[style="position: fixed; top: 0px; z-index: 9999; width: 100%;"] {
+
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    z-index: 9999 !important;
+    box-sizing: border-box !important;
+}
+
+body .app header {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* حماية المحتوى من الاختفاء تحت الهيدر الثابت */
+body {
+    padding-top: 70px !important; 
 }
