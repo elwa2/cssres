@@ -106,7 +106,7 @@ ul#pills-tab {
 .details-product-data::before {
     content: "لمسات التأثيث | أثاث عصري يغيّر تفاصيل منزلك بذوق يليق فيك";
     display: block;
-    background: #22c55e;
+    background: var(--mainColor) !important;
     color: #fff;
     text-align: center;
     padding: 10px 8px;
