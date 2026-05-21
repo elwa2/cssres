@@ -859,7 +859,9 @@ body .app header {
 
 
 
-
+.nav-mobile-product.show {
+    display: none !important;
+}
 
 
 
