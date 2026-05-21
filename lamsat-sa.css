@@ -792,7 +792,7 @@ div#product_details {
 .product-details-share {
     justify-self: center;
 }
-
+/* 
 @media (max-width: 991px) {
     [data-template="product_details"] .dev3-mobile-header {
         background-color: var(--mainColor) !important;
@@ -852,7 +852,7 @@ div#product_details {
 body .app header {
     padding: 0 !important;
     margin: 0 !important;
-}
+} */
 
 
 
