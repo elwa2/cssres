@@ -4108,3 +4108,15 @@ section.ss:first-of-type .container.container-slider {
 ul.main-nav>li {
     margin-bottom: 10px
 }
+
+#fixed-header .icon-menu_open_black_24dp-1::before {
+    background: url("https://media.zid.store/35f4531e-5b22-429a-a062-3a6ab1024247/39f5e9ea-7623-40a5-9458-81824cbd383a.svg");
+}
+
+#fixed-header .icon-shopping_cart_black_36dp-1-1 .path1::before {
+    filter: invert(1);
+}
+
+#fixed-header .search-header-bar>.header-logo>a[href="/"], #fixed-header.sticky .header-logo a[href="/"] {
+    filter: invert(1) brightness(9.5);
+}
