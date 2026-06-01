@@ -1013,24 +1013,9 @@ a.more-button::after {
   margin: 0.5rem;
   border-radius: 11px;
 }
+ 
 
-.products-slider .prod-col {
-  padding-left: unset;
-  padding-right: unset;
-  display: block;
-  width: auto;
-  padding: 0;
-  background: #fff;
-  /* box-shadow: 0 0 15px 0 rgba(0,0,0,0.1); */
-  margin: 1rem auto;
-  border-radius: 11px;
-}
-
-@media(min-width: 991px) {
-  .products-slider .prod-col {
-    width: 250px !important
-  }
-}
+ 
 
 .product-item {
   /* width: 88%; */
