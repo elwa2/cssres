@@ -4100,6 +4100,19 @@ ul.main-nav>li {
     grid-column: 1 / -1 !important;
 }
 
+
+
+
+@media (min-width: 767px) {
+
+
+  [section-id]:not([section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"]) .product-item {
+    width: 22rem;
+    max-width: unset;
+    position: relative;
+    /* border-radius: 120px 15px 0 0 !important; */
+}}
+
 @media (max-width: 767px) {
     [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col:nth-child(n+1) .product-item {
         width: 91vw !important;
