@@ -2594,7 +2594,7 @@ section.blog.mt-5.mb-5 {
     flex: 0 0 160px;
     /* max-width: 260px; */
     /* width: 232px; */
-    zoom: 123%;
+    /* zoom: 123%; */
   }
 
   .products-container .products-list {
@@ -3363,49 +3363,7 @@ span.text-center.footer-copyrights {
   font-size: 0;
 }
 
-@media (max-width: 767px) {
-  [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .products-slider {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    /* يسمح بنزول المنتجات تحت بعضها */
-    justify-content: space-between !important;
-    /* توزيع متساوي للمسافات */
-    white-space: normal !important;
-    overflow-x: hidden !important;
-  }
-
-  /* 3. جعل كل منتج يأخذ نصف عرض الشاشة بالضبط (مع خصم مسافة الفراغ) */
-  [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col {
-    display: block !important;
-    width: calc(50% - 8px) !important;
-    /* 50% من الشاشة مخصوماً منها 8px للمسافة الفاصلة */
-    max-width: calc(50% - 8px) !important;
-    margin-bottom: 16px !important;
-    /* مسافة عمودية بين الصفوف */
-    float: none !important;
-    padding: 0 !important;
-    /* إزالة البادينج الزائد لضبط الحجم */
-  }
-
-  /* 4. تحسينات بصرية صغيرة لتناسب الحجم الأصغر في الجوال */
-  [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .product-title {
-    font-size: .9rem !important;
-    /* تصغير الخط قليلاً ليناسب المساحة */
-  }
-
-  .product-item .product-price {
-    padding: 0;
-  }
-
-  span.product-prev-price {
-    position: relative;
-    right: 1px;
-  }
-
-  .gallery-section.container {
-    padding: 0;
-  }
-}
+ 
 
 .home-products-section.section-padding-space .d-flex.justify-content-center {
   width: 100%;
@@ -4263,8 +4221,8 @@ ul.main-nav>li {
 
 
 #fixed-header.sticky .icon-menu_open_black_24dp-1::before {
- 
-   top: 4px;
+
+  top: 4px;
 }
 
 
@@ -4291,39 +4249,39 @@ ul.main-nav>li {
 
 
 @media (max-width: 767px) {
-    .products-slider {
-        display:flex!important;
-        flex-wrap: wrap!important;
-        justify-content: space-between!important;
-        white-space: normal!important;
-        overflow-x: hidden!important
-    }
+  .products-slider {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    white-space: normal !important;
+    overflow-x: hidden !important
+  }
 
   .prod-col {
-        display: block!important;
-        width: calc(50% - 8px)!important;
-        max-width: calc(50% - 8px)!important;
-        margin-bottom: 16px!important;
-        float: none!important;
-        padding: 0!important
-    }
+    display: block !important;
+    width: calc(50% - 8px) !important;
+    max-width: calc(50% - 8px) !important;
+    margin-bottom: 16px !important;
+    float: none !important;
+    padding: 0 !important
+  }
 
-    home-products-section section-padding-space .product-title {
-        font-size: .9rem!important
-    }
+  home-products-section section-padding-space .product-title {
+    font-size: .9rem !important
+  }
 
-    .product-item .product-price {
-        padding: 0
-    }
+  .product-item .product-price {
+    padding: 0
+  }
 
-    span.product-prev-price {
-        position: relative;
-        right: 1px
-    }
+  span.product-prev-price {
+    position: relative;
+    right: 1px
+  }
 
-    .gallery-section.container {
-        padding: 0
-    }
+  .gallery-section.container {
+    padding: 0
+  }
 }
 
 
@@ -4332,44 +4290,44 @@ ul.main-nav>li {
 
 
 
-  
+
 [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col.slick-slide {
-    width: 100% !important;
-    height: auto !important;
-    float: none !important;
-    display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  float: none !important;
+  display: block !important;
 }
 
 [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col.slick-slide:first-child {
-    grid-column: 1 / -1 !important;
+  grid-column: 1 / -1 !important;
 }
- 
+
+[section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col:nth-child(n+2) .product-item {
+  width: 15rem !important;
+}
+
 
 [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .btn-primary {
-    background-color: #c59c40 !important;
-    border-color: #c59c40 !important;
-    color: #fff !important;
-    border-radius: 5px !important;
-    margin: 0 auto !important;
-    width: calc(100% - 20px) !important;
-    display: block !important;
+  background-color: #c59c40 !important;
+  border-color: #c59c40 !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+  margin: 0 auto !important;
+  width: calc(100% - 20px) !important;
+  display: block !important;
 }
 
 
 
 
 [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .products-slider {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr) !important;
-    gap: 15px !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 15px !important;
 }
 
- 
- 
+
+
 [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col:not(.slick-cloned):first-of-type {
-    grid-column: 1 / -1 !important;
+  grid-column: 1 / -1 !important;
 }
-
- 
- 
- 
