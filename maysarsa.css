@@ -4104,7 +4104,9 @@ ul.main-nav>li {
     [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col:nth-child(n+1) .product-item {
         width: 91vw !important;
     }
-
+    [section-id]:not([section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"])  .prod-col:nth-child(n) .product-item {
+        width: 16rem !important;
+    }
     [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col:nth-child(n+2) .product-item {
         width: 15rem !important;
     }
