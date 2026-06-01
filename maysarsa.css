@@ -4129,3 +4129,13 @@ ul.main-nav>li {
 [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .prod-col:not(.slick-cloned):first-of-type {
     grid-column: 1 / -1 !important;
 }
+
+
+
+
+@media(max-width: 991px) {
+    [section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"] .product-item>div>.btn {
+     
+        right: 0px;
+    }
+}
