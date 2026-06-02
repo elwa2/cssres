@@ -4386,3 +4386,26 @@ html,body,.app,.main,.home{background:transparent!important}.app::before{content
     right: -23px;
     left: auto;
 }
+
+
+
+
+.store-section>div>.row>.col-lg-5>.footer-about-us-div>p {
+    font-size: 1rem;
+    font-weight: 100 !important;
+}
+
+.footer-copyrights::before {
+    
+    content: var(--con);
+    font-size: 13px !important;
+    margin-top: 4px;
+    color: #ffffff;  
+}
+
+.footer-copyrights::after {
+    content: "ميسار علامة سعودية مسجلة" !important;
+    font-size: 13px !important;
+    margin-top: 4px;
+    color: #ffffff; 
+}
