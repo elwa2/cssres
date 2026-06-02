@@ -4338,3 +4338,16 @@ ul.main-nav>li {
 .product-item>a>.product-card-rating-wrapper {
     display: none;
 }
+
+.product-item>a>.product-card-rating-wrapper {
+    display: none;
+}
+
+ body, html,section, .section-padding-space {
+    background: #ffffff9e !important;
+}
+
+ 
+section[id="11ee55bc-6326-4595-bb34-6baa4af4fcd3"] ,.section-padding-space[id="11ee55bc-6326-4595-bb34-6baa4af4fcd3"] ,.ss[id="11ee55bc-6326-4595-bb34-6baa4af4fcd3"]{
+    background: #00000000 !important;
+}
