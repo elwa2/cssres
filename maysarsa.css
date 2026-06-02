@@ -4356,3 +4356,33 @@ section[id="11ee55bc-6326-4595-bb34-6baa4af4fcd3"] ,.section-padding-space[id="1
 
 
 html,body,.app,.main,.home{background:transparent!important}.app::before{content:"";position:fixed;top:0;left:0;width:100vw;height:100vh;background-image:url('https://media.zid.store/d7bab743-3660-4db1-a8ca-dc18a71d7fc9/0b7d725e-43d2-42f5-a185-7f56a75bd2dd.png')!important;background-repeat:repeat!important;background-position:center!important;z-index:-999!important;pointer-events:none!important}section,.section-padding-space{background-color:#ffffff9e!important}section[id="11ee55bc-6326-4595-bb34-6baa4af4fcd3"],.section-padding-space[id="11ee55bc-6326-4595-bb34-6baa4af4fcd3"],.ss[id="11ee55bc-6326-4595-bb34-6baa4af4fcd3"]{background-color:transparent!important}.gallery.row{background-color:transparent!important;padding:5rem;margin:-15px 0 -63px 0}.product-price.section-product-price.theme-title-primary{justify-content:center}.product-item > a > .product-card-rating-wrapper{display:none!important}
+
+
+ 
+[id*="gb-widget"] a[href*="https://wa.me"].hrNwue {
+    display: block;
+    flex-shrink: 0;
+    opacity: 1;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-radius: 0;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    width: 60px;
+    order: 2;
+    padding: 5px;
+    box-sizing: border-box;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: rgba(136, 136, 136, 0.4) 0px 1px 7px;
+    transition: all 0.5s ease 0s;
+    position: relative;
+    z-index: 200;
+    text-decoration: none !important;
+    background-color: rgb(77, 194, 71) !important;
+    background-color: #a17f32 !important;
+    bottom: 25vh;
+    right: -23px;
+    left: auto;
+}
