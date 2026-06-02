@@ -4399,12 +4399,17 @@ html,body,.app,.main,.home{background:transparent!important}.app::before{content
     content: var(--con);
     font-size: 13px !important;
     margin-top: 4px;
-    color: #b5b0b0; /* يمكنك تغيير اللون */
+    color: #b5b0b0; 
 }
 
 .footer-copyrights::after {
     content: "ميسار علامة سعودية مسجلة" !important;
     font-size: 13px !important;
     margin-top: 4px;
-    color: #ffffff; /* يمكنك تغيير اللون */
+    color: #ffffff;  
+}
+
+
+div.col-lg-5 a:nth-of-type(1) {
+    display: none;
 }
