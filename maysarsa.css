@@ -1966,9 +1966,9 @@ ul.pagination {
   color: #000
 }
 
-.products-details-page .col-lg-6.col-product-info>section>*:not(.d-flex):not(h1) {
+/* .products-details-page .col-lg-6.col-product-info>section>*:not(.d-flex):not(h1) {
   display: none
-}
+} */
 
 .products-details-page .col-lg-6.col-product-info>section>h1 {
   text-align: center;
@@ -2007,7 +2007,7 @@ ul.pagination {
 }
 
 #product-description-a {
-  background: var(--2);
+ 
   padding: 0.5rem;
   border-radius: 50px
 }
