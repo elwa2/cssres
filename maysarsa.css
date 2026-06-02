@@ -1152,15 +1152,15 @@ a.more-button::after {
 @media(max-width: 991px) {
   .product-item>div>.btn {
     zoom: 77%;
-    width: 44%;
-    right: 43px;
+    width: 100%;
+    right: 0px;
   }
 }
 
 @media(min-width: 991px) {
   .product-item>div>.btn {
-    width: 37%;
-    right: 67px;
+    width: 100%;
+    right: 0px;
     top: -16px;
   }
 }
@@ -1193,6 +1193,7 @@ a.more-button::after {
 
 .product-item>div>.btn.product-card-add-to-cart:before {
   content: "أضف ";
+  content: "أضف للسلة ";
   font-size: 1.2rem;
   color: #fff;
   position: relative;
@@ -1206,6 +1207,7 @@ a.more-button::after {
 
 .product-item>div>.btn.btn-product-card-select-variant:before {
   content: " أضف";
+  content: "أضف للسلة ";
   font-size: 1.2rem;
 }
 
