@@ -2895,6 +2895,7 @@ section,
 .section-padding-space {
   background: #F2F2F2 !important;
   background: #ffffff1c !important;
+  background: #ffffff00 !important;
 }
 
 .product-crd-spec,
@@ -4310,4 +4311,10 @@ ul.main-nav>li {
   background: #fff !important;
   margin: 1rem auto !important;
   border-radius: 11px !important;
+}
+
+
+.gallery.row {
+    background: transparent !important;
+    padding: 5rem;
 }
