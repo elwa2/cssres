@@ -4389,7 +4389,6 @@ html,body,.app,.main,.home{background:transparent!important}.app::before{content
 
 
 
-
 .store-section>div>.row>.col-lg-5>.footer-about-us-div>p {
     font-size: 1rem;
     font-weight: 100 !important;
@@ -4400,12 +4399,12 @@ html,body,.app,.main,.home{background:transparent!important}.app::before{content
     content: var(--con);
     font-size: 13px !important;
     margin-top: 4px;
-    color: #ffffff;  
+    color: #b5b0b0; /* يمكنك تغيير اللون */
 }
 
 .footer-copyrights::after {
     content: "ميسار علامة سعودية مسجلة" !important;
     font-size: 13px !important;
     margin-top: 4px;
-    color: #ffffff; 
+    color: #ffffff; /* يمكنك تغيير اللون */
 }
