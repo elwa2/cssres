@@ -4168,12 +4168,18 @@ ul.main-nav>li {
     margin: 1rem auto !important;
     border-radius: 11px !important;
 }
-@media (min-width: 767px) {
 
-  [section-id]:not([section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"]) .products-slider .prod-col {
+@media (min-width: 767px) {
+    [section-id]:not([section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"]) .products-slider .prod-col {
         zoom: 100%;
         width: 24rem !important;
-    } }
+    }
+
+    .badge-name {
+        top: 32px !important;
+    }
+}
+
 @media (max-width: 767px) {
     [section-id]:not([section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"]) .products-slider .prod-col {
         zoom: 93%;
