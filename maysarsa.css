@@ -4455,3 +4455,14 @@ div.col-lg-5 a:nth-of-type(1) {
     margin-top: 0 !important;
     width: 100%;
 }
+
+
+
+
+
+
+
+[section-id]:not([section-id="13a3024c-89f7-4063-8c7e-8aafaa7a8bd2"]) .product-item .product-title>span {
+    max-height: 53px;
+    min-height: 53px;
+}
