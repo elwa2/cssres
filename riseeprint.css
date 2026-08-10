@@ -1369,4 +1369,8 @@ p.nf-desc {
     position: relative;
     right: 19px;
 }
+body#app > div:nth-of-type(2) > footer > div > div > div > div:nth-of-type(4) > h3 {
+    position: relative;
+    right: -44px;
+}
 }
