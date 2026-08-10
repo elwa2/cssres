@@ -1398,5 +1398,10 @@ p.nf-desc {
     body#app>div:nth-of-type(2)>footer>div>div>div>div:nth-of-type(4)>h3 {
         position: relative;
         right: -44px;
-    }
+    }.advanced-slider .swiper .swiper-slide-active a {
+    position: relative;
+    top: -34px;
+}
+
+ 
 }
