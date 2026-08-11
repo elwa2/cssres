@@ -1348,7 +1348,7 @@ html.iptv-site-active .main-container-wrapper {
 }
 
 #iptv_site_header ._iptv_logo_img {
-  height: 42px !important;
+  height: 88px !important;
   width: auto !important;
   display: block !important;
 }
@@ -1520,7 +1520,7 @@ html.iptv-site-active .main-container-wrapper {
   }
 
   #iptv_site_header ._iptv_logo_img {
-    height: 34px !important;
+    height: 88px !important;
   }
 }
 
