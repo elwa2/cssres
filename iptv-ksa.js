@@ -16,9 +16,11 @@
 
     var siteHeaderHtml =
         '<header id="iptv_site_header" class="_iptv_header">' +
-        '<a href="/" class="_iptv_logo" aria-label="IPTV KSA"><img src="https://dbi49knxhb5pc.cloudfront.net/channel/12550/VTCqGt2lJS7bsiJ91foaMfEkPk7QJoFvEW5p1dfX.png" alt="IPTV KSA" class="_iptv_logo_img"></a>' +
+        '<div class="_iptv_header_start">' +
         '<button type="button" id="show-sideMenu" class="_iptv_menu_btn" role="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="القائمة الرئيسية"><svg class="svg burger" width="27" height="16" viewBox="0 0 27 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H22V2H0V0Z" fill="currentColor"></path><path d="M0 7H27V9H0V7Z" fill="currentColor"></path><path d="M0 14H17V16H0V14Z" fill="currentColor"></path></svg></button>' +
         '<ul class="_iptv_nav"><li><a href="/" class="_iptv_nav_link _iptv_nav_link_active">الرئيسية</a></li><li><a href="/products" class="_iptv_nav_link">الباقات</a></li><li><a href="/products" class="_iptv_nav_link">القنوات</a></li><li><a href="/products" class="_iptv_nav_link">الأفلام</a></li><li><a href="/products" class="_iptv_nav_link">المسلسلات</a></li><li><a href="/products" class="_iptv_nav_link">الأطفال</a></li></ul>' +
+        '</div>' +
+        '<a href="/" class="_iptv_logo" aria-label="IPTV KSA"><img src="https://dbi49knxhb5pc.cloudfront.net/channel/12550/VTCqGt2lJS7bsiJ91foaMfEkPk7QJoFvEW5p1dfX.png" alt="IPTV KSA" class="_iptv_logo_img"></a>' +
         '<div class="_iptv_header_actions"><a href="/products" class="_iptv_btn_primary">اشترك الآن</a>' +
         '<div class="_iptv_header_shop"></div>' +
         '</div></header>';
@@ -54,6 +56,11 @@
         if (loginBtn) shop.appendChild(loginBtn);
         var cart = document.querySelector('#header twsaa-cart-summary, .store-header twsaa-cart-summary, twsaa-cart-summary');
         if (cart) shop.appendChild(cart);
+        var searchBtn = document.querySelector('[data-target="#searchProductModal"]');
+        if (searchBtn) {
+            searchBtn.classList.remove('lg:hidden');
+            shop.appendChild(searchBtn);
+        }
     }
 
     function bindShell() {
