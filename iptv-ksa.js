@@ -43,17 +43,39 @@
         '</div>' +
         '<button type="button" class="_iptv_to_top" aria-label="العودة للأعلى"><svg width="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg></button>';
 
+    function bindSearchOpen(btn) {
+        if (btn.getAttribute('data-iptv-search-bound') === '1') return;
+        btn.setAttribute('data-iptv-search-bound', '1');
+        btn.addEventListener('click', function (e) {
+            var modal = document.getElementById('searchProductModal');
+            if (!modal) return;
+            if (e && e.preventDefault) e.preventDefault();
+            if (e && e.stopPropagation) e.stopPropagation();
+            modal.classList.remove('s-hidden');
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden';
+            var input = modal.querySelector('.s-search-input, input[type="search"]');
+            if (input) setTimeout(function () { try { input.focus(); } catch (err) {} }, 120);
+        });
+    }
+
     function moveStoreActions() {
         var shop = document.querySelector('#iptv_site_header ._iptv_header_shop');
-        if (!shop || shop.children.length) return;
-        var loginBtn = document.getElementById('customerLogin');
-        if (loginBtn) shop.appendChild(loginBtn);
-        var cart = document.querySelector('#header twsaa-cart-summary, .store-header twsaa-cart-summary, twsaa-cart-summary');
-        if (cart) shop.appendChild(cart);
-        var searchBtn = document.querySelector('[data-target="#searchProductModal"]');
-        if (searchBtn) {
-            searchBtn.classList.remove('lg:hidden');
-            shop.appendChild(searchBtn);
+        if (shop && !shop.children.length) {
+            var loginBtn = document.getElementById('customerLogin');
+            if (loginBtn) shop.appendChild(loginBtn);
+            var cart = document.querySelector('#header twsaa-cart-summary, .store-header twsaa-cart-summary, twsaa-cart-summary');
+            if (cart) shop.appendChild(cart);
+            var searchBtn = document.querySelector('[data-target="#searchProductModal"]');
+            if (searchBtn) {
+                searchBtn.classList.remove('lg:hidden');
+                shop.appendChild(searchBtn);
+                bindSearchOpen(searchBtn);
+            }
+        }
+        var searchModal = document.getElementById('searchProductModal');
+        if (searchModal && searchModal.parentElement && searchModal.parentElement !== document.body) {
+            document.body.appendChild(searchModal);
         }
     }
 
