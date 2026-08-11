@@ -1141,7 +1141,7 @@ html.iptv-site-active .main-container-wrapper {
 }
 
 #iptv_site_header ._iptv_logo_img {
-    height: 42px !important;
+    height: 115px  !important;
     width: auto !important;
     display: block !important;
 }
@@ -1208,6 +1208,31 @@ html.iptv-site-active .main-container-wrapper {
 
 #iptv_site_header ._iptv_user_icon:hover {
     border-color: #ff4500 !important;
+}
+
+#iptv_site_header #show-sideMenu {
+    display: none !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    height: 38px !important;
+    padding: 0 !important;
+    border-radius: 8px !important;
+    background-color: #161616 !important;
+    border: 1px solid #333333 !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    line-height: 0 !important;
+    transition: border-color 0.25s, color 0.25s !important;
+}
+
+#iptv_site_header #show-sideMenu:hover {
+    border-color: #ff4500 !important;
+    color: #ff4500 !important;
+}
+
+@media (max-width: 768px) {
+    #iptv_site_header #show-sideMenu { display: flex !important; }
 }
 
 /* الفوتر الثابت */

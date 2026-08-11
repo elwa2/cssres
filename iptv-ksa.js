@@ -17,6 +17,7 @@
     var siteHeaderHtml =
         '<header id="iptv_site_header" class="_iptv_header">' +
         '<a href="/" class="_iptv_logo" aria-label="IPTV KSA"><img src="https://dbi49knxhb5pc.cloudfront.net/channel/12550/VTCqGt2lJS7bsiJ91foaMfEkPk7QJoFvEW5p1dfX.png" alt="IPTV KSA" class="_iptv_logo_img"></a>' +
+        '<button type="button" id="show-sideMenu" class="_iptv_menu_btn" role="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="القائمة الرئيسية"><svg class="svg burger" width="27" height="16" viewBox="0 0 27 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H22V2H0V0Z" fill="currentColor"></path><path d="M0 7H27V9H0V7Z" fill="currentColor"></path><path d="M0 14H17V16H0V14Z" fill="currentColor"></path></svg></button>' +
         '<ul class="_iptv_nav"><li><a href="/" class="_iptv_nav_link _iptv_nav_link_active">الرئيسية</a></li><li><a href="/products" class="_iptv_nav_link">الباقات</a></li><li><a href="/products" class="_iptv_nav_link">القنوات</a></li><li><a href="/products" class="_iptv_nav_link">الأفلام</a></li><li><a href="/products" class="_iptv_nav_link">المسلسلات</a></li><li><a href="/products" class="_iptv_nav_link">الأطفال</a></li></ul>' +
         '<div class="_iptv_header_actions"><a href="/products" class="_iptv_btn_primary">اشترك الآن</a>' +
         '<div class="_iptv_user_icon" role="button" tabindex="0" aria-label="تسجيل الدخول"><svg width="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>' +
@@ -87,6 +88,55 @@
         }
     }
 
+    function bindSideMenu() {
+        var btn = document.getElementById('show-sideMenu');
+        if (!btn) return;
+
+        function setSideMenu(open) {
+            if (open) {
+                document.body.classList.add('mm-ocd-opened');
+                var ocd = document.querySelector('.mm-ocd');
+                if (ocd) ocd.classList.add('mm-ocd--open');
+                var mm = document.getElementById('mobile-menu');
+                if (mm) mm.classList.add('mm-spn--main');
+                var mainMenu = document.querySelector('#mobile-menu .main-menu');
+                if (mainMenu) mainMenu.classList.add('mm-spn--open');
+                btn.setAttribute('aria-expanded', 'true');
+            } else {
+                document.body.classList.remove('mm-ocd-opened');
+                var ocd2 = document.querySelector('.mm-ocd');
+                if (ocd2) ocd2.classList.remove('mm-ocd--open');
+                var mm2 = document.getElementById('mobile-menu');
+                if (mm2) mm2.classList.add('mm-spn--main');
+                var mainMenu2 = document.querySelector('#mobile-menu .main-menu');
+                if (mainMenu2) mainMenu2.classList.remove('mm-spn--open', 'mm-spn--parent');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        }
+
+        btn.addEventListener('click', function () {
+            setSideMenu(btn.getAttribute('aria-expanded') !== 'true');
+        });
+
+        document.addEventListener('click', function (e) {
+            var t = e.target;
+            if (t && t.closest && t.closest('.close-mobile-menu')) {
+                setSideMenu(false);
+            }
+        });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') setSideMenu(false);
+        });
+
+        var backdrop = document.querySelector('.mm-ocd__backdrop');
+        if (backdrop) {
+            backdrop.addEventListener('click', function () {
+                setSideMenu(false);
+            });
+        }
+    }
+
     var shellBound = false;
     function buildSiteShell() {
         if (!document.body) return;
@@ -106,6 +156,7 @@
         if (!shellBound) {
             shellBound = true;
             bindShell();
+            bindSideMenu();
         }
     }
 
