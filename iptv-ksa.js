@@ -1,7 +1,6 @@
 (function buildIptvLanding() {
     document.documentElement.classList.add('dark');
     document.documentElement.classList.add('iptv-site-active');
-    try { if (localStorage.getItem('iptv_hero_image_only') === '1') document.documentElement.classList.add('iptv-hero-image-only'); } catch (e) {}
 
     function loadFonts() {
         if (document.getElementById('iptv-font-link')) return;
@@ -28,13 +27,7 @@
 
     var siteFooterHtml =
         '<footer id="iptv_site_footer" class="_iptv_footer"><div class="_iptv_footer_grid">' +
-        '<div class="_iptv_footer_col"><img src="https://dbi49knxhb5pc.cloudfront.net/channel/12550/VTCqGt2lJS7bsiJ91foaMfEkPk7QJoFvEW5p1dfX.png" alt="Logo" style="height:45px;margin-bottom:12px;display:block;"><p style="color:#666;font-size:0.85rem;margin-bottom:15px;">وجهتك الأولى لمشاهدة القنوات والأفلام والمسلسلات والمباريات بجودة عالية واستقرار تام.</p><div class="_iptv_social_icons">' +
-        '<a href="#" class="social-fb" aria-label="Facebook"><svg width="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>' +
-        '<a href="#" class="social-ig" aria-label="Instagram"><svg width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>' +
-        '<a href="#" class="social-tw" aria-label="Twitter"><svg width="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg></a>' +
-        '<a href="#" class="social-yt" aria-label="YouTube"><svg width="16" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"></path></svg></a>' +
-        '<a href="#" class="social-wa" aria-label="WhatsApp"><svg width="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg></a>' +
-        '</div></div>' +
+        '<div class="_iptv_footer_col"><img src="https://dbi49knxhb5pc.cloudfront.net/channel/12550/VTCqGt2lJS7bsiJ91foaMfEkPk7QJoFvEW5p1dfX.png" alt="Logo" style="height:45px;margin-bottom:12px;display:block;"><p style="color:#666;font-size:0.85rem;margin-bottom:15px;">وجهتك الأولى لمشاهدة القنوات والأفلام والمسلسلات والمباريات بجودة عالية واستقرار تام.</p></div>' +
         '<div class="_iptv_footer_col"><h4>معلومات</h4><ul class="_iptv_footer_links"><li><a href="/page/terms-of-use">شروط الاستخدام</a></li><li><a href="/page/return-policy">سياسة الاسترجاع</a></li><li><a href="/page/return-policy">سياسة الخصوصية</a></li></ul></div>' +
         '<div class="_iptv_footer_col"><h4>طرق الدفع</h4><ul class="flex justify-center items-center flex-wrap gap-2">' +
         '<li class="pay-mada w-12 h-7 bg-white rounded flex items-center p-1"><img width="100%" height="100%" src="https://iptv-ksa.net/admin-themes/mbotiq/assets/images/payments/mastercard.png" alt="mastercard" loading="lazy" class="lazy object-contain max-h-full"></li>' +
@@ -85,6 +78,8 @@
     function bindSideMenu() {
         var btn = document.getElementById('show-sideMenu');
         if (!btn) return;
+        if (btn.getAttribute('data-iptv-menu-bound') === '1') return;
+        btn.setAttribute('data-iptv-menu-bound', '1');
 
         function setSideMenu(open) {
             if (open) {
@@ -109,7 +104,7 @@
         }
 
         btn.addEventListener('click', function () {
-            setSideMenu(btn.getAttribute('aria-expanded') !== 'true');
+            setSideMenu(!document.body.classList.contains('mm-ocd-opened'));
         });
 
         document.addEventListener('click', function (e) {
@@ -163,6 +158,18 @@
     if (document.getElementById('iptv_master_wrap_2025')) return;
 
     document.documentElement.classList.add('iptv-landing-active');
+    document.documentElement.classList.add('iptv-hero-image-only');
+
+    function resolveBanner() {
+        try {
+            var img = document.querySelector('.s-block--fixed-banner img, .banner--fixed img, .banner img');
+            if (img) {
+                var u = img.getAttribute('data-src') || img.getAttribute('src');
+                if (u && u.indexOf('sketch.png') === -1) return u;
+            }
+        } catch (e) {}
+        return 'https://cdn.twsaa.com/home/12550/010f509b-ce48-4298-9d96-f72e08ee6978.png';
+    }
 
     var tickerList = [['⚡', 'تفعيل فوري بعد الدفع'], ['📺', 'أكثر من 20,000 قناة'], ['⚽', 'جميع المباريات مباشرة'], ['🎬', 'أحدث الأفلام والمسلسلات'], ['💬', 'دعم فني 24/7'], ['🔒', 'دفع آمن (مدى / فيزا / Apple Pay)']];
     var ticker = '';
@@ -194,24 +201,11 @@
         '<div id="iptv_master_wrap_2025">' +
 
         '<section class="_iptv_container _iptv_hero">' +
-        '<div class="_iptv_hero_text _iptv_reveal">' +
-        '<h1 class="_iptv_hero_title">عالم من <br><span class="_iptv_text_gradient">الترفيه بلا حدود</span></h1>' +
-        '<ul class="_iptv_hero_list">' +
-        '<li class="_iptv_hero_list_item"><svg class="_iptv_hero_icon_img" viewBox="0 0 24 24" fill="none" stroke="#ff4500" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>أكثر من 20,000 قناة</li>' +
-        '<li class="_iptv_hero_list_item"><svg class="_iptv_hero_icon_img" viewBox="0 0 24 24" fill="none" stroke="#ff4500" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"></polygon><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>أحدث الأفلام والمسلسلات</li>' +
-        '<li class="_iptv_hero_list_item"><svg class="_iptv_hero_icon_img" viewBox="0 0 24 24" fill="none" stroke="#ff4500" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polygon points="10 8 16 12 10 16 10 8"></polygon></svg>بث مباشر للمباريات</li>' +
-        '<li class="_iptv_hero_list_item"><svg class="_iptv_hero_icon_img" viewBox="0 0 24 24" fill="none" stroke="#ff4500" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg><span style="background:linear-gradient(135deg,#ff4500,#cc0000);color:#fff;padding:2px 8px;border-radius:4px;font-size:12px;font-weight:900;">4K</span>جودة 4K - FULL HD</li>' +
-        '</ul>' +
-        '<div class="_iptv_hero_actions"><a href="/products" class="_iptv_btn_primary">اشترك الآن</a><a href="/products" class="_iptv_btn_outline"><svg width="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>شاهد الباقات</a></div>' +
-        '</div>' +
         '<div class="_iptv_hero_image">' +
-        '<div class="_iptv_tv_mockup _iptv_reveal">' +
+        '<img class="_iptv_hero_banner_img" src="__IPTV_BANNER__" alt="IPTV KSA">' +
         '<div class="_iptv_hero_badge _iptv_hero_badge_top"><div class="_iptv_badge_icon">20K+</div><div><b>قناة مباشرة</b><small>بجودة عالية</small></div></div>' +
         '<div class="_iptv_hero_badge _iptv_hero_badge_bottom"><div class="_iptv_badge_icon">4K</div><div><b>جودة فائقة</b><small>بدون تقطيع</small></div></div>' +
-        '<div class="_iptv_tv_screen"><img src="https://cdn.twsaa.com/home/12550/010f509b-ce48-4298-9d96-f72e08ee6978.png" alt="IPTV Interface"></div>' +
-        '<div class="_iptv_tv_bar"></div><div class="_iptv_tv_stand"></div>' +
-        '</div></div>' +
-        '<button type="button" id="iptv_hero_mode_btn" class="_iptv_hero_mode_btn" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg><span>إخفاء النص</span></button>' +
+        '</div>' +
         '</section>' +
 
         '<div class="_iptv_ticker"><div class="_iptv_ticker_track">' + ticker + '</div></div>' +
@@ -269,26 +263,6 @@
         }
     }
 
-    function initHeroModeToggle() {
-        var btn = document.getElementById('iptv_hero_mode_btn');
-        if (!btn || btn.getAttribute('data-iptv-bound') === '1') return;
-        btn.setAttribute('data-iptv-bound', '1');
-        var label = btn.querySelector('span');
-        var onNow = function () { return document.documentElement.classList.contains('iptv-hero-image-only'); };
-        function apply() {
-            var on = onNow();
-            btn.setAttribute('aria-pressed', on ? 'true' : 'false');
-            if (label) label.textContent = on ? 'إظهار النص' : 'إخفاء النص';
-        }
-        apply();
-        btn.addEventListener('click', function () {
-            var on = onNow();
-            document.documentElement.classList[on ? 'remove' : 'add']('iptv-hero-image-only');
-            try { localStorage.setItem('iptv_hero_image_only', on ? '0' : '1'); } catch (e) {}
-            apply();
-        });
-    }
-
     function initReviewSliderDrag(wrap) {
         if (!wrap || wrap.getAttribute('data-iptv-drag') === '1') return;
         wrap.setAttribute('data-iptv-drag', '1');
@@ -323,7 +297,7 @@
         if (!document.body) return;
         if (document.getElementById('iptv_master_wrap_2025')) return;
         var temp = document.createElement('div');
-        temp.innerHTML = htmlString;
+        temp.innerHTML = htmlString.split('__IPTV_BANNER__').join(resolveBanner());
         var wrap = temp.firstElementChild;
         if (!wrap) return;
         var headerEl = document.getElementById('iptv_site_header');
@@ -333,7 +307,6 @@
             document.body.insertBefore(wrap, document.body.firstChild);
         }
         initAnimations(wrap);
-        initHeroModeToggle();
         initReviewSliderDrag(wrap.querySelector('._iptv_reviews_wrap'));
     }
 

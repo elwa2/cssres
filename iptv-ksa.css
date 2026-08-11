@@ -291,43 +291,6 @@ html.iptv-landing-active flash-wrapper {
   position: relative !important;
 }
 
-#iptv_master_wrap_2025 ._iptv_tv_mockup {
-  width: 100% !important;
-  max-width: 520px !important;
-  position: relative !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_tv_screen {
-  border-radius: 14px !important;
-  overflow: hidden !important;
-  border: 8px solid #161616 !important;
-  outline: 1px solid rgba(255, 69, 0, 0.25) !important;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.6), 0 0 60px rgba(255, 69, 0, 0.12) !important;
-  background: #000000 !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_tv_screen img {
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_tv_bar {
-  width: 140px !important;
-  height: 10px !important;
-  background: #161616 !important;
-  border-radius: 4px !important;
-  margin: 8px auto 4px !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_tv_stand {
-  width: 120px !important;
-  height: 8px !important;
-  background: #161616 !important;
-  border-radius: 6px !important;
-  margin: 0 auto !important;
-}
-
 #iptv_master_wrap_2025 ._iptv_hero_badge {
   position: absolute !important;
   display: flex !important;
@@ -890,51 +853,6 @@ html.iptv-landing-active flash-wrapper {
   padding: 2px 5px !important;
 }
 
-#iptv_master_wrap_2025 ._iptv_social_icons {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 10px !important;
-  margin-top: 15px !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_social_icons a {
-  width: 34px !important;
-  height: 34px !important;
-  border-radius: 8px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  transition: background 0.25s, transform 0.25s !important;
-  font-size: 0.9rem !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_social_icons a:hover {
-  transform: translateY(-2px) !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_social_icons .social-fb {
-  background: #1877F2 !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_social_icons .social-ig {
-  background: linear-gradient(135deg, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_social_icons .social-tw {
-  background: #000000 !important;
-  border: 1px solid #2a2a2a !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_social_icons .social-yt {
-  background: #FF0000 !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_social_icons .social-wa {
-  background: #25D366 !important;
-}
-
 #iptv_master_wrap_2025 ._iptv_footer_bottom {
   text-align: center !important;
   color: #555555 !important;
@@ -1146,82 +1064,69 @@ html.iptv-landing-active flash-wrapper {
   }
 }
 
-#iptv_master_wrap_2025 ._iptv_hero_mode_btn {
-  position: absolute !important;
-  top: 95px !important;
-  left: 10px !important;
-  z-index: 3 !important;
-  display: flex !important;
-  align-items: center !important;
-  gap: 6px !important;
-  background: rgba(18, 18, 18, 0.85) !important;
-  border: 1px solid #333333 !important;
-  color: #cccccc !important;
-  border-radius: 20px !important;
-  padding: 6px 12px !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  cursor: pointer !important;
-  backdrop-filter: blur(6px) !important;
-  transition: border-color 0.25s, color 0.25s !important;
-  font-family: 'Cairo', sans-serif !important;
-}
-
-#iptv_master_wrap_2025 ._iptv_hero_mode_btn:hover {
-  border-color: #ff4500 !important;
-  color: #ff4500 !important;
-}
-
-/* وضع الصورة فقط في الهيرو (بحجم الشاشة كاملة) */
+/* وضع الصورة فقط في الهيرو (بانر بحجم الشاشة كاملة) */
 html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero {
+  max-width: none !important;
+  width: 100% !important;
   min-height: 100vh !important;
-  padding-top: 90px !important;
-  padding-bottom: 20px !important;
-  justify-content: center !important;
-  align-items: center !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  align-items: stretch !important;
+  justify-content: stretch !important;
 }
 
-html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_text {
+html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero::before {
   display: none !important;
 }
 
 html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_image {
-  flex: 1 1 100% !important;
+  position: absolute !important;
+  inset: 0 !important;
   width: 100% !important;
-  max-width: none !important;
-  justify-content: center !important;
+  height: 100% !important;
+  flex: none !important;
+  margin: 0 !important;
+  display: block !important;
 }
 
-html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_tv_mockup {
-  max-width: 960px !important;
+html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_banner_img {
   width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  display: block !important;
 }
 
-html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_tv_screen {
-  border-width: 10px !important;
-  border-radius: 20px !important;
+html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_badge {
+  position: absolute !important;
+  z-index: 2 !important;
 }
 
-html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_tv_bar,
-html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_tv_stand {
-  display: none !important;
+html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_badge_top {
+  top: 24px !important;
+  right: 24px !important;
+}
+
+html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_badge_bottom {
+  bottom: 24px !important;
+  left: 24px !important;
 }
 
 @media (max-width: 768px) {
   html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero {
-    padding-top: 80px !important;
+    min-height: 60vh !important;
   }
 
-  html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_image {
-    margin-top: 0 !important;
+  html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_badge_top {
+    top: 16px !important;
+    right: 12px !important;
   }
 
-  html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_tv_mockup {
-    max-width: 100% !important;
-  }
-
-  html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_mode_btn {
-    top: 85px !important;
+  html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_badge_bottom {
+    bottom: 16px !important;
+    left: 12px !important;
   }
 }
 
@@ -1570,51 +1475,6 @@ html.iptv-site-active .main-container-wrapper {
 
 #iptv_site_footer ._iptv_footer_links a:hover {
   color: #ff4500 !important;
-}
-
-#iptv_site_footer ._iptv_social_icons {
-  display: flex !important;
-  flex-direction: row !important;
-  gap: 10px !important;
-  margin-top: 15px !important;
-}
-
-#iptv_site_footer ._iptv_social_icons a {
-  width: 34px !important;
-  height: 34px !important;
-  border-radius: 8px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  transition: background 0.25s, transform 0.25s !important;
-  font-size: 0.9rem !important;
-}
-
-#iptv_site_footer ._iptv_social_icons a:hover {
-  transform: translateY(-2px) !important;
-}
-
-#iptv_site_footer ._iptv_social_icons .social-fb {
-  background: #1877F2 !important;
-}
-
-#iptv_site_footer ._iptv_social_icons .social-ig {
-  background: linear-gradient(135deg, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285AEB 90%) !important;
-}
-
-#iptv_site_footer ._iptv_social_icons .social-tw {
-  background: #000000 !important;
-  border: 1px solid #2a2a2a !important;
-}
-
-#iptv_site_footer ._iptv_social_icons .social-yt {
-  background: #FF0000 !important;
-}
-
-#iptv_site_footer ._iptv_social_icons .social-wa {
-  background: #25D366 !important;
 }
 
 #iptv_site_footer ._iptv_footer_bottom {
