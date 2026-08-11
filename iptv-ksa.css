@@ -1094,7 +1094,7 @@ html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_image {
 html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_banner_img {
   width: 100% !important;
   height: 100% !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
   object-position: center !important;
   display: block !important;
 }
@@ -1599,9 +1599,7 @@ html.iptv-site-active ._iptv_to_top._iptv_show {
 
 li.pay-mada.w-12.h-7.bg-white.rounded.flex.items-center.p-1 {
   zoom: 92%;
-}
-
-@media (min-width: 768px) {
+}@media (min-width: 768px) {
 
 html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero {
     margin: 76px 0 0 0 !important;
