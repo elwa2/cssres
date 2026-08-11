@@ -1,6 +1,7 @@
 (function buildIptvLanding() {
     document.documentElement.classList.add('dark');
     document.documentElement.classList.add('iptv-site-active');
+    try { if (localStorage.getItem('iptv_hero_image_only') === '1') document.documentElement.classList.add('iptv-hero-image-only'); } catch (e) {}
 
     function loadFonts() {
         if (document.getElementById('iptv-font-link')) return;
@@ -209,7 +210,9 @@
         '<div class="_iptv_hero_badge _iptv_hero_badge_bottom"><div class="_iptv_badge_icon">4K</div><div><b>جودة فائقة</b><small>بدون تقطيع</small></div></div>' +
         '<div class="_iptv_tv_screen"><img src="https://cdn.twsaa.com/home/12550/010f509b-ce48-4298-9d96-f72e08ee6978.png" alt="IPTV Interface"></div>' +
         '<div class="_iptv_tv_bar"></div><div class="_iptv_tv_stand"></div>' +
-        '</div></div></section>' +
+        '</div></div>' +
+        '<button type="button" id="iptv_hero_mode_btn" class="_iptv_hero_mode_btn" aria-pressed="false"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg><span>إخفاء النص</span></button>' +
+        '</section>' +
 
         '<div class="_iptv_ticker"><div class="_iptv_ticker_track">' + ticker + '</div></div>' +
 
@@ -266,6 +269,56 @@
         }
     }
 
+    function initHeroModeToggle() {
+        var btn = document.getElementById('iptv_hero_mode_btn');
+        if (!btn || btn.getAttribute('data-iptv-bound') === '1') return;
+        btn.setAttribute('data-iptv-bound', '1');
+        var label = btn.querySelector('span');
+        var onNow = function () { return document.documentElement.classList.contains('iptv-hero-image-only'); };
+        function apply() {
+            var on = onNow();
+            btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+            if (label) label.textContent = on ? 'إظهار النص' : 'إخفاء النص';
+        }
+        apply();
+        btn.addEventListener('click', function () {
+            var on = onNow();
+            document.documentElement.classList[on ? 'remove' : 'add']('iptv-hero-image-only');
+            try { localStorage.setItem('iptv_hero_image_only', on ? '0' : '1'); } catch (e) {}
+            apply();
+        });
+    }
+
+    function initReviewSliderDrag(wrap) {
+        if (!wrap || wrap.getAttribute('data-iptv-drag') === '1') return;
+        wrap.setAttribute('data-iptv-drag', '1');
+        var isDown = false, startX = 0, startScrollLeft = 0, moved = false;
+        function onDown(e) {
+            if (e.pointerType === 'mouse' && e.button !== 0) return;
+            isDown = true; moved = false;
+            startX = e.clientX;
+            startScrollLeft = wrap.scrollLeft;
+            wrap.classList.add('_iptv_dragging');
+        }
+        function onMove(e) {
+            if (!isDown) return;
+            var dx = e.clientX - startX;
+            if (!moved && Math.abs(dx) < 5) return;
+            moved = true;
+            wrap.scrollLeft = startScrollLeft - dx;
+            if (e.cancelable) e.preventDefault();
+        }
+        function onUp() {
+            isDown = false; moved = false;
+            wrap.classList.remove('_iptv_dragging');
+        }
+        wrap.addEventListener('pointerdown', onDown);
+        wrap.addEventListener('pointermove', onMove);
+        wrap.addEventListener('pointerup', onUp);
+        wrap.addEventListener('pointercancel', onUp);
+        wrap.addEventListener('mouseleave', onUp);
+    }
+
     function buildUI() {
         if (!document.body) return;
         if (document.getElementById('iptv_master_wrap_2025')) return;
@@ -280,6 +333,8 @@
             document.body.insertBefore(wrap, document.body.firstChild);
         }
         initAnimations(wrap);
+        initHeroModeToggle();
+        initReviewSliderDrag(wrap.querySelector('._iptv_reviews_wrap'));
     }
 
     buildUI();
