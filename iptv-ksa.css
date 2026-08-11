@@ -26,10 +26,6 @@ html.iptv-landing-active flash-wrapper {
 
 #iptv_master_wrap_2025 * {
     box-sizing: border-box !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    line-height: 1.6 !important;
-    letter-spacing: normal !important;
 }
 
 #iptv_master_wrap_2025 a:focus-visible,

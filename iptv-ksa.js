@@ -332,7 +332,38 @@
         initReviewSliderDrag(wrap.querySelector('._iptv_reviews_wrap'));
     }
 
-    buildUI();
-    document.addEventListener('DOMContentLoaded', buildUI);
-    setTimeout(buildUI, 300);
+    function movePlatformBlocks() {
+        var wrap = document.getElementById('iptv_master_wrap_2025');
+        if (!wrap) return;
+        if (wrap.getAttribute('data-iptv-blocks') === '1') return;
+        wrap.setAttribute('data-iptv-blocks', '1');
+        var statsDiv = wrap.querySelector('._iptv_stats');
+        var anchor = null;
+        if (statsDiv && statsDiv.closest) anchor = statsDiv.closest('section');
+        if (!anchor) anchor = statsDiv;
+        var blocks = [];
+        try {
+            blocks = document.querySelectorAll('#app .s-block, .main-container-wrapper .s-block, main .s-block');
+        } catch (e) {}
+        for (var i = 0; i < blocks.length; i++) {
+            var b = blocks[i];
+            if (!b) continue;
+            if ((b.className || '').indexOf('s-block--fixed-banner') > -1) continue;
+            if (wrap.contains(b)) continue;
+            if (anchor && anchor.parentNode) {
+                anchor.parentNode.insertBefore(b, anchor);
+            } else {
+                wrap.appendChild(b);
+            }
+        }
+    }
+
+    function initLanding() {
+        buildUI();
+        movePlatformBlocks();
+    }
+
+    initLanding();
+    document.addEventListener('DOMContentLoaded', initLanding);
+    setTimeout(initLanding, 300);
 })();
