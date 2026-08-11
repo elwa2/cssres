@@ -687,6 +687,13 @@ html.iptv-landing-active flash-wrapper {
     width: 100% !important;
 }
 
+#iptv_master_wrap_2025 ._iptv_reviews_wrap {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 14px !important;
+    width: 100% !important;
+}
+
 #iptv_master_wrap_2025 ._iptv_review_card {
     background-color: #0e0e0e !important;
     border: 1px solid #1a1a1a !important;
@@ -962,7 +969,8 @@ html.iptv-landing-active flash-wrapper {
 @media (max-width: 1024px) {
     #iptv_master_wrap_2025 ._iptv_grid_6 { grid-template-columns: repeat(3, 1fr) !important; }
     #iptv_master_wrap_2025 ._iptv_grid_5 { grid-template-columns: repeat(3, 1fr) !important; }
-    #iptv_master_wrap_2025 ._iptv_grid_4 { grid-template-columns: repeat(2, 1fr) !important; }
+    #iptv_master_wrap_2025 ._iptv_grid_4,
+    #iptv_master_wrap_2025 ._iptv_reviews_wrap { grid-template-columns: repeat(2, 1fr) !important; }
     #iptv_master_wrap_2025 ._iptv_footer_grid { grid-template-columns: 1fr 1fr !important; }
 }
 
@@ -988,6 +996,40 @@ html.iptv-landing-active flash-wrapper {
     #iptv_master_wrap_2025 ._iptv_hero::before { display: none !important; }
     #iptv_master_wrap_2025 ._iptv_hero_badge_top { right: 0 !important; }
     #iptv_master_wrap_2025 ._iptv_hero_badge_bottom { left: 0 !important; }
+}
+
+@media (max-width: 768px) {
+    #iptv_master_wrap_2025 ._iptv_reviews_wrap {
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory !important;
+        -webkit-overflow-scrolling: touch !important;
+        gap: 14px !important;
+        padding: 4px 4px 16px !important;
+        scrollbar-width: thin !important;
+        scrollbar-color: #333333 #111111 !important;
+    }
+
+    #iptv_master_wrap_2025 ._iptv_reviews_wrap ._iptv_review_card {
+        flex: 0 0 82% !important;
+        scroll-snap-align: center !important;
+        margin-bottom: 0 !important;
+    }
+
+    #iptv_master_wrap_2025 ._iptv_reviews_wrap::-webkit-scrollbar {
+        height: 6px !important;
+    }
+
+    #iptv_master_wrap_2025 ._iptv_reviews_wrap::-webkit-scrollbar-track {
+        background: #111111 !important;
+        border-radius: 6px !important;
+    }
+
+    #iptv_master_wrap_2025 ._iptv_reviews_wrap::-webkit-scrollbar-thumb {
+        background: #333333 !important;
+        border-radius: 6px !important;
+    }
 }
 
 /* ===== دارك مود شامل لكل صفحات الموقع (يُفعّل عبر كلاس dark على html) ===== */
