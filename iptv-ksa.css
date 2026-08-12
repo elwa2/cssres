@@ -683,6 +683,39 @@ html.iptv-landing-active flash-wrapper {
     overflow: hidden !important;
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent) !important;
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent) !important;
+    cursor: grab !important;
+    touch-action: pan-y !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_reviews_controls {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_reviews_arrow {
+    flex: 0 0 42px !important;
+    width: 42px !important;
+    height: 42px !important;
+    border: 1px solid rgba(255, 94, 0, 0.45) !important;
+    border-radius: 50% !important;
+    background: #161616 !important;
+    color: #ff9d00 !important;
+    font-size: 22px !important;
+    line-height: 1 !important;
+    cursor: pointer !important;
+    transition: background 0.2s, color 0.2s, transform 0.2s !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_reviews_arrow:hover {
+    background: #ff5e00 !important;
+    color: #ffffff !important;
+    transform: scale(1.06) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_reviews_wrap._iptv_reviews_dragging {
+    cursor: grabbing !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_reviews_track {
@@ -693,6 +726,10 @@ html.iptv-landing-active flash-wrapper {
     width: max-content !important;
     animation: iptvReviewsScroll 80s linear infinite !important;
     will-change: transform !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_reviews_track._iptv_reviews_manual {
+    animation: none !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_reviews_group {
@@ -1064,6 +1101,13 @@ html.iptv-landing-active flash-wrapper {
 }
 
 @media (max-width: 768px) {
+    #iptv_master_wrap_2025 ._iptv_reviews_arrow {
+        flex-basis: 36px !important;
+        width: 36px !important;
+        height: 36px !important;
+        font-size: 18px !important;
+    }
+
     #iptv_master_wrap_2025 ._iptv_reviews_group {
         gap: 12px !important;
         padding-inline-end: 12px !important;
@@ -1620,5 +1664,11 @@ li.pay-mada.w-12.h-7.bg-white.rounded.flex.items-center.p-1 {
 
     html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero {
         margin: 76px 0 0 0 !important;
+    }
+}
+
+@media (min-width: 1024px) {
+    twsaa-slider .slide--one-sixth {
+        width: 23.666667% !important;
     }
 }

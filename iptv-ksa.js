@@ -369,7 +369,7 @@
 
         stats +
 
-        '<section class="_iptv_container"><div class="_iptv_section_title_wrap"><div class="_iptv_title_line"></div><h2 class="_iptv_section_title">آراء عملائنا</h2><div class="_iptv_title_line"></div></div><div class="_iptv_reviews_wrap _iptv_reveal"><div class="_iptv_reviews_track"><div class="_iptv_reviews_group">' + revs + '</div><div class="_iptv_reviews_group">' + revs + '</div></div></div></section>' +
+        '<section class="_iptv_container"><div class="_iptv_section_title_wrap"><div class="_iptv_title_line"></div><h2 class="_iptv_section_title">آراء عملائنا</h2><div class="_iptv_title_line"></div></div><div class="_iptv_reviews_controls"><button type="button" class="_iptv_reviews_arrow _iptv_reviews_arrow_right" aria-label="الآراء التالية">&#8594;</button><div class="_iptv_reviews_wrap _iptv_reveal"><div class="_iptv_reviews_track"><div class="_iptv_reviews_group">' + revs + '</div><div class="_iptv_reviews_group">' + revs + '</div></div></div><button type="button" class="_iptv_reviews_arrow _iptv_reviews_arrow_left" aria-label="الآراء السابقة">&#8592;</button></div></section>' +
 
         '<section class="_iptv_container _iptv_reveal"><div class="_iptv_cta"><h2>جاهز لتجربة ترفيه لا مثيل لها؟</h2><p>اشترك الآن واستمتع بأكثر من 20,000 قناة وأحدث الأفلام والمسلسلات والمباريات بجودة 4K</p><div class="_iptv_cta_actions"><a href="/products" class="_iptv_btn_primary">اشترك الآن</a><a href="https://wa.me/966530554953" class="_iptv_btn_outline"><svg width="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>تواصل عبر واتساب</a></div></div></section>' +
 
@@ -418,6 +418,86 @@
         }
     }
 
+    function initReviewsSlider(wrap) {
+        var viewport = wrap.querySelector('._iptv_reviews_wrap');
+        var track = wrap.querySelector('._iptv_reviews_track');
+        var rightButton = wrap.querySelector('._iptv_reviews_arrow_right');
+        var leftButton = wrap.querySelector('._iptv_reviews_arrow_left');
+        if (!viewport || !track || !rightButton || !leftButton || track.getAttribute('data-iptv-slider-bound') === '1') return;
+        track.setAttribute('data-iptv-slider-bound', '1');
+
+        var offset = 0;
+        var startX = 0;
+        var startOffset = 0;
+        var dragging = false;
+        var resumeTimer;
+
+        function groupWidth() {
+            var group = track.querySelector('._iptv_reviews_group');
+            return group ? group.getBoundingClientRect().width : 0;
+        }
+
+        function clamp(value) {
+            var limit = groupWidth();
+            if (!limit) return value;
+            while (value > 0) value -= limit;
+            while (value < -limit) value += limit;
+            return value;
+        }
+
+        function applyOffset() {
+            offset = clamp(offset);
+            track.style.transform = 'translate3d(' + offset + 'px, 0, 0)';
+        }
+
+        function useManualMode() {
+            if (!track.classList.contains('_iptv_reviews_manual')) {
+                var currentTransform = window.getComputedStyle(track).transform;
+                var match = currentTransform && currentTransform.match(/matrix\([^,]+,\s*[^,]+,\s*[^,]+,\s*[^,]+,\s*([^,]+),/);
+                if (match) offset = parseFloat(match[1]) || 0;
+            }
+            track.classList.add('_iptv_reviews_manual');
+            window.clearTimeout(resumeTimer);
+        }
+
+        function moveBy(distance) {
+            useManualMode();
+            offset += distance;
+            applyOffset();
+        }
+
+        rightButton.addEventListener('click', function () { moveBy(320); });
+        leftButton.addEventListener('click', function () { moveBy(-320); });
+
+        viewport.addEventListener('pointerdown', function (event) {
+            dragging = true;
+            startX = event.clientX;
+            startOffset = offset;
+            useManualMode();
+            viewport.classList.add('_iptv_reviews_dragging');
+            if (viewport.setPointerCapture) viewport.setPointerCapture(event.pointerId);
+        });
+
+        viewport.addEventListener('pointermove', function (event) {
+            if (!dragging) return;
+            offset = startOffset + event.clientX - startX;
+            applyOffset();
+        });
+
+        function stopDragging(event) {
+            if (!dragging) return;
+            dragging = false;
+            viewport.classList.remove('_iptv_reviews_dragging');
+            if (event && viewport.releasePointerCapture && viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
+        }
+
+        viewport.addEventListener('pointerup', stopDragging);
+        viewport.addEventListener('pointercancel', stopDragging);
+        viewport.addEventListener('pointerleave', function (event) {
+            if (dragging && event.buttons === 0) stopDragging(event);
+        });
+    }
+
     function buildUI() {
         if (!document.body) return;
         if (document.getElementById('iptv_master_wrap_2025')) return;
@@ -432,6 +512,7 @@
             document.body.insertBefore(wrap, document.body.firstChild);
         }
         initAnimations(wrap);
+        initReviewsSlider(wrap);
     }
 
     function movePlatformBlocks() {
