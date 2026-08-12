@@ -148,6 +148,37 @@
         }
     }
 
+    function buildPlatformNav() {
+        var srcUl = document.querySelector('#header .main-menu');
+        var target = document.querySelector('#iptv_site_header ._iptv_nav');
+        if (!srcUl || !target) return;
+        if (target.getAttribute('data-iptv-platform-nav') === '1') return;
+        var path = (window.location.pathname || '/').replace(/\/+$/, '') || '/';
+        var html = '<li><a href="/" class="_iptv_nav_link' + (path === '/' ? ' _iptv_nav_link_active' : '') + '">الرئيسية</a></li>';
+        var count = 0;
+        for (var i = 0; i < srcUl.children.length; i++) {
+            var li = srcUl.children[i];
+            if (!li || !li.tagName) continue;
+            if (li.tagName.toLowerCase() !== 'li') continue;
+            var cls = li.className || '';
+            if (cls.indexOf('menu-user-login') > -1) continue;
+            if (cls.indexOf('mobile-menu-slider') > -1) continue;
+            var a = li.querySelector('a');
+            if (!a) continue;
+            var href = a.getAttribute('href');
+            var text = (a.textContent || '').replace(/\s+/g, ' ').trim();
+            if (!href || href === '#' || !text) continue;
+            var hrefPath = href.indexOf(window.location.origin) === 0 ? href.slice(window.location.origin.length) : href;
+            hrefPath = hrefPath.split('#')[0].split('?')[0].replace(/\/+$/, '');
+            var active = path !== '/' && hrefPath === path ? ' _iptv_nav_link_active' : '';
+            count++;
+            html += '<li><a href="' + href + '" class="_iptv_nav_link' + active + '">' + text + '</a></li>';
+        }
+        if (!count) return;
+        target.setAttribute('data-iptv-platform-nav', '1');
+        target.innerHTML = html;
+    }
+
     var shellBound = false;
     function buildSiteShell() {
         if (!document.body) return;
@@ -170,6 +201,7 @@
             bindSideMenu();
             moveStoreActions();
         }
+        buildPlatformNav();
     }
 
     buildSiteShell();
