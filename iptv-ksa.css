@@ -1660,6 +1660,38 @@ li.pay-mada.w-12.h-7.bg-white.rounded.flex.items-center.p-1 {
     zoom: 92%;
 }
 
+/* تخفيف الخلفيات الداكنة الرئيسية */
+html.iptv-site-active body,
+html.dark body {
+    background: linear-gradient(180deg, #303030 0%, #2a2a2a 55%, #242424 100%) !important;
+}
+
+#iptv_master_wrap_2025 {
+    background-color: #2a2a2a !important;
+}
+
+#iptv_site_header,
+#iptv_master_wrap_2025 ._iptv_header {
+    background-color: rgba(42, 42, 42, 0.97) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_ticker {
+    background: linear-gradient(90deg, #242424, #2a2a2a) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_feature_card,
+#iptv_master_wrap_2025 ._iptv_review_card,
+#iptv_master_wrap_2025 ._iptv_price_card,
+#iptv_master_wrap_2025 ._iptv_stats_card {
+    background: #333333 !important;
+    border-color: #444444 !important;
+}
+
+#iptv_site_footer,
+#iptv_master_wrap_2025 ._iptv_footer {
+    background-color: #252525 !important;
+}
+
 @media (min-width: 768px) {
 
     html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero {
