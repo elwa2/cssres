@@ -208,6 +208,93 @@
     document.addEventListener('DOMContentLoaded', buildSiteShell);
     setTimeout(buildSiteShell, 300);
 
+    var productStatsBound = false;
+    function buildProductStats() {
+        if (productStatsBound) return;
+        var title = document.querySelector('h1[data-selia="product-single-title"]');
+        if (!title) {
+            var hs = document.querySelectorAll('h1');
+            for (var i = 0; i < hs.length; i++) {
+                var cls = hs[i].className || '';
+                if (cls.indexOf('da-tm') > -1 && cls.indexOf('leading-normal') > -1) {
+                    title = hs[i];
+                    break;
+                }
+            }
+        }
+        if (!title) return;
+        if (document.querySelector('.custom-product-stats')) return;
+
+        if (!document.getElementById('iptv-product-stats-css')) {
+            var style = document.createElement('style');
+            style.id = 'iptv-product-stats-css';
+            style.textContent = '.custom-product-stats{display:flex;align-items:center;margin-bottom:18px;min-height:26px;background:rgba(17,16,24,.6);border:1px solid rgba(255,200,0,.18);border-radius:10px;padding:9px 16px;width:fit-content;}.custom-stat-item{display:none;align-items:center;gap:10px;animation:iptvStatFade .5s ease-in-out forwards;}.custom-stat-item.active{display:inline-flex;}.custom-stat-icon{display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:linear-gradient(90deg,#FFC800 0%,#FF5E00 45%,#C80000 100%);color:#fff;border-radius:50%;font-size:13px;flex-shrink:0;box-shadow:0 4px 12px rgba(255,94,0,.35);}.custom-stat-text{font-size:14px;color:#e8e8e8;font-weight:600;display:flex;align-items:center;flex-wrap:wrap;gap:4px;line-height:1.4;}.custom-stat-num{color:#FFC800;font-weight:800;}@keyframes iptvStatFade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}';
+            document.head.appendChild(style);
+        }
+
+        var productId = 'default';
+        try {
+            if (window.salla && window.salla.config && window.salla.config.get) {
+                var cfg = window.salla.config.get('page');
+                if (cfg && cfg.id) productId = cfg.id;
+            }
+        } catch (e) {}
+        if (productId === 'default') {
+            var btn = document.querySelector('salla-add-product-button, twsaa-add-product-button, [data-product-id]');
+            if (btn) {
+                productId = btn.getAttribute('product-id') || btn.getAttribute('data-product-id') || productId;
+            }
+        }
+        if (productId === 'default') {
+            var mm = (window.location.pathname || '').match(/\/(\d+)\/?$/);
+            if (mm) productId = mm[1];
+        }
+
+        var key = 'iptv_product_stats_' + productId;
+        var stats = null;
+        try { stats = JSON.parse(localStorage.getItem(key)); } catch (e) {}
+        if (!stats) {
+            stats = {
+                sold: Math.floor(Math.random() * (150000 - 10000) + 10000),
+                reviews: Math.floor(Math.random() * (900 - 50) + 50),
+                rating: (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1),
+                watch: Math.floor(Math.random() * (80 - 15) + 15)
+            };
+        } else {
+            stats.sold += Math.floor(Math.random() * 5) + 1;
+            stats.reviews += Math.floor(Math.random() * 2);
+            stats.watch = Math.floor(Math.random() * (85 - 20) + 20);
+        }
+        try { localStorage.setItem(key, JSON.stringify(stats)); } catch (e) {}
+
+        var formatNum = function (n) {
+            try { return new Intl.NumberFormat('en-US').format(n); } catch (e) { return String(n); }
+        };
+
+        var container = document.createElement('div');
+        container.className = 'custom-product-stats';
+        container.innerHTML =
+            '<div class="custom-stat-item active"><div class="custom-stat-icon">🔥</div><div class="custom-stat-text">يشاهد هذا المنتج الآن <span class="custom-stat-num">' + formatNum(stats.watch) + '</span> شخص</div></div>' +
+            '<div class="custom-stat-item"><div class="custom-stat-icon">⭐</div><div class="custom-stat-text">التقييم <span class="custom-stat-num">' + stats.rating + '</span> من 5 — <span class="custom-stat-num">' + formatNum(stats.reviews) + '</span> تقييم</div></div>' +
+            '<div class="custom-stat-item"><div class="custom-stat-icon">🔥</div><div class="custom-stat-text">تم بيع <span class="custom-stat-num">' + formatNum(stats.sold) + '</span> مرة</div></div>';
+
+        if (title.parentNode) title.parentNode.insertBefore(container, title);
+
+        productStatsBound = true;
+        var items = container.querySelectorAll('.custom-stat-item');
+        var currentIndex = 0;
+        setInterval(function () {
+            if (!items.length) return;
+            items[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % items.length;
+            items[currentIndex].classList.add('active');
+        }, 3500);
+    }
+
+    buildProductStats();
+    document.addEventListener('DOMContentLoaded', buildProductStats);
+    setTimeout(buildProductStats, 300);
+
     if (window.location.pathname !== '/' && window.location.pathname !== '') return;
     if (document.getElementById('iptv_master_wrap_2025')) return;
 
@@ -241,13 +328,27 @@
     for (s = 0; s < featList.length; s++) feats += '<div class="_iptv_feature_card"><div class="_iptv_feature_icon">' + featList[s][0] + '</div><h4>' + featList[s][1] + '</h4><p>' + featList[s][2] + '</p></div>';
 
     var revList = [
-        ['أفضل خدمة IPTV جربتها، جودة عالية واستقرار رهيب.', 'أحمد الغامدي', 'السعودية'],
-        ['محتوى ضخم وأسعار مناسبة، والدعم الفني ممتاز.', 'محمد العتيبي', 'الكويت'],
-        ['أتابع جميع مباريات الدوري بدون تقطيع وجودة ممتازة.', 'سعيد الحربي', 'الإمارات'],
-        ['الأفلام والمسلسلات تتحدث يومياً، أنصح الجميع.', 'خالد الشمري', 'قطر']
+        ['أفضل خدمة IPTV جربتها، جودة عالية واستقرار رهيب.', 'أحمد الغامدي'],
+        ['محتوى ضخم وأسعار مناسبة، والدعم الفني ممتاز.', 'محمد العتيبي'],
+        ['أتابع جميع مباريات الدوري بدون تقطيع وجودة ممتازة.', 'سعيد الحربي'],
+        ['الأفلام والمسلسلات تتحدث يومياً، أنصح الجميع.', 'خالد الشمري'],
+        ['التفعيل فوري والمشاهدة بجودة 4K ممتازة.', 'فهد القحطاني'],
+        ['خدمة أكثر من رائعة، أنصح بها أصحاب الـ Smart TV.', 'عبدالله السبيعي'],
+        ['أكثر من 20 ألف قناة، ما صدقت إنه بسعر كذا.', 'ناصر الدوسري'],
+        ['الدعم الفني رد عليا في دقائق وحل المشكلة.', 'يوسف الزهراني'],
+        ['أفضل اشتراك IPTV بلا منازع من ناحية الجودة.', 'تركي المطيري'],
+        ['مشترك من 6 شهور بدون أي تقطيع.', 'بدر العلي'],
+        ['القنوات الرياضية تشتغل بدون انقطاع حتى وقت المباريات.', 'ماجد الشهري'],
+        ['سهولة في التفعيل والدعم متوفر على مدار الساعة.', 'رائد العنزي'],
+        ['جودة الصورة ممتازة على التلفزيون والموبايل.', 'حسن آل مساعد'],
+        ['أسعار منافسة جداً وخدمة تستاهل كل ريال.', 'فيصل الحربي'],
+        ['تجدد الاشتراك أكثر من مرة وما فيه مثله.', 'أيمن باجابر'],
+        ['محتوى عائلي ممتاز والضبط بسيط جداً.', 'طلال الشمراني'],
+        ['من أفضل الخدمات اللي جربتها في المملكة.', 'عدنان الغامدي'],
+        ['فعلت كل أجهزة البيت وكله شغال.', 'خالد الجهني']
     ];
     var revs = '';
-    for (s = 0; s < revList.length; s++) revs += '<div class="_iptv_review_card"><p class="_iptv_review_text">"' + revList[s][0] + '"</p><div class="_iptv_review_stars">★★★★★</div><div class="_iptv_review_user"><div class="_iptv_review_avatar">👤</div><div class="_iptv_review_info"><span class="_iptv_review_name">' + revList[s][1] + '</span><span class="_iptv_review_country">' + revList[s][2] + '</span></div></div></div>';
+    for (s = 0; s < revList.length; s++) revs += '<div class="_iptv_review_card"><p class="_iptv_review_text">"' + revList[s][0] + '"</p><div class="_iptv_review_stars">★★★★★</div><div class="_iptv_review_user"><div class="_iptv_review_avatar">👤</div><div class="_iptv_review_info"><span class="_iptv_review_name">' + revList[s][1] + '</span></div></div></div>';
 
     var stats = '<section class="_iptv_container"><div class="_iptv_section_title_wrap"><div class="_iptv_title_line"></div><h2 class="_iptv_section_title">أرقام نفخر بها</h2><div class="_iptv_title_line"></div></div><div class="_iptv_stats _iptv_reveal"><div class="_iptv_stats_card"><b data-count="20000" data-suffix="+">0</b><span>قناة ومحتوى</span></div><div class="_iptv_stats_card"><b data-count="100" data-suffix="+">0</b><span>دولة حول العالم</span></div><div class="_iptv_stats_card"><b data-count="10000" data-suffix="+">0</b><span>عميل سعيد</span></div><div class="_iptv_stats_card"><b>24/7</b><span>دعم فني متواصل</span></div></div></section>';
 
@@ -268,7 +369,7 @@
 
         stats +
 
-        '<section class="_iptv_container"><div class="_iptv_section_title_wrap"><div class="_iptv_title_line"></div><h2 class="_iptv_section_title">آراء عملائنا</h2><div class="_iptv_title_line"></div></div><div class="_iptv_reviews_wrap _iptv_reveal">' + revs + '</div></section>' +
+        '<section class="_iptv_container"><div class="_iptv_section_title_wrap"><div class="_iptv_title_line"></div><h2 class="_iptv_section_title">آراء عملائنا</h2><div class="_iptv_title_line"></div></div><div class="_iptv_reviews_wrap _iptv_reveal"><div class="_iptv_reviews_track">' + revs + revs + '</div></div></section>' +
 
         '<section class="_iptv_container _iptv_reveal"><div class="_iptv_cta"><h2>جاهز لتجربة ترفيه لا مثيل لها؟</h2><p>اشترك الآن واستمتع بأكثر من 20,000 قناة وأحدث الأفلام والمسلسلات والمباريات بجودة 4K</p><div class="_iptv_cta_actions"><a href="/products" class="_iptv_btn_primary">اشترك الآن</a><a href="https://wa.me/966530554953" class="_iptv_btn_outline"><svg width="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>تواصل عبر واتساب</a></div></div></section>' +
 
@@ -317,36 +418,6 @@
         }
     }
 
-    function initReviewSliderDrag(wrap) {
-        if (!wrap || wrap.getAttribute('data-iptv-drag') === '1') return;
-        wrap.setAttribute('data-iptv-drag', '1');
-        var isDown = false, startX = 0, startScrollLeft = 0, moved = false;
-        function onDown(e) {
-            if (e.pointerType === 'mouse' && e.button !== 0) return;
-            isDown = true; moved = false;
-            startX = e.clientX;
-            startScrollLeft = wrap.scrollLeft;
-            wrap.classList.add('_iptv_dragging');
-        }
-        function onMove(e) {
-            if (!isDown) return;
-            var dx = e.clientX - startX;
-            if (!moved && Math.abs(dx) < 5) return;
-            moved = true;
-            wrap.scrollLeft = startScrollLeft - dx;
-            if (e.cancelable) e.preventDefault();
-        }
-        function onUp() {
-            isDown = false; moved = false;
-            wrap.classList.remove('_iptv_dragging');
-        }
-        wrap.addEventListener('pointerdown', onDown);
-        wrap.addEventListener('pointermove', onMove);
-        wrap.addEventListener('pointerup', onUp);
-        wrap.addEventListener('pointercancel', onUp);
-        wrap.addEventListener('mouseleave', onUp);
-    }
-
     function buildUI() {
         if (!document.body) return;
         if (document.getElementById('iptv_master_wrap_2025')) return;
@@ -361,7 +432,6 @@
             document.body.insertBefore(wrap, document.body.firstChild);
         }
         initAnimations(wrap);
-        initReviewSliderDrag(wrap.querySelector('._iptv_reviews_wrap'));
     }
 
     function movePlatformBlocks() {

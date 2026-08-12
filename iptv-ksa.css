@@ -1,5 +1,16 @@
+.bg-brand-primary {
+    background: linear-gradient(90deg, #FFC800 0%, #FF5E00 45%, #C80000 100%);
+}
+
+.text-brand-primary {
+    background: linear-gradient(90deg, #FFC800 0%, #FF5E00 45%, #C80000 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 html.iptv-landing-active body {
-    background: #030303 !important;
+    background: linear-gradient(180deg, #15151b 0%, #0d0d13 45%, #0a0a0e 100%) !important;
 }
 
 html.iptv-landing-active .store-header,
@@ -17,7 +28,10 @@ html.iptv-landing-active flash-wrapper {
     display: block !important;
     width: 100% !important;
     min-height: 100vh !important;
-    background-color: #0a0a0a !important;
+    background-color: #0f0f14 !important;
+    background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%2780%27%20height%3D%2780%27%20viewBox%3D%270%200%2080%2080%27%3E%3Cg%20fill%3D%27%23FFC800%27%20fill-opacity%3D%270.05%27%3E%3Ccircle%20cx%3D%276%27%20cy%3D%276%27%20r%3D%271.6%27%2F%3E%3Ccircle%20cx%3D%2744%27%20cy%3D%2744%27%20r%3D%271.6%27%2F%3E%3Ccircle%20cx%3D%2726%27%20cy%3D%2764%27%20r%3D%271.6%27%2F%3E%3Ccircle%20cx%3D%2760%27%20cy%3D%2718%27%20r%3D%271.2%27%2F%3E%3C%2Fg%3E%3Cpath%20d%3D%27M0%2080%20L80%200%27%20stroke%3D%27%23FF5E00%27%20stroke-opacity%3D%270.03%27%20stroke-width%3D%271%27%2F%3E%3C%2Fsvg%3E"), radial-gradient(1100px 600px at 85% -10%, rgba(255, 94, 0, 0.1) 0%, transparent 60%), radial-gradient(900px 500px at -5% 110%, rgba(200, 0, 0, 0.08) 0%, transparent 60%) !important;
+    background-size: 80px 80px, 100% 100%, 100% 100% !important;
+    background-repeat: repeat, no-repeat, no-repeat !important;
     font-family: 'Cairo', sans-serif !important;
     color: #ffffff !important;
     direction: rtl !important;
@@ -31,7 +45,7 @@ html.iptv-landing-active flash-wrapper {
 #iptv_master_wrap_2025 a:focus-visible,
 #iptv_master_wrap_2025 button:focus-visible,
 #iptv_master_wrap_2025 [tabindex]:focus-visible {
-    outline: 2px solid #ff4500 !important;
+    outline: 2px solid #FF5E00 !important;
     outline-offset: 2px !important;
 }
 
@@ -91,8 +105,8 @@ html.iptv-landing-active flash-wrapper {
     left: 0 !important;
     right: 0 !important;
     height: 75px !important;
-    background-color: rgba(10, 10, 10, 0.97) !important;
-    border-bottom: 1px solid rgba(255, 69, 0, 0.15) !important;
+    background-color: rgba(17, 16, 24, 0.97) !important;
+    border-bottom: 1px solid rgba(255, 200, 0, 0.16) !important;
     display: flex !important;
     flex-direction: row !important;
     justify-content: space-between !important;
@@ -125,7 +139,7 @@ html.iptv-landing-active flash-wrapper {
 
 #iptv_master_wrap_2025 ._iptv_nav_link:hover,
 #iptv_master_wrap_2025 ._iptv_nav_link_active {
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_header_actions {
@@ -136,7 +150,7 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_btn_primary {
-    background: linear-gradient(135deg, #ff4500, #cc0000) !important;
+    background: linear-gradient(90deg, #FFC800 0%, #FF5E00 45%, #C80000 100%) !important;
     color: #ffffff !important;
     padding: 10px 24px !important;
     border-radius: 8px !important;
@@ -152,12 +166,12 @@ html.iptv-landing-active flash-wrapper {
 
 #iptv_master_wrap_2025 ._iptv_btn_primary:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.35) !important;
+    box-shadow: 0 8px 20px rgba(255, 94, 0, 0.35) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_btn_outline {
     background: transparent !important;
-    border: 1px solid #ff4500 !important;
+    border: 1px solid #FF5E00 !important;
     color: #ffffff !important;
     padding: 10px 24px !important;
     border-radius: 8px !important;
@@ -173,7 +187,7 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_btn_outline:hover {
-    background: rgba(255, 69, 0, 0.12) !important;
+    background: rgba(255, 94, 0, 0.12) !important;
     transform: translateY(-2px) !important;
 }
 
@@ -191,7 +205,7 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_user_icon:hover {
-    border-color: #ff4500 !important;
+    border-color: #FF5E00 !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_container {
@@ -220,7 +234,7 @@ html.iptv-landing-active flash-wrapper {
     left: -10% !important;
     width: 55% !important;
     height: 100% !important;
-    background: radial-gradient(ellipse, rgba(255, 69, 0, 0.09) 0%, transparent 70%) !important;
+    background: radial-gradient(ellipse, rgba(255, 94, 0, 0.09) 0%, transparent 70%) !important;
     pointer-events: none !important;
     animation: iptvGlow 6s ease-in-out infinite !important;
 }
@@ -242,7 +256,7 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_text_gradient {
-    background: linear-gradient(135deg, #ff4500, #ff1100) !important;
+    background: linear-gradient(90deg, #FFC800 0%, #FF5E00 45%, #C80000 100%) !important;
     -webkit-background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
 }
@@ -316,7 +330,7 @@ html.iptv-landing-active flash-wrapper {
     width: 38px !important;
     height: 38px !important;
     border-radius: 10px !important;
-    background: linear-gradient(135deg, #ff4500, #cc0000) !important;
+    background: linear-gradient(90deg, #FFC800 0%, #FF5E00 45%, #C80000 100%) !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -365,7 +379,7 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_ticker span b {
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_section_title_wrap {
@@ -386,7 +400,7 @@ html.iptv-landing-active flash-wrapper {
 #iptv_master_wrap_2025 ._iptv_title_line {
     width: 35px !important;
     height: 2px !important;
-    background-color: #ff4500 !important;
+    background-color: #FF5E00 !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_grid_6 {
@@ -415,7 +429,7 @@ html.iptv-landing-active flash-wrapper {
 
 #iptv_master_wrap_2025 ._iptv_cat_card:hover {
     transform: translateY(-4px) !important;
-    border-color: rgba(255, 69, 0, 0.4) !important;
+    border-color: rgba(255, 94, 0, 0.4) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_cat_overlay {
@@ -469,21 +483,21 @@ html.iptv-landing-active flash-wrapper {
 
 #iptv_master_wrap_2025 ._iptv_feature_card:hover {
     transform: translateY(-3px) !important;
-    border-color: rgba(255, 69, 0, 0.35) !important;
+    border-color: rgba(255, 94, 0, 0.35) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_feature_icon {
     width: 50px !important;
     height: 50px !important;
-    border: 1px solid #ff4500 !important;
+    border: 1px solid #FF5E00 !important;
     border-radius: 12px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     font-size: 1.4rem !important;
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
     margin-bottom: 14px !important;
-    background-color: rgba(255, 69, 0, 0.06) !important;
+    background-color: rgba(255, 94, 0, 0.06) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_feature_card h4 {
@@ -516,13 +530,13 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_stats_card:hover {
-    border-color: rgba(255, 69, 0, 0.4) !important;
+    border-color: rgba(255, 94, 0, 0.4) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_stats_card b {
     font-size: 2.4rem !important;
     font-weight: 900 !important;
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
     line-height: 1 !important;
     display: block !important;
     margin-bottom: 8px !important;
@@ -564,7 +578,7 @@ html.iptv-landing-active flash-wrapper {
 
 #iptv_master_wrap_2025 ._iptv_device_item:hover ._iptv_device_icon {
     transform: translateY(-3px) !important;
-    border-color: rgba(255, 69, 0, 0.4) !important;
+    border-color: rgba(255, 94, 0, 0.4) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_device_text {
@@ -599,16 +613,16 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_price_card_popular {
-    border: 2px solid #ff4500 !important;
+    border: 2px solid #FF5E00 !important;
     background: linear-gradient(180deg, #1a0a04 0%, #0e0e0e 100%) !important;
-    box-shadow: 0 0 40px rgba(255, 69, 0, 0.15), 0 0 80px rgba(255, 69, 0, 0.05) !important;
+    box-shadow: 0 0 40px rgba(255, 94, 0, 0.15), 0 0 80px rgba(255, 94, 0, 0.05) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_ribbon {
     position: absolute !important;
     top: 18px !important;
     right: -32px !important;
-    background: linear-gradient(135deg, #ff4500, #cc0000) !important;
+    background: linear-gradient(90deg, #FFC800 0%, #FF5E00 45%, #C80000 100%) !important;
     color: #ffffff !important;
     padding: 4px 35px !important;
     font-size: 0.8rem !important;
@@ -626,7 +640,7 @@ html.iptv-landing-active flash-wrapper {
 #iptv_master_wrap_2025 ._iptv_price_value {
     font-size: 3.5rem !important;
     font-weight: 900 !important;
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
     line-height: 1 !important;
     margin-bottom: 20px !important;
     display: flex !important;
@@ -665,30 +679,48 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_reviews_wrap {
-    display: grid !important;
-    grid-template-columns: repeat(4, 1fr) !important;
-    gap: 14px !important;
     width: 100% !important;
-    touch-action: pan-y !important;
-    cursor: grab !important;
-    user-select: none !important;
-    -webkit-user-select: none !important;
+    overflow: hidden !important;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent) !important;
+    mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent) !important;
 }
 
-#iptv_master_wrap_2025 ._iptv_reviews_wrap._iptv_dragging {
-    cursor: grabbing !important;
-    scroll-snap-type: none !important;
+#iptv_master_wrap_2025 ._iptv_reviews_track {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: stretch !important;
+    gap: 14px !important;
+    width: max-content !important;
+    animation: iptvReviewsScroll 80s linear infinite !important;
+    will-change: transform !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_reviews_wrap:hover ._iptv_reviews_track {
+    animation-play-state: paused !important;
+}
+
+@keyframes iptvReviewsScroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
 }
 
 #iptv_master_wrap_2025 ._iptv_review_card {
-    background-color: #0e0e0e !important;
-    border: 1px solid #1a1a1a !important;
+    background-color: #14141a !important;
+    border: 1px solid rgba(255, 200, 0, 0.12) !important;
     border-radius: 12px !important;
     padding: 22px !important;
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
     text-align: center !important;
+    min-width: 320px !important;
+    max-width: 320px !important;
+    flex: 0 0 auto !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_review_text {
@@ -698,7 +730,7 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_review_stars {
-    color: #ffb400 !important;
+    color: #FFC800 !important;
     font-size: 1.1rem !important;
     margin-bottom: 14px !important;
     letter-spacing: 2px !important;
@@ -741,18 +773,13 @@ html.iptv-landing-active flash-wrapper {
     font-weight: 700 !important;
 }
 
-#iptv_master_wrap_2025 ._iptv_review_country {
-    font-size: 0.75rem !important;
-    color: #666666 !important;
-}
-
 #iptv_master_wrap_2025 ._iptv_cta {
     position: relative !important;
     overflow: hidden !important;
     text-align: center !important;
     padding: 60px 20px !important;
     border-radius: 20px !important;
-    border: 1px solid rgba(255, 69, 0, 0.2) !important;
+    border: 1px solid rgba(255, 94, 0, 0.2) !important;
     background: linear-gradient(135deg, #1a0a04, #0a0a0a 60%) !important;
 }
 
@@ -763,7 +790,7 @@ html.iptv-landing-active flash-wrapper {
     left: -20% !important;
     width: 60% !important;
     height: 200% !important;
-    background: radial-gradient(ellipse, rgba(255, 69, 0, 0.2), transparent 70%) !important;
+    background: radial-gradient(ellipse, rgba(255, 94, 0, 0.2), transparent 70%) !important;
     pointer-events: none !important;
     animation: iptvGlow 7s ease-in-out infinite !important;
 }
@@ -790,8 +817,8 @@ html.iptv-landing-active flash-wrapper {
 
 #iptv_master_wrap_2025 ._iptv_footer {
     display: block !important;
-    background-color: #000000 !important;
-    border-top: 1px solid #111111 !important;
+    background-color: #121218 !important;
+    border-top: 1px solid rgba(255, 200, 0, 0.12) !important;
     padding: 50px 5% 20px !important;
 }
 
@@ -832,7 +859,7 @@ html.iptv-landing-active flash-wrapper {
 }
 
 #iptv_master_wrap_2025 ._iptv_footer_links a:hover {
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_payments {
@@ -873,13 +900,13 @@ html.iptv-landing-active flash-wrapper {
 #iptv_master_wrap_2025 ._iptv_fab {
     width: 56px !important;
     height: 56px !important;
-    background: linear-gradient(135deg, #ff4500, #cc0000) !important;
+    background: linear-gradient(90deg, #FFC800 0%, #FF5E00 45%, #C80000 100%) !important;
     border-radius: 50% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     color: #ffffff !important;
-    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.35) !important;
+    box-shadow: 0 8px 20px rgba(255, 94, 0, 0.35) !important;
     text-decoration: none !important;
     cursor: pointer !important;
     transition: transform 0.25s, box-shadow 0.25s !important;
@@ -887,7 +914,7 @@ html.iptv-landing-active flash-wrapper {
 
 #iptv_master_wrap_2025 ._iptv_fab:hover {
     transform: translateY(-3px) !important;
-    box-shadow: 0 12px 30px rgba(255, 69, 0, 0.45) !important;
+    box-shadow: 0 12px 30px rgba(255, 94, 0, 0.45) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_fab_wa {
@@ -904,7 +931,7 @@ html.iptv-landing-active flash-wrapper {
     border-radius: 50% !important;
     background: #161616 !important;
     border: 1px solid #2a2a2a !important;
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
     cursor: pointer !important;
     display: flex !important;
     align-items: center !important;
@@ -931,8 +958,7 @@ html.iptv-landing-active flash-wrapper {
         grid-template-columns: repeat(3, 1fr) !important;
     }
 
-    #iptv_master_wrap_2025 ._iptv_grid_4,
-    #iptv_master_wrap_2025 ._iptv_reviews_wrap {
+    #iptv_master_wrap_2025 ._iptv_grid_4 {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 
@@ -1027,36 +1053,14 @@ html.iptv-landing-active flash-wrapper {
 }
 
 @media (max-width: 768px) {
-    #iptv_master_wrap_2025 ._iptv_reviews_wrap {
-        display: flex !important;
-        flex-direction: row !important;
-        overflow-x: auto !important;
-        scroll-snap-type: x mandatory !important;
-        -webkit-overflow-scrolling: touch !important;
-        gap: 14px !important;
-        padding: 4px 4px 16px !important;
-        scrollbar-width: thin !important;
-        scrollbar-color: #333333 #111111 !important;
+    #iptv_master_wrap_2025 ._iptv_reviews_track {
+        gap: 12px !important;
+        animation-duration: 60s !important;
     }
 
-    #iptv_master_wrap_2025 ._iptv_reviews_wrap ._iptv_review_card {
-        flex: 0 0 82% !important;
-        scroll-snap-align: center !important;
-        margin-bottom: 0 !important;
-    }
-
-    #iptv_master_wrap_2025 ._iptv_reviews_wrap::-webkit-scrollbar {
-        height: 6px !important;
-    }
-
-    #iptv_master_wrap_2025 ._iptv_reviews_wrap::-webkit-scrollbar-track {
-        background: #111111 !important;
-        border-radius: 6px !important;
-    }
-
-    #iptv_master_wrap_2025 ._iptv_reviews_wrap::-webkit-scrollbar-thumb {
-        background: #333333 !important;
-        border-radius: 6px !important;
+    #iptv_master_wrap_2025 ._iptv_review_card {
+        min-width: 265px !important;
+        max-width: 265px !important;
     }
 }
 
@@ -1129,17 +1133,17 @@ html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero_badge_bottom {
 /* ===== دارك مود شامل لكل صفحات الموقع (يُفعّل عبر كلاس dark على html) ===== */
 
 html.dark body {
-    background: #0a0a0a !important;
+    background: linear-gradient(180deg, #131318 0%, #0d0d12 50%, #0a0a0e 100%) !important;
     color: #e6e6e6 !important;
 }
 
 html.dark {
-    --color-primary: #ff4500;
+    --color-primary: #FF5E00;
     --color-primary-dark: #cc0000;
-    --color-primary-light: #ff4500;
-    --dark-bg-main: #0a0a0a;
-    --dark-bg-sec: #141414;
-    --dark-grey: #1b1b1b;
+    --color-primary-light: #FFC800;
+    --dark-bg-main: #101016;
+    --dark-bg-sec: #1a1a22;
+    --dark-grey: #24242e;
     --dark-text-main: #ffffff;
     --dark-text-sec: #b8b8b8;
     --text-btn: #ffffff;
@@ -1223,8 +1227,8 @@ html.iptv-site-active .main-container-wrapper {
     left: 0 !important;
     right: 0 !important;
     height: 75px !important;
-    background-color: rgba(10, 10, 10, 0.97) !important;
-    border-bottom: 1px solid rgba(255, 69, 0, 0.15) !important;
+    background-color: rgba(17, 16, 24, 0.97) !important;
+    border-bottom: 1px solid rgba(255, 200, 0, 0.16) !important;
     display: grid !important;
     grid-template-columns: 1fr auto 1fr !important;
     align-items: center !important;
@@ -1271,7 +1275,7 @@ html.iptv-site-active .main-container-wrapper {
 
 #iptv_site_header ._iptv_nav_link:hover,
 #iptv_site_header ._iptv_nav_link_active {
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
 }
 
 #iptv_site_header ._iptv_header_actions {
@@ -1284,7 +1288,7 @@ html.iptv-site-active .main-container-wrapper {
 }
 
 #iptv_site_header ._iptv_btn_primary {
-    background: linear-gradient(135deg, #ff4500, #cc0000) !important;
+    background: linear-gradient(90deg, #FFC800 0%, #FF5E00 45%, #C80000 100%) !important;
     color: #ffffff !important;
     padding: 10px 24px !important;
     border-radius: 8px !important;
@@ -1300,7 +1304,7 @@ html.iptv-site-active .main-container-wrapper {
 
 #iptv_site_header ._iptv_btn_primary:hover {
     transform: translateY(-2px) !important;
-    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.35) !important;
+    box-shadow: 0 8px 20px rgba(255, 94, 0, 0.35) !important;
 }
 
 #iptv_site_header ._iptv_user_icon {
@@ -1317,7 +1321,7 @@ html.iptv-site-active .main-container-wrapper {
 }
 
 #iptv_site_header ._iptv_user_icon:hover {
-    border-color: #ff4500 !important;
+    border-color: #FF5E00 !important;
 }
 
 #iptv_site_header #show-sideMenu {
@@ -1337,8 +1341,8 @@ html.iptv-site-active .main-container-wrapper {
 }
 
 #iptv_site_header #show-sideMenu:hover {
-    border-color: #ff4500 !important;
-    color: #ff4500 !important;
+    border-color: #FF5E00 !important;
+    color: #FF5E00 !important;
 }
 
 @media (max-width: 768px) {
@@ -1375,8 +1379,8 @@ html.iptv-site-active .main-container-wrapper {
 #iptv_site_header ._iptv_header_shop #customerLogin:hover,
 #iptv_site_header ._iptv_header_shop .header-btn.btn:hover,
 #iptv_site_header ._iptv_header_shop .search-btn:hover {
-    border-color: #ff4500 !important;
-    color: #ff4500 !important;
+    border-color: #FF5E00 !important;
+    color: #FF5E00 !important;
     opacity: 1 !important;
 }
 
@@ -1396,7 +1400,7 @@ html.iptv-site-active .main-container-wrapper {
 }
 
 #iptv_site_header ._iptv_header_shop .s-cart-summary-count {
-    background-color: #ff4500 !important;
+    background-color: #FF5E00 !important;
     height: 18px !important;
     width: 18px !important;
     font-size: 11px !important;
@@ -1428,8 +1432,8 @@ html.iptv-site-active .main-container-wrapper {
 /* الفوتر الثابت */
 #iptv_site_footer {
     display: block !important;
-    background-color: #000000 !important;
-    border-top: 1px solid #111111 !important;
+    background-color: #121218 !important;
+    border-top: 1px solid rgba(255, 200, 0, 0.12) !important;
     padding: 50px 5% 20px !important;
 }
 
@@ -1470,7 +1474,7 @@ html.iptv-site-active .main-container-wrapper {
 }
 
 #iptv_site_footer ._iptv_footer_links a:hover {
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
 }
 
 #iptv_site_footer ._iptv_footer_bottom {
@@ -1498,13 +1502,13 @@ html.iptv-site-active ._iptv_fab_stack {
 html.iptv-site-active ._iptv_fab {
     width: 56px !important;
     height: 56px !important;
-    background: linear-gradient(135deg, #ff4500, #cc0000) !important;
+    background: linear-gradient(90deg, #FFC800 0%, #FF5E00 45%, #C80000 100%) !important;
     border-radius: 50% !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
     color: #ffffff !important;
-    box-shadow: 0 8px 20px rgba(255, 69, 0, 0.35) !important;
+    box-shadow: 0 8px 20px rgba(255, 94, 0, 0.35) !important;
     text-decoration: none !important;
     cursor: pointer !important;
     transition: transform 0.25s, box-shadow 0.25s !important;
@@ -1512,7 +1516,7 @@ html.iptv-site-active ._iptv_fab {
 
 html.iptv-site-active ._iptv_fab:hover {
     transform: translateY(-3px) !important;
-    box-shadow: 0 12px 30px rgba(255, 69, 0, 0.45) !important;
+    box-shadow: 0 12px 30px rgba(255, 94, 0, 0.45) !important;
 }
 
 html.iptv-site-active ._iptv_fab_wa {
@@ -1529,7 +1533,7 @@ html.iptv-site-active ._iptv_to_top {
     border-radius: 50% !important;
     background: #161616 !important;
     border: 1px solid #2a2a2a !important;
-    color: #ff4500 !important;
+    color: #FF5E00 !important;
     cursor: pointer !important;
     display: flex !important;
     align-items: center !important;
