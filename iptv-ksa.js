@@ -428,9 +428,15 @@
 
         var offset = 0;
         var startX = 0;
+        var lastX = 0;
         var startOffset = 0;
+        var startTime = 0;
+        var lastTime = 0;
         var dragging = false;
+        var animating = false;
+        var velocity = 0;
         var resumeTimer;
+        var animationFrame;
 
         function groupWidth() {
             var group = track.querySelector('._iptv_reviews_group');
@@ -445,8 +451,13 @@
             return value;
         }
 
-        function applyOffset() {
+        function applyOffset(smooth) {
             offset = clamp(offset);
+            if (smooth) {
+                track.style.transition = 'transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            } else {
+                track.style.transition = 'none';
+            }
             track.style.transform = 'translate3d(' + offset + 'px, 0, 0)';
         }
 
@@ -458,37 +469,72 @@
             }
             track.classList.add('_iptv_reviews_manual');
             window.clearTimeout(resumeTimer);
+            window.cancelAnimationFrame(animationFrame);
+            animating = false;
+        }
+
+        function momentum() {
+            if (!animating || Math.abs(velocity) < 0.1) {
+                animating = false;
+                return;
+            }
+            offset += velocity;
+            applyOffset(false);
+            velocity *= 0.92;
+            animationFrame = window.requestAnimationFrame(momentum);
         }
 
         function moveBy(distance) {
             useManualMode();
+            track.style.transition = 'none';
             offset += distance;
-            applyOffset();
+            offset = clamp(offset);
+            track.style.transform = 'translate3d(' + offset + 'px, 0, 0)';
+            setTimeout(function () {
+                track.style.transition = 'transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
+            }, 16);
         }
 
-        rightButton.addEventListener('click', function () { moveBy(320); });
-        leftButton.addEventListener('click', function () { moveBy(-320); });
+        rightButton.addEventListener('click', function () { moveBy(340); });
+        leftButton.addEventListener('click', function () { moveBy(-340); });
 
         viewport.addEventListener('pointerdown', function (event) {
+            useManualMode();
             dragging = true;
             startX = event.clientX;
+            lastX = startX;
             startOffset = offset;
-            useManualMode();
+            startTime = Date.now();
+            lastTime = startTime;
+            velocity = 0;
             viewport.classList.add('_iptv_reviews_dragging');
             if (viewport.setPointerCapture) viewport.setPointerCapture(event.pointerId);
-        });
+        }, { passive: true });
 
         viewport.addEventListener('pointermove', function (event) {
             if (!dragging) return;
-            offset = startOffset + event.clientX - startX;
-            applyOffset();
-        });
+            var currentTime = Date.now();
+            var deltaTime = Math.max(currentTime - lastTime, 16);
+            offset = startOffset + (event.clientX - startX);
+            velocity = (event.clientX - lastX) / deltaTime;
+            lastX = event.clientX;
+            lastTime = currentTime;
+            applyOffset(false);
+        }, { passive: true });
 
         function stopDragging(event) {
             if (!dragging) return;
             dragging = false;
             viewport.classList.remove('_iptv_reviews_dragging');
-            if (event && viewport.releasePointerCapture && viewport.hasPointerCapture(event.pointerId)) viewport.releasePointerCapture(event.pointerId);
+            if (event && viewport.releasePointerCapture && viewport.hasPointerCapture && viewport.hasPointerCapture(event.pointerId)) {
+                viewport.releasePointerCapture(event.pointerId);
+            }
+            if (Math.abs(velocity) > 0.1) {
+                animating = true;
+                momentum();
+            } else {
+                applyOffset(true);
+            }
         }
 
         viewport.addEventListener('pointerup', stopDragging);

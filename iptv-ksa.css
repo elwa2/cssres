@@ -684,7 +684,11 @@ html.iptv-landing-active flash-wrapper {
     -webkit-mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent) !important;
     mask-image: linear-gradient(90deg, transparent, #000 6%, #000 94%, transparent) !important;
     cursor: grab !important;
-    touch-action: pan-y !important;
+    touch-action: manipulation !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    user-select: none !important;
+    flex: 1 1 auto !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_reviews_controls {
@@ -705,13 +709,21 @@ html.iptv-landing-active flash-wrapper {
     font-size: 22px !important;
     line-height: 1 !important;
     cursor: pointer !important;
-    transition: background 0.2s, color 0.2s, transform 0.2s !important;
+    transition: background 0.2s ease-out, color 0.2s ease-out, transform 0.2s ease-out, box-shadow 0.2s ease-out !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_reviews_arrow:active {
+    transform: scale(0.95) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_reviews_arrow:hover {
     background: #ff5e00 !important;
     color: #ffffff !important;
-    transform: scale(1.06) !important;
+    transform: scale(1.08) !important;
+    box-shadow: 0 4px 12px rgba(255, 94, 0, 0.3) !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_reviews_wrap._iptv_reviews_dragging {
@@ -724,8 +736,9 @@ html.iptv-landing-active flash-wrapper {
     flex-wrap: nowrap !important;
     align-items: stretch !important;
     width: max-content !important;
-    animation: iptvReviewsScroll 80s linear infinite !important;
     will-change: transform !important;
+    transform-origin: left center !important;
+    transition: none !important;
 }
 
 #iptv_master_wrap_2025 ._iptv_reviews_track._iptv_reviews_manual {
