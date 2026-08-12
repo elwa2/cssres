@@ -960,14 +960,15 @@ body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.justify-cent
 
 @media(max-width: 767px) {
     body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.flex-col.w-1\/2.sm\:w-auto {
-        width: 10rem;
+        width: 9rem;
         display: flex;
+        zoom: 84%;
     }
 
     body#app > div:nth-of-type(2) > main > section:nth-of-type(4) {
-        margin-top: -9rem;
+        margin-top: -8rem;
     }body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.justify-center {
-    padding-right: 30px;
+    padding-right: 26px;
 }
 }
  
