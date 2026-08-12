@@ -943,3 +943,28 @@ apple-pay-button, .s-apple-pay-button, #apple-pay-button, button[aria-label*="Ap
     background-color: #ffffff;
    
 }
+body#app > div:nth-of-type(2) > main > section:nth-of-type(4) {
+    margin-top: -23rem;
+}
+
+body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.flex-col.w-1\/2.sm\:w-auto {
+    width: 18rem;
+    display: flex;
+}
+
+body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.justify-center {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-right: 73px;
+}
+
+@media(max-width: 767px) {
+    body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.flex-col.w-1\/2.sm\:w-auto {
+        width: 12rem;
+        display: flex;
+    }
+
+    body#app > div:nth-of-type(2) > main > section:nth-of-type(4) {
+        margin-top: -8rem;
+    }
+}
