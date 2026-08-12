@@ -992,3 +992,24 @@ body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.justify-cent
   .enhanced-label {
     font-size: 0 !important;
 }
+
+
+
+
+button[product-id].s-button-element.s-button-btn.s-button-primary-outline .s-button-text{
+  font-size:0 !important;
+}
+
+button[product-id].s-button-element.s-button-btn.s-button-primary-outline .s-button-text::after{
+  content:"إضافة" !important;    content: "اقتناء" !important;  
+
+  font-size:14px !important;
+  color:#fff !important;
+}
+
+button[product-id].s-button-element.s-button-btn.s-button-primary-outline .sicon-shopping{
+  display:none !important;
+  margin:0 !important;
+}
+
+ 
