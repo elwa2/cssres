@@ -944,7 +944,7 @@ apple-pay-button, .s-apple-pay-button, #apple-pay-button, button[aria-label*="Ap
    
 }
 body#app > div:nth-of-type(2) > main > section:nth-of-type(4) {
-    margin-top: -23rem;
+    margin-top: -18rem;
 }
 
 body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.flex-col.w-1\/2.sm\:w-auto {
@@ -965,9 +965,9 @@ body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.justify-cent
     }
 
     body#app > div:nth-of-type(2) > main > section:nth-of-type(4) {
-        margin-top: -8rem;
+        margin-top: -9rem;
     }body#app > div:nth-of-type(2) > main > section:nth-of-type(4) .flex.justify-center {
-    padding-right: 50px;
+    padding-right: 30px;
 }
 }
  
