@@ -291,9 +291,87 @@
         }, 3500);
     }
 
+    function buildProductReviews() {
+        var panel = document.getElementById('nav-comments');
+        if (!panel) return;
+        if (panel.querySelector('.custom-product-reviews')) return;
+        if (panel.getAttribute('data-iptv-reviews-bound') === '1') return;
+        panel.setAttribute('data-iptv-reviews-bound', '1');
+
+        if (!document.getElementById('iptv-product-reviews-css')) {
+            var style = document.createElement('style');
+            style.id = 'iptv-product-reviews-css';
+            style.textContent = '.custom-product-reviews{margin-top:6px}.custom-pr-summary{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:rgba(17,16,24,.6);border:1px solid rgba(255,200,0,.18);border-radius:12px;padding:20px;margin-bottom:20px}.custom-pr-rating{display:flex;align-items:baseline;gap:8px}.custom-pr-rating b{font-size:42px;color:#FFC800;font-weight:800;line-height:1}.custom-pr-rating small{color:#e8e8e8;font-size:14px}.custom-pr-stars{color:#FFC800;font-size:20px;letter-spacing:2px}.custom-pr-count{color:#b0b0b0;font-size:14px}.custom-pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.custom-pr-card{background:rgba(17,16,24,.6);border:1px solid rgba(255,200,0,.12);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:10px}.custom-pr-card .custom-pr-stars{font-size:15px}.custom-pr-card p{font-size:13.5px;color:#cccccc;line-height:1.7;margin:0}.custom-pr-user{display:flex;align-items:center;gap:8px;margin-top:auto}.custom-pr-avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(90deg,#FFC800,#FF5E00);display:flex;align-items:center;justify-content:center;font-size:13px;color:#fff;font-weight:700;flex-shrink:0}.custom-pr-name{font-size:13px;color:#ffffff;font-weight:700}.custom-pr-verified{font-size:11px;color:#22c55e;display:flex;align-items:center;gap:3px}@media(max-width:768px){.custom-pr-grid{grid-template-columns:1fr}}';
+            document.head.appendChild(style);
+        }
+
+        var productId = 'default';
+        try {
+            if (window.salla && window.salla.config && window.salla.config.get) {
+                var cfg = window.salla.config.get('page');
+                if (cfg && cfg.id) productId = cfg.id;
+            }
+        } catch (e) {}
+        if (productId === 'default') {
+            var btn = document.querySelector('salla-add-product-button, twsaa-add-product-button, [data-product-id]');
+            if (btn) {
+                productId = btn.getAttribute('product-id') || btn.getAttribute('data-product-id') || productId;
+            }
+        }
+        if (productId === 'default') {
+            var mm = (window.location.pathname || '').match(/\/(\d+)\/?$/);
+            if (mm) productId = mm[1];
+        }
+
+        var key = 'iptv_product_stats_' + productId;
+        var stats = null;
+        try { stats = JSON.parse(localStorage.getItem(key)); } catch (e) {}
+        var rating = stats && stats.rating ? stats.rating : (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1);
+        var reviewCount = stats && stats.reviews ? stats.reviews : Math.floor(Math.random() * (900 - 50) + 50);
+
+        var formatNum = function (n) {
+            try { return new Intl.NumberFormat('en-US').format(n); } catch (e) { return String(n); }
+        };
+
+        var revList = [
+            ['أفضل اشتراك IPTV جربته، جودة عالية واستقرار رهيب.', 'أحمد الغامدي'],
+            ['محتوى ضخم وأسعار مناسبة، والدعم الفني ممتاز.', 'محمد العتيبي'],
+            ['أتابع جميع المباريات مباشرة بدون تقطيع وجودة ممتازة.', 'سعيد الحربي'],
+            ['التفعيل فوري والمشاهدة بجودة 4K ممتازة.', 'فهد القحطاني'],
+            ['الدعم الفني رد عليا في دقائق وحل المشكلة.', 'يوسف الزهراني'],
+            ['مشترك من 6 شهور بدون أي تقطيع، خدمة تستاهل.', 'بدر العلي'],
+            ['سهولة في التفعيل والدعم متوفر على مدار الساعة.', 'رائد العنزي'],
+            ['فعلت كل أجهزة البيت وكله شغال بدون مشاكل.', 'خالد الجهني'],
+            ['أفضل خدمة IPTV بلا منازع من ناحية الجودة.', 'تركي المطيري']
+        ];
+
+        var cards = '';
+        for (var r = 0; r < revList.length; r++) {
+            cards += '<div class="custom-pr-card"><div class="custom-pr-stars">★★★★★</div><p>"' + revList[r][0] + '"</p><div class="custom-pr-user"><div class="custom-pr-avatar">' + revList[r][1].charAt(0) + '</div><div class="custom-pr-name">' + revList[r][1] + '</div><span class="custom-pr-verified"><svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>مشتري موثق</span></div></div>';
+        }
+
+        var box = document.createElement('div');
+        box.className = 'custom-product-reviews';
+        box.innerHTML =
+            '<div class="custom-pr-summary">' +
+            '<div class="custom-pr-rating"><b>' + rating + '</b><small>من 5</small></div>' +
+            '<div><div class="custom-pr-stars">★★★★★</div><div class="custom-pr-count">' + formatNum(reviewCount) + ' تقييم من عملائنا</div></div>' +
+            '</div>' +
+            '<div class="custom-pr-grid">' + cards + '</div>';
+
+        panel.appendChild(box);
+    }
+
     buildProductStats();
-    document.addEventListener('DOMContentLoaded', buildProductStats);
-    setTimeout(buildProductStats, 300);
+    buildProductReviews();
+    document.addEventListener('DOMContentLoaded', function () {
+        buildProductStats();
+        buildProductReviews();
+    });
+    setTimeout(function () {
+        buildProductStats();
+        buildProductReviews();
+    }, 300);
 
     if (window.location.pathname !== '/' && window.location.pathname !== '') return;
     if (document.getElementById('iptv_master_wrap_2025')) return;
