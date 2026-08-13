@@ -1669,7 +1669,9 @@ html.iptv-site-active ._iptv_to_top._iptv_show {
         left: 18px !important;
         width: 42px !important;
         height: 42px !important;
-    }
+    }.line-clamp-2 {
+    -webkit-line-clamp: 3;
+}
 }
 
 li.pay-mada.w-12.h-7.bg-white.rounded.flex.items-center.p-1 {
