@@ -1070,7 +1070,7 @@ html.iptv-landing-active flash-wrapper {
   }
 
   #iptv_master_wrap_2025 ._iptv_grid_5 {
-    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-columns: repeat(3, 1fr) !important;
   }
 
   #iptv_master_wrap_2025 ._iptv_stats {
