@@ -228,7 +228,7 @@
         if (!document.getElementById('iptv-product-stats-css')) {
             var style = document.createElement('style');
             style.id = 'iptv-product-stats-css';
-            style.textContent = '.custom-product-stats{display:flex;align-items:center;margin-bottom:18px;min-height:26px;background:rgba(17,16,24,.6);border:1px solid rgba(255,200,0,.18);border-radius:10px;padding:9px 16px;width:fit-content;}.custom-stat-item{display:none;align-items:center;gap:10px;animation:iptvStatFade .5s ease-in-out forwards;}.custom-stat-item.active{display:inline-flex;}.custom-stat-icon{display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:linear-gradient(90deg,#FFC800 0%,#FF5E00 45%,#C80000 100%);color:#fff;border-radius:50%;font-size:13px;flex-shrink:0;box-shadow:0 4px 12px rgba(255,94,0,.35);}.custom-stat-text{font-size:14px;color:#e8e8e8;font-weight:600;display:flex;align-items:center;flex-wrap:wrap;gap:4px;line-height:1.4;}.custom-stat-num{color:#FFC800;font-weight:800;}@keyframes iptvStatFade{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}';
+            style.textContent = '.custom-product-stats{display:flex;flex-direction:column;align-items:flex-start;gap:9px;margin-bottom:18px;min-height:26px;background:rgba(17,16,24,.6);border:1px solid rgba(255,200,0,.18);border-radius:10px;padding:12px 16px;width:fit-content;}.custom-stat-item{display:flex;align-items:center;gap:10px;}.custom-stat-icon{display:flex;align-items:center;justify-content:center;width:28px;height:28px;background:linear-gradient(90deg,#FFC800 0%,#FF5E00 45%,#C80000 100%);color:#fff;border-radius:50%;font-size:13px;flex-shrink:0;box-shadow:0 4px 12px rgba(255,94,0,.35);}.custom-stat-text{font-size:14px;color:#e8e8e8;font-weight:600;display:flex;align-items:center;flex-wrap:wrap;gap:4px;line-height:1.4;}.custom-stat-num{color:#FFC800;font-weight:800;}';
             document.head.appendChild(style);
         }
 
@@ -282,13 +282,7 @@
 
         productStatsBound = true;
         var items = container.querySelectorAll('.custom-stat-item');
-        var currentIndex = 0;
-        setInterval(function () {
-            if (!items.length) return;
-            items[currentIndex].classList.remove('active');
-            currentIndex = (currentIndex + 1) % items.length;
-            items[currentIndex].classList.add('active');
-        }, 3500);
+        for (var si = 0; si < items.length; si++) items[si].classList.add('active');
     }
 
     function buildProductReviews() {
@@ -301,7 +295,7 @@
         if (!document.getElementById('iptv-product-reviews-css')) {
             var style = document.createElement('style');
             style.id = 'iptv-product-reviews-css';
-            style.textContent = '.custom-product-reviews{margin-top:6px}.custom-pr-summary{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:rgba(17,16,24,.6);border:1px solid rgba(255,200,0,.18);border-radius:12px;padding:20px;margin-bottom:20px}.custom-pr-rating{display:flex;align-items:baseline;gap:8px}.custom-pr-rating b{font-size:42px;color:#FFC800;font-weight:800;line-height:1}.custom-pr-rating small{color:#e8e8e8;font-size:14px}.custom-pr-stars{color:#FFC800;font-size:20px;letter-spacing:2px}.custom-pr-count{color:#b0b0b0;font-size:14px}.custom-pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.custom-pr-card{background:rgba(17,16,24,.6);border:1px solid rgba(255,200,0,.12);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:10px}.custom-pr-card .custom-pr-stars{font-size:15px}.custom-pr-card p{font-size:13.5px;color:#cccccc;line-height:1.7;margin:0}.custom-pr-user{display:flex;align-items:center;gap:8px;margin-top:auto}.custom-pr-avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(90deg,#FFC800,#FF5E00);display:flex;align-items:center;justify-content:center;font-size:13px;color:#fff;font-weight:700;flex-shrink:0}.custom-pr-name{font-size:13px;color:#ffffff;font-weight:700}.custom-pr-verified{font-size:11px;color:#22c55e;display:flex;align-items:center;gap:3px}@media(max-width:768px){.custom-pr-grid{grid-template-columns:1fr}}';
+            style.textContent = '.custom-product-reviews{margin-top:6px}.custom-pr-summary{display:flex;align-items:center;gap:20px;flex-wrap:wrap;background:rgba(17,16,24,.6);border:1px solid rgba(255,200,0,.18);border-radius:12px;padding:20px;margin-bottom:20px}.custom-pr-rating{display:flex;align-items:baseline;gap:8px}.custom-pr-rating b{font-size:42px;color:#FFC800;font-weight:800;line-height:1}.custom-pr-rating small{color:#e8e8e8;font-size:14px}.custom-pr-stars{color:#FFC800;font-size:20px;letter-spacing:2px}.custom-pr-count{color:#b0b0b0;font-size:14px}.custom-pr-grid{display:grid;grid-template-columns:repeat(1,1fr);gap:14px}.custom-pr-card{background:rgba(17,16,24,.6);border:1px solid rgba(255,200,0,.12);border-radius:12px;padding:18px;display:flex;flex-direction:column;gap:10px}.custom-pr-card .custom-pr-stars{font-size:15px}.custom-pr-card p{font-size:13.5px;color:#cccccc;line-height:1.7;margin:0}.custom-pr-user{display:flex;align-items:center;gap:8px;margin-top:auto}.custom-pr-avatar{width:30px;height:30px;border-radius:50%;background:linear-gradient(90deg,#FFC800,#FF5E00);display:flex;align-items:center;justify-content:center;font-size:13px;color:#fff;font-weight:700;flex-shrink:0}.custom-pr-name{font-size:13px;color:#ffffff;font-weight:700}.custom-pr-verified{font-size:11px;color:#22c55e;display:flex;align-items:center;gap:3px}@media(max-width:768px){.custom-pr-grid{grid-template-columns:1fr}}';
             document.head.appendChild(style);
         }
 
