@@ -495,8 +495,8 @@
             }, 16);
         }
 
-        rightButton.addEventListener('click', function () { moveBy(340); });
-        leftButton.addEventListener('click', function () { moveBy(-340); });
+        rightButton.addEventListener('click', function () { moveBy(-340); });
+        leftButton.addEventListener('click', function () { moveBy(340); });
 
         viewport.addEventListener('pointerdown', function (event) {
             useManualMode();
