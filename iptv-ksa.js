@@ -430,8 +430,7 @@
         '<section class="_iptv_container _iptv_hero">' +
         '<div class="_iptv_hero_image">' +
         '<img class="_iptv_hero_banner_img" src="__IPTV_BANNER__" alt="IPTV KSA">' +
-        '<div class="_iptv_hero_badge _iptv_hero_badge_top"><div class="_iptv_badge_icon">20K+</div><div><b>قناة مباشرة</b><small>بجودة عالية</small></div></div>' +
-        '<div class="_iptv_hero_badge _iptv_hero_badge_bottom"><div class="_iptv_badge_icon">4K</div><div><b>جودة فائقة</b><small>بدون تقطيع</small></div></div>' +
+        
         '</div>' +
         '</section>' +
 
