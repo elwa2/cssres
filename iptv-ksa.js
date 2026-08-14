@@ -250,12 +250,12 @@
             if (mm) productId = mm[1];
         }
 
-        var key = 'iptv_product_stats_' + productId;
+        var key = 'iptv_product_stats_v2_' + productId;
         var stats = null;
         try { stats = JSON.parse(localStorage.getItem(key)); } catch (e) {}
         if (!stats) {
             stats = {
-                sold: Math.floor(Math.random() * (150000 - 10000) + 10000),
+                sold: Math.floor(Math.random() * (1500 - 500) + 500),
                 reviews: Math.floor(Math.random() * (900 - 50) + 50),
                 rating: (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1),
                 watch: Math.floor(Math.random() * (80 - 15) + 15)
@@ -317,7 +317,7 @@
             if (mm) productId = mm[1];
         }
 
-        var key = 'iptv_product_stats_' + productId;
+        var key = 'iptv_product_stats_v2_' + productId;
         var stats = null;
         try { stats = JSON.parse(localStorage.getItem(key)); } catch (e) {}
         var rating = stats && stats.rating ? stats.rating : (Math.random() * (5.0 - 4.5) + 4.5).toFixed(1);
