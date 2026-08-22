@@ -241,10 +241,14 @@
 
             @media (max-width: 768px) {
                 .salla-whatsapp-floating {
-                    bottom: 20px;
+                    bottom: 130px;
                     right: 20px;
                     width: 55px;
                     height: 55px;
+                }
+                     .index .salla-whatsapp-floating {
+                    bottom: 20px;
+                  
                 }
             }
         `;
