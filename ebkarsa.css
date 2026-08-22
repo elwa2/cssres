@@ -1166,3 +1166,11 @@ section.s-block.s-block--fixed-banner.wide-placeholder {
     line-height: 1.7;
     font-size: 0.95rem;
 }
+
+
+
+
+.store-footer__inner {
+    border-bottom: 0px hsla(0,0%,100%,.1);
+  
+}
