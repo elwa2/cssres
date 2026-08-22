@@ -1,4 +1,4 @@
-<script>
+
 (function() {
     const faqHTML = `
     <section class="custom-faq-section container" id="ebkar-faq">
@@ -110,4 +110,4 @@
         }, 500);
     }
 })();
-</script>
+
