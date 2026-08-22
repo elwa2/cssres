@@ -1212,12 +1212,41 @@ body:not(.index) a.navbar-brand {
 }
 
 
+body:not(.index) a.navbar-brand {
+
+    background-image: var(--logo2);
+
+}
+
+body:not(.index) {
+    /* Base Palette - الألوان الأساسية */
+    --1: #023202;
+    --2: #023202;
+    --2-2: #02320240;
+    --3: #edf5ff;
+    --4: #3b3b39;
+    --4-4: #3131309c;
+    --4-4-4: #20201f;
+    --00: #2d2d2d;
+    --bg: #fff3ce;
+    --ff: #ffffff;
+
+    /* Semantic Variables - المتغيرات الوظيفية */
+    --color-primary: var(--1);
+    --color-primary-dark: var(--4);
+    --color-primary-light: var(--2-2);
+    --color-main: var(--1);
+    --color-primary-reverse: var(--3);
+
+    /* Gradients & Shadows - التدرجات والظلال */
+    --gr: linear-gradient(45deg, var(--color-primary) 0%, var(--color-primary) 39%, var(--color-primary-dark) 100%);
+    --gr2: linear-gradient(45deg, var(--1) 0%, var(--2) 100%);
+    --sh: -8px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
 
 
 
-
-
-:root {
+:root  {
     --color-primary: var(--1);
     --color-primary-dark: var(--4);
     --color-main: var(--1);
