@@ -1138,7 +1138,7 @@ section.s-block.s-block--fixed-banner.wide-placeholder {
     border: 1px solid #e5e7eb;
     border-radius: 8px;
     margin-bottom: 12px;
-    background-color: #fff;
+    background-color: var(--1);
     overflow: hidden;
     transition: all 0.3s ease;
 }
@@ -1156,7 +1156,7 @@ section.s-block.s-block--fixed-banner.wide-placeholder {
     padding: 18px 20px;
     font-size: 1.05rem;
     font-weight: 600;
-    color: #1f2937;
+    color: var(--2);
     cursor: pointer;
     display: flex;
     justify-content: space-between;
@@ -1166,7 +1166,7 @@ section.s-block.s-block--fixed-banner.wide-placeholder {
 }
 
 .faq-question.active {
-    color: var(--theme-primary-color, #263e0f);
+    color: #ffffff;
 }
 
 .faq-question svg {
@@ -1190,8 +1190,8 @@ section.s-block.s-block--fixed-banner.wide-placeholder {
 }
 
 .faq-answer-content {
-    padding: 0 20px 20px 20px;
-    color: #4b5563;
+    padding: 10px 20px 20px 20px;
+    color: var(--1);
     line-height: 1.7;
     font-size: 0.95rem;
 }
