@@ -323,3 +323,192 @@
         });
     }
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+(function() {
+    // 1. وظيفة لزرع أكواد التصميم (CSS) الخاصة بالتبويبات
+    function injectTabsStyles() {
+        if (document.getElementById('salla-custom-tabs-style')) return;
+        const style = document.createElement('style');
+        style.id = 'salla-custom-tabs-style';
+        style.innerHTML = `
+            .salla-custom-tabs {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 20px;
+                padding-bottom: 15px;
+                border-bottom: 1px solid #eeeeee;
+            }
+            .custom-tab-btn {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row-reverse;
+                gap: 8px;
+                padding: 12px 15px;
+                font-size: 16px;
+                font-weight: bold;
+                font-family: inherit;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                border: 1px solid #e5e7eb;
+                background-color: #ffffff;
+                color: #000000;
+                outline: none;
+            }
+            .custom-tab-btn:hover:not(.active) {
+                border-color: var(--color-primary, #cb343c);
+                color: var(--color-primary, #cb343c);
+            }
+            .custom-tab-btn.active {
+                background: var(--gr, var(--color-primary, #cb343c)) !important;
+                color: var(--color-primary-reverse, #edf5ff) !important;
+                border: none !important;
+            }
+            .custom-tab-btn i {
+                font-size: 18px;
+            }
+            .salla-tab-content {
+                animation: fadeInTab 0.4s ease-in-out;
+                width: 100%;
+            }
+            #tab-comments-content salla-comments {
+                width: 100% !important;
+                display: block !important;
+            }
+            @keyframes fadeInTab {
+                from { opacity: 0; transform: translateY(5px); }
+                to { opacity: 1; transform: translateY(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    // 2. وظيفة لزرع كود إخفاء المساحات الفارغة إذا لم توجد تقييمات
+    function injectHideEmptyStyles() {
+        if (document.getElementById('hide-empty-comments-style')) return;
+        const style = document.createElement('style');
+        style.id = 'hide-empty-comments-style';
+        style.innerHTML = `
+            salla-comments.hydrated, 
+            .s-blocks-wrapper.s-before-related, 
+            .s-comments-product {
+                margin: 0 !important;
+                padding: 0 !important;
+                display: none !important;
+            }
+        `;
+        document.head.appendChild(style);
+    }
+
+    // 3. الوظيفة الرئيسية للتحقق والتشغيل
+    function initCustomTabs() {
+        const descWrapper = document.querySelector('[data-testid="store-product-description"]');
+        const commentsEl = document.querySelector('salla-comments');
+        const articleEl = document.querySelector('.article--main');
+        const readMoreBtn = document.getElementById('btn-show-more');
+
+        // التأكد من وجود العناصر الأساسية
+        if (!descWrapper || !commentsEl || !articleEl) return false;
+
+        // التأكد من أن سلة قد قامت بتحميل التقييمات بالكامل (وجود كلاس hydrated)
+        if (!commentsEl.classList.contains('hydrated')) return false;
+
+        // التحقق مما إذا كان هناك تقييمات فعلية في المنتج
+        const hasReviews = commentsEl.querySelectorAll('salla-comment-item').length > 0;
+
+        // في حال "لا يوجد تقييمات"
+        if (!hasReviews) {
+            injectHideEmptyStyles(); // إخفاء المساحات الفارغة وكود سلة الافتراضي
+            return true; // إيقاف الكود هنا (لا ننشئ تبويبات)
+        }
+
+        // --- في حال "يوجد تقييمات"، نقوم بإنشاء التبويبات ---
+        
+        // منع تكرار الكود إذا تم إنشاؤه مسبقاً
+        if (document.querySelector('.salla-custom-tabs')) return true;
+
+        injectTabsStyles();
+
+        // إنشاء الأزرار
+        const tabsContainer = document.createElement('div');
+        tabsContainer.className = 'salla-custom-tabs';
+        tabsContainer.innerHTML = `
+            <button class="custom-tab-btn active" data-target="desc">
+                التفاصيل <i class="sicon-document-text"></i>
+            </button>
+            <button class="custom-tab-btn" data-target="comments">
+                التقييمات <i class="sicon-star2"></i>
+            </button>
+        `;
+
+        // إنشاء صندوق الوصف
+        const descTabContent = document.createElement('div');
+        descTabContent.id = 'tab-desc-content';
+        descTabContent.className = 'salla-tab-content';
+        descTabContent.appendChild(articleEl);
+        if (readMoreBtn) descTabContent.appendChild(readMoreBtn);
+
+        // إنشاء صندوق التقييمات
+        const commentsTabContent = document.createElement('div');
+        commentsTabContent.id = 'tab-comments-content';
+        commentsTabContent.className = 'salla-tab-content';
+        commentsTabContent.style.display = 'none'; // مخفي في البداية
+        commentsTabContent.appendChild(commentsEl);
+
+        // تجميع العناصر داخل الصندوق الرئيسي
+        descWrapper.innerHTML = ''; 
+        descWrapper.appendChild(tabsContainer);
+        descWrapper.appendChild(descTabContent);
+        descWrapper.appendChild(commentsTabContent);
+
+        // تفعيل التبديل بين الأزرار
+        const tabButtons = tabsContainer.querySelectorAll('.custom-tab-btn');
+        tabButtons.forEach(btn => {
+            btn.addEventListener('click', function() {
+                tabButtons.forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+
+                if (this.getAttribute('data-target') === 'desc') {
+                    descTabContent.style.display = 'block';
+                    commentsTabContent.style.display = 'none';
+                } else {
+                    descTabContent.style.display = 'none';
+                    commentsTabContent.style.display = 'block';
+                }
+            });
+        });
+
+        return true; // تم التنفيذ بنجاح
+    }
+
+    // 4. مشغل الكود الموثوق
+    function runLogic() {
+        let attempts = 0;
+        // المحاولة حتى 30 مرة (15 ثانية كحد أقصى) للتأكد من اتصال الإنترنت البطيء
+        const interval = setInterval(() => {
+            attempts++;
+            if (initCustomTabs() || attempts > 30) {
+                clearInterval(interval);
+            }
+        }, 500);
+    }
+
+    if (window.Salla && window.Salla.onReady) {
+        Salla.onReady(runLogic);
+    } else {
+        document.addEventListener("DOMContentLoaded", runLogic);
+    }
+})();
