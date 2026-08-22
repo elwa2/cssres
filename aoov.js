@@ -262,3 +262,67 @@
     });
 
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(function() {
+    if (document.getElementById('custom-floating-loyalty-btn')) return;
+
+    const style = document.createElement('style');
+    style.innerHTML = `
+        .custom-floating-loyalty-btn {
+            position: fixed;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+            background-color: #000000;
+            color: #ffffff !important;
+            padding: 12px 28px;
+            border-radius: 16px;
+            font-size: 18px;
+            font-weight: 500;
+            text-decoration: none;
+            z-index: 9999;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            will-change: transform;
+        }
+        .custom-floating-loyalty-btn:hover {
+            transform: translateY(-50%) scale(1.05);
+            opacity: 0.9;
+        }
+        @media (max-width: 768px) {
+            .custom-floating-loyalty-btn {
+                padding: 10px 20px;
+                font-size: 16px;
+                left: 10px;
+                border-radius: 14px;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+
+    const loyaltyBtn = document.createElement('a');
+    loyaltyBtn.id = 'custom-floating-loyalty-btn';
+    loyaltyBtn.href = 'https://aoov.online/ar/loyalty';
+    loyaltyBtn.className = 'custom-floating-loyalty-btn';
+    loyaltyBtn.innerText = 'المكافآت';
+
+    document.body.appendChild(loyaltyBtn);
+})();
