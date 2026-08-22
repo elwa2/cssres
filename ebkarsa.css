@@ -103,7 +103,7 @@ body,
     background: #ef4343 !important;
 }
 
-body:not(.product-single) .bg-white:not(#mainnav) {
+body:not(body:not(.index)) .bg-white:not(#mainnav) {
     background-color: #ffffff00 !important
 }
 
@@ -631,7 +631,7 @@ div.main-content.md\:sticky.md\:overflow-hidden.top-24.w-full.md\:w-2\/4.md\:pb-
         overflow: hidden;
     }
 
-    body.product-single .container {
+    bodybody:not(.index) .container {
         overflow: hidden;
         padding: 0 0px 0 0;
     }
@@ -1008,16 +1008,16 @@ div.main-content.md\:sticky.md\:overflow-hidden.top-24.w-full.md\:w-2\/4.md\:pb-
     color: #fff;
 }
 
-.product-single .s-user-menu-login-btn svg,
-.product-single i.header-btn__icon.icon.sicon-shopping-bag,
-.product-single .s-user-menu-login-btn,
-.product-single i.sicon-menu.text-primary.text-2xl {
+body:not(.index) .s-user-menu-login-btn svg,
+body:not(.index) i.header-btn__icon.icon.sicon-shopping-bag,
+body:not(.index) .s-user-menu-login-btn,
+body:not(.index) i.sicon-menu.text-primary.text-2xl {
     fill: var(--2);
     border-color: var(--2);
     color: var(--2);
 }
 
-.product-single custom-main-menu {
+body:not(.index) custom-main-menu {
     min-height: 0;
 }
 
