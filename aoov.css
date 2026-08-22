@@ -1019,4 +1019,9 @@ button[product-id].s-button-element.s-button-btn.s-button-primary-outline .sicon
 	background-color: #000;
 	 
 	color: rgb(255, 255, 255);
+}.s-loyalty-program-points-action-incomplete {
+    display: block;
+    background-color: #000000;
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255);
 }
