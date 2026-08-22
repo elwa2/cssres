@@ -225,7 +225,7 @@
         waLink.addEventListener('click', function(e) {
             e.preventDefault(); // نمنع الرابط من عمل ريفريش للصفحة
             
-            let message = "السلام عليكم، أرغب في الاستفسار عن منتجات Brezobrand"; 
+            let message = "السلام عليكم، أرغب في الاستفسار عن منتجات"; 
             const currentUrl = window.location.href; // سحب الرابط الحالي
 
             // نبحث عن اسم المنتج داخل h1 (هذا الكلاس مأخوذ من كود متجرك الذي أرسلته)
