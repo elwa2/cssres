@@ -111,3 +111,23 @@
     }
 })();
 
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", (function() {
+    function removeTrustBadge() {
+        var badge = document.querySelector('salla-trust-badges[data-testid="store-footer-trust-badges"]');
+        return !!badge && (badge.remove(), !0);
+    }
+    if (!removeTrustBadge()) {
+        var t = setInterval((function() {
+            removeTrustBadge() && clearInterval(t);
+        }), 500);
+        setTimeout((function() {
+            clearInterval(t);
+        }), 10000);
+    }
+}));
