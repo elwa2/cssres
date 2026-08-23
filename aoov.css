@@ -1024,4 +1024,8 @@ button[product-id].s-button-element.s-button-btn.s-button-primary-outline .sicon
     background-color: #000000;
     --tw-text-opacity: 1;
     color: rgb(255 255 255);
+}@media (min-width: 768px) {
+    .s-loyalty-program-reward-img {
+        height: 6rem;
+    }
 }
