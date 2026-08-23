@@ -285,7 +285,7 @@
     style.innerHTML = `
         .custom-floating-loyalty-btn {
             position: fixed;
-            top: 50%;    top: 76%;
+            top: 50%;    top: 91%;
             left: 20px;
             transform: translateY(-50%);
             background-color: #000000;
