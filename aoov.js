@@ -13,7 +13,7 @@
             name: "AOV signature", 
             price: "190", 
             before_price: "", // إذا كان هناك سعر قبل الخصم ضعه هنا
-            image: "https://cdn.salla.sa/PdEOwq/fa220439-e5d6-47b6-828e-b0742a85e75c-500x500-WQ6GZepDiEHbWG3crsVXa0GXoLXzXJOic2yXc4Wa.png"
+            image: "https://cdn.salla.sa/PdEOwq/5aa0fd97-e589-4ad1-aa65-f465158345c8-500x500-vsQ2RkEamzhhqK1cJ2t4T7X38VQ2ykFtSs4wEt4G.jpg"
         },
         { 
             id: "1245680239", 
