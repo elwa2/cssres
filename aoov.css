@@ -1027,5 +1027,9 @@ button[product-id].s-button-element.s-button-btn.s-button-primary-outline .sicon
 }@media (min-width: 768px) {
     .s-loyalty-program-reward-img {
         height: 6rem;
-    }
+    }.s-loyalty-program-rewards-img {
+    height: 100%;
+    /* width: 100%; */
+    object-fit: contain;
+}
 }
