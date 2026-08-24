@@ -26,7 +26,7 @@
                     width: 100%;
                 }
                 .nd-banner-wrapper {
-                    background-color: #032b17;
+                    background-color: #073228;
                     background-image: radial-gradient(circle at right, rgba(255,255,255,0.03) 0%, transparent 40%), radial-gradient(circle at left, rgba(255,255,255,0.03) 0%, transparent 40%);
                     border-radius: 12px;
                     padding: 20px 40px;
@@ -35,7 +35,7 @@
                     justify-content: space-between;
                     flex-wrap: wrap;
                     direction: rtl;
-                    border: 1px solid #104125;
+                    border: 1px solid #073228;
                     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
                     width: 100%;
                     min-height: 140px;
@@ -68,7 +68,7 @@
                 }
                 .nd-action-btn {
                     background: linear-gradient(to bottom, #fcebba, #d4a754);
-                    color: #032b17;
+                    color: #073228;
                     font-weight: 800;
                     font-size: 15px;
                     padding: 8px 35px;
