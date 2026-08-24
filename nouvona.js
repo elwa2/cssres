@@ -1,19 +1,18 @@
 (function() {
     function injectNationalDayBanner() {
-        // Target the specific section
         const targetSection = document.querySelector('section.sqordernow');
         if (!targetSection) return false;
 
         // Prevent duplicate injections
         if (targetSection.querySelector('.nd-custom-container')) return true;
 
-        // Hide original slider safely instead of removing it to prevent Salla JS errors
+        // Hide original slider safely without removing it from DOM
         const originalInner = targetSection.querySelector('.banners-slider__inner');
         if (originalInner) {
             originalInner.style.display = 'none';
         }
 
-        // Add custom styles matching the image
+        // Apply Custom CSS
         if (!document.getElementById('nd-banner-styles')) {
             const style = document.createElement('style');
             style.id = 'nd-banner-styles';
@@ -30,7 +29,7 @@
                     background-color: #032b17;
                     background-image: radial-gradient(circle at right, rgba(255,255,255,0.03) 0%, transparent 40%), radial-gradient(circle at left, rgba(255,255,255,0.03) 0%, transparent 40%);
                     border-radius: 12px;
-                    padding: 25px 50px;
+                    padding: 20px 40px;
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
@@ -44,34 +43,12 @@
                 .nd-right-section {
                     display: flex;
                     align-items: center;
-                    gap: 60px;
+                    gap: 40px;
                 }
-                .nd-logo-box {
-                    text-align: center;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                }
-                .nd-logo-box svg {
-                    width: 55px;
-                    height: 55px;
-                    fill: #e8d098;
-                    margin-bottom: 8px;
-                }
-                .nd-logo-box h3 {
-                    color: #ffffff;
-                    font-size: 22px;
-                    font-weight: 800;
-                    margin: 0;
-                    font-family: inherit;
-                    letter-spacing: -0.5px;
-                }
-                .nd-logo-box p {
-                    color: #d1b473;
-                    font-size: 11px;
-                    margin: 2px 0 0 0;
-                    font-weight: 600;
+                .nd-national-logo {
+                    width: 150px;
+                    height: auto;
+                    object-fit: contain;
                 }
                 .nd-text-box {
                     text-align: center;
@@ -149,10 +126,13 @@
                     }
                     .nd-right-section {
                         flex-direction: column;
-                        gap: 25px;
+                        gap: 20px;
                     }
                 }
                 @media (max-width: 480px) {
+                    .nd-national-logo {
+                        width: 120px;
+                    }
                     .nd-time-block {
                         width: 65px;
                         height: 70px;
@@ -171,7 +151,7 @@
             document.head.appendChild(style);
         }
 
-        // Create the container and banner
+        // Create Container & Banner HTML
         const customContainer = document.createElement('div');
         customContainer.className = 'nd-custom-container anime-item';
         customContainer.style.opacity = '1';
@@ -180,14 +160,7 @@
         customContainer.innerHTML = `
             <div class="nd-banner-wrapper">
                 <div class="nd-right-section">
-                    <div class="nd-logo-box">
-                        <!-- Saudi Palm and Swords simple representation -->
-                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12 2L13.5 6H10.5L12 2ZM12 8L14 13H10L12 8ZM12 15C13.5 15 15 16 15 18H9C9 16 10.5 15 12 15ZM5 18L19 6L20 7L6 19L5 18ZM19 18L5 6L4 7L18 19L19 18Z"/>
-                        </svg>
-                        <h3>نحلم ونحقق</h3>
-                        <p>اليوم الوطني السعودي 94</p>
-                    </div>
+                    <img src="https://cdn.files.salla.network/other/1758065230/bcf715f6-714b-4739-ad22-5ccc6daf9a65-original.webp" alt="اليوم الوطني 94" class="nd-national-logo">
                     <div class="nd-text-box">
                         <h2>عروض اليوم الوطني</h2>
                         <p>لفترة محدودة!</p>
@@ -220,17 +193,22 @@
 
         targetSection.appendChild(customContainer);
 
-        // Timer Logic
+        // Fixed Absolute Timer Logic
         function updateTimer() {
-            const now = new Date();
-            let targetYear = now.getFullYear();
-            let targetDate = new Date(targetYear, 8, 23); // September 23
+            const now = new Date().getTime();
+            const currentYear = new Date().getFullYear();
             
+            // Fixed to exactly Sept 23rd 23:59:59 (Saudi Time timezone handling via standard parse)
+            let targetDateStr = `${currentYear}-09-23T23:59:59+03:00`;
+            let targetDate = new Date(targetDateStr).getTime();
+            
+            // If the date has passed this year, point it to next year automatically
             if (now > targetDate) {
-                targetDate = new Date(targetYear + 1, 8, 23);
+                targetDateStr = `${currentYear + 1}-09-23T23:59:59+03:00`;
+                targetDate = new Date(targetDateStr).getTime();
             }
 
-            const distance = targetDate.getTime() - now.getTime();
+            const distance = targetDate - now;
             
             if (distance < 0) return;
 
@@ -256,12 +234,11 @@
         return true;
     }
 
-    // Attempt to inject immediately
+    // Try injecting, if DOM isn't ready, use MutationObserver
     if (!injectNationalDayBanner()) {
-        // If the section doesn't exist yet, observe the DOM and inject when it appears
         const observer = new MutationObserver((mutations, obs) => {
             if (injectNationalDayBanner()) {
-                obs.disconnect(); // Stop observing once injected
+                obs.disconnect();
             }
         });
         observer.observe(document.body, { childList: true, subtree: true });
