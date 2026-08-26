@@ -160,7 +160,7 @@
         customContainer.innerHTML = `
             <div class="nd-banner-wrapper">
                 <div class="nd-right-section">
-                    <img src="https://cdn.files.salla.network/other/1758065230/bcf715f6-714b-4739-ad22-5ccc6daf9a65-original.webp" alt="اليوم الوطني 94" class="nd-national-logo">
+                    <img src="https://cdn.files.salla.network/other/1758065230/2e5308e8-6199-4611-9007-cbf86887d5ce-original.webp" alt="اليوم الوطني 94" class="nd-national-logo">
                     <div class="nd-text-box">
                         <h2>عروض اليوم الوطني</h2>
                         <p>لفترة محدودة!</p>
