@@ -27,7 +27,7 @@
             name: "SIGNATURE", 
             price: "180", 
             before_price: "", 
-            image: "https://cdn.salla.sa/PdEOwq/b6a050a9-3488-43f1-912e-96f45a5b18ad-500x500-i41thO5uWwKAXjHQQc4Ns1CSCCiNb9NsujXuATfQ.jpg" 
+            image: "https://cdn.salla.sa/PdEOwq/df06e03c-af31-42d7-8d74-e3c98b62f77d-1000x1000-YaDJbHoxybs3lIzSAHJdHdrHnUgT558PbwgkSS7C.jpg" 
         },
         { 
             id: "1249952970", 
