@@ -20,7 +20,7 @@
             name: "توزيعات اوڤ", 
             price: "199", 
             before_price: "", 
-            image: "https://cdn.salla.sa/PdEOwq/90608bce-caa1-4c58-912c-128aa370b660-500x411.25-RHBDVvGy5z1sCgUsYaTCYBaJD8Sj9PEWzFaEimeA.jpg" 
+            image: "https://cdn.salla.sa/PdEOwq/a2254331-93e5-4825-9a23-c47af7f21e60-1000x1000-ohbPIVSLBzvP2K2VIepMkd5htO1PM1Gn4uDOCPgf.jpg" 
         },
         { 
             id: "1677469918", 
