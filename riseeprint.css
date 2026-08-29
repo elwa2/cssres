@@ -1017,9 +1017,7 @@ h2.text-2xl.lg\:text-4xl.text-primary.font-bold.mb-5.anime-item {
         padding-bottom: 70px !important;
     }
 
-    section.s-block.s-block--square-links.square-links-3.s-block--animate.thert {
-        margin-top: -0.6rem;
-    }
+  
 
     .store-footer .nf-grid {
         display: flex !important;
@@ -1398,6 +1396,6 @@ p.nf-desc {
 
 @media (max-width: 768px) {
     section.s-block.s-block--square-links.square-links-3.s-block--animate.thert {
-        margin-top: 1.4rem;
+        margin-top: 1.4rem !important;
     }
 }
