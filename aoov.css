@@ -1139,3 +1139,10 @@ button[product-id].s-button-element.s-button-btn.s-button-primary-outline
 .s-loyalty-program-aspect-container img {
   object-fit: contain;
 }
+
+
+@media (max-width: 767px) {
+    body#app > div:nth-of-type(2) > main > section:nth-of-type(4) {
+        margin-top: -5.7rem;
+    }
+}
