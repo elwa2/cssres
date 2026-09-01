@@ -1,4 +1,4 @@
-<script>
+
 (function() {
     // 1. الكود الخاص بالتصميم (HTML + CSS مدمج لضمان عمل الألوان في سلة)
     const customSections = `
@@ -186,4 +186,3 @@
     }
 
 })();
-</script>
