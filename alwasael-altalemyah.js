@@ -115,7 +115,7 @@
                         </p>
                         
                         <div>
-                            <a href="/categories" class="angel-btn-primary inline-flex items-center justify-center gap-2 h-14 px-8 py-3 rounded-2xl text-lg font-bold group w-full md:w-auto">
+                            <a href="/latest-products" class="angel-btn-primary inline-flex items-center justify-center gap-2 h-14 px-8 py-3 rounded-2xl text-lg font-bold group w-full md:w-auto">
                                 <span>تصفح المنتجات الآن</span>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5 mr-2 transition-transform duration-200 ease-in-out group-hover:-translate-x-2"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg>
                             </a>
