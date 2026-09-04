@@ -1019,23 +1019,23 @@ div[class*="apple-pay"] {
   background-color: #ffffff;
 }
 
-body#app > div:nth-of-type(2) > main > section:nth-of-type(4) {
+body#app > div > main > .sdsadsad {
   margin-top: -16rem;
 }
 
 body#app
-  > div:nth-of-type(2)
+  > div
   > main
-  > section:nth-of-type(4)
+  > .sdsadsad
   .flex.flex-col.w-1\/2.sm\:w-auto {
   width: 18rem;
   display: flex;
 }
 
 body#app
-  > div:nth-of-type(2)
+  > div
   > main
-  > section:nth-of-type(4)
+  > .sdsadsad
   .flex.justify-center {
   display: flex;
   flex-direction: column-reverse;
@@ -1044,23 +1044,23 @@ body#app
 
 @media (max-width: 767px) {
   body#app
-    > div:nth-of-type(2)
+    > div
     > main
-    > section:nth-of-type(4)
+    > .sdsadsad
     .flex.flex-col.w-1\/2.sm\:w-auto {
     width: 9rem;
     display: flex;
     zoom: 84%;
   }
 
-  body#app > div:nth-of-type(2) > main > section:nth-of-type(4) {
+  body#app > div > main > .sdsadsad {
     margin-top: -6.7rem;
   }
 
   body#app
-    > div:nth-of-type(2)
+    > div
     > main
-    > section:nth-of-type(4)
+    > .sdsadsad
     .flex.justify-center {
     padding-right: 18px;
   }
@@ -1142,12 +1142,12 @@ button[product-id].s-button-element.s-button-btn.s-button-primary-outline
 
 
 @media (max-width: 767px) {
-    body#app > div:nth-of-type(2) > main > section:nth-of-type(4) {
+    body#app > div > main > .sdsadsad {
         margin-top: -5.7rem;
     }
 }
 
-body#app > div:nth-of-type(2) > main > section:nth-of-type(5) > div > div > h2 {
+body#app > div > main > .arddyom  > div > div > h2 {
     background: linear-gradient(to right, #177b55, #051d16);
     color: #ffffff;
     padding: 16px 56px;
