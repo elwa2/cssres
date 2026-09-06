@@ -682,5 +682,8 @@ a.s-cart-summary-wrapper {
 }
 
 .s-cart-summary-wrapper[hidden] {
-    display: none !important; /* أو flex حسب تصميم الموقع */
+    display: none !important; 
+}button.s-advertisement-action[aria-label="close-alert"] {
+      display: none !important; 
+
 }
