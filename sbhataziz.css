@@ -686,4 +686,6 @@ a.s-cart-summary-wrapper {
 }button.s-advertisement-action[aria-label="close-alert"] {
       display: none !important; 
 
+} salla-user-menu .s-user-menu-wrapper ~ .s-user-menu-wrapper {
+    display: none !important;
 }
