@@ -705,9 +705,10 @@ button.s-advertisement-action[aria-label="close-alert"] {
 
 }
 
-salla-user-menu .s-user-menu-wrapper:first-child {
+salla-user-menu .s-user-menu-wrapper~.s-user-menu-wrapper {
     display: none !important;
 }
+
 
 salla-cart-summary {
     min-height: 40px;
