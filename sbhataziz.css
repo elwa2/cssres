@@ -543,13 +543,13 @@ a.s-block__display-all {
     }
 }
 
-salla-add-product-toast.s-add-product-toast.s-add-product-toast--visible {
+/* salla-add-product-toast.s-add-product-toast.s-add-product-toast--visible {
     display: none;
 }
 
 salla-add-product-toast.s-add-product-toast.s-add-product-toast--visible {
     display: none;
-}
+} */
 
 .s-modal-body.s-modal-align-middle.s-modal-md.s-modal-padding.s-modal-entering {
     background: var(--1);
