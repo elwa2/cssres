@@ -661,3 +661,26 @@ body.ad-is-closed .main-nav-container.fixed-header .inner .container {
     position: relative !important;
     top: 10px !important;
 }
+.s-cart-summary-icon svg {
+    height: 1.25rem;
+    width: 1.25rem;
+    fill: #ffffff;
+}
+
+a.s-cart-summary-wrapper { 
+    align-items: center;
+    border-radius: 9999px;
+    border-width: 1px;
+    display: flex;
+    height: 2.5rem;
+    justify-content: center;
+    width: 2.5rem;
+    --tw-border-opacity: 1;
+    border-color: #e5e7eb;
+  
+ 
+}
+
+.s-cart-summary-wrapper[hidden] {
+    display: none !important; /* أو flex حسب تصميم الموقع */
+}
