@@ -717,3 +717,9 @@ salla-cart-summary {
     min-width: 46px;
 }
 
+.s-add-product-toast {
+    
+    right: 0;
+    top: 137px;
+   
+}
