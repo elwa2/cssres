@@ -709,7 +709,9 @@ salla-user-menu .s-user-menu-wrapper~.s-user-menu-wrapper {
     display: none !important;
 }
 
-
+salla-user-menu .s-user-menu-wrapper ~ .s-user-menu-wrapper {
+    display: none !important;
+}
 salla-cart-summary {
     min-height: 40px;
     min-width: 46px;
