@@ -733,10 +733,16 @@ salla-cart-summary {
 .s-modal-wrapper .carousel-slider .s-slider-block__title-nav {
   display: none;
 
-}a.s-block__display-all {
+}
+
+a.s-block__display-all {
     margin: auto;
     width: 100%;
     justify-content: center;
-}i.sicon-arrow-left {
-    display: none;
+    position: relative;
+    top: -20px;
+}
+
+i.sicon-arrow-left {
+  display: none;
 }
