@@ -737,4 +737,6 @@ salla-cart-summary {
     margin: auto;
     width: 100%;
     justify-content: center;
+}i.sicon-arrow-left {
+    display: none;
 }
