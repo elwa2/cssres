@@ -1,0 +1,242 @@
+:root {
+    /* Brand Palette */
+    --charcoal: #343A3C;
+    --sand: #D9C5B2;
+    --gold: #C9A86A;
+    --peach: #E6B89C;
+    --offwhite: #F7F3EF;
+    --gold-20: rgba(201, 168, 106, 0.2);
+    --gold-40: rgba(201, 168, 106, 0.4);
+    
+    /* Override Salla Variables */
+    --color-primary: var(--charcoal);
+    --color-primary-dark: #1E2325;
+    --color-primary-light: #4A5456;
+    --color-primary-reverse: var(--offwhite);
+    --bg-primary: var(--offwhite);
+    --bg-secondary: #ffffff;
+    --header-bg: rgba(247, 243, 239, 0.9);
+    --header-text-color: var(--charcoal);
+    --store-text-primary: var(--charcoal);
+    --store-text-secondary: rgba(52, 58, 60, 0.7);
+    --footer-bg: var(--charcoal);
+    --footer-text-color: var(--offwhite);
+    --bottom-footer-bg: var(--charcoal);
+    --font-main: 'Tajawal', sans-serif;
+    --s-radius: 24px;
+}
+
+/* Base & Typography */
+body {
+    background-color: var(--bg-primary) !important;
+    font-family: var(--font-main) !important;
+}
+
+h1, h2, h3, h4, .home-block-title h2, .s-slider-block__title h2 {
+   
+    font-weight: 300 !important;
+    letter-spacing: 0.05em;
+    color: var(--charcoal) !important;
+}
+
+/* Header Styling - Glassmorphism */
+.store-header .main-nav-container {
+    background-color: var(--header-bg) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--gold-20);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04) !important;
+}
+
+/* Buttons - Pill Shape & Brand Colors */
+.btn, .s-button-btn, .s-button-element, .s-add-product-button-mini-checkout {
+    border-radius: 999px !important;
+   
+    letter-spacing: 1px;
+    font-weight: 500 !important;
+    text-transform: uppercase;
+}
+
+.btn-primary, .s-button-primary {
+    background-color: var(--charcoal) !important;
+    border-color: var(--charcoal) !important;
+    color: var(--offwhite) !important;
+}
+
+.btn-primary:hover, .s-button-primary:hover {
+    background-color: transparent !important;
+    color: var(--charcoal) !important;
+    border-color: var(--gold) !important;
+}
+
+.btn-outline-primary, .s-button-outline-primary {
+    border-color: var(--gold) !important;
+    color: var(--charcoal) !important;
+    background-color: transparent !important;
+}
+
+.btn-outline-primary:hover, .s-button-outline-primary:hover {
+    background-color: var(--charcoal) !important;
+    color: var(--offwhite) !important;
+    border-color: var(--charcoal) !important;
+}
+
+/* Hero Section Overlay */
+.advanced-slider__slide {
+    position: relative;
+}
+.advanced-slider__slide::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(247, 243, 239, 0.8), transparent);
+    z-index: 1;
+    pointer-events: none;
+}
+.advanced-slider__caption {
+    z-index: 2;
+}
+
+
+
+/* Product Cards - Luxury Dark Theme */
+custom-salla-product-card .product-card {
+    background-color: var(--charcoal) !important;
+    border-radius: var(--s-radius) !important;
+    border: none !important;
+    border-top: 2px solid var(--gold) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05) !important;
+    padding: 1.5rem !important;
+    overflow: hidden;
+}
+
+custom-salla-product-card .product-card:hover {
+    transform: translateY(-8px) !important;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.18) !important;
+}
+
+ 
+
+ 
+ 
+custom-salla-product-card .product-card__price .before-price {
+    color: rgba(247, 243, 239, 0.4) !important;
+}
+
+/* Product Card Actions (Icons) */
+custom-salla-product-card .product-card__actions .s-button-element,
+custom-salla-product-card .product-card__buttons .s-button-element {
+    background: rgba(255,255,255,0.05) !important;
+    border-color: var(--gold-40) !important;
+    color: var(--gold) !important;
+}
+
+custom-salla-product-card .product-card__actions .s-button-element:hover,
+custom-salla-product-card .product-card__buttons .s-button-element:hover {
+    background: var(--gold) !important;
+    color: var(--charcoal) !important;
+}
+
+/* Reviews Section - Sand Theme */
+.s-block--custom-reviews {
+    background-color: rgba(217, 197, 178, 0.25) !important; 
+    border-top: 1px solid var(--gold-20);
+    border-bottom: 1px solid var(--gold-20);
+}
+
+.reviews__card {
+    background-color: var(--offwhite) !important;
+    border: 1px solid var(--gold-20) !important;
+    border-radius: var(--s-radius) !important;
+    box-shadow: 0 20px 40px rgba(52,58,60,0.04) !important;
+}
+
+.reviews__text {
+    color: var(--charcoal) !important;
+    opacity: 0.85;
+    line-height: 1.8 !important;
+}
+
+.reviews__author-name {
+    color: var(--charcoal) !important;
+}
+
+.sicon-star2 {
+    color: var(--gold) !important;
+}
+
+/* Footer - Charcoal & Gold Theme */
+.store-footer {
+    background-color: var(--charcoal) !important;
+    color: var(--offwhite) !important;
+    border-top: 2px solid var(--gold) !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* Footer Wavy Pattern Overlay */
+.store-footer::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 60px;
+    background-image: url("data:image/svg+xml,%3Csvg width='400' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 40 Q 50 0 100 40 T 200 40 T 300 40 T 400 40' stroke='%23C9A86A' stroke-width='1' fill='none' opacity='0.35'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.store-footer__inner, .footer-bottom, .store-footer p, .store-footer a, .store-footer h3 {
+    color: var(--offwhite) !important;
+}
+
+.store-footer p, .store-footer a {
+    opacity: 0.7;
+}
+
+.store-footer a:hover {
+    color: var(--gold) !important;
+    opacity: 1;
+}
+
+.footer-title {
+   
+    color: var(--gold) !important;
+    letter-spacing: 0.1em;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.08) !important;
+}
+
+/* Enhanced Contacts in Footer */
+.enhanced-contact-item {
+    border-color: rgba(201,168,106,0.3) !important;
+    background: rgba(201,168,106,0.05) !important;
+    border-radius: 999px !important;
+}
+
+.enhanced-contact-item i {
+    color: var(--gold) !important;
+}
+
+/* Decorative Background Patterns for specific wrappers */
+.s-block--best-offers {
+    position: relative;
+}.product-card__image {
+    background-color: #ffffff;
+   
+}
+.s-block--best-offers::before {
+    content: '';
+    position: absolute;
+    top: 50px; left: -50px;
+    width: 250px; height: 250px;
+    background-image: radial-gradient(circle, var(--gold) 1.5px, transparent 1.5px);
+    background-size: 30px 30px;
+    opacity: 0.15;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+}
