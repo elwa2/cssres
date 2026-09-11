@@ -1,0 +1,822 @@
+/* 1. استدعاء خطوط التصميم الجديد */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@500;600;700;800&family=Tajawal:wght@400;500;700&display=swap');
+
+/* 2. تعديل المتغيرات الأساسية لمتجر زد لتطابق الهوية الجديدة */
+:root {
+    --background: #F8F7FF !important;
+    --foreground: #111827 !important;
+    --primary: #0A0A0A !important;
+    --secondary: #FFFFFF !important;
+    --border-light: #E9E5FF !important;
+    
+    /* متغيرات النيون الخاصة */
+    --accent-pink: #FF5A8A;
+    --accent-cyan: #00D4FF;
+    --accent-violet: #8B5CF6;
+    --accent-lime: #C6FF00;
+    --shadow-soft: 0 12px 40px -12px rgba(139,92,246,0.15), 0 4px 20px -4px rgba(0,0,0,0.05);
+}
+
+/* 3. تطبيق الخطوط على كامل المتجر */
+body, p, span, a, input, button {
+    font-family: 'Tajawal', sans-serif !important;
+}
+h1, h2, h3, h4, h5, h6, .font-semibold {
+    font-family: 'IBM Plex Sans Arabic', sans-serif !important;
+}
+
+/* 4. تخصيص شريط الإعلانات العلوي */
+[data-announcement-bar] {
+    background-color: var(--primary) !important;
+    color: var(--accent-lime) !important;
+    letter-spacing: 1px;
+}
+
+/* 5. تخصيص الهيدر (تأثير الزجاج Blur) */
+header, .sticky.top-0 > div {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(18px) !important;
+    -webkit-backdrop-filter: blur(18px) !important;
+    border-bottom: 1px solid var(--border-light) !important;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.04) !important;
+}
+
+/* 6. تخصيص بطاقات المنتجات (نفس التصميم الجديد) */
+[data-product-card] {
+    border-radius: 24px !important;
+    background: rgba(255, 255, 255, 0.9) !important;
+    border: 1px solid var(--border-light) !important;
+    box-shadow: var(--shadow-soft) !important;
+    padding: 16px !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+[data-product-card]:hover {
+    transform: translateY(-6px) !important;
+    box-shadow: 0 20px 60px rgba(139,92,246,0.18) !important;
+    border-color: var(--accent-violet) !important;
+}
+[data-product-card] a {
+    border-radius: 16px !important;
+    overflow: hidden;
+}
+
+/* 7. تخصيص أزرار المنتجات (النيون الوردي) */
+[data-product-card] button, 
+.btn-outlined {
+    background: var(--primary) !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 9999px !important;
+    font-weight: 700 !important;
+    transition: all 0.3s ease !important;
+}
+[data-product-card] button:hover, 
+.btn-outlined:hover {
+    background: var(--accent-pink) !important;
+    box-shadow: 0 0 24px rgba(255,90,138,0.45) !important;
+    transform: translateY(-2px) scale(1.02);
+    color: #fff !important;
+}
+
+/* 8. تخصيص الفوتر (الهوية الداكنة) */
+#footer {
+    background-color: var(--primary) !important;
+    border-top: 1px solid rgba(255,255,255,0.1) !important;
+    position: relative;
+}
+#footer h3 {
+    color: var(--accent-cyan) !important;
+    font-size: 16px !important;
+}
+#footer a, #footer p, #footer li, #footer span {
+    color: rgba(255,255,255,0.7) !important;
+}
+#footer a:hover {
+    color: var(--accent-lime) !important;
+}/* --- قسم شركاء النجاح --- */
+.custom-brands-section {
+    padding: 60px 20px;
+    background-color: var(--background, #F8F7FF);
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+/* تصميم العنوان */
+.brands-title-wrapper {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.brands-title {
+    display: inline-block;
+    background: #FFFFFF;
+    border: 1px solid var(--border-light, #E9E5FF);
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    color: #111827;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+
+/* تصميم شريط الحركة (Marquee) */
+.animated-brands-marquee {
+    display: flex;
+    gap: 16px;
+    direction: ltr; /* توحيد اتجاه الحركة لليسار */
+}
+.marquee-group {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 16px;
+    min-width: 100%;
+    /* التحكم في سرعة الحركة (40 ثانية) يمكنك زيادتها لتبطيء الحركة */
+    animation: scroll-marquee 40s linear infinite; 
+}
+.animated-brands-marquee:hover .marquee-group {
+    animation-play-state: paused; /* إيقاف الحركة عند وقوف الماوس */
+}
+
+/* حركة التمرير اللانهائية */
+@keyframes scroll-marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-100% - 16px)); }
+}
+
+/* تصميم بطاقات اللوجو */
+.marquee-group a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 90px;
+    background: #ffffff;
+    border: 1px solid var(--border-light, #E9E5FF);
+    border-radius: 16px;
+    padding: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+    flex-shrink: 0;
+    text-decoration: none;
+}
+.marquee-group a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(139,92,246,0.12);
+    border-color: var(--accent-violet, #8B5CF6);
+}
+.marquee-group img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.marquee-group a:hover img {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* تأثير التدرج الشفاف على الجوانب لإعطاء عمق للشريط */
+.brands-style-box {
+    position: relative;
+}
+.brands-style-box::before,
+.brands-style-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+.brands-style-box::before {
+    left: 0;
+    background: linear-gradient(to right, var(--background, #F8F7FF), transparent);
+}
+.brands-style-box::after {
+    right: 0;
+    background: linear-gradient(to left, var(--background, #F8F7FF), transparent);
+}/* =========================================
+   قسم شركاء النجاح (التصميم المزدوج - مطابق للصورة)
+========================================= */
+.custom-brands-section {
+    padding: 60px 0;
+    background-color: #ffffff; /* خلفية القسم بيضاء */
+    overflow: hidden;
+}
+
+.brands-title-wrapper {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.brands-title {
+    display: inline-block;
+    background: #fafafa;
+    padding: 12px 35px;
+    border-radius: 50px;
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #111827;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+}
+
+.brands-style-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 16px; /* المسافة بين الصفين */
+}
+
+/* تأثير التلاشي الأبيض على الأطراف */
+.brands-style-box::before,
+.brands-style-box::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+}
+.brands-style-box::before { left: 0; background: linear-gradient(to right, #ffffff 10%, transparent); }
+.brands-style-box::after { right: 0; background: linear-gradient(to left, #ffffff 10%, transparent); }
+
+/* مسار الحركة */
+.marquee-track {
+    display: flex;
+    flex-wrap: nowrap; /* منع نزول العناصر لسطر جديد نهائياً */
+    width: 100%;
+    overflow: hidden;
+    direction: ltr !important; /* إجبار الحركة من اليسار لليمين */
+}
+
+/* المجموعة التي تتحرك */
+.marquee-group {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 16px;
+    padding-right: 16px; /* لضمان عدم وجود فراغ عند إعادة الحركة */
+    min-width: 100%;
+    animation: scroll-marquee 40s linear infinite;
+}
+
+/* حركة الصف الثاني المعكوسة */
+.marquee-track.reverse .marquee-group {
+    animation-direction: reverse;
+}
+
+.marquee-track:hover .marquee-group {
+    animation-play-state: paused;
+}
+
+@keyframes scroll-marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* تصميم البطاقات (مطابق للصورة: خلفية رمادية فاتحة جداً وزوايا دائرية) */
+.marquee-group a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 80px;
+    background-color: #f4f5f7; /* لون رمادي فاتح جداً بدون حدود */
+    border-radius: 12px;
+    padding: 15px;
+    text-decoration: none;
+    flex-shrink: 0; /* يمنع انكماش البطاقة */
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.marquee-group a:hover {
+    transform: scale(1.03);
+    background-color: #ffffff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.marquee-group img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    mix-blend-mode: darken; /* تقوم بإخفاء أي خلفية بيضاء تابعة لصورة الشعار نفسها */
+    opacity: 0.9;
+}/* إخفاء فوتر زد القديم */
+#footer {
+    display: none !important;
+}
+
+/* =========================================
+   تصميم الفوتر الإبداعي (ترتيب صحيح لليمين)
+========================================= */
+.custom-gray-footer {
+    position: relative;
+    background-color: #0A0A0A;
+    color: #ffffff;
+    overflow: hidden;
+    direction: rtl; /* اتجاه عربي صحيح */
+    font-family: 'Tajawal', sans-serif;
+    margin-top: 40px;
+}
+
+.cgf-bg-glow {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(139,92,246,0.15) 0%, transparent 50%, rgba(255,90,138,0.05) 100%);
+    pointer-events: none;
+}
+.cgf-waves {
+    position: absolute;
+    inset: 0;
+    opacity: 0.05;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='20' viewBox='0 0 100 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 10 Q 12.5 0 25 10 T 50 10 T 75 10 T 100 10' stroke='%23ffffff' stroke-width='1' fill='none'/%3E%3C/svg%3E");
+    pointer-events: none;
+}
+
+.cgf-container {
+    position: relative;
+    z-index: 10;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 60px 20px 30px 20px;
+}
+
+/* ضبط المساحات: الشعار (يمين) يأخذ مساحة أكبر، والنشرة (يسار) تأخذ مساحة مناسبة */
+.cgf-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+@media (min-width: 768px) {
+    .cgf-grid {
+        grid-template-columns: 1.2fr 0.8fr 0.8fr 1.3fr;
+        gap: 30px;
+    }
+}
+
+.cgf-title {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+.cgf-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.6);
+}
+.cgf-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.cgf-links a {
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    font-size: 13.5px;
+    transition: color 0.3s ease;
+}
+.cgf-links a:hover {
+    color: #ffffff;
+}
+
+.cgf-brand-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+.cgf-icon-box {
+    width: 42px;
+    height: 42px;
+    background: #ffffff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0A0A0A;
+}
+.cgf-brand-text h3 {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1;
+}
+.cgf-brand-text span {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.cgf-socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 24px;
+}
+.cgf-socials a {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s ease;
+}
+.cgf-socials a:hover {
+    background: #ffffff;
+    color: #0A0A0A;
+}
+
+.cgf-newsletter {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 20px;
+    padding: 24px;
+    backdrop-filter: blur(10px);
+}
+.cgf-newsletter-form {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    margin-bottom: 12px;
+}
+.cgf-newsletter-form input {
+    flex: 1;
+    height: 42px;
+    border-radius: 50px;
+    background: #ffffff;
+    border: none;
+    padding: 0 16px;
+    font-size: 13px;
+    font-family: 'Tajawal', sans-serif;
+    outline: none;
+    color: #0A0A0A;
+}
+.cgf-newsletter-form button {
+    height: 42px;
+    padding: 0 20px;
+    border-radius: 50px;
+    background: #FF5A8A;
+    color: #ffffff;
+    border: none;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(255,90,138,0.4);
+    transition: all 0.3s ease;
+}
+.cgf-newsletter-form button:hover {
+    box-shadow: 0 0 25px rgba(255,90,138,0.6);
+    transform: translateY(-1px);
+}
+.cgf-note {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cgf-bottom-bar {
+    margin-top: 50px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+.cgf-copyright {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.4);
+}
+.cgf-badges {
+    display: flex;
+    gap: 10px;
+}
+.cgf-badge-dark, .cgf-badge-lime {
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 600;
+}
+.cgf-badge-dark {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.7);
+}
+.cgf-badge-lime {
+    background: rgba(198, 255, 0, 0.1);
+    border: 1px solid rgba(198, 255, 0, 0.2);
+    color: #C6FF00;
+}/* =========================================
+   قسم الهيرو (الرئيسية فقط - مطابق للتصميم الأصلي)
+========================================= */
+.jaray-hero-wrapper {
+    max-width: 1280px;
+    margin: 40px auto;
+    padding: 0 20px;
+    direction: rtl;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.jaray-hero-box {
+    background: #ffffff;
+    border-radius: 32px;
+    border: 1px solid #E9E5FF;
+    box-shadow: 0 12px 40px -12px rgba(139,92,246,0.15), 0 4px 20px -4px rgba(0,0,0,0.05);
+    position: relative;
+    overflow: hidden;
+    min-height: 620px;
+}
+
+/* الخلفيات المضيئة */
+.jh-bg-glow {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom right, #F8F7FF, #ffffff, #EDE9FE);
+}
+.jh-orb-pink {
+    position: absolute;
+    top: -6rem; right: -6rem;
+    width: 420px; height: 420px;
+    background: rgba(255,90,138,0.12);
+    border-radius: 50%;
+    filter: blur(70px);
+}
+.jh-orb-purple {
+    position: absolute;
+    bottom: -6rem; left: -6rem;
+    width: 520px; height: 520px;
+    background: rgba(139,92,246,0.15);
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.jaray-hero-grid {
+    position: relative;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: 1fr;
+    min-height: 100%;
+}
+@media (min-width: 1024px) {
+    .jaray-hero-grid {
+        grid-template-columns: 1.1fr 0.9fr;
+    }
+}
+
+/* ================= الجانب الأيمن (النصوص) ================= */
+.jh-text-side {
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media (min-width: 1024px) {
+    .jh-text-side { padding: 50px 50px 50px 20px; }
+}
+
+.jh-badge {
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #0A0A0A;
+    color: #ffffff;
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.jh-badge-dot {
+    width: 6px; height: 6px;
+    background: #FF5A8A;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.jh-title {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: clamp(34px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.1;
+    color: #0A0A0A;
+    margin: 0 0 20px 0;
+    letter-spacing: -1px;
+}
+.jh-title-gradient {
+    background: linear-gradient(to left, #FF5A8A, #8B5CF6, #00D4FF);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.jh-desc {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #374151;
+    max-width: 520px;
+    margin-bottom: 32px;
+}
+
+.jh-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+.jh-btn-primary {
+    background: #FF5A8A;
+    color: #ffffff;
+    padding: 0 28px;
+    height: 48px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    box-shadow: 0 0 24px rgba(255,90,138,0.45);
+    transition: all 0.3s ease;
+}
+.jh-btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0 36px rgba(255,90,138,0.65);
+}
+.jh-btn-primary svg {
+    background: #ffffff;
+    color: #FF5A8A;
+    border-radius: 50%;
+    padding: 4px;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s;
+}
+.jh-btn-primary:hover svg {
+    transform: rotate(45deg);
+}
+
+.jh-btn-secondary {
+    background: #F8F7FF;
+    color: #111827;
+    border: 1px solid #E9E5FF;
+    padding: 0 24px;
+    height: 48px;
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+.jh-btn-secondary:hover { background: #ffffff; }
+
+.jh-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    max-width: 420px;
+    margin-bottom: 24px;
+}
+.jh-stat-box {
+    background: #F8F7FF;
+    border: 1px solid #EDE9FE;
+    border-radius: 16px;
+    padding: 12px;
+    text-align: center;
+}
+.jh-stat-num {
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111827;
+}
+.jh-stat-lbl {
+    font-size: 11px;
+    color: #6B7280;
+    margin-top: 4px;
+}
+
+.jh-trust {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    color: #6B7280;
+}
+
+/* ================= الجانب الأيسر (البصريات) ================= */
+.jh-visual-side {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.jh-glass-container {
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 1.15 / 1;
+    position: relative;
+}
+.jh-glass-bg {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, rgba(139,92,246,0.2), rgba(0,212,255,0.15), rgba(255,90,138,0.2));
+    border-radius: 28px;
+    filter: blur(18px);
+}
+.jh-glass-card {
+    position: absolute;
+    top: 12%; bottom: 22%; left: 15%; right: 15%;
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.9);
+    border-radius: 24px;
+    box-shadow: 0 24px 80px rgba(139,92,246,0.25);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.jh-glass-header {
+    height: 30%;
+    background: #0A0A0A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 2px;
+    position: relative;
+}
+.jh-glass-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.4);
+    padding: 1px;
+}
+.jh-glass-grid-item {
+    background: rgba(255,255,255,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* الكروت الطائرة */
+.jh-floating-card {
+    position: absolute;
+    background: rgba(255,255,255,0.72);
+    backdrop-filter: blur(18px);
+    border: 1px solid rgba(255,255,255,0.6);
+    border-radius: 14px;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    animation: float 4s ease-in-out infinite;
+}
+.jh-float-1 { top: 6%; right: 0; animation-duration: 3.5s; }
+.jh-float-2 { top: 34%; left: -5%; animation-duration: 4s; animation-delay: 0.6s; }
+.jh-float-3 { bottom: 15%; right: 5%; animation-duration: 3.8s; animation-delay: 0.3s; }
+
+.jh-float-icon {
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #fff;
+}
+.jh-float-text { font-size: 11px; font-weight: 700; line-height: 1.2; color: #111827; }
+.jh-float-text span { font-size: 10px; font-weight: 400; color: #6B7280; }
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
