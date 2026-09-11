@@ -296,8 +296,7 @@
                         © 2025 متجر جراي — جميع الحقوق محفوظة. صُنع بحب وتوهج نيون.
                     </div>
                     <div class="cgf-badges">
-                        <span class="cgf-badge-dark">RTL • Tajawal + IBM Plex Arabic</span>
-                        <span class="cgf-badge-lime">Design System v1.0</span>
+                   
                     </div>
                 </div>
             </div>
