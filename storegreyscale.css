@@ -6,6 +6,8 @@
   --background: #F8F7FF !important;
   --foreground: #111827 !important;
   --primary: #0A0A0A !important;
+  --primary: #da7daf !important;
+
   --secondary: #FFFFFF !important;
   --border-light: #E9E5FF !important;
 
@@ -1012,4 +1014,9 @@ main>section.min-h-\[300px\]>.absolute.-z-10>.bg-white\/20 {
 /* إخفاء نص العنوان الذي يظهر فوق صورة البنر */
 main>section.min-h-\[300px\]>.theme-container {
   display: none !important;
+}
+
+button.btn.btn-icon.btn-icon-md.bg-background\/10.absolute.bottom-4.ltr\:right-4.rtl\:left-4.backdrop-blur-xs {
+  background: #da7daf38 !important;
+
 }
