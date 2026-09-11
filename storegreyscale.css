@@ -820,3 +820,36 @@ header, .sticky.top-0 > div {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-8px); }
 }
+
+
+
+/* استهداف قسم البنر وإلغاء الارتفاع الإجباري ليأخذ ارتفاع الصورة الطبيعي */
+main > section.min-h-\[300px\] {
+    min-height: auto !important;
+    padding: 0 !important;
+    display: block !important;
+}
+
+/* تحويل حاوية الصورة من خلفية مطلقة إلى عنصر مرئي يأخذ مساحة فعلية */
+main > section.min-h-\[300px\] > .absolute.-z-10 {
+    position: relative !important;
+    z-index: 1 !important;
+}
+
+/* عرض الصورة بالكامل دون قص */
+main > section.min-h-\[300px\] > .absolute.-z-10 > img {
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: unset !important;
+}
+
+/* إخفاء الطبقة البيضاء الشفافة التي تبهت ألوان الصورة */
+main > section.min-h-\[300px\] > .absolute.-z-10 > .bg-white\/20 {
+    display: none !important;
+}
+
+/* إخفاء نص العنوان الذي يظهر فوق صورة البنر */
+main > section.min-h-\[300px\] > .theme-container {
+    display: none !important;
+}
