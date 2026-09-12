@@ -271,7 +271,7 @@ document.addEventListener('DOMContentLoaded', function () {
             {
                 id: "01",
                 title: "إكليل الجبل (Rosemary)",
-                desc: "أظهرت مقارنة استخدام زيت الروزماري مقابل المينوكسيديل (2%) لمدة 6 أشهر لدى المصابين بالصلع الوراثي نمواً متماثلاً في كثافة الشعر، مع ميزة تفوق الروزماري في تقليل حكة الفروة.",
+                desc: "أظهرت مقارنة استخدام زيت الروزماري مقابل المينوكسيديل لمدة 6 أشهر لدى المصابين بالصلع الوراثي نمواً متماثلاً في كثافة الشعر، مع ميزة تفوق الروزماري في تقليل حكة الفروة.",
                 links: [{ url: "https://pubmed.ncbi.nlm.nih.gov/25842469/", label: "دراسة مُحكمة - PubMed" }]
             },
             {
@@ -511,7 +511,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         <!-- النصوص -->
                         <div class="nuvan-quality-text-box">
                             <div class="nuvan-quality-title">Premium Quality — ضمان ذهبي</div>
-                            <div class="nuvan-quality-desc">طبيعي ١٠٠٪، مختبر من أطباء الجلدية، خالٍ من السيليكون والبارابين. إذا لم تحبي النتيجة خلال ٣٠ يوم، نعيد المبلغ.</div>
+                            <div class="nuvan-quality-desc">طبيعي ١٠٠٪، مختبر من أطباء الجلدية، خ. إذا لم تحبي النتيجة خلال ٣٠ يوم، نعيد المبلغ.</div>
                         </div>
                     </div>
 
