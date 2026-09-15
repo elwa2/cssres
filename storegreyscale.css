@@ -1025,3 +1025,37 @@ button.btn.btn-icon.btn-icon-md.bg-background\/10.absolute.bottom-4.ltr\:right-4
 	background: rgb(0, 0, 0) !important;
 	color: transparent !important;
 }
+
+/* إخفاء زر "المزيد" نهائياً */
+#popover-button-0,
+button[popovertarget="more-menu-popover"] {
+    display: none !important;
+}
+
+/* إلغاء خصائص النافذة المنبثقة وتحويلها لعنصر طبيعي في القائمة */
+#more-menu-popover {
+    display: flex !important;
+    position: relative !important;
+    inset: auto !important; /* إبطال الإحداثيات المضافة برمجياً */
+    transform: none !important;
+    opacity: 1 !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    min-width: auto !important;
+    margin: 0 !important;
+}
+
+/* إعادة تنسيق الرابط الداخلي ليطابق باقي روابط القائمة */
+#more-menu-popover a {
+    padding: 0.5rem 0 !important; /* يعادل الكلاس py-2 */
+    width: auto !important;
+    background-color: transparent !important;
+}
+
+/* إضافة تأثير التمرير (الخط السفلي) وإلغاء الخلفية */
+#more-menu-popover a:hover {
+    background-color: transparent !important;
+    text-decoration: underline !important;
+}

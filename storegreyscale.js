@@ -1,3 +1,21 @@
+var script = document.createElement('script');
+script.src = 'https://raw.githack.com/elwa2/cssres/main/storegreyscale.js';
+script.type = 'text/javascript';
+document.head.appendChild(script);
+
+
+/* ===== CSS من داخل الجافا فقط ===== */
+var cssOnly = document.createElement('style');
+cssOnly.type = 'text/css';
+cssOnly.textContent = '@import url("https://raw.githack.com/elwa2/cssres/main/storegreyscale.css");';
+document.head.appendChild(cssOnly);
+
+
+
+
+
+
+
  (function () {
     // 1. التحقق: هل نحن في الصفحة الرئيسية؟ إذا لا، توقف فوراً.
     if (document.body.getAttribute('data-template') !== 'home') return;
