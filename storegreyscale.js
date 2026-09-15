@@ -246,7 +246,7 @@
                         <div class="cgf-brand-header">
                             <div class="cgf-icon-box"><a href="/" class="shrink-0" aria-label="الرئيسية">
 
-  <img width="106" height="44" src="        https://media.zid.store/cdn-cgi/image/w=212,q=90,f=auto/https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/08db1f5b-ce69-477a-837d-ff9d86b6ed15.png
+  <img width="106" height="44" src="        https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/d5d9c547-bd42-46ce-b4c0-fbf3d49bc3b0.png
 " class="absolute md:relative md:top-auto left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 -translate-y-1/2 md:translate-y-0 max-h-[44px] md:max-h-[66px] w-auto object-contain  hidden md:block " alt="greyscale.website">
          </a></div>
                             <div class="cgf-brand-text">
