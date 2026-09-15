@@ -244,14 +244,18 @@
                     <!-- العمود الأول (أقصى اليمين): الشعار والنبذة -->
                     <div class="cgf-col">
                         <div class="cgf-brand-header">
-                            <div class="cgf-icon-box">${iconLightbulb}</div>
+                            <div class="cgf-icon-box"><a href="/" class="shrink-0" aria-label="الرئيسية">
+
+  <img width="106" height="44" src="        https://media.zid.store/cdn-cgi/image/w=212,q=90,f=auto/https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/08db1f5b-ce69-477a-837d-ff9d86b6ed15.png
+" class="absolute md:relative md:top-auto left-1/2 md:left-auto -translate-x-1/2 md:translate-x-0 -translate-y-1/2 md:translate-y-0 max-h-[44px] md:max-h-[66px] w-auto object-contain  hidden md:block " alt="greyscale.website">
+         </a></div>
                             <div class="cgf-brand-text">
                                 <h3>متجر جراي</h3>
                                 <span>JARAY STORE • EST 2023</span>
                             </div>
                         </div>
                         <div class="cgf-text">
-                            نحوّل أفكارك إلى منتجات رقمية تبيع. تصميم، محتوى، مونتاج، وإدارة متاجر — بلمسة نيون شبابية واحترافية عالية.
+                           نساعد المتاجر الإلكترونية والمشاريع الناشئة على تعزيز تواجدهم الرقمي.. "حلول إبداعية تواكب أهدافك وتسرع نمو مشروعك
                         </div>
                         <div class="cgf-socials">
                             <a href="#" aria-label="Share">${iconShare}</a>
@@ -278,7 +282,7 @@
                     <div class="cgf-col">
                         <div class="cgf-title">الدعم</div>
                         <ul class="cgf-links">
-                            <li><a href="#">تتبع طلبك</a></li>
+                             
                             <li><a href="#">الأسئلة الشائعة</a></li>
                             <li><a href="#">سياسة الاسترجاع</a></li>
                             <li><a href="#">تواصل معنا</a></li>
@@ -286,18 +290,7 @@
                         </ul>
                     </div>
 
-                    <!-- العمود الرابع (أقصى اليسار): النشرة البريدية -->
-                    <div class="cgf-col">
-                        <div class="cgf-newsletter">
-                            <div class="cgf-title">نشرة جراي الإبداعية</div>
-                            <div class="cgf-text">نصائح تصميم + قوالب مجانية كل أسبوع.</div>
-                            <form class="cgf-newsletter-form" onsubmit="event.preventDefault();">
-                                <input type="email" placeholder="بريدك الإلكتروني" required>
-                                <button type="submit">اشتراك</button>
-                            </form>
-                            <div class="cgf-note">${iconCheck} بدون إزعاج. إلغاء في أي وقت.</div>
-                        </div>
-                    </div>
+                      </div>
 
                 </div>
 
