@@ -732,7 +732,8 @@ header,
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
-  padding-bottom: 12px;padding-top: 12px;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 
 .jh-desc {
@@ -985,20 +986,17 @@ header,
 
 
 
-/* استهداف قسم البنر وإلغاء الارتفاع الإجباري ليأخذ ارتفاع الصورة الطبيعي */
 main>section.min-h-\[300px\] {
   min-height: auto !important;
   padding: 0 !important;
   display: block !important;
 }
 
-/* تحويل حاوية الصورة من خلفية مطلقة إلى عنصر مرئي يأخذ مساحة فعلية */
 main>section.min-h-\[300px\]>.absolute.-z-10 {
   position: relative !important;
   z-index: 1 !important;
 }
 
-/* عرض الصورة بالكامل دون قص */
 main>section.min-h-\[300px\]>.absolute.-z-10>img {
   position: static !important;
   width: 100% !important;
@@ -1006,12 +1004,10 @@ main>section.min-h-\[300px\]>.absolute.-z-10>img {
   object-fit: unset !important;
 }
 
-/* إخفاء الطبقة البيضاء الشفافة التي تبهت ألوان الصورة */
 main>section.min-h-\[300px\]>.absolute.-z-10>.bg-white\/20 {
   display: none !important;
 }
 
-/* إخفاء نص العنوان الذي يظهر فوق صورة البنر */
 main>section.min-h-\[300px\]>.theme-container {
   display: none !important;
 }
@@ -1020,42 +1016,51 @@ button.btn.btn-icon.btn-icon-md.bg-background\/10.absolute.bottom-4.ltr\:right-4
   background: #da7daf38 !important;
 
 }
- 
+
 .bg-primary.text-primary-foreground.overflow-hidden {
-	background: rgb(0, 0, 0) !important;
-	color: transparent !important;
+  background: rgb(0, 0, 0) !important;
+  color: transparent !important;
 }
 
-/* إخفاء زر "المزيد" نهائياً */
 #popover-button-0,
 button[popovertarget="more-menu-popover"] {
-    display: none !important;
+  display: none !important;
 }
 
-/* إلغاء خصائص النافذة المنبثقة وتحويلها لعنصر طبيعي في القائمة */
 #more-menu-popover {
-    display: flex !important;
-    position: relative !important;
-    inset: auto !important; /* إبطال الإحداثيات المضافة برمجياً */
-    transform: none !important;
-    opacity: 1 !important;
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    min-width: auto !important;
-    margin: 0 !important;
+  display: flex !important;
+  position: relative !important;
+  inset: auto !important;
+  /* إبطال الإحداثيات المضافة برمجياً */
+  transform: none !important;
+  opacity: 1 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  min-width: auto !important;
+  margin: 0 !important;
 }
 
-/* إعادة تنسيق الرابط الداخلي ليطابق باقي روابط القائمة */
 #more-menu-popover a {
-    padding: 0.5rem 0 !important; /* يعادل الكلاس py-2 */
-    width: auto !important;
-    background-color: transparent !important;
+  padding: 0.5rem 0 !important;
+  /* يعادل الكلاس py-2 */
+  width: auto !important;
+  background-color: transparent !important;
 }
 
-/* إضافة تأثير التمرير (الخط السفلي) وإلغاء الخلفية */
 #more-menu-popover a:hover {
-    background-color: transparent !important;
-    text-decoration: underline !important;
+  background-color: transparent !important;
+  text-decoration: underline !important;
+}
+
+@media(max-width:767px) {
+
+  .products-embla__slide {
+    width: 50%;
+  }
+
+  .products-embla__container {
+    width: 50%;
+  }
 }
