@@ -50,12 +50,12 @@ document.head.appendChild(cssOnly);
                             لنجاحك !
                         </h1>
                         <p class="jh-desc">
-                            حلول إبداعية تواكب أهدافك وتسرّع نمو مشروعك.. من الهوية البصرية إلى إدارة السوشيال والمحتوى والمونتاج — كل شيء في متجر واحد بنكهة نيون.
+                           نساعد المتاجر الإلكترونية والمشاريع الناشئة على تعزيز تواجدهم الرقمي.. "حلول إبداعية تواكب أهدافك وتسرع نمو مشروعك
                         </p>
                         
                         <div class="jh-buttons">
-                            <a href="#products" class="jh-btn-primary">اطلب الآن ${iconArrow}</a>
-                            <a href="#how-we-work" class="jh-btn-secondary">${iconPlay} كيف نعمل؟</a>
+                            <a  class="jh-btn-primary">اطلب الآن ${iconArrow}</a>
+                          
                         </div>
 
                         <div class="jh-stats">

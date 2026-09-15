@@ -732,7 +732,7 @@ header,
   -webkit-background-clip: text;
   color: transparent;
   display: inline-block;
-  padding-bottom: 5px;
+  padding-bottom: 12px;padding-top: 12px;
 }
 
 .jh-desc {
