@@ -260,8 +260,7 @@
                         <div class="cgf-socials">
                             <a href="#" aria-label="Share">${iconShare}</a>
                             <a href="#" aria-label="Share">${iconShare}</a>
-                            <a href="#" aria-label="Share">${iconShare}</a>
-                            <a href="#" aria-label="Share">${iconShare}</a>
+                         
                         </div>
                     </div>
 
