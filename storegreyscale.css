@@ -1063,4 +1063,18 @@ button[popovertarget="more-menu-popover"] {
   .products-embla__container {
     width: 50%;
   }
+
+  [data-product-card] button,
+  .btn-outlined {
+    font-weight: 200 !important;
+    font-size: .7rem;
+  }
+}
+
+.marquee-group img {
+  max-width: 100%;
+  max-height: 265%;
+  /* object-fit: contain; */
+  mix-blend-mode: darken;
+  opacity: 0.9;
 }

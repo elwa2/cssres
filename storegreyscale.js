@@ -129,35 +129,44 @@
 
     // 2. تقسيم الشعارات لصفين
     const row1Logos = `
-        <a href="https://hana.com.sa/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/dd635213-f655-429d-b942-ed06ebdf3585.png" alt="Brand"></a>
-        <a href="https://c971.ae/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/35117985-0b64-403e-9120-c80c183aa21d.png" alt="Brand"></a>
-        <a href="https://dstartco.com/ar/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/730ff704-2652-4245-8688-8d04676d670b.png" alt="Brand"></a>
-        <a href="https://grippysa.com/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/7b604ac8-983c-4cdb-a0f9-76590e2edc42.png" alt="Brand"></a>
-        <a href="https://nfahsa.com/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/f8faa58b-c1bb-44e7-ab19-789483a961b3.png" alt="Brand"></a>
-        <a href="https://hasinah-sa.com/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/792da464-a637-488b-b267-a64c647adbe5.png" alt="Brand"></a>
-        <a href="https://nephelestore.com/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/025a0646-9ecd-4a85-8b07-4f498119e04d.png" alt="Brand"></a>
-        <a href="https://addaxsa.com/ar-sa/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/d0550c3f-748c-47a6-9820-e3a180cd39c0.png" alt="Brand"></a>
-        <a href="https://shakasa.com/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/6de112b2-66e1-4fc1-bb72-c892f500568f.png" alt="Brand"></a>
-        <a href="https://shoetypes.co/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/cbf46038-abfa-4e0a-a7a8-e85c7273ff8a.png" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/faf63125-c56a-4147-b1b9-6e296fbcbcd3.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/e616a6d4-0a24-4021-915e-2856dccd58aa.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/332bfb83-fc83-426b-8449-b697fdfe066a.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f466289a-8b48-4a16-8ede-148aef129b00.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/8c9bda20-d228-440f-a8f8-e6aa039efb51.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dcd3e31e-35ef-477e-bd25-1ab75f7631f5.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/cb3205d9-0253-4624-a402-93d39e9bf50b.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/bc5d313e-42e7-48ce-9a23-637617a4df8e.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/b9337871-06af-41d9-8b10-1b18d4a19e90.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1c8c2644-2e1a-4259-8579-fb942e3a48c6.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/7cd2133a-3f1e-4171-9f8c-22814781ca4e.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1922b3d2-7810-4411-96bc-9d87a6a4dc38.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/9f329dd2-4527-4544-bd69-9b0977a58ef1.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f231860a-727c-40fc-9012-142b28751751.jpg" alt="Brand"></a>
+      
     `;
 
     const row2Logos = `
-        <a href="https://ananasroastery.com/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/22026a36-1efb-4319-8921-27896cefdca8.png" alt="Brand"></a>
-        <a href="https://thecandypills.com/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/539c09e3-00e9-430c-9b26-cc3ef4239570.png" alt="Brand"></a>
-        <a href="https://roohsweet.net/ar-sa/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/5664e023-7483-4349-b53e-f73cbba29ee2.png" alt="Brand"></a>
-        <a href="https://sultan.sa/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/58b912a9-66a8-49d3-83d3-2f3c3a7d97f6.png" alt="Brand"></a>
-        <a href="https://padelstoreksa.com/ar-sa/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/d992b345-9071-4759-b146-679e4cb85231.png" alt="Brand"></a>
-        <a href="https://wooden.sa/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/4f725e9c-4e8c-45ff-ae92-c2973ce05cab.png" alt="Brand"></a>
-        <a href="http://moqafaa.com/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/6223cea4-625b-4f67-a411-e20d1ca2dca5.png" alt="Brand"></a>
-        <a href="https://almunasabah.net/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/bc78c9ab-a1ef-4f56-a245-afe7d9608812.png" alt="Brand"></a>
-        <a href="https://smartbody.me/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/46e33ea0-eb16-4624-9084-a8d83d4e803d.png" alt="Brand"></a>
-        <a href="https://peacockroaster.com/" target="_blank"><img loading="lazy" src="https://media.zid.store/0232d8f5-ca57-4d25-a080-a49f33996232/3a2cae5b-ee1a-4455-ab2e-7eb2fb32db3b.png" alt="Brand"></a>
+          <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/faf63125-c56a-4147-b1b9-6e296fbcbcd3.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/e616a6d4-0a24-4021-915e-2856dccd58aa.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/332bfb83-fc83-426b-8449-b697fdfe066a.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f466289a-8b48-4a16-8ede-148aef129b00.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/8c9bda20-d228-440f-a8f8-e6aa039efb51.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dcd3e31e-35ef-477e-bd25-1ab75f7631f5.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/cb3205d9-0253-4624-a402-93d39e9bf50b.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/bc5d313e-42e7-48ce-9a23-637617a4df8e.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/b9337871-06af-41d9-8b10-1b18d4a19e90.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1c8c2644-2e1a-4259-8579-fb942e3a48c6.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/7cd2133a-3f1e-4171-9f8c-22814781ca4e.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1922b3d2-7810-4411-96bc-9d87a6a4dc38.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/9f329dd2-4527-4544-bd69-9b0977a58ef1.jpg" alt="Brand"></a>
+        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f231860a-727c-40fc-9012-142b28751751.jpg" alt="Brand"></a>
     `;
 
     // 3. هيكل الـ HTML للقسم بالكامل
     const sectionHTML = `
         <div class="brands-title-wrapper">
-            <div class="brands-title">شركاء النجاح عملاؤنا</div>
+            <div class="brands-title"> عملاء وثقوا بنا    </div>
         </div>
         
         <div class="brands-style-box">
@@ -617,88 +626,12 @@
                             <div class="j-story-cta-title">استشارة مجانية 15 دقيقة</div>
                             <div class="j-story-cta-sub">احجز مكالمة ونرسم خارطة طريقك</div>
                         </div>
-                        <button class="j-story-cta-btn">احجز</button>
+<a href="https://wa.me/966502331517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20..%20%D9%83%D9%8A%D9%81%20%D9%8A%D9%85%D9%83%D9%86%D9%86%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83" class="j-story-cta-btn" target="_blank">احجز</a>
                     </div>
                 </div>
-
-                <!-- العمود الأيسر (الكروت) -->
-                <div class="j-cards-col">
-                    <!-- الكرت 1 -->
-                    <div class="j-card">
-                        <div class="j-card-icon-box" style="background: linear-gradient(to bottom right, rgba(255,90,138,0.2), rgba(139,92,246,0.2)); color: #111827;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"></circle><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"></circle><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"></circle><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"></circle><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path></svg>
-                            <span class="j-card-icon-dot" style="background: #FF5A8A; box-shadow: 0 0 10px #FF5A8A;"></span>
-                        </div>
-                        <div style="flex: 1;">
-                            <div class="j-card-header">
-                                <h3 class="j-card-title">هوية تنبض، لا مجرد لوجو</h3>
-                                <span class="j-card-num">01</span>
-                            </div>
-                            <p class="j-card-p">نبني نظام بصري كامل: ألوان، خطوط، أيقونات، قوالب سوشيال، ودليل استخدام — جاهز للتوسع.</p>
-                            <div class="j-tags">
-                                <span class="j-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>تسليم سريع</span>
-                                <span class="j-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>ملفات مفتوحة</span>
-                                <span class="j-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>دعم</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- الكرت 2 -->
-                    <div class="j-card">
-                        <div class="j-card-icon-box" style="background: linear-gradient(to bottom right, rgba(0,212,255,0.2), rgba(139,92,246,0.2)); color: #111827;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15.707 21.293a1 1 0 0 1-1.414 0l-1.586-1.586a1 1 0 0 1 0-1.414l5.586-5.586a1 1 0 0 1 1.414 0l1.586 1.586a1 1 0 0 1 0 1.414z"></path><path d="m18 13-1.375-6.874a1 1 0 0 0-.746-.776L3.235 2.028a1 1 0 0 0-1.207 1.207L5.35 15.879a1 1 0 0 0 .776.746L13 18"></path><path d="m2.3 2.3 7.286 7.286"></path><circle cx="11" cy="11" r="2"></circle></svg>
-                            <span class="j-card-icon-dot" style="background: #00D4FF; box-shadow: 0 0 10px #00D4FF;"></span>
-                        </div>
-                        <div style="flex: 1;">
-                            <div class="j-card-header">
-                                <h3 class="j-card-title">محتوى يفهم الخوارزميات والناس</h3>
-                                <span class="j-card-num">02</span>
-                            </div>
-                            <p class="j-card-p">كتابة محتوى ومونتاج Reels مبني على هوك قوي، سرد قصصي، ودعوة إجراء واضحة — ليس حشو.</p>
-                            <div class="j-tags">
-                                <span class="j-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>تسليم سريع</span>
-                                <span class="j-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>ملفات مفتوحة</span>
-                                <span class="j-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>دعم</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- الكرت 3 -->
-                    <div class="j-card">
-                        <div class="j-card-icon-box" style="background: linear-gradient(to bottom right, rgba(198,255,0,0.25), rgba(255,90,138,0.15)); color: #111827;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m2 7 4.41-4.41A2 2 0 0 1 7.83 2h8.34a2 2 0 0 1 1.42.59L22 7"></path><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path><path d="M15 22v-4a2 2 0 0 0-2-2h-2a2 2 0 0 0-2 2v4"></path><path d="M2 7h20"></path><path d="M22 7v3a2 2 0 0 1-2 2a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 16 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 12 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 8 12a2.7 2.7 0 0 1-1.59-.63.7.7 0 0 0-.82 0A2.7 2.7 0 0 1 4 12a2 2 0 0 1-2-2V7"></path></svg>
-                            <span class="j-card-icon-dot" style="background: #C6FF00; box-shadow: 0 0 10px #C6FF00;"></span>
-                        </div>
-                        <div style="flex: 1;">
-                            <div class="j-card-header">
-                                <h3 class="j-card-title">متجر خدمات، لا فوضى ملفات</h3>
-                                <span class="j-card-num">03</span>
-                            </div>
-                            <p class="j-card-p">كل طلباتك في لوحة واحدة، تتبع مباشر، تسليمات منظمة، ودعم واتساب سريع — كأنك تطلب من متجر.</p>
-                            <div class="j-tags">
-                                <span class="j-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>تسليم سريع</span>
-                                <span class="j-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>ملفات مفتوحة</span>
-                                <span class="j-tag"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"></path></svg>دعم</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- الكروت السفلية -->
-                    <div class="j-bottom-grid">
-                        <div class="j-work-style">
-                            <div class="j-work-icon">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"></path></svg>
-                            </div>
-                            <div>
-                                <div class="j-work-title">أسلوب العمل</div>
-                                <div class="j-work-sub">Brief → Concept → Delivery → Support</div>
-                            </div>
-                        </div>
-                        <div class="j-support">
-                            <div class="j-support-title">24/7</div>
-                            <div class="j-support-sub">دعم مستمر</div>
-                        </div>
-                    </div>
+ 
+               
+                       </div>
                 </div>
             </div>
         </section>
