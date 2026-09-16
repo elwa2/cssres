@@ -119,99 +119,230 @@
 
 
 
-
 (function () {
-    // 1. حذف أي قسم قديم تم حقنه سابقاً لتنظيف الصفحة
-    const oldSection = document.getElementById("injected-brands-section");
-    if (oldSection) oldSection.remove();
+    // 1. التأكد من أننا في الصفحة الرئيسية فقط
+    if (document.body.getAttribute('data-template') !== 'home') return;
 
-    // 2. تقسيم الشعارات لصفين
-    const row1Logos = `
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/faf63125-c56a-4147-b1b9-6e296fbcbcd3.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/e616a6d4-0a24-4021-915e-2856dccd58aa.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/332bfb83-fc83-426b-8449-b697fdfe066a.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f466289a-8b48-4a16-8ede-148aef129b00.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/8c9bda20-d228-440f-a8f8-e6aa039efb51.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dcd3e31e-35ef-477e-bd25-1ab75f7631f5.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/cb3205d9-0253-4624-a402-93d39e9bf50b.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/bc5d313e-42e7-48ce-9a23-637617a4df8e.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/b9337871-06af-41d9-8b10-1b18d4a19e90.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1c8c2644-2e1a-4259-8579-fb942e3a48c6.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/7cd2133a-3f1e-4171-9f8c-22814781ca4e.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1922b3d2-7810-4411-96bc-9d87a6a4dc38.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/9f329dd2-4527-4544-bd69-9b0977a58ef1.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f231860a-727c-40fc-9012-142b28751751.jpg" alt="Brand"></a>
-      
-    `;
+    function injectAllCustomSections() {
+        // منع التكرار
+        if (document.getElementById('jaray-story-banner-section')) return true;
 
-    const row2Logos = `
-          <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/faf63125-c56a-4147-b1b9-6e296fbcbcd3.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/e616a6d4-0a24-4021-915e-2856dccd58aa.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/332bfb83-fc83-426b-8449-b697fdfe066a.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f466289a-8b48-4a16-8ede-148aef129b00.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/8c9bda20-d228-440f-a8f8-e6aa039efb51.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dcd3e31e-35ef-477e-bd25-1ab75f7631f5.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/cb3205d9-0253-4624-a402-93d39e9bf50b.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/bc5d313e-42e7-48ce-9a23-637617a4df8e.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/b9337871-06af-41d9-8b10-1b18d4a19e90.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1c8c2644-2e1a-4259-8579-fb942e3a48c6.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/7cd2133a-3f1e-4171-9f8c-22814781ca4e.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1922b3d2-7810-4411-96bc-9d87a6a4dc38.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/9f329dd2-4527-4544-bd69-9b0977a58ef1.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f231860a-727c-40fc-9012-142b28751751.jpg" alt="Brand"></a>
-    `;
-
-    // 3. هيكل الـ HTML للقسم بالكامل
-    const sectionHTML = `
-        <div class="brands-title-wrapper">
-            <div class="brands-title"> عملاء وثقوا بنا    </div>
-        </div>
-        
-        <div class="brands-style-box">
-            <!-- الصف الأول -->
-            <div class="marquee-track">
-                <div class="marquee-group">${row1Logos}</div>
-                <div class="marquee-group" aria-hidden="true">${row1Logos}</div>
-            </div>
-            
-            <!-- الصف الثاني (يتحرك عكس الصف الأول) -->
-            <div class="marquee-track reverse">
-                <div class="marquee-group">${row2Logos}</div>
-                <div class="marquee-group" aria-hidden="true">${row2Logos}</div>
-            </div>
-        </div>
-    `;
-
-    // 4. دالة الحقن الآمنة
-    function injectBrandsSection() {
-        if (document.getElementById("injected-brands-section")) return true;
-        
+        // البحث عن القسم المستهدف لاستبداله
+        const targetSection = document.querySelector('section[section-id="1c75d9c6-1b50-4174-8601-c7f99d482261"]');
         const mainContainer = document.getElementById("main");
-        if (!mainContainer) return false;
-
-        const wrapper = document.createElement("section");
-        wrapper.id = "injected-brands-section";
-        wrapper.className = "custom-brands-section";
-        wrapper.innerHTML = sectionHTML;
         
-        // إضافته في النهاية قبل الفوتر
-        mainContainer.appendChild(wrapper);
+        if (!targetSection || !mainContainer) return false;
+
+        /* ========================================================
+           2. تجهيز الـ HTML للأقسام الثلاثة
+           ======================================================== */
+        
+        // --- أ. قسم لماذا جراي (البانر الأفقي - سيكون بالأعلى) ---
+        const storyHTML = `
+            <section id="jaray-story-banner-section" class="jb-section">
+                <div class="jb-container">
+                    <div class="jb-banner">
+                        <div class="jb-text-content">
+                            <div class="jb-badge">لماذا جراي؟</div>
+                            <h2 class="jb-title">نحوّل أفكارك إلى <span class="jb-highlight">متجر إبداعي ينبض</span></h2>
+                            <p class="jb-desc">لسنا مجرد مصممين. نحن فريق نمو: نفهم جمهورك، نبني هويتك، نكتب رسالتك، ونطلقها بفيديو ومحتوى يبيع.</p>
+                        </div>
+                        
+                        <div class="jb-action-content">
+                            <div class="jb-cta-box">
+                                <div class="jb-cta-bg"></div>
+                                <div class="jb-cta-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                </div>
+                                <div class="jb-cta-info">
+                                    <div class="jb-cta-title">استشارة مجانية 15 دقيقة</div>
+                                    <div class="jb-cta-sub">احجز مكالمة ونرسم خارطة طريقك</div>
+                                </div>
+                                <a href="https://wa.me/966502331517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20..%20%D9%83%D9%8A%D9%81%20%D9%8A%D9%85%D9%83%D9%86%D9%86%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83" class="jb-cta-btn" target="_blank">احجز</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        `;
+
+        // --- ب. قسم أعمالنا (سيكون بالأسفل) ---
+        const workImages = [
+            "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/87c46749-9e21-4a23-8f56-7433fddbf9e0.png",
+            "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/51d38291-0acf-4e27-9401-738f7580365b.png",
+            "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dd900d48-34bc-48a4-9ad1-20aa78e4e968.png",
+            "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/7d00d300-b06a-42b9-a32f-a89daa2e116c.png",
+            "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/21770bbe-9ddd-47f6-b2b2-347e6caedf6c.png",
+            "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/d741f02b-f80e-4fad-9de1-eedbaad16fa6.png",
+            "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/811bfdd2-993a-40a4-b080-3f57e3961026.png",
+            "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dcfe8b3c-d3de-47b6-8056-54c102dc76e7.png"
+        ];
+        const worksImagesHTML = workImages.map(src => `<img src="${src}" alt="أعمالنا" loading="lazy" class="jw-img">`).join('');
+
+        const worksHTML = `
+            <section id="jaray-works-section">
+                <div class="jw-container">
+                    <h2 class="jw-title">أعمالنا</h2>
+                    <div class="jw-marquee-wrapper" dir="ltr">
+                        <div class="jw-fade jw-fade-left"></div>
+                        <div class="jw-fade jw-fade-right"></div>
+                        <div class="jw-marquee-track">
+                            <div class="jw-marquee-group">${worksImagesHTML}</div>
+                            <div class="jw-marquee-group" aria-hidden="true">${worksImagesHTML}</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        `;
+
+        // --- ج. قسم العلامات التجارية ---
+        const brandLogos = `
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/faf63125-c56a-4147-b1b9-6e296fbcbcd3.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/e616a6d4-0a24-4021-915e-2856dccd58aa.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/332bfb83-fc83-426b-8449-b697fdfe066a.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f466289a-8b48-4a16-8ede-148aef129b00.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/8c9bda20-d228-440f-a8f8-e6aa039efb51.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dcd3e31e-35ef-477e-bd25-1ab75f7631f5.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/cb3205d9-0253-4624-a402-93d39e9bf50b.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/bc5d313e-42e7-48ce-9a23-637617a4df8e.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/b9337871-06af-41d9-8b10-1b18d4a19e90.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1c8c2644-2e1a-4259-8579-fb942e3a48c6.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/7cd2133a-3f1e-4171-9f8c-22814781ca4e.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1922b3d2-7810-4411-96bc-9d87a6a4dc38.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/9f329dd2-4527-4544-bd69-9b0977a58ef1.jpg" alt="Brand"></a>
+            <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f231860a-727c-40fc-9012-142b28751751.jpg" alt="Brand"></a>
+        `;
+
+        const brandsHTML = `
+            <div class="brands-title-wrapper">
+                <div class="brands-title">عملاء وثقوا بنا</div>
+            </div>
+            <div class="brands-style-box" dir="ltr">
+                <div class="brands-marquee-track">
+                    <div class="brands-marquee-group">${brandLogos}</div>
+                    <div class="brands-marquee-group" aria-hidden="true">${brandLogos}</div>
+                </div>
+                <div class="brands-marquee-track reverse">
+                    <div class="brands-marquee-group">${brandLogos}</div>
+                    <div class="brands-marquee-group" aria-hidden="true">${brandLogos}</div>
+                </div>
+            </div>
+        `;
+
+        /* ========================================================
+           3. التنسيقات (CSS) المجمعة
+           ======================================================== */
+        const combinedStyles = `
+            /* --- تنسيقات بانر لماذا جراي --- */
+            .jb-section { width: 100%; padding: 64px 20px 20px 20px; direction: rtl; font-family: inherit; background-color: var(--background, #ffffff); }
+            .jb-container { max-width: 1280px; margin: 0 auto; }
+            .jb-banner { display: flex; flex-direction: column; gap: 32px; background: var(--secondary, #F8F9FA); border: 1px solid var(--border, #E5E7EB); border-radius: 24px; padding: 40px; align-items: center; justify-content: space-between; box-shadow: 0 10px 30px rgba(0,0,0,0.03); }
+            .jb-text-content { flex: 1; text-align: right; }
+            .jb-badge { display: inline-flex; padding: 6px 16px; border-radius: 99px; background: #fff; border: 1px solid #E9E5FF; font-size: 13px; font-weight: 700; color: #8B5CF6; margin-bottom: 20px; }
+            .jb-title { font-size: clamp(24px, 3vw, 32px); font-weight: 800; line-height: 1.5; color: var(--foreground, #111827); margin: 0; }
+            .jb-highlight { position: relative; display: inline-block; z-index: 1; }
+            .jb-highlight::after { content: ''; position: absolute; bottom: 6px; left: 0; right: 0; height: 10px; background: rgba(198, 255, 0, 0.6); transform: rotate(-1deg); z-index: -1; }
+            .jb-desc { margin-top: 16px; font-size: 16px; line-height: 1.8; color: #4B5563; max-width: 90%; }
+            .jb-action-content { width: 100%; max-width: 450px; flex-shrink: 0; }
+            .jb-cta-box { border-radius: 20px; background: #0A0A0A; color: white; padding: 20px 24px; display: flex; align-items: center; gap: 16px; position: relative; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.1); width: 100%; }
+            .jb-cta-bg { position: absolute; inset: 0; background: linear-gradient(to left, rgba(139,92,246,0.3), transparent); pointer-events: none; }
+            .jb-cta-icon { position: relative; width: 48px; height: 48px; border-radius: 50%; background: white; color: black; display: grid; place-items: center; flex-shrink: 0; }
+            .jb-cta-info { position: relative; flex: 1; text-align: right; }
+            .jb-cta-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+            .jb-cta-sub { font-size: 12px; color: rgba(255,255,255,0.7); }
+            .jb-cta-btn { position: relative; background: white; color: black; font-size: 14px; font-weight: 700; padding: 10px 24px; border-radius: 99px; text-decoration: none; transition: transform 0.2s; white-space: nowrap; }
+            .jb-cta-btn:hover { transform: scale(1.05); }
+
+            /* --- تنسيقات أعمالنا --- */
+            #jaray-works-section { padding: 20px 0 64px 0; background-color: var(--background, #ffffff); overflow: hidden; width: 100%; direction: rtl; }
+            .jw-title { text-align: center; font-size: clamp(28px, 4vw, 36px); font-weight: 800; color: var(--foreground, #111827); margin-bottom: 40px; font-family: inherit; }
+            .jw-marquee-wrapper { position: relative; display: flex; width: 100%; overflow: hidden; }
+            .jw-fade { position: absolute; top: 0; bottom: 0; width: 150px; z-index: 2; pointer-events: none; }
+            .jw-fade-left { left: 0; background: linear-gradient(to right, var(--background, #ffffff) 0%, transparent 100%); }
+            .jw-fade-right { right: 0; background: linear-gradient(to left, var(--background, #ffffff) 0%, transparent 100%); }
+            .jw-marquee-track { display: flex; width: max-content; animation: jw-scroll 35s linear infinite; }
+            .jw-marquee-wrapper:hover .jw-marquee-track { animation-play-state: paused; }
+            .jw-marquee-group { display: flex; gap: 24px; padding-right: 24px; flex-shrink: 0; }
+            .jw-img { height: 220px; width: 320px; object-fit: cover; border-radius: 16px; box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); transition: transform 0.3s ease, box-shadow 0.3s ease; background-color: var(--secondary, #f6f5f4); }
+            .jw-img:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12); }
+            @keyframes jw-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+
+            /* --- تنسيقات العلامات التجارية --- */
+            .custom-brands-section { padding: 40px 0 64px 0; background: #fff; overflow: hidden; width: 100%; font-family: inherit; }
+            .brands-title-wrapper { text-align: center; margin-bottom: 40px; }
+            .brands-title { font-size: clamp(28px, 4vw, 36px); font-weight: 800; color: #111827; }
+            .brands-style-box { display: flex; flex-direction: column; gap: 24px; width: 100%; position: relative; }
+            .brands-marquee-track { display: flex; width: max-content; animation: jw-scroll 45s linear infinite; }
+            .brands-marquee-track.reverse { animation-direction: reverse; }
+            .brands-style-box:hover .brands-marquee-track { animation-play-state: paused; }
+            .brands-marquee-group { display: flex; gap: 24px; padding-right: 24px; flex-shrink: 0; }
+            .brands-marquee-group img { height: 80px; width: 140px; object-fit: contain; border-radius: 12px; filter: grayscale(100%); transition: filter 0.3s; background: #f8f9fa; border: 1px solid #E5E7EB; padding: 10px; cursor: pointer; }
+            .brands-marquee-group img:hover { filter: grayscale(0%); }
+
+            /* شاشات سطح المكتب */
+            @media (min-width: 992px) {
+                .jb-banner { flex-direction: row; padding: 48px; }
+            }
+
+            /* شاشات الجوال */
+            @media (max-width: 768px) {
+                .jb-section { padding: 40px 16px 20px 16px; }
+                .jb-banner { padding: 24px; gap: 24px; }
+                .jb-desc { max-width: 100%; font-size: 14px; }
+                .jb-cta-box { padding: 16px; flex-wrap: wrap; justify-content: center; text-align: center; }
+                .jb-cta-info { text-align: center; min-width: 100%; margin-bottom: 8px; }
+                .jb-cta-btn { width: 100%; text-align: center; }
+
+                #jaray-works-section { padding: 20px 0 40px 0; }
+                .jw-img { height: 160px; width: 240px; border-radius: 12px; }
+                .jw-marquee-group { gap: 16px; padding-right: 16px; }
+                .jw-fade { width: 60px; }
+
+                .custom-brands-section { padding: 20px 0 40px 0; }
+                .brands-title { margin-bottom: 24px; }
+                .brands-marquee-group { gap: 16px; padding-right: 16px; }
+                .brands-marquee-group img { height: 60px; width: 100px; padding: 6px; }
+            }
+        `;
+
+        /* ========================================================
+           4. الحقن الفعلي في الصفحة (استبدال وإضافة)
+           ======================================================== */
+        
+        // أ. حقن جميع التنسيقات في Head
+        const styleTag = document.createElement('style');
+        styleTag.type = 'text/css';
+        styleTag.textContent = combinedStyles;
+        document.head.appendChild(styleTag);
+
+        // ب. استبدال القسم القديم بـ (لماذا جراي) متبوعاً بـ (أعمالنا)
+        targetSection.outerHTML = storyHTML + worksHTML;
+
+        // ج. حقن قسم (عملاء وثقوا بنا) في نهاية الـ Main (قبل الفوتر)
+        const oldBrands = document.getElementById("injected-brands-section");
+        if (oldBrands) oldBrands.remove();
+
+        const brandsWrapper = document.createElement("section");
+        brandsWrapper.id = "injected-brands-section";
+        brandsWrapper.className = "custom-brands-section";
+        brandsWrapper.innerHTML = brandsHTML;
+        
+        mainContainer.appendChild(brandsWrapper);
+
         return true;
     }
 
-    // 5. محاولة الحقن بمجرد اكتمال المتجر
-    if (!injectBrandsSection()) {
+    // تشغيل الكود بنظام التتبع لضمان التحميل مع بيئة Zid المتأخرة
+    if (!injectAllCustomSections()) {
         let attempts = 0;
-        const intervalTimer = setInterval(() => {
-            attempts++;
-            if (injectBrandsSection() || attempts > 20) {
-                clearInterval(intervalTimer);
+        const observerInterval = setInterval(() => {
+            if (injectAllCustomSections() || attempts >= 30) {
+                clearInterval(observerInterval);
             }
+            attempts++;
         }, 500);
     }
 })();
-
-
 
 
 
