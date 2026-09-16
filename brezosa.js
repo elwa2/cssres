@@ -1,23 +1,23 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const header = document.querySelector("body.index header.store-header");
-  if (header) {
-    const wrapper = document.createElement("div");
-    wrapper.classList.add("video-wrapper");
+// document.addEventListener("DOMContentLoaded", function () {
+//   const header = document.querySelector("body.index header.store-header");
+//   if (header) {
+//     const wrapper = document.createElement("div");
+//     wrapper.classList.add("video-wrapper");
 
-    const video = document.createElement("video");
-    video.classList.add("custom-video");
-    video.src =
-      "https://elwa2.github.io/portfolio/assets/video/work/23214324_20260218_141505.mp4";
-    video.autoplay = true;
-    video.loop = true;
-    video.muted = true;
-    video.playsInline = true;
+//     const video = document.createElement("video");
+//     video.classList.add("custom-video");
+//     video.src =
+//       "https://elwa2.github.io/portfolio/assets/video/work/23214324_20260218_141505.mp4";
+//     video.autoplay = true;
+//     video.loop = true;
+//     video.muted = true;
+//     video.playsInline = true;
 
-    wrapper.appendChild(video);
+//     wrapper.appendChild(video);
 
-    header.parentNode.insertBefore(wrapper, header.nextSibling);
-  }
-});
+//     header.parentNode.insertBefore(wrapper, header.nextSibling);
+//   }
+// });
 
 (function () {
 
