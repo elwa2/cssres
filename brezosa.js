@@ -520,3 +520,88 @@ document.addEventListener("DOMContentLoaded", function() {
         findNumberAndInit();
     }
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    // Target the specific section requested
+    const targetSection = document.querySelector('section.s-block.s-block--fixed-banner.wide-placeholder:first-of-type');
+    
+    if (!targetSection) return;
+
+    const imageUrl = 'https://cdn.files.salla.network/other/575762812/51f8a7db-b94a-46b6-90a4-bf9a0eb274e3-original.webp?_s_uploader_cache_bust=preview-nbj89jem0';
+
+    // 1. Inject Custom CSS for the marquee animation
+    const style = document.createElement('style');
+    style.textContent = `
+        .custom-scrolling-banner {
+            width: 100%;
+            overflow: hidden;
+            display: flex;
+            direction: ltr; /* Forces predictable left-to-right math for the animation */
+            background: transparent;
+            margin-bottom: 20px; /* Spacing before the next section */
+        }
+        .custom-scrolling-track {
+            display: flex;
+            width: max-content;
+            /* Adjust the 25s value to make it scroll faster or slower */
+            animation: custom-scroll-anim 25s linear infinite;
+            will-change: transform;
+        }
+        .custom-scrolling-track:hover {
+            animation-play-state: paused; /* Optional: pauses on hover for readability */
+        }
+        .custom-scrolling-track img {
+            height: 90px; 
+            width: auto;
+            object-fit: contain;
+            padding: 0 15px; /* Spacing between repeating images */
+            flex-shrink: 0;
+            user-select: none;
+            pointer-events: none;
+        }
+        @keyframes custom-scroll-anim {
+            0% { transform: translateX(0); }
+            /* Translates exactly half the width to create a seamless infinite loop */
+            100% { transform: translateX(-50%); } 
+        }
+        @media (max-width: 768px) {
+            .custom-scrolling-track img { 
+                height: 35px; /* Smaller height for mobile devices */
+            }
+            .custom-scrolling-banner {
+                margin-bottom: 10px;
+            }
+        }
+    `;
+    document.head.appendChild(style);
+
+    // 2. Create the DOM elements
+    const wrapper = document.createElement('div');
+    wrapper.className = 'custom-scrolling-banner';
+
+    const track = document.createElement('div');
+    track.className = 'custom-scrolling-track';
+
+    // Create the image element string
+    const imgHTML = `<img src="${imageUrl}" alt="Scrolling Offer Banner" loading="lazy">`;
+    
+    // Repeat the image enough times to ensure it covers screens of all sizes twice over
+    // This allows the -50% translation animation to loop seamlessly
+    track.innerHTML = imgHTML.repeat(12);
+
+    wrapper.appendChild(track);
+
+    // 3. Insert the banner into the page directly after the target section
+    targetSection.insertAdjacentElement('afterend', wrapper);
+});
