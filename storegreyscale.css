@@ -624,7 +624,9 @@ header,
   margin: 40px auto;
   padding: 0 20px;
   direction: rtl;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Tajawal', sans-serif;width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .jaray-hero-box {
@@ -691,7 +693,7 @@ header,
 
 @media (min-width: 1024px) {
   .jh-text-side {
-    padding: 50px 50px 50px 20px;
+    padding: 14px 50px 0px 20px;
   }
 }
 
@@ -846,7 +848,7 @@ header,
 
 /* ================= الجانب الأيسر (البصريات) ================= */
 .jh-visual-side {
-  padding: 40px;
+  padding: 4px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1077,4 +1079,173 @@ button[popovertarget="more-menu-popover"] {
   /* object-fit: contain; */
   mix-blend-mode: darken;
   opacity: 0.9;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ترتيب زر الطلب والإحصائيات في صف واحد للشاشات الكبيرة والمتوسطة */
+@media (min-width: 992px) {
+    .jh-text-side {
+        display: grid !important;
+        grid-template-columns: max-content 1fr !important; /* الزر يأخذ حجمه، والإحصائيات تأخذ المساحة المتبقية */
+        align-items: center !important;
+        column-gap: 20px !important; /* المسافة بين الزر والإحصائيات */
+    }
+
+    /* جعل باقي العناصر تأخذ العرض بالكامل لتبقى في صفوف مستقلة */
+    .jh-text-side .jh-badge, 
+    .jh-text-side .jh-title, 
+    .jh-text-side .jh-desc, 
+    .jh-text-side .jh-trust {
+        grid-column: 1 / -1 !important;
+    }
+
+    /* تحديد مكان الزر */
+    .jh-text-side .jh-buttons {
+        grid-column: 1 / 2 !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* تحديد مكان الإحصائيات */
+    .jh-text-side .jh-stats {
+        grid-column: 2 / 3 !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+        display: flex !important;
+        gap: 12px !important; /* تقليل المسافات بين المربعات لتتسع بجانب الزر */
+        justify-content: flex-start !important;
+    }
+
+    /* تصغير المربعات قليلاً لتناسب الصف الواحد */
+    .jh-stat-box {
+        padding: 8px 14px !important;
+        min-width: auto !important;
+    }
+    
+    .jh-stat-num {
+        font-size: 16px !important;
+    }
+
+    /* إبعاد النص السفلي "يثق بنا..." عن الصف الجديد */
+    .jh-text-side .jh-trust {
+        margin-top: 16px !important;
+    }
 }
+
+/* في الشاشات الصغيرة (الجوال) نعيد الترتيب العمودي حتى لا يزدحم التصميم */
+@media (max-width: 991px) {
+    .jh-text-side {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+}
+
+
+
+/* 1. إزالة الحشوات الكبيرة من حاوية البانر */
+.jaray-hero-wrapper, 
+.jaray-hero-box {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    min-height: auto !important;
+}
+
+/* 2. ضغط المساحات في قسم النصوص بشكل كبير */
+.jh-text-side .jh-badge {
+    margin-bottom: 10px !important;
+    padding: 4px 10px !important;
+    width: 47%;
+}
+
+.jh-text-side .jh-title {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    font-size: clamp(24px, 3vw, 36px) !important;
+    line-height: 1.2 !important;
+}
+
+.jh-text-side .jh-desc {
+    margin-bottom: 16px !important;
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+}
+
+.jh-text-side .jh-buttons {
+    margin-bottom: 16px !important;
+}
+
+.jh-text-side .jh-btn-primary {
+    padding: 10px 20px !important;
+}
+
+.jh-text-side .jh-stats {
+    margin-bottom: 10px !important;
+    padding-bottom: 10px !important;
+    gap: 16px !important;
+}
+
+.jh-stat-num {
+    font-size: 18px !important;
+}
+
+.jh-stat-lbl {
+    font-size: 11px !important;
+}
+
+.jh-text-side .jh-trust {
+    margin-top: -30px !important;
+}
+
+/* 3. ضغط حجم البطاقة الزجاجية والمربعات بداخلها لتقليل الارتفاع */
+.jh-glass-card {
+    padding: 16px !important;
+}
+
+.jh-glass-header {
+    margin-bottom: 12px !important;
+    font-size: 12px !important;
+}
+
+.jh-glass-grid {
+    gap: 8px !important; /* تقليل المسافة بين الأيقونات */
+}
+
+.jh-glass-grid-item {
+    padding: 10px !important; /* تقليل حجم المربعات */
+}
+
+.jh-glass-grid-item svg {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+/* 4. تعديل الكروت الطائرة لتتناسب مع الحجم الجديد وتكون أقرب للمركز */
+.jh-floating-card {
+    padding: 6px 12px !important;
+    gap: 8px !important;
+}
+
+.jh-float-icon {
+    width: 28px !important;
+    height: 28px !important;
+}
+
+.jh-float-text {
+    font-size: 11px !important;
+    line-height: 1.3 !important;
+}
+
+/* تقريب الكروت الطائرة حتى لا تزيد من الارتفاع الكلي */
+.jh-float-1 { top: 5% !important; right: -2% !important; }
+.jh-float-2 {bottom: 20% !important;left: -5% !important;height: 44px;}
+.jh-float-3 {bottom: 27% !important;right: 10% !important;}
