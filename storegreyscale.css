@@ -1248,4 +1248,121 @@ button[popovertarget="more-menu-popover"] {
 /* تقريب الكروت الطائرة حتى لا تزيد من الارتفاع الكلي */
 .jh-float-1 { top: 5% !important; right: -2% !important; }
 .jh-float-2 {bottom: 20% !important;left: -5% !important;height: 44px;}
-.jh-float-3 {bottom: 27% !important;right: 10% !important;}
+.jh-float-3 {bottom: 27% !important;right: 10% !important;}/* =========================================
+   تعديلات الجوال النهائية: ترتيب منطقي وضغط الطول
+========================================= */
+@media (max-width: 768px) {
+    /* 1. الحاوية الرئيسية: تقليل الهوامش لأقصى حد */
+    .jaray-hero-grid {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 10px 0 10px !important; /* إزالة البادينج السفلي لتقليل الطول */
+        gap: 0 !important;
+        overflow: hidden;
+    }
+
+    /* 2. التحكم في قسم النصوص بالكامل */
+    .jh-text-side {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* توسيط كل شيء */
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+        padding: 0;
+    }
+
+    /* الترتيب 1: البادج الأسود (إصلاح مشكلة التمدد) */
+    .jh-badge {
+        order: 1;
+        font-size: 10px !important;
+        padding: 5px 12px !important;
+        margin-bottom: 12px !important;
+        border-radius: 50px !important;
+        max-width: 95%; /* لضمان عدم خروجه عن الشاشة */
+        white-space: normal !important; 
+    }
+
+    /* الترتيب 2: العنوان (جعله في صفوف عرضية) */
+    .jh-title {
+        order: 2;
+        font-size: 21px !important;
+        line-height: 1.4 !important;
+        margin-bottom: 8px !important;
+    }
+    /* إخفاء فواصل الأسطر لإجبار النص على التمدد أفقياً وتقليل الطول */
+    .jh-title br { 
+        display: none !important; 
+    }
+
+    /* الترتيب 3: الوصف */
+    .jh-desc {
+        order: 3;
+        font-size: 12px !important;
+        line-height: 1.5 !important;
+        margin-bottom: 15px !important;
+        padding: 0 5px;
+    }
+
+    /* الترتيب 4: الإحصائيات (صف أفقي ضيق) */
+    .jh-stats {
+        order: 4;
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 8px !important;
+        width: 100%;
+        margin-bottom: 15px !important;
+    }
+    .jh-stat-box {
+        padding: 8px 5px !important;
+        min-width: 75px; /* تصغير حجم المربعات */
+    }
+    .jh-stat-num { font-size: 14px !important; margin-bottom: 2px !important; }
+    .jh-stat-lbl { font-size: 9px !important; }
+
+    /* الترتيب 5: حاوية الزر */
+    .jh-buttons {
+        order: 5;
+        width: 100%;
+        margin-bottom: 10px !important;
+    }
+    .jh-btn-primary {
+        padding: 10px 25px !important;
+        font-size: 14px !important;
+        width: max-content;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    /* الترتيب 6: نص الثقة */
+    .jh-trust {
+        order: 6;
+        font-size: 10px !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* 3. الجزء البصري: تقليم وتقليل الطول بشكل قاسي */
+    .jh-visual-side {
+        order: 7; /* لضمان نزوله للأسفل */
+        width: 100%;
+        height: 160px !important; /* إجبار السكشن على طول قصير جداً */
+        margin-top: -10px !important; /* سحبه للأعلى قليلاً لتغطية الفراغ */
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    /* تصغير الكروت بنسبة 50% لتدخل في المساحة القصيرة */
+    .jh-glass-container {
+        transform: scale(0.5); 
+        transform-origin: top center;
+    }.jh-text-side .jh-trust {
+    margin-top: -8px !important;
+    margin-bottom: 12px !important;
+}.jh-text-side .jh-badge {
+    margin-bottom: 10px !important;
+    padding: 4px 10px !important;
+    width: 100%;
+}
+}
