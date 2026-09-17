@@ -787,17 +787,17 @@
                         <div class="cb-item">
                             <div class="cb-icon">${cubeIcon1}</div>
                             <h3 class="cb-title">أسعارنا التنافسية</h3>
-                            <p class="cb-desc">لا حاجة لهدر المزيد من الأموال، باقاتنا مخصصة وفق ميزانيتك</p>
+                         
                         </div>
                         <div class="cb-item cb-middle">
                             <div class="cb-icon">${cubeIcon2}</div>
                             <h3 class="cb-title">خدماتنا المتجددة</h3>
-                            <p class="cb-desc">حيث تغطي كافة الاحتياجات الإبداعية لمشروعك</p>
+                           
                         </div>
                         <div class="cb-item">
                             <div class="cb-icon">${cubeIcon3}</div>
                             <h3 class="cb-title">خبرتنا العالية</h3>
-                            // <p class="cb-desc">تسهم في وصولك للمكانة الأكثر تميزاً في مجالك</p>
+                           
                         </div>
                     </div>
                 </div>
