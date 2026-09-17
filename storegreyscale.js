@@ -121,23 +121,15 @@
 
  
 
-
-
 (function () {
-    // 1. التأكد من أننا في الصفحة الرئيسية فقط
     if (document.body.getAttribute('data-template') !== 'home') return;
 
     function injectBrandsSection() {
-        // 2. منع التكرار
-        if (document.getElementById('injected-brands-section')) return true;
+        const targetSection = document.querySelector('section[section-id="250ebe8e-e397-4c66-af12-e56ef3880f0b"]');
+        
+        if (!targetSection) return false;
+        if (targetSection.hasAttribute('data-brands-injected')) return true;
 
-        // 3. البحث عن الحاوية الرئيسية لوضع القسم في نهايتها
-        const mainContainer = document.getElementById("main");
-        if (!mainContainer) return false;
-
-        /* ========================================================
-           4. روابط الصور وتجهيز الـ HTML
-           ======================================================== */
         const brandLogosHTML = `
             <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/faf63125-c56a-4147-b1b9-6e296fbcbcd3.jpg" alt="Brand"></a>
             <a target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/e616a6d4-0a24-4021-915e-2856dccd58aa.jpg" alt="Brand"></a>
@@ -171,9 +163,6 @@
             </div>
         `;
 
-        /* ========================================================
-           5. التنسيقات (CSS)
-           ======================================================== */
         const brandsStyles = `
             .custom-brands-section { padding: 40px 0 64px 0; background: #fff; overflow: hidden; width: 100%; font-family: inherit; }
             .brands-title-wrapper { text-align: center; margin-bottom: 40px; }
@@ -185,9 +174,7 @@
             .brands-marquee-group { display: flex; gap: 24px; padding-right: 24px; flex-shrink: 0; }
             .brands-marquee-group img { height: 80px; width: 140px; object-fit: contain; border-radius: 12px; filter: grayscale(100%); transition: filter 0.3s; background: #f8f9fa; border: 1px solid #E5E7EB; padding: 10px; cursor: pointer; }
             .brands-marquee-group img:hover { filter: grayscale(0%); }
-            
             @keyframes brands-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-            
             @media (max-width: 768px) {
                 .custom-brands-section { padding: 20px 0 40px 0; }
                 .brands-title { margin-bottom: 24px; }
@@ -196,42 +183,31 @@
             }
         `;
 
-        /* ========================================================
-           6. الحقن في الـ DOM
-           ======================================================== */
-        // حقن التنسيقات
-        const styleTag = document.createElement('style');
-        styleTag.type = 'text/css';
-        styleTag.textContent = brandsStyles;
-        document.head.appendChild(styleTag);
+        if (!document.getElementById('custom-brands-styles')) {
+            const styleTag = document.createElement('style');
+            styleTag.id = 'custom-brands-styles';
+            styleTag.textContent = brandsStyles;
+            document.head.appendChild(styleTag);
+        }
 
-        // إنشاء القسم الجديد
-        const brandsSection = document.createElement('section');
-        brandsSection.id = 'injected-brands-section';
-        brandsSection.className = 'custom-brands-section';
-        brandsSection.innerHTML = brandsHTML;
-
-        // إضافته في نهاية المحتوى الأساسي (قبل الفوتر)
-        mainContainer.appendChild(brandsSection);
+        targetSection.className = 'custom-brands-section';
+        targetSection.innerHTML = brandsHTML;
+        targetSection.setAttribute('data-brands-injected', 'true');
 
         return true;
     }
 
-    // 7. نظام التتبع لضمان التحميل مع زد
     if (!injectBrandsSection()) {
+        window.addEventListener('DOMContentLoaded', injectBrandsSection);
         let attempts = 0;
         const observerInterval = setInterval(() => {
-            if (injectBrandsSection() || attempts >= 30) {
+            if (injectBrandsSection() || attempts >= 20) {
                 clearInterval(observerInterval);
             }
             attempts++;
         }, 500);
     }
 })();
-
-
-
-
 
 
 
@@ -479,98 +455,7 @@
 
 
 
-
-
-(function () {
-    // 1. حذف أي قسم قديم تم حقنه سابقاً لتنظيف الصفحة
-    const oldSection = document.getElementById("injected-brands-section");
-    if (oldSection) oldSection.remove();
-
-    // 2. تقسيم الشعارات لصفين
-    const row1Logos = `
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/faf63125-c56a-4147-b1b9-6e296fbcbcd3.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/e616a6d4-0a24-4021-915e-2856dccd58aa.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/332bfb83-fc83-426b-8449-b697fdfe066a.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f466289a-8b48-4a16-8ede-148aef129b00.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/8c9bda20-d228-440f-a8f8-e6aa039efb51.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dcd3e31e-35ef-477e-bd25-1ab75f7631f5.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/cb3205d9-0253-4624-a402-93d39e9bf50b.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/bc5d313e-42e7-48ce-9a23-637617a4df8e.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/b9337871-06af-41d9-8b10-1b18d4a19e90.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1c8c2644-2e1a-4259-8579-fb942e3a48c6.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/7cd2133a-3f1e-4171-9f8c-22814781ca4e.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1922b3d2-7810-4411-96bc-9d87a6a4dc38.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/9f329dd2-4527-4544-bd69-9b0977a58ef1.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f231860a-727c-40fc-9012-142b28751751.jpg" alt="Brand"></a>
-      
-    `;
-
-    const row2Logos = `
-          <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/faf63125-c56a-4147-b1b9-6e296fbcbcd3.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/e616a6d4-0a24-4021-915e-2856dccd58aa.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/332bfb83-fc83-426b-8449-b697fdfe066a.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f466289a-8b48-4a16-8ede-148aef129b00.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/8c9bda20-d228-440f-a8f8-e6aa039efb51.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dcd3e31e-35ef-477e-bd25-1ab75f7631f5.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/cb3205d9-0253-4624-a402-93d39e9bf50b.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/bc5d313e-42e7-48ce-9a23-637617a4df8e.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/b9337871-06af-41d9-8b10-1b18d4a19e90.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1c8c2644-2e1a-4259-8579-fb942e3a48c6.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/7cd2133a-3f1e-4171-9f8c-22814781ca4e.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/1922b3d2-7810-4411-96bc-9d87a6a4dc38.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/9f329dd2-4527-4544-bd69-9b0977a58ef1.jpg" alt="Brand"></a>
-        <a  target="_blank"><img loading="lazy" src="https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/f231860a-727c-40fc-9012-142b28751751.jpg" alt="Brand"></a>
-    `;
-
-    // 3. هيكل الـ HTML للقسم بالكامل
-    const sectionHTML = `
-        <div class="brands-title-wrapper">
-            <div class="brands-title"> عملاء وثقوا بنا    </div>
-        </div>
-        
-        <div class="brands-style-box">
-            <!-- الصف الأول -->
-            <div class="marquee-track">
-                <div class="marquee-group">${row1Logos}</div>
-                <div class="marquee-group" aria-hidden="true">${row1Logos}</div>
-            </div>
-            
-            <!-- الصف الثاني (يتحرك عكس الصف الأول) -->
-            <div class="marquee-track reverse">
-                <div class="marquee-group">${row2Logos}</div>
-                <div class="marquee-group" aria-hidden="true">${row2Logos}</div>
-            </div>
-        </div>
-    `;
-
-    // 4. دالة الحقن الآمنة
-    function injectBrandsSection() {
-        if (document.getElementById("injected-brands-section")) return true;
-        
-        const mainContainer = document.getElementById("main");
-        if (!mainContainer) return false;
-
-        const wrapper = document.createElement("section");
-        wrapper.id = "injected-brands-section";
-        wrapper.className = "custom-brands-section";
-        wrapper.innerHTML = sectionHTML;
-        
-        // إضافته في النهاية قبل الفوتر
-        mainContainer.appendChild(wrapper);
-        return true;
-    }
-
-    // 5. محاولة الحقن بمجرد اكتمال المتجر
-    if (!injectBrandsSection()) {
-        let attempts = 0;
-        const intervalTimer = setInterval(() => {
-            attempts++;
-            if (injectBrandsSection() || attempts > 20) {
-                clearInterval(intervalTimer);
-            }
-        }, 500);
-    }
-})();
+ 
 
 
 
@@ -859,6 +744,134 @@
         let attempts = 0;
         const observerInterval = setInterval(() => {
             if (injectCombinedSections() || attempts >= 30) {
+                clearInterval(observerInterval);
+            }
+            attempts++;
+        }, 500);
+    }
+})();
+
+
+
+
+
+
+
+
+
+
+
+(function () {
+    function injectGlobalBenefits() {
+        // 1. منع التكرار (إذا تم الحقن مسبقاً نوقف العمل)
+        if (document.getElementById('global-custom-benefits-injected')) return true;
+
+        // 2. تحديد المتغيرات (هل نحن في الرئيسية؟ أين السكشن؟ أين الفوتر؟)
+        const isHome = document.body.getAttribute('data-template') === 'home';
+        const homeTargetSection = document.querySelector('section[section-id="46c87c94-c47b-471d-a252-f628da84c5fe"]');
+        const siteFooter = document.getElementById("custom-gray-footer") || document.getElementById("footer") || document.querySelector("footer");
+
+        // إذا لم نجد السكشن في الرئيسية ولا الفوتر في باقي الصفحات، ننتظر
+        if (!homeTargetSection && !siteFooter) return false;
+
+        // 3. أيقونة المكعب 
+        const cubeIcon1 = `<?xml version="1.0" encoding="UTF-8"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460.56 306.27"> <defs> <style> .cls-1 { fill: #fff; } </style> </defs> <path class="cls-1" d="M436.35,231.57v-5.08c0-18.5-.03-37,.01-55.5,.02-8.67-3.42-15.42-10.68-20.23-7.22-4.79-13.81-11.46-21.73-13.96-7.74-2.44-16.82-.72-25.31-.73-34.66-.02-69.33,0-103.99-.01-12.01,0-15.98-3.92-15.98-15.74,0-29.83,0-59.66,0-89.5v-6.61h-6.22c-56.16,0-112.32,0-168.48,0-10.48,0-16.23-4.23-16.29-11.95C67.61,4.46,73.44,.03,83.74,.03,160.4,.03,237.06,.07,313.71,0c19.09-.02,33.57,8.08,43.86,23.96,18.91,29.18,37.76,58.39,56.76,87.51,1.67,2.56,4.03,4.85,6.51,6.67,6.31,4.63,12.92,8.84,19.31,13.35,13.32,9.4,20.2,22.35,20.32,38.62,.17,23.83,.06,47.67,.04,71.5,0,9.73-4.6,14.26-14.46,14.3-8.97,.03-17.94,0-26.73,0-11.02,33.52-31.49,50.41-60.57,50.34-28.87-.07-49.48-17.24-59.92-50.1h-90.23c-3.74,17.67-12.96,31.79-28.56,41.35-11.3,6.92-23.67,9.62-36.82,8.54-20.06-1.65-46.63-15.04-54.66-49.9-1.62-.07-3.39-.21-5.16-.22-11.17-.02-22.33,.04-33.5-.03-8.42-.05-13.52-4.64-13.59-12-.07-7.51,4.79-12.18,13.24-12.28,11.83-.14,23.66-.12,35.49,0,3.03,.03,4.58-.57,5.63-3.92,7.99-25.68,31.02-42.63,57.64-42.81,26.76-.17,49.82,16.72,58.27,42.68,.41,1.25,.91,2.47,1.48,3.99h4.52c27.5,0,54.99-.06,82.49,.08,3.56,.02,5.13-.99,6.28-4.52,8.36-25.77,31.39-42.41,57.98-42.23,26.49,.17,49.27,16.81,57.41,42.34,1.17,3.68,2.9,4.57,6.33,4.39,4.27-.23,8.57-.06,13.28-.06Zm-51.69-119.85c-.55-1.18-.75-1.78-1.09-2.29-15.8-24.45-31.55-48.93-47.44-73.32-5.11-7.83-12.66-11.56-21.96-11.66-8-.08-16-.02-24-.02-2.41,0-4.82,0-7.08,0V111.72h101.57Zm-62.13,133.32c-.43,19.53,15.6,36.52,34.95,37.04,20.37,.55,37.55-15.24,38.03-34.96,.5-20.35-15.33-37.57-34.97-38.04-20.85-.51-37.55,15.29-38,35.97Zm-210.19,.19c-.58,19.24,15.27,36.19,34.46,36.85,20.45,.7,37.84-15.2,38.44-35.15,.6-19.78-15.38-37.03-34.76-37.88-22.28-.98-39.05,18-38.14,36.19Z"/> <path class="cls-1" d="M85.5,152.22c-23.99,0-47.99,0-71.98,0C5.15,152.22-.02,147.64,0,140.3c.02-7.28,5.31-12.07,13.58-12.07,47.99-.03,95.97-.03,143.96,0,6.35,0,10.84,2.93,12.61,7.94,1.7,4.83,.41,10.69-3.86,13.44-2.47,1.59-5.84,2.48-8.81,2.51-23.99,.2-47.98,.11-71.98,.11Z"/> <path class="cls-1" d="M66.48,91.21c-16.98,0-33.96,.06-50.94-.03-7.92-.04-12.89-4.41-13.23-11.27-.35-7.2,4.38-12.79,11.6-12.81,35.12-.13,70.24-.12,105.37,0,6.87,.02,12.08,5.65,11.97,12.2-.11,6.42-5.05,11.7-11.84,11.77-17.64,.19-35.29,.06-52.93,.06,0,.02,0,.05,0,.07Z"/> </svg>`;
+        const cubeIcon2 = `<?xml version="1.0" encoding="UTF-8"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 483.42 336.23"> <defs> <style> .cls-1 { fill: #fff; } </style> </defs> <path class="cls-1" d="M241.87,336.23c-61.32,0-122.65,0-183.97,0C24.31,336.22,0,311.84,0,278.16,0,204.84,0,131.51,0,58.18,0,24.27,24.34,0,58.33,0c122.65,0,245.29,0,367.94,0,32.3,0,57.04,24.48,57.08,56.85,.1,74.16,.09,148.32,0,222.48-.04,32.45-24.65,56.88-57.01,56.89-61.49,.02-122.98,0-184.47,0ZM29.24,134.19c-.1,1.24-.22,2.04-.22,2.84-.01,48.01-.08,96.01,.04,144.02,.03,11.16,7.74,21.54,18.51,24.75,4.53,1.35,9.51,1.68,14.28,1.68,120.01,.09,240.01,.07,360.02,.06,1.99,0,3.99-.12,5.98-.28,16.29-1.26,26.5-12.2,26.51-28.53,.03-46.34,0-92.68,0-139.02v-5.53H29.24Zm424.83-29.44c0-17.71,.02-35.01-.03-52.3,0-1.3-.38-2.63-.75-3.9-3.45-11.54-13.28-19.57-25.5-19.58-123.95-.12-247.9-.08-371.85-.09-.33,0-.66,.04-1,.06-14.59,.85-25.78,12.56-25.91,27.19-.08,8.16-.01,16.33-.01,24.49,0,7.95,0,15.91,0,24.12H454.07Z"/> <path class="cls-1" d="M81.69,235.04c12.92,0,23.16,10.23,23.16,23.13,0,12.88-10.17,23.16-23.08,23.34-12.95,.17-23.52-10.43-23.41-23.5,.1-12.88,10.35-22.98,23.33-22.97Z"/> <path class="cls-1" d="M117.68,258.14c0-13.03,10.06-23.1,23.06-23.1,12.98,0,23.2,10.11,23.26,23.01,.06,13.08-10.4,23.55-23.43,23.45-12.87-.1-22.89-10.34-22.89-23.36Z"/> </svg>`;
+        const cubeIcon3 = `<?xml version="1.0" encoding="UTF-8"?> <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 369.7 376.99">   <defs>     <style>       .cls-1 {         fill: #fff;       }     </style>   </defs>   <path class="cls-1" d="M340.51,215.64c1.01-22.37,.82-44.72-6.01-66.33-18.74-59.28-55.94-100.87-117.36-116.27-48.74-12.22-92.96,.5-130.85,32.89-38.68,33.07-56.89,76.18-57.84,126.81-.14,7.66-4.29,13.14-11.1,14.54-6.94,1.43-13.32-1.61-16.03-7.98C.44,197.24,0,194.82,0,192.55-.11,105.13,57.52,26.06,141.72,5.65c61.48-14.91,116.43-.13,163.01,42.37,43.52,39.7,64.5,89.99,64.88,148.86,.11,17,.17,34-.19,50.99-1.12,53.03-42.2,98.84-94.67,104.81-13.5,1.54-27.3,.57-40.96,.52-3.34-.01-5.23,.9-7.08,3.92-7.86,12.92-19.57,19.66-34.76,19.77-8.31,.06-16.76,.45-24.92-.78-20.38-3.07-34.52-21.88-33.05-42.81,1.42-20.2,17.98-36.58,38.26-37.2,9.45-.29,19.1-.49,28.37,1.02,13.78,2.24,23.31,10.97,28.69,23.78,1.35,3.21,2.86,4.24,6.18,4.08,14.12-.67,28.54,.5,42.31-2,33.83-6.14,60.33-36.99,62.59-71.38,.78-11.94,.12-23.98,.12-35.97Zm-157.66,133.27v-.03c3.33,0,6.67,.22,9.98-.05,6.55-.53,11.51-5.88,11.62-12.19,.11-6.5-4.95-12.22-11.7-12.56-6.3-.32-12.65-.3-18.95,0-6.93,.33-11.86,5.73-11.82,12.37,.04,6.57,5.13,11.98,11.89,12.42,2.98,.19,5.99,.03,8.98,.03Z"/>   <path class="cls-1" d="M306.63,201.82c0,11.99,.5,24-.1,35.96-1.29,25.74-22.91,46.31-49.15,47.41-26.14,1.09-49.41-17.88-52.95-43.27-.5-3.61-.79-7.29-.76-10.94,.17-23.14-.82-46.38,1.03-69.4,2.08-25.82,26.57-44.59,53.5-43.5,25.19,1.01,47.07,22.12,48.33,47.28,.61,12.12,.1,24.3,.1,36.46Zm-29.12-.05s.08,0,.12,0c0-9.82,0-19.64,0-29.47,0-.33,0-.67,0-1-.21-13.9-9.96-24.28-22.59-24.07-12.77,.21-22.01,10.22-22.05,24.08-.06,20.14-.06,40.29,.04,60.43,.01,2.95,.32,6.03,1.21,8.83,3.2,10.14,13.52,16.7,23.55,15.3,11.08-1.55,19.33-10.1,19.66-21.15,.34-10.98,.07-21.97,.07-32.96Z"/>   <path class="cls-1" d="M166.94,196.69c0,12.15,.93,24.4-.19,36.45-2.59,27.79-24.98,47.6-51.98,47.11-27.21-.49-49.19-20.8-50.44-48.69-1.08-24.1-.87-48.32,.22-72.42,1.14-24.93,23.94-45.59,48.81-46.07,27.26-.53,50.54,18.33,52.99,44.21,1.24,13.03,.22,26.27,.22,39.42,.12,0,.24,0,.36,0Zm-29-.04c-.05,0-.1,0-.15,0,0-11.15,.49-22.33-.13-33.45-.7-12.37-11.24-21.51-22.95-20.95-12.03,.57-21.3,10.2-21.38,22.65-.14,21.14-.17,42.29,.09,63.43,.04,3.68,1.09,7.65,2.76,10.94,4.51,8.89,14.57,13.3,23.95,11.16,10.68-2.44,17.47-10.7,17.77-22.31,.26-10.48,.06-20.98,.06-31.46Z"/> </svg>`;
+
+        // 4. بناء الـ HTML
+        const newHTML = `
+            <div class="custom-benefits-container" dir="rtl">
+                <div class="theme-container">
+                    <div class="cb-grid">
+                        <div class="cb-item">
+                            <div class="cb-icon">${cubeIcon1}</div>
+                            <h3 class="cb-title">أسعارنا التنافسية</h3>
+                            <p class="cb-desc">لا حاجة لهدر المزيد من الأموال، باقاتنا مخصصة وفق ميزانيتك</p>
+                        </div>
+                        <div class="cb-item cb-middle">
+                            <div class="cb-icon">${cubeIcon2}</div>
+                            <h3 class="cb-title">خدماتنا المتجددة</h3>
+                            <p class="cb-desc">حيث تغطي كافة الاحتياجات الإبداعية لمشروعك</p>
+                        </div>
+                        <div class="cb-item">
+                            <div class="cb-icon">${cubeIcon3}</div>
+                            <h3 class="cb-title">خبرتنا العالية</h3>
+                            // <p class="cb-desc">تسهم في وصولك للمكانة الأكثر تميزاً في مجالك</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cb-bottom-line"></div>
+            </div>
+        `;
+
+        // 5. التنسيقات (مخصصة للسكشن المحدد أو للسكشن العام الجديد)
+        const styles = `
+            section[section-id="46c87c94-c47b-471d-a252-f628da84c5fe"],
+            #global-custom-benefits {
+                padding: 0 !important;
+                background-color: #F8F9FA !important;
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+            }
+            .custom-benefits-container { padding: 60px 0 0 0; width: 100%; font-family: inherit; }
+            .cb-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
+            .cb-item { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 15px; }
+            .cb-middle { border-right: 1px solid rgba(0,0,0,0.06); border-left: 1px solid rgba(0,0,0,0.06); }
+            .cb-icon { width: 64px; height: 64px; background-color: var(--primary) ; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff; margin-bottom: 24px; box-shadow: 0 4px 10px rgba(235, 40, 53, 0.2); }
+            .cb-title { font-size: 18px; font-weight: 700; color: #2D2D2D; margin-bottom: 12px; margin-top: 0; }
+            .cb-desc { font-size: 14.5px; color: #666666; line-height: 1.6; margin: 0; max-width: 280px; }
+            .cb-bottom-line { width: 100%; height: 20px; background-color: var(--primary) ; margin-top: 50px; }.cb-icon svg {
+    width: 39px;
+    height: 64px;
+}
+            @media (max-width: 768px) {
+                .custom-benefits-container { padding: 40px 0 0 0; }
+                .cb-grid { grid-template-columns: 1fr; gap: 40px; }
+                .cb-middle { border: none; padding-top: 40px; padding-bottom: 40px; border-top: 1px solid rgba(0,0,0,0.06); border-bottom: 1px solid rgba(0,0,0,0.06); }
+                .cb-bottom-line { margin-top: 40px; height: 16px; }
+            }
+        `;
+
+        if (!document.getElementById('custom-benefits-style-global')) {
+            const styleElement = document.createElement('style');
+            styleElement.id = 'custom-benefits-style-global';
+            styleElement.textContent = styles;
+            document.head.appendChild(styleElement);
+        }
+
+        // 6. حقن المحتوى بناءً على مكاننا في الموقع
+        if (isHome && homeTargetSection) {
+            // في الصفحة الرئيسية -> استبدال محتوى السكشن المحدد ليكون قابلاً للتحريك
+            homeTargetSection.innerHTML = newHTML;
+            homeTargetSection.id = 'global-custom-benefits-injected';
+        } else if (siteFooter) {
+            // في باقي الصفحات -> إنشاء سكشن فوق الفوتر مباشرة
+            const wrapper = document.createElement("section");
+            wrapper.id = "global-custom-benefits";
+            wrapper.innerHTML = newHTML;
+            
+            // علامة مخفية لمنع التكرار
+            const marker = document.createElement("div");
+            marker.id = 'global-custom-benefits-injected';
+            marker.style.display = 'none';
+            document.body.appendChild(marker);
+
+            siteFooter.parentNode.insertBefore(wrapper, siteFooter);
+        } else {
+            return false;
+        }
+
+        return true;
+    }
+
+    // التشغيل المتكرر لضمان التنفيذ في بيئة زد
+    if (!injectGlobalBenefits()) {
+        window.addEventListener('DOMContentLoaded', injectGlobalBenefits);
+        let attempts = 0;
+        const observerInterval = setInterval(() => {
+            if (injectGlobalBenefits() || attempts >= 30) {
                 clearInterval(observerInterval);
             }
             attempts++;
