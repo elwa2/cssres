@@ -172,7 +172,7 @@
             .brands-marquee-track.reverse { animation-direction: reverse; }
             .brands-style-box:hover .brands-marquee-track { animation-play-state: paused; }
             .brands-marquee-group { display: flex; gap: 24px; padding-right: 24px; flex-shrink: 0; }
-            .brands-marquee-group img { height: 80px; width: 140px; object-fit: contain; border-radius: 12px; filter: grayscale(100%); transition: filter 0.3s; background: #f8f9fa; border: 1px solid #E5E7EB; padding: 10px; cursor: pointer; }
+            .brands-marquee-group img { height: 80px; width: 140px; object-fit: contain; border-radius: 12px; filter: grayscale(100%); transition: filter 0.3s; background: #f8f9fa; border: 1px solid #E5E7EB; padding: 0px; cursor: pointer; }
             .brands-marquee-group img:hover { filter: grayscale(0%); }
             @keyframes brands-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
             @media (max-width: 768px) {
@@ -180,7 +180,18 @@
                 .brands-title { margin-bottom: 24px; }
                 .brands-marquee-group { gap: 16px; padding-right: 16px; }
                 .brands-marquee-group img { height: 60px; width: 100px; padding: 6px; }
-            }
+            }.brands-marquee-group img {
+	height: 114px;
+	width: 133px;
+	object-fit: cover;
+	border-radius: 12px;
+	filter: grayscale(100%);
+	transition: filter 0.3s;
+	background: #f8f9fa;
+	border: 1px solid #E5E7EB;
+	padding: 10px;
+	cursor: pointer;
+}
         `;
 
         if (!document.getElementById('custom-brands-styles')) {
@@ -783,6 +794,9 @@
         const newHTML = `
             <div class="custom-benefits-container" dir="rtl">
                 <div class="theme-container">
+                    <div class="cb-title-wrapper">
+                        <h2 class="cb-main-title">ما يميزنا</h2>
+                    </div>
                     <div class="cb-grid">
                         <div class="cb-item">
                             <div class="cb-icon">${cubeIcon1}</div>
@@ -814,7 +828,11 @@
                 position: relative;
                 overflow: hidden;
                 width: 100%;
-            }
+            }            .cb-main-title { font-size: clamp(28px, 4vw, 36px); font-weight: 800; color: #111827; margin: 0; }
+.cb-title-wrapper {
+    text-align: center;
+    margin-bottom: 50px;
+}
             .custom-benefits-container { padding: 60px 0 0 0; width: 100%; font-family: inherit; }
             .cb-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
             .cb-item { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 15px; }
