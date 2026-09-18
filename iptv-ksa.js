@@ -637,10 +637,10 @@
         if (!wrap) return;
         if (wrap.getAttribute('data-iptv-blocks') === '1') return;
         wrap.setAttribute('data-iptv-blocks', '1');
-        var statsDiv = wrap.querySelector('._iptv_stats');
-        var anchor = null;
-        if (statsDiv && statsDiv.closest) anchor = statsDiv.closest('section');
-        if (!anchor) anchor = statsDiv;
+      var featGrid = wrap.querySelector('._iptv_grid_5');
+var anchor = null;
+if (featGrid && featGrid.closest) anchor = featGrid.closest('section');
+if (!anchor) anchor = featGrid;
         var blocks = [];
         try {
             blocks = document.querySelectorAll('#app .s-block, .main-container-wrapper .s-block, main .s-block');
