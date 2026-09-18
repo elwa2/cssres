@@ -1366,3 +1366,90 @@ button[popovertarget="more-menu-popover"] {
     width: 100%;
 }
 }
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] .md\:flex.md\:items-center.md\:justify-between {
+    justify-content: center !important;
+}
+
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] h2 {
+    text-align: center !important;
+    width: 100% !important;
+    font-weight: 800 !important;
+    font-size: clamp(22px, 4vw, 28px) !important;
+    color: #111827 !important;
+}
+
+/* Override Embla Slider behavior to create a static grid */
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] .embla__container {
+    transform: none !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px 12px !important;
+    margin-inline-start: 0 !important;
+}
+
+@media (min-width: 768px) {
+    [section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] .embla__container {
+        grid-template-columns: repeat(6, 1fr) !important;
+        gap: 24px !important;
+    }
+}
+
+/* Reset slide constraints */
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] .embla__slide {
+    padding-inline-start: 0 !important;
+    flex: none !important;
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] .group {
+    gap: 12px !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+}
+
+/* Transform image wrappers into perfect circles */
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] .overflow-hidden.rounded {
+    border-radius: 50% !important;
+    aspect-ratio: 1 / 1 !important;
+    width: 100% !important;
+    max-width: 110px !important;
+    margin: 0 auto !important;
+    background-color: transparent !important;
+    border: none !important;
+}
+
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] .overflow-hidden.rounded img {
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    width: 100% !important;
+    height: 100% !important;
+    aspect-ratio: 1 / 1 !important;
+    transition: transform 0.3s ease !important;
+}
+
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] .group:hover img {
+    transform: scale(1.08) !important;
+}
+
+/* Restyle and center category titles */
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] h3 {
+    font-size: clamp(12px, 3.5vw, 15px) !important;
+    font-weight: 600 !important;
+    color: #4B5563 !important;
+    text-align: center !important;
+    line-height: 1.4 !important;
+    white-space: normal !important;
+    margin-top: 0 !important;
+}
+
+/* Hide the slider progress bar and navigation buttons */
+[section-id="ed4bc6bc-9c26-4d42-abb9-36560076f563"] .embla-wrapper > .flex.items-center.gap-2 {
+    display: none !important;
+}main>section.min-h-\[300px\]>.absolute.-z-10>img {
+    position: static !important;
+    width: 82% !important;
+    height: auto !important;
+    object-fit: unset !important;
+    margin: auto;
+}
