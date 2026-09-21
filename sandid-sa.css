@@ -712,7 +712,7 @@ salla-cart-summary.ml-4.rtl\:ml-\[unset\].rtl\:mr-4.hydrated {
 
 .footer-is-light .store-footer
  {
-    background-color: var(--bg) !important;
+    /* background-color: var(--bg) !important; */
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
@@ -1028,18 +1028,18 @@ button[onclick="salla.event.dispatch('search::open')"] {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     border-top: 10px solid var(--2);
-    background-color: #ffffff;
+    background-color: #7f6549;
     border-radius: 20px;
     border-top: 0px solid #13223657;
     margin: 15px;
-    background-color: var(--color-main) !important;
+    /* background-color: var(--color-main) !important; */
     color: #fff;
     text-align: center;
     padding-top: 30px;
-    background-image: var(--bgf);
+    /* background-image: var(--bgf); */
     background-size: 30%;
     padding-bottom: 15px;
-    background-repeat: repeat;
+    /* background-repeat: repeat; */
 }
 
 body:not(.index) section.custom-faq-section.container {
@@ -1226,7 +1226,7 @@ body:not(.index) {
     --1: var(--1);
     --2: var(--1);
     --2-2: #02320240;
-    --3: #edf5ff;
+    --3:var(--1);
     --4: #3b3b39;
     --4-4: #3131309c;
     --4-4-4: #20201f;
