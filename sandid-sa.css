@@ -1041,6 +1041,18 @@ button[onclick="salla.event.dispatch('search::open')"] {
     background-repeat: repeat;
 }
 
+
+@media(max-width:767px){.footer-is-light .store-footer {
+  background-size: 131%;
+}
+}
+
+
+
+
+
+
+
 body:not(.index) section.custom-faq-section.container {
     display: none;
 }
