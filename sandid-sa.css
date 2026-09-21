@@ -319,7 +319,7 @@ section.s-block.s-block--photos-slider {
 }
 
 section#best-offers-1-slider {
-    margin-top: -1rem;
+    margin-top: 1rem;
 }
 
 salla-slider.photos-slider .swiper-pagination-bullets.swiper-pagination-horizontal {
@@ -340,7 +340,7 @@ salla-slider.photos-slider .swiper-slide {
 
 section:nth-of-type(1).s-block.s-block--photos-slider,
 section:nth-of-type(1).s-block.s-block--fixed-banner.wide-placeholder {
-    margin-top: -7rem;
+    margin-top: -1rem;
 }
 
 .s-block--fixed-banner .container img {
@@ -1031,13 +1031,13 @@ button[onclick="salla.event.dispatch('search::open')"] {
     border-radius: 20px;
     border-top: 0px solid #13223657;
     margin: 15px;
-    /* background-color: #7a6848 !important; */
+    /* background-color: var(--1) !important; */
     color: #fff;
     text-align: center;
-    /* padding-top: 30px; */
+    padding-top: 30px;
     background-image: var(--bgf);
     background-size: 35%;
-    /* padding-bottom: 15px; */
+    padding-bottom: 15px;
     background-repeat: repeat;
 }
 
