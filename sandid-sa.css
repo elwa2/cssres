@@ -1247,11 +1247,22 @@ body {
 }
 
 
-body:not(.index) {
+body:not(.index) ,:not(.index).s-comments-product, :not(.index).bg-white, :not(.index).s-quantity-input-container, :not(.index).banner--fixed img,:not(.index) .tamara-product-widget, :not(.index).spotii-wrapper, 
+:not(.index).banner-entry, :not(.index).mm-spn.mm-spn--light,:not(.index) #mainnav,:not(.index) .s-product-card-image{
    
     background-color: #ffffff !important;
+    background-color: #0d0d0d !important;
     background-size: 34%;
 }
+
+
+body:not(.index),:not(.index) .text-gray-800,:not(.index) .form-label,:not(.index) .s-slider-nav-arrow,:not(.index) .tamara-product-widget,:not(.index) .spotii-wrapper {
+    color: #ffffff !important;
+}
+
+
+
+
 
 body:not(.index) {
     /* Base Palette - الألوان الأساسية */
