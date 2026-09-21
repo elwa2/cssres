@@ -1262,7 +1262,15 @@ body:not(.index),:not(.index) .text-gray-800,:not(.index) .form-label,:not(.inde
 
 
 
+:not(.index) .s-comments-item-content,:not(.index) .s-comments-item-timestamp,:not(.index) .s-reviews-summary-recommendation-percentage ,:not(.index).s-reviews-summary-percentage,:not(.index).s-reviews-summary-average {
 
+      color: #ffffff !important;
+}
+
+:not(.index) .s-comments-count-label,:not(.index).s-comments-item-has-order-check-text {
+    
+     color: var(--1) !important;
+}
 
 body:not(.index) {
     /* Base Palette - الألوان الأساسية */
