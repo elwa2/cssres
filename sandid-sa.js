@@ -256,11 +256,11 @@
                 outline: none;
             }
             .custom-tab-btn:hover:not(.active) {
-                border-color: var(--color-primary, #cb343c);
-                color: var(--color-primary, #cb343c);
+                border-color: var(--color-primary, var(--1));
+                color: var(--color-primary, var(--1));
             }
             .custom-tab-btn.active {
-                background: var(--gr, var(--color-primary, #cb343c)) !important;
+                background: var(--gr, var(--color-primary, var(--1))) !important;
                 color: var(--color-primary-reverse, #edf5ff) !important;
                 border: none !important;
             }
