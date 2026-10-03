@@ -69,14 +69,14 @@
 
     // 2. إعدادات الصور لكل قسم (قم بتغيير الروابط المؤقتة بصورك النهائية لاحقاً)
     const categoryImages = {
-        "965755740": "https://assets.bhstore.com.sa/store/cms/assets/2024/10/06/1728211048431218884_59693.png", // الشاشات (الصورة الأصلية)
-        "1781217972": "https://placehold.co/400x300/f8f9fa/00a98f?text=Air+Conditioners", // المكيفات (صورة مؤقتة)
-        "398797444": "https://placehold.co/400x300/f8f9fa/00a98f?text=Washing+Machines", // غسالات ونشافات (صورة مؤقتة)
-        "1421996931": "https://placehold.co/400x300/f8f9fa/00a98f?text=Refrigerators", // أجهزة التبريد (صورة مؤقتة)
-        "1564039318": "https://placehold.co/400x300/f8f9fa/00a98f?text=Ovens+%26+Stoves", // الافران و الاسطح (صورة مؤقتة)
-        "1079509660": "https://placehold.co/400x300/f8f9fa/00a98f?text=Kitchen+Appliances", // أجهزة المطبخ الصغيره (صورة مؤقتة)
-        "1178645730": "https://placehold.co/400x300/f8f9fa/00a98f?text=Home+Appliances", // أجهزة المنزل الصغيرة (صورة مؤقتة)
-        "586603499": "https://placehold.co/400x300/f8f9fa/00a98f?text=Mobile+Accessories"  // اكسسورارات الجوال (صورة مؤقتة)
+        "965755740": "https://cdn.files.salla.network/other/1698663858/189dda0a-6a1d-4b79-97e5-5effe6c923c9-original.webp", // الشاشات (الصورة الأصلية)
+        "1781217972": "https://cdn.files.salla.network/other/1698663858/ff364873-62da-42be-82d8-81afb786ec7c-original.webp", // المكيفات (صورة مؤقتة)
+        "398797444": "https://cdn.files.salla.network/other/1698663858/1c7af6fc-f8b8-4faf-89c0-4d60de359cf1-original.webp", // غسالات ونشافات (صورة مؤقتة)
+        "1421996931": "https://cdn.files.salla.network/other/1698663858/1516b920-f6fb-40ed-9f2c-6480ec125671-original.webp", // أجهزة التبريد (صورة مؤقتة)
+        "1564039318": "https://cdn.files.salla.network/other/1698663858/a37f1123-afcf-4fa4-ae1e-a366193fa934-original.webp", // الافران و الاسطح (صورة مؤقتة)
+        "1079509660": "https://cdn.files.salla.network/other/1698663858/e03e63a2-6a0c-4d54-bc7d-a40b06c8f354-original.webp", // أجهزة المطبخ الصغيره (صورة مؤقتة)
+        "1178645730": "https://cdn.files.salla.network/other/1698663858/da8f14b1-f1a3-4550-a898-41e73e55a6d2-original.webp", // أجهزة المنزل الصغيرة (صورة مؤقتة)
+        "586603499": "https://cdn.files.salla.network/other/1698663858/4aebc645-c295-4a9f-ba19-06e19691e848-original.webp"  // اكسسورارات الجوال (صورة مؤقتة)
     };
 
     // 3. دالة بناء القائمة
