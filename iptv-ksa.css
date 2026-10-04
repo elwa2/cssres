@@ -1155,12 +1155,13 @@ html.dark .product-entry:hover {
   }
 
   #iptv_site_header ._iptv_logo_img {
-    height: 88px !important;
+    height: 41px !important;
+    margin-left: 34px;
   }
 
   /* الصفحة الرئيسية */
   html.iptv-hero-image-only #iptv_master_wrap_2025 ._iptv_hero {
-    min-height: 60vh !important;
+    min-height: 36vh !important;
   }
 
   #iptv_master_wrap_2025 ._iptv_grid_5 {
@@ -1241,4 +1242,12 @@ html.dark .product-entry:hover {
     animation: none !important;
     transition: none !important;
   }
+}
+
+.dark .s-slider-block__title h2,.s-button-primary-outline {
+  
+    background: var(--nx-grad-pink) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
 }
