@@ -1764,3 +1764,376 @@ html.dark body {
 .product-entry .product-footer {
   margin-top: auto !important;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================
+   NEON THEME  (ستايل فيوستور: أسود/كحلي + وردي نيون + سماوي)
+   ضع هذا الملف في آخر الـ CSS الحالي (بعد كل الأكواد)
+   وامسح بلوك "تخفيف الخلفيات الداكنة الرئيسية" القديم لو حبيت
+   ========================================================== */
+
+:root,
+html.dark {
+  --nx-bg-0: #05040d;
+  --nx-bg-1: #0a0820;
+  --nx-card: #0d0b24;
+  --nx-card-2: #120f33;
+  --nx-pink: #ff2fa8;
+  --nx-magenta: #d946ef;
+  --nx-violet: #7c3aed;
+  --nx-cyan: #22d3ee;
+  --nx-blue: #3b6bff;
+  --nx-text: #ffffff;
+  --nx-muted: #a9a6c9;
+  --nx-grad-pink: linear-gradient(90deg, #ff2fa8 0%, #d946ef 55%, #8b5cf6 100%);
+  --nx-grad-cyan: linear-gradient(90deg, #22d3ee 0%, #3b6bff 55%, #6d4bff 100%);
+  --nx-glow-pink: 0 0 18px rgba(255, 47, 168, .55), 0 0 40px rgba(255, 47, 168, .2);
+  --nx-glow-cyan: 0 0 18px rgba(34, 211, 238, .55), 0 0 40px rgba(59, 107, 255, .25);
+  --color-primary: #ff2fa8;
+  --color-primary-dark: #8b5cf6;
+  --color-primary-light: #22d3ee;
+  --dark-bg-main: #05040d;
+  --dark-bg-sec: #0d0b24;
+  --dark-grey: #161338;
+}
+
+/* ---------- الخلفية العامة ---------- */
+html.iptv-site-active body,
+html.dark body,
+html.iptv-landing-active body {
+  background:
+    radial-gradient(900px 500px at 90% -5%, rgba(255, 47, 168, .16) 0%, transparent 60%),
+    radial-gradient(900px 600px at -5% 40%, rgba(59, 107, 255, .16) 0%, transparent 60%),
+    linear-gradient(180deg, #0a0820 0%, #05040d 60%, #030309 100%) !important;
+  color: #fff !important;
+}
+
+#iptv_master_wrap_2025 {
+  background-color: #05040d !important;
+  background-image:
+    radial-gradient(1000px 520px at 88% 0%, rgba(255, 47, 168, .14) 0%, transparent 60%),
+    radial-gradient(900px 520px at 0% 55%, rgba(59, 107, 255, .15) 0%, transparent 60%),
+    radial-gradient(800px 500px at 100% 100%, rgba(217, 70, 239, .10) 0%, transparent 60%) !important;
+  background-size: 100% 100%, 100% 100%, 100% 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+/* ---------- ألوان البراند ---------- */
+.bg-brand-primary { background: var(--nx-grad-pink) !important; }
+.text-brand-primary,
+#iptv_master_wrap_2025 ._iptv_text_gradient {
+  background: var(--nx-grad-pink) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* ---------- الهيدر ---------- */
+#iptv_site_header,
+#iptv_master_wrap_2025 ._iptv_header {
+  background-color: rgba(7, 6, 20, .92) !important;
+  border-bottom: 1px solid rgba(255, 47, 168, .28) !important;
+  box-shadow: 0 6px 30px rgba(124, 58, 237, .18) !important;
+  backdrop-filter: blur(14px) !important;
+}
+
+#iptv_site_header ._iptv_nav_link,
+#iptv_master_wrap_2025 ._iptv_nav_link {
+  color: #d9d7f2 !important;
+  position: relative !important;
+  padding: 6px 2px !important;
+}
+
+#iptv_site_header ._iptv_nav_link:hover,
+#iptv_site_header ._iptv_nav_link_active,
+#iptv_master_wrap_2025 ._iptv_nav_link:hover,
+#iptv_master_wrap_2025 ._iptv_nav_link_active {
+  color: var(--nx-pink) !important;
+  text-shadow: 0 0 12px rgba(255, 47, 168, .6) !important;
+}
+
+/* خط وردي مضيء تحت الرابط النشط */
+#iptv_site_header ._iptv_nav_link_active::after {
+  content: '' !important;
+  position: absolute !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: -10px !important;
+  height: 2px !important;
+  background: var(--nx-grad-pink) !important;
+  box-shadow: var(--nx-glow-pink) !important;
+  border-radius: 2px !important;
+}
+
+/* ---------- الأزرار ---------- */
+#iptv_site_header ._iptv_btn_primary,
+#iptv_master_wrap_2025 ._iptv_btn_primary {
+  background: var(--nx-grad-cyan) !important;
+  color: #fff !important;
+  border-radius: 14px !important;
+  border: 1px solid rgba(255, 255, 255, .25) !important;
+  box-shadow: var(--nx-glow-cyan) !important;
+  font-weight: 800 !important;
+}
+
+#iptv_site_header ._iptv_btn_primary:hover,
+#iptv_master_wrap_2025 ._iptv_btn_primary:hover {
+  transform: translateY(-2px) scale(1.03) !important;
+  box-shadow: 0 0 26px rgba(34, 211, 238, .75), 0 0 60px rgba(59, 107, 255, .4) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_btn_outline {
+  border: 1.5px solid var(--nx-pink) !important;
+  color: #fff !important;
+  border-radius: 14px !important;
+  background: rgba(255, 47, 168, .06) !important;
+  box-shadow: inset 0 0 14px rgba(255, 47, 168, .15), 0 0 14px rgba(255, 47, 168, .25) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_btn_outline:hover {
+  background: rgba(255, 47, 168, .18) !important;
+  box-shadow: var(--nx-glow-pink) !important;
+}
+
+/* أزرار الهيدر الصغيرة (حساب / سلة / بحث / منيو) */
+#iptv_site_header ._iptv_header_shop #customerLogin,
+#iptv_site_header ._iptv_header_shop .header-btn.btn,
+#iptv_site_header ._iptv_header_shop .search-btn,
+#iptv_site_header #show-sideMenu,
+#iptv_site_header ._iptv_user_icon {
+  background-color: rgba(13, 11, 36, .9) !important;
+  border: 1px solid rgba(34, 211, 238, .45) !important;
+  border-radius: 50% !important;
+  box-shadow: 0 0 12px rgba(34, 211, 238, .2) !important;
+}
+
+#iptv_site_header #show-sideMenu { border-radius: 12px !important; }
+
+#iptv_site_header ._iptv_header_shop #customerLogin:hover,
+#iptv_site_header ._iptv_header_shop .header-btn.btn:hover,
+#iptv_site_header ._iptv_header_shop .search-btn:hover,
+#iptv_site_header #show-sideMenu:hover {
+  border-color: var(--nx-pink) !important;
+  color: var(--nx-pink) !important;
+  box-shadow: var(--nx-glow-pink) !important;
+}
+
+#iptv_site_header ._iptv_header_shop .s-cart-summary-count {
+  background: var(--nx-grad-pink) !important;
+  box-shadow: 0 0 10px rgba(255, 47, 168, .7) !important;
+}
+
+/* ---------- الشريط المتحرك ---------- */
+#iptv_master_wrap_2025 ._iptv_ticker {
+  background: linear-gradient(90deg, #07061a, #0d0b24, #07061a) !important;
+  border-top: 1px solid rgba(34, 211, 238, .25) !important;
+  border-bottom: 1px solid rgba(255, 47, 168, .25) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_ticker span { color: #cfcdea !important; }
+#iptv_master_wrap_2025 ._iptv_ticker span b { color: var(--nx-cyan) !important; }
+
+/* ---------- عناوين الأقسام ---------- */
+#iptv_master_wrap_2025 ._iptv_section_title {
+  background: var(--nx-grad-pink) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  font-weight: 900 !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_title_line {
+  height: 3px !important;
+  width: 46px !important;
+  border-radius: 3px !important;
+  background: var(--nx-grad-cyan) !important;
+  box-shadow: var(--nx-glow-cyan) !important;
+}
+
+/* ---------- الكروت (مميزات / إحصائيات / آراء / أسعار) ---------- */
+#iptv_master_wrap_2025 ._iptv_feature_card,
+#iptv_master_wrap_2025 ._iptv_review_card,
+#iptv_master_wrap_2025 ._iptv_price_card,
+#iptv_master_wrap_2025 ._iptv_stats_card {
+  background: linear-gradient(160deg, rgba(22, 19, 56, .85), rgba(9, 8, 26, .95)) !important;
+  border: 1px solid rgba(124, 58, 237, .45) !important;
+  border-radius: 18px !important;
+  box-shadow: inset 0 0 22px rgba(124, 58, 237, .12), 0 8px 30px rgba(0, 0, 0, .45) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_feature_card:hover,
+#iptv_master_wrap_2025 ._iptv_stats_card:hover,
+#iptv_master_wrap_2025 ._iptv_review_card:hover {
+  border-color: var(--nx-pink) !important;
+  box-shadow: inset 0 0 22px rgba(255, 47, 168, .15), var(--nx-glow-pink) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_feature_icon {
+  border: 1px solid var(--nx-cyan) !important;
+  color: var(--nx-cyan) !important;
+  border-radius: 16px !important;
+  background-color: rgba(34, 211, 238, .08) !important;
+  box-shadow: 0 0 16px rgba(34, 211, 238, .35) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_feature_card p { color: var(--nx-muted) !important; }
+
+#iptv_master_wrap_2025 ._iptv_stats_card b {
+  background: var(--nx-grad-cyan) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  filter: drop-shadow(0 0 10px rgba(34, 211, 238, .45)) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_stats_card span { color: var(--nx-muted) !important; }
+
+#iptv_master_wrap_2025 ._iptv_review_text { color: #dcdaf2 !important; }
+#iptv_master_wrap_2025 ._iptv_review_stars { color: #ffd23f !important; text-shadow: 0 0 10px rgba(255, 210, 63, .5) !important; }
+#iptv_master_wrap_2025 ._iptv_review_avatar { background: var(--nx-grad-pink) !important; }
+
+#iptv_master_wrap_2025 ._iptv_price_card_popular {
+  border: 2px solid var(--nx-pink) !important;
+  background: linear-gradient(180deg, rgba(60, 10, 60, .55), #0a0820 100%) !important;
+  box-shadow: var(--nx-glow-pink) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_price_value { color: var(--nx-pink) !important; text-shadow: 0 0 16px rgba(255, 47, 168, .5) !important; }
+#iptv_master_wrap_2025 ._iptv_ribbon { background: var(--nx-grad-pink) !important; }
+
+/* أسهم سلايدر الآراء */
+#iptv_master_wrap_2025 ._iptv_reviews_arrow {
+  background: rgba(13, 11, 36, .95) !important;
+  border: 1px solid var(--nx-cyan) !important;
+  color: var(--nx-cyan) !important;
+  box-shadow: 0 0 12px rgba(34, 211, 238, .3) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_reviews_arrow:hover {
+  background: var(--nx-grad-cyan) !important;
+  color: #fff !important;
+  box-shadow: var(--nx-glow-cyan) !important;
+}
+
+/* ---------- بانر الدعوة للاشتراك ---------- */
+#iptv_master_wrap_2025 ._iptv_cta {
+  border: 1px solid rgba(255, 47, 168, .5) !important;
+  border-radius: 24px !important;
+  background: linear-gradient(135deg, rgba(60, 12, 80, .55), #07061a 65%) !important;
+  box-shadow: inset 0 0 40px rgba(124, 58, 237, .15), 0 0 40px rgba(255, 47, 168, .15) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_cta::before {
+  background: radial-gradient(ellipse, rgba(59, 107, 255, .35), transparent 70%) !important;
+}
+
+#iptv_master_wrap_2025 ._iptv_cta p { color: var(--nx-muted) !important; }
+
+/* ---------- الفوتر ---------- */
+#iptv_site_footer,
+#iptv_master_wrap_2025 ._iptv_footer {
+  background-color: #06051a !important;
+  border-top: 1px solid rgba(255, 47, 168, .3) !important;
+  box-shadow: 0 -10px 40px rgba(124, 58, 237, .12) !important;
+}
+
+#iptv_site_footer ._iptv_footer_links a { color: var(--nx-muted) !important; }
+#iptv_site_footer ._iptv_footer_links a:hover { color: var(--nx-pink) !important; }
+#iptv_site_footer ._iptv_footer_col h4 { color: var(--nx-cyan) !important; }
+#iptv_site_footer ._iptv_footer_bottom { border-top-color: rgba(124, 58, 237, .3) !important; color: #7d7aa8 !important; }
+
+/* ---------- أزرار عائمة ---------- */
+html.iptv-site-active ._iptv_to_top {
+  background: rgba(13, 11, 36, .95) !important;
+  border: 1px solid var(--nx-pink) !important;
+  color: var(--nx-pink) !important;
+  box-shadow: var(--nx-glow-pink) !important;
+}
+
+/* ---------- صفحة المنتج: إحصائيات وتقييمات ---------- */
+html .custom-product-stats,
+html .custom-pr-summary,
+html .custom-pr-card {
+  background: linear-gradient(160deg, rgba(22, 19, 56, .85), rgba(9, 8, 26, .95)) !important;
+  border: 1px solid rgba(124, 58, 237, .45) !important;
+  border-radius: 16px !important;
+  box-shadow: inset 0 0 18px rgba(124, 58, 237, .12) !important;
+}
+
+html .custom-stat-icon,
+html .custom-pr-avatar {
+  background: var(--nx-grad-pink) !important;
+  box-shadow: 0 0 14px rgba(255, 47, 168, .5) !important;
+}
+
+html .custom-stat-num,
+html .custom-pr-rating b { color: var(--nx-cyan) !important; text-shadow: 0 0 10px rgba(34, 211, 238, .4) !important; }
+
+/* ---------- كروت المنتجات (سلة) ---------- */
+html.dark .product-entry {
+  background: linear-gradient(160deg, rgba(22, 19, 56, .85), rgba(9, 8, 26, .95)) !important;
+  border: 1px solid rgba(124, 58, 237, .45) !important;
+  border-radius: 18px !important;
+  transition: border-color .25s, box-shadow .25s !important;
+}
+
+html.dark .product-entry:hover {
+  border-color: var(--nx-pink) !important;
+  box-shadow: var(--nx-glow-pink) !important;
+}
+
+html.dark [class*="border"] { border-color: rgba(124, 58, 237, .35) !important; }
+html.dark .bg-white,
+html.dark .bg-gray-50,
+html.dark .bg-gray-100,
+html.dark .bg-gray-200 { background-color: #0d0b24 !important; }
+
+html.dark .pay-mada,
+html.dark .pay-visa,
+html.dark .pay-mastercard,
+html.dark .pay-applepay { background-color: #fff !important; }
+
+/* ---------- الموبايل ---------- */
+@media (max-width: 768px) {
+  #iptv_master_wrap_2025 ._iptv_feature_card,
+  #iptv_master_wrap_2025 ._iptv_stats_card { border-radius: 14px !important; }
+  #iptv_site_header ._iptv_nav_link_active::after { display: none !important; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #iptv_master_wrap_2025 *,
+  #iptv_site_header * { animation: none !important; transition: none !important; }
+}
