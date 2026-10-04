@@ -12,6 +12,28 @@
     }
     loadFonts();
 
+    /* ===== اللوجو الديناميكي: يقرأ الشعار من لوحة التحكم تلقائياً ===== */
+    var DEFAULT_LOGO = 'https://dbi49knxhb5pc.cloudfront.net/channel/12550/KP6y2aGzaoh6eGVJA6C2PCndVXWbrIEQsc9cDi15.png';
+
+    function getStoreLogo() {
+        try {
+            var img = document.querySelector('#header .navbar-brand img, .store-header .navbar-brand img');
+            var u = img && (img.getAttribute('src') || img.getAttribute('data-src'));
+            if (u && u.indexOf('data:') !== 0 && u.indexOf('placeholder') === -1) return u;
+            var og = document.querySelector('meta[property="og:image"]');
+            if (og && og.content) return og.content;
+        } catch (e) {}
+        return DEFAULT_LOGO;
+    }
+
+    function syncLogo() {
+        var url = getStoreLogo();
+        var imgs = document.querySelectorAll('._iptv_logo_img, #iptv_site_footer ._iptv_footer_col > img');
+        for (var i = 0; i < imgs.length; i++) {
+            if (imgs[i].getAttribute('src') !== url) imgs[i].setAttribute('src', url);
+        }
+    }
+
     var j, s;
 
     var siteHeaderHtml =
@@ -20,14 +42,14 @@
         '<button type="button" id="show-sideMenu" class="_iptv_menu_btn" role="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="القائمة الرئيسية"><svg class="svg burger" width="27" height="16" viewBox="0 0 27 16" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H22V2H0V0Z" fill="currentColor"></path><path d="M0 7H27V9H0V7Z" fill="currentColor"></path><path d="M0 14H17V16H0V14Z" fill="currentColor"></path></svg></button>' +
         '<ul class="_iptv_nav"><li><a href="/" class="_iptv_nav_link _iptv_nav_link_active">الرئيسية</a></li><li><a href="/products" class="_iptv_nav_link">الباقات</a></li><li><a href="/products" class="_iptv_nav_link">القنوات</a></li><li><a href="/products" class="_iptv_nav_link">الأفلام</a></li><li><a href="/products" class="_iptv_nav_link">المسلسلات</a></li><li><a href="/products" class="_iptv_nav_link">الأطفال</a></li></ul>' +
         '</div>' +
-        '<a href="/" class="_iptv_logo" aria-label="IPTV KSA"><img src="https://dbi49knxhb5pc.cloudfront.net/channel/12550/VTCqGt2lJS7bsiJ91foaMfEkPk7QJoFvEW5p1dfX.png" alt="IPTV KSA" class="_iptv_logo_img"></a>' +
+        '<a href="/" class="_iptv_logo" aria-label="IPTV KSA"><img src="' + getStoreLogo() + '" alt="IPTV KSA" class="_iptv_logo_img"></a>' +
         '<div class="_iptv_header_actions"><a href="/products" class="_iptv_btn_primary">اشترك الآن</a>' +
         '<div class="_iptv_header_shop"></div>' +
         '</div></header>';
 
     var siteFooterHtml =
         '<footer id="iptv_site_footer" class="_iptv_footer"><div class="_iptv_footer_grid">' +
-        '<div class="_iptv_footer_col"><img src="https://dbi49knxhb5pc.cloudfront.net/channel/12550/VTCqGt2lJS7bsiJ91foaMfEkPk7QJoFvEW5p1dfX.png" alt="Logo" style="height:45px;margin-bottom:12px;display:block;"><p style="color:#666;font-size:0.85rem;margin-bottom:15px;">وجهتك الأولى لمشاهدة القنوات والأفلام والمسلسلات والمباريات بجودة عالية واستقرار تام.</p></div>' +
+        '<div class="_iptv_footer_col"><img src="' + getStoreLogo() + '" alt="Logo" style="height:45px;margin-bottom:12px;display:block;"><p style="color:#666;font-size:0.85rem;margin-bottom:15px;">وجهتك الأولى لمشاهدة القنوات والأفلام والمسلسلات والمباريات بجودة عالية واستقرار تام.</p></div>' +
         '<div class="_iptv_footer_col"><h4>معلومات</h4><ul class="_iptv_footer_links"><li><a href="/page/terms-of-use">شروط الاستخدام</a></li><li><a href="/page/return-policy">سياسة الاسترجاع</a></li><li><a href="/page/return-policy">سياسة الخصوصية</a></li></ul></div>' +
         '<div class="_iptv_footer_col"><h4>طرق الدفع</h4><ul class="flex justify-center items-center flex-wrap gap-2">' +
         '<li class="pay-mada w-12 h-7 bg-white rounded flex items-center p-1"><img width="100%" height="100%" src="https://ksaaiptv.com/admin-themes/mbotiq/assets/images/payments/mastercard.png" alt="mastercard" loading="lazy" class="lazy object-contain max-h-full"></li>' +
@@ -202,11 +224,14 @@
             moveStoreActions();
         }
         buildPlatformNav();
+        syncLogo();
     }
 
     buildSiteShell();
     document.addEventListener('DOMContentLoaded', buildSiteShell);
     setTimeout(buildSiteShell, 300);
+    window.addEventListener('load', syncLogo);
+    setTimeout(syncLogo, 1500);
 
     var productStatsBound = false;
     function buildProductStats() {
@@ -430,7 +455,7 @@
         '<section class="_iptv_container _iptv_hero">' +
         '<div class="_iptv_hero_image">' +
         '<img class="_iptv_hero_banner_img" src="__IPTV_BANNER__" alt="IPTV KSA">' +
-        
+
         '</div>' +
         '</section>' +
 
@@ -637,10 +662,10 @@
         if (!wrap) return;
         if (wrap.getAttribute('data-iptv-blocks') === '1') return;
         wrap.setAttribute('data-iptv-blocks', '1');
-      var featGrid = wrap.querySelector('._iptv_grid_5');
-var anchor = null;
-if (featGrid && featGrid.closest) anchor = featGrid.closest('section');
-if (!anchor) anchor = featGrid;
+        var featGrid = wrap.querySelector('._iptv_grid_5');
+        var anchor = null;
+        if (featGrid && featGrid.closest) anchor = featGrid.closest('section');
+        if (!anchor) anchor = featGrid;
         var blocks = [];
         try {
             blocks = document.querySelectorAll('#app .s-block, .main-container-wrapper .s-block, main .s-block');
