@@ -24,7 +24,7 @@
                     <!-- العمود الأيمن: النصوص -->
                     <div class="jh-text-side">
                         <div class="jh-badge">
-                            <span class="jh-badge-dot"></span> الشريك الإبداعي لنجاحك — نسخة 2025 المطورة
+                            <span class="jh-badge-dot"></span>كل احتياجاتك الإبداعية.. تحت سقف واحد
                         </div>
                         <h1 class="jh-title">
                             متجر جراي..<br>
@@ -376,7 +376,7 @@
                     <!-- العمود الأيمن: النصوص -->
                     <div class="jh-text-side">
                         <div class="jh-badge">
-                            <span class="jh-badge-dot"></span> الشريك الإبداعي لنجاحك — نسخة 2025 المطورة
+                            <span class="jh-badge-dot"></span>كل احتياجاتك الإبداعية.. تحت سقف واحد
                         </div>
                         <h1 class="jh-title">
                             متجر جراي..<br>
