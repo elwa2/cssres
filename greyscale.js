@@ -750,35 +750,7 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
 
         // 5. التنسيقات (مخصصة للسكشن المحدد أو للسكشن العام الجديد)
         const styles = `
-            section[section-id="46c87c94-c47b-471d-a252-f628da84c5fe"],
-            #global-custom-benefits {
-                padding: 0 !important;
-                background-color: #F8F9FA !important;
-                position: relative;
-                overflow: hidden;
-                width: 100%;
-            }            .cb-main-title { font-size: clamp(28px, 4vw, 36px); font-weight: 800; color: #111827; margin: 0; }
-.cb-title-wrapper {
-    text-align: center;
-    margin-bottom: 50px;
-}
-            .custom-benefits-container { padding: 60px 0 0 0; width: 100%; font-family: inherit; }
-            .cb-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; align-items: start; }
-            .cb-item { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 0 15px; }
-            .cb-middle { border-right: 1px solid rgba(0,0,0,0.06); border-left: 1px solid rgba(0,0,0,0.06); }
-            .cb-icon { width: 64px; height: 64px; background-color: var(--primary) ; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #ffffff; margin-bottom: 24px; box-shadow: 0 4px 10px rgba(235, 40, 53, 0.2); }
-            .cb-title { font-size: 18px; font-weight: 700; color: #2D2D2D; margin-bottom: 12px; margin-top: 0; }
-            .cb-desc { font-size: 14.5px; color: #666666; line-height: 1.6; margin: 0; max-width: 280px; }
-            .cb-bottom-line { width: 100%; height: 20px; background-color: var(--primary) ; margin-top: 50px; }.cb-icon svg {
-    width: 39px;
-    height: 64px;
-}
-            @media (max-width: 768px) {
-                .custom-benefits-container { padding: 40px 0 0 0; }
-                .cb-grid { grid-template-columns: 1fr; gap: 40px; }
-                .cb-middle { border: none; padding-top: 40px; padding-bottom: 40px; border-top: 1px solid rgba(0,0,0,0.06); border-bottom: 1px solid rgba(0,0,0,0.06); }
-                .cb-bottom-line { margin-top: 40px; height: 16px; }
-            }
+          
         `;
 
         if (!document.getElementById('custom-benefits-style-global')) {
