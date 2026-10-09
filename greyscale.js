@@ -513,7 +513,7 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
 
                     <!-- العمود الثالث: الدعم -->
                     <div class="cgf-col">
-                        <div class="cgf-title">الدعم</div>
+                        <div class="cgf-title">روابط هامة</div>
                         <ul class="cgf-links">
                              
                             <li><a href="#">الأسئلة الشائعة</a></li>
