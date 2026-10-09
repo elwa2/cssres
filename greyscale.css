@@ -1473,3 +1473,6 @@ main>section.min-h-\[300px\]>.absolute.-z-10>img {
         content: url("https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/6ac52779-13f2-424a-a1bc-73a0a238503f.webp");
     }
 }
+.jb-container {
+    display: none;
+}
