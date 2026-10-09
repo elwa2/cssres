@@ -724,18 +724,22 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
                     </div>
                     <div class="cb-grid">
                         <div class="cb-item">
-                            <div class="cb-icon">${cubeIcon1}</div>
-                            <h3 class="cb-title">أسعارنا التنافسية</h3>
+                            <div class="cb-icon">${cubeIcon3}</div>
+                            <h3 class="cb-title">خبرتنا العالية</h3>
+                            <h4 class="cb-title">التي تسهم في وصولك للمكانة الأكثر تميزاً في مجالك  </h4>
                          
                         </div>
                         <div class="cb-item cb-middle">
                             <div class="cb-icon">${cubeIcon2}</div>
                             <h3 class="cb-title">خدماتنا المتجددة</h3>
+                            <h4 class="cb-title">حيث تغطي كافة الاحتياجات الإبداعية لمشروعك  </h4>
                            
                         </div>
                         <div class="cb-item">
-                            <div class="cb-icon">${cubeIcon3}</div>
-                            <h3 class="cb-title">خبرتنا العالية</h3>
+                            <div class="cb-icon">${cubeIcon1}</div>
+                          
+                              <h3 class="cb-title">أسعارنا التنافسية</h3>
+                            <h4 class="cb-title">لا حاجة لهدر المزيد من الأموال، باقاتنا مخصصة وفق ميزانيتك  </h4>
                            
                         </div>
                     </div>

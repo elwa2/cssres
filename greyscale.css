@@ -1902,3 +1902,10 @@ main>section.min-h-\[300px\]>.absolute.-z-10>img {
     margin: 0 auto;
     overflow: hidden;
 }
+
+
+h4.cb-title {
+    font-size: 17px;
+    font-weight: 300;
+    color: #6f6f6f;
+}
