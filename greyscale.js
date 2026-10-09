@@ -579,51 +579,18 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
 
 
 
-
-
-(function () {
+ (function () {
     function injectCombinedSections() {
-        // منع التكرار
-        if (document.getElementById('jaray-story-banner-section') || document.getElementById('jaray-works-section')) return true;
+        // 1. منع التكرار
+        if (document.getElementById('jaray-works-section')) return true;
 
-        // البحث عن القسم المستهدف (القسم الرمادي القديم)
+        // 2. البحث عن القسم المستهدف 
         const targetSection = document.querySelector('section[section-id="1c75d9c6-1b50-4174-8601-c7f99d482261"]');
         if (!targetSection) return false;
 
         /* ========================================================
-           1. تجهيز الـ HTML
+           3. تجهيز الـ HTML
            ======================================================== */
-        
-        // --- قسم لماذا جراي (البانر الأفقي) ---
-        const storyHTML = `
-            <section id="jaray-story-banner-section" class="jb-section">
-                <div class="jb-container">
-                    <div class="jb-banner">
-                        <div class="jb-text-content">
-                            <div class="jb-badge">لماذا جراي؟</div>
-                            <h2 class="jb-title">نحوّل أفكارك إلى <span class="jb-highlight">متجر إبداعي ينبض</span></h2>
-                            <p class="jb-desc">لسنا مجرد مصممين. نحن فريق نمو: نفهم جمهورك، نبني هويتك، نكتب رسالتك، ونطلقها بفيديو ومحتوى يبيع.</p>
-                        </div>
-                        
-                        <div class="jb-action-content">
-                            <div class="jb-cta-box">
-                                <div class="jb-cta-bg"></div>
-                                <div class="jb-cta-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                                </div>
-                                <div class="jb-cta-info">
-                                    <div class="jb-cta-title">استشارة مجانية 15 دقيقة</div>
-                                    <div class="jb-cta-sub">احجز مكالمة ونرسم خارطة طريقك</div>
-                                </div>
-                                <a href="https://wa.me/966502331517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20..%20%D9%83%D9%8A%D9%81%20%D9%8A%D9%85%D9%83%D9%86%D9%86%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83" class="jb-cta-btn" target="_blank">احجز</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        `;
-
-        // --- قسم أعمالنا ---
         const workImages = [
             "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/87c46749-9e21-4a23-8f56-7433fddbf9e0.png",
             "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/51d38291-0acf-4e27-9401-738f7580365b.png",
@@ -634,7 +601,8 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
             "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/811bfdd2-993a-40a4-b080-3f57e3961026.png",
             "https://media.zid.store/a271d487-cb04-4e56-861c-0fa0c53447d4/dcfe8b3c-d3de-47b6-8056-54c102dc76e7.png"
         ];
-        const imagesHTML = workImages.map(src => `<img src="${src}" alt="أعمالنا" loading="lazy" class="jw-img">`).join('');
+        
+        const imagesHTML = workImages.map(src => `<img src="${src}" alt="أعمالنا" loading="lazy" class="jw-img" draggable="false">`).join('');
 
         const worksHTML = `
             <section id="jaray-works-section">
@@ -643,9 +611,11 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
                     <div class="jw-marquee-wrapper" dir="ltr">
                         <div class="jw-fade jw-fade-left"></div>
                         <div class="jw-fade jw-fade-right"></div>
-                        <div class="jw-marquee-track">
+                        <div class="jw-marquee-track" id="jw-track">
                             <div class="jw-marquee-group">${imagesHTML}</div>
-                            <div class="jw-marquee-group" aria-hidden="true">${imagesHTML}</div>
+                            <div class="jw-marquee-group">${imagesHTML}</div>
+                            <div class="jw-marquee-group">${imagesHTML}</div>
+                            <div class="jw-marquee-group">${imagesHTML}</div>
                         </div>
                     </div>
                 </div>
@@ -653,29 +623,179 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
         `;
 
         /* ========================================================
-           2. التنسيقات (CSS)
+           4. التنسيقات (CSS) - تم تعديلها لترجع للشكل الأصلي الجميل
            ======================================================== */
         const combinedStyles = `
-          
+            #jaray-works-section {
+                padding: 60px 0;
+                background-color: #f6f6f9; /* نفس لون خلفية متجرك تقريباً */
+                overflow: hidden;
+            }
+            .jw-container {
+                width: 100%;
+                margin: 0 auto;
+                text-align: center;
+            }
+            .jw-title {
+                font-size: 32px;
+                margin-bottom: 40px;
+                font-weight: bold;
+                font-family: inherit;
+                color: #1a202c;
+            }
+            .jw-marquee-wrapper {
+                position: relative;
+                display: flex;
+                overflow: hidden;
+                width: 100%;
+            }
+            .jw-marquee-track {
+                display: flex;
+                width: max-content;
+                cursor: grab;
+                user-select: none;
+                will-change: transform;
+            }
+            .jw-marquee-track:active {
+                cursor: grabbing;
+            }
+            .jw-marquee-group {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            .jw-img {
+                /* إرجاع المقاسات والشكل الأصلي */
+                height: 280px; 
+                width: 380px;
+                margin: 0 10px;
+                object-fit: cover; /* تغطية المساحة بالكامل بدون حواف بيضاء */
+                border-radius: 16px; /* حواف دائرية ناعمة */
+                pointer-events: none;
+                flex-shrink: 0; /* منع انكماش الصور */
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* ظل خفيف جداً يبرز الصورة */
+            }
+            
+            /* تصغير الصور قليلاً في الجوال لتناسب الشاشة */
+            @media (max-width: 768px) {
+                .jw-img {
+                    height: 200px;
+                    width: 280px;
+                    border-radius: 12px;
+                }
+                .jw-title {
+                    font-size: 24px;
+                }
+            }
+
+            .jw-fade {
+                position: absolute;
+                top: 0;
+                width: 120px;
+                height: 100%;
+                z-index: 2;
+                pointer-events: none;
+            }
+            .jw-fade-left {
+                left: 0;
+                background: linear-gradient(to right, #f6f6f9, transparent);
+            }
+            .jw-fade-right {
+                right: 0;
+                background: linear-gradient(to left, #f6f6f9, transparent);
+            }
         `;
 
         /* ========================================================
-           3. الحقن في الصفحة
+           5. الحقن في الصفحة
            ======================================================== */
-        
-        // أ. حقن التنسيقات
         const styleTag = document.createElement('style');
         styleTag.type = 'text/css';
         styleTag.textContent = combinedStyles;
         document.head.appendChild(styleTag);
 
-        // ب. استبدال القسم القديم بالقسمين معاً (البانر أولاً ثم الأعمال ثانياً)
-        targetSection.outerHTML = storyHTML + worksHTML;
+        targetSection.outerHTML = worksHTML;
+
+        // تأخير بسيط لضمان تحميل أبعاد الصور قبل تشغيل السكربت
+        setTimeout(initInteractiveSlider, 300);
 
         return true;
     }
 
-    // تشغيل الكود بنظام التتبع لضمان تحميله مع بيئة منصة زد
+    /* ========================================================
+       6. نظام الحركة والسحب (JavaScript Logic)
+       ======================================================== */
+    function initInteractiveSlider() {
+        const track = document.getElementById('jw-track');
+        if (!track) return;
+
+        // السرعة: 2.5 تعتبر ممتازة للصور الكبيرة، يمكنك زيادتها إلى 3 أو 4 لو أردت أسرع
+        const autoSpeed = 2.5; 
+
+        let isDragging = false;
+        let startX = 0;
+        let currentPosition = 0;
+        let prevPosition = 0;
+        let animationId;
+        
+        let groupWidth = 0;
+        
+        function updateWidth() {
+            const group = track.querySelector('.jw-marquee-group');
+            if (group) groupWidth = group.offsetWidth;
+        }
+        updateWidth();
+        window.addEventListener('resize', updateWidth);
+
+        function scrollAnimation() {
+            if (!isDragging) {
+                currentPosition -= autoSpeed; 
+            }
+
+            // اللوب اللانهائي
+            if (groupWidth > 0) {
+                if (currentPosition <= -groupWidth) {
+                    currentPosition += groupWidth;
+                } else if (currentPosition > 0) {
+                    currentPosition -= groupWidth;
+                }
+            }
+
+            track.style.transform = `translate3d(${currentPosition}px, 0, 0)`; // translate3d لأداء أسرع
+            animationId = requestAnimationFrame(scrollAnimation);
+        }
+
+        animationId = requestAnimationFrame(scrollAnimation);
+
+        const dragStart = (e) => {
+            isDragging = true;
+            startX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+            prevPosition = currentPosition;
+        };
+
+        const dragMove = (e) => {
+            if (!isDragging) return;
+            // منع سحب الشاشة بالطول فقط إذا كان السحب بالعرض (للجوال)
+            if (e.cancelable) e.preventDefault(); 
+            const currentX = e.type.includes('mouse') ? e.pageX : e.touches[0].clientX;
+            const distance = currentX - startX;
+            currentPosition = prevPosition + distance;
+        };
+
+        const dragEnd = () => {
+            isDragging = false;
+        };
+
+        track.addEventListener('mousedown', dragStart);
+        window.addEventListener('mousemove', dragMove);
+        window.addEventListener('mouseup', dragEnd);
+        window.addEventListener('mouseleave', dragEnd);
+
+        track.addEventListener('touchstart', dragStart, { passive: true });
+        window.addEventListener('touchmove', dragMove, { passive: false });
+        window.addEventListener('touchend', dragEnd);
+    }
+
     if (!injectCombinedSections()) {
         let attempts = 0;
         const observerInterval = setInterval(() => {
@@ -686,8 +806,6 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
         }, 500);
     }
 })();
-
-
 
 
 
