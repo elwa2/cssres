@@ -814,6 +814,317 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
 
 
 
+(function () {
+    function injectStoryBanner() {
+        // 1. منع التكرار
+        if (document.getElementById('jaray-story-banner-section')) {
+            const oldSection = document.querySelector('[section-id="d3cc5031-0735-47b0-bb2e-3c9db473afe4"]');
+            if (oldSection) oldSection.style.setProperty('display', 'none', 'important');
+            return;
+        }
+
+        // 2. البحث عن القسم المستهدف
+        const targetSection = document.querySelector('[section-id="d3cc5031-0735-47b0-bb2e-3c9db473afe4"]');
+        if (!targetSection) return; 
+
+        /* ========================================================
+           3. كود HTML
+           ======================================================== */
+        const storyHTML = `
+            <section id="jaray-story-banner-section" class="jb-section">
+                <div class="jb-container">
+                    <div class="jb-banner-wrapper">
+                        <!-- إضاءات الخلفية -->
+                        <div class="jb-glow jb-glow-pink"></div>
+                        <div class="jb-glow jb-glow-blue"></div>
+
+                        <div class="jb-banner">
+                            <!-- قسم النصوص -->
+                            <div class="jb-text-content">
+                                <div class="jb-badge"><span class="jb-dot"></span> لماذا جراي؟</div>
+                                <h2 class="jb-title">نحوّل أفكارك إلى <br><span class="jb-highlight">متجر إبداعي ينبض</span></h2>
+                                <p class="jb-desc">لسنا مجرد مصممين. نحن فريق نمو: نفهم جمهورك، نبني هويتك، نكتب رسالتك، ونطلقها بفيديو ومحتوى يبيع.</p>
+                            </div>
+                            
+                            <!-- قسم الإجراء (صندوق الواتساب) -->
+                            <div class="jb-action-content">
+                                <div class="jb-cta-box jb-floating">
+                                    <div class="jb-cta-icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                    </div>
+                                    <div class="jb-cta-info">
+                                        <div class="jb-cta-title">استشارة مجانية 15 دقيقة</div>
+                                        <div class="jb-cta-sub">احجز مكالمة ونرسم خارطة طريقك</div>
+                                    </div>
+                                    <a href="https://wa.me/966502331517?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20..%20%D9%83%D9%8A%D9%81%20%D9%8A%D9%85%D9%83%D9%86%D9%86%D8%A7%20%D9%85%D8%B3%D8%A7%D8%B9%D8%AF%D8%AA%D9%83" class="jb-cta-btn" target="_blank">احجز</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        `;
+
+        /* ========================================================
+           4. التنسيقات (CSS) 
+           ======================================================== */
+        const bannerStyles = `
+            .jb-section {
+                padding: 40px 15px;
+                direction: rtl; 
+                font-family: inherit;
+                background-color: #f8f9fc; 
+                overflow: hidden;
+            }
+            .jb-container {
+                max-width: 1100px;
+                margin: 0 auto;
+            }
+            .jb-banner-wrapper {
+                position: relative;
+                background: linear-gradient(135deg, #ffffff 0%, #fef5f9 50%, #f0f7ff 100%);
+                border-radius: 30px;
+                box-shadow: 0 20px 40px rgba(0,0,0,0.03), inset 0 0 0 1px rgba(255,255,255,0.8);
+                padding: 50px;
+                z-index: 1;
+                animation: fadeUp 0.8s ease forwards;
+            }
+
+            /* إضاءات الخلفية الملونة */
+            .jb-glow {
+                position: absolute;
+                width: 250px;
+                height: 250px;
+                filter: blur(50px);
+                z-index: -1;
+                opacity: 0.6;
+            }
+            .jb-glow-pink {
+                background: rgba(255, 77, 133, 0.3);
+                top: -50px;
+                left: -20px;
+            }
+            .jb-glow-blue {
+                background: rgba(0, 210, 255, 0.3);
+                bottom: -50px;
+                right: -20px;
+            }
+
+            .jb-banner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 40px;
+                position: relative;
+                z-index: 2;
+            }
+            .jb-text-content {
+                flex: 1.2;
+            }
+            .jb-badge {
+                background: #ffffff;
+                color: #111;
+                padding: 8px 18px;
+                border-radius: 50px;
+                font-size: 14px;
+                font-weight: 700;
+                margin-bottom: 25px;
+                display: inline-flex;
+                align-items: center;
+                gap: 8px;
+                box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            }
+            .jb-dot {
+                width: 8px;
+                height: 8px;
+                background-color: #ff4d85;
+                border-radius: 50%;
+                box-shadow: 0 0 8px #ff4d85;
+            }
+            .jb-title {
+                font-size: 38px;
+                font-weight: bold;
+                color: #111;
+                margin-bottom: 20px;
+                line-height: 1.4;
+            }
+            .jb-highlight {
+                background: linear-gradient(to left, #00d2ff, #ff4d85);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                display: inline-block;
+            }
+            .jb-desc {
+                font-size: 16px;
+                color: #64748b;
+                line-height: 1.8;
+                max-width: 90%;
+            }
+
+            .jb-action-content {
+                flex: 1;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            .jb-cta-box {
+                background: rgba(255, 255, 255, 0.85);
+                backdrop-filter: blur(10px);
+                padding: 30px;
+                border-radius: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 15px;
+                box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+                border: 1px solid rgba(255,255,255,0.9);
+                text-align: center;
+                width: 100%;
+                max-width: 350px;
+            }
+            .jb-floating {
+                animation: float 4s ease-in-out infinite;
+            }
+            
+            .jb-cta-icon {
+                background: #eafff0;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #25D366; 
+                margin-bottom: 5px;
+            }
+            .jb-cta-title {
+                font-weight: bold;
+                font-size: 18px;
+                color: #111;
+            }
+            .jb-cta-sub {
+                font-size: 14px;
+                color: #64748b;
+                margin-bottom: 10px;
+            }
+            .jb-cta-btn {
+                background: #25D366;
+                color: #ffffff;
+                padding: 12px 30px;
+                border-radius: 50px;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 16px;
+                transition: all 0.3s ease;
+                width: 100%;
+                box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+            }
+            .jb-cta-btn:hover {
+                background: #1ea952;
+                transform: translateY(-3px);
+                box-shadow: 0 12px 25px rgba(37, 211, 102, 0.4);
+            }
+
+            @keyframes fadeUp {
+                0% { opacity: 0; transform: translateY(30px); }
+                100% { opacity: 1; transform: translateY(0); }
+            }
+            @keyframes float {
+                0%, 100% { transform: translateY(0); }
+                50% { transform: translateY(-15px); }
+            }
+
+            /* =========================================
+               تصغير الأحجام في الجوال (المطلوب)
+               ========================================= */
+            @media (max-width: 768px) {
+                .jb-section {
+                    padding: 20px 10px; /* تقليل المساحة الخارجية */
+                }
+                .jb-banner-wrapper {
+                    padding: 30px 15px; /* تقليل المساحة الداخلية */
+                    border-radius: 20px;
+                }
+                .jb-banner {
+                    flex-direction: column;
+                    text-align: center;
+                    gap: 20px; /* تقليل الفراغ بين النص وصندوق الواتساب */
+                }
+                
+                /* تصغير النصوص */
+                .jb-badge {
+                    font-size: 12px;
+                    padding: 6px 14px;
+                    margin-bottom: 15px;
+                }
+                .jb-title {
+                    font-size: 24px; /* تصغير العنوان بشكل ملحوظ */
+                    margin-bottom: 10px;
+                }
+                .jb-desc {
+                    font-size: 14px; /* تصغير الوصف */
+                    margin: 0 auto;
+                    line-height: 1.6;
+                }
+                
+                /* تصغير صندوق الواتساب بقوة */
+                .jb-action-content {
+                    width: 100%;
+                    margin-top: 5px;
+                }
+                .jb-cta-box {
+                    padding: 20px 15px; /* تقليل الحجم الداخلي للصندوق */
+                    gap: 10px;
+                    border-radius: 16px;
+                }
+                .jb-cta-icon {
+                    width: 45px; /* تصغير الدائرة الخضراء */
+                    height: 45px;
+                    margin-bottom: 0;
+                }
+                .jb-cta-icon svg {
+                    width: 20px;
+                    height: 20px;
+                }
+                .jb-cta-title {
+                    font-size: 15px; /* تصغير نص الاستشارة */
+                }
+                .jb-cta-sub {
+                    font-size: 12px; /* تصغير النص الفرعي */
+                    margin-bottom: 5px;
+                }
+                .jb-cta-btn {
+                    padding: 10px 20px; /* تصغير زر الواتس اب */
+                    font-size: 15px;
+                }
+            }
+        `;
+
+        /* ========================================================
+           5. الحقن الآمن في الصفحة
+           ======================================================== */
+        if (!document.getElementById('jaray-banner-styles-new')) {
+            const styleTag = document.createElement('style');
+            styleTag.id = 'jaray-banner-styles-new';
+            styleTag.type = 'text/css';
+            styleTag.textContent = bannerStyles;
+            document.head.appendChild(styleTag);
+        }
+
+        targetSection.insertAdjacentHTML('beforebegin', storyHTML);
+        targetSection.style.setProperty('display', 'none', 'important');
+    }
+
+    injectStoryBanner();
+    setInterval(injectStoryBanner, 1000);
+})();
+
+
+
+
+
+
+
 
 (function () {
     function injectGlobalBenefits() {
