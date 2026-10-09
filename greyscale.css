@@ -2014,3 +2014,8 @@ section[section-id="46c87c94-c47b-471d-a252-f628da84c5fe"], #global-custom-benef
     margin: 0 auto;
     overflow: hidden;
 }
+@media (max-width: 768px) {
+    .jh-visual-side {
+        display: none;
+    }
+}
