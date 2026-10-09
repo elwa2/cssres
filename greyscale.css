@@ -1820,15 +1820,7 @@ main>section.min-h-\[300px\]>.absolute.-z-10>img {
     box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
 }
 
-@keyframes jw-scroll {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
-}
+ 
 
 /* شاشات سطح المكتب */
 @media (min-width: 992px) {
