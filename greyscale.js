@@ -507,7 +507,7 @@ const iconX = `<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" vi
                             <li><a href="#">المونتاج والتحريك</a></li>
                             <li><a href="#">الشعار الأنيق</a></li>
                             <li><a href="#">السوشيال ميديا</a></li>
-                            <li><a href="#">إدارة المتاجر</a></li>
+                            <li><a href="#">الباقات القيمة  </a></li>
                         </ul>
                     </div>
 
