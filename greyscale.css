@@ -1539,8 +1539,8 @@ main>section.min-h-\[300px\]>.absolute.-z-10>img {
     border-radius: 12px;
     /* filter: grayscale(100%); */
     transition: filter 0.3s;
-    background: #f8f9fa;
-    border: 1px solid #E5E7EB;
+    /* background: #f8f9fa; */
+    /* border: 1px solid #E5E7EB; */
     padding: 0px;
     cursor: pointer;
 }
@@ -1587,8 +1587,8 @@ main>section.min-h-\[300px\]>.absolute.-z-10>img {
     border-radius: 12px;
     /* filter: grayscale(100%); */
     /* transition: filter 0.3s; */
-    background: #f8f9fa;
-    border: 1px solid #E5E7EB;
+    /* background: #f8f9fa; */
+    /* border: 1px solid #E5E7EB; */
     padding: 10px;
     cursor: pointer;
 }
