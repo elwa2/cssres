@@ -1475,4 +1475,8 @@ main>section.min-h-\[300px\]>.absolute.-z-10>img {
 }
 .jb-container {
     display: none;
+}.embla__slide.relative.flex.items-center.justify-center.overflow-hidden { 
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
