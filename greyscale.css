@@ -1895,3 +1895,10 @@ main>section.min-h-\[300px\]>.absolute.-z-10>img {
 .brands-marquee-track.reverse {
     display: none;
 }
+
+.brands-style-box {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+}
