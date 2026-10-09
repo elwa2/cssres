@@ -2018,4 +2018,7 @@ section[section-id="46c87c94-c47b-471d-a252-f628da84c5fe"], #global-custom-benef
     .jh-visual-side {
         display: none;
     }
-}
+
+[section-id="d3cc5031-0735-47b0-bb2e-3c9db473afe4"] .embla__slide {
+    min-height: 36vw;
+}}
