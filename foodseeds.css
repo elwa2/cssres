@@ -465,21 +465,191 @@
      color: #ffffff;
    }
  }
-.divider-title h2{background:linear-gradient(
-    90deg,#76bb40 0%,#02384c 33%,#c5a56d 66%,#76bb40 100%
-  );background-size:300% 100%;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;animation:moveGradient 5s ease infinite}@keyframes moveGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
-:root {
-     --color-primary: #76bb40;
-    --color-primary-dark: #50951a;
-    --color-primary-light: #9ce166;
-    --color-primary-reverse: #003c00;
-    --dark-bg-main: #1a4b3e;
-    --dark-text-main: #003c00;
-    --dark-text-sec: #003c00;
-    --dark-grey: #ffffff;
-    --text-btn: #ffffff;
-    --bg-color: #02384c;
-    --header-bg: #ffffff;
-    --menu-bg: #ffffff;
-    --footer-bg: #ffffff;
-}
+
+ .divider-title h2 {
+   background: linear-gradient(90deg, #76bb40 0%, #02384c 33%, #c5a56d 66%, #76bb40 100%);
+   background-size: 300% 100%;
+   -webkit-background-clip: text !important;
+   background-clip: text !important;
+   -webkit-text-fill-color: transparent !important;
+   color: transparent !important;
+   animation: moveGradient 5s ease infinite
+ }
+
+ @keyframes moveGradient {
+   0% {
+     background-position: 0% 50%
+   }
+
+   50% {
+     background-position: 100% 50%
+   }
+
+   100% {
+     background-position: 0% 50%
+   }
+ }
+
+
+ /* =========================================
+   1. تأثير التدرج اللوني المتحرك للعناوين
+   ========================================= */
+
+ /* تعريف حركة التدرج اللوني */
+ @keyframes animatedTextGradient {
+   0% {
+     background-position: 0% 50%;
+   }
+
+   50% {
+     background-position: 100% 50%;
+   }
+
+   100% {
+     background-position: 0% 50%;
+   }
+ }
+
+ /* تطبيق التأثير على عنوان التمارين الرياضية وباقي عناوين الأقسام */
+ .divider-title h2,
+ .s-block__title h2,
+ .s-slider-block__title h2 {
+   /* دمج ألوان الهوية (الكحلي، والأخضر الليموني بدرجاته) */
+   background: linear-gradient(-45deg, #02384c, #76bb40, #5d9732, #02384c) !important;
+   background-size: 300% auto !important;
+
+   /* قص الخلفية لتأخذ شكل النص فقط */
+   -webkit-background-clip: text !important;
+   background-clip: text !important;
+
+   /* جعل لون النص الأصلي شفاف ليظهر التدرج الذي خلفه */
+   -webkit-text-fill-color: transparent !important;
+   color: transparent !important;
+
+   /* تشغيل الأنيميشن */
+   animation: animatedTextGradient 4s ease infinite !important;
+
+   /* للحفاظ على مظهر العنوان وتوسيطه */
+   display: inline-block;
+   padding-bottom: 5px;
+ }
+
+
+ /* =========================================
+   2. إصلاح وتجميل قسم الأسئلة الشائعة (FAQ Grid)
+   ========================================= */
+
+ /* إجبار القسم على أن يكون شبكة منتظمة (Grid) تلغي أي بعثرة سابقة */
+ .faqs-list {
+   display: grid !important;
+   grid-template-columns: 1fr !important;
+   /* عمود واحد للموبايل */
+   gap: 20px !important;
+   align-items: start !important;
+   /* يمنع البطاقات من التمدد بشكل غير متساوٍ */
+   width: 100% !important;
+   margin: 0 auto !important;
+ }
+
+ /* في الشاشات الكبيرة (التابلت والديسكتوب): جعلها عمودين بجوار بعضهما */
+ @media (min-width: 768px) {
+   .faqs-list {
+     grid-template-columns: repeat(2, 1fr) !important;
+   }
+ }
+
+ /* إزالة أي هوامش عشوائية تسبب شكل السلالم في الصورة */
+ .faq-container {
+   width: 100% !important;
+   margin: 0 !important;
+   padding: 0 !important;
+   transform: none !important;
+ }
+
+ /* تصميم بطاقة السؤال لتكون فخمة ومريحة للعين */
+ .faqs-list__item {
+   background: #ffffff !important;
+   border: 1px solid rgba(118, 187, 64, 0.15) !important;
+   /* حد خفيف بلون الأخضر الليموني */
+   border-radius: 16px !important;
+   box-shadow: 0 4px 15px rgba(2, 56, 76, 0.04) !important;
+   transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+   position: relative;
+   overflow: hidden;
+ }
+
+ /* تأثير عند مرور الماوس على السؤال */
+ .faqs-list__item:hover {
+   transform: translateY(-4px) !important;
+   box-shadow: 0 10px 25px rgba(118, 187, 64, 0.12) !important;
+   border-color: #76bb40 !important;
+ }
+
+ /* تنسيق النص والأيقونة داخل بطاقة السؤال */
+ .faqs-list__item label {
+   padding: 20px 24px !important;
+   font-weight: 700 !important;
+   color: #02384c !important;
+   display: flex !important;
+   align-items: center !important;
+   justify-content: space-between !important;
+   /* يضع النص يميناً والأيقونة يساراً بشكل تلقائي */
+   font-size: 15px !important;
+ }
+
+ /* تصميم أيقونة الـ (+) لتكون داخل دائرة أنيقة */
+ .faq-item.open-badge {
+   position: static !important;
+   /* إلغاء التموضع المطلق الذي قد يسبب مشاكل */
+   flex-shrink: 0 !important;
+   margin-inline-start: 15px !important;
+   /* مسافة بين النص والأيقونة تدعم RTL */
+   background: #f8faf9 !important;
+   color: #76bb40 !important;
+   border-radius: 50% !important;
+   width: 36px !important;
+   height: 36px !important;
+   display: flex !important;
+   align-items: center !important;
+   justify-content: center !important;
+   transition: transform 0.4s ease, background 0.4s ease, color 0.4s ease !important;
+ }
+
+ /* ===== حالة فتح السؤال (Active State) ===== */
+ .faq-container input:checked+.faqs-list__item {
+   border-color: #76bb40 !important;
+   background: #fdfefe !important;
+   box-shadow: 0 8px 25px rgba(118, 187, 64, 0.1) !important;
+ }
+
+ /* تحريك الأيقونة وتغيير لونها عند فتح السؤال */
+ .faq-container input:checked+.faqs-list__item .open-badge {
+   transform: rotate(45deg) !important;
+   /* تحويل الـ (+) إلى (x) */
+   background: #76bb40 !important;
+   color: #ffffff !important;
+ }
+
+ /* تنسيق نص الإجابة */
+ .faq-answer {
+   color: #587b89 !important;
+   line-height: 1.8 !important;
+   font-size: 14px !important;
+   padding-bottom: 20px !important;
+ }
+
+ :root {
+   --color-primary: #76bb40;
+   --color-primary-dark: #50951a;
+   --color-primary-light: #9ce166;
+   --color-primary-reverse: #003c00;
+   --dark-bg-main: #1a4b3e;
+   --dark-text-main: #003c00;
+   --dark-text-sec: #003c00;
+   --dark-grey: #ffffff;
+   --text-btn: #ffffff;
+   --bg-color: #02384c;
+   --header-bg: #ffffff;
+   --menu-bg: #ffffff;
+   --footer-bg: #ffffff;
+ }
