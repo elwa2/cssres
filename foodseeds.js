@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll("img,iframe").forEach(e=>{!e.hasAttribute("loading")&&e.setAttribute("loading","lazy")});window.addEventListener("load",()=>{document.querySelectorAll("link[rel='stylesheet']").forEach(e=>{try{e.sheet&&e.sheet.cssRules&&e.sheet.cssRules.length===0&&e.remove()}catch(t){}})});let e=!1;window.addEventListener("scroll",()=>{if(!e){window.requestAnimationFrame(()=>{e=!1});e=!0}});document.querySelectorAll("img").forEach(e=>{if((!e.width||!e.height)&&e.naturalWidth&&e.naturalHeight){e.style.aspectRatio=`${e.naturalWidth} / ${e.naturalHeight}`}})});
 
 
