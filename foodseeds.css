@@ -1,163 +1,395 @@
+ /* 
+=========================================================
+   Store: Food Seeds (بذور الغذاء) - Theme: ANGEL
+   Redesign: Premium White Mode & Micro-interactions
+========================================================= 
+*/
+
+/* --- 1. Variables & SVG Data URIs --- */
 :root {
-    --primary-color: #fff;
-    --font-color: #fff;
-    --bg-color: #fff;
-    --transition-speed: 0.3s
+  color-scheme: light only;
+  
+  /* Brand Colors */
+  --c-primary: #76bb40;
+  --c-primary-hover: #5d9732;
+  --c-primary-light: #eaf5e1;
+  --c-dark: #02384c;
+  --c-text-main: #02384c;
+  --c-text-muted: #587b89;
+  
+  /* Backgrounds */
+  --bg-body: #F8FAF9;
+  --bg-surface: #FFFFFF;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  
+  /* Geometry & Shadows */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --shadow-sm: 0 4px 12px rgba(2, 56, 76, 0.05);
+  --shadow-md: 0 8px 24px rgba(118, 187, 64, 0.12);
+  --shadow-hover: 0 16px 32px rgba(118, 187, 64, 0.2);
+  
+  /* Animations */
+  --trans-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  
+  /* Animated SVGs (URL Encoded) */
+  --svg-leaf: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2376bb40' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 2c0 0-6.5 5.5-6.5 12a6.5 6.5 0 0 0 13 0C18.5 7.5 12 2 12 2z'/%3E%3C/svg%3E");
+  --svg-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%2302384c' fill-opacity='1' d='M0,128L48,138.7C96,149,192,171,288,160C384,149,480,107,576,106.7C672,107,768,149,864,165.3C960,181,1056,171,1152,149.3C1248,128,1344,96,1392,80L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+  --svg-pattern: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='2' cy='2' r='1' fill='%2376bb40' fill-opacity='0.1'/%3E%3C/svg%3E");
 }
 
-html,body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg-color);
-    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif
+/* --- 2. Force Light Mode & Overrides --- */
+/* Overriding Salla's dark mode classes forcibly */
+body, html, body.dark, .angel-theme.dark {
+  background-color: var(--bg-body) !important;
+  background-image: var(--svg-pattern) !important;
+  color: var(--c-text-main) !important;
 }
 
-*,*::before,*::after {
-    box-sizing: border-box
+.dark .da-bgm, .da-bgm { background-color: var(--bg-surface) !important; }
+.dark .da-bgg, .da-bgg { background-color: var(--bg-body) !important; }
+.dark .da-tm, .da-tm, .dark .da-cp, .da-cp { color: var(--c-text-main) !important; }
+.dark .da-ts, .da-ts { color: var(--c-text-muted) !important; }
+.dark .da-brdr, .da-brdr { border-color: rgba(2, 56, 76, 0.08) !important; }
+
+/* Header Glassmorphism */
+.store-header .main-nav-container {
+  background-color: var(--bg-glass) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(118, 187, 64, 0.1);
+  box-shadow: var(--shadow-sm);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block
+/* --- 3. Keyframes & Animations --- */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(118, 187, 64, 0.4); }
+  70% { box-shadow: 0 0 0 15px rgba(118, 187, 64, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(118, 187, 64, 0); }
+}
+@keyframes shine {
+  10% { opacity: 1; top: -30%; left: -30%; transition-property: left, top, opacity; transition-duration: 0.7s, 0.7s, 0.15s; transition-timing-function: ease; }
+  100% { opacity: 0; top: -30%; left: -30%; transition-property: left, top, opacity; }
+}
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-.animated {
-    will-change: transform,opacity;
-    transition: transform var(--transition-speed) ease-in-out,opacity var(--transition-speed) ease-in-out
+/* Scroll-driven animations (Progressive Enhancement) */
+@supports (animation-timeline: view()) {
+  .s-block {
+    animation: reveal-up linear both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 25%;
+  }
 }
 
-.lazy-background {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat
+/* --- 4. Typography & Section Titles --- */
+.s-block__title h2, .s-slider-block__title h2 {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  color: var(--c-dark) !important;
 }
 
-@media (max-width: 767px) {
-    .container {
-        padding:0 1rem
-    }
+/* Add Animated Leaf SVG to all section titles */
+.s-block__title h2::before, .s-slider-block__title h2::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: var(--svg-leaf);
+  background-size: contain;
+  background-repeat: no-repeat;
+  animation: float 4s ease-in-out infinite;
 }
 
-:root {
-    --color-primary: #006C35;
-    --color-primary-dark: #005A2C;
-    --color-primary-light: #008744;
-    --color-secondary: #c5a56d;
-    --dark-bg-main: #FFFFFF;
-    --dark-text-main: #2d3748;
-    --dark-text-sec: #4a5568;
-    --dark-grey: #f7fafc;
-    --text-btn: #FFFFFF;
-    --bg-color: #f9f9f9;
-    --header-bg: #FFFFFF;
-    --menu-bg: #FFFFFF;
-    --footer-bg: #FFFFFF
+/* --- 5. Buttons & Badges --- */
+salla-button[color="primary"] button, .s-button-primary {
+  background: var(--c-primary) !important;
+  color: #fff !important;
+  border: none !important;
+  border-radius: var(--radius-sm) !important;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(118, 187, 64, 0.3) !important;
+  transition: var(--trans-smooth) !important;
 }
 
-html.dark,body.color-mode-dark {
-    background-color: var(--bg-color)!important
+@media (hover: hover) {
+  salla-button[color="primary"] button:hover, .s-button-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(118, 187, 64, 0.5) !important;
+    background: var(--c-primary-hover) !important;
+  }
 }
 
-body {
-    background-image: url('https://cdn.salla.sa/form-builder/1VwdEnByTy2Kw0vHPje6RBYrqXR6HfBc3UkZPDHQ.jpg');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative
+/* Shine effect on primary buttons */
+salla-button[color="primary"] button::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  inset-inline-start: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  animation: shine 4s infinite;
 }
 
-body {
-    background-image: linear-gradient(to bottom,rgb(255 255 255 / 65%),rgba(255,255,255,0.98)),url('');
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-attachment: fixed;
-    background-size: cover;
-    position: relative
-}
-
-body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.95);
-    z-index: -1
-}
-
-footer.store-footer .store-footer__inner {
-    background-image: url('https://cdn.salla.sa/form-builder/oyUBHm7Nz56lDGqJzAvKqhX1nasna8sVmhTMEEep.jpg');
-    background-repeat: repeat;
-    background-size: 100%;
-    background-position: center;
-    background-color: #FFFFFF
-}
-
-footer.store-footer .store-footer__inner {
-    background-image: linear-gradient(rgb(0 108 53 / 24%),rgb(0 108 53 / 6%)),linear-gradient(rgba(255,255,255,0.85),rgba(255,255,255,0.85)),url('');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-color: #FFFFFF
-}
-
-.da-tm,.da-cp {
-    color: var(--dark-text-main)!important
-}
-
-.da-ts {
-    color: var(--dark-text-sec)!important
-}
-
-salla-button[color="primary"] button,.s-button-primary {
-    background-color: var(--color-primary)!important;
-    color: var(--text-btn)!important;
-    border-color: var(--color-primary)!important
-}
-
-.header-btn i,.s-cart-summary-icon {
-    color: var(--dark-text-main)!important
-}
-
-.salla-advertisement {
-    background-color: var(--color-primary)!important;
-    color: #FFFFFF!important
-}
-
-.salla-advertisement i {
-    color: var(--color-secondary)!important
-}
-
-a:hover {
-    color: var(--color-primary)!important
-}
-
+/* --- 6. TRANSFORM: Product Cards --- */
 .s-product-card-entry {
-    background-color: #FFFFFF!important;
-    border: 1px solid #eeeeee!important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-    transition: all 0.3s ease
+  background: var(--bg-surface) !important;
+  border: 1px solid rgba(2, 56, 76, 0.05) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-sm);
+  padding: 10px;
+  transition: var(--trans-smooth);
 }
 
-.s-product-card-entry:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1)
+@media (hover: hover) {
+  .s-product-card-entry:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-hover);
+    border-color: var(--c-primary) !important;
+  }
+  
+  .s-product-card-entry:hover .s-product-card-image img {
+    transform: scale(1.05);
+  }
+}
+
+.s-product-card-image img {
+  border-radius: var(--radius-sm);
+  transition: transform 0.5s ease;
+}
+
+.s-product-card-content-title a {
+  color: var(--c-dark) !important;
+  font-weight: 700;
 }
 
 .s-product-card-price {
-    color: var(--color-primary)!important;
-    font-weight: bold
+  color: var(--c-primary) !important;
+  font-size: 1.15rem;
+  font-weight: 800;
 }
 
-.s-product-card-price-before {
-    color: var(--dark-text-sec)!important
+/* Sales Badge */
+.s-product-card-promotion-title {
+  background-color: var(--c-dark) !important;
+  color: #fff !important;
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 4px 12px;
+  animation: pulse-ring 2s infinite;
 }
 
-.s-block__title h2,.s-slider-block__title h2 {
-    color: var(--color-primary);
-    border-bottom: 2px solid var(--color-secondary);
-    padding-bottom: 10px
+/* --- 7. TRANSFORM: Features Section (Bento Grid) --- */
+.s-block--features .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px !important;
+}
+
+.angel-feature {
+  background: var(--bg-surface);
+  border-radius: var(--radius-lg);
+  padding: 30px 20px;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid rgba(2, 56, 76, 0.03);
+  transition: var(--trans-smooth);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Make the middle feature span wider on desktop for Bento look */
+@media (min-width: 1024px) {
+  .s-block--features .grid {
+    grid-template-columns: 1fr 1.5fr 1fr;
+  }
+  .angel-feature:nth-child(2) {
+    background: linear-gradient(135deg, var(--bg-surface), var(--c-primary-light));
+    transform: scale(1.02);
+  }
+}
+
+.angel-feature:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.angel-feature lord-icon {
+  animation: float 3s ease-in-out infinite;
+}
+.angel-feature:nth-child(2) lord-icon { animation-delay: 0.5s; }
+.angel-feature:nth-child(3) lord-icon { animation-delay: 1s; }
+
+.angel-feature p.font-primary {
+  color: var(--c-primary) !important;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+/* --- 8. TRANSFORM: Testimonials (Depth Cards) --- */
+.s-block--testimonials .swiper-slide > div {
+  background: var(--bg-surface) !important;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm) !important;
+  border: 1px solid rgba(118, 187, 64, 0.1);
+  padding: 30px 20px;
+  margin-top: 40px; /* Make room for floating avatar */
+  transition: var(--trans-smooth);
+  z-index: 1;
+}
+
+.s-block--testimonials .swiper-slide > div::before {
+  content: '”';
+  position: absolute;
+  top: -20px;
+  inset-inline-start: 20px;
+  font-size: 120px;
+  color: var(--c-primary-light);
+  font-family: serif;
+  opacity: 0.5;
+  z-index: -1;
+  line-height: 1;
+}
+
+.testimonial__avatar {
+  border: 4px solid var(--bg-surface);
+  box-shadow: 0 0 0 2px var(--c-primary);
+  width: 80px !important;
+  height: 80px !important;
+  transform: translateY(-50%); /* Pop out of the card */
+  margin-bottom: -30px;
+}
+
+/* --- 9. TRANSFORM: FAQs (Floating Accordions) --- */
+.faqs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px !important;
+}
+
+.faqs-list__item {
+  background: var(--bg-surface) !important;
+  border: 1px solid rgba(2, 56, 76, 0.08) !important;
+  border-radius: var(--radius-md) !important;
+  box-shadow: var(--shadow-sm);
+  transition: var(--trans-smooth);
+}
+
+.faqs-list__item:hover {
+  border-color: var(--c-primary) !important;
+  box-shadow: var(--shadow-md);
+}
+
+.faq-container input:checked + .faqs-list__item {
+  background: var(--c-primary-light) !important;
+  border-color: var(--c-primary) !important;
+}
+
+.faq-item.open-badge {
+  background: var(--bg-body) !important;
+  color: var(--c-primary) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.faq-container input:checked + .faqs-list__item .open-badge {
+  transform: rotate(45deg);
+  background: var(--c-primary) !important;
+  color: #fff !important;
+}
+
+/* --- 10. TRANSFORM: Footer (Animated Wave & Deep Blue) --- */
+.store-footer {
+  position: relative;
+  margin-top: 100px;
+}
+
+/* The Animated SVG Wave divider */
+.store-footer::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  height: 105px;
+  background-image: var(--svg-wave);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+
+footer.store-footer .store-footer__inner {
+  background-color: var(--c-dark) !important; /* Force dark teal footer */
+  color: #ffffff !important;
+  padding-top: 40px;
+}
+
+footer.store-footer .da-tm, footer.store-footer .da-ts {
+  color: #ffffff !important;
+  opacity: 0.9;
+}
+
+.footer-title {
+  color: var(--c-primary) !important;
+  font-size: 1.2rem;
+}
+
+footer.store-footer a:hover {
+  color: var(--c-primary) !important;
+  padding-inline-start: 5px;
+  transition: all 0.3s ease;
+}
+
+/* --- 11. WhatsApp Floating Button --- */
+#wa-angel {
+  background-color: #25D366 !important;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  animation: pulse-ring 2s infinite;
+}
+#wa-angel:hover {
+  transform: scale(1.1);
+}
+
+/* --- 12. Accessibility & Reduced Motion --- */
+:focus-visible {
+  outline: 2px solid var(--c-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}:root {
+    --font-main: 'PingARLT';
+    --font-secondary: 'PingARLT';
+    --color-primary: #76bb40;
+    --color-primary-dark: #50951a;
+    --color-primary-light: #9ce166;
+    --color-primary-reverse: #003c00;
+    --dark-bg-main: #1a4b3e;
+    --dark-text-main: #003c00;
+    --dark-text-sec: #003c00;
+    --dark-grey: #04906d;
+    --text-btn: #ffffff;
+    --bg-color: #02384c;
+    --header-bg: #ffffff;
+    --menu-bg: #ffffff;
+    --footer-bg: #ffffff;
 }
