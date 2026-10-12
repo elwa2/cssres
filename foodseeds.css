@@ -465,7 +465,9 @@
      color: #ffffff;
    }
  }
-
+.divider-title h2{background:linear-gradient(
+    90deg,#76bb40 0%,#02384c 33%,#c5a56d 66%,#76bb40 100%
+  );background-size:300% 100%;-webkit-background-clip:text!important;background-clip:text!important;-webkit-text-fill-color:transparent!important;color:transparent!important;animation:moveGradient 5s ease infinite}@keyframes moveGradient{0%{background-position:0% 50%}50%{background-position:100% 50%}100%{background-position:0% 50%}}
 :root {
      --color-primary: #76bb40;
     --color-primary-dark: #50951a;
