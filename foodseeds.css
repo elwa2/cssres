@@ -718,3 +718,31 @@
     transform: translateY(-3px);
     border-color: var(--color-primary);
 }
+
+.s-block--testimonials .swiper-slide > div.bg-white {
+    background-color: #044b66!important;
+    border: 1px solid rgba(118,187,64,0.3)!important;
+    border-radius: 16px!important;
+    transition: all 0.3s ease!important
+}
+
+.s-block--testimonials .swiper-slide > div.bg-white p {
+    color: #ffffff!important
+}
+
+.s-block--testimonials .testimonial__avatar {
+    background-color: #044b66!important;
+    border: 2px solid var(--color-primary)!important;
+    padding: 3px!important
+}
+
+.s-block--testimonials .testimonial__icon {
+    color: var(--color-primary)!important;
+    opacity: 0.15!important
+}
+
+.s-block--testimonials .swiper-slide > div.bg-white:hover {
+    border-color: var(--color-primary)!important;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3)!important;
+    transform: translateY(-5px)
+}
