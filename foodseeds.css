@@ -642,3 +642,79 @@
    --menu-bg: #ffffff;
    --footer-bg: #ffffff;
  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* --- ترقية تصميم فواصل العناوين (فخم وأنيق) --- */
+
+/* 1. تصميم الخطوط الجانبية بتدرج لوني وتوهج متناسق مع لون المتجر */
+.s-angel--divider .vertical-lines {
+    height: 2px !important;
+    background: linear-gradient(90deg, transparent, var(--color-primary), transparent) !important;
+    opacity: 0.7;
+    box-shadow: 0 0 12px rgba(118, 187, 64, 0.5);
+    border: none !important;
+}
+
+/* 2. تحسين عنوان القسم لإبرازه بفخامة */
+.s-angel--divider .divider-title h2 {
+    font-size: 1.85rem !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    letter-spacing: 0.5px;
+    text-shadow: 0 4px 20px rgba(118, 187, 64, 0.6);
+}
+
+/* 3. إضافة هالة ضوئية (Aura) خفيفة خلف العنوان لتعزيز العمق البصري */
+.s-angel--divider .flex-center.flex-col.px-4,
+.s-angel--divider .flex-center.flex-col.md\:px-10 {
+    position: relative;
+}
+.s-angel--divider .flex-center.flex-col.px-4::before,
+.s-angel--divider .flex-center.flex-col.md\:px-10::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 140%;
+    height: 200%;
+    background: radial-gradient(ellipse at center, rgba(118, 187, 64, 0.12) 0%, transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* 4. تحويل رابط "عرض المزيد" إلى زر أنيق متفاعل */
+.s-angel--divider .divider-url {
+    margin-top: 0.75rem;
+    padding: 0.5rem 1.8rem !important;
+    border: 1px solid rgba(118, 187, 64, 0.4);
+    border-radius: 50px;
+    color: var(--color-primary) !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    background: rgba(118, 187, 64, 0.05);
+    backdrop-filter: blur(4px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none !important;
+}
+
+/* تأثير مرور الماوس (Hover) للزر */
+.s-angel--divider .divider-url:hover {
+    background: var(--color-primary);
+    color: var(--color-primary-reverse, #003c00) !important;
+    box-shadow: 0 6px 15px rgba(118, 187, 64, 0.4);
+    transform: translateY(-3px);
+    border-color: var(--color-primary);
+}
