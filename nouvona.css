@@ -1,1 +1,89 @@
-1
+footer > div > div > div > div > a > img {
+    filter: brightness(20.5);
+}
+
+.footer-is-custom .store-footer {
+    border-radius: 46px !important;
+}
+
+.footer-is-custom .store-footer .store-footer__contacts-row, .footer-is-custom .store-footer .store-footer__inner, .footer-is-custom .store-footer .store-footer__newsletter {
+    border-radius: 46px !important;
+}
+
+@media (min-width: 1024px) {
+    salla-slider .slide--one-fourth {
+        width: 21%;
+    }
+}
+
+@media (max-width: 1024px) {
+    salla-slider .slide--one-fourth {
+        height: auto;
+        max-width: 85px;
+        width: 100%;
+    }
+}
+
+.product-card__addToCart__btn salla-button button {
+    background: var(--color-primary) ;
+    border: 0;
+    color: #fff;
+}
+
+@media(max-width: 767px) {
+    .nd-banner-wrapper {
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px 20px;
+        flex-wrap: nowrap;
+        zoom: 48%; }
+
+    .nd-right-section {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+.product-card__promotion {
+    background-color: var(--color-primary)  !important;
+}
+
+.product-card--filled-mini-cart .product-card__mini-cart__btn .s-button-btn, .product-card--filled-normal-cart .product-card__normal-cart__btn .s-button-btn {
+    background-color: var(--color-primary) !important;
+    color: var(--color-primary-reverse) !important;
+    border-color: var(--color-primary) !important;
+}
+
+.product-card__buttons > div button {
+   background: var(--bg-primary);
+   /* background: #ffffff; */
+}
+@media (max-width: 991px) {
+    .simplified-products .s-products-slider-card, salla-offer .s-products-slider-card {
+        width: 202px;
+    }
+}
+
+:root {
+    --color-primary: #02333a;
+    --header-text-color: #02333a;
+    --store-text-primary: #02333a;
+    --store-text-secondary: #02333a;
+    --product-enhanced-btn-color: #100f0f;
+    --footer-bg: #02333a;
+    --bottom-footer-bg: #02333a;
+}
+ 
+
+:root {
+    --color-primary: #d05170;
+    --header-text-color: #212121;
+    --store-text-primary: #0d0d0d;
+    --store-text-secondary: #535353;
+    --product-enhanced-btn-color: #2a2a2a;
+        --color-primary-dark: #000000;
+    --color-primary-light: #262626;
+    --color-primary-reverse: #ffffff;
+    --footer-bg:var(--color-primary);
+    --bottom-footer-bg:var(--color-primary);
+}
