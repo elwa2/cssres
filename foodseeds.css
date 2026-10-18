@@ -746,3 +746,9 @@
     box-shadow: 0 8px 25px rgba(0,0,0,0.3)!important;
     transform: translateY(-5px)
 }
+@media (min-width: 768px) {
+    .large-cards .s-products-slider-card,.s-products-slider-card {
+        width: 25%;
+        min-width: 25%;
+    }
+}
