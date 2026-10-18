@@ -163,18 +163,7 @@
    color: var(--c-dark) !important;
  }
 
- /* Add Animated Leaf SVG to all section titles */
- .s-block__title h2::before,
- .s-slider-block__title h2::before {
-   content: '';
-   display: inline-block;
-   width: 28px;
-   height: 28px;
-   background-image: var(--svg-leaf);
-   background-size: contain;
-   background-repeat: no-repeat;
-   animation: float 4s ease-in-out infinite;
- }
+  
 
  /* --- 5. Buttons & Badges --- */
  salla-button[color="primary"] button,
