@@ -57,7 +57,7 @@
         '<li class="pay-mada w-12 h-7 bg-white rounded flex items-center p-1"><img width="100%" height="100%" src="https://dbi49knxhb5pc.cloudfront.net/product/675736/5bf06031-a62b-4586-b20b-e17777d9780f.png" alt="mada" loading="lazy" class="lazy object-contain max-h-full"></li>' +
         '<li class="pay-mada w-12 h-7 bg-white rounded flex items-center p-1"><img width="100%" height="100%" src="https://dbi49knxhb5pc.cloudfront.net/product/675736/26014517-671b-4ef6-b7ce-d6f24d37e6a9.png" alt="applepay" loading="lazy" class="lazy object-contain max-h-full"></li>' +
         '</ul></div>' +
-        '</div><div class="_iptv_footer_bottom">جميع الحقوق محفوظة © IPTV KSA : 2026</div></footer>';
+        '</div><div class="_iptv_footer_bottom">جميع الحقوق محفوظة © veo store: 2026</div></footer>';
 
     var siteFabHtml =
         '<div class="_iptv_fab_stack">' +
