@@ -1250,4 +1250,17 @@ html.dark .product-entry:hover {
     -webkit-background-clip: text !important;
     background-clip: text !important;
     -webkit-text-fill-color: transparent !important;
+}.s-button-primary {
+    background-color: #ff2fa830;
+    border-color: #ff6767;
+    border-width: 1px;
+    color: #ff6767;
+}
+
+.s-button-primary-outline {
+    fill: #ffffff;
+    color: #ffffff;
+    background: var(--color-primary) !important;
+    /* z-index: 3; */
+    -webkit-text-fill-color: unset !important;
 }
