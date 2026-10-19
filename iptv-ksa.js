@@ -461,7 +461,7 @@
 
         '<div class="_iptv_ticker"><div class="_iptv_ticker_track">' + ticker + '</div></div>' +
 
-        '<section class="_iptv_container"><div class="_iptv_section_title_wrap"><div class="_iptv_title_line"></div><h2 class="_iptv_section_title">لماذا IPTV KSA ؟</h2><div class="_iptv_title_line"></div></div><div class="_iptv_grid_5 _iptv_reveal">' + feats + '</div></section>' +
+        '<section class="_iptv_container"><div class="_iptv_section_title_wrap"><div class="_iptv_title_line"></div><h2 class="_iptv_section_title">لماذا  veo store ؟</h2><div class="_iptv_title_line"></div></div><div class="_iptv_grid_5 _iptv_reveal">' + feats + '</div></section>' +
 
         stats +
 
