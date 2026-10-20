@@ -1593,11 +1593,7 @@ body::after {
         justify-content: flex-start!important
     }
 
-    .f_logo img {
-        max-height: 60px!important;
-        width: auto!important;
-        object-fit: contain
-    }
+   
 
     custom-main-menu[type="desktop"] {
         order: 2!important;
@@ -1783,5 +1779,14 @@ main#main-content {
 @media (min-width: 1024px) {
   #mainnav .f_start-btns a.mburger {
         display: none!important
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .f_logo img {
+        max-height: 105px !important;
+        width: auto !important;
+        object-fit: contain;
     }
 }
