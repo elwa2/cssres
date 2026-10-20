@@ -1635,7 +1635,7 @@ body::after {
         display: none!important
     }
 
-    .f_start-btns {
+    .f_start-btns a.mburger {
         display: none!important
     }
 }
@@ -1777,5 +1777,11 @@ main#main-content {
 @supports (color: rgb(0 0 0 / 0)) and (top:var(--f)) {
     salla-slider.details-slider .swiper-slide {
         background-color:rgb(255 255 255 / 0%)
+    }
+}
+
+@media (min-width: 1024px) {
+  #mainnav .f_start-btns a.mburger {
+        display: none!important
     }
 }
