@@ -1804,3 +1804,18 @@ section#ATB_sec_0, .f_animated-text-bar, .anim-txt-bar {
 main#main-content {
     margin-top: -5px !important; 
 }
+
+
+*, ::before, ::after {
+    
+    border-color: #05070a !important;
+}@supports (color: rgb(0 0 0 / 0)) and (top: var(--f)) {
+    salla-slider.details-slider .s-slider-container {
+        background-color: #05070a !important;
+    }
+}
+@supports (color: rgb(0 0 0 / 0)) and (top: var(--f)) {
+    salla-slider.details-slider .swiper-slide {
+        background-color: rgb(255 255 255 / 0%);
+    }
+}
