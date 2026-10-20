@@ -186,7 +186,6 @@ header.store-header svg,header.store-header svg path {
     align-items: center!important;
     justify-content: center!important
 }
- 
 
 #mainnav i[slot="icon"] {
     display: flex!important;
