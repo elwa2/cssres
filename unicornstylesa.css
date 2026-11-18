@@ -417,14 +417,12 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
 
 
 
-
-
-.s-block--circle-links.banat {
+.s-block--circle-links {
   padding-inline: 0.75rem;
   margin-block: 2rem;
 }
 
-.s-block--circle-links.banat > div {
+.s-block--circle-links > div {
   position: relative;
   max-width: 1280px;
   margin-inline: auto;
@@ -436,14 +434,14 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
   box-shadow: 0 22px 50px -22px rgba(40, 4, 85, 0.16);
 }
 
-.dark .s-block--circle-links.banat > div {
+.dark .s-block--circle-links > div {
   background: linear-gradient(135deg, #21192e 0%, #151619 52%, #261938 100%);
   border-color: rgba(167, 131, 212, 0.24);
   box-shadow: 0 22px 50px -22px rgba(0, 0, 0, 0.6);
 }
 
-.s-block--circle-links.banat > div::before,
-.s-block--circle-links.banat > div::after {
+.s-block--circle-links > div::before,
+.s-block--circle-links > div::after {
   content: "";
   position: absolute;
   border-radius: 9999px;
@@ -451,7 +449,7 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
   z-index: 0;
 }
 
-.s-block--circle-links.banat > div::before {
+.s-block--circle-links > div::before {
   width: 340px;
   height: 340px;
   top: -150px;
@@ -459,7 +457,7 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
   background: radial-gradient(circle, rgba(167, 131, 212, 0.3) 0%, rgba(167, 131, 212, 0) 70%);
 }
 
-.s-block--circle-links.banat > div::after {
+.s-block--circle-links > div::after {
   width: 380px;
   height: 380px;
   bottom: -170px;
@@ -467,54 +465,56 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
   background: radial-gradient(circle, rgba(205, 169, 250, 0.28) 0%, rgba(205, 169, 250, 0) 70%);
 }
 
-.s-block--circle-links.banat .container {
+.s-block--circle-links .container {
   position: relative;
   z-index: 1;
   padding-inline: 0;
   max-width: 100%;
 }
 
-.s-block--circle-links.banat .home-block-title {
+.s-block--circle-links .home-block-title {
   margin-bottom: 1.25rem;
 }
 
-.s-block--circle-links.banat .circle-links__title {
+.s-block--circle-links .circle-links__title {
   color: #280455;
   letter-spacing: 0;
 }
 
-.dark .s-block--circle-links.banat .circle-links__title {
+.dark .s-block--circle-links .circle-links__title {
   color: #ffffff;
 }
 
-.s-block--circle-links.banat .circle-links__description:empty,
-.s-block--circle-links.banat .circle-links__item-subtitle:empty {
+.s-block--circle-links .circle-links__description:empty,
+.s-block--circle-links .circle-links__item-subtitle:empty {
   display: none;
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .s-slider-block__title,
-.s-block--circle-links.banat .s-slider-wrapper .swiper-scrollbar {
+.s-block--circle-links .s-slider-wrapper .s-slider-block__title,
+.s-block--circle-links .s-slider-wrapper .swiper-scrollbar {
   display: none !important;
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .s-slider-container {
+.s-block--circle-links .s-slider-wrapper .s-slider-container {
   overflow: visible;
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .s-slider-swiper-wrapper {
+.s-block--circle-links .s-slider-wrapper .s-slider-swiper-wrapper {
   display: grid !important;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.5rem;
   transform: none !important;
   width: 100% !important;
+  counter-reset: circle-link-counter;
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .swiper-slide {
+.s-block--circle-links .s-slider-wrapper .swiper-slide {
   width: 100% !important;
   margin: 0 !important;
+  counter-increment: circle-link-counter;
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a {
+.s-block--circle-links .s-slider-wrapper .swiper-slide > a {
   position: relative;
   display: block;
   width: 100%;
@@ -527,12 +527,12 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
   will-change: transform;
 }
 
-.dark .s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a {
+.dark .s-block--circle-links .s-slider-wrapper .swiper-slide > a {
   border-color: rgba(167, 131, 212, 0.35);
   box-shadow: 0 14px 30px -14px rgba(0, 0, 0, 0.65);
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a::before {
+.s-block--circle-links .s-slider-wrapper .swiper-slide > a::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -543,11 +543,11 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
   pointer-events: none;
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a:hover::before {
+.s-block--circle-links .s-slider-wrapper .swiper-slide > a:hover::before {
   transform: translateX(-120%);
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .circle-links__image-wrap {
+.s-block--circle-links .s-slider-wrapper .circle-links__image-wrap {
   position: absolute;
   inset: 0;
   width: 100% !important;
@@ -556,7 +556,7 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
   border-radius: inherit !important;
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .circle-links__image-wrap::after {
+.s-block--circle-links .s-slider-wrapper .circle-links__image-wrap::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -564,7 +564,7 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
   pointer-events: none;
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .circle-links__image-wrap img {
+.s-block--circle-links .s-slider-wrapper .circle-links__image-wrap img {
   width: 100% !important;
   height: 100% !important;
   border-radius: 0 !important;
@@ -574,11 +574,11 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
   will-change: transform;
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a:hover .circle-links__image-wrap img {
+.s-block--circle-links .s-slider-wrapper .swiper-slide > a:hover .circle-links__image-wrap img {
   transform: scale(1.08);
 }
 
-.s-block--circle-links.banat .s-slider-wrapper .circle-links__item-title {
+.s-block--circle-links .s-slider-wrapper .circle-links__item-title {
   position: absolute;
   bottom: 0.4rem;
   inset-inline: 0.35rem;
@@ -602,30 +602,30 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
 }
 
 @media (min-width: 768px) {
-  .s-block--circle-links.banat {
+  .s-block--circle-links {
     padding-inline: 1rem;
     margin-block: 2.75rem;
   }
 
-  .s-block--circle-links.banat > div {
+  .s-block--circle-links > div {
     padding: 2.75rem 2rem 2.75rem;
     border-radius: 2rem;
   }
 
-  .s-block--circle-links.banat .home-block-title {
+  .s-block--circle-links .home-block-title {
     margin-bottom: 2.25rem;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .s-slider-swiper-wrapper {
+  .s-block--circle-links .s-slider-wrapper .s-slider-swiper-wrapper {
     gap: 1.25rem;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a {
+  .s-block--circle-links .s-slider-wrapper .swiper-slide > a {
     height: 295px;
     border-radius: 9rem 9rem 1.35rem 1.35rem;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .circle-links__item-title {
+  .s-block--circle-links .s-slider-wrapper .circle-links__item-title {
     bottom: 0.9rem;
     inset-inline: 0.9rem;
     padding: 0.7rem 0.9rem;
@@ -634,7 +634,7 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
     font-size: 1rem;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .circle-links__item-title::after {
+  .s-block--circle-links .s-slider-wrapper .circle-links__item-title::after {
     content: "تسوق ←";
     font-size: 0.75rem;
     font-weight: 700;
@@ -645,19 +645,19 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
     transition: background-color 0.3s ease, transform 0.35s ease;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a:hover .circle-links__item-title {
+  .s-block--circle-links .s-slider-wrapper .swiper-slide > a:hover .circle-links__item-title {
     background: rgba(40, 4, 85, 0.5);
     border-color: rgba(205, 169, 250, 0.65);
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a:hover .circle-links__item-title::after {
+  .s-block--circle-links .s-slider-wrapper .swiper-slide > a:hover .circle-links__item-title::after {
     background-color: var(--color-primary-dark);
     transform: translateX(-3px);
   }
 }
 
 @media (min-width: 1024px) {
-  .s-block--circle-links.banat > div {
+  .s-block--circle-links > div {
     display: grid;
     grid-template-columns: 280px minmax(0, 1fr);
     align-items: center;
@@ -666,7 +666,7 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
     border-radius: 2.25rem;
   }
 
-  .s-block--circle-links.banat .home-block-title {
+  .s-block--circle-links .home-block-title {
     text-align: start;
     margin-bottom: 0;
     padding: 2rem 1.5rem;
@@ -676,13 +676,13 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
   }
 
-  .dark .s-block--circle-links.banat .home-block-title {
+  .dark .s-block--circle-links .home-block-title {
     background: linear-gradient(155deg, rgba(167, 131, 212, 0.16) 0%, rgba(29, 31, 31, 0.75) 100%);
     border-color: rgba(167, 131, 212, 0.25);
     box-shadow: none;
   }
 
-  .s-block--circle-links.banat .circle-links__title::before {
+  .s-block--circle-links .circle-links__title::before {
     content: "اختيار سريع ومريح";
     display: inline-block;
     margin-bottom: 0.75rem;
@@ -694,7 +694,7 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
     color: #ffffff;
   }
 
-  .s-block--circle-links.banat .circle-links__title {
+  .s-block--circle-links .circle-links__title {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -702,7 +702,7 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
     line-height: 1.25;
   }
 
-  .s-block--circle-links.banat .circle-links__description:empty {
+  .s-block--circle-links .circle-links__description:empty {
     display: block;
     margin-top: 0.75rem;
     font-size: 0.925rem;
@@ -710,38 +710,39 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
     color: #5b4b70;
   }
 
-  .dark .s-block--circle-links.banat .circle-links__description:empty {
+  .dark .s-block--circle-links .circle-links__description:empty {
     color: #d4c8e6;
   }
 
-  .s-block--circle-links.banat .circle-links__description:empty::before {
-    content: "اختاري المقاس المثالي لإطلالة قطنية ناعمة ومريحة تناسب كل مرحلة عمرية.";
+  .s-block--circle-links .circle-links__description:empty::before {
+    content: "اختر المقاس المثالي لإطلالة قطنية ناعمة ومريحة تناسب كل مرحلة عمرية.";
   }
 
-  .s-block--circle-links.banat .enhanced-title-border.home-block-line {
+  .s-block--circle-links .enhanced-title-border.home-block-line {
     margin-inline: 0 auto;
     margin-top: 1.15rem;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .s-slider-swiper-wrapper {
+  .s-block--circle-links .s-slider-wrapper .s-slider-swiper-wrapper {
     gap: 1.5rem;
     padding-block: 0.75rem;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a {
+  .s-block--circle-links .s-slider-wrapper .swiper-slide > a {
     height: 345px;
     border-radius: 12rem 12rem 1.5rem 1.5rem;
     outline: 1.5px solid rgba(167, 131, 212, 0.35);
     outline-offset: 5px;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide:nth-child(2) > a {
+  .s-block--circle-links .s-slider-wrapper .swiper-slide:nth-child(2) > a {
     transform: translateY(-10px);
     outline-color: rgba(167, 131, 212, 0.7);
     box-shadow: 0 24px 48px -18px rgba(129, 93, 174, 0.42);
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a::after {
+  .s-block--circle-links .s-slider-wrapper .swiper-slide > a::after {
+    content: counter(circle-link-counter, decimal-leading-zero);
     position: absolute;
     top: 1.1rem;
     left: 50%;
@@ -759,419 +760,31 @@ custom-salla-product-card.product-card .s-product-options-option-stock-out:hover
     transition: transform 0.35s ease, background-color 0.3s ease, color 0.3s ease;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide:nth-child(1) > a::after {
-    content: "01";
-  }
-
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide:nth-child(2) > a::after {
-    content: "02";
-  }
-
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide:nth-child(3) > a::after {
-    content: "03";
-  }
-
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a:hover {
+  .s-block--circle-links .s-slider-wrapper .swiper-slide > a:hover {
     transform: translateY(-8px);
     outline-color: var(--color-primary);
     box-shadow: 0 28px 54px -16px rgba(129, 93, 174, 0.48);
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide:nth-child(2) > a:hover {
+  .s-block--circle-links .s-slider-wrapper .swiper-slide:nth-child(2) > a:hover {
     transform: translateY(-18px);
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .swiper-slide > a:hover::after {
+  .s-block--circle-links .s-slider-wrapper .swiper-slide > a:hover::after {
     background-color: var(--color-primary);
     color: #ffffff;
     transform: translateX(-50%) scale(1.06);
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .circle-links__item-title {
+  .s-block--circle-links .s-slider-wrapper .circle-links__item-title {
     bottom: 1rem;
     inset-inline: 1rem;
     padding: 0.8rem 1rem;
     font-size: 1.08rem;
   }
 
-  .s-block--circle-links.banat .s-slider-wrapper .circle-links__item-title::after {
+  .s-block--circle-links .s-slider-wrapper .circle-links__item-title::after {
     content: "تسوق الآن ←";
-  }
-}
-
-.s-block--circle-links.welady {
-  padding-inline: 0.75rem;
-  margin-block: 2rem;
-}
-
-.s-block--circle-links.welady > div {
-  position: relative;
-  max-width: 1280px;
-  margin-inline: auto;
-  padding: 1.75rem 0.75rem 1.65rem;
-  border-radius: 1.25rem;
-  overflow: hidden;
-  background: linear-gradient(135deg, #edf4fc 0%, #ffffff 50%, #e3eefb 100%);
-  border: 1px solid rgba(37, 99, 235, 0.2);
-  box-shadow: 0 22px 50px -22px rgba(15, 23, 42, 0.16);
-}
-
-.dark .s-block--circle-links.welady > div {
-  background: linear-gradient(135deg, #111b2b 0%, #15171c 52%, #132238 100%);
-  border-color: rgba(56, 189, 248, 0.22);
-  box-shadow: 0 22px 50px -22px rgba(0, 0, 0, 0.65);
-}
-
-.s-block--circle-links.welady > div::before,
-.s-block--circle-links.welady > div::after {
-  content: "";
-  position: absolute;
-  pointer-events: none;
-  z-index: 0;
-}
-
-.s-block--circle-links.welady > div::before {
-  width: 360px;
-  height: 360px;
-  top: -160px;
-  inset-inline-end: -100px;
-  border-radius: 9999px;
-  background: radial-gradient(circle, rgba(37, 99, 235, 0.2) 0%, rgba(37, 99, 235, 0) 70%);
-}
-
-.s-block--circle-links.welady > div::after {
-  inset: 0;
-  opacity: 0.35;
-  background-image: repeating-linear-gradient(-45deg, rgba(37, 99, 235, 0.04) 0px, rgba(37, 99, 235, 0.04) 2px, transparent 2px, transparent 14px);
-}
-
-.s-block--circle-links.welady .container {
-  position: relative;
-  z-index: 1;
-  padding-inline: 0;
-  max-width: 100%;
-}
-
-.s-block--circle-links.welady .home-block-title {
-  margin-bottom: 1.25rem;
-}
-
-.s-block--circle-links.welady .circle-links__title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #0f172a;
-  letter-spacing: 0;
-}
-
-.dark .s-block--circle-links.welady .circle-links__title {
-  color: #ffffff;
-}
-
-.s-block--circle-links.welady .circle-links__title::before {
-  content: "كولكشن الأولاد";
-  display: inline-block;
-  margin-bottom: 0.6rem;
-  padding: 0.28rem 0.9rem;
-  border-radius: 0.45rem;
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
-  color: #ffffff;
-  transform: skewX(-10deg);
-  box-shadow: 0 6px 16px -4px rgba(37, 99, 235, 0.4);
-}
-
-.s-block--circle-links.welady .enhanced-title-border.home-block-line {
-  background-color: #2563eb;
-}
-
-.s-block--circle-links.welady .circle-links__description:empty,
-.s-block--circle-links.welady .circle-links__item-subtitle:empty {
-  display: none;
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .s-slider-block__title,
-.s-block--circle-links.welady .s-slider-wrapper .swiper-scrollbar {
-  display: none !important;
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .s-slider-container {
-  overflow: visible;
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .s-slider-swiper-wrapper {
-  display: grid !important;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.5rem;
-  transform: none !important;
-  width: 100% !important;
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .swiper-slide {
-  width: 100% !important;
-  margin: 0 !important;
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 175px;
-  border-radius: 0.85rem;
-  overflow: hidden;
-  border: 1.5px solid rgba(37, 99, 235, 0.25);
-  box-shadow: 0 14px 28px -14px rgba(15, 23, 42, 0.35);
-  transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.45s ease, border-color 0.35s ease;
-  will-change: transform;
-}
-
-.dark .s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a {
-  border-color: rgba(56, 189, 248, 0.3);
-  box-shadow: 0 14px 28px -14px rgba(0, 0, 0, 0.65);
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 2;
-  background: linear-gradient(115deg, transparent 25%, rgba(255, 255, 255, 0.25) 50%, transparent 75%);
-  transform: translateX(120%);
-  transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
-  pointer-events: none;
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a:hover::before {
-  transform: translateX(-120%);
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .circle-links__image-wrap {
-  position: absolute;
-  inset: 0;
-  width: 100% !important;
-  height: 100% !important;
-  margin: 0 !important;
-  border-radius: inherit !important;
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .circle-links__image-wrap::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(15, 23, 42, 0.04) 0%, rgba(15, 23, 42, 0.16) 48%, rgba(15, 23, 42, 0.9) 100%);
-  pointer-events: none;
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .circle-links__image-wrap img {
-  width: 100% !important;
-  height: 100% !important;
-  border-radius: 0 !important;
-  object-fit: cover;
-  object-position: center 20%;
-  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
-  will-change: transform;
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a:hover .circle-links__image-wrap img {
-  transform: scale(1.08);
-}
-
-.s-block--circle-links.welady .s-slider-wrapper .circle-links__item-title {
-  position: absolute;
-  bottom: 0.4rem;
-  inset-inline: 0.35rem;
-  z-index: 3;
-  margin-top: 0 !important;
-  padding: 0.35rem 0.3rem;
-  border-radius: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.75rem;
-  font-weight: 800;
-  line-height: 1.25;
-  white-space: nowrap;
-  color: #ffffff !important;
-  background: rgba(15, 23, 42, 0.68);
-  border: 1px solid rgba(56, 189, 248, 0.32);
-  border-bottom: 2px solid #2563eb;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-
-@media (min-width: 768px) {
-  .s-block--circle-links.welady {
-    padding-inline: 1rem;
-    margin-block: 2.75rem;
-  }
-
-  .s-block--circle-links.welady > div {
-    padding: 2.75rem 2rem;
-    border-radius: 1.75rem;
-  }
-
-  .s-block--circle-links.welady .home-block-title {
-    margin-bottom: 2.25rem;
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .s-slider-swiper-wrapper {
-    gap: 1.25rem;
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a {
-    height: 295px;
-    border-radius: 1.15rem;
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .circle-links__item-title {
-    bottom: 0.85rem;
-    inset-inline: 0.85rem;
-    padding: 0.7rem 0.9rem;
-    border-radius: 0.7rem;
-    justify-content: space-between;
-    font-size: 1rem;
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .circle-links__item-title::after {
-    content: "تسوق ←";
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding: 0.28rem 0.75rem;
-    border-radius: 0.4rem;
-    background: linear-gradient(135deg, #2563eb 0%, #0ea5e9 100%);
-    color: #ffffff;
-    transition: transform 0.35s ease, opacity 0.3s ease;
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a:hover .circle-links__item-title {
-    background: rgba(15, 23, 42, 0.86);
-    border-color: rgba(56, 189, 248, 0.75);
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a:hover .circle-links__item-title::after {
-    transform: translateX(-3px);
-  }
-}
-
-@media (min-width: 1024px) {
-  .s-block--circle-links.welady > div {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 285px;
-    align-items: center;
-    gap: 2.25rem;
-    padding: 3rem 2.5rem;
-    border-radius: 2rem;
-  }
-
-  .s-block--circle-links.welady .home-block-title {
-    order: 2;
-    text-align: start;
-    margin-bottom: 0;
-    padding: 2rem 1.5rem;
-    border-radius: 1.25rem;
-    background: linear-gradient(155deg, rgba(15, 23, 42, 0.94) 0%, rgba(30, 58, 138, 0.92) 100%);
-    border: 1px solid rgba(56, 189, 248, 0.3);
-    box-shadow: 0 20px 40px -18px rgba(15, 23, 42, 0.45);
-  }
-
-  .s-block--circle-links.welady > div > .container:last-child {
-    order: 1;
-  }
-
-  .s-block--circle-links.welady .circle-links__title {
-    align-items: flex-start;
-    font-size: 2rem;
-    line-height: 1.25;
-    color: #ffffff !important;
-  }
-
-  .s-block--circle-links.welady .circle-links__title::before {
-    margin-bottom: 0.85rem;
-    background: linear-gradient(135deg, #38bdf8 0%, #2563eb 100%);
-  }
-
-  .s-block--circle-links.welady .circle-links__description:empty {
-    display: block;
-    margin-top: 0.75rem;
-    font-size: 0.925rem;
-    line-height: 1.65;
-    color: #cbd5e1;
-  }
-
-  .s-block--circle-links.welady .circle-links__description:empty::before {
-    content: "اختاروا المقاس المناسب لإطلالة ولادية عملية ومريحة من أجود أنواع القطن.";
-  }
-
-  .s-block--circle-links.welady .enhanced-title-border.home-block-line {
-    margin-inline: 0 auto;
-    margin-top: 1.15rem;
-    background-color: #38bdf8;
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .s-slider-swiper-wrapper {
-    gap: 1.35rem;
-    padding-block: 0.5rem;
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a {
-    height: 340px;
-    border-radius: 1.25rem;
-    border-top: 3px solid #2563eb;
-    box-shadow: 0 20px 40px -16px rgba(15, 23, 42, 0.32);
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a::after {
-    position: absolute;
-    top: 0.95rem;
-    inset-inline-start: 0.95rem;
-    z-index: 3;
-    padding: 0.28rem 0.7rem;
-    border-radius: 0.45rem;
-    font-size: 0.75rem;
-    font-weight: 900;
-    letter-spacing: 0.08em;
-    color: #ffffff;
-    background: rgba(15, 23, 42, 0.82);
-    border: 1px solid rgba(56, 189, 248, 0.45);
-    transform: skewX(-10deg);
-    transition: transform 0.35s ease, background-color 0.3s ease;
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide:nth-child(1) > a::after {
-    content: "01";
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide:nth-child(2) > a::after {
-    content: "02";
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide:nth-child(3) > a::after {
-    content: "03";
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a:hover {
-    transform: translateY(-8px);
-    border-color: #38bdf8;
-    box-shadow: 0 28px 54px -16px rgba(37, 99, 235, 0.4);
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .swiper-slide > a:hover::after {
-    background: #2563eb;
-    transform: skewX(-10deg) scale(1.08);
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .circle-links__item-title {
-    bottom: 0.95rem;
-    inset-inline: 0.95rem;
-    padding: 0.8rem 1rem;
-    font-size: 1.08rem;
-  }
-
-  .s-block--circle-links.welady .s-slider-wrapper .circle-links__item-title::after {
-    content: "تصفح الآن ←";
   }
 }
 
